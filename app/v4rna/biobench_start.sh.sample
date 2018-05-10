@@ -1,0 +1,15 @@
+#!/bin/bash
+source envs/biobench/bin/activate
+DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+export PATH=$DIR/contrib:$PATH
+export PATH=$DIR/scripts:$PATH
+export PATH=/home/student/repos/biobench/scripts/eda:$PATH
+export PATH=/home/student/repos/biobench/scripts/jsdoc-toolkit:$PATH
+export PATH=/home/student/repos/biobench/scripts/v4rna:$PATH
+
+
+source /home/student/Johanna/Software/CCP4-Lin-generic/setup-scripts/sh/ccp4.setup
+source /home/student/Johanna/Software/CCP4-Lin-generic/setup-scripts/sh/ccp4-others.setup
+
+./run.sh

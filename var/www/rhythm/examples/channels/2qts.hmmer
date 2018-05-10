@@ -1,0 +1,692 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 Pfam_ls
+Sequence file:            channels/2qts.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: 2QTS:F|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ASC             Amiloride-sensitive sodium channel      591.4   2.6e-175   1
+MtrG            Tetrahydromethanopterin S-methyltrans   -35.9        3.2   1
+Defensin_beta   Beta defensin                           -13.8        4.8   1
+LRRNT           Leucine rich repeat N-terminal domain    -3.5        4.9   1
+C4              C-terminal tandem repeated domain in    -69.4        8.5   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ASC               1/1      26   456 ..     1   662 []   591.4 2.6e-175
+Defensin_beta     1/1     169   200 ..     1    36 []   -13.8      4.8
+C4                1/1     245   327 ..     1   116 []   -69.4      8.5
+LRRNT             1/1     355   385 ..     1    34 []    -3.5      4.9
+MtrG              1/1     401   453 ..     1    72 []   -35.9      3.2
+
+Alignments of top-scoring domains:
+ASC: domain 1 of 1, from 26 to 456: score 591.4, E = 2.6e-175
+                   *->FCenTTiHGikrIfcskrnrlkRafWlllflvslglllwQigilisk
+                          +T HGi +If ++r++lkR++W+l+f++sl+ll+  +  +i++
+  2QTS:F|PDB    26    ----STLHGISHIFSYERLSLKRVVWALCFMGSLALLALVCTNRIQY 68   
+
+                   YlsyptvsvnielkfpveklpFPaVTiCNLNPyKyseitsievlelndtl
+                   Y+ yp+v+  +e+     +l+FPaVT CNLN +++s      + + nd++
+  2QTS:F|PDB    69 YFLYPHVTKLDEVAA--TRLTFPAVTFCNLNEFRFS------RVTKNDLY 110  
+
+                   saftlallysgsaksegvekevnsskgrssksaqqrrngkslrgarfplv
+                   +a++l+ l+            +n                           
+  2QTS:F|PDB   111 HAGELLALL------------NN--------------------------- 121  
+
+                   faeclcpsqpcvsderesrrtekkalpstpesrcilakdrvkvgfwlCsn
+                                            + ++p++                  
+  2QTS:F|PDB   122 -------------------------RYEIPDT------------------ 128  
+
+                   ntWekkeCseCndhgfCedpnttgtghkkpcicveskdlvlvnktiriwn
+                                                                     
+  2QTS:F|PDB     - -------------------------------------------------- -    
+
+                   pnyttpseepettEapetceaqgytsgtdavaewyrakenlifamaalse
+                                    ++++    +++++ a++ ++k+ + f m    +
+  2QTS:F|PDB   129 -----------------QTADEKQLEILQDKANFRNFKP-KPFNM----L 156  
+
+                   eflirasyscdelilkCsFnGkpCnicrdFttfvdpeyGnCYtFNlnrst
+                   ef++ra+++ +e++l+C+F+G++C+  +dF+ +++ +yG+CYtFN ++++
+  2QTS:F|PDB   157 EFYDRAGHDIREMLLSCFFRGEQCSP-EDFKVVFT-RYGKCYTFNAGQDG 204  
+
+                   sIYRdeyvnnkndletkvlddsnlltssraGpglqyGLrlvLdvnqseyl
+                                         + l ++++G+  ++GL+++Ld++q+eyl
+  2QTS:F|PDB   205 ---------------------KPRLITMKGGT--GNGLEIMLDIQQDEYL 231  
+
+                   PtteateAlfetsfeaGvRvfvHeqdepPfpdsfGfsappGtessigikl
+                   P + +t+   etsfeaG++v++H+qdepP +d++Gf+++pG+++++++++
+  2QTS:F|PDB   232 PVWGETD---ETSFEAGIKVQIHSQDEPPLIDQLGFGVAPGFQTFVSCQE 278  
+
+                   kqlvrLpavaeitapYGnCtedgedvdveNLYayiytnssYsleaClrsC
+                   ++l++Lp      +p+G+C  ++ d+          +  +Ys++aC+++C
+  2QTS:F|PDB   279 QRLIYLP------PPWGDCKATTGDS---------EFYDTYSITACRIDC 313  
+
+                   fQrymvkkCGCadpryPlkEpngakyCtpykhpdcgclynklldsgelhk
+                   ++ry+v++C+C+++++P    ++a+yCtp+++++c+++  +l+  +  +k
+  2QTS:F|PDB   314 ETRYLVENCNCRMVHMP----GDAPYCTPEQYKECADP--ALD--FLVEK 355  
+
+                   lgasiefsvpcqCkCpqpCneteYtvtySyakWPSaasedwlgsvlskfs
+                   +         ++C+C +pCn t+Y +++S++k+PS+as+++l+++ +k++
+  2QTS:F|PDB   356 DN--------EYCVCEMPCNVTRYGKELSMVKIPSKASAKYLAKKYNKSE 397  
+
+                   sekienniyrnniaminIFfeelNYesleEseaytvvnLLSdlGGqmGLW
+                    ++ en      i++++IFfe+lNYe++e+++ay+v+ LL+d+GGqmGL+
+  2QTS:F|PDB   398 QYIGEN------ILVLDIFFEALNYETIEQKKAYEVAGLLGDIGGQMGLF 441  
+
+                   lGmSVlsvlElielf<-*
+                   +G+S+l+vlEl++++   
+  2QTS:F|PDB   442 IGASILTVLELFDYA    456  
+
+Defensin_beta: domain 1 of 1, from 169 to 200: score -13.8, E = 4.8
+                   *->dpvsCrrngGfCrpgrCpggerqIGtCsgpkvkCCr<-*
+                        +sC+ +g +C p      +++ G+C+ +         
+  2QTS:F|PDB   169    MLLSCFFRGEQCSPEDFKVVFTRYGKCYTFNA----    200  
+
+C4: domain 1 of 1, from 245 to 327: score -69.4, E = 8.5
+                   *->gfliavHSQttsiPqCPaGwssLWtGYSflmvtganeeGhGQdLgsp
+                      g+ + +HSQ++     P+   +L  G    ++t        Q L   
+  2QTS:F|PDB   245    GIKVQIHSQDE-----PPLIDQLGFGVAPGFQTF--VSCQEQRL--- 281  
+
+                   GSCLerFrtmPFieCng.rgvCnYasRndySfWLstiepedqFkaPmpmt
+                           + P   C  ++g  ++++    ++  +         + +++ 
+  2QTS:F|PDB   282 -----IYLPPPWGDCKAtTGDSEFYD----TYSITACRI-----DCETRY 317  
+
+                   pkagreirpyISRCqVCekp<-*
+                   ++++         C  C+ +   
+  2QTS:F|PDB   318 LVEN---------CN-CRMV    327  
+
+LRRNT: domain 1 of 1, from 355 to 385: score -3.5, E = 4.9
+                   *->aCpapCtCserytdglvVdCsgrgLt.vavPrdlP<-*
+                           C+C+    ++++V   g+ L  v++P++ +   
+  2QTS:F|PDB   355    KDNEYCVCE----MPCNVTRYGKELSmVKIPSKAS    385  
+
+MtrG: domain 1 of 1, from 401 to 453: score -35.9, E = 3.2
+                   *->deKttvPkvlvepddfnevkkRLDeIEeKvEFvngEvfQriGKkvGR
+                       e      +lv    f++++     IE K  +   Ev+ + G     
+  2QTS:F|PDB   401    GEN-----ILVLDIFFEALNY--ETIEQKKAY---EVAGLLG----- 432  
+
+                   DIGILYGlVIGLiLslIlavlsvlF<-*
+                   DIG   Gl+IG     Il+vl  lF   
+  2QTS:F|PDB   433 DIGGQMGLFIGAS---ILTVLE-LF    453  
+
+//
+
+Query sequence: 2QTS:E|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ASC             Amiloride-sensitive sodium channel      591.4   2.6e-175   1
+MtrG            Tetrahydromethanopterin S-methyltrans   -35.9        3.2   1
+Defensin_beta   Beta defensin                           -13.8        4.8   1
+LRRNT           Leucine rich repeat N-terminal domain    -3.5        4.9   1
+C4              C-terminal tandem repeated domain in    -69.4        8.5   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ASC               1/1      26   456 ..     1   662 []   591.4 2.6e-175
+Defensin_beta     1/1     169   200 ..     1    36 []   -13.8      4.8
+C4                1/1     245   327 ..     1   116 []   -69.4      8.5
+LRRNT             1/1     355   385 ..     1    34 []    -3.5      4.9
+MtrG              1/1     401   453 ..     1    72 []   -35.9      3.2
+
+Alignments of top-scoring domains:
+ASC: domain 1 of 1, from 26 to 456: score 591.4, E = 2.6e-175
+                   *->FCenTTiHGikrIfcskrnrlkRafWlllflvslglllwQigilisk
+                          +T HGi +If ++r++lkR++W+l+f++sl+ll+  +  +i++
+  2QTS:E|PDB    26    ----STLHGISHIFSYERLSLKRVVWALCFMGSLALLALVCTNRIQY 68   
+
+                   YlsyptvsvnielkfpveklpFPaVTiCNLNPyKyseitsievlelndtl
+                   Y+ yp+v+  +e+     +l+FPaVT CNLN +++s      + + nd++
+  2QTS:E|PDB    69 YFLYPHVTKLDEVAA--TRLTFPAVTFCNLNEFRFS------RVTKNDLY 110  
+
+                   saftlallysgsaksegvekevnsskgrssksaqqrrngkslrgarfplv
+                   +a++l+ l+            +n                           
+  2QTS:E|PDB   111 HAGELLALL------------NN--------------------------- 121  
+
+                   faeclcpsqpcvsderesrrtekkalpstpesrcilakdrvkvgfwlCsn
+                                            + ++p++                  
+  2QTS:E|PDB   122 -------------------------RYEIPDT------------------ 128  
+
+                   ntWekkeCseCndhgfCedpnttgtghkkpcicveskdlvlvnktiriwn
+                                                                     
+  2QTS:E|PDB     - -------------------------------------------------- -    
+
+                   pnyttpseepettEapetceaqgytsgtdavaewyrakenlifamaalse
+                                    ++++    +++++ a++ ++k+ + f m    +
+  2QTS:E|PDB   129 -----------------QTADEKQLEILQDKANFRNFKP-KPFNM----L 156  
+
+                   eflirasyscdelilkCsFnGkpCnicrdFttfvdpeyGnCYtFNlnrst
+                   ef++ra+++ +e++l+C+F+G++C+  +dF+ +++ +yG+CYtFN ++++
+  2QTS:E|PDB   157 EFYDRAGHDIREMLLSCFFRGEQCSP-EDFKVVFT-RYGKCYTFNAGQDG 204  
+
+                   sIYRdeyvnnkndletkvlddsnlltssraGpglqyGLrlvLdvnqseyl
+                                         + l ++++G+  ++GL+++Ld++q+eyl
+  2QTS:E|PDB   205 ---------------------KPRLITMKGGT--GNGLEIMLDIQQDEYL 231  
+
+                   PtteateAlfetsfeaGvRvfvHeqdepPfpdsfGfsappGtessigikl
+                   P + +t+   etsfeaG++v++H+qdepP +d++Gf+++pG+++++++++
+  2QTS:E|PDB   232 PVWGETD---ETSFEAGIKVQIHSQDEPPLIDQLGFGVAPGFQTFVSCQE 278  
+
+                   kqlvrLpavaeitapYGnCtedgedvdveNLYayiytnssYsleaClrsC
+                   ++l++Lp      +p+G+C  ++ d+          +  +Ys++aC+++C
+  2QTS:E|PDB   279 QRLIYLP------PPWGDCKATTGDS---------EFYDTYSITACRIDC 313  
+
+                   fQrymvkkCGCadpryPlkEpngakyCtpykhpdcgclynklldsgelhk
+                   ++ry+v++C+C+++++P    ++a+yCtp+++++c+++  +l+  +  +k
+  2QTS:E|PDB   314 ETRYLVENCNCRMVHMP----GDAPYCTPEQYKECADP--ALD--FLVEK 355  
+
+                   lgasiefsvpcqCkCpqpCneteYtvtySyakWPSaasedwlgsvlskfs
+                   +         ++C+C +pCn t+Y +++S++k+PS+as+++l+++ +k++
+  2QTS:E|PDB   356 DN--------EYCVCEMPCNVTRYGKELSMVKIPSKASAKYLAKKYNKSE 397  
+
+                   sekienniyrnniaminIFfeelNYesleEseaytvvnLLSdlGGqmGLW
+                    ++ en      i++++IFfe+lNYe++e+++ay+v+ LL+d+GGqmGL+
+  2QTS:E|PDB   398 QYIGEN------ILVLDIFFEALNYETIEQKKAYEVAGLLGDIGGQMGLF 441  
+
+                   lGmSVlsvlElielf<-*
+                   +G+S+l+vlEl++++   
+  2QTS:E|PDB   442 IGASILTVLELFDYA    456  
+
+Defensin_beta: domain 1 of 1, from 169 to 200: score -13.8, E = 4.8
+                   *->dpvsCrrngGfCrpgrCpggerqIGtCsgpkvkCCr<-*
+                        +sC+ +g +C p      +++ G+C+ +         
+  2QTS:E|PDB   169    MLLSCFFRGEQCSPEDFKVVFTRYGKCYTFNA----    200  
+
+C4: domain 1 of 1, from 245 to 327: score -69.4, E = 8.5
+                   *->gfliavHSQttsiPqCPaGwssLWtGYSflmvtganeeGhGQdLgsp
+                      g+ + +HSQ++     P+   +L  G    ++t        Q L   
+  2QTS:E|PDB   245    GIKVQIHSQDE-----PPLIDQLGFGVAPGFQTF--VSCQEQRL--- 281  
+
+                   GSCLerFrtmPFieCng.rgvCnYasRndySfWLstiepedqFkaPmpmt
+                           + P   C  ++g  ++++    ++  +         + +++ 
+  2QTS:E|PDB   282 -----IYLPPPWGDCKAtTGDSEFYD----TYSITACRI-----DCETRY 317  
+
+                   pkagreirpyISRCqVCekp<-*
+                   ++++         C  C+ +   
+  2QTS:E|PDB   318 LVEN---------CN-CRMV    327  
+
+LRRNT: domain 1 of 1, from 355 to 385: score -3.5, E = 4.9
+                   *->aCpapCtCserytdglvVdCsgrgLt.vavPrdlP<-*
+                           C+C+    ++++V   g+ L  v++P++ +   
+  2QTS:E|PDB   355    KDNEYCVCE----MPCNVTRYGKELSmVKIPSKAS    385  
+
+MtrG: domain 1 of 1, from 401 to 453: score -35.9, E = 3.2
+                   *->deKttvPkvlvepddfnevkkRLDeIEeKvEFvngEvfQriGKkvGR
+                       e      +lv    f++++     IE K  +   Ev+ + G     
+  2QTS:E|PDB   401    GEN-----ILVLDIFFEALNY--ETIEQKKAY---EVAGLLG----- 432  
+
+                   DIGILYGlVIGLiLslIlavlsvlF<-*
+                   DIG   Gl+IG     Il+vl  lF   
+  2QTS:E|PDB   433 DIGGQMGLFIGAS---ILTVLE-LF    453  
+
+//
+
+Query sequence: 2QTS:D|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ASC             Amiloride-sensitive sodium channel      591.4   2.6e-175   1
+MtrG            Tetrahydromethanopterin S-methyltrans   -35.9        3.2   1
+Defensin_beta   Beta defensin                           -13.8        4.8   1
+LRRNT           Leucine rich repeat N-terminal domain    -3.5        4.9   1
+C4              C-terminal tandem repeated domain in    -69.4        8.5   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ASC               1/1      26   456 ..     1   662 []   591.4 2.6e-175
+Defensin_beta     1/1     169   200 ..     1    36 []   -13.8      4.8
+C4                1/1     245   327 ..     1   116 []   -69.4      8.5
+LRRNT             1/1     355   385 ..     1    34 []    -3.5      4.9
+MtrG              1/1     401   453 ..     1    72 []   -35.9      3.2
+
+Alignments of top-scoring domains:
+ASC: domain 1 of 1, from 26 to 456: score 591.4, E = 2.6e-175
+                   *->FCenTTiHGikrIfcskrnrlkRafWlllflvslglllwQigilisk
+                          +T HGi +If ++r++lkR++W+l+f++sl+ll+  +  +i++
+  2QTS:D|PDB    26    ----STLHGISHIFSYERLSLKRVVWALCFMGSLALLALVCTNRIQY 68   
+
+                   YlsyptvsvnielkfpveklpFPaVTiCNLNPyKyseitsievlelndtl
+                   Y+ yp+v+  +e+     +l+FPaVT CNLN +++s      + + nd++
+  2QTS:D|PDB    69 YFLYPHVTKLDEVAA--TRLTFPAVTFCNLNEFRFS------RVTKNDLY 110  
+
+                   saftlallysgsaksegvekevnsskgrssksaqqrrngkslrgarfplv
+                   +a++l+ l+            +n                           
+  2QTS:D|PDB   111 HAGELLALL------------NN--------------------------- 121  
+
+                   faeclcpsqpcvsderesrrtekkalpstpesrcilakdrvkvgfwlCsn
+                                            + ++p++                  
+  2QTS:D|PDB   122 -------------------------RYEIPDT------------------ 128  
+
+                   ntWekkeCseCndhgfCedpnttgtghkkpcicveskdlvlvnktiriwn
+                                                                     
+  2QTS:D|PDB     - -------------------------------------------------- -    
+
+                   pnyttpseepettEapetceaqgytsgtdavaewyrakenlifamaalse
+                                    ++++    +++++ a++ ++k+ + f m    +
+  2QTS:D|PDB   129 -----------------QTADEKQLEILQDKANFRNFKP-KPFNM----L 156  
+
+                   eflirasyscdelilkCsFnGkpCnicrdFttfvdpeyGnCYtFNlnrst
+                   ef++ra+++ +e++l+C+F+G++C+  +dF+ +++ +yG+CYtFN ++++
+  2QTS:D|PDB   157 EFYDRAGHDIREMLLSCFFRGEQCSP-EDFKVVFT-RYGKCYTFNAGQDG 204  
+
+                   sIYRdeyvnnkndletkvlddsnlltssraGpglqyGLrlvLdvnqseyl
+                                         + l ++++G+  ++GL+++Ld++q+eyl
+  2QTS:D|PDB   205 ---------------------KPRLITMKGGT--GNGLEIMLDIQQDEYL 231  
+
+                   PtteateAlfetsfeaGvRvfvHeqdepPfpdsfGfsappGtessigikl
+                   P + +t+   etsfeaG++v++H+qdepP +d++Gf+++pG+++++++++
+  2QTS:D|PDB   232 PVWGETD---ETSFEAGIKVQIHSQDEPPLIDQLGFGVAPGFQTFVSCQE 278  
+
+                   kqlvrLpavaeitapYGnCtedgedvdveNLYayiytnssYsleaClrsC
+                   ++l++Lp      +p+G+C  ++ d+          +  +Ys++aC+++C
+  2QTS:D|PDB   279 QRLIYLP------PPWGDCKATTGDS---------EFYDTYSITACRIDC 313  
+
+                   fQrymvkkCGCadpryPlkEpngakyCtpykhpdcgclynklldsgelhk
+                   ++ry+v++C+C+++++P    ++a+yCtp+++++c+++  +l+  +  +k
+  2QTS:D|PDB   314 ETRYLVENCNCRMVHMP----GDAPYCTPEQYKECADP--ALD--FLVEK 355  
+
+                   lgasiefsvpcqCkCpqpCneteYtvtySyakWPSaasedwlgsvlskfs
+                   +         ++C+C +pCn t+Y +++S++k+PS+as+++l+++ +k++
+  2QTS:D|PDB   356 DN--------EYCVCEMPCNVTRYGKELSMVKIPSKASAKYLAKKYNKSE 397  
+
+                   sekienniyrnniaminIFfeelNYesleEseaytvvnLLSdlGGqmGLW
+                    ++ en      i++++IFfe+lNYe++e+++ay+v+ LL+d+GGqmGL+
+  2QTS:D|PDB   398 QYIGEN------ILVLDIFFEALNYETIEQKKAYEVAGLLGDIGGQMGLF 441  
+
+                   lGmSVlsvlElielf<-*
+                   +G+S+l+vlEl++++   
+  2QTS:D|PDB   442 IGASILTVLELFDYA    456  
+
+Defensin_beta: domain 1 of 1, from 169 to 200: score -13.8, E = 4.8
+                   *->dpvsCrrngGfCrpgrCpggerqIGtCsgpkvkCCr<-*
+                        +sC+ +g +C p      +++ G+C+ +         
+  2QTS:D|PDB   169    MLLSCFFRGEQCSPEDFKVVFTRYGKCYTFNA----    200  
+
+C4: domain 1 of 1, from 245 to 327: score -69.4, E = 8.5
+                   *->gfliavHSQttsiPqCPaGwssLWtGYSflmvtganeeGhGQdLgsp
+                      g+ + +HSQ++     P+   +L  G    ++t        Q L   
+  2QTS:D|PDB   245    GIKVQIHSQDE-----PPLIDQLGFGVAPGFQTF--VSCQEQRL--- 281  
+
+                   GSCLerFrtmPFieCng.rgvCnYasRndySfWLstiepedqFkaPmpmt
+                           + P   C  ++g  ++++    ++  +         + +++ 
+  2QTS:D|PDB   282 -----IYLPPPWGDCKAtTGDSEFYD----TYSITACRI-----DCETRY 317  
+
+                   pkagreirpyISRCqVCekp<-*
+                   ++++         C  C+ +   
+  2QTS:D|PDB   318 LVEN---------CN-CRMV    327  
+
+LRRNT: domain 1 of 1, from 355 to 385: score -3.5, E = 4.9
+                   *->aCpapCtCserytdglvVdCsgrgLt.vavPrdlP<-*
+                           C+C+    ++++V   g+ L  v++P++ +   
+  2QTS:D|PDB   355    KDNEYCVCE----MPCNVTRYGKELSmVKIPSKAS    385  
+
+MtrG: domain 1 of 1, from 401 to 453: score -35.9, E = 3.2
+                   *->deKttvPkvlvepddfnevkkRLDeIEeKvEFvngEvfQriGKkvGR
+                       e      +lv    f++++     IE K  +   Ev+ + G     
+  2QTS:D|PDB   401    GEN-----ILVLDIFFEALNY--ETIEQKKAY---EVAGLLG----- 432  
+
+                   DIGILYGlVIGLiLslIlavlsvlF<-*
+                   DIG   Gl+IG     Il+vl  lF   
+  2QTS:D|PDB   433 DIGGQMGLFIGAS---ILTVLE-LF    453  
+
+//
+
+Query sequence: 2QTS:C|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ASC             Amiloride-sensitive sodium channel      591.4   2.6e-175   1
+MtrG            Tetrahydromethanopterin S-methyltrans   -35.9        3.2   1
+Defensin_beta   Beta defensin                           -13.8        4.8   1
+LRRNT           Leucine rich repeat N-terminal domain    -3.5        4.9   1
+C4              C-terminal tandem repeated domain in    -69.4        8.5   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ASC               1/1      26   456 ..     1   662 []   591.4 2.6e-175
+Defensin_beta     1/1     169   200 ..     1    36 []   -13.8      4.8
+C4                1/1     245   327 ..     1   116 []   -69.4      8.5
+LRRNT             1/1     355   385 ..     1    34 []    -3.5      4.9
+MtrG              1/1     401   453 ..     1    72 []   -35.9      3.2
+
+Alignments of top-scoring domains:
+ASC: domain 1 of 1, from 26 to 456: score 591.4, E = 2.6e-175
+                   *->FCenTTiHGikrIfcskrnrlkRafWlllflvslglllwQigilisk
+                          +T HGi +If ++r++lkR++W+l+f++sl+ll+  +  +i++
+  2QTS:C|PDB    26    ----STLHGISHIFSYERLSLKRVVWALCFMGSLALLALVCTNRIQY 68   
+
+                   YlsyptvsvnielkfpveklpFPaVTiCNLNPyKyseitsievlelndtl
+                   Y+ yp+v+  +e+     +l+FPaVT CNLN +++s      + + nd++
+  2QTS:C|PDB    69 YFLYPHVTKLDEVAA--TRLTFPAVTFCNLNEFRFS------RVTKNDLY 110  
+
+                   saftlallysgsaksegvekevnsskgrssksaqqrrngkslrgarfplv
+                   +a++l+ l+            +n                           
+  2QTS:C|PDB   111 HAGELLALL------------NN--------------------------- 121  
+
+                   faeclcpsqpcvsderesrrtekkalpstpesrcilakdrvkvgfwlCsn
+                                            + ++p++                  
+  2QTS:C|PDB   122 -------------------------RYEIPDT------------------ 128  
+
+                   ntWekkeCseCndhgfCedpnttgtghkkpcicveskdlvlvnktiriwn
+                                                                     
+  2QTS:C|PDB     - -------------------------------------------------- -    
+
+                   pnyttpseepettEapetceaqgytsgtdavaewyrakenlifamaalse
+                                    ++++    +++++ a++ ++k+ + f m    +
+  2QTS:C|PDB   129 -----------------QTADEKQLEILQDKANFRNFKP-KPFNM----L 156  
+
+                   eflirasyscdelilkCsFnGkpCnicrdFttfvdpeyGnCYtFNlnrst
+                   ef++ra+++ +e++l+C+F+G++C+  +dF+ +++ +yG+CYtFN ++++
+  2QTS:C|PDB   157 EFYDRAGHDIREMLLSCFFRGEQCSP-EDFKVVFT-RYGKCYTFNAGQDG 204  
+
+                   sIYRdeyvnnkndletkvlddsnlltssraGpglqyGLrlvLdvnqseyl
+                                         + l ++++G+  ++GL+++Ld++q+eyl
+  2QTS:C|PDB   205 ---------------------KPRLITMKGGT--GNGLEIMLDIQQDEYL 231  
+
+                   PtteateAlfetsfeaGvRvfvHeqdepPfpdsfGfsappGtessigikl
+                   P + +t+   etsfeaG++v++H+qdepP +d++Gf+++pG+++++++++
+  2QTS:C|PDB   232 PVWGETD---ETSFEAGIKVQIHSQDEPPLIDQLGFGVAPGFQTFVSCQE 278  
+
+                   kqlvrLpavaeitapYGnCtedgedvdveNLYayiytnssYsleaClrsC
+                   ++l++Lp      +p+G+C  ++ d+          +  +Ys++aC+++C
+  2QTS:C|PDB   279 QRLIYLP------PPWGDCKATTGDS---------EFYDTYSITACRIDC 313  
+
+                   fQrymvkkCGCadpryPlkEpngakyCtpykhpdcgclynklldsgelhk
+                   ++ry+v++C+C+++++P    ++a+yCtp+++++c+++  +l+  +  +k
+  2QTS:C|PDB   314 ETRYLVENCNCRMVHMP----GDAPYCTPEQYKECADP--ALD--FLVEK 355  
+
+                   lgasiefsvpcqCkCpqpCneteYtvtySyakWPSaasedwlgsvlskfs
+                   +         ++C+C +pCn t+Y +++S++k+PS+as+++l+++ +k++
+  2QTS:C|PDB   356 DN--------EYCVCEMPCNVTRYGKELSMVKIPSKASAKYLAKKYNKSE 397  
+
+                   sekienniyrnniaminIFfeelNYesleEseaytvvnLLSdlGGqmGLW
+                    ++ en      i++++IFfe+lNYe++e+++ay+v+ LL+d+GGqmGL+
+  2QTS:C|PDB   398 QYIGEN------ILVLDIFFEALNYETIEQKKAYEVAGLLGDIGGQMGLF 441  
+
+                   lGmSVlsvlElielf<-*
+                   +G+S+l+vlEl++++   
+  2QTS:C|PDB   442 IGASILTVLELFDYA    456  
+
+Defensin_beta: domain 1 of 1, from 169 to 200: score -13.8, E = 4.8
+                   *->dpvsCrrngGfCrpgrCpggerqIGtCsgpkvkCCr<-*
+                        +sC+ +g +C p      +++ G+C+ +         
+  2QTS:C|PDB   169    MLLSCFFRGEQCSPEDFKVVFTRYGKCYTFNA----    200  
+
+C4: domain 1 of 1, from 245 to 327: score -69.4, E = 8.5
+                   *->gfliavHSQttsiPqCPaGwssLWtGYSflmvtganeeGhGQdLgsp
+                      g+ + +HSQ++     P+   +L  G    ++t        Q L   
+  2QTS:C|PDB   245    GIKVQIHSQDE-----PPLIDQLGFGVAPGFQTF--VSCQEQRL--- 281  
+
+                   GSCLerFrtmPFieCng.rgvCnYasRndySfWLstiepedqFkaPmpmt
+                           + P   C  ++g  ++++    ++  +         + +++ 
+  2QTS:C|PDB   282 -----IYLPPPWGDCKAtTGDSEFYD----TYSITACRI-----DCETRY 317  
+
+                   pkagreirpyISRCqVCekp<-*
+                   ++++         C  C+ +   
+  2QTS:C|PDB   318 LVEN---------CN-CRMV    327  
+
+LRRNT: domain 1 of 1, from 355 to 385: score -3.5, E = 4.9
+                   *->aCpapCtCserytdglvVdCsgrgLt.vavPrdlP<-*
+                           C+C+    ++++V   g+ L  v++P++ +   
+  2QTS:C|PDB   355    KDNEYCVCE----MPCNVTRYGKELSmVKIPSKAS    385  
+
+MtrG: domain 1 of 1, from 401 to 453: score -35.9, E = 3.2
+                   *->deKttvPkvlvepddfnevkkRLDeIEeKvEFvngEvfQriGKkvGR
+                       e      +lv    f++++     IE K  +   Ev+ + G     
+  2QTS:C|PDB   401    GEN-----ILVLDIFFEALNY--ETIEQKKAY---EVAGLLG----- 432  
+
+                   DIGILYGlVIGLiLslIlavlsvlF<-*
+                   DIG   Gl+IG     Il+vl  lF   
+  2QTS:C|PDB   433 DIGGQMGLFIGAS---ILTVLE-LF    453  
+
+//
+
+Query sequence: 2QTS:B|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ASC             Amiloride-sensitive sodium channel      591.4   2.6e-175   1
+MtrG            Tetrahydromethanopterin S-methyltrans   -35.9        3.2   1
+Defensin_beta   Beta defensin                           -13.8        4.8   1
+LRRNT           Leucine rich repeat N-terminal domain    -3.5        4.9   1
+C4              C-terminal tandem repeated domain in    -69.4        8.5   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ASC               1/1      26   456 ..     1   662 []   591.4 2.6e-175
+Defensin_beta     1/1     169   200 ..     1    36 []   -13.8      4.8
+C4                1/1     245   327 ..     1   116 []   -69.4      8.5
+LRRNT             1/1     355   385 ..     1    34 []    -3.5      4.9
+MtrG              1/1     401   453 ..     1    72 []   -35.9      3.2
+
+Alignments of top-scoring domains:
+ASC: domain 1 of 1, from 26 to 456: score 591.4, E = 2.6e-175
+                   *->FCenTTiHGikrIfcskrnrlkRafWlllflvslglllwQigilisk
+                          +T HGi +If ++r++lkR++W+l+f++sl+ll+  +  +i++
+  2QTS:B|PDB    26    ----STLHGISHIFSYERLSLKRVVWALCFMGSLALLALVCTNRIQY 68   
+
+                   YlsyptvsvnielkfpveklpFPaVTiCNLNPyKyseitsievlelndtl
+                   Y+ yp+v+  +e+     +l+FPaVT CNLN +++s      + + nd++
+  2QTS:B|PDB    69 YFLYPHVTKLDEVAA--TRLTFPAVTFCNLNEFRFS------RVTKNDLY 110  
+
+                   saftlallysgsaksegvekevnsskgrssksaqqrrngkslrgarfplv
+                   +a++l+ l+            +n                           
+  2QTS:B|PDB   111 HAGELLALL------------NN--------------------------- 121  
+
+                   faeclcpsqpcvsderesrrtekkalpstpesrcilakdrvkvgfwlCsn
+                                            + ++p++                  
+  2QTS:B|PDB   122 -------------------------RYEIPDT------------------ 128  
+
+                   ntWekkeCseCndhgfCedpnttgtghkkpcicveskdlvlvnktiriwn
+                                                                     
+  2QTS:B|PDB     - -------------------------------------------------- -    
+
+                   pnyttpseepettEapetceaqgytsgtdavaewyrakenlifamaalse
+                                    ++++    +++++ a++ ++k+ + f m    +
+  2QTS:B|PDB   129 -----------------QTADEKQLEILQDKANFRNFKP-KPFNM----L 156  
+
+                   eflirasyscdelilkCsFnGkpCnicrdFttfvdpeyGnCYtFNlnrst
+                   ef++ra+++ +e++l+C+F+G++C+  +dF+ +++ +yG+CYtFN ++++
+  2QTS:B|PDB   157 EFYDRAGHDIREMLLSCFFRGEQCSP-EDFKVVFT-RYGKCYTFNAGQDG 204  
+
+                   sIYRdeyvnnkndletkvlddsnlltssraGpglqyGLrlvLdvnqseyl
+                                         + l ++++G+  ++GL+++Ld++q+eyl
+  2QTS:B|PDB   205 ---------------------KPRLITMKGGT--GNGLEIMLDIQQDEYL 231  
+
+                   PtteateAlfetsfeaGvRvfvHeqdepPfpdsfGfsappGtessigikl
+                   P + +t+   etsfeaG++v++H+qdepP +d++Gf+++pG+++++++++
+  2QTS:B|PDB   232 PVWGETD---ETSFEAGIKVQIHSQDEPPLIDQLGFGVAPGFQTFVSCQE 278  
+
+                   kqlvrLpavaeitapYGnCtedgedvdveNLYayiytnssYsleaClrsC
+                   ++l++Lp      +p+G+C  ++ d+          +  +Ys++aC+++C
+  2QTS:B|PDB   279 QRLIYLP------PPWGDCKATTGDS---------EFYDTYSITACRIDC 313  
+
+                   fQrymvkkCGCadpryPlkEpngakyCtpykhpdcgclynklldsgelhk
+                   ++ry+v++C+C+++++P    ++a+yCtp+++++c+++  +l+  +  +k
+  2QTS:B|PDB   314 ETRYLVENCNCRMVHMP----GDAPYCTPEQYKECADP--ALD--FLVEK 355  
+
+                   lgasiefsvpcqCkCpqpCneteYtvtySyakWPSaasedwlgsvlskfs
+                   +         ++C+C +pCn t+Y +++S++k+PS+as+++l+++ +k++
+  2QTS:B|PDB   356 DN--------EYCVCEMPCNVTRYGKELSMVKIPSKASAKYLAKKYNKSE 397  
+
+                   sekienniyrnniaminIFfeelNYesleEseaytvvnLLSdlGGqmGLW
+                    ++ en      i++++IFfe+lNYe++e+++ay+v+ LL+d+GGqmGL+
+  2QTS:B|PDB   398 QYIGEN------ILVLDIFFEALNYETIEQKKAYEVAGLLGDIGGQMGLF 441  
+
+                   lGmSVlsvlElielf<-*
+                   +G+S+l+vlEl++++   
+  2QTS:B|PDB   442 IGASILTVLELFDYA    456  
+
+Defensin_beta: domain 1 of 1, from 169 to 200: score -13.8, E = 4.8
+                   *->dpvsCrrngGfCrpgrCpggerqIGtCsgpkvkCCr<-*
+                        +sC+ +g +C p      +++ G+C+ +         
+  2QTS:B|PDB   169    MLLSCFFRGEQCSPEDFKVVFTRYGKCYTFNA----    200  
+
+C4: domain 1 of 1, from 245 to 327: score -69.4, E = 8.5
+                   *->gfliavHSQttsiPqCPaGwssLWtGYSflmvtganeeGhGQdLgsp
+                      g+ + +HSQ++     P+   +L  G    ++t        Q L   
+  2QTS:B|PDB   245    GIKVQIHSQDE-----PPLIDQLGFGVAPGFQTF--VSCQEQRL--- 281  
+
+                   GSCLerFrtmPFieCng.rgvCnYasRndySfWLstiepedqFkaPmpmt
+                           + P   C  ++g  ++++    ++  +         + +++ 
+  2QTS:B|PDB   282 -----IYLPPPWGDCKAtTGDSEFYD----TYSITACRI-----DCETRY 317  
+
+                   pkagreirpyISRCqVCekp<-*
+                   ++++         C  C+ +   
+  2QTS:B|PDB   318 LVEN---------CN-CRMV    327  
+
+LRRNT: domain 1 of 1, from 355 to 385: score -3.5, E = 4.9
+                   *->aCpapCtCserytdglvVdCsgrgLt.vavPrdlP<-*
+                           C+C+    ++++V   g+ L  v++P++ +   
+  2QTS:B|PDB   355    KDNEYCVCE----MPCNVTRYGKELSmVKIPSKAS    385  
+
+MtrG: domain 1 of 1, from 401 to 453: score -35.9, E = 3.2
+                   *->deKttvPkvlvepddfnevkkRLDeIEeKvEFvngEvfQriGKkvGR
+                       e      +lv    f++++     IE K  +   Ev+ + G     
+  2QTS:B|PDB   401    GEN-----ILVLDIFFEALNY--ETIEQKKAY---EVAGLLG----- 432  
+
+                   DIGILYGlVIGLiLslIlavlsvlF<-*
+                   DIG   Gl+IG     Il+vl  lF   
+  2QTS:B|PDB   433 DIGGQMGLFIGAS---ILTVLE-LF    453  
+
+//
+
+Query sequence: 2QTS:A|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ASC             Amiloride-sensitive sodium channel      591.4   2.6e-175   1
+MtrG            Tetrahydromethanopterin S-methyltrans   -35.9        3.2   1
+Defensin_beta   Beta defensin                           -13.8        4.8   1
+LRRNT           Leucine rich repeat N-terminal domain    -3.5        4.9   1
+C4              C-terminal tandem repeated domain in    -69.4        8.5   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ASC               1/1      26   456 ..     1   662 []   591.4 2.6e-175
+Defensin_beta     1/1     169   200 ..     1    36 []   -13.8      4.8
+C4                1/1     245   327 ..     1   116 []   -69.4      8.5
+LRRNT             1/1     355   385 ..     1    34 []    -3.5      4.9
+MtrG              1/1     401   453 ..     1    72 []   -35.9      3.2
+
+Alignments of top-scoring domains:
+ASC: domain 1 of 1, from 26 to 456: score 591.4, E = 2.6e-175
+                   *->FCenTTiHGikrIfcskrnrlkRafWlllflvslglllwQigilisk
+                          +T HGi +If ++r++lkR++W+l+f++sl+ll+  +  +i++
+  2QTS:A|PDB    26    ----STLHGISHIFSYERLSLKRVVWALCFMGSLALLALVCTNRIQY 68   
+
+                   YlsyptvsvnielkfpveklpFPaVTiCNLNPyKyseitsievlelndtl
+                   Y+ yp+v+  +e+     +l+FPaVT CNLN +++s      + + nd++
+  2QTS:A|PDB    69 YFLYPHVTKLDEVAA--TRLTFPAVTFCNLNEFRFS------RVTKNDLY 110  
+
+                   saftlallysgsaksegvekevnsskgrssksaqqrrngkslrgarfplv
+                   +a++l+ l+            +n                           
+  2QTS:A|PDB   111 HAGELLALL------------NN--------------------------- 121  
+
+                   faeclcpsqpcvsderesrrtekkalpstpesrcilakdrvkvgfwlCsn
+                                            + ++p++                  
+  2QTS:A|PDB   122 -------------------------RYEIPDT------------------ 128  
+
+                   ntWekkeCseCndhgfCedpnttgtghkkpcicveskdlvlvnktiriwn
+                                                                     
+  2QTS:A|PDB     - -------------------------------------------------- -    
+
+                   pnyttpseepettEapetceaqgytsgtdavaewyrakenlifamaalse
+                                    ++++    +++++ a++ ++k+ + f m    +
+  2QTS:A|PDB   129 -----------------QTADEKQLEILQDKANFRNFKP-KPFNM----L 156  
+
+                   eflirasyscdelilkCsFnGkpCnicrdFttfvdpeyGnCYtFNlnrst
+                   ef++ra+++ +e++l+C+F+G++C+  +dF+ +++ +yG+CYtFN ++++
+  2QTS:A|PDB   157 EFYDRAGHDIREMLLSCFFRGEQCSP-EDFKVVFT-RYGKCYTFNAGQDG 204  
+
+                   sIYRdeyvnnkndletkvlddsnlltssraGpglqyGLrlvLdvnqseyl
+                                         + l ++++G+  ++GL+++Ld++q+eyl
+  2QTS:A|PDB   205 ---------------------KPRLITMKGGT--GNGLEIMLDIQQDEYL 231  
+
+                   PtteateAlfetsfeaGvRvfvHeqdepPfpdsfGfsappGtessigikl
+                   P + +t+   etsfeaG++v++H+qdepP +d++Gf+++pG+++++++++
+  2QTS:A|PDB   232 PVWGETD---ETSFEAGIKVQIHSQDEPPLIDQLGFGVAPGFQTFVSCQE 278  
+
+                   kqlvrLpavaeitapYGnCtedgedvdveNLYayiytnssYsleaClrsC
+                   ++l++Lp      +p+G+C  ++ d+          +  +Ys++aC+++C
+  2QTS:A|PDB   279 QRLIYLP------PPWGDCKATTGDS---------EFYDTYSITACRIDC 313  
+
+                   fQrymvkkCGCadpryPlkEpngakyCtpykhpdcgclynklldsgelhk
+                   ++ry+v++C+C+++++P    ++a+yCtp+++++c+++  +l+  +  +k
+  2QTS:A|PDB   314 ETRYLVENCNCRMVHMP----GDAPYCTPEQYKECADP--ALD--FLVEK 355  
+
+                   lgasiefsvpcqCkCpqpCneteYtvtySyakWPSaasedwlgsvlskfs
+                   +         ++C+C +pCn t+Y +++S++k+PS+as+++l+++ +k++
+  2QTS:A|PDB   356 DN--------EYCVCEMPCNVTRYGKELSMVKIPSKASAKYLAKKYNKSE 397  
+
+                   sekienniyrnniaminIFfeelNYesleEseaytvvnLLSdlGGqmGLW
+                    ++ en      i++++IFfe+lNYe++e+++ay+v+ LL+d+GGqmGL+
+  2QTS:A|PDB   398 QYIGEN------ILVLDIFFEALNYETIEQKKAYEVAGLLGDIGGQMGLF 441  
+
+                   lGmSVlsvlElielf<-*
+                   +G+S+l+vlEl++++   
+  2QTS:A|PDB   442 IGASILTVLELFDYA    456  
+
+Defensin_beta: domain 1 of 1, from 169 to 200: score -13.8, E = 4.8
+                   *->dpvsCrrngGfCrpgrCpggerqIGtCsgpkvkCCr<-*
+                        +sC+ +g +C p      +++ G+C+ +         
+  2QTS:A|PDB   169    MLLSCFFRGEQCSPEDFKVVFTRYGKCYTFNA----    200  
+
+C4: domain 1 of 1, from 245 to 327: score -69.4, E = 8.5
+                   *->gfliavHSQttsiPqCPaGwssLWtGYSflmvtganeeGhGQdLgsp
+                      g+ + +HSQ++     P+   +L  G    ++t        Q L   
+  2QTS:A|PDB   245    GIKVQIHSQDE-----PPLIDQLGFGVAPGFQTF--VSCQEQRL--- 281  
+
+                   GSCLerFrtmPFieCng.rgvCnYasRndySfWLstiepedqFkaPmpmt
+                           + P   C  ++g  ++++    ++  +         + +++ 
+  2QTS:A|PDB   282 -----IYLPPPWGDCKAtTGDSEFYD----TYSITACRI-----DCETRY 317  
+
+                   pkagreirpyISRCqVCekp<-*
+                   ++++         C  C+ +   
+  2QTS:A|PDB   318 LVEN---------CN-CRMV    327  
+
+LRRNT: domain 1 of 1, from 355 to 385: score -3.5, E = 4.9
+                   *->aCpapCtCserytdglvVdCsgrgLt.vavPrdlP<-*
+                           C+C+    ++++V   g+ L  v++P++ +   
+  2QTS:A|PDB   355    KDNEYCVCE----MPCNVTRYGKELSmVKIPSKAS    385  
+
+MtrG: domain 1 of 1, from 401 to 453: score -35.9, E = 3.2
+                   *->deKttvPkvlvepddfnevkkRLDeIEeKvEFvngEvfQriGKkvGR
+                       e      +lv    f++++     IE K  +   Ev+ + G     
+  2QTS:A|PDB   401    GEN-----ILVLDIFFEALNY--ETIEQKKAY---EVAGLLG----- 432  
+
+                   DIGILYGlVIGLiLslIlavlsvlF<-*
+                   DIG   Gl+IG     Il+vl  lF   
+  2QTS:A|PDB   433 DIGGQMGLFIGAS---ILTVLE-LF    453  
+
+//

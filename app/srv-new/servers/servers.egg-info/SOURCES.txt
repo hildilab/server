@@ -1,0 +1,8 @@
+setup.py
+servers.egg-info/PKG-INFO
+servers.egg-info/SOURCES.txt
+servers.egg-info/dependency_links.txt
+servers.egg-info/requires.txt
+servers.egg-info/top_level.txt
+static/__init__.py
+static/local.py

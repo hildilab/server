@@ -1,0 +1,1 @@
+propensity matrices and corresponding standard deviation matrices (based on all subgroups excluding one protein)

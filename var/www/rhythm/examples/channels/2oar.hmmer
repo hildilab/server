@@ -1,0 +1,533 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 Pfam_ls
+Sequence file:            channels/2oar.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: 2OAR:E|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+MscL            Large-conductance mechanosensitive ch   249.9    1.6e-72   1
+SecE            SecE/Sec61-gamma subunits of protein     -9.1       0.68   1
+4HBT            Thioesterase superfamily                -13.2        1.6   1
+PsiE            Phosphate-starvation-inducible E        -74.2        3.7   1
+BTB             BTB/POZ domain                          -38.6        3.8   1
+BofA            SigmaK-factor processing regulatory p   -53.5        8.7   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+PsiE              1/1       1   102 [.     1   172 []   -74.2      3.7
+MscL              1/1       1   124 [.     1   152 []   249.9  1.6e-72
+SecE              1/1       2    47 ..     1    57 []    -9.1     0.68
+BTB               1/1       5    97 ..     1   135 []   -38.6      3.8
+4HBT              1/1      23   126 ..     1    77 []   -13.2      1.6
+BofA              1/1      38    98 ..     1    79 []   -53.5      8.7
+
+Alignments of top-scoring domains:
+PsiE: domain 1 of 1, from 1 to 102: score -74.2, E = 3.7
+                   *->MkqfsnhrlkkvsrhfAESLGaklLqallnllLiaiglalvvfLgrE
+                      M++ ++++ ++           +++            la+ v +g +
+  2OAR:E|PDB     1    MLKGFKEF-LAR---------GNIVD-----------LAVAVVIGTA 26   
+
+                   tvhlvnvgfkslseqevSyYvlledILlfFiYfEflALIvkYfksgfHfP
+                   +  lv +                ++I +      ++  I+  + s+    
+  2OAR:E|PDB    27 FTALVTKFT--------------DSIITP-----LINRIGVNAQSD---- 53   
+
+                   LRYfIYIGITAiiRLiIvDhksldtPddgvlliSvAi..LlLaaalfvir
+                            + i R  I + ++ d    + +l+S+Ai+ +l a a++ + 
+  2OAR:E|PDB    54 ---------VGILRIGIGGGQTID----LNVLLSAAInfFLIAFAVYFLV 90   
+
+                   vgslkfPyvkSDGAAARRVAnkdlere<-*
+                         Py            + + ++e   
+  2OAR:E|PDB    91 ----VLPY-----------NTLRKKGE    102  
+
+MscL: domain 1 of 1, from 1 to 124: score 249.9, E = 1.6e-72
+                   *->mlkEFKeFamRGNVVDLAVgVvIGgAFgKIVsSLVadIImPliGlLi
+                      mlk+FKeF++RGN+VDLAV+VvIG+AF+++V++++++II+Pli++ i
+  2OAR:E|PDB     1    MLKGFKEFLARGNIVDLAVAVVIGTAFTALVTKFTDSIITPLINR-I 46   
+
+                   GgvDFskdlsitlkAqGdqfnsLqeaqavgavvlnYGlFiqavINFlIIA
+                   G v++++d++i++  +G+          +g+++++++++++a+INF++IA
+  2OAR:E|PDB    47 G-VNAQSDVGILR--IGI----------GGGQTIDLNVLLSAAINFFLIA 83   
+
+                   FAIYFlvIKaiNkLknftrkKeEvEEEaqaEAqpdPvLeaqevLLTEIRD
+                   FA+YFlv++++N+L    rkK+EvE   q+   +d    +q+vLLTEIRD
+  2OAR:E|PDB    84 FAVYFLVVLPYNTL----RKKGEVE---QP---GD----TQVVLLTEIRD 119  
+
+                   LLkqq<-*
+                   LL+q+   
+  2OAR:E|PDB   120 LLAQT    124  
+
+SecE: domain 1 of 1, from 2 to 47: score -9.1, E = 0.68
+                   *->klrkFfrevraElrKVvWPtRkEltkytlvViifviimsliffvlDl
+                           ++  + +l+      R   +  +++V+i++++++l+  + D+
+  2OAR:E|PDB     2    -----LKGFKEFLA------RGNIVDLAVAVVIGTAFTALVTKFTDS 37   
+
+                   ifipiikliv<-*
+                   i++p+i+ i    
+  2OAR:E|PDB    38 IITPLINRIG    47   
+
+BTB: domain 1 of 1, from 5 to 97: score -38.6, E = 3.8
+                   *->lnelrkqgelcDVtlvvgdgsgrydvgkefkAHKavLaAcSpYFkal
+                      ++e++ +g  +D  ++v         g                F al
+  2OAR:E|PDB     5    FKEFLARGNIVDLAVAVVI-------GT--------------AFTAL 30   
+
+                   FtsqpkesiteeessvsseitledvspedfealLefiYtgelsitqdqks
+                    t       t++ ++  + i+  +v++++   +L+   +g  +i+     
+  2OAR:E|PDB    31 VTKF-----TDSIIT--PLINRIGVNAQSDVGILRIGIGGGQTID----- 68   
+
+                   PssckseenvedlLaaAadlLqipslvdaCeefliksl<-*
+                            ++ lL+aA++++ i + v        ++l   
+  2OAR:E|PDB    69 ---------LNVLLSAAINFFLIAFAVYFLVVLPYNTL    97   
+
+4HBT: domain 1 of 1, from 23 to 126: score -13.2, E = 1.6
+                   *->gGvvhGGvylalaDeaagaaarslgg.....................
+                       G+++ + + ++ D + + +++++g + +++ +  + + +++++ + 
+  2OAR:E|PDB    23    IGTAFTALVTKFTDSIITPLINRIGVnaqsdvgilrigigggqtidl 69   
+
+                   .......qvvvvvelnidFlrParlGdvltvearvvrlGrtsavvevevr
+                   +   +  + +  + + + Fl   ++  +l+ +++v++ G t +v   e+r
+  2OAR:E|PDB    70 nvllsaaINFFLIAFAVYFLVVLPYN-TLRKKGEVEQPGDTQVVLLTEIR 118  
+
+                   dedgrlva<-*
+                   d   ++     
+  2OAR:E|PDB   119 DLLAQTNG    126  
+
+BofA: domain 1 of 1, from 38 to 98: score -53.5, E = 8.7
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                          i+  li +  v      g+l I  +iG+         G  i++
+  2OAR:E|PDB    38    ----IITPLINRIGVNAQSDVGILRI--GIGG---------GQTIDL 69   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                    +   ++ a+I  +L  + + +Lv++ Y   +   
+  2OAR:E|PDB    70 NV---LLSAAINFFLIAFAVYFLVVLPYNTLR    98   
+
+//
+
+Query sequence: 2OAR:D|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model    Description                                    Score    E-value  N 
+-------- -----------                                    -----    ------- ---
+MscL     Large-conductance mechanosensitive channel,    249.9    1.6e-72   1
+SecE     SecE/Sec61-gamma subunits of protein translo    -9.1       0.68   1
+4HBT     Thioesterase superfamily                       -13.2        1.6   1
+PsiE     Phosphate-starvation-inducible E               -74.2        3.7   1
+BTB      BTB/POZ domain                                 -38.6        3.8   1
+BofA     SigmaK-factor processing regulatory protein    -53.5        8.7   1
+
+Parsed for domains:
+Model    Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+-------- ------- ----- -----    ----- -----      -----  -------
+MscL       1/1       1   124 [.     1   152 []   249.9  1.6e-72
+PsiE       1/1       1   102 [.     1   172 []   -74.2      3.7
+SecE       1/1       2    47 ..     1    57 []    -9.1     0.68
+BTB        1/1       5    97 ..     1   135 []   -38.6      3.8
+4HBT       1/1      23   126 ..     1    77 []   -13.2      1.6
+BofA       1/1      38    98 ..     1    79 []   -53.5      8.7
+
+Alignments of top-scoring domains:
+MscL: domain 1 of 1, from 1 to 124: score 249.9, E = 1.6e-72
+                   *->mlkEFKeFamRGNVVDLAVgVvIGgAFgKIVsSLVadIImPliGlLi
+                      mlk+FKeF++RGN+VDLAV+VvIG+AF+++V++++++II+Pli++ i
+  2OAR:D|PDB     1    MLKGFKEFLARGNIVDLAVAVVIGTAFTALVTKFTDSIITPLINR-I 46   
+
+                   GgvDFskdlsitlkAqGdqfnsLqeaqavgavvlnYGlFiqavINFlIIA
+                   G v++++d++i++  +G+          +g+++++++++++a+INF++IA
+  2OAR:D|PDB    47 G-VNAQSDVGILR--IGI----------GGGQTIDLNVLLSAAINFFLIA 83   
+
+                   FAIYFlvIKaiNkLknftrkKeEvEEEaqaEAqpdPvLeaqevLLTEIRD
+                   FA+YFlv++++N+L    rkK+EvE   q+   +d    +q+vLLTEIRD
+  2OAR:D|PDB    84 FAVYFLVVLPYNTL----RKKGEVE---QP---GD----TQVVLLTEIRD 119  
+
+                   LLkqq<-*
+                   LL+q+   
+  2OAR:D|PDB   120 LLAQT    124  
+
+PsiE: domain 1 of 1, from 1 to 102: score -74.2, E = 3.7
+                   *->MkqfsnhrlkkvsrhfAESLGaklLqallnllLiaiglalvvfLgrE
+                      M++ ++++ ++           +++            la+ v +g +
+  2OAR:D|PDB     1    MLKGFKEF-LAR---------GNIVD-----------LAVAVVIGTA 26   
+
+                   tvhlvnvgfkslseqevSyYvlledILlfFiYfEflALIvkYfksgfHfP
+                   +  lv +                ++I +      ++  I+  + s+    
+  2OAR:D|PDB    27 FTALVTKFT--------------DSIITP-----LINRIGVNAQSD---- 53   
+
+                   LRYfIYIGITAiiRLiIvDhksldtPddgvlliSvAi..LlLaaalfvir
+                            + i R  I + ++ d    + +l+S+Ai+ +l a a++ + 
+  2OAR:D|PDB    54 ---------VGILRIGIGGGQTID----LNVLLSAAInfFLIAFAVYFLV 90   
+
+                   vgslkfPyvkSDGAAARRVAnkdlere<-*
+                         Py            + + ++e   
+  2OAR:D|PDB    91 ----VLPY-----------NTLRKKGE    102  
+
+SecE: domain 1 of 1, from 2 to 47: score -9.1, E = 0.68
+                   *->klrkFfrevraElrKVvWPtRkEltkytlvViifviimsliffvlDl
+                           ++  + +l+      R   +  +++V+i++++++l+  + D+
+  2OAR:D|PDB     2    -----LKGFKEFLA------RGNIVDLAVAVVIGTAFTALVTKFTDS 37   
+
+                   ifipiikliv<-*
+                   i++p+i+ i    
+  2OAR:D|PDB    38 IITPLINRIG    47   
+
+BTB: domain 1 of 1, from 5 to 97: score -38.6, E = 3.8
+                   *->lnelrkqgelcDVtlvvgdgsgrydvgkefkAHKavLaAcSpYFkal
+                      ++e++ +g  +D  ++v         g                F al
+  2OAR:D|PDB     5    FKEFLARGNIVDLAVAVVI-------GT--------------AFTAL 30   
+
+                   FtsqpkesiteeessvsseitledvspedfealLefiYtgelsitqdqks
+                    t       t++ ++  + i+  +v++++   +L+   +g  +i+     
+  2OAR:D|PDB    31 VTKF-----TDSIIT--PLINRIGVNAQSDVGILRIGIGGGQTID----- 68   
+
+                   PssckseenvedlLaaAadlLqipslvdaCeefliksl<-*
+                            ++ lL+aA++++ i + v        ++l   
+  2OAR:D|PDB    69 ---------LNVLLSAAINFFLIAFAVYFLVVLPYNTL    97   
+
+4HBT: domain 1 of 1, from 23 to 126: score -13.2, E = 1.6
+                   *->gGvvhGGvylalaDeaagaaarslgg.....................
+                       G+++ + + ++ D + + +++++g + +++ +  + + +++++ + 
+  2OAR:D|PDB    23    IGTAFTALVTKFTDSIITPLINRIGVnaqsdvgilrigigggqtidl 69   
+
+                   .......qvvvvvelnidFlrParlGdvltvearvvrlGrtsavvevevr
+                   +   +  + +  + + + Fl   ++  +l+ +++v++ G t +v   e+r
+  2OAR:D|PDB    70 nvllsaaINFFLIAFAVYFLVVLPYN-TLRKKGEVEQPGDTQVVLLTEIR 118  
+
+                   dedgrlva<-*
+                   d   ++     
+  2OAR:D|PDB   119 DLLAQTNG    126  
+
+BofA: domain 1 of 1, from 38 to 98: score -53.5, E = 8.7
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                          i+  li +  v      g+l I  +iG+         G  i++
+  2OAR:D|PDB    38    ----IITPLINRIGVNAQSDVGILRI--GIGG---------GQTIDL 69   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                    +   ++ a+I  +L  + + +Lv++ Y   +   
+  2OAR:D|PDB    70 NV---LLSAAINFFLIAFAVYFLVVLPYNTLR    98   
+
+//
+
+Query sequence: 2OAR:C|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model    Description                                    Score    E-value  N 
+-------- -----------                                    -----    ------- ---
+MscL     Large-conductance mechanosensitive channel,    249.9    1.6e-72   1
+SecE     SecE/Sec61-gamma subunits of protein translo    -9.1       0.68   1
+4HBT     Thioesterase superfamily                       -13.2        1.6   1
+PsiE     Phosphate-starvation-inducible E               -74.2        3.7   1
+BTB      BTB/POZ domain                                 -38.6        3.8   1
+BofA     SigmaK-factor processing regulatory protein    -53.5        8.7   1
+
+Parsed for domains:
+Model    Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+-------- ------- ----- -----    ----- -----      -----  -------
+MscL       1/1       1   124 [.     1   152 []   249.9  1.6e-72
+PsiE       1/1       1   102 [.     1   172 []   -74.2      3.7
+SecE       1/1       2    47 ..     1    57 []    -9.1     0.68
+BTB        1/1       5    97 ..     1   135 []   -38.6      3.8
+4HBT       1/1      23   126 ..     1    77 []   -13.2      1.6
+BofA       1/1      38    98 ..     1    79 []   -53.5      8.7
+
+Alignments of top-scoring domains:
+MscL: domain 1 of 1, from 1 to 124: score 249.9, E = 1.6e-72
+                   *->mlkEFKeFamRGNVVDLAVgVvIGgAFgKIVsSLVadIImPliGlLi
+                      mlk+FKeF++RGN+VDLAV+VvIG+AF+++V++++++II+Pli++ i
+  2OAR:C|PDB     1    MLKGFKEFLARGNIVDLAVAVVIGTAFTALVTKFTDSIITPLINR-I 46   
+
+                   GgvDFskdlsitlkAqGdqfnsLqeaqavgavvlnYGlFiqavINFlIIA
+                   G v++++d++i++  +G+          +g+++++++++++a+INF++IA
+  2OAR:C|PDB    47 G-VNAQSDVGILR--IGI----------GGGQTIDLNVLLSAAINFFLIA 83   
+
+                   FAIYFlvIKaiNkLknftrkKeEvEEEaqaEAqpdPvLeaqevLLTEIRD
+                   FA+YFlv++++N+L    rkK+EvE   q+   +d    +q+vLLTEIRD
+  2OAR:C|PDB    84 FAVYFLVVLPYNTL----RKKGEVE---QP---GD----TQVVLLTEIRD 119  
+
+                   LLkqq<-*
+                   LL+q+   
+  2OAR:C|PDB   120 LLAQT    124  
+
+PsiE: domain 1 of 1, from 1 to 102: score -74.2, E = 3.7
+                   *->MkqfsnhrlkkvsrhfAESLGaklLqallnllLiaiglalvvfLgrE
+                      M++ ++++ ++           +++            la+ v +g +
+  2OAR:C|PDB     1    MLKGFKEF-LAR---------GNIVD-----------LAVAVVIGTA 26   
+
+                   tvhlvnvgfkslseqevSyYvlledILlfFiYfEflALIvkYfksgfHfP
+                   +  lv +                ++I +      ++  I+  + s+    
+  2OAR:C|PDB    27 FTALVTKFT--------------DSIITP-----LINRIGVNAQSD---- 53   
+
+                   LRYfIYIGITAiiRLiIvDhksldtPddgvlliSvAi..LlLaaalfvir
+                            + i R  I + ++ d    + +l+S+Ai+ +l a a++ + 
+  2OAR:C|PDB    54 ---------VGILRIGIGGGQTID----LNVLLSAAInfFLIAFAVYFLV 90   
+
+                   vgslkfPyvkSDGAAARRVAnkdlere<-*
+                         Py            + + ++e   
+  2OAR:C|PDB    91 ----VLPY-----------NTLRKKGE    102  
+
+SecE: domain 1 of 1, from 2 to 47: score -9.1, E = 0.68
+                   *->klrkFfrevraElrKVvWPtRkEltkytlvViifviimsliffvlDl
+                           ++  + +l+      R   +  +++V+i++++++l+  + D+
+  2OAR:C|PDB     2    -----LKGFKEFLA------RGNIVDLAVAVVIGTAFTALVTKFTDS 37   
+
+                   ifipiikliv<-*
+                   i++p+i+ i    
+  2OAR:C|PDB    38 IITPLINRIG    47   
+
+BTB: domain 1 of 1, from 5 to 97: score -38.6, E = 3.8
+                   *->lnelrkqgelcDVtlvvgdgsgrydvgkefkAHKavLaAcSpYFkal
+                      ++e++ +g  +D  ++v         g                F al
+  2OAR:C|PDB     5    FKEFLARGNIVDLAVAVVI-------GT--------------AFTAL 30   
+
+                   FtsqpkesiteeessvsseitledvspedfealLefiYtgelsitqdqks
+                    t       t++ ++  + i+  +v++++   +L+   +g  +i+     
+  2OAR:C|PDB    31 VTKF-----TDSIIT--PLINRIGVNAQSDVGILRIGIGGGQTID----- 68   
+
+                   PssckseenvedlLaaAadlLqipslvdaCeefliksl<-*
+                            ++ lL+aA++++ i + v        ++l   
+  2OAR:C|PDB    69 ---------LNVLLSAAINFFLIAFAVYFLVVLPYNTL    97   
+
+4HBT: domain 1 of 1, from 23 to 126: score -13.2, E = 1.6
+                   *->gGvvhGGvylalaDeaagaaarslgg.....................
+                       G+++ + + ++ D + + +++++g + +++ +  + + +++++ + 
+  2OAR:C|PDB    23    IGTAFTALVTKFTDSIITPLINRIGVnaqsdvgilrigigggqtidl 69   
+
+                   .......qvvvvvelnidFlrParlGdvltvearvvrlGrtsavvevevr
+                   +   +  + +  + + + Fl   ++  +l+ +++v++ G t +v   e+r
+  2OAR:C|PDB    70 nvllsaaINFFLIAFAVYFLVVLPYN-TLRKKGEVEQPGDTQVVLLTEIR 118  
+
+                   dedgrlva<-*
+                   d   ++     
+  2OAR:C|PDB   119 DLLAQTNG    126  
+
+BofA: domain 1 of 1, from 38 to 98: score -53.5, E = 8.7
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                          i+  li +  v      g+l I  +iG+         G  i++
+  2OAR:C|PDB    38    ----IITPLINRIGVNAQSDVGILRI--GIGG---------GQTIDL 69   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                    +   ++ a+I  +L  + + +Lv++ Y   +   
+  2OAR:C|PDB    70 NV---LLSAAINFFLIAFAVYFLVVLPYNTLR    98   
+
+//
+
+Query sequence: 2OAR:B|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model    Description                                    Score    E-value  N 
+-------- -----------                                    -----    ------- ---
+MscL     Large-conductance mechanosensitive channel,    249.9    1.6e-72   1
+SecE     SecE/Sec61-gamma subunits of protein translo    -9.1       0.68   1
+4HBT     Thioesterase superfamily                       -13.2        1.6   1
+PsiE     Phosphate-starvation-inducible E               -74.2        3.7   1
+BTB      BTB/POZ domain                                 -38.6        3.8   1
+BofA     SigmaK-factor processing regulatory protein    -53.5        8.7   1
+
+Parsed for domains:
+Model    Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+-------- ------- ----- -----    ----- -----      -----  -------
+MscL       1/1       1   124 [.     1   152 []   249.9  1.6e-72
+PsiE       1/1       1   102 [.     1   172 []   -74.2      3.7
+SecE       1/1       2    47 ..     1    57 []    -9.1     0.68
+BTB        1/1       5    97 ..     1   135 []   -38.6      3.8
+4HBT       1/1      23   126 ..     1    77 []   -13.2      1.6
+BofA       1/1      38    98 ..     1    79 []   -53.5      8.7
+
+Alignments of top-scoring domains:
+MscL: domain 1 of 1, from 1 to 124: score 249.9, E = 1.6e-72
+                   *->mlkEFKeFamRGNVVDLAVgVvIGgAFgKIVsSLVadIImPliGlLi
+                      mlk+FKeF++RGN+VDLAV+VvIG+AF+++V++++++II+Pli++ i
+  2OAR:B|PDB     1    MLKGFKEFLARGNIVDLAVAVVIGTAFTALVTKFTDSIITPLINR-I 46   
+
+                   GgvDFskdlsitlkAqGdqfnsLqeaqavgavvlnYGlFiqavINFlIIA
+                   G v++++d++i++  +G+          +g+++++++++++a+INF++IA
+  2OAR:B|PDB    47 G-VNAQSDVGILR--IGI----------GGGQTIDLNVLLSAAINFFLIA 83   
+
+                   FAIYFlvIKaiNkLknftrkKeEvEEEaqaEAqpdPvLeaqevLLTEIRD
+                   FA+YFlv++++N+L    rkK+EvE   q+   +d    +q+vLLTEIRD
+  2OAR:B|PDB    84 FAVYFLVVLPYNTL----RKKGEVE---QP---GD----TQVVLLTEIRD 119  
+
+                   LLkqq<-*
+                   LL+q+   
+  2OAR:B|PDB   120 LLAQT    124  
+
+PsiE: domain 1 of 1, from 1 to 102: score -74.2, E = 3.7
+                   *->MkqfsnhrlkkvsrhfAESLGaklLqallnllLiaiglalvvfLgrE
+                      M++ ++++ ++           +++            la+ v +g +
+  2OAR:B|PDB     1    MLKGFKEF-LAR---------GNIVD-----------LAVAVVIGTA 26   
+
+                   tvhlvnvgfkslseqevSyYvlledILlfFiYfEflALIvkYfksgfHfP
+                   +  lv +                ++I +      ++  I+  + s+    
+  2OAR:B|PDB    27 FTALVTKFT--------------DSIITP-----LINRIGVNAQSD---- 53   
+
+                   LRYfIYIGITAiiRLiIvDhksldtPddgvlliSvAi..LlLaaalfvir
+                            + i R  I + ++ d    + +l+S+Ai+ +l a a++ + 
+  2OAR:B|PDB    54 ---------VGILRIGIGGGQTID----LNVLLSAAInfFLIAFAVYFLV 90   
+
+                   vgslkfPyvkSDGAAARRVAnkdlere<-*
+                         Py            + + ++e   
+  2OAR:B|PDB    91 ----VLPY-----------NTLRKKGE    102  
+
+SecE: domain 1 of 1, from 2 to 47: score -9.1, E = 0.68
+                   *->klrkFfrevraElrKVvWPtRkEltkytlvViifviimsliffvlDl
+                           ++  + +l+      R   +  +++V+i++++++l+  + D+
+  2OAR:B|PDB     2    -----LKGFKEFLA------RGNIVDLAVAVVIGTAFTALVTKFTDS 37   
+
+                   ifipiikliv<-*
+                   i++p+i+ i    
+  2OAR:B|PDB    38 IITPLINRIG    47   
+
+BTB: domain 1 of 1, from 5 to 97: score -38.6, E = 3.8
+                   *->lnelrkqgelcDVtlvvgdgsgrydvgkefkAHKavLaAcSpYFkal
+                      ++e++ +g  +D  ++v         g                F al
+  2OAR:B|PDB     5    FKEFLARGNIVDLAVAVVI-------GT--------------AFTAL 30   
+
+                   FtsqpkesiteeessvsseitledvspedfealLefiYtgelsitqdqks
+                    t       t++ ++  + i+  +v++++   +L+   +g  +i+     
+  2OAR:B|PDB    31 VTKF-----TDSIIT--PLINRIGVNAQSDVGILRIGIGGGQTID----- 68   
+
+                   PssckseenvedlLaaAadlLqipslvdaCeefliksl<-*
+                            ++ lL+aA++++ i + v        ++l   
+  2OAR:B|PDB    69 ---------LNVLLSAAINFFLIAFAVYFLVVLPYNTL    97   
+
+4HBT: domain 1 of 1, from 23 to 126: score -13.2, E = 1.6
+                   *->gGvvhGGvylalaDeaagaaarslgg.....................
+                       G+++ + + ++ D + + +++++g + +++ +  + + +++++ + 
+  2OAR:B|PDB    23    IGTAFTALVTKFTDSIITPLINRIGVnaqsdvgilrigigggqtidl 69   
+
+                   .......qvvvvvelnidFlrParlGdvltvearvvrlGrtsavvevevr
+                   +   +  + +  + + + Fl   ++  +l+ +++v++ G t +v   e+r
+  2OAR:B|PDB    70 nvllsaaINFFLIAFAVYFLVVLPYN-TLRKKGEVEQPGDTQVVLLTEIR 118  
+
+                   dedgrlva<-*
+                   d   ++     
+  2OAR:B|PDB   119 DLLAQTNG    126  
+
+BofA: domain 1 of 1, from 38 to 98: score -53.5, E = 8.7
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                          i+  li +  v      g+l I  +iG+         G  i++
+  2OAR:B|PDB    38    ----IITPLINRIGVNAQSDVGILRI--GIGG---------GQTIDL 69   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                    +   ++ a+I  +L  + + +Lv++ Y   +   
+  2OAR:B|PDB    70 NV---LLSAAINFFLIAFAVYFLVVLPYNTLR    98   
+
+//
+
+Query sequence: 2OAR:A|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model    Description                                    Score    E-value  N 
+-------- -----------                                    -----    ------- ---
+MscL     Large-conductance mechanosensitive channel,    249.9    1.6e-72   1
+SecE     SecE/Sec61-gamma subunits of protein translo    -9.1       0.68   1
+4HBT     Thioesterase superfamily                       -13.2        1.6   1
+PsiE     Phosphate-starvation-inducible E               -74.2        3.7   1
+BTB      BTB/POZ domain                                 -38.6        3.8   1
+BofA     SigmaK-factor processing regulatory protein    -53.5        8.7   1
+
+Parsed for domains:
+Model    Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+-------- ------- ----- -----    ----- -----      -----  -------
+MscL       1/1       1   124 [.     1   152 []   249.9  1.6e-72
+PsiE       1/1       1   102 [.     1   172 []   -74.2      3.7
+SecE       1/1       2    47 ..     1    57 []    -9.1     0.68
+BTB        1/1       5    97 ..     1   135 []   -38.6      3.8
+4HBT       1/1      23   126 ..     1    77 []   -13.2      1.6
+BofA       1/1      38    98 ..     1    79 []   -53.5      8.7
+
+Alignments of top-scoring domains:
+MscL: domain 1 of 1, from 1 to 124: score 249.9, E = 1.6e-72
+                   *->mlkEFKeFamRGNVVDLAVgVvIGgAFgKIVsSLVadIImPliGlLi
+                      mlk+FKeF++RGN+VDLAV+VvIG+AF+++V++++++II+Pli++ i
+  2OAR:A|PDB     1    MLKGFKEFLARGNIVDLAVAVVIGTAFTALVTKFTDSIITPLINR-I 46   
+
+                   GgvDFskdlsitlkAqGdqfnsLqeaqavgavvlnYGlFiqavINFlIIA
+                   G v++++d++i++  +G+          +g+++++++++++a+INF++IA
+  2OAR:A|PDB    47 G-VNAQSDVGILR--IGI----------GGGQTIDLNVLLSAAINFFLIA 83   
+
+                   FAIYFlvIKaiNkLknftrkKeEvEEEaqaEAqpdPvLeaqevLLTEIRD
+                   FA+YFlv++++N+L    rkK+EvE   q+   +d    +q+vLLTEIRD
+  2OAR:A|PDB    84 FAVYFLVVLPYNTL----RKKGEVE---QP---GD----TQVVLLTEIRD 119  
+
+                   LLkqq<-*
+                   LL+q+   
+  2OAR:A|PDB   120 LLAQT    124  
+
+PsiE: domain 1 of 1, from 1 to 102: score -74.2, E = 3.7
+                   *->MkqfsnhrlkkvsrhfAESLGaklLqallnllLiaiglalvvfLgrE
+                      M++ ++++ ++           +++            la+ v +g +
+  2OAR:A|PDB     1    MLKGFKEF-LAR---------GNIVD-----------LAVAVVIGTA 26   
+
+                   tvhlvnvgfkslseqevSyYvlledILlfFiYfEflALIvkYfksgfHfP
+                   +  lv +                ++I +      ++  I+  + s+    
+  2OAR:A|PDB    27 FTALVTKFT--------------DSIITP-----LINRIGVNAQSD---- 53   
+
+                   LRYfIYIGITAiiRLiIvDhksldtPddgvlliSvAi..LlLaaalfvir
+                            + i R  I + ++ d    + +l+S+Ai+ +l a a++ + 
+  2OAR:A|PDB    54 ---------VGILRIGIGGGQTID----LNVLLSAAInfFLIAFAVYFLV 90   
+
+                   vgslkfPyvkSDGAAARRVAnkdlere<-*
+                         Py            + + ++e   
+  2OAR:A|PDB    91 ----VLPY-----------NTLRKKGE    102  
+
+SecE: domain 1 of 1, from 2 to 47: score -9.1, E = 0.68
+                   *->klrkFfrevraElrKVvWPtRkEltkytlvViifviimsliffvlDl
+                           ++  + +l+      R   +  +++V+i++++++l+  + D+
+  2OAR:A|PDB     2    -----LKGFKEFLA------RGNIVDLAVAVVIGTAFTALVTKFTDS 37   
+
+                   ifipiikliv<-*
+                   i++p+i+ i    
+  2OAR:A|PDB    38 IITPLINRIG    47   
+
+BTB: domain 1 of 1, from 5 to 97: score -38.6, E = 3.8
+                   *->lnelrkqgelcDVtlvvgdgsgrydvgkefkAHKavLaAcSpYFkal
+                      ++e++ +g  +D  ++v         g                F al
+  2OAR:A|PDB     5    FKEFLARGNIVDLAVAVVI-------GT--------------AFTAL 30   
+
+                   FtsqpkesiteeessvsseitledvspedfealLefiYtgelsitqdqks
+                    t       t++ ++  + i+  +v++++   +L+   +g  +i+     
+  2OAR:A|PDB    31 VTKF-----TDSIIT--PLINRIGVNAQSDVGILRIGIGGGQTID----- 68   
+
+                   PssckseenvedlLaaAadlLqipslvdaCeefliksl<-*
+                            ++ lL+aA++++ i + v        ++l   
+  2OAR:A|PDB    69 ---------LNVLLSAAINFFLIAFAVYFLVVLPYNTL    97   
+
+4HBT: domain 1 of 1, from 23 to 126: score -13.2, E = 1.6
+                   *->gGvvhGGvylalaDeaagaaarslgg.....................
+                       G+++ + + ++ D + + +++++g + +++ +  + + +++++ + 
+  2OAR:A|PDB    23    IGTAFTALVTKFTDSIITPLINRIGVnaqsdvgilrigigggqtidl 69   
+
+                   .......qvvvvvelnidFlrParlGdvltvearvvrlGrtsavvevevr
+                   +   +  + +  + + + Fl   ++  +l+ +++v++ G t +v   e+r
+  2OAR:A|PDB    70 nvllsaaINFFLIAFAVYFLVVLPYN-TLRKKGEVEQPGDTQVVLLTEIR 118  
+
+                   dedgrlva<-*
+                   d   ++     
+  2OAR:A|PDB   119 DLLAQTNG    126  
+
+BofA: domain 1 of 1, from 38 to 98: score -53.5, E = 8.7
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                          i+  li +  v      g+l I  +iG+         G  i++
+  2OAR:A|PDB    38    ----IITPLINRIGVNAQSDVGILRI--GIGG---------GQTIDL 69   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                    +   ++ a+I  +L  + + +Lv++ Y   +   
+  2OAR:A|PDB    70 NV---LLSAAINFFLIAFAVYFLVVLPYNTLR    98   
+
+//

@@ -1,0 +1,1362 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 Pfam_ls
+Sequence file:            channels/1su4.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: 1SU4:A|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+E1-E2_ATPase    E1-E2 ATPase                            418.3   3.4e-123   1
+Cation_ATPase_C Cation transporting ATPase, C-terminu   294.8    5.2e-86   1
+Cation_ATPase_N Cation transporter/ATPase, N-terminus   121.3    8.7e-34   1
+Hydrolase       haloacid dehalogenase-like hydrolase     65.0    7.5e-17   1
+Hydrolase_3     haloacid dehalogenase-like hydrolase    -89.7       0.06   1
+NfeD            NfeD-like                               -46.3       0.27   1
+TspO_MBR        TspO/MBR family                         -74.1       0.36   1
+Voltage_CLC     Voltage gated chloride channel         -207.7       0.45   1
+DUF162          Uncharacterised ACR, YkgG family COG1   -54.2       0.97   1
+Coq4            Coenzyme Q (ubiquinone) biosynthesis   -160.6        1.3   1
+DUF498          Protein of unknown function (DUF498/D   -45.0        2.2   1
+Spore_III_AF    Stage III sporulation protein AF (Spo   -79.3        2.2   1
+VPEP            Protein of unknown function (DUF1555)    -8.9        2.5   1
+YibE_F          YibE/F-like protein                    -187.3        3.3   1
+FYVE            FYVE zinc finger                        -36.9          4   1
+PspC            PspC domain                             -32.0        4.4   1
+7tm_3           7 transmembrane receptor (metabotropi  -173.9        4.6   1
+HSP70           Hsp70 protein                          -437.8        4.7   1
+Sec8_exocyst    Sec8 exocyst complex component specif   -69.4        4.8   1
+Rnf-Nqr         Rnf-Nqr subunit, membrane protein      -140.4        5.1   1
+AAA_3           ATPase family associated with various   -43.0        5.2   1
+NtA             Agrin NtA domain                        -46.6        5.4   1
+DUF588          Domain of unknown function (DUF588)     -52.2        5.6   1
+G-alpha         G-protein alpha subunit                -312.0        5.6   1
+YjgP_YjgQ       Predicted permease YjgP/YjgQ family    -138.6        5.8   1
+BTB             BTB/POZ domain                          -40.7        5.8   1
+HemY_N          HemY protein N-terminus                 -60.9        5.9   1
+MerC            MerC mercury resistance protein        -101.4        5.9   1
+DUF1129         Protein of unknown function (DUF1129)  -165.6        6.1   1
+CFEM            CFEM domain                             -22.7        6.2   1
+7tm_1           7 transmembrane receptor (rhodopsin f  -154.5        6.3   1
+TatD_DNase      TatD related DNase                     -123.9        6.4   1
+ATP-synt_C      ATP synthase subunit C                  -35.1        6.4   1
+Epimerase_2     UDP-N-acetylglucosamine 2-epimerase    -235.5        6.5   1
+IRK             Inward rectifier potassium channel     -298.9        6.5   1
+HTH_8           Bacterial regulatory protein, Fis fam   -14.0        6.8   1
+CobS            Cobalamin-5-phosphate synthase         -143.2        6.8   1
+FeoA            FeoA domain                             -21.9        6.9   1
+Lipoprotein_2   Borrelia lipoprotein                    -80.9        6.9   1
+Ycf9            YCF9                                    -34.7        7.1   1
+2-Hacid_dh      D-isomer specific 2-hydroxyacid dehyd   -53.7        7.3   1
+Tubulin_C       Tubulin/FtsZ family, C-terminal domai   -52.3        7.4   1
+Sdh_cyt         Succinate dehydrogenase cytochrome b    -61.6        7.6   1
+PulS_OutS       Bacterial chaperone lipoprotein (PulS   -67.9        7.7   1
+FeoB_N          Ferrous iron transport protein B        -63.0          8   1
+CTP_transf_2    Cytidylyltransferase                    -47.3          8   1
+DUF423          Protein of unknown function (DUF423)    -77.9          8   1
+DHHA1           DHHA1 domain                            -13.8        8.1   1
+Connexin50      Gap junction alpha-8 protein (Cx50)     -25.7        8.1   1
+DUF21           Domain of unknown function DUF21       -108.6        8.2   1
+ExoD            Exopolysaccharide synthesis, ExoD      -128.9        8.6   1
+Biotin_lipoyl   Biotin-requiring enzyme                 -40.2        8.6   1
+COX2_TM         Cytochrome C oxidase subunit II, tran   -52.3        8.8   1
+Sulfate_transp  Sulfate transporter family             -217.6        9.3   1
+Bac_export_1    Bacterial export proteins, family 1    -164.3        9.3   1
+Oxidored_q4     NADH-ubiquinone/plastoquinone oxidore   -71.3        9.3   1
+RdRP_3          Viral RNA dependent RNA polymerase     -354.9        9.3   1
+DUF751          Protein of unknown function (DUF751)    -34.4        9.6   1
+Branch_AA_trans Branched-chain amino acid transport p  -401.8        9.9   1
+DJ-1_PfpI       DJ-1/PfpI family                        -51.6        9.9   1
+DUF1063         Protein of unknown function (DUF1063)  -307.6         10   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+Cation_ATPase_N   1/1       1    77 [.     1    87 []   121.3  8.7e-34
+HTH_8             1/1       1    36 [.     1    41 []   -14.0      6.8
+CTP_transf_2      1/1       3   143 ..     1   185 []   -47.3        8
+Sulfate_transp    1/1      13   326 ..     1   328 []  -217.6      9.3
+YjgP_YjgQ         1/1      14   329 ..     1   379 []  -138.6      5.8
+FeoB_N            1/1      26   106 ..     1   220 []   -63.0        8
+G-alpha           1/1      41   258 ..     1   361 []  -312.0      5.6
+DUF1063           1/1      49   353 ..     1   430 []  -307.6       10
+NfeD              1/1      52   179 ..     1   158 []   -46.3     0.27
+BTB               1/1      53   141 ..     1   135 []   -40.7      5.8
+HemY_N            1/1      61   157 ..     1   139 []   -60.9      5.9
+Ycf9              1/1      61   105 ..     1    59 []   -34.7      7.1
+Spore_III_AF      1/1      62   224 ..     1   201 []   -79.3      2.2
+CobS              1/1      67   269 ..     1   250 []  -143.2      6.8
+E1-E2_ATPase      1/1      93   341 ..     1   245 []   418.3 3.4e-123
+Lipoprotein_2     1/1     100   240 ..     1   189 []   -80.9      6.9
+HSP70             1/1     101   507 ..     1   619 []  -437.8      4.7
+FeoA              1/1     114   187 ..     1    78 []   -21.9      6.9
+AAA_3             1/1     117   225 ..     1   133 []   -43.0      5.2
+Biotin_lipoyl     1/1     138   188 ..     1    75 []   -40.2      8.6
+Bac_export_1      1/1     148   364 ..     1   255 []  -164.3      9.3
+DUF1129           1/1     161   336 ..     1   223 []  -165.6      6.1
+7tm_3             1/1     170   372 ..     1   279 []  -173.9      4.6
+PulS_OutS         1/1     180   266 ..     1   117 []   -67.9      7.7
+DJ-1_PfpI         1/1     184   323 ..     1   191 []   -51.6      9.9
+Coq4              1/1     204   371 ..     1   220 []  -160.6      1.3
+DHHA1             1/1     205   262 ..     1    72 []   -13.8      8.1
+ATP-synt_C        1/1     211   278 ..     1    70 []   -35.1      6.4
+DUF21             1/1     217   352 ..     1   208 []  -108.6      8.2
+COX2_TM           1/1     240   298 ..     1    89 []   -52.3      8.8
+IRK               1/1     271   493 ..     1   352 []  -298.9      6.5
+DUF423            1/1     273   347 ..     1   123 []   -77.9        8
+VPEP              1/1     300   333 ..     1    38 []    -8.9      2.5
+CFEM              1/1     311   378 ..     1    81 []   -22.7      6.2
+FYVE              1/1     333   426 ..     1    77 []   -36.9        4
+Hydrolase         1/1     345   724 ..     1   183 []    65.0  7.5e-17
+Connexin50        1/1     369   437 ..     1    69 []   -25.7      8.1
+Sec8_exocyst      1/1     385   524 ..     1   170 []   -69.4      4.8
+NtA               1/1     439   570 ..     1   128 []   -46.6      5.4
+Epimerase_2       1/1     506   777 ..     1   365 []  -235.5      6.5
+Hydrolase_3       1/1     531   747 ..     1   271 []   -89.7     0.06
+DUF498            1/1     549   636 ..     1   118 []   -45.0      2.2
+RdRP_3            1/1     562   906 ..     1   522 []  -354.9      9.3
+TatD_DNase        1/1     600   762 ..     1   286 []  -123.9      6.4
+Tubulin_C         1/1     613   736 ..     1   155 []   -52.3      7.4
+2-Hacid_dh        1/1     633   773 ..     1   150 []   -53.7      7.3
+Voltage_CLC       1/1     673   919 ..     1   369 []  -207.7     0.45
+Rnf-Nqr           1/1     691   814 ..     1   213 []  -140.4      5.1
+ExoD              1/1     707   855 ..     1   186 []  -128.9      8.6
+DUF588            1/1     708   814 ..     1   162 []   -52.2      5.6
+Branch_AA_trans   1/1     712   946 ..     1   445 []  -401.8      9.9
+DUF162            1/1     713   777 ..     1   104 []   -54.2     0.97
+DUF751            1/1     754   809 ..     1    64 []   -34.4      9.6
+YibE_F            1/1     759   972 ..     1   245 []  -187.3      3.3
+MerC              1/1     760   860 ..     1   131 []  -101.4      5.9
+7tm_1             1/1     767   979 ..     1   272 []  -154.5      6.3
+TspO_MBR          1/1     790   933 ..     1   157 []   -74.1     0.36
+PspC              1/1     817   862 ..     1    65 []   -32.0      4.4
+Cation_ATPase_C   1/1     819   991 ..     1   197 []   294.8  5.2e-86
+Sdh_cyt           1/1     884   979 ..     1   123 []   -61.6      7.6
+Oxidored_q4       1/1     896   964 ..     1   107 []   -71.3      9.3
+
+Alignments of top-scoring domains:
+Cation_ATPase_N: domain 1 of 1, from 1 to 77: score 121.3, E = 8.7e-34
+                   *->eelkkevdldahkltvEevleklktdpeeGLsseeaaeRlkkyGpNe
+                      +e          + + Ee+l+++++++++GL++++++++l+kyG+Ne
+  1SU4:A|PDB     1    MEAAH-------SKSTEECLAYFGVSETTGLTPDQVKRHLEKYGHNE 40   
+
+                   LppekktslwlkfLeQFkdplvllLlaAAiiSALdfvlgg<-*
+                   Lp+e+++slw++++eQF d+lv++Ll+AA+iS   fvl++   
+  1SU4:A|PDB    41 LPAEEGKSLWELVIEQFEDLLVRILLLAACIS---FVLAW    77   
+
+HTH_8: domain 1 of 1, from 1 to 36: score -14.0, E = 6.8
+                   *->leevEkelIeaALertgGNkskAArlLGisRrTLyyKLkky<-*
+                      +e+   +  e++L+++g     + +  G+++ +  + L+ky   
+  1SU4:A|PDB     1    MEAAHSKSTEECLAYFG-----VSETTGLTPDQVKRHLEKY    36   
+
+CTP_transf_2: domain 1 of 1, from 3 to 143: score -47.3, E = 8
+                   *->lfgGtFDPiHlGHlrlleqAaelfdldeLvvgvpsdepphkd.kkkk
+                                 +H +  e+ +++f+  e   g++ d+ +++  +k++
+  1SU4:A|PDB     3    ----------AAHSKSTEECLAYFGVSE-TTGLTPDQ-VKRHlEKYG 37   
+
+                   kpifsaeeRlemlelaikvdpnlevddfEikrgisYTidTLkhlrelnpd
+                   ++  +aee   + el i+  +                            d
+  1SU4:A|PDB    38 HNELPAEEGKSLWELVIEQFE----------------------------D 59   
+
+                   ldlyfiigadalvslr..........gwrgiqelleevqivvvnrpldy.
+                   l + ++  a ++  ++   ++++++ +   ++ ++ ++ ++  +  ++++
+  1SU4:A|PDB    60 LLVRILLLAACISFVLawfeegeetiTAF-VEPFVILLILIANAIVGVWq 108  
+
+                   gletvfkpkewlsrvylreeldkyplgkivipdlpyndtegiSSTeIRer
+                     + ++          + e l++y+  +++++   + +    S  +I++r
+  1SU4:A|PDB   109 ERNAEN----------AIEALKEYE--PEMGKVYRADR---KSVQRIKAR 143  
+
+                   <-*
+                      
+  1SU4:A|PDB     -     -    
+
+Sulfate_transp: domain 1 of 1, from 13 to 326: score -217.6, E = 9.3
+                   *->lGllRLGfLveflSravisGFmaGaAilIllsQLkgllGlsnl.ftr
+                      l ++ +   + + +++v                  +l  + +++++ 
+  1SU4:A|PDB    13    LAYFGVSETTGLTPDQVKR----------------HLEKYGHNeLPA 43   
+
+                   hsgivsvlralfdlvdnlgkfakwnwptlviglsfLifLliikllpnlkk
+                   ++   s+ + ++ +++ l       +  +++ + ++ f+l +++ ++   
+  1SU4:A|PDB    44 EE-GKSLWELVIEQFEDL-------LVRILLLAACISFVLAWFEEGE--- 82   
+
+                   rlkklfwipaPapLvaVivaTlisylfnr.....................
+                           +++ p v++++ +  +++   ++++ ++  +  ++ +++ ++
+  1SU4:A|PDB    83 ----ETITAFVEPFVILLILIANAIVGVWqernaenaiealkeyepemgk 128  
+
+                   .kladrygvsivGe...ipsGllpppslPd.lnlspstlqdllpialaiA
+                     +adr  v++++ ++ +p+    +  + d+++ +  +l++   +     
+  1SU4:A|PDB   129 vYRADRKSVQRIKArdiVPGD-IVEVAVGDkVPADIRILSIKSTT----- 172  
+
+                   lvgllesiltaksfakkkgyk.......iDsNkELvAqGiaNIvsslfgg
+                    + +  silt++s+  +k++++ ++++ ++ +k  +    +NI+++   g
+  1SU4:A|PDB   173 -LRVDQSILTGESVSVIKHTEpvpdpraVNQDKKNMLFSGTNIAAGKALG 221  
+
+                   ypatgsfsRSaVNvk.aGakT................qLSgivmavvvll
+                   ++at ++s    ++++  a T++++++ +++ ++ ++qLS +++ ++v++
+  1SU4:A|PDB   222 IVATTGVSTEIGKIRdQMAATeqdktplqqkldefgeQLSKVISLICVAV 271  
+
+                   vllfltplleyiPmavLaAIiivaliglLidwselirllwklsksDfliw
+                    l+ ++++  +             + g     +++ir         ++ +
+  1SU4:A|PDB   272 WLINIGHFNDP-------------VHG-----GSWIR--------GAIYY 295  
+
+                   latffgtvfvdNleiGvlvGVaiSllflilrv<-*
+                   + + +   ++  + +G+ + +  +l+   +r+   
+  1SU4:A|PDB   296 FKIAVALAVAA-IPEGLPAVITTCLALGTRRM    326  
+
+YjgP_YjgQ: domain 1 of 1, from 14 to 329: score -138.6, E = 5.8
+                   *->rYllrevlkpflaallvllalfliiqlldllglvlldggvpallall
+                       Y++  v+ ++ ++           q+ + l + ++   +pa +  +
+  1SU4:A|PDB    14    AYFG--VSETTGLT---------PDQVKRHLEK-YGHNELPAEEGKS 48   
+
+                   llllslPallelllPlavliaalltlgrLaresEltalrAsGvSlkrllr
+                   l+ l +  +  ll+ + +l a+  ++     e E t+        + ++ 
+  1SU4:A|PDB    49 LWELVIEQFEDLLVRILLLAACISFVLAWFEEGEETI--------TAFVE 90   
+
+                   PalllalllallsfalglwlaPwaeqkarellaqaksggppvvvvgeisa
+                   P+++l +l+a      + ++  w e+ a++ +++ k         +e++ 
+  1SU4:A|PDB    91 PFVILLILIA------NAIVGVWQERNAENAIEALKEYE------PEMGK 128  
+
+                   lesgtflkdgdntaerldrivyadeidpdgkklgnvfirrddknglssvv
+                   ++      d +       ++ +++  d+    +  v + ++ +   ++++
+  1SU4:A|PDB   129 VYRA----DRK-------SVQRIKARDIVPGDIVEVAVGDKVPAD-IRIL 166  
+
+                   taesatkanalndkwrllrldvttyveglgivfkdtsasldfrtllfpet
+                     +s t +++  d  +l   ++++ v +       t   +d r+ +++++
+  1SU4:A|PDB   167 SIKSTT-LRV--DQSIL--TGESVSVIKH------TEPVPDPRAVNQDKK 205  
+
+                   laelflkgldtl..........peelselsllelyiellllgsqkrraea
+                   + ++  +    +  ++  +    +++s   + ++ +   +  ++k ++++
+  1SU4:A|PDB   206 NMLFSGT---NIaagkalgivaTTGVSTE-IGKIRDQMAATEQDKTPLQQ 251  
+
+                   yalafwrklalPllvlalallaaplslrnpRsgrlaallllgllvgfyfl
+                    + +f  +l+  ++   l+++a++l+     ++     + ++  +++yf 
+  1SU4:A|PDB   252 KLDEFGEQLSKVIS---LICVAVWLINI-GHFNDPVHGGSWIRGAIYYFK 297  
+
+                   vvsellaaengklslvlglppflaawlplavflllglwlllr<-*
+                   ++++l      ++++  glp+++ + l     +l ++++ ++   
+  1SU4:A|PDB   298 IAVALA-----VAAIPEGLPAVITTCL-----ALGTRRMAKK    329  
+
+FeoB_N: domain 1 of 1, from 26 to 106: score -63.0, E = 8
+                   *->ieeLkdailkllkskiekprykekpekkrlnyfgpaieeaieeliev
+                       +++k+++ k  +                                  
+  1SU4:A|PDB    26    PDQVKRHLEKYGHN--------------------------------- 39   
+
+                   lkeelsskrrkyikkysprdAwlaLklLegDesvelpslseealkelkel
+                                                                     
+  1SU4:A|PDB     - -------------------------------------------------- -    
+
+                   kqelaeiegndldlpiardryafierilaevvtmpsrtsrtltdkiDkvl
+                                    +   ++ + + + v+ + +              
+  1SU4:A|PDB    40 -----------------ELPAEEGKSLWELVIEQFEDL------------ 60   
+
+                   LHpvlGlPiFlavMfliFqltFswgGaplddflgqplmdlleggfgalge
+                            ++ ++ l   ++F++              +++e g + ++ 
+  1SU4:A|PDB    61 ---------LVRILLLAACISFVL--------------AWFEEGEETITA 87   
+
+                   fvgaplwfgPlLqSLLvdGiigG<-*
+                   fv    +f  +L +L++++i+g    
+  1SU4:A|PDB    88 FV---EPFV-ILLILIANAIVGV    106  
+
+G-alpha: domain 1 of 1, from 41 to 258: score -312.0, E = 5.6
+                   *->seeekeqarrnkeIekqLkqekkkakrevKLLLLGAGESGKSTIlKQ
+                         e+ +      Ie         ++  v++LLL             
+  1SU4:A|PDB    41    LPAEEGKSLWELVIEQ-------FEDLLVRILLL------------- 67   
+
+                   MKIIHgnGFSqEEkkeyrpvIyqNivqsmrvlvdAmetLgIpfgdperen
+                               ++ ++    +    + +++ v+    L I +       
+  1SU4:A|PDB    68 -----------AACISFVLAWFEEGEETITAFVEPFVILLILIANAIV-- 104  
+
+                   SeadaamiietlaeteeeeplpkeyadaikaLWkDpGiqecfdRsnEfqL
+                       + +    ++ +e+ +++++e+++  +a           dR      
+  1SU4:A|PDB   105 ---GVWQERNAENAIEALKEYEPEMGKVYRA-----------DRK----- 135  
+
+                   nDSAkYFLdnldRisdpdYiPTeQDILrsRvkTTGIvEtkFsvkkltFRM
+                            + +Ri ++d +P +            IvE+           
+  1SU4:A|PDB   136 ---------SVQRIKARDIVPGD------------IVEVA---------- 154  
+
+                   fDVGGQRSERKKWIHCFEdVTAIIFlVALSEYDQvLfEDettNRMqESLk
+                     VG             + V A I + ++          ++t      L+
+  1SU4:A|PDB   155 --VG-------------DKVPADIRILSI----------KST-----TLR 174  
+
+                   LFdsIcNnrwFvntSiILFLNKkDLFeEKIkktpshisdyFPeYedyssG
+                   +  sI++    +++S+I             k+t            ++  +
+  1SU4:A|PDB   175 VDQSILTG---ESVSVI-------------KHTE-----------PVP-D 196  
+
+                   ppqdyeaAkeFIkkkFvslnrnnekpkKeIYsHfTCATDTn..nIrfVFd
+                   p + +++ k+   + F   n   +   K++ +  T+ + T+ + Ir  + 
+  1SU4:A|PDB   197 P-RAVNQDKK--NMLFSGTNI-AAG--KALGIVATTGVSTEigKIRDQMA 240  
+
+                   aV..kDiIlqenLkecGL<-*
+                   a +++ + lq++L e G    
+  1SU4:A|PDB   241 ATeqDKTPLQQKLDEFGE    258  
+
+DUF1063: domain 1 of 1, from 49 to 353: score -307.6, E = 10
+                   *->kwqlylieiLkkeVvPALGCTEPiaiAYAaAvAreeLkgeikeVkvi
+                      +w+l  ie      v  L      ++A   +   +  ++  + + + 
+  1SU4:A|PDB    49    LWELV-IEQFEDLLVRIL------LLAACISFVLAWFEEGEETITAF 88   
+
+                   vsknllKNalgVgVPGTgkvGLeiAAAlGallG..kseaKLEvLkdaTed
+                   v + ++               + iA A+ ++ +++++e+  E+Lk+  ++
+  1SU4:A|PDB    89 VEPFVI-------------LLILIANAIVGVWQerNAENAIEALKEYEPE 125  
+
+                   ............eikkAkaivdakkVkVklqedtdevLYikakvlsgekk
+                    ++  + ++++ +  kA  iv   +V+V   +           +ls ++ 
+  1SU4:A|PDB   126 mgkvyradrksvQRIKARDIVPGDIVEVAVGDK----VPADIRILSIKS- 170  
+
+                   AtViIkggHtnIvliEldDevVftakeevseeekesdLkadykeftiedi
+                            t                   +  ++ s L+  +++      
+  1SU4:A|PDB   171 ---------TT------------------LRVDQ-SILTGESVS-----V 187  
+
+                   ldFaeevpF........eeIkFIlesielNkkl...SeeGLsedyGLeIG
+                   ++  e vp ++  +++++   F +  i   k+l+  ++ G+s +      
+  1SU4:A|PDB   188 IKHTEPVPDpravnqdkKNMLFSGTNIAAGKALgivATTGVSTEI----- 232  
+
+                   ktLkkqieagLlskDllnkivalTaAASdARMgGanlPaMsnaGSGNqGi
+                    ++ +q                   AA +   +  +l             
+  1SU4:A|PDB   233 GKIRDQM------------------AATEQ--DKTPL------------- 249  
+
+                   aAtlPVvitaellgkdeEkLaRALtLShLlTIYikkhlgrLSAlCGagva
+                             + l+   E L +                 ++S +C   va
+  1SU4:A|PDB   250 ---------QQKLDEFGEQLSK-----------------VISLIC---VA 270  
+
+                   GgvGAsaGltYLlg.Gsfeq.......IeeAIsnmiadlSGMiCDGAKig
+                            ++L+  G f  + ++++ I +AI  +            Ki 
+  1SU4:A|PDB   271 ---------VWLINiGHFNDpvhggswIRGAIYYF------------KIA 299  
+
+                   CAlKist...SvsAAlkallmAledikvpgnnGIVAkdvEesIeNigklv
+                    Al ++  +++  A +   l Al        n IV      s  + ++l+
+  1SU4:A|PDB   300 VALAVAAipeGLPAVITTCL-ALGTRRMAKKNAIV-----RSLPSVETLG 343  
+
+                   vngMknvDdtIieIMleKk<-*
+                     +          I + K    
+  1SU4:A|PDB   344 CTSV---------ICSDKT    353  
+
+NfeD: domain 1 of 1, from 52 to 179: score -46.3, E = 0.27
+                   *->lLiilGlvLlvaEaltGtptfGfLglgGlaalviGallLfptgapga
+                               lv+E +     ++ ++l    a++i+++l+++++    
+  1SU4:A|PDB    52    ---------LVIEQF--EDLLVRILLL---AACISFVLAWFEEG--- 81   
+
+                   vglsisfwgviltlailsaalllfvafavyrrlltrkkrksdtglLNrRg
+                             i+++    ++ll ++a a+  +++ r     ++ l     
+  1SU4:A|PDB    82 -------EETITAFVEPFVILLILIANAIVGVWQERNAENAIEAL----- 119  
+
+                   eaLiGrtgtviDddiangrGrVkvdGerWravsedped.ipkGdrV....
+                    ++  ++g+v   ++  +  r+k+++++     +++  ++++Gd+V+ + 
+  1SU4:A|PDB   120 KEYEPEMGKVY-RADRKSVQRIKARDIV-----PGDIVeVAVGDKVpadi 163  
+
+                   rVvgieGltLkVekia<-*
+                   r+ +i+ +tL V +     
+  1SU4:A|PDB   164 RILSIKSTTLRVDQSI    179  
+
+BTB: domain 1 of 1, from 53 to 141: score -40.7, E = 5.8
+                   *->lnelrkqgelcDVtlvvgdgsgrydvgkefkAHKavLaAcSpYFkal
+                        e+++     D  + +                   LaAc ++  a 
+  1SU4:A|PDB    53    VIEQFE-----DLLVRIL---------L--------LAACISFVLAW 77   
+
+                   FtsqpkesiteeessvsseitledvspedfealLefiYtgelsitqdqks
+                   F+ +      ee      +it  +v+p +  ++L     + +++  +q  
+  1SU4:A|PDB    78 FEEG------EE------TIT-AFVEPFVILLILI----ANAIVGVWQ-- 108  
+
+                   PssckseenvedlLaaAadlL..qipslvdaCeefliksl<-*
+                         e n+e+ ++a  + +++++  + +a  +  +++    
+  1SU4:A|PDB   109 ------ERNAENAIEAL-KEYepEMGKVYRADRKSVQRIK    141  
+
+HemY_N: domain 1 of 1, from 61 to 157: score -60.9, E = 5.9
+                   *->MlRvllllflvlllglfggawlagqprDLGyVlIsyggyrietSLtf
+                      ++R+lll   +++++ f+ aw+++                 e ++t+
+  1SU4:A|PDB    61    LVRILLL---AACIS-FVLAWFEEG----------------EETITA 87   
+
+                   avillvlvlavlfllewllrtiirlprrvrryfrrrkrrRgrkaLseGLl
+                   +v  +v++l+++                ++++  ++ +r +  a++   l
+  1SU4:A|PDB    88 FVEPFVILLILI----------------ANAIVGVWQERNAENAIE--AL 119  
+
+                   alaeGdwalAeRlarka.aellsedqppLalLlaArAAqaeGd<-*
+                   +  e    +  R  rk+ ++   ++++     +   + +a Gd   
+  1SU4:A|PDB   120 KEYEPEMGKVYRADRKSvQRI--KARDIVPGDI---VEVAVGD    157  
+
+Ycf9: domain 1 of 1, from 61 to 105: score -34.7, E = 7.1
+                   *->afQlaVlALIllSfvLVvgVPVvlASPggW.ersKsliysGaglWtg
+                         +++lA   +SfvL             W e+   +i++     ++
+  1SU4:A|PDB    61    LVRILLLA-ACISFVL------------AWfEEGEETITAFVEPFVI 94   
+
+                   LViVvgiLnslvv<-*
+                   L i+++  n +v    
+  1SU4:A|PDB    95 LLILIA--NAIVG    105  
+
+Spore_III_AF: domain 1 of 1, from 62 to 224: score -79.3, E = 2.2
+                   *->iliillatflEmLLPnsnmKKYVklVlGLlL.........ivviLnP
+                      + i+lla  +                 +++L   ++++++i++++ P
+  1SU4:A|PDB    62    VRILLLAACI-----------------SFVLawfeegeetITAFVEP 91   
+
+                   vlkLfntdfdleieslnkesqyiseesskneiesqkkeiqasqsayilee
+                    + L+    +  + ++++      +   ++   + +ke++ ++     ++
+  1SU4:A|PDB    92 FVILLILIANAIVGVWQE-----RN---AENAIEALKEYEPEMG----KV 129  
+
+                   yakqLkkqveeklkdkygvdvadVeveiaedaekvkfgkdiekvnvtlke
+                   y+   k + + k++d  ++d+++V+v  ++   ++ +  +i++ ++ +  
+  1SU4:A|PDB   130 YRADRKSVQRIKARDIVPGDIVEVAVG-DKVPADIRIL-SIKSTTLRV-- 175  
+
+                   eknpskekavekVepV.eIdikkpnkekeedeatsislskeaeeiknfla
+                         ++++ + e V++I  ++p   +  ++          ++ kn+l 
+  1SU4:A|PDB   176 ------DQSILTGESVsVIKHTEPVPDPRAVN----------QDKKNMLF 209  
+
+                   efynipk.ekIeVyi<-*
+                      ni  +++  ++    
+  1SU4:A|PDB   210 SGTNIAAgKALGIVA    224  
+
+CobS: domain 1 of 1, from 67 to 269: score -143.2, E = 6.8
+                   *->lraalsFlTrLPvkgreSqsaDfEvirrnlwaf..PlvGallGalva
+                      l+a +sF     v   +     fE++   ++af +P+v +l++++ a
+  1SU4:A|PDB    67    LAACISF-----VLA-W-----FEEGEETITAFvePFVILLILIANA 102  
+
+                   lilvlgsfvfGmdnpLaalLavllllaltGglHlDGLADtgDGlmapgdr
+                   +++v         n+  a+ a+  ++   G               +++  
+  1SU4:A|PDB   103 IVGVWQER-----NAENAIEALKEYEPEMG--------------KVYRAD 133  
+
+                   kRkLeaMkDsntGtgGvvavvv...Vll.lkilaLaslsdrglflgilla
+                   ++    +k + + +g +v v+v+++V +++ il++ s ++r+  + il +
+  1SU4:A|PDB   134 RKSVQRIKARDIVPGDIVEVAVgdkVPAdIRILSIKSTTLRV-DQSILTG 182  
+
+                   evsAKvsmlLllltsrPRyaleeGlGayfmekldsRpdlliglillllla
+                   e       +++     P            + ++d+++ l+ g+ +++  a
+  1SU4:A|PDB   183 E------SVSVIKHTEP-------VPDPRAVNQDKKNMLFSGTNIAAGKA 219  
+
+                   vplgYALaiErwpgviAvlvavliglalgkiak............rnFGG
+                   ++     a         ++v+  ig +  + a++++++++ +++ + FG 
+  1SU4:A|PDB   220 LGIV---A--------TTGVSTEIGKIRDQMAAteqdktplqqklDEFGE 258  
+
+                   vtGDVlGAanEltrvvsLLaL<-*
+                   +          l+ v sL      
+  1SU4:A|PDB   259 Q----------LSKVISLICV    269  
+
+E1-E2_ATPase: domain 1 of 1, from 93 to 341: score 418.3, E = 3.4e-123
+                   *->villivllnatlefyqesrAekAleaLkklvpptAtVlRdG.gkeee
+                      villi+++na+++++qe++Ae+A+eaLk++ p++ +V+R ++ + + 
+  1SU4:A|PDB    93    VILLILIANAIVGVWQERNAENAIEALKEYEPEMGKVYRADrKSVQR 139  
+
+                   ipaeeLvpGDiVevkpGdrVPADgrvveges.tLkVDESaLTGESlPVeK
+                   i+a+++vpGDiVev++Gd+VPAD+r+++ +s+tL+VD+S+LTGES+ V K
+  1SU4:A|PDB   140 IKARDIVPGDIVEVAVGDKVPADIRILSIKStTLRVDQSILTGESVSVIK 189  
+
+                   hsdvvtp.dnp.lergnmVfaGTlvvsGsltgvVtatGddTflgkIakLV
+                   h+++v+++++++++++nm+f+GT++  G + g+V  tG  T++gkI + +
+  1SU4:A|PDB   190 HTEPVPDpRAVnQDKKNMLFSGTNIAAGKALGIVATTGVSTEIGKIRDQM 239  
+
+                   eeAqssktPlQrlldkfgkiltpvililavlvfiiwllrnfn.aafggsw
+                     +++ ktPlQ++ld+fg +l++vi +++v+v++i+++ +fn++++ggsw
+  1SU4:A|PDB   240 AATEQDKTPLQQKLDEFGEQLSKVISLICVAVWLINIG-HFNdPVHGGSW 288  
+
+                   legllyalifavallVaAcPegLplvvtvalalGtgrmAkkgaLVKglpA
+                   ++g++y++++aval+VaA+PegLp+v+t++lalGt+rmAkk+a+V++lp+
+  1SU4:A|PDB   289 IRGAIYYFKIAVALAVAAIPEGLPAVITTCLALGTRRMAKKNAIVRSLPS 338  
+
+                   vEt<-*
+                   vEt   
+  1SU4:A|PDB   339 VET    341  
+
+Lipoprotein_2: domain 1 of 1, from 100 to 240: score -80.9, E = 6.9
+                   *->iKeIVdvAlksgvaaegvkdiakatagadnkdaaKlfaaaagaanna
+                        +IV+v          ++++  a + +   + +K+  a+   ++ +
+  1SU4:A|PDB   100    ANAIVGVWQER-----NAENAIEALK-EYEPEMGKVYRAD---RK-S 136  
+
+                   daeaaakaaakAAasVgaVsGadILqaIvkskeapgvdaqlaaaiekaad
+                   +       + kA ++V    + dI    v +k     +      i  ++ 
+  1SU4:A|PDB   137 VQR-----I-KARDIV----PGDIVEVAVGDKVP---ADIRILSIKSTTL 173  
+
+                   aaaiafakg.....kaelkqdaakKDAaiAaGIALRamAKgGKFAaknnd
+                      +++  g++ +  ++      +                    A+  n 
+  1SU4:A|PDB   174 RVDQSILTGesvsvIKHTEPVPDPR-------------------AV--NQ 202  
+
+                   daaneakaVkaaaasAVnAitKvLgtLeiiIRKTVdsgLkkikEavk<-*
+                   d++   +   +   +A++   K+Lg++       V+ + +ki++ ++   
+  1SU4:A|PDB   203 DKK---NMLFSGTNIAAG---KALGIVATT---GVSTEIGKIRDQMA    240  
+
+HSP70: domain 1 of 1, from 101 to 507: score -437.8, E = 4.7
+                   *->viGIDLGTTNScVAVmeggkpevIaNaeGnRtTPSvVAFtkkGErLV
+                               N  V+V++ +++e   Na        + A ++  E  +
+  1SU4:A|PDB   101    ---------NAIVGVWQERNAE---NA--------IEALKEY-EPEM 126  
+
+                   GqaAKrQavtNpeNTvfsvKRlIGRrfddpeVqsdikhvPykvvkdsngd
+                   G     ++ +   + v+ +K       +             ++v +    
+  1SU4:A|PDB   127 G-----KVYRADRKSVQRIK-------AR------------DIVPG---- 148  
+
+                   awveveylGkkkqftPeeISAmvLqKlKetAEayLGekVtdAVI..TVPA
+                     vev++++k    +  +I +   + l+ + +   Ge+V+  VI++T P 
+  1SU4:A|PDB   149 DIVEVAVGDK--VPADIRILSIKSTTLRVDQSILTGESVS--VIkhTEP- 193  
+
+                   YFNDaQRQATKDAGrIAGLnVlRIiNEPTAAALAYGLDKkdlpeeekern
+                                           + +P A+        +d       +n
+  1SU4:A|PDB   194 ------------------------VPDPRAV-------NQD------KKN 206  
+
+                   IlVfDLGGGTFDVSiLeigdG.VFEVkaTnG.DThLGGeDFDnrlvdhlv
+                    l+          S   i  G+ +  +aT G  T+ G      ++ d ++
+  1SU4:A|PDB   207 MLF----------SGTNIAAGkALGIVATTGvSTEIG------KIRDQMA 240  
+
+                   eeFkkkegiDlskdkrAlqRLreaAEKAKieLSsssqteinLpfitadad
+                   ++ + k           +q+L e  E + ++ S      + L  i  ++ 
+  1SU4:A|PDB   241 ATEQDK--------TPLQQKLDEFGEQLSKVISLI-CVAVWLINIGHFN- 280  
+
+                   GPkhlsetLtRAkFEeLvadLfeRtlePvekaLkDAklsksdIdeVvLVG
+                   +P+h  + +  A         +   ++ v  aL+ A +            
+  1SU4:A|PDB   281 DPVHGGSWIRGA---------IYYFKIAV--ALAVAAIPEG--------- 310  
+
+                   GsTRIPaVqelVkef.FGGKePskgVNPDEAVAiGAAvQAGVLsGseeVk
+                        PaV  +   ++++ + ++k+               ++ +      
+  1SU4:A|PDB   311 ----LPAVITTCLALgTR-RMAKKN---------------AIVRS----- 335  
+
+                   DvlLLDVtPLSLGIETlGGvmtklIeRNTTIPtkkSqiFSTaaDNQtaV.
+                           P    +ETlG   t +I          S    T + NQ +V 
+  1SU4:A|PDB   336 -------LP---SVETLG--CTSVIC---------SDKTGTLTTNQMSVc 364  
+
+                   eIqVlqGERemakDNklLGqFeLdGIpPAPrGvPQIeVtFdIDANGIlnV
+                    + +     ++  D  +L +F ++G + AP+G                 V
+  1SU4:A|PDB   365 KMFIID---KVDGDFCSLNEFSITGSTYAPEGE----------------V 395  
+
+                   sAkDkgtgkeqkItItassgrLsddEIerMvkdAEkyaeeDkkrkeriEa
+                      Dk       I+     g      I  + +d+     e k   e+  +
+  1SU4:A|PDB   396 LKNDK------PIRSGQFDGLVELATICALCNDSSLDFNETKGVYEK--V 437  
+
+                   kNeaEslvystekslkeeklgdkvpeadkeklekkveeaiewLkealege
+                       E+ ++++  +++      +v    k +  ++++++i++L ++   e
+  1SU4:A|PDB   438 GEATETALTTLVEKMNVF--NTEVRNLSKVERANACNSVIRQLMKK---E 482  
+
+                   ddAekeeikakteeLqkvvqkigekmyq<-*
+                       + e+  +++  + ++ +  ++  +   
+  1SU4:A|PDB   483 F---TLEFSRDRKSMSVYCSPAKSSRAA    507  
+
+FeoA: domain 1 of 1, from 114 to 187: score -21.9, E = 6.9
+                   *->mtLselkeGqk..grvvrirdhvedeellrrLlsmGivpGtevtvir
+                        +  lke +++ g+v r ++        +r+ + +ivpG  v+v  
+  1SU4:A|PDB   114    NAIEALKEYEPemGKVYRADR-----KSVQRIKARDIVPGDIVEVAV 155  
+
+                   kapalGgdplivevggtr...laLrkgeAskIfVee<-*
+                    +     +p  +++ + ++++l +++++     V++   
+  1SU4:A|PDB   156 GDK----VPADIRILSIKsttLRVDQSILTGESVSV    187  
+
+AAA_3: domain 1 of 1, from 117 to 225: score -43.0, E = 5.2
+                   *->HvLlegvPGlaKTllvkalAkaldlkfkRiQaFTpDLlPsDilGtev
+                        L e  P ++K   +       + +++Ri     D++P+Di+ + v
+  1SU4:A|PDB   117    EALKEYEPEMGKVYRAD------RKSVQRIK--ARDIVPGDIVEVAV 155  
+
+                   ydektrefefkkGPvFanllLADEINRappKtQsALLEaMeElrqVTvdg
+                    d+  +++++              I  ++ ++  ++L    E   V+v +
+  1SU4:A|PDB   156 GDKVPADIRILS------------IKSTTLRVDQSILT--GE--SVSVIK 189  
+
+                   ethkLpepFlVlATqNPieqeGtYpLPEAqlDRFll<-*
+                   +t ++p+p  V   +  + ++Gt       l        
+  1SU4:A|PDB   190 HTEPVPDPRAVNQDKKNMLFSGTNIAAGKALGIVAT    225  
+
+Biotin_lipoyl: domain 1 of 1, from 138 to 188: score -40.2, E = 8.6
+                   *->keiksPmiGesvkegtPvvevlVkvGDkVkaGqvlcevEaMKmemei
+                        ik+ +i  +         v V+vGDkV a+  + +++        
+  1SU4:A|PDB   138    QRIKARDIVPGDI-------VEVAVGDKVPAD--IRILS-------- 167  
+
+                   pApvaGvvkeilvkeGdtVevGdpLaki<-*
+                          +k+    +++++ +G+   +i   
+  1SU4:A|PDB   168 -------IKSTTLRVDQSILTGESVSVI    188  
+
+Bac_export_1: domain 1 of 1, from 148 to 364: score -164.3, E = 9.3
+                   *->eslivllaalaLalfvRvlalfstlPvfssrslggvvRRCngvalll
+                       ++++  + + ++  +R+l + st     +  +  +++  +    ++
+  1SU4:A|PDB   148    GDIVEVAVGDKVPADIRILSIKST-----TLRVDQSIL--T--GESV 185  
+
+                   alivapsipnqaapevseatqylilLvlkEillGlllGfflsipFwafea
+                   ++i ++   +++ ++++++    +l     i  G  lG ++++   + + 
+  1SU4:A|PDB   186 SVIKHTEPVPDPRAVNQDK-K-NMLFSGTNIAAGKALGIVATT--GVSTE 231  
+
+                   AGelIDnQrGatmasslDPasgsqsspvGqfLnqlaillflasgGhllll
+                    G + D Q+ at         +++++p+ q L+ ++         ++ ++
+  1SU4:A|PDB   232 IGKIRD-QMAAT---------EQDKTPLQQKLDEFG-------EQLSKVI 264  
+
+                   sialydSyqiwPvgqflpnsneq....aakfllkalsqlflialllAaPv
+                   s ++   +  +++g+f    + ++  ++a +++k   +l++ a+   +P 
+  1SU4:A|PDB   265 S-LICVAVWLINIGHFNDPVHGGswirGAIYYFKIAVALAVAAIPEGLPA 313  
+
+                   iilLLLidlalGlLsRfAPQLnvfvlslPiKsavglllLvlylpyilplf
+                   +i+       l+l +R + + n+ v slP   ++g      ++++i  + 
+  1SU4:A|PDB   314 VIT-----TCLALGTRRMAKKNAIVRSLPSVETLG------CTSVICSDK 352  
+
+                   keelsllfdlls<-*
+                   +++l+  +       
+  1SU4:A|PDB   353 TGTLTTNQMSVC    364  
+
+DUF1129: domain 1 of 1, from 161 to 336: score -165.6, E = 6.1
+                   *->melqeLTKKNqEfvhivtkqLiadGKSDEeikaILeEmlPqILe...
+                       ++  L       + + t   +++ +++E +  I  ++++   +++ 
+  1SU4:A|PDB   161    ADIRILS------IKSTTLRVDQSILTGESVSVI--KHTEPVPDpra 199  
+
+                   .eQKk......G..iTARsLlGLaPTewaasftvkpedkatavvekNtNP
+                    +Q k++   +G++i A + lG+  T+ +   + k  d  +a+++ +t P
+  1SU4:A|PDB   200 vNQDKknmlfsGtnIAAGKALGIVATTGVSTEIGKIRDQMAATEQDKT-P 248  
+
+                   WLMwLDtsLLflgivaLlnGimaFFgknqAtKNSAGtyGlItlLilgfvG
+                       LD                  Fg +            I+l+ +++  
+  1SU4:A|PDB   249 LQQKLDE-----------------FGEQLSK--------VISLICVAV-- 271  
+
+                   GlaMyllYyYiYRykGsnmdksqRpsfwKsfavlvlvmlvWmlVftatsf
+                           ++         d    +s++ + a+  + ++v ++V ++   
+  1SU4:A|PDB   272 --WLINIGHFN--------DPVHGGSWIRG-AIYYFKIAVALAVAAIPEG 310  
+
+                   TLPaslNPvLPpiaLlIIGavafalRfYLKrkyNIqsa<-*
+                    LPa           +I   +a++ R   K+    +s+   
+  1SU4:A|PDB   311 -LPA-----------VITTCLALGTRRMAKKNAIVRSL    336  
+
+7tm_3: domain 1 of 1, from 170 to 372: score -173.9, E = 4.6
+                   *->lvalAvlGlivlTlfVlvvFvkhrdtPiVKaSnreLSYlLLiglilc
+                       ++l v   ++lT   ++v  +    P  +a n+   + L  g+ + 
+  1SU4:A|PDB   170    STTLRVD-QSILTGESVSVIKHTEPVPDPRAVNQDKKNMLFSGTNIA 215  
+
+                   ylcsflFIgkGtvekPsewsCilRrilfGlgFtlcySalLaKTirVlriF
+                           gk                ++G++ t  +S+ ++K     ++ 
+  1SU4:A|PDB   216 -------AGK----------------ALGIVATTGVSTEIGKIRDQMAAT 242  
+
+                   rkatkpgsgqrrkfispwaqvlivliltliQviicviWL..vvePPrpdk
+                   ++ + p    ++  ++ +  ++i li++ + +i ++ + ++v     ++ 
+  1SU4:A|PDB   243 EQDKTPLQQ-KLDEFGEQLSKVISLICVAVWLINIGHFNdpVHGGSWIRG 291  
+
+                   diysekekeedeDvsiapiileCnkgsvvaFvvvLgYkglLavlcfflAf
+                    iy+ k                      va+ v  +  gl av+++ lA 
+  1SU4:A|PDB   292 AIYYFKIA--------------------VALAVAAIPEGLPAVITTCLAL 321  
+
+                   ltRklPvdnFNEaKfItFSMYNvltfCivWvAFiPiYfstpgsaedykvq
+                    tR    +n         ++                  s p+        
+  1SU4:A|PDB   322 GTRRMAKKN--------AIV-----------------RSLPS-------- 338  
+
+                   vavevfsIlaSs..tvlLgc..iFaPKcyIILfrPekN<-*
+                   v ++  + + +s++t++L  +++ + K++II    +k    
+  1SU4:A|PDB   339 VETLGCTSVICSdkTGTLTTnqMSVCKMFII----DKV    372  
+
+PulS_OutS: domain 1 of 1, from 180 to 266: score -67.9, E = 7.7
+                   *->LtGCQqttpiknkasvaGqnsqatvpaqeQleQLasLvAGsrYLKed
+                      LtG + +  i          + ++vp+    +Q              
+  1SU4:A|PDB   180    LTGESVSV-I---------KHTEPVPDPRAVNQ-------------- 202  
+
+                   CnRsDlPDdqaIlktAikvAkqkGW.dtsakayqlLpqrSeelYqaLlkD
+                          D    l +  ++A +k  +++++++    + + ++   a  +D
+  1SU4:A|PDB   203 -------DKKNMLFSGTNIAAGKALgIVATTGVSTEIGKIRDQMAATEQD 245  
+
+                   sTpeatKCseFNrrLapFIda<-*
+                    Tp+ +K  eF ++L   I     
+  1SU4:A|PDB   246 KTPLQQKLDEFGEQLSKVISL    266  
+
+DJ-1_PfpI: domain 1 of 1, from 184 to 323: score -51.6, E = 9.9
+                   *->evtvvspnkgkgd.cvevkgkrgggaqyekggvkvtadkslddvnad
+                      +v+v+ ++   +d+ ++   k++         + +   +++ + +  
+  1SU4:A|PDB   184    SVSVIKHTEPVPDpRAVNQDKKN---------MLFSGTNIAAGKAL- 220  
+
+                   daAayDalviPGGhagae..dLrldAv.k.c.kseklvefvkefyes.gk
+                         ++v+  G + +e +  r++    ++++ ++l++ + ef e   k
+  1SU4:A|PDB   221 ------GIVATTGVS-TEigKIRDQ-MaAtEqDKTPLQQKLDEFGEQlSK 262  
+
+                   piaAIChGPavlLaaagllkrsvvggkrvTsfpsvkekvmgvmellknag
+                   +i  IC +++++ + +  ++           +++  +            g
+  1SU4:A|PDB   263 VISLICVAVWLINIGHFNDP-----------VHGGSW----------IRG 291  
+
+                   aeyvdedepVvgafvDgnepndFvitDGklvTsagpgsapeFalelleaL
+                   a y+  + +V+                  l  +a p  +p+  ++ l++ 
+  1SU4:A|PDB   292 AIYYF-KIAVA------------------LAVAAIPEGLPAVITTCLALG 322  
+
+                   a<-*
+                       
+  1SU4:A|PDB   323 T    323  
+
+Coq4: domain 1 of 1, from 204 to 371: score -160.6, E = 1.3
+                   *->agHVPLsPlqkalLaaGSAlmALvdPerRgDmVavLGETTGkPpfLe
+                                k +L+ G  + A ++      +Va    TTG      
+  1SU4:A|PDB   204    ---------KKNMLFSGTNIAAGKAL----GIVA----TTGVSTEIG 233  
+
+                   nlrerMlsDeeGrrILkEkPRissetldlkkLrkLPeNTLGkvYlkFLdr
+                    +r++M   e  +  L+ k     e+l   k  +L         + +L  
+  1SU4:A|PDB   234 KIRDQMAATEQDKTPLQQKLDEFGEQLS--KVISL------ICVAVWL-- 273  
+
+                   envSPDtRaPvrFvDdpElAYVmqRYREvHDfyHallnmPTNilGEitvK
+                    n++           dp +     R         a+   ++     +++ 
+  1SU4:A|PDB   274 INIG--------HFNDPVHGGSWIRG--------AIYYFKIA----VAL- 302  
+
+                   wlEgvqmGLPMciLGai.fGplRLnekqrsrLvkeyLPWaVrnGrnAktL
+                   +  ++  GLP  i+  + +G+ R+ +k++ +   + LP +V++ + ++ +
+  1SU4:A|PDB   303 AVAAIPEGLPAVITTCLaLGTRRMAKKNAIV---RSLP-SVET-LGCTSV 347  
+
+                   invYwErhlekdleavRkeLgIta<-*
+                   i+ +    l+     v k   I     
+  1SU4:A|PDB   348 ICSDKTGTLTTNQMSVCKMFIIDK    371  
+
+DHHA1: domain 1 of 1, from 205 to 262: score -13.8, E = 8.1
+                   *->dkpvvvfa.eedgkikvSaRsskgldvkGvkAgellrevaeilGGgG
+                      + + +  +++  gk+ + +++++  ++ G        ++        
+  1SU4:A|PDB   205    KNMLFSGTnIAAGKALGIVATTGVSTEIG--------KI-------- 235  
+
+                   GGHpdAAGaggkdgsk......leealellee<-*
+                     ++++A+   ++ +k++ +++l+e+ e l +   
+  1SU4:A|PDB   236 --RDQMAA---TEQDKtplqqkLDEFGEQLSK    262  
+
+ATP-synt_C: domain 1 of 1, from 211 to 278: score -35.1, E = 6.4
+                   *->aavIGAGlAigl.aalGaGiGiGivggaliegiARqPElrgqLftkm
+                      +++I+AG A g+ a  G+   iG++ +  +++   +  l+++L  + 
+  1SU4:A|PDB   211    GTNIAAGKALGIvATTGVSTEIGKIRDQMAATEQDKTPLQQKLDEF- 256  
+
+                   iigvalvEaiaiygLviAflllfa<-*
+                     g  l+ +i ++++ + ++ ++    
+  1SU4:A|PDB   257 --GEQLSKVISLICVAVWLINIGH    278  
+
+DUF21: domain 1 of 1, from 217 to 352: score -108.6, E = 8.2
+                   *->lllllillLillsaFFSaaEfALvslrrsrleqlaesGdpEKhKkrA
+                         l+i++ + +s     +E++ +   r ++ +  ++++     +  
+  1SU4:A|PDB   217    GKALGIVATTGVS-----TEIGKI---RDQMAATEQDKT-----PLQ 250  
+
+                   kralkllenpdrllLstiqlGiTlvnilaGavGEpaiatllapllggvgl
+                   +++ +  e++++  +s i +   l+ni+          ++ +p++gg   
+  1SU4:A|PDB   251 QKLDEFGEQLSKV-ISLICVAVWLINIG----------HFNDPVHGG--- 286  
+
+                   penktslahaisvvlAfaliTfLilvfGElvPKslAirypErvAlrvApp
+                        s++ ++   + +a+   +            Ai  ++     ++  
+  1SU4:A|PDB   287 -----SWIRGAIYYFKIAVALAV-----------AAIPEGLPAVITTCLA 320  
+
+                   lrlfyrlfyPlvwllnkasanlllrllGvepaeesesavteeELkslvee
+                   l                       r+ +++  ++s +          ve+
+  1SU4:A|PDB   321 L------------GTR--------RMAKKNAIVRSLP---------SVET 341  
+
+                   saeeGvlekeE<-*
+                    +   v+ ++    
+  1SU4:A|PDB   342 LGCTSVICSDK    352  
+
+COX2_TM: domain 1 of 1, from 240 to 298: score -52.3, E = 8.8
+                   *->matwwglnfQDsaSPlmEqlifFHDhtlmiLilItilVsyilvsllf
+                      +at ++       +Pl+++l++F      ++ lI++ V  i +  + 
+  1SU4:A|PDB   240    AATEQDK------TPLQQKLDEFGEQLSKVISLICVAVWLINIGHFN 280  
+
+                   nFnrrkskltnrylleGqtIEiIWTilPAiILilIAlPSLrL<-*
+                          ++     + G                  A++ +++   
+  1SU4:A|PDB   281 D------PVHGGSWIRG------------------AIYYFKI    298  
+
+IRK: domain 1 of 1, from 271 to 493: score -298.9, E = 6.5
+                   *->VsKdGrCNVqfkNvrgergrYLsDiFTTlVDlKWRymLliFslaFll
+                              V + N++      + D                      +
+  1SU4:A|PDB   271    --------VWLINIG-----HFND------------------PVHGG 286  
+
+                   SWLfFGviwW...LIAyaHGDLeeseapdanhtPCV...........mnV
+                   SW + G i++ + ++A+a   ++e+   +a +t C   ++++  ++++ V
+  1SU4:A|PDB   287 SW-IRGAIYYfkiAVALAVAAIPEGL--PAVITTCLalgtrrmakknAIV 333  
+
+                   hsftsAFLFSiETQtTIGYGfRciTEeCPlAIvllilQsIlGliinaFMi
+                   +s++     S+ET                l+ + +i     G+++   M 
+  1SU4:A|PDB   334 RSLP-----SVET----------------LGCTSVICSDKTGTLTTNQMS 362  
+
+                   GcifaKmArPKKRAeTLiFSkhAVIslRDGKLCLMfRVGdLRkShlveAh
+                    c +                   +I + DG  C           +l e +
+  1SU4:A|PDB   363 VCKMF------------------IIDKVDGDFC-----------SLNEFS 383  
+
+                   VraqLlksrvTpEGEfipLhQiDikvgfDtGsDriFLVsPlTIyHvIDer
+                   +++    s+  pEGE++  +      +fD       LV   TI+   +  
+  1SU4:A|PDB   384 ITG----STYAPEGEVLKNDKPIRSGQFDG------LVELATICALCNDS 423  
+
+                   SPLydlsaqdLesadFEIVVILEGtVEs..TGmTcQARTSYlpeEILWGH
+                   S   d + +             E ++E+++T+ T+               
+  1SU4:A|PDB   424 S--LDFNETKG---------VYEKVGEAteTALTT--------------- 447  
+
+                   RFepvvslskeeGkYkVDYskFhkTyeVpsPTPdcSAreldeeksiegiL
+                       +v++               +++ ++   +  S  e ++       +
+  1SU4:A|PDB   448 ----LVEK--------------MNVFNTE--VRNLSKVERANACN---SV 474  
+
+                   leslrqskeehkssdnlenel<-*
+                    + l  +k+e  +++++++++   
+  1SU4:A|PDB   475 IRQL--MKKEFTLEFSRDRKS    493  
+
+DUF423: domain 1 of 1, from 273 to 347: score -77.9, E = 8
+                   *->fliLaALsGalaVaLGAFaAHGLkkrlsDpkaQVDlavieTGvqYQm
+                      +++++ ++                    Dp     + ++  G+ Y +
+  1SU4:A|PDB   273    LINIGHFN--------------------DPVH---GGSWIRGAIYYF 296  
+
+                   iHaLAlLavglllLalkraasrfvrwagwlllvGilLFSGSLYaLALLPG
+                     a+A Lav+++       + +++ ++++ l++G+         +A    
+  1SU4:A|PDB   297 KIAVA-LAVAAI-------PEGLPAVITTCLALGTR-------RMAK--K 329  
+
+                   tgl.rilgaiTPiGGvlFiaGWllLal<-*
+                    ++ r l+ + ++G         +  +   
+  1SU4:A|PDB   330 NAIvRSLPSVETLG---------CTSV    347  
+
+VPEP: domain 1 of 1, from 300 to 333: score -8.9, E = 2.5
+                   *->ftitvtAVPEPssLAlLglGlaGgvarRrRrkrvarks<-*
+                      +++ v A+PE +  A+++  la+g+ r  +   + + +   
+  1SU4:A|PDB   300    VALAVAAIPE-GLPAVITTCLALGTRRMAK---KNAIV    333  
+
+CFEM: domain 1 of 1, from 311 to 378: score -22.7, E = 6.2
+                   *->ivdnlPsCalpCGnnmvdqaggsAKefpCssltDAqLvakC...lCe
+                       ++++  C+      m+++++ +   +  +s +      +C++ +C+
+  1SU4:A|PDB   311    LPAVITTCLALGTRRMAKKNAIV---RSLPSVET----LGCtsvICS 350  
+
+                   nknDefgsaitsCvakkCkgsvdadsvasatkFsiCs<-*
+                    k     +++t+   ++Ck        ++ +  ++Cs   
+  1SU4:A|PDB   351 DK----TGTLTTNQMSVCKMF-----IIDKVDGDFCS    378  
+
+FYVE: domain 1 of 1, from 333 to 426: score -36.9, E = 4
+                   *->phWvpDeevsnCmr..CgkpFtkltkRrHHCRaCGrifCg.......
+                      ++ +p+ e+  C++  C+ + ++lt+ +       + +C+    ++ 
+  1SU4:A|PDB   333    VRSLPSVETLGCTSviCSDKTGTLTTNQ-------MSVCKmfiidkv 372  
+
+                   ...sCssktvllpylgiaall.k.............n.dviekpvRVCds
+                   ++++Cs ++++++        ++++  +++++ +++  d+    + +C  
+  1SU4:A|PDB   373 dgdFCSLNEFSITGS---TYApEgevlkndkpirsgQfDGLVELATICAL 419  
+
+                   Cydrlnk<-*
+                   C+d+  +   
+  1SU4:A|PDB   420 CNDSSLD    426  
+
+Hydrolase: domain 1 of 1, from 345 to 724: score 65.0, E = 7.5e-17
+                   *->ikavvFDkDGTLtdgk...............................
+                      + +++ Dk+GTLt+ + +  +    ++ +++  + ++ + ++++  +
+  1SU4:A|PDB   345    TSVICSDKTGTLTTNQmsvckmfiidkvdgdfcslnefsitgstyap 391  
+
+                   ...........eppiaeaiveaaaelgl.....apleevekllgrgv.ge
+                   +++  +++++ +    + +ve+a    l +++++++ e++   ++  ++ 
+  1SU4:A|PDB   392 egevlkndkpiRSGQFDGLVELATICALcndssLDFNETKGVYEKVGeAT 441  
+
+                   rilleggltaell.....................................
+                   + +l+  ++ +++ +++ ++ ++ ++ +  ++  +   +++ + + ++++
+  1SU4:A|PDB   442 ETALTTLVEKMNVfntevrnlskveranacnsvirqlmkkeftlefsrdr 491  
+
+                   ..................................................
+                   ++ +   ++ ++++   +++   ++ +++  ++ +  + ++++ + +++ 
+  1SU4:A|PDB   492 ksmsvycspakssraavgnkmfvkgapegvidrcnyvrvgttrvpmtgpv 541  
+
+                   ................................................d.
+                   +++  +  ++ ++++++ +     ++++++++++   +++++  + ++d 
+  1SU4:A|PDB   542 kekilsvikewgtgrdtlrclalatrdtppkreemvlddssrfmeyetDl 591  
+
+                   evlglial.dklypgarealkaLkrrGikvailTggdr.naeallealgl
+                    ++g++   d+++ +++  ++ ++++Gi+v+++Tg++ ++a a+ ++ g+
+  1SU4:A|PDB   592 TFVGVVGMlDPPRKEVMGSIQLCRDAGIRVIMITGDNKgTAIAICRRIGI 641  
+
+                   a.lfdvivdsdevgg.v..gpivvgKPkpeifllalerlgvkpeevg...
+                   +++ + + d +++g++ +++p+       e+ ++a+  ++v+p+  ++++
+  1SU4:A|PDB   642 FgENEEVADRAYTGReFddLPLA---EQREACRRACCFARVEPS--Hksk 686  
+
+                   ........pe.vlmVGDgvnDapalaaAGvgvamgngg<-*
+                     +  ++ +e ++m GDgvnDapal++A +g+amg+g+   
+  1SU4:A|PDB   687 iveylqsyDEiTAMTGDGVNDAPALKKAEIGIAMGSGT    724  
+
+Connexin50: domain 1 of 1, from 369 to 437: score -25.7, E = 8.1
+                   *->IqKAKG.YkLLEEeKiv.SHYFPLTEVGgvEaspLpakPfeqFEEKi
+                      I K  G++  L E  i++S Y P  EV      p  +  f+   E  
+  1SU4:A|PDB   369    IDKVDGdFCSLNEFSITgSTYAPEGEV-LKNDKPIRSGQFDGLVELA 414  
+
+                   degmgPlkDlSraYdEtLPSYAQv<-*
+                       +  +D S  ++Et   Y  v   
+  1SU4:A|PDB   415 -TICALCNDSSLDFNETKGVYEKV    437  
+
+Sec8_exocyst: domain 1 of 1, from 385 to 524: score -69.4, E = 4.8
+                   *->mnApppesasRgrkigkdenlsnnaErieGllinvIrrdyqamVEtD
+                         + +++a+ g +++ d ++ +    + + l+ +            
+  1SU4:A|PDB   385    ---TGSTYAPEGEVLKNDKPIRS---GQFDGLVELAT---------- 415  
+
+                   CiPleLsLalsddtdvGrehEykrfeqlykridasLqelVheHkqdftts
+                           al  d++  +   ++  e++ +    +L +lV     +f+t 
+  1SU4:A|PDB   416 ------ICALCNDSSLDFNETKGVYEKVGEATETALTTLVEK-MNVFNTE 458  
+
+                   iasygkisssIqnsrerIhalKesLkasKelLettrSdELkkLwaeslqy
+                   ++  +k+ ++  ++++ I++l       K   ++  S + k +    +  
+  1SU4:A|PDB   459 VRNLSKV-ERANACNSVIRQL------MKKEFTLEFSRDRKSMSVYCSPA 501  
+
+                   kkVlevLkeleELrqvPdkleel<-*
+                   k+      +    + +P+ +  +   
+  1SU4:A|PDB   502 KSSRAAVGNKMFVKGAPEGVIDR    524  
+
+NtA: domain 1 of 1, from 439 to 570: score -46.6, E = 5.4
+                   *->tCPERALERREEEAnvvLtGtvEEiLnvDPvqHtYsCKvRvWRYLKG
+                         E AL    E  nv  t    E+ n   v    +C   v R L  
+  1SU4:A|PDB   439    EATETALTTLVEKMNVFNT----EVRNLSKVERANACN-SVIRQLMK 480  
+
+                   KDlv................ArEsLLDGGnKvvisGFGDPLi..CDnqvs
+                   K+   + ++++++ +   ++A+ s    GnK+ + G  + +i++C n v 
+  1SU4:A|PDB   481 KEFTlefsrdrksmsvycspAKSSRAAVGNKMFVKGAPEGVIdrC-NYVR 529  
+
+                   tGDtRiFFvnPAPPYlWPAHKnELmLnssLmRitLRnLEEvEFCvEDKP<
+                    G tR+    P    +    K          R tLR L        D P 
+  1SU4:A|PDB   530 VGTTRVPMTGPVKEKILSVIK-----EWGTGRDTLRCL---ALATRDTP  570  
+
+                   -*
+                     
+  1SU4:A|PDB     -    -    
+
+Epimerase_2: domain 1 of 1, from 506 to 777: score -235.5, E = 6.5
+                   *->kelqndpelelivvvTGQHydremgdtvfelekegFeIrkpdydLni
+                      +++        + +v G        + v +   +++          +
+  1SU4:A|PDB   506    AAV------GNKMFVKGAP------EGVIDR--CNY--------VRV 530  
+
+                   mkdgqtLgeiHtgniLaglddvleeekPDlVlVhG...DTnttLAgAlAA
+                   ++++ +   + tg + +++ +v++e         G+++DT  +LA     
+  1SU4:A|PDB   531 GTTRVP---M-TGPVKEKILSVIKE--------WGtgrDTLRCLA----- 563  
+
+                   fylkIPVgHiEAGlRtfnLYspmP...EEiNRhlisklShlHfapTEiAk
+                                l t +     P+++EE              + ++ ++
+  1SU4:A|PDB   564 -------------LATRD----TPpkrEEM-------------VLDDSSR 583  
+
+                   rnLlqEGekek..sIfvtGntviDallhnlkklks.tavkinksdalkkl
+                        +  + + +++ v+G  ++D     +k +++++  +++       +
+  1SU4:A|PDB   584 ----FMEYETDltFVGVVG--MLDPP---RKEVMGsIQLCRDAGIRVIMI 624  
+
+                   glkkdkyilvtlHRrENtDngeslkniikalleileeykdvniIfpvHnN
+                    +++ k  ++ + Rr+ +  ge+ +   +a+     e++d    +p+   
+  1SU4:A|PDB   625 TGDN-KGTAIAICRRIGI-FGENEEVADRAYTG--REFDD----LPLA-- 664  
+
+                   PrvrepierlllfkeLknnprvkliePlgyldFvsLmknAfliLtDSGGi
+                    + re   r+ +f   + +++ k+ e l + d +  m          G +
+  1SU4:A|PDB   665 -EQREACRRACCFARVEPSHKSKIVEYLQSYDEITAMT---------GDG 704  
+
+                   qeEApsLgkP..vlvlRDtTERPErveaGtvilVGtekenIlesvkqlle
+                      Ap L+k++ ++ +++ T    + +a   +l++ +   I+ +v++ + 
+  1SU4:A|PDB   705 VNDAPALKKAeiGIAMGSGTA--VAKTASEMVLADDNFSTIVAAVEEGRA 752  
+
+                   dpefykkmsnasNPYgdgnASkrIveill<-*
+                       y++m++++ +Y +  +   +v i+l   
+  1SU4:A|PDB   753 ---IYNNMKQFI-RYLISSNVGEVVCIFL    777  
+
+Hydrolase_3: domain 1 of 1, from 531 to 747: score -89.7, E = 0.06
+                   *->iasDlDGTL.LnsdkkisektkeaikklqekGikvviATGRpyrgal
+                            GT ++  ++ + ek + +ik++          TGR     l
+  1SU4:A|PDB   531    ------GTTrVPMTGPVKEKILSVIKEWG---------TGRDTLRCL 562  
+
+                   pvle.eLgldkmqlpvIcgYyNGAlityddengkilyknpis........
+                    ++ ++   +  +  ++           dd +  + y++ ++  +  +  
+  1SU4:A|PDB   563 ALATrDTPPK--REEMVL----------DDSSRFMEYETDLTfvgvvgml 600  
+
+                   ...kedvkeiieylkenn.lsillytddgiyvlndkevsekiereenkvk
+                   ++++++v+  i+++++ +   i++ +d++   + +               
+  1SU4:A|PDB   601 dppRKEVMGSIQLCRDAGiRVIMITGDNKGTAIAI-------------CR 637  
+
+                   sfvlviddfeelededinKillfivivdpedldellekelkelfgkliev
+                      +  +++e+ ++      +      d+  l e  +++ ++ +      
+  1SU4:A|PDB   638 RIGIFGENEEVADRAYTGREF------DDLPLAEQ-REACRRACCFA--- 677  
+
+                   titssgpgylEImpkgvsKgtalkaLakhlgidleeviAF.GDgeNDieM
+                   ++  s++  +            +++L+     + +e+ A++GDg ND + 
+  1SU4:A|PDB   678 RVEPSHKSKI------------VEYLQ-----SYDEITAMtGDGVNDAPA 710  
+
+                   LelaGlgVAMgNAspevKaaAdyEvtgsNneedGVAkal<-*
+                   L+ a +g+AMg ++  +K a  + v ++ n    +  a    
+  1SU4:A|PDB   711 LKKAEIGIAMGSGTAVAKTASEM-VLADDNF-STIVAAV    747  
+
+DUF498: domain 1 of 1, from 549 to 636: score -45.0, E = 2.2
+                   *->idgysfGgfriqnGrvyegdiivlpdgvverreWelSkkKvgtshdi
+                      i++++ G+ ++         ++ l++     ++++         + +
+  1SU4:A|PDB   549    IKEWGTGRDTL--------RCLALATRDT--PPKR---------EEM 576  
+
+                   tpedleellalekpEvllvGtGakGilfLppev...rafleeaGigveim
+                    ++d +++ +  + ++ +vG+    + ++++ev ++++++++aGi v+  
+  1SU4:A|PDB   577 VLDDSSRFMEY-ETDLTFVGVVGM-LDPPRKEVmgsIQLCRDAGIRVIMI 624  
+
+                   pTeaAirTYNvLlsEGRrVaAALi<-*
+                   +            + ++  a A+    
+  1SU4:A|PDB   625 T------------GDNKGTAIAIC    636  
+
+RdRP_3: domain 1 of 1, from 562 to 906: score -354.9, E = 9.3
+                   *->lyvwpgarptPCkkeRkiyrisgpgsgllfgvHNnSlvNlrRGLvER
+                      l+  +++ p   +k++++     +  +++f  + + l+         
+  1SU4:A|PDB   562    LALATRDTP---PKREEMV----LDDSSRFMEYETDLT--------- 592  
+
+                   VfyVendrkkeLvpaPkPypgaFkerLkyfarrlvrivg....tyeeatp
+                     +V     + L p   P + +  + +   +++  r+   +++ +++a++
+  1SU4:A|PDB   593 --FVGV--VGMLDP---PRKEVMGS-IQLCRDAGIRVIMitgdNKGTAIA 634  
+
+                   ltpeefaasYtGrkrtiYqkAveS..LavkpvqrrwDakLktFvKaEKin
+                   + ++      +G   ++  +A   ++++ +p+ ++ +a  ++       +
+  1SU4:A|PDB   635 ICRRIGI---FGENEEVADRAYTGreFDDLPLAEQREACRRA-------C 674  
+
+                   itaKpDPaPRdPvIQPRdPRYNVelGrYLRpyEkhlykaVtq........
+                         ++ R            Ve+    +++E    ++ +   ++++ +
+  1SU4:A|PDB   675 ------CFAR------------VEPSHKSKIVEYLQSYDEITamtgdgvn 706  
+
+                   ...kidkafgGpTvlKGYtveqrGeiilkkWdsFkkPVAIGlDASRFDQH
+                   + + + ka  G + ++G  v ++++++  + d F++ VA           
+  1SU4:A|PDB   707 dapALKKAEIGIAMGSGTAVAKTASEMVLADDNFSTIVAA---------- 746  
+
+                   VSveALrfEHsvYlaaflgdeareLarLLtwQLyNkGtayasDGflikYk
+                          +E+   +a++++++  +++r L     N+       G+     
+  1SU4:A|PDB   747 -------VEEG--RAIYNNMK--QFIRYLI--SSNV-------GE----- 771  
+
+                   vrGCRMSGDmNTSlGNcllmclivhalckalGglidarLaNNGDDCVlIc
+                                    + +   + al      li+ +L+          
+  1SU4:A|PDB   772 -----------------VVCIFLTAALGLPEA-LIPVQLL---------- 793  
+
+                   EsadldevkeaLRaLteaflryGAFtmkvEePVYelEkiEFcCQsrPVfd
+                       +  v++   +L+   + +G                 F    +P  +
+  1SU4:A|PDB   794 ---WVNLVTD---GLPA--TALG-----------------F----NPPDL 814  
+
+                   ggkwgMvRnpltslsKDplslapwetarHkpaksWlgAigecGlsLtgGv
+                   +   +M R p+   +K pl +  w  +r+ +++ ++gA   ++ + +   
+  1SU4:A|PDB   815 D---IMDRPPR--SPKEPL-ISGWLFFRYMAIGGYVGAATVGAAAWW--- 855  
+
+                   PvlqaFYscllrnggslekavsfekkgkeysdsPLdLPasgfyllgrsag
+                            ++  +g+      + ++++   +            ++    
+  1SU4:A|PDB   856 --------FMYAEDGP------GVTYHQLTHF------------MQC--- 876  
+
+                   srqsyepseeaRvSFyLRAFGitPdeQialEayydrlklele<-*
+                     + ++p+       ++   G++ ++ +a E   + l+++     
+  1SU4:A|PDB   877 --TEDHPH-------FE---GLDCEIFEAPEPMTMALSVLVT    906  
+
+TatD_DNase: domain 1 of 1, from 600 to 762: score -123.9, E = 6.4
+                   *->iDaHcHLdfkdfdeDrdevilerareaGvtavvvvgtdlwpgkpseD
+                            Ld++   ++    i + +r+aG++ +++ g +    +    
+  1SU4:A|PDB   600    ------LDPPR--KEVMGSI-QLCRDAGIRVIMITGDNK---G---- 630  
+
+                   yealdfelralelaekypdkvyaavGvHPhdadeaeeripeaseealeeL
+                            a+++ ++ +++                     ++ee+    
+  1SU4:A|PDB   631 --------TAIAICRRIGIFG--------------------ENEEVA--- 649  
+
+                   ekleilaehpkvvAIGEiGLDyyLyykdespkeaQeevFrrqleLAkeln
+                   +++    +         +G+ +     d+ p ++Q+e+ rr++  A+   
+  1SU4:A|PDB   650 DRA----Y---------TGREF-----DDLPLAEQREACRRACCFARVE- 680  
+
+                   lPvviHtRdnKaAhedtleILkeeg.apglkpvrgvlHcFsGsvetakei
+                          ++      +++e L+++++                 v+ a ++
+  1SU4:A|PDB   681 -------PS---HKSKIVEYLQSYDeITAM---------TGDGVNDAPAL 711  
+
+                   ldlGfyiSisGivTfknakklrevvdreiPldrlLvETDaPYlaPvPyRe
+                    +                    e+   ++ +   +  T +          
+  1SU4:A|PDB   712 KKA-------------------EIG-IAMGSGTAVAKTAS---------- 731  
+
+                   GkrNePayvpevaekiAelkgiseeevakitteNakrlFg<-*
+                     ++   +   ++ ++ e  g       +++++N k++ +   
+  1SU4:A|PDB   732 EMVLADDNFSTIVAAVEE--G-------RAIYNNMKQFIR    762  
+
+Tubulin_C: domain 1 of 1, from 613 to 736: score -52.3, E = 7.4
+                   *->lNvDladlrtnLvPfPRlHFammGyaPlsgkg..aehralsVleltr
+                      l+ D a++r++++          G+a ++ ++ ++  +++   e++ 
+  1SU4:A|PDB   613    LCRD-AGIRVIMITGD-----NKGTAIAICRRigIFGENE---EVAD 650  
+
+                   qafsspnlmvacdprhk.kGaygalanitgrgdvslkEvneaiqrirekn
+                   +a   +  + +  + ++++ ++ a++      +v++    ++++ +++  
+  1SU4:A|PDB   651 RAYTGREFD-DLPLAEQrEACRRACCF----ARVEPSHKSKIVEYLQS-- 693  
+
+                   sdaqFVeWapiifktaiddeppyglrvsvdlAkvvsgvmlgNtTaksasg
+                         +++++  + +++d  p  ++  +       g+++g  Ta     
+  1SU4:A|PDB   694 Y-----DEITAMTGDGVND-APALKKAEI-------GIAMGSGTA----- 725  
+
+                   dIqelfkrile<-*
+                     +++ + +l+   
+  1SU4:A|PDB   726 VAKTASEMVLA    736  
+
+2-Hacid_dh: domain 1 of 1, from 633 to 773: score -53.7, E = 7.3
+                RF    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxx
+                   *->vllldnyqnplrrpeelallkewnkdnggvaevevkdldf.elltee
+                      ++++            + ++ e    n++va+  ++   f++l+ +e
+  1SU4:A|PDB   633    IAIC----------RRIGIFGE----NEEVADRAYTGREFdDLPLAE 665  
+
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   laeaakdaadalvvrsntpvtaelLealgpnLKlIstrsaGyDniDldaa
+                     ea ++    ++ r+++     + e l +  ++ + ++ G++  D +a+
+  1SU4:A|PDB   666 QREACRR--ACCFARVEPSHKSKIVEYLQSYDEITAMTGDGVN--DAPAL 711  
+
+                RF xxxxxxxxxxxx xxxxxxxxxx     xxxxxxxxxxxxxxxxxxxxxx
+                   kerGIvVtNvPg.ystesVAEla.....gaTeEarermadialeNlvafl
+                   k+  I ++ + g++++ + +E+++++++++T  a  + ++++++N ++f+
+  1SU4:A|PDB   712 KKAEIGIAMGSGtAVAKTASEMVladdnFSTIVAAVEEGRAIYNNMKQFI 761  
+
+                RF xx  xxxxxxxx   
+                   aG..gppanvVn<-*
+                   +    +   +V    
+  1SU4:A|PDB   762 RYliSSNVGEVV    773  
+
+Voltage_CLC: domain 1 of 1, from 673 to 919: score -207.7, E = 0.45
+                   *->iggllagllvkrfapeaaGsGipeviaallhgvkgrrlplrvllvKf
+                      ++ ++      r+   +  s i+e +  +                  
+  1SU4:A|PDB   673    ACCFA------RV-EPSHKSKIVEYLQSY-D---------------- 695  
+
+                   lgslltigsGgSlGREGPsVqiGAaigsglglfktrrcllklsrndrRre
+                                       +i A+ g+g+     +     l +++  + 
+  1SU4:A|PDB   696 --------------------EITAMTGDGVN----DA--PALKKAEIGI- 718  
+
+                   LiaaGaAAGiAAa........FnAPLAGvlFAlEvlllrdf.slfrallp
+                    +++G A +  A++    +++F++    ++ A+E+  +  ++ + + +++
+  1SU4:A|PDB   719 AMGSGTAVAKTASemvladdnFST----IVAAVEE-GRAIYnNM-KQFIR 762  
+
+                   vlvasvvAalvsrllfGnelplgftnffgeisaavpslfvflpyvplSls
+                    l++s v+ +v+ +l     ++     +g     +p         +l ++
+  1SU4:A|PDB   763 YLISSNVGEVVCIFLT----AA-----LG-----LPE--------AL-IP 789  
+
+                   lelplfillGilcGllGalFirlllkverlfrrlkrklpippkwllrpal
+                   ++l+++ l    + + +  F+   l ++++  r          +  +p++
+  1SU4:A|PDB   790 VQLLWVNLVTDGLPATALGFNPPDLDIMDRPPRS---------PK-EPLI 829  
+
+                   gGllvGllglllPeggvlGgGy....lvlKflaTalslGsGapGGiFaPs
+                    G l          ++++  G   + + +  +a ++ ++  +p       
+  1SU4:A|PDB   830 SGWLF---------FRYMAIGGyvgaATVGAAAWWFMYAEDGP------- 863  
+
+                   LfiGAalGrllGlllall.....fp.p.d..csggiapsipPgayAlvGM
+                          G  + +l ++++ ++++p+++  +c +  ap  p         
+  1SU4:A|PDB   864 -------GVTYHQLTHFMqctedHPhFeGldCEIFEAPE-P--------- 896  
+
+                   AAflaavtrAPltaiviv.fElTGsyslllPlmiavliAylvsrl<-*
+                            ++++  v+v++E+++               + +s+    
+  1SU4:A|PDB   897 ---------MTMALSVLVtIEMCN-------------ALNSLSEN    919  
+
+Rnf-Nqr: domain 1 of 1, from 691 to 814: score -140.4, E = 5.1
+                   *->mesYlliflqalwknNivLvqfLGLCpfLAVSkkvetAlGmGLAtTl
+                      ++sY +i + +    N +        p+L   kk+e ++ mG + T+
+  1SU4:A|PDB   691    LQSYDEITAMTGDGVNDA--------PAL---KKAEIGIAMG-SGTA 725  
+
+                   VLtlanlvisLirkyIlkenALieglDLsFlRiitfIlvIAalVqvvemv
+                   V   a+  + + +++   +                      ++V +ve  
+  1SU4:A|PDB   726 VAKTASEMVLADDNF---S----------------------TIVAAVEE- 749  
+
+                   LnafspdLykaLGIFlPLIvTNCAvlGraeamfarkynfleSfldGfgsG
+                                             Gra+      +n  + + + ++s 
+  1SU4:A|PDB   750 --------------------------GRAIY-----NNMKQFIRYLISSN 768  
+
+                   lGftLaLvvlAalREklgygtlpaglrgllGevaaflthqifhtyiaFil
+                   +G    +++ Aal   l  + +p   ++l                 ++++
+  1SU4:A|PDB   769 VGEVVCIFLTAAL--GLPEALIPV--QLL---------------WVNLVT 799  
+
+                   agLmplAFmglgglva<-*
+                    gL++ A +g+   ++   
+  1SU4:A|PDB   800 DGLPATA-LGFNPPDL    814  
+
+ExoD: domain 1 of 1, from 707 to 855: score -128.9, E = 8.6
+                   *->rqptltLrelLaliGeRgFGllLallaLPnlLPiPsIPGaSTpFGal
+                        p l  +e+ +++G                   +         G +
+  1SU4:A|PDB   707    DAPALKKAEIGIAMG-------------------S---------GTA 725  
+
+                   ivllglQlmlGrrkPWLPrfileRtlprekvqgilrrgapwlrrlErilR
+                   ++  +  ++l  +               +++++ ++ g+++   + + +R
+  1SU4:A|PDB   726 VAKTASEMVLADD-------------NFSTIVAAVEEGRAIYNNMKQFIR 762  
+
+                   PRLrlLttsplgnrlnGliilllAIlLmLPLGfIP...fTNtlPalgIll
+                       +L  s++g+    ++++ l+  L LP  +IP + +  +l + g+  
+  1SU4:A|PDB   763 ----YLISSNVGE----VVCIFLTAALGLPEALIPvqlLWVNLVTDGLPA 804  
+
+                   lglG.......LLeR......DGllvllGyl..lavlsavvAAAWFlfas
+                   ++lG ++++ ++++R++++++  l++ + +++ +a+++ v        a 
+  1SU4:A|PDB   805 TALGfnppdldIMDRpprspkEPLISGWLFFryMAIGGYV------GAAT 848  
+
+                   igyalfl<-*
+                   +g a+++   
+  1SU4:A|PDB   849 VGAAAWW    855  
+
+DUF588: domain 1 of 1, from 708 to 814: score -52.2, E = 5.6
+                   *->grplrlvelvLRlaafvaalaaavvMvtdketkeiivayllfftqki
+                      ++ l+++e++   +   a + +a+ Mv +++   +    ++++    
+  1SU4:A|PDB   708    APALKKAEIGIAMGSGTAVAKTASEMVLADD--NF----STIVAAVE 748  
+
+                   tfsakfsdlpAF.rYfVvAnaivaaYslLsLalllvyailkkrllrskll
+                    + a +++++ F rY+++ n+  +++ +L      ++a+     l  + l
+  1SU4:A|PDB   749 EGRAIYNNMKQFiRYLISSNVGEVVCIFL------TAALGLPEALIPVQL 792  
+
+                   vlllfilDqvlayLllsAasAAaavayLaknGnkhanWlkiCdqygdeFC
+                   +++ ++ D +                                        
+  1SU4:A|PDB   793 LWVNLVTDGL---------------------------------------- 802  
+
+                   draagSlalsFfafil<-*
+                        + al+F    l   
+  1SU4:A|PDB   803 ----PATALGFNPPDL    814  
+
+Branch_AA_trans: domain 1 of 1, from 712 to 946: score -401.8, E = 9.9
+                   *->kkkdilviGfMLFalFFGAGNLIFPPmLGqaaGsnvwiAilGFllTG
+                      kk++i                       G a Gs             
+  1SU4:A|PDB   712    KKAEI-----------------------GIAMGSGT----------- 724  
+
+                   VGLPlLgiIavAksGgggleslasrvgpwFgilFtiilYLsIGPfFAIPR
+                            avAk+   +   la++    F+++ +++             
+  1SU4:A|PDB   725 ---------AVAKTA--SEMVLADD---NFSTIVAAV------------- 747  
+
+                   TaavsFEmgvaPflgsaissplaLfIFtviFFaialllSLnPsKlvDriG
+                         E g a        +++ +fI         +l+S        ++G
+  1SU4:A|PDB   748 ------EEGRAI------YNNMKQFI--------RYLIS-------SNVG 770  
+
+                   KfLTPiLLvllfiLviaaiikPlGaigaasvgaYaqshPfikGFleGYqT
+                    +         + +++ a + +  a+ +++                    
+  1SU4:A|PDB   771 EV---------VCIFLTAALGLPEALIPVQ-------------------- 791  
+
+                   MDaLAaLaFGivIvnAiKskGvt..........tpkqitkytikAGlIAa
+                         L    ++   + ++    ++++ +  + p    k  +++G+   
+  1SU4:A|PDB   792 ------LLWVNLVTDGLPATALGfnppdldimdRPPRSPKEPLISGW--- 832  
+
+                   igLaliYggL.aylGAtSatlaetlddvks.ggannGgqILsqasqylFG
+                     L++ Y ++++y+GA + ++a   +  +  ++   G+   +q +++   
+  1SU4:A|PDB   833 --LFFRYMAIgGYVGAATVGAA---AWWFMyAEDGPGVT-YHQLTHFM-- 874  
+
+                   saGsilLaviitLACLTTAvGLItAcsEyFsklfPkklSYkawVtiftli
+                                              +  +++                 
+  1SU4:A|PDB   875 ---------------------------QCTEDHPH--------------- 882  
+
+                   SflvANlGLtkIIsiSvPVLvliYPvaIvLilLslfrklfknskvvyqlt
+                        + GL+                         ++ +    + ++ l 
+  1SU4:A|PDB   883 -----FEGLD-------------------------CEIFEAPEPMTMALS 902  
+
+                   vlvtliisildvlkalgikigvegvlnnlfevLPLaslGLgWLvPalvgl
+                   vlvt  i  + +l++l  +        ++++  P      +W+   l g 
+  1SU4:A|PDB   903 VLVT--IEMCNALNSLSEN--------QSLMRMP------PWVNIWLLGS 936  
+
+                   iigliidrfk<-*
+                   i+ +   +f+   
+  1SU4:A|PDB   937 ICLSMSLHFL    946  
+
+DUF162: domain 1 of 1, from 713 to 777: score -54.2, E = 0.97
+                   *->dadvGIt.gAdagiAETGtlvLvsnegepRllsllPpvHiavvpask
+                      +a++GI  g+  ++A T + ++ +++                   s+
+  1SU4:A|PDB   713    KAEIGIAmGSGTAVAKTASEMVLADDN-----------------FST 742  
+
+                   IVptleeAverlreqaaygelglPryinfIsGPSrTADIEqtLvvGvHGP
+                   IV+ +ee  ++++++++   + + +++                       
+  1SU4:A|PDB   743 IVAAVEEGRAIYNNMKQFIRYLISSNV----------------------- 769  
+
+                   relhVilv<-*
+                    e+++i++   
+  1SU4:A|PDB   770 GEVVCIFL    777  
+
+DUF751: domain 1 of 1, from 754 to 809: score -34.4, E = 9.6
+                   *->MsnFWtNVfRYPRFlISssLGlfLtifePlfnLlKkPksailliiil
+                          ++N   + R+lISs  G +  if  l   l  P  +i + ++ 
+  1SU4:A|PDB   754    ----YNNMKQFIRYLISSNVGEVVCIF--LTAALGLPEALIPVQLLW 794  
+
+                   vgfLl.fLyftlraMLgl<-*
+                   v +  ++L +t    Lg+   
+  1SU4:A|PDB   795 VNLVTdGLPATA---LGF    809  
+
+YibE_F: domain 1 of 1, from 759 to 972: score -187.3, E = 3.3
+                   *->nalviLavlFillviivgrkkGlksllgLvlNlfviviiliplisnG
+                        + +L+ + ++ v+ ++    l + lgL   l+ + +++++l+++G
+  1SU4:A|PDB   759    QFIRYLISSNVGEVVCIF----LTAALGLPEALIPVQLLWVNLVTDG 801  
+
+                   fnpilvai......vlaviiliitLylvhGlnkkTlaAllgTligvllaa
+                    ++ ++ +++++ ++          +l++G+    + A++g +++ ++++
+  1SU4:A|PDB   802 LPATALGFnppdldIMDRPPRSPKEPLISGWLFFRYMAIGGYVGA-ATVG 850  
+
+                   lislivikltnlqGlsdEeleeLinlslnvtis.fsgl........flag
+                     +++++++ +  G+++ +l   + +    ++++f gl+ +  + +    
+  1SU4:A|PDB   851 AAAWWFMYAEDGPGVTYHQLT--HFMQCTEDHPhFEGLdceifeapEPMT 898  
+
+                   iiIGsLGAvmDvtvsIaSslfELarqnPnittkqLfkSGinIGrDiiGTm
+                   + +++L     vt+ ++   + L    +n + ++            + + 
+  1SU4:A|PDB   899 MALSVL-----VTIEMC---NALNSLSENQSLMR------------MPPW 928  
+
+                   vNTLll..AYagssLPLfLlllrnnyslgeilNskilalEllrsllGgIG
+                   vN+ ll+++ ++ sL +++l+++   +l  i++ k               
+  1SU4:A|PDB   929 VNIWLLgsICLSMSLHFLILYVD---PLPMIFKLK--------------- 960  
+
+                   ivLaVPlTtlfaall<-*
+                      a  lT +++ l    
+  1SU4:A|PDB   961 ---ALDLTQWLMVLK    972  
+
+MerC: domain 1 of 1, from 760 to 860: score -101.4, E = 5.9
+                   *->iTRIaDKtGv.lGsvVSAmGCAmCFPAlASLGAAIGLGFLSqwEGLF
+                      + R +  +++++G vV  +           L AA GL          
+  1SU4:A|PDB   760    FIRYL--ISSnVGEVVCIF-----------LTAALGLP--------- 784  
+
+                   istLLPl.FAvvALLaNaLGWFSHRQWqRsaLGviGPvl...........
+                    + L+P++ ++v L+  +L          +aLG   P l+  ++++++++
+  1SU4:A|PDB   785 -EALIPVqLLWVNLVTDGL--------PATALGFNPPDLdimdrpprspk 825  
+
+                   .vLaavfllfqhfLdkwwsavLlYtGLalMvgVSIWDlvsPAhRRCap<-
+                   + L++  l+f +       a+  Y+G a  vg + W ++       a   
+  1SU4:A|PDB   826 ePLISGWLFFRY------MAIGGYVG-AATVGAAAWWFMY------AE   860  
+
+                   *
+                    
+  1SU4:A|PDB     -   -    
+
+7tm_1: domain 1 of 1, from 767 to 979: score -154.5, E = 6.3
+                   *->GNlLVilvilrtkklr.....tptnifilNLAvADLLflltlppwal
+                       N+  ++ i++t  l  ++   p  ++ +NL v+D L +++l +   
+  1SU4:A|PDB   767    SNVGEVVCIFLTAALGlpealIPVQLLWVNL-VTDGLPATALGFNPP 812  
+
+                   yylvggedWpfGsalCklvtaldvvnmyaSillLtaISiDRYlAIvhPlr
+                      ++  + p ++    +++ l++                RY AI     
+  1SU4:A|PDB   813 DLDIM-DRPPRSPKEPLISGWLFF----------------RYMAIG---- 841  
+
+                   yrrrrtsprrAkvvillvWvlal....llslPpllfswvktveegngvvn
+                      ++     A v  +++W++ +++++ ++  +l+++++ t+  +     
+  1SU4:A|PDB   842 --GYVG---AATVGAAAWWFMYAedgpGVTYHQLTHFMQCTEDHP----- 881  
+
+                   vttClidfpevstasvktwlvsyallstlvgFvlPllvilvcYtrIlrtl
+                   +++ l +  +++                      P  +   +  ++ +++
+  1SU4:A|PDB   882 HFEGLDCEIFEA----------------------PEPMTMALSVLVTIEM 909  
+
+                   rkrarkgaskkrsskerkaakt....llvvvvvFvlCWlPyfivllldtl
+                   +++++++      s+ + ++++++   + +++  +l+   +f++l++d+l
+  1SU4:A|PDB   910 CNALNSL------SENQSLMRMppwvNIWLLGSICLSMSLHFLILYVDPL 953  
+
+                   c.lsiimsssCelervlptallvtlwLayvNsclNPiIY<-*
+                     +               +al++t wL ++   l P+I    
+  1SU4:A|PDB   954 PmIF------------KLKALDLTQWLMVLKISL-PVIG    979  
+
+TspO_MBR: domain 1 of 1, from 790 to 933: score -74.1, E = 0.36
+                   *->wqvtrlalvafliacalagaaGalftrdegqrWYasLkKPsWhPPnw
+                      +q    +l++ l++ +l+++a  + ++d      +   +P   P++ 
+  1SU4:A|PDB   790    VQ----LLWVNLVTDGLPATALGFNPPDL-----DIMDRPPRSPKEP 827  
+
+                   aFgpvWtlLYa.lmGyasyLVWkalggfgenavKlalglYaaq...lalN
+                   +++   + L+++ m++++y      + +g++a    ++ Ya  +++++  
+  1SU4:A|PDB   828 LIS---GWLFFrYMAIGGYVGA---ATVGAAA---WWFMYAEDgpgVTYH 868  
+
+                   vAWtPiFFglrrlglAlvdi........lllwlaalAtvvafyqvsktA.
+                   +++   +++   +    +d++  + +++++++l +l+t+ +   ++ +++
+  1SU4:A|PDB   869 QLTHFMQCTEDHPHFEGLDCeifeapepMTMALSVLVTIEMCNALNSLSe 918  
+
+                   ..alLLvPYLaWvafAtyLNyaIwr<-*
+                   +++l+ +P   Wv        +Iw    
+  1SU4:A|PDB   919 nqSLMRMP--PWV--------NIWL    933  
+
+PspC: domain 1 of 1, from 817 to 862: score -32.0, E = 4.4
+                   *->mrkLyRsrdnRmiaGVcAGLAeYFgvDvtLvRvlfvllllltFGsfg
+                      m +  Rs+++ +i+G                   ++ + +++ G+ +
+  1SU4:A|PDB   817    MDRPPRSPKEPLISG-------------------WLFFRYMAIGGYV 844  
+
+                   lglllYiilaiilPpeeg<-*
+                    +  +  ++++++  e g   
+  1SU4:A|PDB   845 GAATVGAAAWWFMYAEDG    862  
+
+Cation_ATPase_C: domain 1 of 1, from 819 to 991: score 294.8, E = 5.2e-86
+                   *->RpPRnpkDeliitgllffrylviGvivavatlaaFvwwfygggenGi
+                      RpPR+pk e++i+g+lffry++iG +v++at++a++wwf++      
+  1SU4:A|PDB   819    RPPRSPK-EPLISGWLFFRYMAIGGYVGAATVGAAAWWFMYA----- 859  
+
+                   dfgPgllygqlthwescsandledsfkgqewCeifrkglefratTmaFtv
+                   + gPg++y+qlth+++c+ +  +++f ++ +Ceif+   ++ ++Tma++v
+  1SU4:A|PDB   860 EDGPGVTYHQLTHFMQCTED--HPHF-EGLDCEIFE---APEPMTMALSV 903  
+
+                   lVviqmfNAWEalncrsefFmhPldrnSlfqmgplwrNkwLllAvvlsla
+                   lV+i+m+N   aln++se       ++Sl +m+p w N+wLl++++ls++
+  1SU4:A|PDB   904 LVTIEMCN---ALNSLSE-------NQSLMRMPP-WVNIWLLGSICLSMS 942  
+
+                   lqllivYvPglqtiFqthpllslqeWlvvlpfsflvfildEirKfikRrr
+                   l++li+Yv++l++iF++ +l  l++Wl+vl++s++v+ ldEi+Kfi+R +
+  1SU4:A|PDB   943 LHFLILYVDPLPMIFKLKAL-DLTQWLMVLKISLPVIGLDEILKFIARNY 991  
+
+                   <-*
+                      
+  1SU4:A|PDB     -     -    
+
+Sdh_cyt: domain 1 of 1, from 884 to 979: score -61.6, E = 7.6
+                   *->arirRPlsPHLtiYkpqltsilSilHRisGvaLalgllflallLial
+                               +  i +++ ++++         aL +++++  +     
+  1SU4:A|PDB   884    ------EGLDCEIFEAPEPMTM---------ALSVLVTIEMCN---- 911  
+
+                   alsgasyafvsavllfnyllgspivavilfgllwallyHllnGiRHliwD
+                   al+  s ++  +       +++++++++l  ++ ++  H+l+    l  D
+  1SU4:A|PDB   912 ALNSLSENQSLM------RMPPWVNIWLLGSICLSMSLHFLI----LYVD 951  
+
+                   .lgkgleiktvyktgkavla.lsvvlsl<-*
+                   +l   +++k   +t ++++ ++s+ + +   
+  1SU4:A|PDB   952 pLPMIFKLKALDLTQWLMVLkISLPVIG    979  
+
+Oxidored_q4: domain 1 of 1, from 896 to 964: score -71.3, E = 9.3
+                   *->llslillllsfllspkspiddrs.EKlSpyECGFdPfgsaRglpFSl
+                       ++++l +l+++ + +   ++ s++            +  R +p   
+  1SU4:A|PDB   896    PMTMALSVLVTIEMCNAL-NSLSeNQ-----------SLMR-MP--- 926  
+
+                   rFFLiAilFliFDvEivlLlPwavvlknslgflgafvemliFlliLllGL
+                                       Pw v++ ++lg    ++++l Fl++ +  L
+  1SU4:A|PDB   927 --------------------PW-VNI-WLLGSIC-LSMSLHFLILYVDPL 953  
+
+                   lYEWkkGaLeW<-*
+                    + +k +aL+    
+  1SU4:A|PDB   954 PMIFKLKALDL    964  
+
+//

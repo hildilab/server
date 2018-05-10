@@ -1,0 +1,45 @@
+import os
+
+DEBUG = True
+HOST = "127.0.1.1"  # "0.0.0.0"
+PORT = 5000
+MAX_CONTENT_LENGTH = 64 * 1024 * 1024
+PROXY = 'http://proxy.charite.de:888'
+
+import basekit
+TOOLS = {
+	"brix2map": basekit.mapman.BrixToMap,
+    "msms": basekit.msms.Msms,
+    "pdb2pqr": basekit.apbs.Pdb2pqr,
+    "apbs": basekit.apbs.Apbs,
+    "voronoia": basekit.voronoia.Voronoia,
+    "linkit": basekit.linker.LinkIt,
+    "multi-linkit": basekit.linker.MultiLinkIt,
+    "linkit-density": basekit.linker.LinkItDensity,
+    "capture": basekit.capture.Capture,
+    "dowser": basekit.dowser.Dowser,
+    "dowser-repeat": basekit.dowser.DowserRepeat
+}
+
+JOB_DIR = os.path.abspath("./static/tmp/")
+JOB_WORKERS = 4
+
+ENV = {
+	"DISPLAY": ":0.0",
+    "DOWSER": "/home/arose/dev/contrib/dowser",
+    "DOW_MACH": "linux",
+    "SPIDER_DIR": "/home/arose/dev/contrib/spider/spiderweb.21.02/spider/",
+    "SPBIN_DIR": "/home/arose/dev/contrib/spider/spiderweb.21.02/spider/bin/",
+    "SPMAN_DIR": "/home/arose/dev/contrib/spider/spiderweb.21.02/spider/man/",
+    "SPPROC_DIR": "/home/arose/dev/contrib/spider/spiderweb.21.02/spider/proc/",
+    "BASEKIT_DATA": "/home/arose/dev/data",
+    "LINKIT_DIR": "/home/arose/dev/data/linkerdb/"
+}
+
+PATH = [
+	"/home/arose/dev/contrib/msms/",
+    "/home/arose/dev/contrib/dowser/bin/",
+    "/home/arose/dev/contrib/dowser/bin/linux",
+    "/home/arose/dev/contrib/pdb2pqr/pdb2pqr-1.8/",
+    "/home/arose/dev/contrib/spider/spiderweb.21.02/spider/bin"
+]

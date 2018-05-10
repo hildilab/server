@@ -1,0 +1,683 @@
+INFO:werkzeug: * Running on http://127.0.1.1:5432/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger pin code: 119-141-532
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2018 14:52:13] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2018 16:55:35] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2018 17:29:34] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2018 17:29:42] "GET /tools HTTP/1.1" 200 -
+INFO:job:JOB STARTED: sl2ssfe2_7b7e54db-e6d1-4e29-abbf-e556a74d4d3f - /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_7b7e54db-e6d1-4e29-abbf-e556a74d4d3f/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 05:22:44] "POST /submit/ HTTP/1.1" 200 -
+INFO:job:JOB DONE: sl2ssfe2_7b7e54db-e6d1-4e29-abbf-e556a74d4d3f - /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_7b7e54db-e6d1-4e29-abbf-e556a74d4d3f/
+INFO:job:JOB STARTED: sl2ssfe2_c979215d-b614-4c10-be40-70d05e06350e - /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_c979215d-b614-4c10-be40-70d05e06350e/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:17:29] "POST /submit/ HTTP/1.1" 200 -
+INFO:job:JOB STARTED: sl2ssfe2_8e4666f6-fadd-4bbd-b2b8-ab15fb4cb3a0 - /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_8e4666f6-fadd-4bbd-b2b8-ab15fb4cb3a0/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:17:32] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:17:36] "POST /submit/ HTTP/1.1" 200 -
+INFO:job:JOB DONE: sl2ssfe2_8e4666f6-fadd-4bbd-b2b8-ab15fb4cb3a0 - /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_8e4666f6-fadd-4bbd-b2b8-ab15fb4cb3a0/
+INFO:job:JOB DONE: sl2ssfe2_c979215d-b614-4c10-be40-70d05e06350e - /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_c979215d-b614-4c10-be40-70d05e06350e/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:23:59] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:25:02] "GET /tools HTTP/1.1" 200 -
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('txt_name', u'NP_000530.1_loop_sequences1.txt'), ('__type__', u'sl2ssfe2')])
+None
+wine /mnt/bigdisk/development/data/linkerdb/MemLinker/mlinker_ext/Link_It_dos2n.exe /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_7b7e54db-e6d1-4e29-abbf-e556a74d4d3f/Helix8/link_it_0/input_pdb_file_input_out_kos.txt /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_7b7e54db-e6d1-4e29-abbf-e556a74d4d3f/Helix8/link_it_0/input_pdb_file_input_out_linker.bin tp
+err:winediag:nulldrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+err:winediag:nulldrv_CreateWindow Make sure that your X server is running and that $DISPLAY is set correctly.
+['HOH', 'WAT', 'SOL']
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('txt_name', u'acm5_human_loop_sequences1.txt'), ('__type__', u'sl2ssfe2')])
+None
+wine /mnt/bigdisk/development/data/linkerdb/MemLinker/mlinker_ext/Link_It_dos2n.exe /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_c979215d-b614-4c10-be40-70d05e06350e/Helix8/link_it_0/input_pdb_file_input_out_kos.txt /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_c979215d-b614-4c10-be40-70d05e06350e/Helix8/link_it_0/input_pdb_file_input_out_linker.bin tp
+err:winediag:nulldrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+err:winediag:nulldrv_CreateWindow Make sure that your X server is running and that $DISPLAY is set correctly.
+['HOH', 'WAT', 'SOL']
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('txt_name', u'acm5_human_loop_sequences2.txt'), ('__type__', u'sl2ssfe2')])
+None
+wine /mnt/bigdisk/development/data/linkerdb/MemLinker/mlinker_ext/Link_It_dos2n.exe /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_8e4666f6-fadd-4bbd-b2b8-ab15fb4cb3a0/Helix8/link_it_0/input_pdb_file_input_out_kos.txt /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_8e4666f6-fadd-4bbd-b2b8-ab15fb4cb3a0/Helix8/link_it_0/input_pdb_file_input_out_linker.bin tp
+err:winediag:nulldrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+err:winediag:nulldrv_CreateWindow Make sure that your X server is running and that $DISPLAY is set correctly.
+['HOH', 'WAT', 'SOL']
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('txt_name', u'acm5_human_loop_sequences3.txt'), ('__type__', u'sl2ssfe2')])
+None
+wine /mnt/bigdisk/development/data/linkerdb/MemLinker/mlinker_ext/Link_It_dos2n.exe /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_31f7773e-b58a-4336-8e6a-f29025fc2f65/Helix8/link_it_0/input_pdb_file_input_out_kos.txt /mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_31f7773e-b58a-4336-8e6a-f29025fc2f65/Helix8/link_it_0/input_pdb_file_input_out_linker.bin tp
+err:winediag:nulldrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+err:winediag:nulldrv_CreateWindow Make sure that your X server is running and that $DISPLAY is set correctly.
+wine: Unhandled exception 0x0eedfade in thread 2d at address 0x7bcd2ca4:0x7b83ae8c (thread 002d), starting debugger...
+err:seh:setup_exception_record stack overflow 852 bytes in thread 002d eip 7bc7ebab esp 00640fdc stack 0x640000-0x641000-0x1640000
+Process of pid=002c has terminated
+No process loaded, cannot execute 'echo Modules:'
+Cannot get info on module while no process is loaded
+No process loaded, cannot execute 'echo Threads:'
+process  tid      prio (all id:s are in hex)
+0000000e services.exe
+	00000020    0
+	0000001f    0
+	00000016    0
+	00000010    0
+	0000000f    0
+00000012 winedevice.exe
+	0000001e    0
+	0000001b    0
+	0000001a    0
+	00000013    0
+0000001c plugplay.exe
+	00000022    0
+	00000021    0
+	0000001d    0
+00000023 explorer.exe
+	00000027    0
+	00000026    0
+	00000025    0
+	00000024    0
+0000002a Link_It_dos2n.exe
+	0000002b    0
+winedbg: Internal crash at 0x7fb78f6c
+[Errno 2] No such file or directory: u'/mnt/bigdisk/development/repos/job/static/tmp/sl2ssfe2_31f7773e-b58a-4336-8e6a-f29025fc2f65/Helix8/link_it_0/input_pdb_file_input_out_linker2.pdb'
+is_form: True
+ImmutableMultiDict([])
+ImmutableINFO:job:JOB STARTED: linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:16] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:17] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:18] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:19] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:20] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:21] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:22] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:23] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:24] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:25] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:26] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:27] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:28] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:29] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:30] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:31] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:32] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:33] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:34] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:35] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:36] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:37] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:38] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:39] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:40] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:41] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:42] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:43] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:44] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:45] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:46] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:47] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:48] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:49] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:50] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:51] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:52] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:53] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:54] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:55] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:56] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:57] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:58] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:26:59] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:00] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:02] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:02] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:03] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:04] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:05] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:06] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:07] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:08] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:09] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:10] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:11] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:12] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:13] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:14] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:15] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:17] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:17] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:18] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:19] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:20] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:21] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:22] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:23] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:24] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:25] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:26] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:27] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:28] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:29] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:30] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:31] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:32] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:33] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:34] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:35] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:36] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:37] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:38] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:39] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:40] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:41] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:42] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:43] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:44] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:45] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:46] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:47] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:48] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:49] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:51] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:51] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:52] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:53] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:54] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:55] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:56] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:57] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:58] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:27:59] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:00] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:01] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:02] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:03] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:04] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:05] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:06] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:07] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:08] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:09] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:10] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:11] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:12] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:13] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:14] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:15] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:16] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:17] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:18] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:20] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:20] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:21] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:22] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:23] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:24] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:25] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:26] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:27] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:28] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:29] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:30] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:31] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:32] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:33] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:34] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:35] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:36] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:37] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:38] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:39] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:40] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:42] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:42] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:43] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:45] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:45] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:46] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:47] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:48] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:49] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:50] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:51] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:52] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:53] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:54] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:55] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:56] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:57] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:58] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:28:59] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:00] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:01] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:02] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:03] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:04] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:05] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:06] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:07] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:08] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:09] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:10] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:11] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:13] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:13] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:14] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:15] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:17] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:17] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:18] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:job:JOB DONE: linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 11:29:19] "GET /status/linkit-density_1c2f8633-df20-42f3-9eba-53aa8a6045b8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:31:50] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:32:10] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:32:31] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:32:54] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:33:52] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:34:14] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:20] "POST /submit/ HTTP/1.1" 200 -
+INFO:job:JOB STARTED: linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:36] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:37] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:38] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:39] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:40] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:41] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:42] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:43] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:44] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:45] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:46] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:47] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:48] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:49] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:50] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:51] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:52] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:53] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:54] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:55] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:56] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:57] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:58] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:35:59] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:00] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:01] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:02] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:03] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:04] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:05] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:06] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:07] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:08] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:09] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:10] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:11] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:12] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:13] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:14] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:15] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:16] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:17] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:18] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:19] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:20] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:21] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:22] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:23] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:24] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:25] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:26] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:27] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:job:JOB DONE: linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:28] "GET /status/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:28] "GET /file/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460/linker_correl.json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:28] "GET /file/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460/input_mrc_file.mrc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:28] "GET /file/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460/input_pdb_file.pdb HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:36:28] "GET /file/linkit-density_a5554287-f98b-44c8-bdd4-7cb5641b6460/loop_correl/ori_pdb_linker_file3.pdb HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:37:09] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:39:50] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:40:11] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:40:55] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:41:26] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:43:06] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:43:07] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:43:36] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:44:45] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:45:10] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:45:49] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:49:01] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:49:46] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:50:35] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:51:00] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:51:31] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:51:41] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:54:32] "GET /tools HTTP/1.1" 200 -
+INFO:job:JOB STARTED: linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:16] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:17] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:18] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:19] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:20] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:21] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:22] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:23] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:24] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:25] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:26] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:27] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:28] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:29] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:30] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:31] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:32] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:33] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:34] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:35] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:36] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:37] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:38] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:39] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:40] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:41] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:42] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:43] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:44] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:45] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:46] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:47] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:48] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:49] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:50] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:51] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:52] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:53] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:54] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:55] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:56] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:57] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:58] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:job:JOB DONE: linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:59] "GET /status/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:59] "GET /file/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37/input_mrc_file.mrc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:59] "GET /file/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37/linker_correl.json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:59] "GET /file/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37/input_pdb_file.pdb HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 12:55:59] "GET /file/linkit-density_6bc08d91-8b19-4e90-9ed0-84391be37f37/loop_correl/ori_pdb_linker_file3.pdb HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 13:04:26] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 13:05:12] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 13:05:43] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 13:14:44] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 13:33:49] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 13:35:29] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 13:41:48] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 14:06:08] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 14:07:35] "GET /tools HTTP/1.1" 200 -
+INFO:job:JOB STARTED: linkit-density_8f8816e0-92be-44e9-8e28-9a6385c00a3d - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_8f8816e0-92be-44e9-8e28-9a6385c00a3d/
+INFO:job:JOB DONE: linkit-density_8f8816e0-92be-44e9-8e28-9a6385c00a3d - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_8f8816e0-92be-44e9-8e28-9a6385c00a3d/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 14:08:12] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 14:08:13] "GET /status/linkit-density_8f8816e0-92be-44e9-8e28-9a6385c00a3d HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:17:34] "GET /tools HTTP/1.1" 200 -
+INFO:job:JOB STARTED: linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:17:53] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:17:54] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:17:55] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:17:56] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:17:57] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:17:58] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:17:59] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:00] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:01] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:02] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:03] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:04] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:05] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:06] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:07] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:08] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:09] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:10] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:11] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:12] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:13] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:14] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:15] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:16] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:17] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:18] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:19] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:20] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:21] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:22] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:23] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:24] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:25] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:26] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:27] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:28] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:29] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:30] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:31] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:32] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:33] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:34] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:35] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:36] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:37] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:38] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:39] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:40] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:41] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:42] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:43] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:44] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:45] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:46] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:47] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:49] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:50] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:51] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:52] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:53] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:54] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:55] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:56] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:57] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:58] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:job:JOB DONE: linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707/
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:18:59] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:19:00] "GET /status/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:19:01] "GET /file/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707/input_pdb_file.pdb HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:19:01] "GET /file/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707/loop_correl/ori_pdb_linker_file3.pdb HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:19:01] "GET /file/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707/linker_correl.json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:19:01] "GET /file/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707/input_mrc_file.mrc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:19:02] "GET /file/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707/loop_correl/ori_pdb_linker_file3.pdb HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:19:02] "GET /file/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707/input_pdb_file.pdb HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:19:02] "GET /file/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707/input_mrc_file.mrc HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2018 15:19:02] "GET /file/linkit-density_a1d66a8b-dcd9-4ef6-9e45-5eeec26ae707/linker_correl.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 15:16:43] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 16:49:08] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 16:50:19] "POST /submit/ HTTP/1.1" 400 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/werkzeug/serving.py", line 205, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python2.7/dist-packages/werkzeug/serving.py", line 196, in execute
+    write(data)
+  File "/usr/lib/python2.7/dist-packages/werkzeug/serving.py", line 164, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 17:06:37] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:09:50] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:11:04] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:11:04] "GET /tools HTTP/1.1" 200 -
+INFO:job:JOB STARTED: linkit-density_3cf0f509-813a-4a52-8bf1-4ca64567f35f - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_3cf0f509-813a-4a52-8bf1-4ca64567f35f/
+INFO:job:JOB DONE: linkit-density_3cf0f509-813a-4a52-8bf1-4ca64567f35f - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_3cf0f509-813a-4a52-8bf1-4ca64567f35f/
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:14:44] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:14:45] "GET /status/linkit-density_3cf0f509-813a-4a52-8bf1-4ca64567f35f HTTP/1.1" 200 -
+INFO:job:JOB STARTED: linkit-density_d4345846-f97c-45a8-a986-b72cd4c778e0 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_d4345846-f97c-45a8-a986-b72cd4c778e0/
+INFO:job:JOB DONE: linkit-density_d4345846-f97c-45a8-a986-b72cd4c778e0 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_d4345846-f97c-45a8-a986-b72cd4c778e0/
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:14:51] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:14:52] "GET /status/linkit-density_d4345846-f97c-45a8-a986-b72cd4c778e0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:14:59] "GET /tools HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:16:38] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:17:11] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:17:20] "POST /submit/ HTTP/1.1" 400 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/werkzeug/serving.py", line 205, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python2.7/dist-packages/werkzeug/serving.py", line 196, in execute
+    write(data)
+  File "/usr/lib/python2.7/dist-packages/werkzeug/serving.py", line 164, in write
+    self.send_header(key, value)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 412, in send_header
+    self.wfile.write("%s: %s\r\n" % (keyword, value))
+IOError: [Errno 32] Broken pipe
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:17:29] "GET /tools HTTP/1.1" 200 -
+INFO:job:JOB STARTED: linkit-density_99f925e2-0679-4fd6-a492-0d2f649341c5 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_99f925e2-0679-4fd6-a492-0d2f649341c5/
+can only read new style mrc files
+can only read new style mrc files
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:18:57] "POST /submit/ HTTP/1.1" 200 -
+INFO:job:JOB DONE: linkit-density_99f925e2-0679-4fd6-a492-0d2f649341c5 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_99f925e2-0679-4fd6-a492-0d2f649341c5/
+MultiDict([('max_loops', u'100'), ('seq', u'MTIQWFPGHMAKARREVTEKLKLIDIVYELVDARIPMSSRNPMIEDILKNKPRIMLLNKADKADAAVTQQWKEHFENQGIRSLSINSVNGQGLNQIVPASKEILQEKFDRMRAKGVKPRAIRALIIGIPNVGKSTLINRLAKKNIAKTGDRPGITTSQQWVKVGKELELLDTPGILWPKFEDELVGLRLAVTGAIKDSIINLQDVAVFGLRFLEEHYPERLKERYGLDEIPEDIAELFDAIGEKRGCLMSGGLINYDKTTEVIIRDIRTEKFGRLSFEQPTM'), ('res2', u'114:A'), ('resolution', u'5.0'), ('res1', u'92:A'), ('__type__', u'linkit-density')])
+None
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'EDLNFVT'), ('res2', u'482:A'), ('resolution', u'5.0'), ('res1', u'473:A'), ('__type__', u'linkit-density')])
+None
+file 'pdb_file' not found, trying url
+global name 'retrieve_url' is not defined
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'EDLNFVT'), ('res2', u'482:A'), ('resolution', u'3.4'), ('res1', u'473:A'), ('__type__', u'linkit-density')])
+None
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'Kfmqklneac'), ('res2', u'135:A'), ('resolution', u'4'), ('res1', u'123:A'), ('__type__', u'linkit-density')])
+None
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'EDLNFVT'), ('res2', u'482:A'), ('resolution', u'5.0'), ('res1', u'473:A'), ('__type__', u'linkit-density')])
+None
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'LVHHVTD'), ('res2', u'62:C'), ('resolution', u'5.0'), ('res1', u'55:C'), ('__type__', u'linkit-density')])
+None
+is_form: True
+ImmutableMultiDict([])
+is_form: True
+ImmutableMultiDict([])
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'EEWWLLSSPPEDLNFVTDDTTAAKKAA'), ('res2', u'487:A'), ('resolution', u'5.0'), ('res1', u'468:A'), ('__type__', u'linkit-density')])
+None
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'EEWWLLSSPPEDLNFVTDDTTAAKKAA'), ('res2', u'487:A'), ('resolution', u'5.0'), ('res1', u'468:A'), ('__type__', u'linkit-density')])
+None
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'LSPEDLNFVTDT'), ('res2', u'484:A '), ('resolution', u'5.0'), ('res1', u'470:A'), ('__type__', u'linkit-density')])
+None
+chain identifier must be one character
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'LSPEDLNFVTDT'), ('res2', u'484:A '), ('resolution', u'5.0'), ('res1', u'470:A'), ('__type__', u'linkit-density')])
+None
+chain identifier must be one character
+is_form: True
+ImmutableMultiDict([])
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'EDLNFVT'), ('res2', u'482:A'), ('resolution', u'5.0'), ('res1', u'473:A'), ('__type__', u'linkit-density')])
+None
+INFO:werkzeug:127.0.0.1 - - [28/Mar/2018 21:18:58] "GET /status/linkit-density_99f925e2-0679-4fd6-a492-0d2f649341c5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:28:16] "GET /tools HTTP/1.1" 200 -
+INFO:job:JOB STARTED: linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786/
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:33] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:34] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:35] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:36] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:37] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:38] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:39] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:41] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:42] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:43] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:44] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:45] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:46] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:47] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:48] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:49] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:50] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:51] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:52] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:53] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:54] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:55] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:56] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:57] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:58] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:31:59] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:32:01] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:32:02] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:job:JOB DONE: linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786/
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:32:03] "GET /status/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:32:03] "GET /file/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786/linker_correl.json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:32:03] "GET /file/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786/input_mrc_file.mrc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:32:03] "GET /file/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786/input_pdb_file.pdb HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:32:03] "GET /file/linkit-density_cd7ed44d-3708-4f51-8c11-219e70c83786/loop_correl/ori_pdb_linker_file3.pdb HTTP/1.1" 200 -
+INFO:job:JOB STARTED: linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3/
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:29] "POST /submit/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:30] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:31] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:32] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:33] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:34] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:35] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:36] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:37] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:38] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:39] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:40] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:42] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:43] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:44] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:45] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:46] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:47] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:48] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:49] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:50] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:51] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:52] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:53] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:54] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:55] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:56] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:57] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:58] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:42:59] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:00] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:01] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:02] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:03] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:05] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:06] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:07] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:08] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:job:JOB DONE: linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 - /mnt/bigdisk/development/repos/job/static/tmp/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3/
+can only read new style mrc files
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'LPSRQFG'), ('res2', u'101:W'), ('resolution', u'8.9'), ('res1', u'93:W'), ('__type__', u'linkit-density')])
+None
+is_form: True
+ImmutableMultiDict([])
+ImmutableMultiDict([('max_loops', u'100'), ('seq', u'VLADALKSINNAEK'), ('res2', u'20:W'), ('resolution', u'8.9'), ('res1', u'5:W'), ('__type__', u'linkit-density')])
+None
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:09] "GET /status/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:09] "GET /file/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3/linker_correl.json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:10] "GET /file/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3/input_pdb_file.pdb HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:10] "GET /file/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3/loop_correl/ori_pdb_linker_file3.pdb HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Mar/2018 10:43:10] "GET /file/linkit-density_4bec15fc-1568-48cf-a952-804058ecc7d3/input_mrc_file.mrc HTTP/1.1" 200 -

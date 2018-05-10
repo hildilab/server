@@ -1,0 +1,206 @@
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+
+
+#	WSGIDaemonProcess mppd user=www-data group=www-data threads=3
+#        WSGIScriptAlias /mppd /var/www/mppd/mppd.wsgi
+#        <Directory /var/www/mppd>
+#                WSGIProcessGroup mppd
+#                WSGIApplicationGroup %{GLOBAL}
+#                WSGIScriptReloading On
+#                Order deny,allow
+#                Allow from all
+#        </Directory>
+
+	
+        WSGIDaemonProcess mdsrv user=www-data group=www-data threads=5
+    	WSGIScriptAlias /mdsrv /var/www/mdsrv/mdsrv.wsgi
+
+	<Directory /var/www/mdsrv>
+       		WSGIProcessGroup mdsrv
+        	WSGIApplicationGroup %{GLOBAL}
+        	WSGIScriptReloading On
+        	WSGIPassAuthorization On
+        	Order deny,allow
+        	Allow from all
+    	</Directory>
+
+#        WSGIDaemonProcess ssfe2sl2 user=www-data group=www-data threads=5
+#        WSGIScriptAlias /ssfe2sl2 /var/www/sl2ssfe2/sl2ssfe2.wsgi
+#
+#        <Directory /var/www/sl2ssfe2>
+#                WSGIProcessGroup ssfe2sl2
+#                WSGIApplicationGroup %{GLOBAL}
+#                WSGIScriptReloading On
+#                WSGIPassAuthorization On
+#                Order deny,allow
+#                Allow from all
+#        </Directory>
+
+
+
+
+
+#	RewriteEngine On
+#	ProxyRequests On
+#	ProxyPreserveHost On
+#	ProxyVia full
+#
+#
+#       <Proxy *>
+#               Order deny,allow
+#               Allow from all
+#       </Proxy>
+#
+#        ProxyPass /provi-v4rna http://127.0.0.1:7373
+#        ProxyPassReverse /provi-v4rna http://127.0.0.1:7373
+#
+#        ProxyPass /job2 http://127.0.1.1:5432
+#        ProxyPassReverse /job2 http://127.0.1.1:5432
+#
+#
+#        ProxyPass /voronoia4rna http://127.0.0.1:7474
+#        ProxyPassReverse /voronoia4rna http://127.0.0.1:7474
+#
+#        ProxyPass /website http://127.0.0.1:7878
+#        ProxyPassReverse /website http://127.0.0.1:7878
+#
+#
+#        ProxyPass /provi-eda http://127.0.0.1:7676
+#        ProxyPassReverse /provi-eda http://127.0.0.1:7676
+#
+#        ProxyPass /eda http://127.0.0.1:7777
+#        ProxyPassReverse /eda http://127.0.0.1:7777
+#
+#	ProxyPass /testing http://127.0.0.1:6677/webapp/
+#	ProxyPassReverse /testing http://127.0.0.1:6677/webapp/
+#
+#        RewriteRule ^/voronoia4rna$ /voronoia4rna/tools/v4rna/index [R]
+#        RewriteRule ^/voronoia4rna/$ /voronoia4rna/tools/v4rna/index [R]
+#        RewriteRule ^/voronoia4RNA$ /voronoia4rna/tools/v4rna/index [R]
+#        RewriteRule ^/voronoia4RNA/$ /voronoia4rna/tools/v4rna/index [R]
+#
+#
+#        RewriteRule ^/EDA$ /eda/tools/eda/index [R]
+#        RewriteRule ^/eda/$ /eda/tools/eda/index [R]
+#        RewriteRule ^/eda$ /eda/tools/eda/index [R]
+#        RewriteRule ^/EDA/$ /eda/tools/eda/index [R]
+#
+#
+#	RewriteRule ^/ngl$ /ngl-tools/ngl/html/ngl.html [R]
+#
+#	ProxyPass /provi-mphd http://127.0.0.1:7070
+#        ProxyPassReverse /prov/i-mphd http://127.0.0.1:7070
+#
+#        RewriteRule ^/fragfit /ngl-tools/fragfit/start.php [R]
+#        RewriteRule ^/Fragfit /ngl-tools/fragfit/start.php [R]
+#        RewriteRule ^/FragFit /ngl-tools/fragfit/start.php [R]
+#        RewriteRule ^/fragfit/ /ngl-tools/fragfit/start.php [R]
+#
+#	RewriteRule ^/website /website/index.php [R]
+#	
+#
+#	RewriteRule ^/sl2 /ngl-tools/sl2/start.php [R]
+#        RewriteRule ^/Sl2 /ngl-tools/sl2/start.php [R]
+#        RewriteRule ^/Sl2 /ngl-tools/sl2/start.php [R]
+#        RewriteRule ^/SL2 /ngl-tools/sl2/start.php [R]
+#        RewriteRule ^/sl-2 /ngl-tools/sl2/start.php [R]
+#        RewriteRule ^/sl2.0 /ngl-tools/sl2/start.php [R]        
+#        RewriteRule ^/SL-2 /ngl-tools/sl2/start.php [R]
+#        RewriteRule ^/SL2.0 /ngl-tools/sl2/start.php [R]
+#	RewriteRule ^/ngl-tools/doc/ /ngl-tools/ngl/doc/ [R]
+#
+#        RewriteRule ^/MPPD /mppd [R]
+#
+#        RewriteRule ^/Mdsrv-example /html/mdsrvdev.html?load=file://MDsrv/script.ngl [R]
+#        RewriteRule ^/MDsrvexample /html/mdsrvdev.html?load=file://MDsrv/script.ngl [R]
+#        RewriteRule ^/Mdsrvexample /html/mdsrvdev.html?load=file://MDsrv/script.ngl [R]
+#        RewriteRule ^/mdsrv-example /html/mdsrvdev.html?load=file://MDsrv/script.ngl [R]
+#        RewriteRule ^/mdsrvexample /html/mdsrvdev.html?load=file://MDsrv/script.ngl [R]
+#        RewriteRule ^/MDsrv-example1 /html/mdsrvdev.html?load=file://MDsrv/script1.ngl [R]
+#        RewriteRule ^/MDsrv-example2 /html/mdsrvdev.html?load=file://MDsrv/script2.ngl [R]
+#        RewriteRule ^/MDsrv-example3 /html/mdsrvdev.html?load=file://MDsrv/script3.ngl [R]
+#        RewriteRule ^/MDsrv-example4 /html/mdsrvdev.html?load=file://MDsrv/script4.ngl [R]
+#        RewriteRule ^/MDsrv-example5 /html/mdsrvdev.html?load=file://MDsrv/script5.ngl [R]
+#        RewriteRule ^/MDsrv-example6 /html/mdsrvdev.html?load=file://MDsrv/script6.ngl [R]
+#        RewriteRule ^/MDsrv-example /html/mdsrvdev.html?load=file://MDsrv/script.ngl [R]
+#        RewriteRule ^/Mdsrv-example /html/mdsrvdev.html?load=file://MDsrv/script.ngl [R]
+#        RewriteRule ^/MDsrv-embedded-example1 /html/embedded_example_1.html [R]
+#        RewriteRule ^/MDsrv-embedded-example2 /html/embedded_example_2.html [R]
+#        RewriteRule ^/MDsrv-embedded-example3 /html/embedded_example_3.html [R]
+#
+#
+#        Redirect /MDsrv http://arose.github.io/mdsrv/index.html
+#        Redirect /Mdsrv https://github.com/arose/mdsrv
+#        Redirect /mdsrv https://github.com/arose/mdsrv
+#
+#	Redirect /MDsrvDocu http://arose.github.io/mdsrv/index.html
+#        Redirect /MdsrvDocu http://arose.github.io/mdsrv/index.html
+#        Redirect /mdsrvdocu http://arose.github.io/mdsrv/index.html
+#        Redirect /MDsrv-Docu http://arose.github.io/mdsrv/index.html
+#        Redirect /Mdsrv-Docu http://arose.github.io/mdsrv/index.html
+#        Redirect /mdsrv-docu http://arose.github.io/mdsrv/index.html
+#
+#
+#	ProxyPass /dmpc http://127.0.0.1:4242
+#        ProxyPassReverse /dmpc http://127.0.0.1:4242
+#
+#        RewriteRule ^/pdmp(.*) /mppd$1 [R]
+#        RewriteRule ^/PDMP /mppd [R]
+#
+#        
+#        RewriteRule ^/mphd(.*) /dmpc$1 [R]
+#        RewriteRule ^/MPHD /dmpc [R]
+#        RewriteRule ^/MPCD /dmpc [R]
+#        RewriteRule ^/mpcd /dmpc [R]
+#
+#	RewriteRule ^/rhythm$ /rhythm/ [R]
+#        RewriteRule ^/rhythm/(.*) /var/www/rhythm/$1 [L]
+#
+#	
+#	DocumentRoot /var/www/
+#	<Directory />
+#		Order Deny,Allow
+#		Deny from All
+#		Options FollowSymLinks
+#		AllowOverride None
+#		allow from all
+#	</Directory>
+#	<Directory /var/www/>
+#		Options Indexes FollowSymLinks MultiViews
+#		AllowOverride all
+#		Order allow,deny
+#		allow from all
+#	</Directory>
+#
+#	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+#	<Directory "/usr/lib/cgi-bin">
+#		AllowOverride None
+#		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+#		Order allow,deny
+#		Allow from all
+#	</Directory>
+#
+#	ErrorLog /var/log/apache2/error.log
+#
+#	# Possible values include: debug, info, notice, warn, error, crit,
+#	# alert, emerg.
+#	LogLevel warn
+#
+#	CustomLog /var/log/apache2/access.log combined
+#
+#    Alias /doc/ "/usr/share/doc/"
+#    <Directory "/usr/share/doc/">
+#        Options Indexes MultiViews FollowSymLinks
+#        AllowOverride None
+#        Order deny,allow
+#        Deny from all
+#        Allow from 127.0.0.0/255.0.0.0 ::1/128
+#    </Directory>
+#
+#   
+#    Redirect 404 /favicon.ico
+#    <Location /favicon.ico>
+#	 ErrorDocument 404 "No favicon"
+#    </Location>
+</VirtualHost>

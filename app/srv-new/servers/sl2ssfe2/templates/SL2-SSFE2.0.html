@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+>
+<head profile="http://dublincore.org/documents/dcq-html/">
+    <title>SL2-SSFE2.0</title>
+    
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+    <link rel="shortcut icon" href="{{ v4rna_img('favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ static('style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ static('js/jquery-ui/css/custom-theme/jquery-ui.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ static('js/qtip2/jquery.qtip.min.css') }}">
+    <link rel="stylesheet" href="{{ static('font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ static('js/lightbox/lightbox.css') }}">
+
+    <meta name="DC.title" content="SL2-SSFE2.0 calculator">
+    <meta name="DC.creator" content="Jochen Ismer, Alexander S. Rose, Johanna K. S. Tiemann, Andrean Goede, Robert Preissner, Peter W. Hildebrand">
+    <meta name="DC.subject" content="SL2-SSFE2.0">
+    <meta name="DC.description" content="SL2-SSFE2.0">
+    <meta name="DC.publisher" content="Proteinformatics Group: Molecular Modelling">
+    <meta name="DC.contributor" content="Jochen Ismer, Alexander S. Rose, Johanna K. S. Tiemann, Andrean Goede, Robert Preissner, Peter W. Hildebrand">
+    <meta name="DC.type" content="Text" scheme="DCTERMS.DCMIType">
+    <meta name="DC.format" content="text/html" scheme="DCTERMS.IMT">
+    <meta name="DC.identifier"
+          content="http://proteinformatics.charite.de/SL2-SSFE2.0/"
+          scheme="DCTERMS.URI">
+    <meta name="DC.language" content="en" scheme="DCTERMS.RFC1766">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="GPCR, loops, SL2, SSFE2.0">
+    <meta name="author" content="Jochen Ismer, Alexander S. Rose, Johanna K. S. Tiemann, Andrean Goede, Robert Preissner, Peter W. Hildebrand">
+    <meta name="description" content="SL2 calculator for SSFE2.0">
+    <meta name="robots" content="all">
+    
+    <style type="text/css">
+        .ui-tooltip, .qtip {
+            box-shadow: 0 0 0 2px rgba(0,0,0,0.2);
+            border-radius: 1px;         
+            max-width: 500px;
+            min-width: 50px;
+        }
+         .slick-cell.selected {
+            background-color: tomato;
+        }
+    </style>
+
+    <script type="text/javascript" src="{{ js('underscore-min.js') }}"></script>
+    <script type="text/javascript" src="{{ js('underscore.string.min.js') }}"></script>
+    <script type="text/javascript" src="{{ js('underscore.inflection.js') }}"></script>
+    <script type="text/javascript" src="{{ js('jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ js('jquery-ui/js/jquery-ui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ js('jquery.query.js') }}"></script>
+    <script type="text/javascript" src="{{ js('qtip2/jquery.qtip.min.js') }}"></script>
+    <script type="text/javascript" src="{{ js('lightbox/lightbox-2.6.min.js') }}"></script>
+    <script>
+        // make sure a console object exsists
+        if(typeof window.console === "undefined") {
+            window.console = {};
+            _.each(['log', 'debug', 'info', 'warn', 'error'], function(f){
+                window.console[f] = function(){};
+            });
+        }
+        $(document).ready(function(){
+            var do_search = function( q ){
+                var q = $("#txtSearch").val();
+                if( typeof grid==='undefined' ){
+                    window.location.href = '{{ page("grid") }}' +
+                        '?q=' + q;
+                }else{
+                    grid.setSelectedRows([]);
+                    loader.setSearch( q );
+                    var vp = grid.getViewport();
+                    loader.ensureData( vp.top, vp.bottom );
+                    try{
+                        piwikTracker.trackSiteSearch( q, false, false );
+                    }catch(err){
+                        console.log( "piwikTracker.trackSiteSearch" );
+                    }
+                }
+            }
+            $("#txtSearch").keyup( function(e){
+                if( e.which == 13 ){ do_search(); }
+            });
+            $("#txtSearch").next().click( do_search );
+        });
+    </script>
+</head>
+
+<body>
+    <div class="control_row" id="tool_selector"></div>
+    <div class="control_row"style=" height: 400px">
+        <form id="form" style="display:hidden;" method="POST" action="{{ job_path }}"+"submit/" target="iframe" enctype="multipart/form-data">
+            <div class="control_row" id="form_elms"></div>
+            <input type="hidden" name="__type__" value="sl2ssfe2"></input>
+            <input type="file" name="pdb_file"></input>
+            <input type="file" name="loop_file"></input>
+            <button id="submit">submit</button>
+        </form>
+        <iframe id="iframe" name="iframe" style="display:none;" src="" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" width="0" height="0"></iframe>
+    <div class="main_container" id="main_container"></div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var check = false;
+            var running = false;
+            var log = [];
+            var change1 = 0;
+            getJobStatus = function(data){
+                var jobname = data["jobname"];
+                console.log( jobname );
+                var Job_data = data; 
+                $.ajax({
+                    dataType: "json",
+                    url:  "{{ job_path }}" + "status/" + encodeURIComponent( jobname ),
+                    cache: false,
+                    success: _.bind( function( data ){
+                        console.log( "Job.retrieve_status", data );
+                        var change = true;
+                        
+                        if( data ){
+                            if( check === data["check"] &&
+                                    running === data["running"] &&
+                                    2 === data["log"].length ){
+                                change = false;
+                            }
+                            check = data["check"];
+                            running = data["running"];
+                            log = data["log"];
+                            $('#form').html(
+                                "<br>The job started." +
+                                "<br>Status of the job: " +
+"<a target=_blank href='"+"{{ job_path }}" +"status/" + encodeURIComponent( jobname ) + "'>"+"{{ job_path }}"+"status/" + encodeURIComponent( jobname ) +"</a>"+
+                                "<br>Page will be redirected when job is finished: " +
+"<a target=_blank href="+"{{ job_path }}" +"file/" + encodeURIComponent( jobname ) + "/index.html>"+"{{ job_path }}"+"file/" + encodeURIComponent( jobname ) + "/index.html</a>"
+                            );
+                            //if ( data["check"] === false &&
+                            //        data["running"] === false ){
+                            if ( data["running"] === false ){
+                                change1 = change1+1;
+                            };
+                            console.log(change1);
+                            if ( change1 > 25 ){
+                            //if ( data["running"] === false ){
+                                change = false;
+                            };
+                        }
+                        if( change ){
+                            console.log('reloop');
+                            getJobStatus( Job_data );
+                        }else{
+                            if( data["check"] === false &&
+                                data["running"] === false ) {
+                                console.log('status: done/error');
+                                //console.log(data);
+                                //console.log(Job_data);
+                                //console.log(data["log"]);
+                                $('#form').html(
+                                "<br>Error!" +
+                                "<br>Please check the file and try again."
+                                )
+                                var msg = $.ajax({type: "GET", url: "{{ job_path }}"+"/getfile/"+Job_data["jobname"]+"/input_pdb_input.log", async: false}).responseText;
+                                $('#div1').html(
+                                    "LOG-Message:<br><pre>" + msg + "</pre>"
+                                );
+                            //}else if( data["check"] === true &&
+                            //    data["running"] === false ) {
+                            //    $('#form').html(
+                            //    "<br>Error!" +
+                            //    "<br>Please try again or contact the support."
+                            //    )
+                            }else{
+                                console.log('status: done');
+                                //console.log(data);
+                                //console.log(Job_data);
+                                download = function( id ){
+                                    var url = "{{ job_path }}"+"file/" + Job_data["jobname"] + "/index.html"
+                                    var form = $(
+                                        '<form method="get" action="' + url + '" target="_self">' +
+                                        '</form>'
+                                    ).appendTo("body");
+                                    
+                                    form.submit();
+                                    form.remove();
+                                }
+                                download(Job_data["jobname"])
+                            }
+                        }
+                    } )
+                });
+            };
+            setTimeout( function(){
+                $( "#form" ).submit(function( event ) {
+                    var elm = document.getElementById( 'form' );
+                    var data = new FormData( elm );
+                    var urll = "{{ job_path }}" + 'submit/'
+                    $.ajax({
+                        url: urll,
+                        data: data,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            console.log( "submit form job", data );
+                            if( data=="ERROR" ){
+                                console.log( data );
+                            }else{
+                                getJobStatus( data );
+                                
+                            }
+                        }
+                    });
+                });
+            }, 1000 );
+        });
+    </script>
+</body>
+</html>

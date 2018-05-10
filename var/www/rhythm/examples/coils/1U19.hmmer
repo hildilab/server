@@ -1,0 +1,1534 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 Pfam_ls
+Sequence file:            coils/1U19.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: 1U19:B|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+7tm_1           7 transmembrane receptor (rhodopsin f   213.6    4.8e-61   1
+7tm_4           7TM chemoreceptor                      -113.5     0.0026   1
+Serpentine_recp Caenorhabditis serpentine receptor-li   -40.8      0.027   1
+Srg             C.elegans Srg family integral membran  -193.0      0.043   1
+Dicty_CAR       Slime mold cyclic AMP receptor          -76.4       0.12   1
+TAS2R           Mammalian taste receptor protein (TAS  -199.4       0.19   1
+DUF1300         Protein of unknown function (DUF1300)  -227.6       0.43   1
+UPF0328         Protein of unknown function UPF0328    -147.8        1.3   1
+ICE2            ICE2                                   -327.0          3   1
+Serpentine_r_xa Caenorhabditis serpentine receptor-li   -93.2        3.3   1
+CbiM            CbiM                                    -98.2        3.9   1
+Oxidored_q3     NADH-ubiquinone/plastoquinone oxidore   -61.5        4.3   1
+7tm_3           7 transmembrane receptor (metabotropi  -164.3        4.6   1
+CTV_P6          Citrus tristeza virus 6-kDa protein      -1.6        4.9   1
+DUF131          Protein of unknown function DUF131      -43.4        5.9   1
+DUF1201         Protein of unknown function (DUF1201)    -6.4          6   1
+MerT            MerT mercuric transport protein         -53.9        6.6   1
+DUF2029         Protein of unknown function (DUF2029)  -168.9        6.7   1
+7tm_2           7 transmembrane receptor (Secretin fa  -182.7        6.7   1
+SgaT_UlaA       Putative sugar-specific permease, Sga  -291.0          7   1
+7TMR-DISM_7TM   7TM diverse intracellular signalling    -74.8          7   1
+MARVEL          Membrane-associating domain             -39.8        7.2   1
+DUF63           Membrane protein of unknown function   -165.0        7.3   1
+PMP22_Claudin   PMP-22/EMP/MP20/Claudin family          -86.1        7.3   1
+SecG            Preprotein translocase SecG subunit     -31.6        8.6   1
+TLC             TLC ATP/ADP transporter                -421.9        8.9   1
+DUF140          Domain of unknown function DUF140      -177.5        9.5   1
+Competence      Competence protein                     -125.2        9.8   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+DUF2029           1/1      10   164 ..     1   245 []  -168.9      6.7
+TLC               1/1      17   313 ..     1   510 []  -421.9      8.9
+CbiM              1/1      18   198 ..     1   197 []   -98.2      3.9
+Srg               1/1      21   318 ..     1   310 []  -193.0    0.043
+DUF63             1/1      33   261 ..     1   275 []  -165.0      7.3
+7tm_3             1/1      34   315 ..     1   279 []  -164.3      4.6
+Dicty_CAR         1/1      34   342 ..     1   308 []   -76.4     0.12
+DUF1300           1/1      36   326 ..     1   343 []  -227.6     0.43
+ICE2              1/1      37   324 ..     1   554 []  -327.0        3
+UPF0328           1/1      37   178 ..     1   214 []  -147.8      1.3
+7TMR-DISM_7TM     1/1      38   228 ..     1   212 []   -74.8        7
+7tm_2             1/1      39   313 ..     1   293 []  -182.7      6.7
+TAS2R             1/1      39   325 ..     1   311 []  -199.4     0.19
+7tm_4             1/1      41   314 ..     1   301 []  -113.5   0.0026
+DUF140            1/1      46   268 ..     1   266 []  -177.5      9.5
+SgaT_UlaA         1/1      54   338 ..     1   470 []  -291.0        7
+7tm_1             1/1      54   306 ..     1   272 []   213.6  4.8e-61
+Competence        1/1      61   269 ..     1   293 []  -125.2      9.8
+Serpentine_r_xa   1/1      69   216 ..     1   158 []   -93.2      3.3
+Serpentine_recp   1/1      73   323 ..     1   261 []   -40.8    0.027
+Oxidored_q3       1/1      84   233 ..     1   142 []   -61.5      4.3
+CTV_P6            1/1     108   155 ..     1    51 []    -1.6      4.9
+MARVEL            1/1     115   280 ..     1   219 []   -39.8      7.2
+MerT              1/1     143   274 ..     1   116 []   -53.9      6.6
+PMP22_Claudin     1/1     153   301 ..     1   188 []   -86.1      7.3
+SecG              1/1     205   276 ..     1    78 []   -31.6      8.6
+DUF131            1/1     211   266 ..     1   102 []   -43.4      5.9
+DUF1201           1/1     250   300 ..     1    54 []    -6.4        6
+
+Alignments of top-scoring domains:
+DUF2029: domain 1 of 1, from 10 to 164: score -168.9, E = 6.7
+                   *->FTYPPFA...AlvFaPFAwLallpfgvaavlwtllslaalyalvrtl
+                        Y PF++++ +v +P   +  +    +a  w++  laa  +l+   
+  1U19:B|PDB    10    --YVPFSnktGVVRSP---FEAPQYY-LAEPWQFSMLAAYMFLLI-- 48   
+
+                   lsqrlllrpgparrrgsllaaalataaalwlEPvRsTldFGQiNvlLmlL
+                   ++  ++          +l   + +                          
+  1U19:B|PDB    49 MLGFPI---------NFLTLYVTV-------------------------- 63   
+
+                   VLaDcltrrpgrrwprGvLvGLAAAiKLTPAvFgLYFLlrRRwRAAataa
+                          +++                  TP+  +L  L      A+a   
+  1U19:B|PDB    64 ----QHKKLR------------------TPLNYILLNL------AVADLF 85   
+
+                   aaFaatvalgfallPsdSreYWtetlfdtdRiGplafasNQSLrGvLaRL
+                    +F++                +t+tl  + +   +  ++  +L G+ a L
+  1U19:B|PDB    86 MVFGG----------------FTTTLYTSLHGYFVFGPTGCNLEGFFATL 119  
+
+                   ggedspgtgpLLwlvlaavvaalalwa.arRalragdpllallvvaLfgL
+                   gge  +     Lw ++++++  ++++ +     r g+   a++ va++++
+  1U19:B|PDB   120 GGEI-A-----LWSLVVLAIERYVVVCkPMSNFRFGENH-AIMGVAFTWV 162  
+
+                   LV<-*
+                   ++   
+  1U19:B|PDB   163 MA    164  
+
+TLC: domain 1 of 1, from 17 to 313: score -421.9, E = 8.9
+                   *->tskeekffsKlraiiWPIeryELkKFiPlfLLmFCILFNYnlLRsiK
+                      t   +++f++   ++      E   F  l++ mF             
+  1U19:B|PDB    17    TGVVRSPFEAPQYYL-----AEPWQFSMLAAYMFL------------ 46   
+
+                   DsLVVtaigsGAEiIsFLKlWgvlPsAViftiiYvKLsNiLskeavFYsi
+                     L+  +       I FL l+        +t+   KL   L+   +  ++
+  1U19:B|PDB    47 --LIMLGFP-----INFLTLY--------VTVQHKKLRTPLNYILLNLAV 81   
+
+                   ispFLgFFaLFAfVIYPngdilHpnplaikllsilyP...nlkWFIaivr
+                      F + F+ F + +Y            ++ +   +P++ nl +F a ++
+  1U19:B|PDB    82 ADLFMV-FGGFTTTLY----------TSLHGYFVFGPtgcNLEGFFATLG 120  
+
+                   kWSfalFYvmaE..LWgsVVlsLLFWQFANqITtveEAKRFYaLFGlgaN
+                             +E  LW+ VVl+            +e              
+  1U19:B|PDB   121 ----------GEiaLWSLVVLA------------IE-------------- 134  
+
+                   lsLifaGevivwlSkseyfislkfavdsYnssswhisLqplttiivisGl
+                          + +v   k  +  ++ f+  +     ++i+ + +t ++++++ 
+  1U19:B|PDB   135 -------RYVV-VCK--PMSNFRFG-EN-----HAIMGVAFTWVMALACA 168  
+
+                   iiialYrwinkyVltdprfylprvLAeEaavakkkkrktkpKlslieSfk
+                   +  +  +  ++y+ +      +      +   +  +++        eSf 
+  1U19:B|PDB   169 APPLVGW--SRYIPEGMQCSCG------IDYYTPHEETN------NESFV 204  
+
+                   .yilsSkYllliAlLviaYGisINLVEvvWKskvKelYPtpneYssFmGr
+                    y +    +  + ++  +YG ++  V    K ++ ++  + ++  +   +
+  1U19:B|PDB   205 iYMFVVHFIIPLIVIFFCYGQLVFTV----KEAAAQQQESATTQKA---E 247  
+
+                   fsfwtGVvtvlfmllggsniiRkyGWlvgAlITPimmliTGvlFFgfiif
+                         V + ++++l+         Wl  A          Gv+F     +
+  1U19:B|PDB   248 KEVTRMVIIMVIAFLI--------CWLPYA----------GVAFY----I 275  
+
+                   fqeiasifggilgmsPLllAVviGaiQNvLSKStKYSLFDaTKEMAYIPL
+                   f +++s fg i+ + P+            ++K +                
+  1U19:B|PDB   276 FTHQGSDFGPIFMTIPAF-----------FAKTS---------------- 298  
+
+                   DdElKvKGKAAvDVvgaklGKSGGALIQsglfiifpnAsfasitpyLavi
+                                                          + +  +y++  
+  1U19:B|PDB   299 --------------------------------------AVYNPVIYIM-- 308  
+
+                   fliicilWIyavkkLnkeY<-*
+                                  nk++   
+  1U19:B|PDB   309 --------------MNKQF    313  
+
+CbiM: domain 1 of 1, from 18 to 198: score -98.2, E = 3.9
+                   *->aivyglrrlrriveekPeqipLlallaAfiFvlsalklPsptGsssH
+                      ++v +  ++     ++P     ++ laA++F+l +l  P+ +     
+  1U19:B|PDB    18    GVVRSPFEAPQYYLAEPW---QFSMLAAYMFLLIMLGFPINF----- 56   
+
+                   pvG..........nGLaAiLlGsPyvaailaaIVLlfQaLllahGGLTtL
+                   +++  + ++++ +++L  iLl   +++a l+ +          +GG+Tt 
+  1U19:B|PDB    57 LTLyvtvqhkklrTPLNYILLN--LAVADLFMV----------FGGFTT- 93   
+
+                   GANvfsMGivgpfvgYyvYrll.rragklspava..VflaAflgdla.ty
+                           +   + gY v+  ++++++++ ++++++++l+  ++++ + y
+  1U19:B|PDB    94 -------TLYTSLHGYFVFGPTgCNLEGFFATLGgeIALWSLVVLAIeRY 136  
+
+                   vatsvqLfiallAlafPgpqGlagflkamgkfhailaltqiPla.....i
+                   v++            f+  +    +++++ ++++ la  + Pl++ ++ i
+  1U19:B|PDB   137 VVVCKPM----SNFRFGENH---AIMGVAFTWVMALACAAPPLVgwsryI 179  
+
+                   aeglltvivvpdLfklkpd<-*
+                    eg      +++ +  ++    
+  1U19:B|PDB   180 PEGMQCSCGIDYYTPHEET    198  
+
+Srg: domain 1 of 1, from 21 to 318: score -193.0, E = 0.043
+                   *->MStsssipnNiSYdDPipfeCdesYstflEnlKYliQvaYLipsafL
+                         +s++ +             + Y ++ E   + + +aY++  + L
+  1U19:B|PDB    21    ---RSPFEA-------------PQY-YLAEPWQFSMLAAYMFLLIML 50   
+
+                   ....nsrIlyviwvrhrGksYrnnsFfiLYsaDcivgiilllleifftRl
+                   + + n++ lyv++ +++    r+   +iL    ++v  + +++ +f t  
+  1U19:B|PDB    51 gfpiNFLTLYVTVQHKK---LRTPLNYILL--NLAVADLFMVFGGFTT-- 93   
+
+                   FiYvPqLCpslSpfFfsppilmkI..YYpLlhYlhvfKtvsQiflsfNRM
+                   ++Y      sl  +F   p + +++++++ l   ++  ++  + l+ +R 
+  1U19:B|PDB    94 TLY-----TSLHGYFVFGPTGCNLegFFATLGGEIALWSL--VVLAIERY 136  
+
+                   tCNVlfPvdHdkiWkri......LkpvlivifllPflvIWNilISrky..
+                      V +P+  +++  ++   +  ++ v ++ + +P lv W   I +  + 
+  1U19:B|PDB   137 VV-VCKPMSNFRFGENHaimgvaFTWVMALACAAPPLVGWSRYIPEGMqc 185  
+
+                   ...infy......fGGFsvnYlkrVsWAslSllhLtfiivslslt...lv
+                   + +i +y+++++++   +v+Y   V        h+++  +++++  ++lv
+  1U19:B|PDB   186 scgIDYYtpheetNNESFVIYMFVV--------HFIIPLIVIFFCygqLV 227  
+
+                   stlvTflkLtklknRi..KssERtLciatmiiSveFllpAvfQiyfaFft
+                   +t+   ++    ++++++ ++E+ +++  +i+ ++Fl   +  +  aF  
+  1U19:B|PDB   228 FTVKEAAAQQ--QESAttQKAEKEVTRMVIIMVIAFLICWLPYAGVAFYI 275  
+
+                   sytpwwrp....fLlqlvffvwDvLnVgSPlimIlvsrqLRkhvF<-*
+                    +t   ++ ++ f+  + ff+  +  V+ P+i I +++q+R+      
+  1U19:B|PDB   276 -FTHQGSDfgpiFMTIPAFFAKTS-AVYNPVIYIMMNKQFRNCMV    318  
+
+DUF63: domain 1 of 1, from 33 to 261: score -165.0, E = 7.3
+                   *->mLkeF..ieeYyinpiyykeGYNpVNTvtYAiILgiAvillYkkllK
+                      + ++F+    Y    i ++    p+N +t      + v    kkl  
+  1U19:B|PDB    33    EPWQFsmLAAYMFLLIMLGF---PINFLT------LYVTVQHKKLRT 70   
+
+                   kLkIKiDekfflAliPyiiLGSlvRALvDaGvlprPisyltvTPGIYfLv
+                   +L+  i   +++A + ++++G ++  L    +  +   y    P    L 
+  1U19:B|PDB    71 PLN-YILLNLAVADL-FMVFGGFTTTL----YTSL-HGYFVFGPTGCNLE 113  
+
+                   flttIAtLillvklkffkeKyYrklavagGlvLavvalillqhilkvvfi
+                   ++  +AtL     + +  ++         + vLa+   + +    +  + 
+  1U19:B|PDB   114 GF--FATL-----GGEIALWS--------LVVLAIERYVVVC--KPMSN- 145  
+
+                   leVlllfvvfsaiAlvafvlltlkLkilrkklnlyvvyaHlf.DassTfv
+                   +  +  ++++  +A   + +l+    +l +        + +++ +     
+  1U19:B|PDB   146 FRFGENHAIMG-VAFTWVMALACAAPPLVG-------WSRYIpEGMQCSC 187  
+
+                   GIdfyGYwEqHvvPryLiglfGTayamyplKflVlltaLYiLdklvEd..
+                   GId+y   E    +++ i +f    + +   ++V+   +  L+  v +  
+  1U19:B|PDB   188 GIDYYTPHEETNNESFVIYMFV---VHFIIPLIVIFFCYGQLVFTVKEaa 234  
+
+                   ..........eeereylDFiKLvifiLGLAPGlRDllrmvmgv<-*
+                    +++++ ++++ e+e      +vi              mv +    
+  1U19:B|PDB   235 aqqqesattqKAEKEVT---RMVII-------------MVIAF    261  
+
+7tm_3: domain 1 of 1, from 34 to 315: score -164.3, E = 4.6
+                   *->lvalAvlGlivlTlfVlvvFvkhrdtPiV....KaSnreLSYlL...
+                      +  +++l  + + l++++ F +++ t +V+ ++K+    L+Y+L + 
+  1U19:B|PDB    34    PWQFSML-AAYMFLLIMLGFPINFLTLYVtvqhKKLRTPLNYILlnl 79   
+
+                   ....LiglilcylcsflFIgkG.tvekPsewsCilRrilfGlgFtlcySa
+                      +L+ ++  + +++   ++G +v  P+   C+l  ++ +lg  +++ +
+  1U19:B|PDB    80 avadLFMVFGGFTTTLYTSLHGyFVFGPTG--CNLEGFFATLGGEIALWS 127  
+
+                   lLaKTi.rVlriFrkatkpgsgqrrkfispwaqvlivliltliQviicvi
+                   l++ +i+r + + +  ++ ++g    +++ +  ++++l++    +++   
+  1U19:B|PDB   128 LVVLAIeRYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLVGWSR 177  
+
+                   WL..vvePPrpdkdiysekekeedeDvsiapiileCnkgsvvaFvvvLgY
+                   + +++++     +d+y+++e++              n++s v   +v  +
+  1U19:B|PDB   178 YIpeGMQCSCG-IDYYTPHEET--------------NNESFVIYMFVVHF 212  
+
+                   kglLavlcfflAfltRklPvdnF.............NEaKfItFSMYNvl
+                   +  L+v+ f +  l   ++ +   +++++ ++++ ++E   +  +M  v 
+  1U19:B|PDB   213 IIPLIVIFFCYGQLVFTVK-EAAaqqqesattqkaeKEVTRMVIIM--VI 259  
+
+                   tfCivWvAF..iPiYfstpgsaedykvqvavevfsIlaSstvlLgciFaP
+                    f i W++  ++ +Y++t +   +  + ++++++   +  t +   ++ P
+  1U19:B|PDB   260 AFLICWLPYagVAFYIFTHQ---GSDFGPIFMTIPAFFAKTSA---VYNP 303  
+
+                   KcyIILfrPekN<-*
+                    +yI   +  +N   
+  1U19:B|PDB   304 VIYIMMNKQFRN    315  
+
+Dicty_CAR: domain 1 of 1, from 34 to 342: score -76.4, E = 0.12
+                   *->ektkqeieasyavLliADfssiiGcllvLigFwrLKLLRnHvtkvis
+                          +   a + +L++  f   + +l v +  ++L+   n +   ++
+  1U19:B|PDB    34    PWQFSMLAAYMFLLIMLGFPINFLTLYVTVQHKKLRTPLNYILLNLA 80   
+
+                   lFCatsllKDlistiltLtlkpdkaqsngFpCYlyaivityGslacWLWt
+                   +  +  ++  +  t+ t +      + +   C l     t G   + LW 
+  1U19:B|PDB    81 VADLFMVFGGFTTTLYTSL--HGYFVFGPTGCNLEGFFATLGG-EIALWS 127  
+
+                   L.cLaisiynlivkRePE...PekfEkyYyllcwglPlist...ivmLak
+                   L +Lai  y ++ k     +  e +  +   ++w++ l ++ +++v  ++
+  1U19:B|PDB   128 LvVLAIERYVVVCKPMSNfrfGENHAIMGVAFTWVMALACAappLVGWSR 177  
+
+                   kvvevvGnWCWig..........ekyvgYRFgl.fYgPFliiwgisAvLv
+                    + e +   C i   ++++++++e++v Y F ++f  P ++i++    Lv
+  1U19:B|PDB   178 YIPEGMQCSCGIDyytpheetnnESFVIYMFVVhFIIPLIVIFFCYGQLV 227  
+
+                   GltsrYtYsvirnsvsDnKdkHltYqFKLinYiivFLvCWv.FAvvnRil
+                           +   ++     +k +t    +i  +i FL+CW+++A v    
+  1U19:B|PDB   228 FTVKEAAAQQQESATTQKAEKEVTRM--VIIMVIAFLICWLpYAGV---- 271  
+
+                   nglnlfPtavniLHtYlsvsHGFyAsvtFiYnnPLmWRyfgakilliFtk
+                    ++ +f    +     +     F+A    +Y nP+++       +++   
+  1U19:B|PDB   272 -AFYIFTHQGSDFGPIFMTIPAFFAKTSAVY-NPVIY-------IMMNKQ 312  
+
+                   FGyfvetqkrLeknKnnnnpsPisssrgas<-*
+                   F  ++ t     kn      +  + s+  +   
+  1U19:B|PDB   313 FRNCMVTTLCCGKNPLGDDEASTTVSKTET    342  
+
+DUF1300: domain 1 of 1, from 36 to 326: score -227.6, E = 0.43
+                   *->rFwytidlflrpisvYldhvsFvIsvIGiFaNiFHLiVLtRKSMRaL
+                       F +     l+   + l ++ F I +    +++ H      K +R+ 
+  1U19:B|PDB    36    QFSM-----LAAYMFLLIMLGFPINFLTLYVTVQH------KKLRT- 70   
+
+                   TINlFLIGIAICDfiRmisiIivflPifYreYqssiipeeCiPP.nSYlt
+                     N  L+  A++D++ m++    f++ +Y++    ++    + P+   l+
+  1U19:B|PDB    71 PLNYILLNLAVADLF-MVF--GGFTTTLYTSLHGYFV----FGPtGCNLE 113  
+
+                   ilialiSssiskvsekLsvWFaVAMAilRaLvIKYPlNk.RiqsLItSKy
+                           ++ ++   ++ W  V +Ai R +v+  P+++ R       ++
+  1U19:B|PDB   114 -------GFFATLGGEIALWSLVVLAIERYVVVCKPMSNfR----FGENH 152  
+
+                   Gir.illlItllilPFwildffktniteesgiWtPPpnCenFsknstqIe
+                    i ++ ++  ++  + + +   + + ++ +g              s  I 
+  1U19:B|PDB   153 AIMgVAFTWVMALACAAPPLVGWSRYIP-EGM-----------QCSCGID 190  
+
+                   YiiettelfGelgtEsye.illlieGiLFklIPSIiLpIaTilLIfqLKk
+                   Y++  +e+        +e++++++ ++ F +IP I+  +  + L+f  K+
+  1U19:B|PDB   191 YYTPHEET-------NNEsFVIYMFVVHF-IIPLIVIFFCYGQLVFTVKE 232  
+
+                   tkKkslstrsstssssndR.STKLVtfvTIsFLiaTvPl.GilYlikffv
+                   +       + s+++ + +++ T++V+++ I FLi  +P+ G+ + i f+ 
+  1U19:B|PDB   233 AAAQQ---QESATTQKAEKeVTRMVIIMVIAFLICWLPYaGVAFYI-FTH 278  
+
+                   feseglvaiIdklaiifeflstiNGtiHfLiCyFMSSQYRnTvrelfGrk
+                    +    +++   + +i +f++   +     i   M  Q Rn     ++++
+  1U19:B|PDB   279 QG----SDFGPIFMTIPAFFAKTSAVYNPVIYIMMNKQFRNCMVTTLCCG 324  
+
+                   kk<-*
+                   k+   
+  1U19:B|PDB   325 KN    326  
+
+ICE2: domain 1 of 1, from 37 to 324: score -327.0, E = 3
+                   *->lRaalstiYLllilltIPIaFdVGGlfCGLaFslTLfvlYFilTTlk
+                      ++  ++ ++L li+l  PI F               ++lY       
+  1U19:B|PDB    37    FSMLAAYMFL-LIMLGFPINF---------------LTLY------- 60   
+
+                   iltrksgreyrhiasiLYYlQhilIPsLLilfLSyFsndelkkllvsrtk
+                    +t  ++    ++ + L Y    l  + L++   +F              
+  1U19:B|PDB    61 -VTVQHK----KLRTPLNYILLNLAVADLFMVFGGF-------------- 91   
+
+                   SsrGGfifdlealkslLqLLGrasnniepstyaeYyFGqHGFvEnflvmp
+                                            ++ ++ +  Y+              
+  1U19:B|PDB    92 ------------------------TTTLYTSLHGYF-------------- 103  
+
+                   WqlvLlhSTPvFtLLEGFcTLLaIQAiGetsrW....LvhrknSdsWlIv
+                          + P    LEGF+  L     Ge++ W+   L + +        
+  1U19:B|PDB   104 ------VFGPTGCNLEGFFATLG----GEIALWslvvLAIER-------- 135  
+
+                   sLlvSGsvITaSlYfLYRIYivtPiweisti....tAsLlGftLtlvfgL
+                                   Y +    P    s+++ +++    G  +t v+ L
+  1U19:B|PDB   136 ----------------YVVV-CKP---MSNFrfgeNHAIMGVAFTWVMAL 165  
+
+                   GlYGIiSGKGSviESSLlFAYIVrCiYeIfpklsesAtselanifketwq
+                                                          + a+       
+  1U19:B|PDB   166 ---------------------------------------ACAA------- 169  
+
+                   slqpelPklPPLLaYyknlilKNaeaLWdslvkkaprlhkkelDfadklv
+                         P+l                  W+  +   p +            
+  1U19:B|PDB   170 ------PPLVG----------------WSRYI---PEGMQ---------- 184  
+
+                   vikvleqvkWWlIlnsvskliknfsatlPsSfkeifqFlikmAietitPa
+                          ++  +   + ++ + n s+        i  F +    + i+P 
+  1U19:B|PDB   185 -------CSCGIDYYTPHEETNNESF-------VIYMFVV----HFIIPL 216  
+
+                   VvinLaFRIgVFYaATRIIPalqraggfpLitpPkTPrPsSrnvstlSlS
+                   +vi +++  +VF        ++ +a++                       
+  1U19:B|PDB   217 IVIFFCYGQLVF--------TVKEAAAQ---------------------- 236  
+
+                   vstSsTTsevLdrsnleetrssrRkKrePrSviv....rllYwYSPCIlI
+                                 + e +++ +  K   r vi+    +l+ w+ P    
+  1U19:B|PDB   237 --------------QQESATTQKAEKEVTRMVIImviaFLICWL-PYAGV 271  
+
+                   AVY..THLiLqYsgeLksftGdlciWgcsakdaGgGGGesdiqiIVdsWq
+                   A Y  TH   q s+  + f     i   +ak + +    +++  I    q
+  1U19:B|PDB   272 AFYifTH---QGSDFGPIFM---TIPAFFAKTSAV---YNPVIYIMMNKQ 312  
+
+                   fWnWvNvfaTLlLYAvELigs<-*
+                   f n   + +T       L  +   
+  1U19:B|PDB   313 FRN--CMVTT-------LCCG    324  
+
+UPF0328: domain 1 of 1, from 37 to 178: score -147.8, E = 1.3
+                   *->FPalmYfIfdKDrFeesPfLRFItlLLPF....SYSAvQYllLLhtN
+                      F++l  ++f            +I+l +P +  ++Y+ vQ+   L+t 
+  1U19:B|PDB    37    FSMLAAYMF-----------LLIMLGFPInfltLYVTVQHK-KLRT- 70   
+
+                   WksshKpEgiLhkiLYylLNlLLlaFaiISILSIIaFtidkWenndDllf
+                         p           LN +Ll  a+                 +Dl+ 
+  1U19:B|PDB    71 ------P-----------LNYILLNLAV-----------------ADLF- 85   
+
+                   ySiiLPSFfvPpTYLLSTSCd..LvpgqI.....gFTDTGinil...IDl
+                     +++  F+      L+TS  + +v g ++ + +gF  T    l+++I l
+  1U19:B|PDB    86 --MVFGGFTT----TLYTSLHgyFVFGPTgcnleGFFAT----LggeIAL 125  
+
+                   LILLcpivslvlvlvle.eseCCYypYfaiiSsILILiRlLkEkylPSkk
+                     L  +++     +v+++ s+  ++               + E +     
+  1U19:B|PDB   126 WSLVVLAIERYV-VVCKpMSN--FR---------------FGENHAI--- 154  
+
+                   SSlPtApWRVaiFvlILiLaifvYafiaygsi<-*
+                           + ++F+ +  La  +  + ++      
+  1U19:B|PDB   155 --------MGVAFTWVMALACAAPPLVGWSRY    178  
+
+7TMR-DISM_7TM: domain 1 of 1, from 38 to 228: score -74.8, E = 7
+                   *->ralifglllGillllgfYnLfly..lsrrkdksyLyyalyillflly
+                      ++l+ ++ l i+l + + +L ly ++ ++k +++L y l  l+++ +
+  1U19:B|PDB    38    SMLAAYMFLLIMLGFPINFLTLYvtVQHKKLRTPLNYILLNLAVADL 84   
+
+                   qlslsglafeylDwpnipffaqkklaylllvllalffllFlrsflylkss
+                   ++++ g+  ++       ++ +       ++++++++++ l  f+ +   
+  1U19:B|PDB    85 FMVFGGFTTTLY------TSLHG------YFVFGPTGCN-LEGFFATLGG 121  
+
+                   srrldrl.lgilalllflaillalfltd..ylvanriaqvlvllfilill
+                   ++ l+ l +++   +++++ ++++f + ++++ +++ a+  v++ ++   
+  1U19:B|PDB   122 EIALWSLvVLAIERYVVVCKPMSNF-RFgeNHAIMGVAFTWVMALACAAP 170  
+
+                   llgikawrkgyrdArlfliaflvflvgglvSdllgllglipnnitltsya
+                    l+ +        +r++  ++ + +   ++ +   +++  ++ i  ++++
+  1U19:B|PDB   171 PLVGW--------SRYIPEGMQCSCGIDYY-TPHEETNNESFVI--YMFV 209  
+
+                   lllglvlevlllslaLadER<-*
+                   ++++ +l+v+++ +     +   
+  1U19:B|PDB   210 VHFIIPLIVIFFCYGQLV-F    228  
+
+7tm_2: domain 1 of 1, from 39 to 313: score -182.7, E = 6.7
+                   *->lllLkviytVGyslSLvaLllAiaifllFRkLhCtRNyIHlNLfaSf
+                      +l+++++  + ++  + +L+l + +    +kL+   NyI+lNL ++ 
+  1U19:B|PDB    39    MLAAYMFLLIMLGFPINFLTLYVTV--QHKKLRTPLNYILLNLAVA- 82   
+
+                   iLraisflik.davlfnsvglseadqlsweeslhcsasagkitmiv....
+                        +++ +  + l++s +                         +    
+  1U19:B|PDB    83 --DLFMVFGGfTTTLYTSLH-------------------------Gyfvf 105  
+
+                   ...............................vVgCkvvavfl....hYff
+                   ++++ + ++   + +++    +      ++ vV Ck +  f  +++h  +
+  1U19:B|PDB   106 gptgcnlegffatlggeialwslvvlaieryVVVCKPMSNFRfgenHAIM 155  
+
+                   laNFfWmLvEGlYLhtLlvvtVevffserkylwwYlliGWGvPavfVgiW
+                   +++F+W+        ++l+ +                      a + + W
+  1U19:B|PDB   156 GVAFTWV--------MALACA----------------------APPLVGW 175  
+
+                   aivrpdk......agygnegCCWlsnedngyfwWiikGPvllvilvNfil
+                     + p++ + + +  y++++    +n +++  ++ ++  ++  ++v  i+
+  1U19:B|PDB   176 SRYIPEGmqcscgIDYYTPHE--ETN-NESFVIYMFVVHFIIPLIV--IF 220  
+
+                   FinilriLvqKlridslspdmgetdqyrk.......krlaKStLlLlPLL
+                   F+    +Lv   +  + +++  e  +++k +++ +++        L++ L
+  1U19:B|PDB   221 FCY--GQLVFTVK--EAAAQQQESATTQKaekevtrMVIIMVIAFLICWL 266  
+
+                   ...GitwvlflfapeddarGvssivflylflilnSfQGFfVavlYCFLNg
+                   +  G+ + +f    +d        +f+ + +++         v+Y  +N+
+  1U19:B|PDB   267 pyaGVAFYIFTHQGSD-----FGPIFMTIPAFFAKTSAVYNPVIYIMMNK 311  
+
+                   EV<-*
+                        
+  1U19:B|PDB   312 QF    313  
+
+TAS2R: domain 1 of 1, from 39 to 325: score -199.4, E = 0.19
+                   *->MlsavegiflivavvEfllGILgNgFIvLVNcidWvkkrkl.SsiDl
+                      Ml a    ++++ + + + +++   +         v+++kl+ ++++
+  1U19:B|PDB    39    MLAA----YMFLLIMLGFPINFLTLYVT-------VQHKKLrTPLNY 74   
+
+                   ILtsLAISRIcLqwiilldgfiivffpntylsgkllriislfWtflNhlS
+                   IL++LA+   +++   ++  ++++++  +++  + + +  +f t+  +  
+  1U19:B|PDB    75 ILLNLAVADLFMVFGGFTTTLYTSLHGYFVFGPTGCNLEGFFATLGGEIA 124  
+
+                   lWFATcLsiF....Y...clKIAnFs...HPiFLWLKwRiskV.vlwlig
+                   lW   +L ++  ++Y   c   +nF+ +++++       i  V + w   
+  1U19:B|PDB   125 LW---SLVVLaierYvvvCKPMSNFRfgeNHA-------IMGVaFTWV-- 162  
+
+                   CLLgsllisflniv....siinsiklsidpelilrakykrNtTwdlrvsk
+                      ++l+  ++ +v+ ++ i+   + s+ + + +  +  +N ++      
+  1U19:B|PDB   163 ---MALACAAPPLVgwsrYIPEGMQCSCGIDYYTPHEETNNESF------ 203  
+
+                   felfsslvllnmtlgsllPFivfLiSflLLIfSLwRHtrqMqlnatGfRD
+                      ++ +v     + +++P+iv ++ +  L+f       q q +at  + 
+  1U19:B|PDB   204 --VIYMFV-----VHFIIPLIVIFFCYGQLVFTVKEAAAQQQESATT-QK 245  
+
+                   PsTeAHvrAlKsliSFLiLyilYf.lsflIsii...sfllpknklafifg
+                      e+    +  +i FLi  ++Y +++f I +++++s + p  +++ +f+
+  1U19:B|PDB   246 AEKEVTRMVIIMVIAFLICWLPYAgVAFYI-FThqgSDFGPIFMTIPAFF 294  
+
+                   eivtylYPsgHSfILILGNsKLKqaflkvLlklk<-*
+                     + + Y +   +I I+ N++++ + ++ L++ k   
+  1U19:B|PDB   295 AKTSAVYNP---VIYIMMNKQFRNCMVTTLCCGK    325  
+
+7tm_4: domain 1 of 1, from 41 to 314: score -113.5, E = 0.0026
+                   *->altlHiitvisiPihifGfYcIlfKTPkkMksvKwsLLnlHfwsall
+                      a ++  +    +Pi+++++Y+    T  + k+ + +L +  +  a+ 
+  1U19:B|PDB    41    AAYMFLLIMLGFPINFLTLYV----T-VQHKKLRTPLNYILLNLAVA 82   
+
+                   DlslsfLtiPylffKPalaGypl.GllflkylGvpteiQvylgvtslglv
+                   Dl++ f +    ++  +l Gy++ G+         +++  ++  +     
+  1U19:B|PDB    83 DLFMVFGGFTTTLY-TSLHGYFVfGP-------TGCNLEGFFATLGGEIA 124  
+
+                   avsiillFEnRynalcrfsnrfriwrkwkRilyliinyilavlfflpiyl
+                   + s+++l   Ry ++c++   fr   +   i   ++  + a+++ +p++ 
+  1U19:B|PDB   125 LWSLVVLAIERYVVVCKPMSNFRFGENH-AIMGVAFTWVMALACAAPPLV 173  
+
+                   niPedQeeaklyilkkyPCpppeffdeppfpfvlsidengeityflicli
+                   +               y  +p+    ++++  +++  e +++    + + 
+  1U19:B|PDB   174 GWS------------RY--IPEGMQCSCGI-DYYTPHEETNNE--SFVI- 205  
+
+                   vllilliisqilffvilliyylykqlksst.hm..SkkTrklQkqFfial
+                     +++++i+  +  +++++ +l +++k++  ++++S++T+k  k   +++
+  1U19:B|PDB   206 YMFVVHFIIPLI-VIFFCYGQLVFTVKEAAaQQqeSATTQKAEKEVTRMV 254  
+
+                   iiQtliPliviliPviyllfsilfg...yynQalnNlafiiislHGllST
+                   ii + i +++  +P + ++f i++ +++ +  +++ +  +++ +  + ++
+  1U19:B|PDB   255 II-MVIAFLICWLPYAGVAFYIFTHqgsDFGPIFMTIPAFFAKTSAVYNP 303  
+
+                   lvmllvHkPYR<-*
+                   ++ ++++k +R   
+  1U19:B|PDB   304 VIYIMMNKQFR    314  
+
+DUF140: domain 1 of 1, from 46 to 268: score -177.5, E = 9.5
+                   *->lvkplravGgafllpgeiaekkvsFsLksipeipdlfltlrglfkrp
+                      l   l +  +++ l                      +++  ++++ p
+  1U19:B|PDB    46    LLIMLGFPINFLTL---------------------YVTVQHKKLRTP 71   
+
+                   fafrellkQl..lfVgggSllivlltslfiGmVvAlQgyvq...LadfGA
+                    +  +l   + +lf+++g +  +l tsl   +V++ +g ++++ +a +G 
+  1U19:B|PDB    72 LNYILLNLAVadLFMVFGGFTTTLYTSLHGYFVFGPTGCNLegfFATLGG 121  
+
+                   ealiGavvAlslvRELGPVlTaLvvAGrvGSafTAeiGaMritEEIDALe
+                   e+++  +v+l+  R         vv+ +  S f       r  E      
+  1U19:B|PDB   122 EIALWSLVVLAIERY--------VVVCKPMSNF-------RFGEN----- 151  
+
+                   vmgidPIsyLVsPRVlAgvivlplLtslslva..GilGGafvsvvll...
+                       + I  ++++ V+A    +p+L++ s  +++G+  +  ++++ ++++
+  1U19:B|PDB   152 ----HAIMGVAFTWVMALACAAPPLVGWSRYIpeGMQCS--CGIDYYtph 195  
+
+                   .Gvssgaylhslqt..fvgp.sDvlwgliKAlvFGviialigCYyGyttk
+                   +  ++++++ +++  +f  p   ++ ++ + lvF+v  a  + ++  +t+
+  1U19:B|PDB   196 eETNNESFVIYMFVvhFIIPlIVIFFCYGQ-LVFTVKEAA-AQQQESATT 243  
+
+                   GGpkGVGrAttrsVVtsllvifildfvlTaimf<-*
+                    +++   + +tr     ++ i ++ f++ ++ +   
+  1U19:B|PDB   244 QKAE---KEVTR-----MVIIMVIAFLICWLPY    268  
+
+SgaT_UlaA: domain 1 of 1, from 54 to 338: score -291.0, E = 7
+                   *->ynallwfinnVlkenFLRqPAfLLGlivliGYvLLKkgiskvvkGtl
+                       n l+   +   k+  LR P         + Y+LL   +   +  + 
+  1U19:B|PDB    54    INFLTLYVTVQHKK--LRTP---------LNYILLNLAVADLFMVF- 88   
+
+                   KtIiGFLiLqaGaGvLVttlrPvlkllkevfnltgavlDpYaslaaandk
+                                G+ +ttl      l ++f  +    +    l+++ ++
+  1U19:B|PDB    89 -------------GGFTTTL---YTSLHGYFVFGPTGCN----LEGFFAT 118  
+
+                   lgdaflnnDYvSlvtyallvGlvlNIllVaLRRfTkirt.....ImLTGH
+                   lg +         +++  lv l++    V+++   ++r+++++ Im    
+  1U19:B|PDB   119 LGGE---------IALWSLVVLAIERYVVVCKPMSNFRFgenhaIM---- 155  
+
+                   iMfqqAalvavfllivgfsmwlligvGiAYGAqAGLviltgIllGlYWaI
+                         ++  + ++++    ++l+g            i  g  +      
+  1U19:B|PDB   156 ------GVAFTWVMALACAAPPLVGW--------SRYIPEGMQC------ 185  
+
+                   sSnitykvTqkVTggdgfaiGHqqqlaiwiaaklgpfvGkKeddtEdlKL
+                   s  i y    + T++  f i       +++++              +  +
+  1U19:B|PDB   186 SCGIDYYTPHEETNNESFVI-------YMFVV--------------HFII 214  
+
+                   PkwLnifrDtivstAliMlsLFvifFlvilaslgldnaqdvnWDkFGala
+                   P               +++    ifF  + +++  + a         a+ 
+  1U19:B|PDB   215 P---------------LIV----IFFCYGQLVFTVKEAA--------AQQ 237  
+
+                   glaaanttfgkqnfFiYiiqtgLtFAvgiaIimtGVRMFvaELspAFqGI
+                    + a               q + + +    Ii     M +a L+      
+  1U19:B|PDB   238 QESAT-------------TQKAEKEVTRMVII-----MVIAFLI------ 263  
+
+                   SeKLiPGAvpAvDcAavYpFapsNAVifGFlsGfIGqLiavaiLggfsYi
+                                     p+a                 +a  i    +  
+  1U19:B|PDB   264 ---------------CWLPYAG----------------VAFYIFTHQG-- 280  
+
+                   PGnqssiLiIPgfIplFFsnATigVFANatGGwraAlllcfimGilevig
+                       ++ ++ +  Ip FF                +A+  + i  +     
+  1U19:B|PDB   281 --SDFGPIFMT--IPAFFA-------------KTSAVYNPVIYIMMNKQF 313  
+
+                   qaiavklLgnstnlatagwmgeadlsll<-*
+                     ++v +L    n+   + + ea+  +    
+  1U19:B|PDB   314 RNCMVTTLCCGKNP---LGDDEASTTVS    338  
+
+7tm_1: domain 1 of 1, from 54 to 306: score 213.6, E = 4.8e-61
+                   *->GNlLVilvilrtkklrtptnifilNLAvADLLflltlppwalyylvg
+                       N L ++v +++kklrtp n+ +lNLAvADL +++     +ly++++
+  1U19:B|PDB    54    INFLTLYVTVQHKKLRTPLNYILLNLAVADLFMVFGGFTTTLYTSLH 100  
+
+                   gedWpfGsalCklvtaldvvnmyaSillLtaISiDRYlAIvhPlryrrrr
+                   g + +fG+ +C+l +++ ++ +    ++L++++i+RY+++++P++  r+ 
+  1U19:B|PDB   101 G-YFVFGPTGCNLEGFFATLGGEIALWSLVVLAIERYVVVCKPMSNFRFG 149  
+
+                   tsprrAkvvillvWvlalllslPpllfswvktveegngvvnvttClidfp
+                       +A   ++++Wv+al+++ Ppl++++++ +e+      +++C+id+ 
+  1U19:B|PDB   150 E--NHAIMGVAFTWVMALACAAPPLVGWSRYIPEGM-----QCSCGIDYY 192  
+
+                   evstasvktwlvsyallstlvgFvlPllvilvcYtrIlrtlrkrarkgas
+                   +++   + t   s++++ ++v F++Pl+vi +cY++ + t++ +a ++++
+  1U19:B|PDB   193 TPH---EETNNESFVIYMFVVHFIIPLIVIFFCYGQLVFTVKEAAAQQQE 239  
+
+                   .kkrsskerkaaktllvvvvvFvlCWlPyfivllldtlc.lsiimsssCe
+                   ++  +++e+ +++++++ v++F++CWlPy+ v+++   ++ s        
+  1U19:B|PDB   240 sATTQKAEKEVTRMVIIMVIAFLICWLPYAGVAFYIFTHqGS-------- 281  
+
+                   lervlptallvtlwLayvNsclNPiIY<-*
+                     ++ p+++ +  ++a++++++NP+IY   
+  1U19:B|PDB   282 --DFGPIFMTIPAFFAKTSAVYNPVIY    306  
+
+Competence: domain 1 of 1, from 61 to 269: score -125.2, E = 9.8
+                   *->LvlGdrsglpkelweafqrlGlaHLlAISGlHvglvagllyfllrrr
+                       ++ ++ +l + l+ ++ +l +a L+        +v+g ++  l+  
+  1U19:B|PDB    61    VTVQHK-KLRTPLNYILLNLAVADLF--------MVFGGFTTTLYT- 97   
+
+                   lalqpflpllgippklakllgllfllfYaiLaGfspSvlRAflmlalkll
+                              ++ +  +  + + l ++   +G ++  +      ++ +l
+  1U19:B|PDB    98 ----------SLHGYFVFGPTGCNLEGFFATLGGEIALW-----SLV-VL 131  
+
+                   llllffrrlsplqvLalsllllllvdPlallslGF.wLSFlAtfa..Lll
+                   ++    + ++p++++ +        + +a++++ F+w   lA++a++L+ 
+  1U19:B|PDB   132 AIERYVVVCKPMSNFRFG-------ENHAIMGVAFtWVMALACAAppLVG 174  
+
+                   lykgllqalrdlstpllsrwlpirwlasllaaslaaqlgtaPvllylFgr
+                   +++ ++                            ++q+ + +  +    +
+  1U19:B|PDB   175 WSRYIPE---------------------------GMQCSCGIDYYTPHEE 197  
+
+                   lsllsllaNLlasPlisfvfllvpLlllavllsllipsllgalllsllgl
+                   ++  s++   ++++++ f   ++pL++++++         g+l + + + 
+  1U19:B|PDB   198 TNNESFV---IYMFVVHF---IIPLIVIFFCY--------GQLVFTVKE- 232  
+
+                   llewlfqllkllaevplalwvvaksaalpllllllsllaallllllrll<
+                              +++  +a+ + a       +++++     +l+++l++  
+  1U19:B|PDB   233 ---------AAAQQQESATTQKAEKEVTRMVIIMVIA---FLICWLPYA  269  
+
+                   -*
+                     
+  1U19:B|PDB     -    -    
+
+Serpentine_r_xa: domain 1 of 1, from 69 to 216: score -93.2, E = 3.3
+                   *->klPfvYIivMtIsGivdkiadFlmv..dfwPitplilpeegYeeYRq
+                       +P+ YI + +++     +ad +mv + f+  t l     gY+ +  
+  1U19:B|PDB    69    RTPLNYI-LLNLA-----VADLFMVfgGFT--TTLYTSLHGYFVF-G 106  
+
+                   liGseiLTLvgTfcYlhplfLsvLMTlnRlsIvisPasqkiwFt.drrlf
+                     G ++    +T+  +++l   v   + R   v++P s    F+++  + 
+  1U19:B|PDB   107 PTGCNLEGFFATLGGEIALWSLVVLAIERYVVVCKPMSNFR-FGeNHAIM 155  
+
+                   lYca..giaIlvlIlLL......IPyfSsCpvNFnartlsFesACaPeRH
+                   +++++ + a+ +    L + ++ IP    C+  +   t       ++e  
+  1U19:B|PDB   156 GVAFtwVMALACAAPPLvgwsryIPEGMQCSCGIDYYTP------HEE-- 197  
+
+                   PITlfQNk..YLIlvPvttmvVNv<-*
+                        +N++++ I+  v+   + +   
+  1U19:B|PDB   198 -----TNNesFVIYMFVVHFIIPL    216  
+
+Serpentine_recp: domain 1 of 1, from 73 to 323: score -40.8, E = 0.027
+                   *->sykLmyfrfiiDilytfinsiltgyliiigisycflkypnlifilGw
+                       y+L++ ++++D++++f  + +t+y  + g++ +    p+   + G+
+  1U19:B|PDB    73    NYILLN-LAVADLFMVFGGFTTTLYTSLHGYFVF---GPTGCNLEGF 115  
+
+                   pslnlwtlyirctlalllsieRvlaiffPifryhnlfqklstyiililil
+                   +++  +   i  +  + l+ieR++ +++P +    +f+   + +i+    
+  1U19:B|PDB   116 FATLGGE--IALWSLVVLAIERYVVVCKPMS----NFRFGENHAIM---- 155  
+
+                   llilydqyilfftcpvvf.dsplnckwffdcsilPsfFnkcyseYwntpe
+                    +++ +   l +  p +++ s +       cs      + +y+  +++ +
+  1U19:B|PDB   156 GVAFTWVMALACAAPPLVgWSRYIP-EGMQCSC-----GIDYYTPHEETN 199  
+
+                   t.m.innflivvltca.lLyirLfiiiwkkfkktnnvsskklskanrla.
+                    +  +++ ++v + ++ ++ + +++ + + +k     + ++ s +++ a+
+  1U19:B|PDB   200 NeSfVIYMFVVHFIIPlIVIFFCYGQLVFTVKEAA--AQQQESATTQKAe 247  
+
+                   ....llQstiQDiclFnalpafiyvyfqff......evpnwmlivgpqia
+                   ++ + ++ ++  +++F ++   +  +  ++ +++++++ ++ +  +p + 
+  1U19:B|PDB   248 kevtRMVIIM--VIAFLICWLPYAGVAFYIfthqgsDFGPI-FMTIPAFF 294  
+
+                   wqkssGcpieiylifNrtiRkkvlkllks<-*
+                     +s+  ++ iy+++N+ +R+  +++l++   
+  1U19:B|PDB   295 AKTSAVYNPVIYIMMNKQFRNCMVTTLCC    323  
+
+Oxidored_q3: domain 1 of 1, from 84 to 233: score -61.5, E = 4.3
+                   *->llilssllvilsknPvysgLfLillfllisgllgllgassflsliLf
+                      l+++++ +  ++   +++ +    + +++ g++++lg++      L+
+  1U19:B|PDB    84    LFMVFGGFTTTLYTSLHGYFVFGPTGCNLEGFFATLGGE-IALWSLV 129  
+
+                   LvYvGGmlVLFlYvvmLapnekfeiskkkllsllvllllllllllllilg
+                         +l +  Yvv   p   f +     ++   ++ + +++++ l   
+  1U19:B|PDB   130 ------VLAIERYVVVCKPMSNFRF-----GENHAIMGVAFTWVMALACA 168  
+
+                   llffgel.......................nikaigslLystsnnyglll
+                      ++ ++   + +   + + +  ++   +n ++ ++ ++     ++++l
+  1U19:B|PDB   169 APPLVGWsryipegmqcscgidyytpheetNNESFVIYMF-VV-HFIIPL 216  
+
+                   llasyiLLlaLigvvklt<-*
+                   +++ +     L+  vk +   
+  1U19:B|PDB   217 IVIFF-CYGQLVFTVKEA    233  
+
+CTV_P6: domain 1 of 1, from 108 to 155: score -1.6, E = 4.9
+                   *->mDCviqGFLtFLvG.iAvFsAFAeLiiivitiYRCtiKPvRsAsPYG
+                        C + GF   L G+iA +s    L+++ i  Y    KP+ +     
+  1U19:B|PDB   108    TGCNLEGFFATLGGeIALWS----LVVLAIERYVVVCKPMSNFRFGE 150  
+
+                   tHAtv<-*
+                    HA +   
+  1U19:B|PDB   151 NHAIM    155  
+
+MARVEL: domain 1 of 1, from 115 to 280: score -39.8, E = 7.2
+                   *->flrtplGllkilelvlvlgliifilvaGyGtlvCgsvnkwetgyivt
+                      f++t+ G + + +  lv   i    v                     
+  1U19:B|PDB   115    FFATLGGEIALWS--LVVLAIERYVVV-------------------- 139  
+
+                   fyGpfrlhqygfaypndGycndgssrkyvsllgdnssaagffmavsvfa.
+                                      c+++s++ ++ ++     a +++ma+++ a+
+  1U19:B|PDB   140 -------------------CKPMSNFRFGENHAIMGVAFTWVMALACAAp 170  
+
+                   ............FlitlafLllylfglhlyiprifvrwpllDlifsa.ia
+                   +  + ++  ++++ +++++   + +++h+   +   +++++ +++++ i+
+  1U19:B|PDB   171 plvgwsryipegMQCSCGI---DYYTPHEETNN--ESFVIYMFVVHFiIP 215  
+
+                   tlLyliasivlvagvntdakaAtsr.leytllaqsqwatsnvqdllgtrg
+                    ++ +++   l              ++++  +a++q+++ ++q++   ++
+  1U19:B|PDB   216 LIVIFFCYGQL------------VFtVKE--AAAQQQESATTQKAEKEVT 251  
+
+                   yiyhyCVdgaaiaAgvfgflatllyaldaflafkrrr<-*
+                   +        + i++++  ++++l ya+ af++f +     
+  1U19:B|PDB   252 R--------MVIIMVIAFLICWLPYAGVAFYIFTHQG    280  
+
+MerT: domain 1 of 1, from 143 to 274: score -53.9, E = 6.6
+                   *->MSePknp.rgalfaGglAAilAslCClGPlv....LllLGvSGaW.I
+                      MS  + +++ a+++     + A +C + Plv+ ++ +  G+  + +I
+  1U19:B|PDB   143    MSNFRFGeNHAIMGVAFTWVMALACAAPPLVgwsrYIPEGMQCSCgI 189  
+
+                   GNLt..........lLEPYRPiFIlaaLvalfFAwrriyRPveacepGtv
+                      t+++++++++ +   +   FI    v++f  +  ++   ea  + + 
+  1U19:B|PDB   190 DYYTpheetnnesfVIYMFVVHFIIPLIVIFFCYGQLVFTVKEAAAQQQE 239  
+
+                   CavPQVRktykviFWlvallvLVavtfpYvlvlFy<-*
+                    a  Q   +      ++ +++  +   pY  v Fy   
+  1U19:B|PDB   240 SATTQKAEKEVTRMVIIMVIAFLICWLPYAGVAFY    274  
+
+PMP22_Claudin: domain 1 of 1, from 153 to 301: score -86.1, E = 7.3
+                   *->mlvlLlgiivlhiawviLLfvsTiPtdqWkvsdyvgdniiTaaaasa
+                            +i+ ++++wv  L +++ P   W  +  +g           
+  1U19:B|PDB   153    ------AIMGVAFTWVMALACAAPPLVGWSRYIPEG----------- 182  
+
+                   GLWrnCttqsctgqiscksfDsvlelndalqAvqalMilsiRASSilgii
+                      + C+ + ++ + ++ +     +++ ++  + + +i+ +    i+ + 
+  1U19:B|PDB   183 ---MQCSCGIDYYTPHEET----NNESFVIYMFVVHFIIPL--IVIFFCY 223  
+
+                   slivff.....fQl...ftmkkGgrfklkKarIallaGIiflvsgLcvlv
+                   + +vf+ ++  +Q++++ t+ k +  ++   r++++  I fl+++L    
+  1U19:B|PDB   224 GQLVFTvkeaaAQQqesATTQKAEKEVT---RMVIIMVIAFLICWLP--- 267  
+
+                   gasiYtsriaedfgnpltpYyvnqkYsfGysfiLgWvafalafisGvlY<
+                       Y++++  +f          q++ fG+ f +  + +++a  s   Y 
+  1U19:B|PDB   268 ----YAGVAFYIFTH--------QGSDFGPIFMT--IPAFFAKTS-AVY  301  
+
+                   -*
+                     
+  1U19:B|PDB     -    -    
+
+SecG: domain 1 of 1, from 205 to 276: score -31.6, E = 8.6
+                   *->ytvLliiflv..vsilLiglVLlQrgKGaGlgasFGgGgQasgslFg
+                      ++++ + f+++ + i+ +   L+   K   ++       Q ++s  +
+  1U19:B|PDB   205    IYMFVVHFIIplIVIFFCYGQLVFTVK--EAA------AQQQESATT 243  
+
+                   rKarGaenfLtkiTaiLavlFfilsl...vLallns<-*
+                      + ae+  t++ +i++ +F+i+ l+  ++a++     
+  1U19:B|PDB   244 ---QKAEKEVTRMVIIMVIAFLICWLpyaGVAFYIF    276  
+
+DUF131: domain 1 of 1, from 211 to 266: score -43.4, E = 5.9
+                   *->LiliGlllIFl..GfiLvflGvflsalkeekeeaeeeeesneEeskk
+                       ++i+l++IF+  G ++ ++  +   ++e+ +++             
+  1U19:B|PDB   211    HFIIPLIVIFFcyGQLVFTVKEAAAQQQESATTQ------------- 244  
+
+                   ekrkdeeeseveyGGVImIGPIPIVFGssnpslLpklaklsiiLAIilmi
+                        ++e ev                        +++       Ii+ i
+  1U19:B|PDB   245 -----KAEKEV-----------------T------RMV-------IIMVI 259  
+
+                   lylllfl<-*
+                    +l+ +l   
+  1U19:B|PDB   260 AFLICWL    266  
+
+DUF1201: domain 1 of 1, from 250 to 300: score -6.4, E = 6
+                   *->mDCvLRsYLLLAFGFliCLFLFCLvvFiWFvYKqiLFRttaqsnEAR
+                         v R  +++   FliC   +  v F  F  +   F        A 
+  1U19:B|PDB   250    ---VTRMVIIMVIAFLICWLPYAGVAFYIFTHQGSDFGPIFMTIPAF 293  
+
+                   fnrstvv<-*
+                   f +   v   
+  1U19:B|PDB   294 FAKTSAV    300  
+
+//
+
+Query sequence: 1U19:A|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+7tm_1           7 transmembrane receptor (rhodopsin f   213.6    4.8e-61   1
+7tm_4           7TM chemoreceptor                      -113.5     0.0026   1
+Serpentine_recp Caenorhabditis serpentine receptor-li   -40.8      0.027   1
+Srg             C.elegans Srg family integral membran  -193.0      0.043   1
+Dicty_CAR       Slime mold cyclic AMP receptor          -76.4       0.12   1
+TAS2R           Mammalian taste receptor protein (TAS  -199.4       0.19   1
+DUF1300         Protein of unknown function (DUF1300)  -227.6       0.43   1
+UPF0328         Protein of unknown function UPF0328    -147.8        1.3   1
+ICE2            ICE2                                   -327.0          3   1
+Serpentine_r_xa Caenorhabditis serpentine receptor-li   -93.2        3.3   1
+CbiM            CbiM                                    -98.2        3.9   1
+Oxidored_q3     NADH-ubiquinone/plastoquinone oxidore   -61.5        4.3   1
+7tm_3           7 transmembrane receptor (metabotropi  -164.3        4.6   1
+CTV_P6          Citrus tristeza virus 6-kDa protein      -1.6        4.9   1
+DUF131          Protein of unknown function DUF131      -43.4        5.9   1
+DUF1201         Protein of unknown function (DUF1201)    -6.4          6   1
+MerT            MerT mercuric transport protein         -53.9        6.6   1
+DUF2029         Protein of unknown function (DUF2029)  -168.9        6.7   1
+7tm_2           7 transmembrane receptor (Secretin fa  -182.7        6.7   1
+SgaT_UlaA       Putative sugar-specific permease, Sga  -291.0          7   1
+7TMR-DISM_7TM   7TM diverse intracellular signalling    -74.8          7   1
+MARVEL          Membrane-associating domain             -39.8        7.2   1
+DUF63           Membrane protein of unknown function   -165.0        7.3   1
+PMP22_Claudin   PMP-22/EMP/MP20/Claudin family          -86.1        7.3   1
+SecG            Preprotein translocase SecG subunit     -31.6        8.6   1
+TLC             TLC ATP/ADP transporter                -421.9        8.9   1
+DUF140          Domain of unknown function DUF140      -177.5        9.5   1
+Competence      Competence protein                     -125.2        9.8   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+DUF2029           1/1      10   164 ..     1   245 []  -168.9      6.7
+TLC               1/1      17   313 ..     1   510 []  -421.9      8.9
+CbiM              1/1      18   198 ..     1   197 []   -98.2      3.9
+Srg               1/1      21   318 ..     1   310 []  -193.0    0.043
+DUF63             1/1      33   261 ..     1   275 []  -165.0      7.3
+7tm_3             1/1      34   315 ..     1   279 []  -164.3      4.6
+Dicty_CAR         1/1      34   342 ..     1   308 []   -76.4     0.12
+DUF1300           1/1      36   326 ..     1   343 []  -227.6     0.43
+ICE2              1/1      37   324 ..     1   554 []  -327.0        3
+UPF0328           1/1      37   178 ..     1   214 []  -147.8      1.3
+7TMR-DISM_7TM     1/1      38   228 ..     1   212 []   -74.8        7
+7tm_2             1/1      39   313 ..     1   293 []  -182.7      6.7
+TAS2R             1/1      39   325 ..     1   311 []  -199.4     0.19
+7tm_4             1/1      41   314 ..     1   301 []  -113.5   0.0026
+DUF140            1/1      46   268 ..     1   266 []  -177.5      9.5
+7tm_1             1/1      54   306 ..     1   272 []   213.6  4.8e-61
+SgaT_UlaA         1/1      54   338 ..     1   470 []  -291.0        7
+Competence        1/1      61   269 ..     1   293 []  -125.2      9.8
+Serpentine_r_xa   1/1      69   216 ..     1   158 []   -93.2      3.3
+Serpentine_recp   1/1      73   323 ..     1   261 []   -40.8    0.027
+Oxidored_q3       1/1      84   233 ..     1   142 []   -61.5      4.3
+CTV_P6            1/1     108   155 ..     1    51 []    -1.6      4.9
+MARVEL            1/1     115   280 ..     1   219 []   -39.8      7.2
+MerT              1/1     143   274 ..     1   116 []   -53.9      6.6
+PMP22_Claudin     1/1     153   301 ..     1   188 []   -86.1      7.3
+SecG              1/1     205   276 ..     1    78 []   -31.6      8.6
+DUF131            1/1     211   266 ..     1   102 []   -43.4      5.9
+DUF1201           1/1     250   300 ..     1    54 []    -6.4        6
+
+Alignments of top-scoring domains:
+DUF2029: domain 1 of 1, from 10 to 164: score -168.9, E = 6.7
+                   *->FTYPPFA...AlvFaPFAwLallpfgvaavlwtllslaalyalvrtl
+                        Y PF++++ +v +P   +  +    +a  w++  laa  +l+   
+  1U19:A|PDB    10    --YVPFSnktGVVRSP---FEAPQYY-LAEPWQFSMLAAYMFLLI-- 48   
+
+                   lsqrlllrpgparrrgsllaaalataaalwlEPvRsTldFGQiNvlLmlL
+                   ++  ++          +l   + +                          
+  1U19:A|PDB    49 MLGFPI---------NFLTLYVTV-------------------------- 63   
+
+                   VLaDcltrrpgrrwprGvLvGLAAAiKLTPAvFgLYFLlrRRwRAAataa
+                          +++                  TP+  +L  L      A+a   
+  1U19:A|PDB    64 ----QHKKLR------------------TPLNYILLNL------AVADLF 85   
+
+                   aaFaatvalgfallPsdSreYWtetlfdtdRiGplafasNQSLrGvLaRL
+                    +F++                +t+tl  + +   +  ++  +L G+ a L
+  1U19:A|PDB    86 MVFGG----------------FTTTLYTSLHGYFVFGPTGCNLEGFFATL 119  
+
+                   ggedspgtgpLLwlvlaavvaalalwa.arRalragdpllallvvaLfgL
+                   gge  +     Lw ++++++  ++++ +     r g+   a++ va++++
+  1U19:A|PDB   120 GGEI-A-----LWSLVVLAIERYVVVCkPMSNFRFGENH-AIMGVAFTWV 162  
+
+                   LV<-*
+                   ++   
+  1U19:A|PDB   163 MA    164  
+
+TLC: domain 1 of 1, from 17 to 313: score -421.9, E = 8.9
+                   *->tskeekffsKlraiiWPIeryELkKFiPlfLLmFCILFNYnlLRsiK
+                      t   +++f++   ++      E   F  l++ mF             
+  1U19:A|PDB    17    TGVVRSPFEAPQYYL-----AEPWQFSMLAAYMFL------------ 46   
+
+                   DsLVVtaigsGAEiIsFLKlWgvlPsAViftiiYvKLsNiLskeavFYsi
+                     L+  +       I FL l+        +t+   KL   L+   +  ++
+  1U19:A|PDB    47 --LIMLGFP-----INFLTLY--------VTVQHKKLRTPLNYILLNLAV 81   
+
+                   ispFLgFFaLFAfVIYPngdilHpnplaikllsilyP...nlkWFIaivr
+                      F + F+ F + +Y            ++ +   +P++ nl +F a ++
+  1U19:A|PDB    82 ADLFMV-FGGFTTTLY----------TSLHGYFVFGPtgcNLEGFFATLG 120  
+
+                   kWSfalFYvmaE..LWgsVVlsLLFWQFANqITtveEAKRFYaLFGlgaN
+                             +E  LW+ VVl+            +e              
+  1U19:A|PDB   121 ----------GEiaLWSLVVLA------------IE-------------- 134  
+
+                   lsLifaGevivwlSkseyfislkfavdsYnssswhisLqplttiivisGl
+                          + +v   k  +  ++ f+  +     ++i+ + +t ++++++ 
+  1U19:A|PDB   135 -------RYVV-VCK--PMSNFRFG-EN-----HAIMGVAFTWVMALACA 168  
+
+                   iiialYrwinkyVltdprfylprvLAeEaavakkkkrktkpKlslieSfk
+                   +  +  +  ++y+ +      +      +   +  +++        eSf 
+  1U19:A|PDB   169 APPLVGW--SRYIPEGMQCSCG------IDYYTPHEETN------NESFV 204  
+
+                   .yilsSkYllliAlLviaYGisINLVEvvWKskvKelYPtpneYssFmGr
+                    y +    +  + ++  +YG ++  V    K ++ ++  + ++  +   +
+  1U19:A|PDB   205 iYMFVVHFIIPLIVIFFCYGQLVFTV----KEAAAQQQESATTQKA---E 247  
+
+                   fsfwtGVvtvlfmllggsniiRkyGWlvgAlITPimmliTGvlFFgfiif
+                         V + ++++l+         Wl  A          Gv+F     +
+  1U19:A|PDB   248 KEVTRMVIIMVIAFLI--------CWLPYA----------GVAFY----I 275  
+
+                   fqeiasifggilgmsPLllAVviGaiQNvLSKStKYSLFDaTKEMAYIPL
+                   f +++s fg i+ + P+            ++K +                
+  1U19:A|PDB   276 FTHQGSDFGPIFMTIPAF-----------FAKTS---------------- 298  
+
+                   DdElKvKGKAAvDVvgaklGKSGGALIQsglfiifpnAsfasitpyLavi
+                                                          + +  +y++  
+  1U19:A|PDB   299 --------------------------------------AVYNPVIYIM-- 308  
+
+                   fliicilWIyavkkLnkeY<-*
+                                  nk++   
+  1U19:A|PDB   309 --------------MNKQF    313  
+
+CbiM: domain 1 of 1, from 18 to 198: score -98.2, E = 3.9
+                   *->aivyglrrlrriveekPeqipLlallaAfiFvlsalklPsptGsssH
+                      ++v +  ++     ++P     ++ laA++F+l +l  P+ +     
+  1U19:A|PDB    18    GVVRSPFEAPQYYLAEPW---QFSMLAAYMFLLIMLGFPINF----- 56   
+
+                   pvG..........nGLaAiLlGsPyvaailaaIVLlfQaLllahGGLTtL
+                   +++  + ++++ +++L  iLl   +++a l+ +          +GG+Tt 
+  1U19:A|PDB    57 LTLyvtvqhkklrTPLNYILLN--LAVADLFMV----------FGGFTT- 93   
+
+                   GANvfsMGivgpfvgYyvYrll.rragklspava..VflaAflgdla.ty
+                           +   + gY v+  ++++++++ ++++++++l+  ++++ + y
+  1U19:A|PDB    94 -------TLYTSLHGYFVFGPTgCNLEGFFATLGgeIALWSLVVLAIeRY 136  
+
+                   vatsvqLfiallAlafPgpqGlagflkamgkfhailaltqiPla.....i
+                   v++            f+  +    +++++ ++++ la  + Pl++ ++ i
+  1U19:A|PDB   137 VVVCKPM----SNFRFGENH---AIMGVAFTWVMALACAAPPLVgwsryI 179  
+
+                   aeglltvivvpdLfklkpd<-*
+                    eg      +++ +  ++    
+  1U19:A|PDB   180 PEGMQCSCGIDYYTPHEET    198  
+
+Srg: domain 1 of 1, from 21 to 318: score -193.0, E = 0.043
+                   *->MStsssipnNiSYdDPipfeCdesYstflEnlKYliQvaYLipsafL
+                         +s++ +             + Y ++ E   + + +aY++  + L
+  1U19:A|PDB    21    ---RSPFEA-------------PQY-YLAEPWQFSMLAAYMFLLIML 50   
+
+                   ....nsrIlyviwvrhrGksYrnnsFfiLYsaDcivgiilllleifftRl
+                   + + n++ lyv++ +++    r+   +iL    ++v  + +++ +f t  
+  1U19:A|PDB    51 gfpiNFLTLYVTVQHKK---LRTPLNYILL--NLAVADLFMVFGGFTT-- 93   
+
+                   FiYvPqLCpslSpfFfsppilmkI..YYpLlhYlhvfKtvsQiflsfNRM
+                   ++Y      sl  +F   p + +++++++ l   ++  ++  + l+ +R 
+  1U19:A|PDB    94 TLY-----TSLHGYFVFGPTGCNLegFFATLGGEIALWSL--VVLAIERY 136  
+
+                   tCNVlfPvdHdkiWkri......LkpvlivifllPflvIWNilISrky..
+                      V +P+  +++  ++   +  ++ v ++ + +P lv W   I +  + 
+  1U19:A|PDB   137 VV-VCKPMSNFRFGENHaimgvaFTWVMALACAAPPLVGWSRYIPEGMqc 185  
+
+                   ...infy......fGGFsvnYlkrVsWAslSllhLtfiivslslt...lv
+                   + +i +y+++++++   +v+Y   V        h+++  +++++  ++lv
+  1U19:A|PDB   186 scgIDYYtpheetNNESFVIYMFVV--------HFIIPLIVIFFCygqLV 227  
+
+                   stlvTflkLtklknRi..KssERtLciatmiiSveFllpAvfQiyfaFft
+                   +t+   ++    ++++++ ++E+ +++  +i+ ++Fl   +  +  aF  
+  1U19:A|PDB   228 FTVKEAAAQQ--QESAttQKAEKEVTRMVIIMVIAFLICWLPYAGVAFYI 275  
+
+                   sytpwwrp....fLlqlvffvwDvLnVgSPlimIlvsrqLRkhvF<-*
+                    +t   ++ ++ f+  + ff+  +  V+ P+i I +++q+R+      
+  1U19:A|PDB   276 -FTHQGSDfgpiFMTIPAFFAKTS-AVYNPVIYIMMNKQFRNCMV    318  
+
+DUF63: domain 1 of 1, from 33 to 261: score -165.0, E = 7.3
+                   *->mLkeF..ieeYyinpiyykeGYNpVNTvtYAiILgiAvillYkkllK
+                      + ++F+    Y    i ++    p+N +t      + v    kkl  
+  1U19:A|PDB    33    EPWQFsmLAAYMFLLIMLGF---PINFLT------LYVTVQHKKLRT 70   
+
+                   kLkIKiDekfflAliPyiiLGSlvRALvDaGvlprPisyltvTPGIYfLv
+                   +L+  i   +++A + ++++G ++  L    +  +   y    P    L 
+  1U19:A|PDB    71 PLN-YILLNLAVADL-FMVFGGFTTTL----YTSL-HGYFVFGPTGCNLE 113  
+
+                   flttIAtLillvklkffkeKyYrklavagGlvLavvalillqhilkvvfi
+                   ++  +AtL     + +  ++         + vLa+   + +    +  + 
+  1U19:A|PDB   114 GF--FATL-----GGEIALWS--------LVVLAIERYVVVC--KPMSN- 145  
+
+                   leVlllfvvfsaiAlvafvlltlkLkilrkklnlyvvyaHlf.DassTfv
+                   +  +  ++++  +A   + +l+    +l +        + +++ +     
+  1U19:A|PDB   146 FRFGENHAIMG-VAFTWVMALACAAPPLVG-------WSRYIpEGMQCSC 187  
+
+                   GIdfyGYwEqHvvPryLiglfGTayamyplKflVlltaLYiLdklvEd..
+                   GId+y   E    +++ i +f    + +   ++V+   +  L+  v +  
+  1U19:A|PDB   188 GIDYYTPHEETNNESFVIYMFV---VHFIIPLIVIFFCYGQLVFTVKEaa 234  
+
+                   ..........eeereylDFiKLvifiLGLAPGlRDllrmvmgv<-*
+                    +++++ ++++ e+e      +vi              mv +    
+  1U19:A|PDB   235 aqqqesattqKAEKEVT---RMVII-------------MVIAF    261  
+
+7tm_3: domain 1 of 1, from 34 to 315: score -164.3, E = 4.6
+                   *->lvalAvlGlivlTlfVlvvFvkhrdtPiV....KaSnreLSYlL...
+                      +  +++l  + + l++++ F +++ t +V+ ++K+    L+Y+L + 
+  1U19:A|PDB    34    PWQFSML-AAYMFLLIMLGFPINFLTLYVtvqhKKLRTPLNYILlnl 79   
+
+                   ....LiglilcylcsflFIgkG.tvekPsewsCilRrilfGlgFtlcySa
+                      +L+ ++  + +++   ++G +v  P+   C+l  ++ +lg  +++ +
+  1U19:A|PDB    80 avadLFMVFGGFTTTLYTSLHGyFVFGPTG--CNLEGFFATLGGEIALWS 127  
+
+                   lLaKTi.rVlriFrkatkpgsgqrrkfispwaqvlivliltliQviicvi
+                   l++ +i+r + + +  ++ ++g    +++ +  ++++l++    +++   
+  1U19:A|PDB   128 LVVLAIeRYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLVGWSR 177  
+
+                   WL..vvePPrpdkdiysekekeedeDvsiapiileCnkgsvvaFvvvLgY
+                   + +++++     +d+y+++e++              n++s v   +v  +
+  1U19:A|PDB   178 YIpeGMQCSCG-IDYYTPHEET--------------NNESFVIYMFVVHF 212  
+
+                   kglLavlcfflAfltRklPvdnF.............NEaKfItFSMYNvl
+                   +  L+v+ f +  l   ++ +   +++++ ++++ ++E   +  +M  v 
+  1U19:A|PDB   213 IIPLIVIFFCYGQLVFTVK-EAAaqqqesattqkaeKEVTRMVIIM--VI 259  
+
+                   tfCivWvAF..iPiYfstpgsaedykvqvavevfsIlaSstvlLgciFaP
+                    f i W++  ++ +Y++t +   +  + ++++++   +  t +   ++ P
+  1U19:A|PDB   260 AFLICWLPYagVAFYIFTHQ---GSDFGPIFMTIPAFFAKTSA---VYNP 303  
+
+                   KcyIILfrPekN<-*
+                    +yI   +  +N   
+  1U19:A|PDB   304 VIYIMMNKQFRN    315  
+
+Dicty_CAR: domain 1 of 1, from 34 to 342: score -76.4, E = 0.12
+                   *->ektkqeieasyavLliADfssiiGcllvLigFwrLKLLRnHvtkvis
+                          +   a + +L++  f   + +l v +  ++L+   n +   ++
+  1U19:A|PDB    34    PWQFSMLAAYMFLLIMLGFPINFLTLYVTVQHKKLRTPLNYILLNLA 80   
+
+                   lFCatsllKDlistiltLtlkpdkaqsngFpCYlyaivityGslacWLWt
+                   +  +  ++  +  t+ t +      + +   C l     t G   + LW 
+  1U19:A|PDB    81 VADLFMVFGGFTTTLYTSL--HGYFVFGPTGCNLEGFFATLGG-EIALWS 127  
+
+                   L.cLaisiynlivkRePE...PekfEkyYyllcwglPlist...ivmLak
+                   L +Lai  y ++ k     +  e +  +   ++w++ l ++ +++v  ++
+  1U19:A|PDB   128 LvVLAIERYVVVCKPMSNfrfGENHAIMGVAFTWVMALACAappLVGWSR 177  
+
+                   kvvevvGnWCWig..........ekyvgYRFgl.fYgPFliiwgisAvLv
+                    + e +   C i   ++++++++e++v Y F ++f  P ++i++    Lv
+  1U19:A|PDB   178 YIPEGMQCSCGIDyytpheetnnESFVIYMFVVhFIIPLIVIFFCYGQLV 227  
+
+                   GltsrYtYsvirnsvsDnKdkHltYqFKLinYiivFLvCWv.FAvvnRil
+                           +   ++     +k +t    +i  +i FL+CW+++A v    
+  1U19:A|PDB   228 FTVKEAAAQQQESATTQKAEKEVTRM--VIIMVIAFLICWLpYAGV---- 271  
+
+                   nglnlfPtavniLHtYlsvsHGFyAsvtFiYnnPLmWRyfgakilliFtk
+                    ++ +f    +     +     F+A    +Y nP+++       +++   
+  1U19:A|PDB   272 -AFYIFTHQGSDFGPIFMTIPAFFAKTSAVY-NPVIY-------IMMNKQ 312  
+
+                   FGyfvetqkrLeknKnnnnpsPisssrgas<-*
+                   F  ++ t     kn      +  + s+  +   
+  1U19:A|PDB   313 FRNCMVTTLCCGKNPLGDDEASTTVSKTET    342  
+
+DUF1300: domain 1 of 1, from 36 to 326: score -227.6, E = 0.43
+                   *->rFwytidlflrpisvYldhvsFvIsvIGiFaNiFHLiVLtRKSMRaL
+                       F +     l+   + l ++ F I +    +++ H      K +R+ 
+  1U19:A|PDB    36    QFSM-----LAAYMFLLIMLGFPINFLTLYVTVQH------KKLRT- 70   
+
+                   TINlFLIGIAICDfiRmisiIivflPifYreYqssiipeeCiPP.nSYlt
+                     N  L+  A++D++ m++    f++ +Y++    ++    + P+   l+
+  1U19:A|PDB    71 PLNYILLNLAVADLF-MVF--GGFTTTLYTSLHGYFV----FGPtGCNLE 113  
+
+                   ilialiSssiskvsekLsvWFaVAMAilRaLvIKYPlNk.RiqsLItSKy
+                           ++ ++   ++ W  V +Ai R +v+  P+++ R       ++
+  1U19:A|PDB   114 -------GFFATLGGEIALWSLVVLAIERYVVVCKPMSNfR----FGENH 152  
+
+                   Gir.illlItllilPFwildffktniteesgiWtPPpnCenFsknstqIe
+                    i ++ ++  ++  + + +   + + ++ +g              s  I 
+  1U19:A|PDB   153 AIMgVAFTWVMALACAAPPLVGWSRYIP-EGM-----------QCSCGID 190  
+
+                   YiiettelfGelgtEsye.illlieGiLFklIPSIiLpIaTilLIfqLKk
+                   Y++  +e+        +e++++++ ++ F +IP I+  +  + L+f  K+
+  1U19:A|PDB   191 YYTPHEET-------NNEsFVIYMFVVHF-IIPLIVIFFCYGQLVFTVKE 232  
+
+                   tkKkslstrsstssssndR.STKLVtfvTIsFLiaTvPl.GilYlikffv
+                   +       + s+++ + +++ T++V+++ I FLi  +P+ G+ + i f+ 
+  1U19:A|PDB   233 AAAQQ---QESATTQKAEKeVTRMVIIMVIAFLICWLPYaGVAFYI-FTH 278  
+
+                   feseglvaiIdklaiifeflstiNGtiHfLiCyFMSSQYRnTvrelfGrk
+                    +    +++   + +i +f++   +     i   M  Q Rn     ++++
+  1U19:A|PDB   279 QG----SDFGPIFMTIPAFFAKTSAVYNPVIYIMMNKQFRNCMVTTLCCG 324  
+
+                   kk<-*
+                   k+   
+  1U19:A|PDB   325 KN    326  
+
+ICE2: domain 1 of 1, from 37 to 324: score -327.0, E = 3
+                   *->lRaalstiYLllilltIPIaFdVGGlfCGLaFslTLfvlYFilTTlk
+                      ++  ++ ++L li+l  PI F               ++lY       
+  1U19:A|PDB    37    FSMLAAYMFL-LIMLGFPINF---------------LTLY------- 60   
+
+                   iltrksgreyrhiasiLYYlQhilIPsLLilfLSyFsndelkkllvsrtk
+                    +t  ++    ++ + L Y    l  + L++   +F              
+  1U19:A|PDB    61 -VTVQHK----KLRTPLNYILLNLAVADLFMVFGGF-------------- 91   
+
+                   SsrGGfifdlealkslLqLLGrasnniepstyaeYyFGqHGFvEnflvmp
+                                            ++ ++ +  Y+              
+  1U19:A|PDB    92 ------------------------TTTLYTSLHGYF-------------- 103  
+
+                   WqlvLlhSTPvFtLLEGFcTLLaIQAiGetsrW....LvhrknSdsWlIv
+                          + P    LEGF+  L     Ge++ W+   L + +        
+  1U19:A|PDB   104 ------VFGPTGCNLEGFFATLG----GEIALWslvvLAIER-------- 135  
+
+                   sLlvSGsvITaSlYfLYRIYivtPiweisti....tAsLlGftLtlvfgL
+                                   Y +    P    s+++ +++    G  +t v+ L
+  1U19:A|PDB   136 ----------------YVVV-CKP---MSNFrfgeNHAIMGVAFTWVMAL 165  
+
+                   GlYGIiSGKGSviESSLlFAYIVrCiYeIfpklsesAtselanifketwq
+                                                          + a+       
+  1U19:A|PDB   166 ---------------------------------------ACAA------- 169  
+
+                   slqpelPklPPLLaYyknlilKNaeaLWdslvkkaprlhkkelDfadklv
+                         P+l                  W+  +   p +            
+  1U19:A|PDB   170 ------PPLVG----------------WSRYI---PEGMQ---------- 184  
+
+                   vikvleqvkWWlIlnsvskliknfsatlPsSfkeifqFlikmAietitPa
+                          ++  +   + ++ + n s+        i  F +    + i+P 
+  1U19:A|PDB   185 -------CSCGIDYYTPHEETNNESF-------VIYMFVV----HFIIPL 216  
+
+                   VvinLaFRIgVFYaATRIIPalqraggfpLitpPkTPrPsSrnvstlSlS
+                   +vi +++  +VF        ++ +a++                       
+  1U19:A|PDB   217 IVIFFCYGQLVF--------TVKEAAAQ---------------------- 236  
+
+                   vstSsTTsevLdrsnleetrssrRkKrePrSviv....rllYwYSPCIlI
+                                 + e +++ +  K   r vi+    +l+ w+ P    
+  1U19:A|PDB   237 --------------QQESATTQKAEKEVTRMVIImviaFLICWL-PYAGV 271  
+
+                   AVY..THLiLqYsgeLksftGdlciWgcsakdaGgGGGesdiqiIVdsWq
+                   A Y  TH   q s+  + f     i   +ak + +    +++  I    q
+  1U19:A|PDB   272 AFYifTH---QGSDFGPIFM---TIPAFFAKTSAV---YNPVIYIMMNKQ 312  
+
+                   fWnWvNvfaTLlLYAvELigs<-*
+                   f n   + +T       L  +   
+  1U19:A|PDB   313 FRN--CMVTT-------LCCG    324  
+
+UPF0328: domain 1 of 1, from 37 to 178: score -147.8, E = 1.3
+                   *->FPalmYfIfdKDrFeesPfLRFItlLLPF....SYSAvQYllLLhtN
+                      F++l  ++f            +I+l +P +  ++Y+ vQ+   L+t 
+  1U19:A|PDB    37    FSMLAAYMF-----------LLIMLGFPInfltLYVTVQHK-KLRT- 70   
+
+                   WksshKpEgiLhkiLYylLNlLLlaFaiISILSIIaFtidkWenndDllf
+                         p           LN +Ll  a+                 +Dl+ 
+  1U19:A|PDB    71 ------P-----------LNYILLNLAV-----------------ADLF- 85   
+
+                   ySiiLPSFfvPpTYLLSTSCd..LvpgqI.....gFTDTGinil...IDl
+                     +++  F+      L+TS  + +v g ++ + +gF  T    l+++I l
+  1U19:A|PDB    86 --MVFGGFTT----TLYTSLHgyFVFGPTgcnleGFFAT----LggeIAL 125  
+
+                   LILLcpivslvlvlvle.eseCCYypYfaiiSsILILiRlLkEkylPSkk
+                     L  +++     +v+++ s+  ++               + E +     
+  1U19:A|PDB   126 WSLVVLAIERYV-VVCKpMSN--FR---------------FGENHAI--- 154  
+
+                   SSlPtApWRVaiFvlILiLaifvYafiaygsi<-*
+                           + ++F+ +  La  +  + ++      
+  1U19:A|PDB   155 --------MGVAFTWVMALACAAPPLVGWSRY    178  
+
+7TMR-DISM_7TM: domain 1 of 1, from 38 to 228: score -74.8, E = 7
+                   *->ralifglllGillllgfYnLfly..lsrrkdksyLyyalyillflly
+                      ++l+ ++ l i+l + + +L ly ++ ++k +++L y l  l+++ +
+  1U19:A|PDB    38    SMLAAYMFLLIMLGFPINFLTLYvtVQHKKLRTPLNYILLNLAVADL 84   
+
+                   qlslsglafeylDwpnipffaqkklaylllvllalffllFlrsflylkss
+                   ++++ g+  ++       ++ +       ++++++++++ l  f+ +   
+  1U19:A|PDB    85 FMVFGGFTTTLY------TSLHG------YFVFGPTGCN-LEGFFATLGG 121  
+
+                   srrldrl.lgilalllflaillalfltd..ylvanriaqvlvllfilill
+                   ++ l+ l +++   +++++ ++++f + ++++ +++ a+  v++ ++   
+  1U19:A|PDB   122 EIALWSLvVLAIERYVVVCKPMSNF-RFgeNHAIMGVAFTWVMALACAAP 170  
+
+                   llgikawrkgyrdArlfliaflvflvgglvSdllgllglipnnitltsya
+                    l+ +        +r++  ++ + +   ++ +   +++  ++ i  ++++
+  1U19:A|PDB   171 PLVGW--------SRYIPEGMQCSCGIDYY-TPHEETNNESFVI--YMFV 209  
+
+                   lllglvlevlllslaLadER<-*
+                   ++++ +l+v+++ +     +   
+  1U19:A|PDB   210 VHFIIPLIVIFFCYGQLV-F    228  
+
+7tm_2: domain 1 of 1, from 39 to 313: score -182.7, E = 6.7
+                   *->lllLkviytVGyslSLvaLllAiaifllFRkLhCtRNyIHlNLfaSf
+                      +l+++++  + ++  + +L+l + +    +kL+   NyI+lNL ++ 
+  1U19:A|PDB    39    MLAAYMFLLIMLGFPINFLTLYVTV--QHKKLRTPLNYILLNLAVA- 82   
+
+                   iLraisflik.davlfnsvglseadqlsweeslhcsasagkitmiv....
+                        +++ +  + l++s +                         +    
+  1U19:A|PDB    83 --DLFMVFGGfTTTLYTSLH-------------------------Gyfvf 105  
+
+                   ...............................vVgCkvvavfl....hYff
+                   ++++ + ++   + +++    +      ++ vV Ck +  f  +++h  +
+  1U19:A|PDB   106 gptgcnlegffatlggeialwslvvlaieryVVVCKPMSNFRfgenHAIM 155  
+
+                   laNFfWmLvEGlYLhtLlvvtVevffserkylwwYlliGWGvPavfVgiW
+                   +++F+W+        ++l+ +                      a + + W
+  1U19:A|PDB   156 GVAFTWV--------MALACA----------------------APPLVGW 175  
+
+                   aivrpdk......agygnegCCWlsnedngyfwWiikGPvllvilvNfil
+                     + p++ + + +  y++++    +n +++  ++ ++  ++  ++v  i+
+  1U19:A|PDB   176 SRYIPEGmqcscgIDYYTPHE--ETN-NESFVIYMFVVHFIIPLIV--IF 220  
+
+                   FinilriLvqKlridslspdmgetdqyrk.......krlaKStLlLlPLL
+                   F+    +Lv   +  + +++  e  +++k +++ +++        L++ L
+  1U19:A|PDB   221 FCY--GQLVFTVK--EAAAQQQESATTQKaekevtrMVIIMVIAFLICWL 266  
+
+                   ...GitwvlflfapeddarGvssivflylflilnSfQGFfVavlYCFLNg
+                   +  G+ + +f    +d        +f+ + +++         v+Y  +N+
+  1U19:A|PDB   267 pyaGVAFYIFTHQGSD-----FGPIFMTIPAFFAKTSAVYNPVIYIMMNK 311  
+
+                   EV<-*
+                        
+  1U19:A|PDB   312 QF    313  
+
+TAS2R: domain 1 of 1, from 39 to 325: score -199.4, E = 0.19
+                   *->MlsavegiflivavvEfllGILgNgFIvLVNcidWvkkrkl.SsiDl
+                      Ml a    ++++ + + + +++   +         v+++kl+ ++++
+  1U19:A|PDB    39    MLAA----YMFLLIMLGFPINFLTLYVT-------VQHKKLrTPLNY 74   
+
+                   ILtsLAISRIcLqwiilldgfiivffpntylsgkllriislfWtflNhlS
+                   IL++LA+   +++   ++  ++++++  +++  + + +  +f t+  +  
+  1U19:A|PDB    75 ILLNLAVADLFMVFGGFTTTLYTSLHGYFVFGPTGCNLEGFFATLGGEIA 124  
+
+                   lWFATcLsiF....Y...clKIAnFs...HPiFLWLKwRiskV.vlwlig
+                   lW   +L ++  ++Y   c   +nF+ +++++       i  V + w   
+  1U19:A|PDB   125 LW---SLVVLaierYvvvCKPMSNFRfgeNHA-------IMGVaFTWV-- 162  
+
+                   CLLgsllisflniv....siinsiklsidpelilrakykrNtTwdlrvsk
+                      ++l+  ++ +v+ ++ i+   + s+ + + +  +  +N ++      
+  1U19:A|PDB   163 ---MALACAAPPLVgwsrYIPEGMQCSCGIDYYTPHEETNNESF------ 203  
+
+                   felfsslvllnmtlgsllPFivfLiSflLLIfSLwRHtrqMqlnatGfRD
+                      ++ +v     + +++P+iv ++ +  L+f       q q +at  + 
+  1U19:A|PDB   204 --VIYMFV-----VHFIIPLIVIFFCYGQLVFTVKEAAAQQQESATT-QK 245  
+
+                   PsTeAHvrAlKsliSFLiLyilYf.lsflIsii...sfllpknklafifg
+                      e+    +  +i FLi  ++Y +++f I +++++s + p  +++ +f+
+  1U19:A|PDB   246 AEKEVTRMVIIMVIAFLICWLPYAgVAFYI-FThqgSDFGPIFMTIPAFF 294  
+
+                   eivtylYPsgHSfILILGNsKLKqaflkvLlklk<-*
+                     + + Y +   +I I+ N++++ + ++ L++ k   
+  1U19:A|PDB   295 AKTSAVYNP---VIYIMMNKQFRNCMVTTLCCGK    325  
+
+7tm_4: domain 1 of 1, from 41 to 314: score -113.5, E = 0.0026
+                   *->altlHiitvisiPihifGfYcIlfKTPkkMksvKwsLLnlHfwsall
+                      a ++  +    +Pi+++++Y+    T  + k+ + +L +  +  a+ 
+  1U19:A|PDB    41    AAYMFLLIMLGFPINFLTLYV----T-VQHKKLRTPLNYILLNLAVA 82   
+
+                   DlslsfLtiPylffKPalaGypl.GllflkylGvpteiQvylgvtslglv
+                   Dl++ f +    ++  +l Gy++ G+         +++  ++  +     
+  1U19:A|PDB    83 DLFMVFGGFTTTLY-TSLHGYFVfGP-------TGCNLEGFFATLGGEIA 124  
+
+                   avsiillFEnRynalcrfsnrfriwrkwkRilyliinyilavlfflpiyl
+                   + s+++l   Ry ++c++   fr   +   i   ++  + a+++ +p++ 
+  1U19:A|PDB   125 LWSLVVLAIERYVVVCKPMSNFRFGENH-AIMGVAFTWVMALACAAPPLV 173  
+
+                   niPedQeeaklyilkkyPCpppeffdeppfpfvlsidengeityflicli
+                   +               y  +p+    ++++  +++  e +++    + + 
+  1U19:A|PDB   174 GWS------------RY--IPEGMQCSCGI-DYYTPHEETNNE--SFVI- 205  
+
+                   vllilliisqilffvilliyylykqlksst.hm..SkkTrklQkqFfial
+                     +++++i+  +  +++++ +l +++k++  ++++S++T+k  k   +++
+  1U19:A|PDB   206 YMFVVHFIIPLI-VIFFCYGQLVFTVKEAAaQQqeSATTQKAEKEVTRMV 254  
+
+                   iiQtliPliviliPviyllfsilfg...yynQalnNlafiiislHGllST
+                   ii + i +++  +P + ++f i++ +++ +  +++ +  +++ +  + ++
+  1U19:A|PDB   255 II-MVIAFLICWLPYAGVAFYIFTHqgsDFGPIFMTIPAFFAKTSAVYNP 303  
+
+                   lvmllvHkPYR<-*
+                   ++ ++++k +R   
+  1U19:A|PDB   304 VIYIMMNKQFR    314  
+
+DUF140: domain 1 of 1, from 46 to 268: score -177.5, E = 9.5
+                   *->lvkplravGgafllpgeiaekkvsFsLksipeipdlfltlrglfkrp
+                      l   l +  +++ l                      +++  ++++ p
+  1U19:A|PDB    46    LLIMLGFPINFLTL---------------------YVTVQHKKLRTP 71   
+
+                   fafrellkQl..lfVgggSllivlltslfiGmVvAlQgyvq...LadfGA
+                    +  +l   + +lf+++g +  +l tsl   +V++ +g ++++ +a +G 
+  1U19:A|PDB    72 LNYILLNLAVadLFMVFGGFTTTLYTSLHGYFVFGPTGCNLegfFATLGG 121  
+
+                   ealiGavvAlslvRELGPVlTaLvvAGrvGSafTAeiGaMritEEIDALe
+                   e+++  +v+l+  R         vv+ +  S f       r  E      
+  1U19:A|PDB   122 EIALWSLVVLAIERY--------VVVCKPMSNF-------RFGEN----- 151  
+
+                   vmgidPIsyLVsPRVlAgvivlplLtslslva..GilGGafvsvvll...
+                       + I  ++++ V+A    +p+L++ s  +++G+  +  ++++ ++++
+  1U19:A|PDB   152 ----HAIMGVAFTWVMALACAAPPLVGWSRYIpeGMQCS--CGIDYYtph 195  
+
+                   .Gvssgaylhslqt..fvgp.sDvlwgliKAlvFGviialigCYyGyttk
+                   +  ++++++ +++  +f  p   ++ ++ + lvF+v  a  + ++  +t+
+  1U19:A|PDB   196 eETNNESFVIYMFVvhFIIPlIVIFFCYGQ-LVFTVKEAA-AQQQESATT 243  
+
+                   GGpkGVGrAttrsVVtsllvifildfvlTaimf<-*
+                    +++   + +tr     ++ i ++ f++ ++ +   
+  1U19:A|PDB   244 QKAE---KEVTR-----MVIIMVIAFLICWLPY    268  
+
+7tm_1: domain 1 of 1, from 54 to 306: score 213.6, E = 4.8e-61
+                   *->GNlLVilvilrtkklrtptnifilNLAvADLLflltlppwalyylvg
+                       N L ++v +++kklrtp n+ +lNLAvADL +++     +ly++++
+  1U19:A|PDB    54    INFLTLYVTVQHKKLRTPLNYILLNLAVADLFMVFGGFTTTLYTSLH 100  
+
+                   gedWpfGsalCklvtaldvvnmyaSillLtaISiDRYlAIvhPlryrrrr
+                   g + +fG+ +C+l +++ ++ +    ++L++++i+RY+++++P++  r+ 
+  1U19:A|PDB   101 G-YFVFGPTGCNLEGFFATLGGEIALWSLVVLAIERYVVVCKPMSNFRFG 149  
+
+                   tsprrAkvvillvWvlalllslPpllfswvktveegngvvnvttClidfp
+                       +A   ++++Wv+al+++ Ppl++++++ +e+      +++C+id+ 
+  1U19:A|PDB   150 E--NHAIMGVAFTWVMALACAAPPLVGWSRYIPEGM-----QCSCGIDYY 192  
+
+                   evstasvktwlvsyallstlvgFvlPllvilvcYtrIlrtlrkrarkgas
+                   +++   + t   s++++ ++v F++Pl+vi +cY++ + t++ +a ++++
+  1U19:A|PDB   193 TPH---EETNNESFVIYMFVVHFIIPLIVIFFCYGQLVFTVKEAAAQQQE 239  
+
+                   .kkrsskerkaaktllvvvvvFvlCWlPyfivllldtlc.lsiimsssCe
+                   ++  +++e+ +++++++ v++F++CWlPy+ v+++   ++ s        
+  1U19:A|PDB   240 sATTQKAEKEVTRMVIIMVIAFLICWLPYAGVAFYIFTHqGS-------- 281  
+
+                   lervlptallvtlwLayvNsclNPiIY<-*
+                     ++ p+++ +  ++a++++++NP+IY   
+  1U19:A|PDB   282 --DFGPIFMTIPAFFAKTSAVYNPVIY    306  
+
+SgaT_UlaA: domain 1 of 1, from 54 to 338: score -291.0, E = 7
+                   *->ynallwfinnVlkenFLRqPAfLLGlivliGYvLLKkgiskvvkGtl
+                       n l+   +   k+  LR P         + Y+LL   +   +  + 
+  1U19:A|PDB    54    INFLTLYVTVQHKK--LRTP---------LNYILLNLAVADLFMVF- 88   
+
+                   KtIiGFLiLqaGaGvLVttlrPvlkllkevfnltgavlDpYaslaaandk
+                                G+ +ttl      l ++f  +    +    l+++ ++
+  1U19:A|PDB    89 -------------GGFTTTL---YTSLHGYFVFGPTGCN----LEGFFAT 118  
+
+                   lgdaflnnDYvSlvtyallvGlvlNIllVaLRRfTkirt.....ImLTGH
+                   lg +         +++  lv l++    V+++   ++r+++++ Im    
+  1U19:A|PDB   119 LGGE---------IALWSLVVLAIERYVVVCKPMSNFRFgenhaIM---- 155  
+
+                   iMfqqAalvavfllivgfsmwlligvGiAYGAqAGLviltgIllGlYWaI
+                         ++  + ++++    ++l+g            i  g  +      
+  1U19:A|PDB   156 ------GVAFTWVMALACAAPPLVGW--------SRYIPEGMQC------ 185  
+
+                   sSnitykvTqkVTggdgfaiGHqqqlaiwiaaklgpfvGkKeddtEdlKL
+                   s  i y    + T++  f i       +++++              +  +
+  1U19:A|PDB   186 SCGIDYYTPHEETNNESFVI-------YMFVV--------------HFII 214  
+
+                   PkwLnifrDtivstAliMlsLFvifFlvilaslgldnaqdvnWDkFGala
+                   P               +++    ifF  + +++  + a         a+ 
+  1U19:A|PDB   215 P---------------LIV----IFFCYGQLVFTVKEAA--------AQQ 237  
+
+                   glaaanttfgkqnfFiYiiqtgLtFAvgiaIimtGVRMFvaELspAFqGI
+                    + a               q + + +    Ii     M +a L+      
+  1U19:A|PDB   238 QESAT-------------TQKAEKEVTRMVII-----MVIAFLI------ 263  
+
+                   SeKLiPGAvpAvDcAavYpFapsNAVifGFlsGfIGqLiavaiLggfsYi
+                                     p+a                 +a  i    +  
+  1U19:A|PDB   264 ---------------CWLPYAG----------------VAFYIFTHQG-- 280  
+
+                   PGnqssiLiIPgfIplFFsnATigVFANatGGwraAlllcfimGilevig
+                       ++ ++ +  Ip FF                +A+  + i  +     
+  1U19:A|PDB   281 --SDFGPIFMT--IPAFFA-------------KTSAVYNPVIYIMMNKQF 313  
+
+                   qaiavklLgnstnlatagwmgeadlsll<-*
+                     ++v +L    n+   + + ea+  +    
+  1U19:A|PDB   314 RNCMVTTLCCGKNP---LGDDEASTTVS    338  
+
+Competence: domain 1 of 1, from 61 to 269: score -125.2, E = 9.8
+                   *->LvlGdrsglpkelweafqrlGlaHLlAISGlHvglvagllyfllrrr
+                       ++ ++ +l + l+ ++ +l +a L+        +v+g ++  l+  
+  1U19:A|PDB    61    VTVQHK-KLRTPLNYILLNLAVADLF--------MVFGGFTTTLYT- 97   
+
+                   lalqpflpllgippklakllgllfllfYaiLaGfspSvlRAflmlalkll
+                              ++ +  +  + + l ++   +G ++  +      ++ +l
+  1U19:A|PDB    98 ----------SLHGYFVFGPTGCNLEGFFATLGGEIALW-----SLV-VL 131  
+
+                   llllffrrlsplqvLalsllllllvdPlallslGF.wLSFlAtfa..Lll
+                   ++    + ++p++++ +        + +a++++ F+w   lA++a++L+ 
+  1U19:A|PDB   132 AIERYVVVCKPMSNFRFG-------ENHAIMGVAFtWVMALACAAppLVG 174  
+
+                   lykgllqalrdlstpllsrwlpirwlasllaaslaaqlgtaPvllylFgr
+                   +++ ++                            ++q+ + +  +    +
+  1U19:A|PDB   175 WSRYIPE---------------------------GMQCSCGIDYYTPHEE 197  
+
+                   lsllsllaNLlasPlisfvfllvpLlllavllsllipsllgalllsllgl
+                   ++  s++   ++++++ f   ++pL++++++         g+l + + + 
+  1U19:A|PDB   198 TNNESFV---IYMFVVHF---IIPLIVIFFCY--------GQLVFTVKE- 232  
+
+                   llewlfqllkllaevplalwvvaksaalpllllllsllaallllllrll<
+                              +++  +a+ + a       +++++     +l+++l++  
+  1U19:A|PDB   233 ---------AAAQQQESATTQKAEKEVTRMVIIMVIA---FLICWLPYA  269  
+
+                   -*
+                     
+  1U19:A|PDB     -    -    
+
+Serpentine_r_xa: domain 1 of 1, from 69 to 216: score -93.2, E = 3.3
+                   *->klPfvYIivMtIsGivdkiadFlmv..dfwPitplilpeegYeeYRq
+                       +P+ YI + +++     +ad +mv + f+  t l     gY+ +  
+  1U19:A|PDB    69    RTPLNYI-LLNLA-----VADLFMVfgGFT--TTLYTSLHGYFVF-G 106  
+
+                   liGseiLTLvgTfcYlhplfLsvLMTlnRlsIvisPasqkiwFt.drrlf
+                     G ++    +T+  +++l   v   + R   v++P s    F+++  + 
+  1U19:A|PDB   107 PTGCNLEGFFATLGGEIALWSLVVLAIERYVVVCKPMSNFR-FGeNHAIM 155  
+
+                   lYca..giaIlvlIlLL......IPyfSsCpvNFnartlsFesACaPeRH
+                   +++++ + a+ +    L + ++ IP    C+  +   t       ++e  
+  1U19:A|PDB   156 GVAFtwVMALACAAPPLvgwsryIPEGMQCSCGIDYYTP------HEE-- 197  
+
+                   PITlfQNk..YLIlvPvttmvVNv<-*
+                        +N++++ I+  v+   + +   
+  1U19:A|PDB   198 -----TNNesFVIYMFVVHFIIPL    216  
+
+Serpentine_recp: domain 1 of 1, from 73 to 323: score -40.8, E = 0.027
+                   *->sykLmyfrfiiDilytfinsiltgyliiigisycflkypnlifilGw
+                       y+L++ ++++D++++f  + +t+y  + g++ +    p+   + G+
+  1U19:A|PDB    73    NYILLN-LAVADLFMVFGGFTTTLYTSLHGYFVF---GPTGCNLEGF 115  
+
+                   pslnlwtlyirctlalllsieRvlaiffPifryhnlfqklstyiililil
+                   +++  +   i  +  + l+ieR++ +++P +    +f+   + +i+    
+  1U19:A|PDB   116 FATLGGE--IALWSLVVLAIERYVVVCKPMS----NFRFGENHAIM---- 155  
+
+                   llilydqyilfftcpvvf.dsplnckwffdcsilPsfFnkcyseYwntpe
+                    +++ +   l +  p +++ s +       cs      + +y+  +++ +
+  1U19:A|PDB   156 GVAFTWVMALACAAPPLVgWSRYIP-EGMQCSC-----GIDYYTPHEETN 199  
+
+                   t.m.innflivvltca.lLyirLfiiiwkkfkktnnvsskklskanrla.
+                    +  +++ ++v + ++ ++ + +++ + + +k     + ++ s +++ a+
+  1U19:A|PDB   200 NeSfVIYMFVVHFIIPlIVIFFCYGQLVFTVKEAA--AQQQESATTQKAe 247  
+
+                   ....llQstiQDiclFnalpafiyvyfqff......evpnwmlivgpqia
+                   ++ + ++ ++  +++F ++   +  +  ++ +++++++ ++ +  +p + 
+  1U19:A|PDB   248 kevtRMVIIM--VIAFLICWLPYAGVAFYIfthqgsDFGPI-FMTIPAFF 294  
+
+                   wqkssGcpieiylifNrtiRkkvlkllks<-*
+                     +s+  ++ iy+++N+ +R+  +++l++   
+  1U19:A|PDB   295 AKTSAVYNPVIYIMMNKQFRNCMVTTLCC    323  
+
+Oxidored_q3: domain 1 of 1, from 84 to 233: score -61.5, E = 4.3
+                   *->llilssllvilsknPvysgLfLillfllisgllgllgassflsliLf
+                      l+++++ +  ++   +++ +    + +++ g++++lg++      L+
+  1U19:A|PDB    84    LFMVFGGFTTTLYTSLHGYFVFGPTGCNLEGFFATLGGE-IALWSLV 129  
+
+                   LvYvGGmlVLFlYvvmLapnekfeiskkkllsllvllllllllllllilg
+                         +l +  Yvv   p   f +     ++   ++ + +++++ l   
+  1U19:A|PDB   130 ------VLAIERYVVVCKPMSNFRF-----GENHAIMGVAFTWVMALACA 168  
+
+                   llffgel.......................nikaigslLystsnnyglll
+                      ++ ++   + +   + + +  ++   +n ++ ++ ++     ++++l
+  1U19:A|PDB   169 APPLVGWsryipegmqcscgidyytpheetNNESFVIYMF-VV-HFIIPL 216  
+
+                   llasyiLLlaLigvvklt<-*
+                   +++ +     L+  vk +   
+  1U19:A|PDB   217 IVIFF-CYGQLVFTVKEA    233  
+
+CTV_P6: domain 1 of 1, from 108 to 155: score -1.6, E = 4.9
+                   *->mDCviqGFLtFLvG.iAvFsAFAeLiiivitiYRCtiKPvRsAsPYG
+                        C + GF   L G+iA +s    L+++ i  Y    KP+ +     
+  1U19:A|PDB   108    TGCNLEGFFATLGGeIALWS----LVVLAIERYVVVCKPMSNFRFGE 150  
+
+                   tHAtv<-*
+                    HA +   
+  1U19:A|PDB   151 NHAIM    155  
+
+MARVEL: domain 1 of 1, from 115 to 280: score -39.8, E = 7.2
+                   *->flrtplGllkilelvlvlgliifilvaGyGtlvCgsvnkwetgyivt
+                      f++t+ G + + +  lv   i    v                     
+  1U19:A|PDB   115    FFATLGGEIALWS--LVVLAIERYVVV-------------------- 139  
+
+                   fyGpfrlhqygfaypndGycndgssrkyvsllgdnssaagffmavsvfa.
+                                      c+++s++ ++ ++     a +++ma+++ a+
+  1U19:A|PDB   140 -------------------CKPMSNFRFGENHAIMGVAFTWVMALACAAp 170  
+
+                   ............FlitlafLllylfglhlyiprifvrwpllDlifsa.ia
+                   +  + ++  ++++ +++++   + +++h+   +   +++++ +++++ i+
+  1U19:A|PDB   171 plvgwsryipegMQCSCGI---DYYTPHEETNN--ESFVIYMFVVHFiIP 215  
+
+                   tlLyliasivlvagvntdakaAtsr.leytllaqsqwatsnvqdllgtrg
+                    ++ +++   l              ++++  +a++q+++ ++q++   ++
+  1U19:A|PDB   216 LIVIFFCYGQL------------VFtVKE--AAAQQQESATTQKAEKEVT 251  
+
+                   yiyhyCVdgaaiaAgvfgflatllyaldaflafkrrr<-*
+                   +        + i++++  ++++l ya+ af++f +     
+  1U19:A|PDB   252 R--------MVIIMVIAFLICWLPYAGVAFYIFTHQG    280  
+
+MerT: domain 1 of 1, from 143 to 274: score -53.9, E = 6.6
+                   *->MSePknp.rgalfaGglAAilAslCClGPlv....LllLGvSGaW.I
+                      MS  + +++ a+++     + A +C + Plv+ ++ +  G+  + +I
+  1U19:A|PDB   143    MSNFRFGeNHAIMGVAFTWVMALACAAPPLVgwsrYIPEGMQCSCgI 189  
+
+                   GNLt..........lLEPYRPiFIlaaLvalfFAwrriyRPveacepGtv
+                      t+++++++++ +   +   FI    v++f  +  ++   ea  + + 
+  1U19:A|PDB   190 DYYTpheetnnesfVIYMFVVHFIIPLIVIFFCYGQLVFTVKEAAAQQQE 239  
+
+                   CavPQVRktykviFWlvallvLVavtfpYvlvlFy<-*
+                    a  Q   +      ++ +++  +   pY  v Fy   
+  1U19:A|PDB   240 SATTQKAEKEVTRMVIIMVIAFLICWLPYAGVAFY    274  
+
+PMP22_Claudin: domain 1 of 1, from 153 to 301: score -86.1, E = 7.3
+                   *->mlvlLlgiivlhiawviLLfvsTiPtdqWkvsdyvgdniiTaaaasa
+                            +i+ ++++wv  L +++ P   W  +  +g           
+  1U19:A|PDB   153    ------AIMGVAFTWVMALACAAPPLVGWSRYIPEG----------- 182  
+
+                   GLWrnCttqsctgqiscksfDsvlelndalqAvqalMilsiRASSilgii
+                      + C+ + ++ + ++ +     +++ ++  + + +i+ +    i+ + 
+  1U19:A|PDB   183 ---MQCSCGIDYYTPHEET----NNESFVIYMFVVHFIIPL--IVIFFCY 223  
+
+                   slivff.....fQl...ftmkkGgrfklkKarIallaGIiflvsgLcvlv
+                   + +vf+ ++  +Q++++ t+ k +  ++   r++++  I fl+++L    
+  1U19:A|PDB   224 GQLVFTvkeaaAQQqesATTQKAEKEVT---RMVIIMVIAFLICWLP--- 267  
+
+                   gasiYtsriaedfgnpltpYyvnqkYsfGysfiLgWvafalafisGvlY<
+                       Y++++  +f          q++ fG+ f +  + +++a  s   Y 
+  1U19:A|PDB   268 ----YAGVAFYIFTH--------QGSDFGPIFMT--IPAFFAKTS-AVY  301  
+
+                   -*
+                     
+  1U19:A|PDB     -    -    
+
+SecG: domain 1 of 1, from 205 to 276: score -31.6, E = 8.6
+                   *->ytvLliiflv..vsilLiglVLlQrgKGaGlgasFGgGgQasgslFg
+                      ++++ + f+++ + i+ +   L+   K   ++       Q ++s  +
+  1U19:A|PDB   205    IYMFVVHFIIplIVIFFCYGQLVFTVK--EAA------AQQQESATT 243  
+
+                   rKarGaenfLtkiTaiLavlFfilsl...vLallns<-*
+                      + ae+  t++ +i++ +F+i+ l+  ++a++     
+  1U19:A|PDB   244 ---QKAEKEVTRMVIIMVIAFLICWLpyaGVAFYIF    276  
+
+DUF131: domain 1 of 1, from 211 to 266: score -43.4, E = 5.9
+                   *->LiliGlllIFl..GfiLvflGvflsalkeekeeaeeeeesneEeskk
+                       ++i+l++IF+  G ++ ++  +   ++e+ +++             
+  1U19:A|PDB   211    HFIIPLIVIFFcyGQLVFTVKEAAAQQQESATTQ------------- 244  
+
+                   ekrkdeeeseveyGGVImIGPIPIVFGssnpslLpklaklsiiLAIilmi
+                        ++e ev                        +++       Ii+ i
+  1U19:A|PDB   245 -----KAEKEV-----------------T------RMV-------IIMVI 259  
+
+                   lylllfl<-*
+                    +l+ +l   
+  1U19:A|PDB   260 AFLICWL    266  
+
+DUF1201: domain 1 of 1, from 250 to 300: score -6.4, E = 6
+                   *->mDCvLRsYLLLAFGFliCLFLFCLvvFiWFvYKqiLFRttaqsnEAR
+                         v R  +++   FliC   +  v F  F  +   F        A 
+  1U19:A|PDB   250    ---VTRMVIIMVIAFLICWLPYAGVAFYIFTHQGSDFGPIFMTIPAF 293  
+
+                   fnrstvv<-*
+                   f +   v   
+  1U19:A|PDB   294 FAKTSAV    300  
+
+//

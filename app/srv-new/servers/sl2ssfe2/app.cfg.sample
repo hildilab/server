@@ -1,0 +1,28 @@
+import os
+
+DEBUG = True
+HOST = "127.0.1.1"  # "0.0.0.0"
+PORT = 4223
+MAX_CONTENT_LENGTH = 64 * 1024 * 1024
+PROXY = 'http://proxy.charite.de:8080'
+SECRET_KEY = 'development key'
+USERNAME = 'admin1'
+PASSWORD = 'secret'
+
+ALLOWED_EXTENSIONS = set([
+	'pdb','trpdb','PDB', 'TRPDB','FASTA','fasta','seq','SEQ'
+])
+
+PIWIK_TRACKER_ID = "4"
+
+BASIC_PATH = os.path.abspath("../../servers/")
+APP_PATH = os.path.abspath("../../servers/ssfe2/")
+
+DATA_FOLDER   = os.path.abspath("../../data")
+DATABASE = os.path.abspath("../../data/voronoia_records.sqlite")
+
+JOB_URL = "http://127.0.1.1:5000/"
+PROVI_URL = "http://localhost/provi/static/html/provi.html"
+
+#same path as in job: app.cfg
+JOB_FOLDER = os.path.abspath("/home/johanna/Downloads")

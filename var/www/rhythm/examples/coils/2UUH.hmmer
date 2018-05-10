@@ -1,0 +1,227 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 Pfam_ls
+Sequence file:            coils/2UUH.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: 2UUH:A|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+MAPEG           MAPEG family                            213.7    1.3e-61   1
+DUF1123         Protein of unknown function (DUF1123)   -73.8        1.8   1
+PalI            pH-response regulator, PalI / Rim9      -82.2          3   1
+Oleosin         Oleosin                                 -64.2        4.9   1
+N_methyl        Prokaryotic N-terminal methylation mo    -6.1        5.3   1
+Trep_Strep      Hypothetical bacterial integral membr  -134.2          7   1
+LHC             Antenna complex alpha/beta subunit      -12.6        7.5   1
+CbtA            Probable cobalt transporter subunit (  -194.1        7.9   1
+DUF2029         Protein of unknown function (DUF2029)  -179.5        8.1   1
+VPEP            Protein of unknown function (DUF1555)   -12.8        8.7   1
+SFT2            SFT2-like protein                       -84.1        9.4   1
+Peptidase_M50   Peptidase family M50                    -83.4        9.5   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+Oleosin           1/1       1   121 [.     1   118 []   -64.2      4.9
+DUF1123           1/1       1   126 [.     1   143 []   -73.8      1.8
+MAPEG             1/1       3   130 ..     1   155 []   213.7  1.3e-61
+Trep_Strep        1/1       4   142 ..     1   196 []  -134.2        7
+DUF2029           1/1       5   148 ..     1   245 []  -179.5      8.1
+SFT2              1/1       5   102 ..     1   124 []   -84.1      9.4
+VPEP              1/1       5    26 ..     1    38 []   -12.8      8.7
+Peptidase_M50     1/1       5   127 ..     1   193 []   -83.4      9.5
+CbtA              1/1       6   145 ..     1   258 []  -194.1      7.9
+PalI              1/1      35   143 ..     1   173 []   -82.2        3
+LHC               1/1     100   136 ..     1    42 []   -12.6      7.5
+N_methyl          1/1     117   133 ..     1    24 []    -6.1      5.3
+
+Alignments of top-scoring domains:
+Oleosin: domain 1 of 1, from 1 to 121: score -64.2, E = 4.9
+                   *->stsqvLavvtalpaGgsLLvLAGLtLaGTviGLaVATPL........
+                         +v+ +++ + +G++L +  +L  +    ++ V+ PL++++++ +
+  2UUH:A|PDB     1    HKDEVALLAAVTLLGVLLQAYFSLQVISARRAFRVSPPLttgppefe 47   
+
+                   ............FVIFSPVLVPAaiaIGLavTGFLaSGafGltglSsLsW
+                   +  + + + ++ F +F           +L v+G+ +    G+++l  L +
+  2UUH:A|PDB    48 rvyraqvncseyFPLF---------LATLWVAGIFF--HEGAAALCGLVY 86   
+
+                   llkyvrgkhpavadqldyakrrlqeaaeyagqKtkevgqri<-*
+                   l+ ++r+ +     ++  a +rl+  + ya   +  +  +    
+  2UUH:A|PDB    87 LFARLRYFQ----GYARSAQLRLA--PLYASARALWLLVAL    121  
+
+DUF1123: domain 1 of 1, from 1 to 126: score -73.8, E = 1.8
+                   *->sqtaifwPmfAhVaLtflLYivlllvRRasavvsiGklkvgdyavre
+                        + + +  +A V L   L+ ++ +      v s  +++ + ++   
+  2UUH:A|PDB     1    HKDEVAL--LAAVTLLGVLLQAYFSL----QVIS-ARRAFRVSPPLT 40   
+
+                   tLAqiePksslrvsnNlaNQFELPVLFYAlcLLLyiTqavnlltV.lLAW
+                   t     P++  rv +   N  E   LF A +  + i  ++   ++ +L  
+  2UUH:A|PDB    41 T----GPPEFERVYRAQVNCSEYFPLFLATLWVAGIFFHEGAAALcGLVY 86   
+
+                   vFVltRyaHsyVHvtSNnLRlRsplFlaGflvLlvlWawlAlwlaav<-*
+                   +F  +Ry+  y    S  LRl +pl+    +   +lW  +Al+ +++   
+  2UUH:A|PDB    87 LFARLRYFQGY--ARSAQLRL-APLY----ASARALWLLVALAALGL    126  
+
+MAPEG: domain 1 of 1, from 3 to 130: score 213.7, E = 1.3e-61
+                   *->keyalvalvtllsvlvnaflainVgrARkryrvkyPantgDlFFKNL
+                      +e+al+a+vtll+vl++a+++++V++AR+++rv++P++tg       
+  2UUH:A|PDB     3    DEVALLAAVTLLGVLLQAYFSLQVISARRAFRVSPPLTTG------- 42   
+
+                   EVqFDLrqeveeedkkdpeFERvlRAhqNtlEnlppFLillwvaGlyhpn
+                                   +peFERv+RA++N++E++p+FL++lwvaG+++++
+  2UUH:A|PDB    43 ----------------PPEFERVYRAQVNCSEYFPLFLATLWVAGIFFHE 76   
+
+                   laaAlgGFLVylvgRvlYflGYAlyataapkRrlgFalgslilllLllla
+                   +aaAl+G LVyl++R++Yf+GY   a++a+ R++++++++++l+lL++la
+  2UUH:A|PDB    77 GAAALCG-LVYLFARLRYFQGY---ARSAQLRLAPLYASARALWLLVALA 122  
+
+                   algilnhl<-*
+                   alg+l+h+   
+  2UUH:A|PDB   123 ALGLLAHF    130  
+
+Trep_Strep: domain 1 of 1, from 4 to 142: score -134.2, E = 7
+                   *->tvKDLItIGiFaAlYFviivfiggmlgainPvfmnMllapaitallg
+                       v  L  + + ++l ++   f   +++a     +   ++p++t    
+  2UUH:A|PDB     4    EVALLAAVTLLGVLLQAY--FSLQVISAR--RAF--RVSPPLTT--- 41   
+
+                   GiifMLlvaKVpKfGaitImgiiigLlffltGhgywpmlilsIIgglIAD
+                   G++ +  v++ +          + +         y+p++++++       
+  2UUH:A|PDB    42 GPPEFERVYRAQ----------VNCSE-------YFPLFLATL------- 67   
+
+                   liaWkigkNkYkskkrnmlsYvvFslwitaGpllPmwffpesYfkaslia
+                      W +g              ++F  + +a   l ++f++ +Yf+ ++ +
+  2UUH:A|PDB    68 ---WVAG--------------IFFHEGAAALCGLVYLFARLRYFQGYARS 100  
+
+                   rgmgaeYidamealfsppgmiiiiviatvvcgllGglIGkklLKKHFeK<
+                   +++    +  +  + +  ++++++++  ++  +l + +  +lL +     
+  2UUH:A|PDB   101 AQL--RLAPLYASARAL-WLLVALAALGLLAHFLPAALRAALLGR----  142  
+
+                   -*
+                     
+  2UUH:A|PDB     -    -    
+
+DUF2029: domain 1 of 1, from 5 to 148: score -179.5, E = 8.1
+                   *->FTYPPFAAlvFaPFAwLallpfgvaavlwtllslaalyalvrtllsq
+                                            +++a +  l++l+  y+ +  ++s+
+  2UUH:A|PDB     5    ---------------------VALLAAVTLLGVLLQAYFSLQ-VISA 29   
+
+                   rlllrpgparrrgsllaaalataaalwlEPvRsTldFGQiN......vlL
+                   r++          +++  +l+t+      P ++ ++  Q+N ++  +++L
+  2UUH:A|PDB    30 RRA----------FRVSPPLTTGP-----PEFERVYRAQVNcseyfpLFL 64   
+
+                   mlLVLaDcltrrpgrrwprGvLvGLAAAiKLTPAvFgLYFLlrRRwRAAa
+                   ++L +a  +                AAA+       gL +L++R      
+  2UUH:A|PDB    65 ATLWVAGIFFHEG------------AAAL------CGLVYLFAR------ 90   
+
+                   taaaaFaatvalgfallPsdSreYWtetlfdtdRiGplafasNQSLrGvL
+                                         +Y+ ++                  r + 
+  2UUH:A|PDB    91 ---------------------LRYFQGYA-----------------RSAQ 102  
+
+                   aRLggedspgtgpLLwlvlaavvaalalwaarRalragdpllallvvaLf
+                   +RL    +++ +  Lwl++a+++++l + +  +alra+ +        L 
+  2UUH:A|PDB   103 LRLAPLYASARA--LWLLVALAALGLLAHFLPAALRAALLG------RLR 144  
+
+                   gLLV<-*
+                    LL    
+  2UUH:A|PDB   145 TLLP    148  
+
+SFT2: domain 1 of 1, from 5 to 102: score -84.1, E = 9.4
+                   *->LSrtqRlvgFviClgagilcflLstfllpvlllkprkFallyTlGsl
+                                v++l+a  l   L  +++ + ++++r           
+  2UUH:A|PDB     5    ----------VALLAAVTLLGVLLQAYFSLQVISARR---------- 31   
+
+                   lallSfaFLmGPvkqlkhMfekt.Rlpatll.YllslllTLyaaLwlkst
+                   ++  S     GP       fe+  R  + +++Y+  +l+TL +a +    
+  2UUH:A|PDB    32 AFRVSPPLTTGPPE-----FERVyRAQVNCSeYFPLFLATLWVAGIFFHE 76   
+
+                   lLtllfailQilAlvwYsLSYiPgGrdgv<-*
+                   + + l+++  ++A + Y  +Y   +r++    
+  2UUH:A|PDB    77 GAAALCGLVYLFARLRYFQGY---ARSAQ    102  
+
+VPEP: domain 1 of 1, from 5 to 26: score -12.8, E = 8.7
+                   *->ftitvtAVPEPssLAlLglGlaGgvarRrRrkrvarks<-*
+                      +             AlL++++++gv+ + +      ++   
+  2UUH:A|PDB     5    V-------------ALLAAVTLLGVLLQAY---FSLQV    26   
+
+Peptidase_M50: domain 1 of 1, from 5 to 127: score -83.4, E = 9.5
+                RF    xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxx
+                   *->afilalgilvvvHElGHflvA.rrfGvkverfaiGfGplLfkhldga
+                       ++la ++l++v     +l A  +  v + r a++  p+L+   + +
+  2UUH:A|PDB     5    VALLAAVTLLGV-----LLQAyFSLQVISARRAFRVSPPLTTGPPEF 46   
+
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   GTeytirllPLGGYVkmaGedpeevfgapderefkkkspwqrlliaaAGP
+                   + +y+                      a+++ + + +  ++ l++  AG+
+  2UUH:A|PDB    47 ERVYR----------------------AQVNCSEYFPLFLATLWV--AGI 72   
+
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   laNfiLAlllfalllllggiplassgliallaflallnlnLgifNLLPiP
+                   ++    A l+ ++ l++             ++ ++  ++ L         
+  2UUH:A|PDB    73 FFHEGAAALCGLVYLFARL----------RYFQGYARSAQL--------- 103  
+
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   
+                   pLDGGhiLrallEairgrplnervenyiylvglalllllmllllfnd<-*
+                           r               ++++y    al+ll+ l +l  +   
+  2UUH:A|PDB   104 --------R---------------LAPLYASARALWLLVALAALGLL    127  
+
+CbtA: domain 1 of 1, from 6 to 145: score -194.1, E = 7.9
+                   *->mFrrIvftAllAGLlAGlllslLQfffVtPlILeAEtYEsAkaeapa
+                              AllA++   ll  lLQ++f  ++I       s       
+  2UUH:A|PDB     6    --------ALLAAVT--LLGVLLQAYFSLQVI-------S------- 28   
+
+                   apaeavHfHaaadagegvaaaaapeaaHdhdeeaWaPaDGleRtllTvaa
+                     a  +  ++ ++ ++g ++      a+   +e   ++          +a
+  2UUH:A|PDB    29 --ARRAFRVS-PPLTTGPPEFERVYRAQVNCSEYFPLF----------LA 65   
+
+                   Nv.ltaiGf...ALlLvALmalaegrgltaitwrqGLlWGLAGFaafqLA
+                   ++ +++i f+++A  L++L  l ++ +          + G A  a + LA
+  2UUH:A|PDB    66 TLwVAGIFFhegAAALCGLVYLFARLR-Y--------FQGYARSAQLRLA 106  
+
+                   PgLGLPPELPGmaAAdLgaRQiWWiaTaaaTAiGiaLiAFgrnwllwalA
+                   P                            a A +++L++       +++A
+  2UUH:A|PDB   107 P--------------------------LYASARALWLLV-------ALAA 123  
+
+                   aaLLvaPHvIGAPqiADPesGfagpaAPeeLeaLgthhqFvaAalgtsav
+                   + LL+                ++ pa   +L+a                 
+  2UUH:A|PDB   124 LGLLA----------------HFLPA---ALRA----------------- 137  
+
+                   FWalLGllaAwffrR<-*
+                     alLG l     r+   
+  2UUH:A|PDB   138 --ALLGRL-----RT    145  
+
+PalI: domain 1 of 1, from 35 to 143: score -82.2, E = 3
+                   *->ISaPviksigfLnltLgsyvriggvtFGvFGYCktlnsggndaCSpa
+                      +S+P+       + +  ++   + v+             +n  CS  
+  2UUH:A|PDB    35    VSPPL-------TTGPPEF---ERVY----------RAQVN--CS-- 57   
+
+                   svGYdpddldlsgdqdsgfrlpsdarktLskiLIvHPiAagltlIslvla
+                      Y p +l +                 +  +   H  Aa+l+ +  ++a
+  2UUH:A|PDB    58 --EYFPLFLATL----------------WVAGIFFHEGAAALCGLVYLFA 89   
+
+                   llshfhgpsrsrrlllinllvsllaf.lvtlLaflvDillFvivKrrinr
+                    l  f+g +rs+ l l  l  s+ a+ l+ +La l  ++ F         
+  2UUH:A|PDB    90 RLRYFQGYARSAQLRLAPLYASARALwLLVALAALGLLAHFL-------- 131  
+
+                   ddgasphltwasWlvLAAailvlisgv<-*
+                        p          AA+  +l++ +   
+  2UUH:A|PDB   132 -----P----------AALRAALLGRL    143  
+
+LHC: domain 1 of 1, from 100 to 136: score -12.6, E = 7.5
+                   *->mweaWe..vhdprvglvllfvvfaviAllaHfLlltTewtpWlp<-*
+                       +++ + +++   + l  l+v++a++ llaHfL  +      l    
+  2UUH:A|PDB   100    SAQLRLapLYASARAL-WLLVALAALGLLAHFLPAA------LR    136  
+
+N_methyl: domain 1 of 1, from 117 to 133: score -6.1, E = 5.3
+                   *->rGFTLiEmlvvlailgilalialp<-*
+                             +lv+la lg+la ++     
+  2UUH:A|PDB   117    -------LLVALAALGLLAHFLPA    133  
+
+//

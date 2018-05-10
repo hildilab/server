@@ -1,0 +1,161 @@
+{% extends "V4RNA_layout.html" %}
+{% block title %}Calculation{% endblock %}
+{% block head %}
+    <script type="text/javascript" src="{{ static('js/underscore-min.js') }}}"></script>
+{% endblock %}
+{% block body %}
+    <div class="control_row" id="tool_selector"></div>
+    <div class="control_row"style=" height: 400px">
+        <form id="form" style="display:hidden;" method="POST" action="{{ job_path }}"+"job/submit/" target="iframe" enctype="multipart/form-data">
+            <div class="control_row" id="form_elms"></div>
+            <input type="hidden" name="__type__" value="voronoia"></input>
+            <input type="hidden" name="ex" value="0.5"></input>
+            <input type="file" name="pdb_input"></input>
+            <button id="submit">submit</button>
+        </form>
+        <iframe id="iframe" name="iframe" style="display:none;" src="" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" width="0" height="0"></iframe>
+        <div class="div1" id="div1"></div>
+        <br>
+        Previous Calculations:
+        <div id="myTablediv" style="width:30%; min-width:260px; height:100px; overflow: auto; position: absolute; ">
+            <table id="myTable" style="width:100%; min-width:260px; height:100%;"></table>
+        </div> 
+    </div>
+    <div class="main_container" id="main_container"></div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var check = false;
+            var running = false;
+            var log = [];
+            getJobStatus = function(data){
+                var jobname = data["jobname"];
+                //console.log( jobname );
+                var Job_data = data; 
+                $.ajax({
+                    dataType: "json",
+                    url:  "{{ job_path }}" + "job/status/" + encodeURIComponent( jobname ),
+                    cache: false,
+                    success: _.bind( function( data ){
+                        console.log( "Job.retrieve_status", data );
+                        var change = true;
+                        if( data ){
+                            if( check === data["check"] &&
+                                    running === data["running"] &&
+                                    2 === data["log"].length ){
+                                change = false;
+                            }
+                            check = data["check"];
+                            running = data["running"];
+                            log = data["log"];
+                            $('#form').html(
+                                "<br>The job started." +
+                                "<br>Please wait until the job is done and do not reload. "+
+                                "<br>The results are shown automatically."
+                            );
+                            if ( data["check"] === false &&
+                                    data["running"] === false ){
+                                change = false;
+                            };
+                        }
+                        if( change ){
+                            console.log('reloop');
+                            getJobStatus( Job_data );
+                        }else{
+                            if( data["check"] === false &&
+                                data["running"] === false ) {
+                                console.log('status: done/error');
+                                //console.log(data);
+                                //console.log(Job_data);
+                                //console.log(data["log"]);
+                                $('#form').html(
+                                "<br>Error!" +
+                                "<br>Please check the file and try again."
+                                )
+                                var msg = $.ajax({type: "GET", url: "{{ job_path }}"+"/job/getfile/"+Job_data["jobname"]+"/input_pdb_input.log", async: false}).responseText;
+                                $('#div1').html(
+                                    "LOG-Message:<br><pre>" + msg + "</pre>"
+                                );
+                            }else{
+                                console.log('status: done');
+                                //console.log(data);
+                                //console.log(Job_data);
+                                if(typeof(Storage) !== "undefined") {
+                                    if (localStorage.counter) {
+                                        localStorage.counter = Number(localStorage.counter) + 1;
+                                    } else {
+                                        localStorage.counter = 0;
+                                    }
+                                    var today = new Date();
+                                    var Std = today.getHours();
+                                    var Min = today.getMinutes();
+                                    var Month = Number(today.getMonth()) + 1;
+                                    var Datee = today.getDate();
+                                    var StdAusgabe = ((Std < 10) ? "0" + Std : Std);
+                                    var MinAusgabe = ((Min < 10) ? "0" + Min : Min);
+                                    var MonthAusgabe = (( Month < 10) ? "0" + Month : Month);
+                                    var DateAusgabe = (( Datee < 10) ? "0" + Datee : Datee);
+                                    localStorage.setItem("JobJobNo"+localStorage.counter, Job_data["jobname"]);
+                                    localStorage.setItem("DateJobNo"+localStorage.counter, today.getFullYear() + "-" + MonthAusgabe + "-" + DateAusgabe + " " + StdAusgabe + ":" + MinAusgabe);
+                                } else {
+                                    console.log("Sorry! No Web Storage support.")
+                                }
+                                download = function( id ){
+                                    var url = "{{ page('results') }}" + id
+                                    var form = $(
+                                        '<form method="get" action="' + url + '" target="_self">' +
+                                        '</form>'
+                                    ).appendTo("body");
+                                    
+                                    form.submit();
+                                    form.remove();
+                                }
+                                download(Job_data["jobname"])
+                            }
+                        }
+                    } )
+                });
+            };
+            setTimeout( function(){
+                $( "#form" ).submit(function( event ) {
+                    var elm = document.getElementById( 'form' );
+                    var data = new FormData( elm );
+                    $.ajax({
+                        url: "{{ job_path }}" + 'job/submit/',
+                        data: data,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        type: 'POST',
+                        success:function(data){
+                            console.log( "submit form job", data );
+                            if( data=="ERROR" ){
+                                console.log( data );
+                            }else{
+                                getJobStatus( data );
+                                
+                            }
+                        }
+                    });
+                });
+                if(typeof(Storage) !== "undefined") {
+                    var table = document.getElementById("myTable");
+                    for ( var i = 0, l = localStorage.counter; i <= l; i++ ) {
+                        var row = table.insertRow(0);
+                        var cell1 = row.insertCell(0);
+                        var cell2 = row.insertCell(1);
+                        var cell3 = row.insertCell(2);
+                        cell1.innerHTML = "Job-No: "+i;
+                        cell2.innerHTML = localStorage.getItem("DateJobNo"+i);
+                        cell3.innerHTML = '<a href="../results/'+localStorage.getItem('JobJobNo'+i)+'">Results</a>'
+                    }
+                } else {
+                    console.log("Sorry! No Web Storage support.")
+                    $('#myTablediv').html(
+                        "Sorry! No web storage support."
+                    )
+                }
+                
+            }, 1000 );
+        });
+    </script>
+{%endblock%}

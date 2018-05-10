@@ -1,0 +1,48 @@
+
+befor running set Passwort to Proteinformatics:
+
+################################################################################
+
+Step #1: Generate DSA Key Pair
+
+Use ssh-keygen command as follows:
+$ ssh-keygen -t dsa
+Output:
+
+Enter file in which to save the key (/home/vivek/.ssh/id_dsa): Press [Enter] key
+Enter passphrase (empty for no passphrase): myPassword
+Enter same passphrase again: myPassword
+Your identification has been saved in /home/vivek/.ssh/id_dsa.
+Your public key has been saved in /home/vivek/.ssh/id_dsa.pub.
+The key fingerprint is:
+04:be:15:ca:1d:0a:1e:e2:a7:e5:de:98:4f:b1:a6:01 vivek@vivek-desktop
+
+Caution: a) Please enter a passphrase different from your account password and confirm the same.
+b) The public key is written to /home/you/.ssh/id_dsa.pub.
+c) The private key is written to /home/you/.ssh/id_dsa.
+d) It is important you never-ever give out your private key.
+Step #2: Set directory permission
+
+Next make sure you have correct permission on .ssh directory:
+$ cd
+$ chmod 755 .ssh
+Step #3: Copy public key
+
+Now copy file ~/.ssh/id_dsa.pub on Machine #1 (tom) to remote server jerry as ~/.ssh/authorized_keys:
+$ scp ~/.ssh/id_dsa.pub user@jerry:.ssh/authorized_keys
+Command to type on your remote server called jerry
+
+Login to your remote server and make sure permissions are set correct:
+$ chmod 600 ~/.ssh/authorized_keys
+Task: How do I login from client to server with DSA key?
+
+Use scp or ssh as follows from your local computer:
+$ ssh user@jerry
+$ ssh user@remote-server.com
+$ scp file user@jerry:/tmp 
+
+################################################################################
+
+Aufruf: python datenbankvergleich.py dir
+
+where dir=directory to the folder updater e.g. /home/usr/downloads/

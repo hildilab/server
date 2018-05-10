@@ -1,0 +1,818 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 Pfam_ls
+Sequence file:            coils/3b4r.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: 3B4R:B|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+Peptidase_M50   Peptidase family M50                    113.8    5.3e-31   1
+Pkr1            ER protein Pkr1                         -27.8       0.66   1
+SpoVA           SpoVA protein                           -40.0       0.96   1
+DUF606          Protein of unknown function, DUF606     -69.3        1.1   1
+Glyco_transf_28 Glycosyltransferase family 28 N-termi   -29.8        1.2   1
+MASE1           MASE1                                   -67.7        1.5   1
+DUF851          Caenorhabditis elegans repeat of unkn     6.4        1.8   1
+Ferric_reduct   Ferric reductase like transmembrane c   -50.0        3.1   1
+CD20            CD20/IgE Fc receptor beta subunit fam   -73.1        3.7   1
+PsbI            Photosystem II reaction centre I prot     4.9        3.7   1
+Intg_mem_TP0381 Integral membrane protein (intg_mem_T  -117.2          4   1
+DUF456          Protein of unknown function (DUF456)    -86.9        4.5   1
+DUF441          Protein of unknown function (DUF441)    -77.5        5.6   1
+Caa3_CtaG       Cytochrome c oxidase caa3 assembly fa  -163.9        6.8   1
+Oxidored_q3     NADH-ubiquinone/plastoquinone oxidore   -65.2        7.1   1
+DUF1328         Protein of unknown function (DUF1328)   -30.0        7.8   1
+CDP-OH_P_tran_2 CDP-alcohol phosphatidyltransferase 2    -6.3          8   1
+DUF996          Protein of unknown function (DUF996)    -94.4        8.2   1
+DUF307          Domain of unknown function (DUF307)     -28.1        8.2   1
+Trep_Strep      Hypothetical bacterial integral membr  -126.4        8.3   1
+Oxidored_q1_N   NADH-Ubiquinone oxidoreductase (compl   -27.6        9.5   1
+UPF0259         Uncharacterised protein family (UPF02  -190.9        9.7   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+Oxidored_q3       1/1       1   142 [.     1   142 []   -65.2      7.1
+Intg_mem_TP0381   1/1       2   205 ..     1   268 []  -117.2        4
+Pkr1              1/1      11    62 ..     1    75 []   -27.8     0.66
+DUF456            1/1      11   129 ..     1   142 []   -86.9      4.5
+Ferric_reduct     1/1      11   131 ..     1   150 []   -50.0      3.1
+UPF0259           1/1      11   222 ..     1   257 []  -190.9      9.7
+MASE1             1/1      15   208 ..     1   322 []   -67.7      1.5
+Oxidored_q1_N     1/1      15    75 ..     1    62 []   -27.6      9.5
+Caa3_CtaG         1/1      17   205 ..     1   281 []  -163.9      6.8
+DUF441            1/1      18   160 ..     1   149 []   -77.5      5.6
+DUF307            1/1      32    84 ..     1    68 []   -28.1      8.2
+Trep_Strep        1/1      32   192 ..     1   196 []  -126.4      8.3
+DUF851            1/1      34    64 ..     1    32 []     6.4      1.8
+Peptidase_M50     1/1      42   190 ..     1   193 []   113.8  5.3e-31
+DUF996            1/1      62   194 ..     1   171 []   -94.4      8.2
+DUF606            1/1      65   188 ..     1   144 []   -69.3      1.1
+Glyco_transf_28   1/1      72   196 ..     1   171 []   -29.8      1.2
+CDP-OH_P_tran_2   1/1      91   132 ..     1    39 []    -6.3        8
+DUF1328           1/1      92   117 ..     1    48 []   -30.0      7.8
+CD20              1/1     100   212 ..     1   171 []   -73.1      3.7
+SpoVA             1/1     100   209 ..     1   128 []   -40.0     0.96
+PsbI              1/1     181   215 ..     1    36 []     4.9      3.7
+
+Alignments of top-scoring domains:
+Oxidored_q3: domain 1 of 1, from 1 to 142: score -65.2, E = 7.1
+                   *->llilssllvilsknPvysgLfLillfllisgllgllgassflsliLf
+                       +  s  l+ ++  P+ + ++ il  ++i gl ++ ++  f +++++
+  3B4R:B|PDB     1    -MNYSIRLFKIMGIPIELHITFILFLVVIIGLSIMNNSI-FWAVLFI 45   
+
+                   LvYvGGmlVLFlYvvmLapnekfeiskk.kllsllvllllllllllllil
+                   L          l+v+  +  e  +++  +k++ ++  +lll ++ +  ++
+  3B4R:B|PDB    46 L----------LFVSVVL-HELGHSYVAkKYGVKIEKILLLPIGGVAMMD 84   
+
+                   gllffgel..............nikaigslLystsn.nyglllllasyiL
+                    +   gel  +  ++  +   + + +i+s ++  + + y+ll  l+   L
+  3B4R:B|PDB    85 KIPKEGELrigiagplvsfiigIVLLIVSQFFDINInGYPLLYTLS---L 131  
+
+                   LlaLigvvklt<-*
+                   L  ++g   l+   
+  3B4R:B|PDB   132 LNLMLGGFNLI    142  
+
+Intg_mem_TP0381: domain 1 of 1, from 2 to 205: score -117.2, E = 4
+                   *->lgsFslfspsHiiilavvvllaillvlfgrrlkteeqkrllrrafaf
+                      ++s+ lf    i i +++ + ++l+v++g+++   +++++++  f++
+  3B4R:B|PDB     2    NYSIRLFKIMGIPIELHITFILFLVVIIGLSI--MNNSIFWAVLFIL 46   
+
+                   llliqliallvWmirlIlyylagyfplsesLPLhLCrlalilaai.lLit
+                   l ++ ++ +l         y+a ++ +++          ++l++i+  + 
+  3B4R:B|PDB    47 LFVSVVLHELGH------SYVAKKYGVKIE--------KILLLPIgGVAM 82   
+
+                   ksrrlfeyfyfwGigGalqALltPDlsneydaygFPHfiffqFfigHgll
+                      + +e     Gi+G l+++++ ++                        
+  3B4R:B|PDB    83 MDKIPKEGELRIGIAGPLVSFIIGIV------------------------ 108  
+
+                   vwaalflifargyrptlrslkrtvlvtfilaaiiflvN..........yl
+                        +li+   + ++ +++   +  +++l++++ ++N  +  + +++++
+  3B4R:B|PDB   109 -----LLIVSQFFDININGYPL-LYTLSLLNLMLGGFNlipafpmdggRI 152  
+
+                   ldsa.vswGwgNYgyLnkkPigtaSLLdvlgpwPfsvlTYivlglvaell
+                   l  a  s +   YgyL  +  + a++   l +     l +    l ++ +
+  3B4R:B|PDB   153 L-RAiLSKK---YGYLKSTK-IAANIGKSLALIML--L-FG---LLSMNI 191  
+
+                   vlalwftlldklivvkkvLiKiisfylpFrrsk<-*
+                   +l+l   l+                   ++ ++   
+  3B4R:B|PDB   192 ILILVS-LF------------------VYFGAE    205  
+
+Pkr1: domain 1 of 1, from 11 to 62: score -27.8, E = 0.66
+                   *->MssFfveLWeSIFtPGttPqLiiATHvSFaALlavLlvLlyaTksIH
+                      M+                  + i  H++F++ l+v ++L +  +sI 
+  3B4R:B|PDB    11    MG------------------IPIELHITFILFLVVIIGLSIMNNSIF 39   
+
+                   FviLsvlaglLWisVnWFiaELaqaklq<-*
+                     +L++l   L+ sV   + EL +  +    
+  3B4R:B|PDB    40 WAVLFIL---LFVSVV--LHELGHSYVA    62   
+
+DUF456: domain 1 of 1, from 11 to 129: score -86.9, E = 4.5
+                   *->LiiPiiPSvLiIwaGFvlYaflfgfqaGlSlmFwlvmAvfTvlIfaA
+                        iPi   + +I    v+ ++ + +      +Fw v  ++  +    
+  3B4R:B|PDB    11    MGIPIELHITFILFLVVIIGLSIMNNS----IFWAVLFILLFVSVVL 53   
+
+                   DyVANaygVkRyGGSKaaiWgAlIGvliGiFi.iPpfGIIigPFigafia
+                     +  +y +k+yG                  ++i    I + P  g+   
+  3B4R:B|PDB    54 HELGHSYVAKKYG------------------VkIEK--ILLLPIGGVAMM 83   
+
+                   ELIvarKdlkeAfkigl.GSLvgFLtgsIAKvvIqLi...mIgyFlwevl
+                     I +       ++ig+ G Lv F  g++   v q+++ ++ gy l+  l
+  3B4R:B|PDB    84 DKIPKE----GELRIGIaGPLVSFIIGIVLLIVSQFFdinINGYPLLYTL 129  
+
+                   <-*
+                      
+  3B4R:B|PDB     -     -    
+
+Ferric_reduct: domain 1 of 1, from 11 to 131: score -50.0, E = 3.1
+                   *->tGilaLADPvkIhtallplaliLlalrnnpLtwLtGsttlnywpQfd
+                      +Gi           +++ + +++l++ +       G      ++   
+  3B4R:B|PDB    11    MGIPI--------ELHITF-ILFLVVII-------G------LS-IM 34   
+
+                   tlirfHrwlGrvafllallHtiaylvndlpl............dye.llk
+                    + +f   l ++ f+ ++lH +++ + + +++ + ++    + +   ++ 
+  3B4R:B|PDB    35 NNSIFWAVLFILLFVSVVLHELGHSYVAKKYgvkiekilllpiGGVaMMD 84   
+
+                   efyngsgenptgylwlvkrpygitGvi....alvlllllaitSlpw.fRR
+                   ++               k  + ++G++++  +++++++l+i S  +++  
+  3B4R:B|PDB    85 KI--------------PKEGELRIGIAgplvSFIIGIVLLIVSQFFdINI 120  
+
+                   rgYElFlylHillavaflllv<-*
+                   +g          + +++ l +   
+  3B4R:B|PDB   121 NG----------YPLLYTLSL    131  
+
+UPF0259: domain 1 of 1, from 11 to 222: score -190.9, E = 9.7
+                   *->MsITansLyrDTfnFfrnqIiiIlffSlLsAfItvlInsifkPndeq
+                      M I +              I  Ilf++++    +++ nsif      
+  3B4R:B|PDB    11    MGIPIEL-----------HITFILFLVVIIG-LSIMNNSIFWA---V 42   
+
+                   LlslaePElnldfsgssSNlldlvqnMsie.QkkiLLkaSiaktF.....
+                   L++l      + ++  ++  ++   +     +k +LL    ++ +++ ++
+  3B4R:B|PDB    43 LFILLF---VSVVLHELG-HSYVAKKYGVKiEKILLLPIGGVAMMdkipk 88   
+
+                   ..SsLIGnt.fLlGniItlIqmvSdkKrvFSilnaInls.lkilP..kLL
+                   ++++ IG ++ L++ iI +  ++     v S ++ In+ ++++l + +LL
+  3B4R:B|PDB    89 egELRIGIAgPLVSFIIGIVLLI-----V-SQFFDININgYPLLYtlSLL 132  
+
+                   iLiFlTTfliQiGfmLfiiPGIil...aIlLSLSPIILtfkkmgildSIr
+                    L+        +G  + +iP + ++++ Il +     ++ kk g l S +
+  3B4R:B|PDB   133 NLM--------LG-GFNLIPAFPMdggRILRA-----ILSKKYGYLKSTK 168  
+
+                   aSinI..tfkNikivaPavlfWLcvKliLlliiSqfsilskniaflIlni
+                   + +nI+++++ i +     lf L+   i+l + S f  ++ +    +   
+  3B4R:B|PDB   169 IAANIgkSLALIML-----LFGLLSMNIILILVSLFVYFGAEQESRVVEV 213  
+
+                   liNNiissILIIYLFRlYMLfPKkLRs<-*
+                                       f K ++    
+  3B4R:B|PDB   214 ETI-----------------F-KNIKA    222  
+
+MASE1: domain 1 of 1, from 15 to 208: score -67.7, E = 1.5
+                   *->llllllllyalaaalllslalalvssgiaaiWllPtGlalaalLlfg
+                      + l + ++++l+ +++l  +++      +++W               
+  3B4R:B|PDB    15    IELHITFILFLVVIIGL--SIM----NNSIFW--------------- 40   
+
+                   rrywPgilLGvLlgavlaslflrlslgllsglglllalaillvnaleall
+                    +++  +l     ++v+++         l +  ++  + +    +l+  +
+  3B4R:B|PDB    41 -AVLFILL----FVSVVLH--------ELGHSYVAKKYGVKIEKILLLPI 77   
+
+                   avallrrllpgrdrlqtlkirifqRvdvlrfllaaaliaalllAiiglal
+                   +  ++  ++p +  l+ +                  ++++l++ iig++l
+  3B4R:B|PDB    78 GGVAMMDKIPKEGELRIG------------------IAGPLVSFIIGIVL 109  
+
+                   llllgllplapfaeswltwwLgdatGvLvlaPlllllrrylrqrhrlplw
+                   l + +  + ++   ++++ +  +++ +L+l  + l+ + + +    l++ 
+  3B4R:B|PDB   110 LIVSQ--FFDININGYPLLYTLSLL-NLMLGGFNLIPAFPMDGGRILRA- 155  
+
+                   pelllapvalklllllalllllilslllqllllpfelnyfllytqylfyl
+                                                                     
+  3B4R:B|PDB     - -------------------------------------------------- -    
+
+                   llppllwaAfRfGwrGaaL.atllnavllilftasgggpflqdsgtqsqq
+                         ++   +G+ ++   a++++  l++++++                
+  3B4R:B|PDB   156 ------ILSKKYGYLKSTKiAANIGKSLALIMLL---------------- 183  
+
+                   aielQlflavlaltaLllsaaiseqr<-*
+                    + l+++  +l+l++L+++   ++ +   
+  3B4R:B|PDB   184 -FGLLSMNIILILVSLFVYFGAEQES    208  
+
+Oxidored_q1_N: domain 1 of 1, from 15 to 75: score -27.6, E = 9.5
+                   *->iitlwnWissgsfninwgFlfDslsliflvvVLiVsslVhlYSisYM
+                      i  + + i +  + i +++   s++   l++ L+Vs+  h+   sY 
+  3B4R:B|PDB    15    IELHITFILFLVVIIGLSIMNNSIFWAVLFILLFVSVVLHELGHSYV 61   
+
+                   shDPninRFfsYLsl<-*
+                   +   +  +  ++L+l   
+  3B4R:B|PDB    62 AK-KYGVKIEKILLL    75   
+
+Caa3_CtaG: domain 1 of 1, from 17 to 205: score -163.9, E = 6.8
+                   *->llliaalYaliyvggvrRrfprgrrvpakravlFllGlllLylalgS
+                      l   ++l+++++        +  +       +++ +  +lL++++  
+  3B4R:B|PDB    17    LHITFILFLVVI-----IGLSIMNN-----SIFWAVLFILLFVSVV- 52   
+
+                   Pldllgh.alFsaHMvQHmlLymvaPPLLvLGAPvtLaaRglPfaWlwrk
+                    l+ lgh++      v  +         L+L         ++  +++ +k
+  3B4R:B|PDB    53 -LHELGHsYVAKKYGVKIEKI-------LLL---------PIGGVAMMDK 85   
+
+                   praaReaGralrrplvsrvlrfltnPlvAllLFnglfwlwHlPpvFda.a
+                   +            p  +    +   Plv++++    + l  ++++Fd ++
+  3B4R:B|PDB    86 I------------PKEGELRIGIAGPLVSFII---GIVLLIVSQFFDInI 120  
+
+                   ltnpwvHalmhvsflisAlLFWWpllgpdpelprLsglakllylFatgil
+                     +p +++l  + +++ ++       + +p   ++ g++ l +++     
+  3B4R:B|PDB   121 NGYPLLYTLSLLNLMLGGF-------NLIPAF-PMDGGRILRAIL----- 157  
+
+                   ltplGALiiFAdspLYatYtdpaawaeAmaLCvPgtlslswgGPemflsl
+                             +    Y   t  aa               + g        
+  3B4R:B|PDB   158 ----------SKKYGYLKSTKIAA---------------NIG-------K 175  
+
+                   dlleDQQLGGliMWipgei.vYlivllaiffrWlrre<-*
+                   +l       +liM  +g +++ +i +l+ +f     e   
+  3B4R:B|PDB   176 SL-------ALIMLLFGLLsMNIILILVSLFVYFGAE    205  
+
+DUF441: domain 1 of 1, from 18 to 160: score -77.5, E = 5.6
+                   *->mfnqaaLlLlvLlalgllskNqsvlisvl.VLLiikvtgLdsklfPf
+                          ++ +L + +++gl   N s+  +vl +LL + v+  +  +   
+  3B4R:B|PDB    18    ---HITFILFLVVIIGLSIMNNSIFWAVLfILLFVSVVLHELGHSYV 61   
+
+                   iekkGislG.iiIlTIgVLsPI....asGeIglkqLgeaflswkawvAia
+                     k+G+++ +i  l Ig  + +++ +  Ge+     g        +v+  
+  3B4R:B|PDB    62 AKKYGVKIEkILLLPIGGVAMMdkipKEGELRIGIAGP-------LVSFI 104  
+
+                   vGvlVAwlagrGvtL.lgnqPhlvTgLlvGTILgVAlfgGvpVGPLIaAG
+                    G++  ++  +  + ++   P l T  l+   Lg   f+ +p  P  +  
+  3B4R:B|PDB   105 IGIVL-LIVSQFFDInINGYPLLYTLSLLNLMLGG--FNLIPAFPMDGGR 151  
+
+                   IlsLilgkv<-*
+                   Il  il k    
+  3B4R:B|PDB   152 ILRAILSKK    160  
+
+DUF307: domain 1 of 1, from 32 to 84: score -28.1, E = 8.2
+                   *->tilN..ViWfllfGfwLaLghllaaivlfLLGGvfvitIiGiPygia
+                      +i N++++W +lf      + l++++vl  LG     + +++ yg  
+  3B4R:B|PDB    32    SIMNnsIFWAVLF------ILLFVSVVLHELG----HSYVAKKYGV- 67   
+
+                   nfkLCRGLagyaLwPFGkevvsr<-*
+                     k+     +++L+P+G         
+  3B4R:B|PDB    68 --KI----EKILLLPIGGVAMMD    84   
+
+Trep_Strep: domain 1 of 1, from 32 to 192: score -126.4, E = 8.3
+                   *->tvKDLItIGiFaAlYFviivfiggmlgainPvfmnMllap....ait
+                          +++  iF A+ F+   f++ +l  +++      ++ + ++ + 
+  3B4R:B|PDB    32    ---SIMNNSIFWAVLFIL-LFVSVVLHELGHSYVAKKYGVkiekILL 74   
+
+                   allgGiifMLlvaKVpKfGaitImgiiigLlffltGhgywpmlilsIIgg
+                     +gG++   ++ K+pK G + I     g+     G + ++++i +I++ 
+  3B4R:B|PDB    75 LPIGGVA---MMDKIPKEGELRI-----GIA----G-P-LVSFIIGIVLL 110  
+
+                   lIADliaWkigkNkYkskkrnmlsYvvFslwit.aG.pllPmw.ffpesY
+                   +    +  +++    +   +  l Y +  l ++ +G +l+P ++++  + 
+  3B4R:B|PDB   111 I----VS-QFF--DINI-NGYPLLYTLSLLNLMlGGfNLIPAFpMDGGRI 152  
+
+                   fkasliargmgaeYidamealfsppgmiiiiviatvvcgllGglIGkklL
+                   + ++ +++ +g     ++ a +    +++i++++        gl+++ + 
+  3B4R:B|PDB   153 L-RAILSKKYGYLKSTKIAANIGK-SLALIMLLF--------GLLSMNII 192  
+
+                   KKHFeK<-*
+                            
+  3B4R:B|PDB     - ------    -    
+
+DUF851: domain 1 of 1, from 34 to 64: score 6.4, E = 1.8
+                   *->msnsiFDLPviYiFLKmsnsiFDLPviYiFLK<-*
+                      m nsiF   v++i L +s  + +L   Y+  K   
+  3B4R:B|PDB    34    MNNSIF-WAVLFILLFVSVVLHELGHSYVAKK    64   
+
+Peptidase_M50: domain 1 of 1, from 42 to 190: score 113.8, E = 5.3e-31
+                RF    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   *->afilalgilvvvHElGHflvArrfGvkverfaiGfGplLfkhldgaG
+                        ++ l+++vv+HElGH +vA+++Gvk+e++ + +            
+  3B4R:B|PDB    42    VLFILLFVSVVLHELGHSYVAKKYGVKIEKILLLP------------ 76   
+
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   TeytirllPLGGYVkmaGedpeevfgapderefkkkspwqrlliaaAGPl
+                                            g+++ +++  k   ++l+i +AGPl
+  3B4R:B|PDB    77 ------------------------IGGVAMMDKIPK--EGELRIGIAGPL 100  
+
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   aNfiLAlllfalllllggiplassgliallaflallnlnLgifNLLPiPp
+                   ++fi++++l++++ ++      +   + ll+ l llnl Lg fNL+P++p
+  3B4R:B|PDB   101 VSFIIGIVLLIVSQFFDI----NINGYPLLYTLSLLNLMLGGFNLIPAFP 146  
+
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   
+                   LDGGhiLrallEairgrplnervenyiylvglalllllmllllfnd<-*
+                   +DGG+iLra+l    ++     + ++++++   +l+ l++ ll +    
+  3B4R:B|PDB   147 MDGGRILRAIL--SKKYGYLKSTKIAANIGKSLALIMLLFGLLSMN    190  
+
+DUF996: domain 1 of 1, from 62 to 194: score -94.4, E = 8.2
+                   *->dlstAKvLGG.iGaiLqLiGifvgsvgwGilSlVGlVLvlvAlkmiS
+                          AK +G +i  iL L  + +g   +              ++m  
+  3B4R:B|PDB    62    ----AKKYGVkIEKILLL--P-IG---G--------------VAMMD 84   
+
+                   eqvGddrIFnnYLkafVlmiaGlviFvgivvAtvGtsifrglfgalGsGe
+                   ++  + +       ++V+ i+G+v+++++ ++      +   + +l    
+  3B4R:B|PDB    85 KIPKEGELRIGIAGPLVSFIIGIVLLIVSQFFD-----ININGYPL---- 125  
+
+                   lPahglaalgsiLaGfVilwilyiisaYFkkkalEalaqyTGVdmFktAg
+                      ++l++l   L Gf ++  +   ++  ++ +l +  +y++  + k+A+
+  3B4R:B|PDB   126 --LYTLSLLNLMLGGFNLIPAFPMDGGRILRAILSKKYGYLK--STKIAA 171  
+
+                   llYfiGAiLliVFaiGliIilIAaI<-*
+                    + +  ++ li  + Gl+ + I +I   
+  3B4R:B|PDB   172 NIGK--SLALIMLLFGLLSMNIILI    194  
+
+DUF606: domain 1 of 1, from 65 to 188: score -69.3, E = 1.1
+                   *->vlylllailaGalLalQaaiNsr.Larqvgs.plaAs.liSflVGti
+                      +++ +  il   lL+++++ + +++ +   +++ +A++l+Sf  G++
+  3B4R:B|PDB    65    YGVKIEKIL---LLPIGGVAMMDkIPKEGELrIGIAGpLVSFIIGIV 108  
+
+                   lLlillllvrdllfgialeavgsapwWtWwiGGlLGaafvtlsvllaprl
+                   lL++   + +   +++ + ++ +++++  +   +LG++ +   + ++p  
+  3B4R:B|PDB   109 LLIVSQFFDIN--ING-YPLLYTLSLLN-L---MLGGFNL---IPAFPMD 148  
+
+                   GAaltialvvaGQLLmalliDhFGwfGvtvrplslgkiiGaaLllaGvil
+                   G          G +L a l   +G +  t  + + gk +++++ll G++ 
+  3B4R:B|PDB   149 G----------GRILRAILSKKYGYLKSTKIAANIGKSLALIMLLFGLLS 188  
+
+                   <-*
+                      
+  3B4R:B|PDB     -     -    
+
+Glyco_transf_28: domain 1 of 1, from 72 to 196: score -29.8, E = 1.2
+                   *->vllaggGTrGHvePavALakeLrrrGheVrvlylgtppgleefvvee
+                      +ll+ +G        vA++ +  ++G e r   +g+   l++f+   
+  3B4R:B|PDB    72    ILLLPIG-------GVAMMDKIPKEG-ELR---IGIAGPLVSFI-IG 106  
+
+                   aGlefvp.figgdqFldeFlRnfWkllrnpi.lprelmdlmvklrrklls
+                     l +v++f ++             + + p+     l+ lm+++ +  l+
+  3B4R:B|PDB   107 IVLLIVSqFFDIN------------INGYPLlYTLSLLNLMLGGFN--LI 142  
+
+                   lknlkelakglkalrkakeiLkefkpdavigfGGyvalpaliaallagip
+                   ++++++  ++        +++  +k               ++ +++ +i+
+  3B4R:B|PDB   143 PAFPMDGGRI-------LRAILSKK---------------YGYLKSTKIA 170  
+
+                   iivhEqngiPglvnkllprradgvlv<-*
+                   +++  ++++ +l   ll++   ++lv   
+  3B4R:B|PDB   171 ANIGKSLALIMLLFGLLSMNIILILV    196  
+
+CDP-OH_P_tran_2: domain 1 of 1, from 91 to 132: score -6.3, E = 8
+                   *->Pelllpl...fVsVaGvlIallIsyPWhvLsils..ViYlLslP<-*
+                       el+ ++ +++Vs++ ++I+llI        i + + +Y+Lsl    
+  3B4R:B|PDB    91    -ELRIGIagpLVSFI-IGIVLLIVSQFFDININGypLLYTLSLL    132  
+
+DUF1328: domain 1 of 1, from 92 to 117: score -30.0, E = 7.8
+                   *->LkWAiIFLiiALIAGvLGFGGIAGAAAGIAKILFfvFlvlFvVsLvl
+                      L+ +        IAG L              + F++++vl++Vs ++
+  3B4R:B|PDB    92    LRIG--------IAGPL--------------VSFIIGIVLLIVSQFF 116  
+
+                   G<-*
+                       
+  3B4R:B|PDB   117 D    117  
+
+CD20: domain 1 of 1, from 100 to 212: score -73.1, E = 3.7
+                   *->LcgLmhlsLGiIlasvlfsshfnsefsislksGYPFWGalmFIISGs
+                         L+ +  Gi+l++v       s f+ + + GYP++          
+  3B4R:B|PDB   100    ---LVSFIIGIVLLIV-------SQFFDININGYPLL---------- 126  
+
+                   LSIaaEkkstkcLVrgSLgl.NilSsilAatGiiLlivslaaGilSHFLK
+                            t +L++  Lg  N + ++    G iL  +   +        
+  3B4R:B|PDB   127 --------YTLSLLNLMLGGfNLIPAFPMDGGRILRAILSKK-------- 160  
+
+                   MLlpAsqqCksekdilslepynpsckyspetkqCylasssllGilsvMLI
+                                              +++ k  + a ++++++   ML+
+  3B4R:B|PDB   161 ---------------------------YGYLKSTKIAANIGKSLALIMLL 183  
+
+                   fsvLElclAv....lssifgckqeccnsk<-*
+                   f +L   + +   +l++ fg +qe    +   
+  3B4R:B|PDB   184 FGLLSMNIILilvsLFVYFGAEQESRVVE    212  
+
+SpoVA: domain 1 of 1, from 100 to 209: score -40.0, E = 0.96
+                   *->mdylkAFlvGGlICivGQGLqnllldiFdlteKtAGahvaaslvlIs
+                         l  F++G +  iv Q        +Fd++    G +   +l l  
+  3B4R:B|PDB   100    ---LVSFIIGIVLLIVSQ--------FFDINI--NGYPLLYTLSLLN 133  
+
+                   AlLdGFGIYDkiieFAGaGaiVPvvsFanSllsaAleyksiglvlGvatn
+                    +L GF     +    G+     + s     l      + ig  l   + 
+  3B4R:B|PDB   134 LMLGGFNLIPAF-PMDGGRILRAILSKKYGYLKSTKIAANIGKSLALIML 182  
+
+                   iFkLasavIvaavlaAyIVavIRFkaEklsa<-*
+                   +F L s  I    +  +   v  F aE+ s    
+  3B4R:B|PDB   183 LFGLLSMNIILILVSLF---VY-FGAEQESR    209  
+
+PsbI: domain 1 of 1, from 181 to 215: score 4.9, E = 3.7
+                   *->mltLkifvYavvilFvsLFiFGfLsnDpgRnPgrke<-*
+                      ml   ++  +++++ vsLF++ f ++  +R  + +    
+  3B4R:B|PDB   181    MLLFGLLSMNIILILVSLFVY-FGAEQESRVVEVET    215  
+
+//
+
+Query sequence: 3B4R:A|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+Peptidase_M50   Peptidase family M50                    113.8    5.3e-31   1
+Pkr1            ER protein Pkr1                         -27.8       0.66   1
+SpoVA           SpoVA protein                           -40.0       0.96   1
+DUF606          Protein of unknown function, DUF606     -69.3        1.1   1
+Glyco_transf_28 Glycosyltransferase family 28 N-termi   -29.8        1.2   1
+MASE1           MASE1                                   -67.7        1.5   1
+DUF851          Caenorhabditis elegans repeat of unkn     6.4        1.8   1
+Ferric_reduct   Ferric reductase like transmembrane c   -50.0        3.1   1
+CD20            CD20/IgE Fc receptor beta subunit fam   -73.1        3.7   1
+PsbI            Photosystem II reaction centre I prot     4.9        3.7   1
+Intg_mem_TP0381 Integral membrane protein (intg_mem_T  -117.2          4   1
+DUF456          Protein of unknown function (DUF456)    -86.9        4.5   1
+DUF441          Protein of unknown function (DUF441)    -77.5        5.6   1
+Caa3_CtaG       Cytochrome c oxidase caa3 assembly fa  -163.9        6.8   1
+Oxidored_q3     NADH-ubiquinone/plastoquinone oxidore   -65.2        7.1   1
+DUF1328         Protein of unknown function (DUF1328)   -30.0        7.8   1
+CDP-OH_P_tran_2 CDP-alcohol phosphatidyltransferase 2    -6.3          8   1
+DUF996          Protein of unknown function (DUF996)    -94.4        8.2   1
+DUF307          Domain of unknown function (DUF307)     -28.1        8.2   1
+Trep_Strep      Hypothetical bacterial integral membr  -126.4        8.3   1
+Oxidored_q1_N   NADH-Ubiquinone oxidoreductase (compl   -27.6        9.5   1
+UPF0259         Uncharacterised protein family (UPF02  -190.9        9.7   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+Oxidored_q3       1/1       1   142 [.     1   142 []   -65.2      7.1
+Intg_mem_TP0381   1/1       2   205 ..     1   268 []  -117.2        4
+Ferric_reduct     1/1      11   131 ..     1   150 []   -50.0      3.1
+DUF456            1/1      11   129 ..     1   142 []   -86.9      4.5
+Pkr1              1/1      11    62 ..     1    75 []   -27.8     0.66
+UPF0259           1/1      11   222 ..     1   257 []  -190.9      9.7
+MASE1             1/1      15   208 ..     1   322 []   -67.7      1.5
+Oxidored_q1_N     1/1      15    75 ..     1    62 []   -27.6      9.5
+Caa3_CtaG         1/1      17   205 ..     1   281 []  -163.9      6.8
+DUF441            1/1      18   160 ..     1   149 []   -77.5      5.6
+Trep_Strep        1/1      32   192 ..     1   196 []  -126.4      8.3
+DUF307            1/1      32    84 ..     1    68 []   -28.1      8.2
+DUF851            1/1      34    64 ..     1    32 []     6.4      1.8
+Peptidase_M50     1/1      42   190 ..     1   193 []   113.8  5.3e-31
+DUF996            1/1      62   194 ..     1   171 []   -94.4      8.2
+DUF606            1/1      65   188 ..     1   144 []   -69.3      1.1
+Glyco_transf_28   1/1      72   196 ..     1   171 []   -29.8      1.2
+CDP-OH_P_tran_2   1/1      91   132 ..     1    39 []    -6.3        8
+DUF1328           1/1      92   117 ..     1    48 []   -30.0      7.8
+SpoVA             1/1     100   209 ..     1   128 []   -40.0     0.96
+CD20              1/1     100   212 ..     1   171 []   -73.1      3.7
+PsbI              1/1     181   215 ..     1    36 []     4.9      3.7
+
+Alignments of top-scoring domains:
+Oxidored_q3: domain 1 of 1, from 1 to 142: score -65.2, E = 7.1
+                   *->llilssllvilsknPvysgLfLillfllisgllgllgassflsliLf
+                       +  s  l+ ++  P+ + ++ il  ++i gl ++ ++  f +++++
+  3B4R:A|PDB     1    -MNYSIRLFKIMGIPIELHITFILFLVVIIGLSIMNNSI-FWAVLFI 45   
+
+                   LvYvGGmlVLFlYvvmLapnekfeiskk.kllsllvllllllllllllil
+                   L          l+v+  +  e  +++  +k++ ++  +lll ++ +  ++
+  3B4R:A|PDB    46 L----------LFVSVVL-HELGHSYVAkKYGVKIEKILLLPIGGVAMMD 84   
+
+                   gllffgel..............nikaigslLystsn.nyglllllasyiL
+                    +   gel  +  ++  +   + + +i+s ++  + + y+ll  l+   L
+  3B4R:A|PDB    85 KIPKEGELrigiagplvsfiigIVLLIVSQFFDINInGYPLLYTLS---L 131  
+
+                   LlaLigvvklt<-*
+                   L  ++g   l+   
+  3B4R:A|PDB   132 LNLMLGGFNLI    142  
+
+Intg_mem_TP0381: domain 1 of 1, from 2 to 205: score -117.2, E = 4
+                   *->lgsFslfspsHiiilavvvllaillvlfgrrlkteeqkrllrrafaf
+                      ++s+ lf    i i +++ + ++l+v++g+++   +++++++  f++
+  3B4R:A|PDB     2    NYSIRLFKIMGIPIELHITFILFLVVIIGLSI--MNNSIFWAVLFIL 46   
+
+                   llliqliallvWmirlIlyylagyfplsesLPLhLCrlalilaai.lLit
+                   l ++ ++ +l         y+a ++ +++          ++l++i+  + 
+  3B4R:A|PDB    47 LFVSVVLHELGH------SYVAKKYGVKIE--------KILLLPIgGVAM 82   
+
+                   ksrrlfeyfyfwGigGalqALltPDlsneydaygFPHfiffqFfigHgll
+                      + +e     Gi+G l+++++ ++                        
+  3B4R:A|PDB    83 MDKIPKEGELRIGIAGPLVSFIIGIV------------------------ 108  
+
+                   vwaalflifargyrptlrslkrtvlvtfilaaiiflvN..........yl
+                        +li+   + ++ +++   +  +++l++++ ++N  +  + +++++
+  3B4R:A|PDB   109 -----LLIVSQFFDININGYPL-LYTLSLLNLMLGGFNlipafpmdggRI 152  
+
+                   ldsa.vswGwgNYgyLnkkPigtaSLLdvlgpwPfsvlTYivlglvaell
+                   l  a  s +   YgyL  +  + a++   l +     l +    l ++ +
+  3B4R:A|PDB   153 L-RAiLSKK---YGYLKSTK-IAANIGKSLALIML--L-FG---LLSMNI 191  
+
+                   vlalwftlldklivvkkvLiKiisfylpFrrsk<-*
+                   +l+l   l+                   ++ ++   
+  3B4R:A|PDB   192 ILILVS-LF------------------VYFGAE    205  
+
+Ferric_reduct: domain 1 of 1, from 11 to 131: score -50.0, E = 3.1
+                   *->tGilaLADPvkIhtallplaliLlalrnnpLtwLtGsttlnywpQfd
+                      +Gi           +++ + +++l++ +       G      ++   
+  3B4R:A|PDB    11    MGIPI--------ELHITF-ILFLVVII-------G------LS-IM 34   
+
+                   tlirfHrwlGrvafllallHtiaylvndlpl............dye.llk
+                    + +f   l ++ f+ ++lH +++ + + +++ + ++    + +   ++ 
+  3B4R:A|PDB    35 NNSIFWAVLFILLFVSVVLHELGHSYVAKKYgvkiekilllpiGGVaMMD 84   
+
+                   efyngsgenptgylwlvkrpygitGvi....alvlllllaitSlpw.fRR
+                   ++               k  + ++G++++  +++++++l+i S  +++  
+  3B4R:A|PDB    85 KI--------------PKEGELRIGIAgplvSFIIGIVLLIVSQFFdINI 120  
+
+                   rgYElFlylHillavaflllv<-*
+                   +g          + +++ l +   
+  3B4R:A|PDB   121 NG----------YPLLYTLSL    131  
+
+DUF456: domain 1 of 1, from 11 to 129: score -86.9, E = 4.5
+                   *->LiiPiiPSvLiIwaGFvlYaflfgfqaGlSlmFwlvmAvfTvlIfaA
+                        iPi   + +I    v+ ++ + +      +Fw v  ++  +    
+  3B4R:A|PDB    11    MGIPIELHITFILFLVVIIGLSIMNNS----IFWAVLFILLFVSVVL 53   
+
+                   DyVANaygVkRyGGSKaaiWgAlIGvliGiFi.iPpfGIIigPFigafia
+                     +  +y +k+yG                  ++i    I + P  g+   
+  3B4R:A|PDB    54 HELGHSYVAKKYG------------------VkIEK--ILLLPIGGVAMM 83   
+
+                   ELIvarKdlkeAfkigl.GSLvgFLtgsIAKvvIqLi...mIgyFlwevl
+                     I +       ++ig+ G Lv F  g++   v q+++ ++ gy l+  l
+  3B4R:A|PDB    84 DKIPKE----GELRIGIaGPLVSFIIGIVLLIVSQFFdinINGYPLLYTL 129  
+
+                   <-*
+                      
+  3B4R:A|PDB     -     -    
+
+Pkr1: domain 1 of 1, from 11 to 62: score -27.8, E = 0.66
+                   *->MssFfveLWeSIFtPGttPqLiiATHvSFaALlavLlvLlyaTksIH
+                      M+                  + i  H++F++ l+v ++L +  +sI 
+  3B4R:A|PDB    11    MG------------------IPIELHITFILFLVVIIGLSIMNNSIF 39   
+
+                   FviLsvlaglLWisVnWFiaELaqaklq<-*
+                     +L++l   L+ sV   + EL +  +    
+  3B4R:A|PDB    40 WAVLFIL---LFVSVV--LHELGHSYVA    62   
+
+UPF0259: domain 1 of 1, from 11 to 222: score -190.9, E = 9.7
+                   *->MsITansLyrDTfnFfrnqIiiIlffSlLsAfItvlInsifkPndeq
+                      M I +              I  Ilf++++    +++ nsif      
+  3B4R:A|PDB    11    MGIPIEL-----------HITFILFLVVIIG-LSIMNNSIFWA---V 42   
+
+                   LlslaePElnldfsgssSNlldlvqnMsie.QkkiLLkaSiaktF.....
+                   L++l      + ++  ++  ++   +     +k +LL    ++ +++ ++
+  3B4R:A|PDB    43 LFILLF---VSVVLHELG-HSYVAKKYGVKiEKILLLPIGGVAMMdkipk 88   
+
+                   ..SsLIGnt.fLlGniItlIqmvSdkKrvFSilnaInls.lkilP..kLL
+                   ++++ IG ++ L++ iI +  ++     v S ++ In+ ++++l + +LL
+  3B4R:A|PDB    89 egELRIGIAgPLVSFIIGIVLLI-----V-SQFFDININgYPLLYtlSLL 132  
+
+                   iLiFlTTfliQiGfmLfiiPGIil...aIlLSLSPIILtfkkmgildSIr
+                    L+        +G  + +iP + ++++ Il +     ++ kk g l S +
+  3B4R:A|PDB   133 NLM--------LG-GFNLIPAFPMdggRILRA-----ILSKKYGYLKSTK 168  
+
+                   aSinI..tfkNikivaPavlfWLcvKliLlliiSqfsilskniaflIlni
+                   + +nI+++++ i +     lf L+   i+l + S f  ++ +    +   
+  3B4R:A|PDB   169 IAANIgkSLALIML-----LFGLLSMNIILILVSLFVYFGAEQESRVVEV 213  
+
+                   liNNiissILIIYLFRlYMLfPKkLRs<-*
+                                       f K ++    
+  3B4R:A|PDB   214 ETI-----------------F-KNIKA    222  
+
+MASE1: domain 1 of 1, from 15 to 208: score -67.7, E = 1.5
+                   *->llllllllyalaaalllslalalvssgiaaiWllPtGlalaalLlfg
+                      + l + ++++l+ +++l  +++      +++W               
+  3B4R:A|PDB    15    IELHITFILFLVVIIGL--SIM----NNSIFW--------------- 40   
+
+                   rrywPgilLGvLlgavlaslflrlslgllsglglllalaillvnaleall
+                    +++  +l     ++v+++         l +  ++  + +    +l+  +
+  3B4R:A|PDB    41 -AVLFILL----FVSVVLH--------ELGHSYVAKKYGVKIEKILLLPI 77   
+
+                   avallrrllpgrdrlqtlkirifqRvdvlrfllaaaliaalllAiiglal
+                   +  ++  ++p +  l+ +                  ++++l++ iig++l
+  3B4R:A|PDB    78 GGVAMMDKIPKEGELRIG------------------IAGPLVSFIIGIVL 109  
+
+                   llllgllplapfaeswltwwLgdatGvLvlaPlllllrrylrqrhrlplw
+                   l + +  + ++   ++++ +  +++ +L+l  + l+ + + +    l++ 
+  3B4R:A|PDB   110 LIVSQ--FFDININGYPLLYTLSLL-NLMLGGFNLIPAFPMDGGRILRA- 155  
+
+                   pelllapvalklllllalllllilslllqllllpfelnyfllytqylfyl
+                                                                     
+  3B4R:A|PDB     - -------------------------------------------------- -    
+
+                   llppllwaAfRfGwrGaaL.atllnavllilftasgggpflqdsgtqsqq
+                         ++   +G+ ++   a++++  l++++++                
+  3B4R:A|PDB   156 ------ILSKKYGYLKSTKiAANIGKSLALIMLL---------------- 183  
+
+                   aielQlflavlaltaLllsaaiseqr<-*
+                    + l+++  +l+l++L+++   ++ +   
+  3B4R:A|PDB   184 -FGLLSMNIILILVSLFVYFGAEQES    208  
+
+Oxidored_q1_N: domain 1 of 1, from 15 to 75: score -27.6, E = 9.5
+                   *->iitlwnWissgsfninwgFlfDslsliflvvVLiVsslVhlYSisYM
+                      i  + + i +  + i +++   s++   l++ L+Vs+  h+   sY 
+  3B4R:A|PDB    15    IELHITFILFLVVIIGLSIMNNSIFWAVLFILLFVSVVLHELGHSYV 61   
+
+                   shDPninRFfsYLsl<-*
+                   +   +  +  ++L+l   
+  3B4R:A|PDB    62 AK-KYGVKIEKILLL    75   
+
+Caa3_CtaG: domain 1 of 1, from 17 to 205: score -163.9, E = 6.8
+                   *->llliaalYaliyvggvrRrfprgrrvpakravlFllGlllLylalgS
+                      l   ++l+++++        +  +       +++ +  +lL++++  
+  3B4R:A|PDB    17    LHITFILFLVVI-----IGLSIMNN-----SIFWAVLFILLFVSVV- 52   
+
+                   Pldllgh.alFsaHMvQHmlLymvaPPLLvLGAPvtLaaRglPfaWlwrk
+                    l+ lgh++      v  +         L+L         ++  +++ +k
+  3B4R:A|PDB    53 -LHELGHsYVAKKYGVKIEKI-------LLL---------PIGGVAMMDK 85   
+
+                   praaReaGralrrplvsrvlrfltnPlvAllLFnglfwlwHlPpvFda.a
+                   +            p  +    +   Plv++++    + l  ++++Fd ++
+  3B4R:A|PDB    86 I------------PKEGELRIGIAGPLVSFII---GIVLLIVSQFFDInI 120  
+
+                   ltnpwvHalmhvsflisAlLFWWpllgpdpelprLsglakllylFatgil
+                     +p +++l  + +++ ++       + +p   ++ g++ l +++     
+  3B4R:A|PDB   121 NGYPLLYTLSLLNLMLGGF-------NLIPAF-PMDGGRILRAIL----- 157  
+
+                   ltplGALiiFAdspLYatYtdpaawaeAmaLCvPgtlslswgGPemflsl
+                             +    Y   t  aa               + g        
+  3B4R:A|PDB   158 ----------SKKYGYLKSTKIAA---------------NIG-------K 175  
+
+                   dlleDQQLGGliMWipgei.vYlivllaiffrWlrre<-*
+                   +l       +liM  +g +++ +i +l+ +f     e   
+  3B4R:A|PDB   176 SL-------ALIMLLFGLLsMNIILILVSLFVYFGAE    205  
+
+DUF441: domain 1 of 1, from 18 to 160: score -77.5, E = 5.6
+                   *->mfnqaaLlLlvLlalgllskNqsvlisvl.VLLiikvtgLdsklfPf
+                          ++ +L + +++gl   N s+  +vl +LL + v+  +  +   
+  3B4R:A|PDB    18    ---HITFILFLVVIIGLSIMNNSIFWAVLfILLFVSVVLHELGHSYV 61   
+
+                   iekkGislG.iiIlTIgVLsPI....asGeIglkqLgeaflswkawvAia
+                     k+G+++ +i  l Ig  + +++ +  Ge+     g        +v+  
+  3B4R:A|PDB    62 AKKYGVKIEkILLLPIGGVAMMdkipKEGELRIGIAGP-------LVSFI 104  
+
+                   vGvlVAwlagrGvtL.lgnqPhlvTgLlvGTILgVAlfgGvpVGPLIaAG
+                    G++  ++  +  + ++   P l T  l+   Lg   f+ +p  P  +  
+  3B4R:A|PDB   105 IGIVL-LIVSQFFDInINGYPLLYTLSLLNLMLGG--FNLIPAFPMDGGR 151  
+
+                   IlsLilgkv<-*
+                   Il  il k    
+  3B4R:A|PDB   152 ILRAILSKK    160  
+
+Trep_Strep: domain 1 of 1, from 32 to 192: score -126.4, E = 8.3
+                   *->tvKDLItIGiFaAlYFviivfiggmlgainPvfmnMllap....ait
+                          +++  iF A+ F+   f++ +l  +++      ++ + ++ + 
+  3B4R:A|PDB    32    ---SIMNNSIFWAVLFIL-LFVSVVLHELGHSYVAKKYGVkiekILL 74   
+
+                   allgGiifMLlvaKVpKfGaitImgiiigLlffltGhgywpmlilsIIgg
+                     +gG++   ++ K+pK G + I     g+     G + ++++i +I++ 
+  3B4R:A|PDB    75 LPIGGVA---MMDKIPKEGELRI-----GIA----G-P-LVSFIIGIVLL 110  
+
+                   lIADliaWkigkNkYkskkrnmlsYvvFslwit.aG.pllPmw.ffpesY
+                   +    +  +++    +   +  l Y +  l ++ +G +l+P ++++  + 
+  3B4R:A|PDB   111 I----VS-QFF--DINI-NGYPLLYTLSLLNLMlGGfNLIPAFpMDGGRI 152  
+
+                   fkasliargmgaeYidamealfsppgmiiiiviatvvcgllGglIGkklL
+                   + ++ +++ +g     ++ a +    +++i++++        gl+++ + 
+  3B4R:A|PDB   153 L-RAILSKKYGYLKSTKIAANIGK-SLALIMLLF--------GLLSMNII 192  
+
+                   KKHFeK<-*
+                            
+  3B4R:A|PDB     - ------    -    
+
+DUF307: domain 1 of 1, from 32 to 84: score -28.1, E = 8.2
+                   *->tilN..ViWfllfGfwLaLghllaaivlfLLGGvfvitIiGiPygia
+                      +i N++++W +lf      + l++++vl  LG     + +++ yg  
+  3B4R:A|PDB    32    SIMNnsIFWAVLF------ILLFVSVVLHELG----HSYVAKKYGV- 67   
+
+                   nfkLCRGLagyaLwPFGkevvsr<-*
+                     k+     +++L+P+G         
+  3B4R:A|PDB    68 --KI----EKILLLPIGGVAMMD    84   
+
+DUF851: domain 1 of 1, from 34 to 64: score 6.4, E = 1.8
+                   *->msnsiFDLPviYiFLKmsnsiFDLPviYiFLK<-*
+                      m nsiF   v++i L +s  + +L   Y+  K   
+  3B4R:A|PDB    34    MNNSIF-WAVLFILLFVSVVLHELGHSYVAKK    64   
+
+Peptidase_M50: domain 1 of 1, from 42 to 190: score 113.8, E = 5.3e-31
+                RF    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   *->afilalgilvvvHElGHflvArrfGvkverfaiGfGplLfkhldgaG
+                        ++ l+++vv+HElGH +vA+++Gvk+e++ + +            
+  3B4R:A|PDB    42    VLFILLFVSVVLHELGHSYVAKKYGVKIEKILLLP------------ 76   
+
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   TeytirllPLGGYVkmaGedpeevfgapderefkkkspwqrlliaaAGPl
+                                            g+++ +++  k   ++l+i +AGPl
+  3B4R:A|PDB    77 ------------------------IGGVAMMDKIPK--EGELRIGIAGPL 100  
+
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                   aNfiLAlllfalllllggiplassgliallaflallnlnLgifNLLPiPp
+                   ++fi++++l++++ ++      +   + ll+ l llnl Lg fNL+P++p
+  3B4R:A|PDB   101 VSFIIGIVLLIVSQFFDI----NINGYPLLYTLSLLNLMLGGFNLIPAFP 146  
+
+                RF xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   
+                   LDGGhiLrallEairgrplnervenyiylvglalllllmllllfnd<-*
+                   +DGG+iLra+l    ++     + ++++++   +l+ l++ ll +    
+  3B4R:A|PDB   147 MDGGRILRAIL--SKKYGYLKSTKIAANIGKSLALIMLLFGLLSMN    190  
+
+DUF996: domain 1 of 1, from 62 to 194: score -94.4, E = 8.2
+                   *->dlstAKvLGG.iGaiLqLiGifvgsvgwGilSlVGlVLvlvAlkmiS
+                          AK +G +i  iL L  + +g   +              ++m  
+  3B4R:A|PDB    62    ----AKKYGVkIEKILLL--P-IG---G--------------VAMMD 84   
+
+                   eqvGddrIFnnYLkafVlmiaGlviFvgivvAtvGtsifrglfgalGsGe
+                   ++  + +       ++V+ i+G+v+++++ ++      +   + +l    
+  3B4R:A|PDB    85 KIPKEGELRIGIAGPLVSFIIGIVLLIVSQFFD-----ININGYPL---- 125  
+
+                   lPahglaalgsiLaGfVilwilyiisaYFkkkalEalaqyTGVdmFktAg
+                      ++l++l   L Gf ++  +   ++  ++ +l +  +y++  + k+A+
+  3B4R:A|PDB   126 --LYTLSLLNLMLGGFNLIPAFPMDGGRILRAILSKKYGYLK--STKIAA 171  
+
+                   llYfiGAiLliVFaiGliIilIAaI<-*
+                    + +  ++ li  + Gl+ + I +I   
+  3B4R:A|PDB   172 NIGK--SLALIMLLFGLLSMNIILI    194  
+
+DUF606: domain 1 of 1, from 65 to 188: score -69.3, E = 1.1
+                   *->vlylllailaGalLalQaaiNsr.Larqvgs.plaAs.liSflVGti
+                      +++ +  il   lL+++++ + +++ +   +++ +A++l+Sf  G++
+  3B4R:A|PDB    65    YGVKIEKIL---LLPIGGVAMMDkIPKEGELrIGIAGpLVSFIIGIV 108  
+
+                   lLlillllvrdllfgialeavgsapwWtWwiGGlLGaafvtlsvllaprl
+                   lL++   + +   +++ + ++ +++++  +   +LG++ +   + ++p  
+  3B4R:A|PDB   109 LLIVSQFFDIN--ING-YPLLYTLSLLN-L---MLGGFNL---IPAFPMD 148  
+
+                   GAaltialvvaGQLLmalliDhFGwfGvtvrplslgkiiGaaLllaGvil
+                   G          G +L a l   +G +  t  + + gk +++++ll G++ 
+  3B4R:A|PDB   149 G----------GRILRAILSKKYGYLKSTKIAANIGKSLALIMLLFGLLS 188  
+
+                   <-*
+                      
+  3B4R:A|PDB     -     -    
+
+Glyco_transf_28: domain 1 of 1, from 72 to 196: score -29.8, E = 1.2
+                   *->vllaggGTrGHvePavALakeLrrrGheVrvlylgtppgleefvvee
+                      +ll+ +G        vA++ +  ++G e r   +g+   l++f+   
+  3B4R:A|PDB    72    ILLLPIG-------GVAMMDKIPKEG-ELR---IGIAGPLVSFI-IG 106  
+
+                   aGlefvp.figgdqFldeFlRnfWkllrnpi.lprelmdlmvklrrklls
+                     l +v++f ++             + + p+     l+ lm+++ +  l+
+  3B4R:A|PDB   107 IVLLIVSqFFDIN------------INGYPLlYTLSLLNLMLGGFN--LI 142  
+
+                   lknlkelakglkalrkakeiLkefkpdavigfGGyvalpaliaallagip
+                   ++++++  ++        +++  +k               ++ +++ +i+
+  3B4R:A|PDB   143 PAFPMDGGRI-------LRAILSKK---------------YGYLKSTKIA 170  
+
+                   iivhEqngiPglvnkllprradgvlv<-*
+                   +++  ++++ +l   ll++   ++lv   
+  3B4R:A|PDB   171 ANIGKSLALIMLLFGLLSMNIILILV    196  
+
+CDP-OH_P_tran_2: domain 1 of 1, from 91 to 132: score -6.3, E = 8
+                   *->Pelllpl...fVsVaGvlIallIsyPWhvLsils..ViYlLslP<-*
+                       el+ ++ +++Vs++ ++I+llI        i + + +Y+Lsl    
+  3B4R:A|PDB    91    -ELRIGIagpLVSFI-IGIVLLIVSQFFDININGypLLYTLSLL    132  
+
+DUF1328: domain 1 of 1, from 92 to 117: score -30.0, E = 7.8
+                   *->LkWAiIFLiiALIAGvLGFGGIAGAAAGIAKILFfvFlvlFvVsLvl
+                      L+ +        IAG L              + F++++vl++Vs ++
+  3B4R:A|PDB    92    LRIG--------IAGPL--------------VSFIIGIVLLIVSQFF 116  
+
+                   G<-*
+                       
+  3B4R:A|PDB   117 D    117  
+
+SpoVA: domain 1 of 1, from 100 to 209: score -40.0, E = 0.96
+                   *->mdylkAFlvGGlICivGQGLqnllldiFdlteKtAGahvaaslvlIs
+                         l  F++G +  iv Q        +Fd++    G +   +l l  
+  3B4R:A|PDB   100    ---LVSFIIGIVLLIVSQ--------FFDINI--NGYPLLYTLSLLN 133  
+
+                   AlLdGFGIYDkiieFAGaGaiVPvvsFanSllsaAleyksiglvlGvatn
+                    +L GF     +    G+     + s     l      + ig  l   + 
+  3B4R:A|PDB   134 LMLGGFNLIPAF-PMDGGRILRAILSKKYGYLKSTKIAANIGKSLALIML 182  
+
+                   iFkLasavIvaavlaAyIVavIRFkaEklsa<-*
+                   +F L s  I    +  +   v  F aE+ s    
+  3B4R:A|PDB   183 LFGLLSMNIILILVSLF---VY-FGAEQESR    209  
+
+CD20: domain 1 of 1, from 100 to 212: score -73.1, E = 3.7
+                   *->LcgLmhlsLGiIlasvlfsshfnsefsislksGYPFWGalmFIISGs
+                         L+ +  Gi+l++v       s f+ + + GYP++          
+  3B4R:A|PDB   100    ---LVSFIIGIVLLIV-------SQFFDININGYPLL---------- 126  
+
+                   LSIaaEkkstkcLVrgSLgl.NilSsilAatGiiLlivslaaGilSHFLK
+                            t +L++  Lg  N + ++    G iL  +   +        
+  3B4R:A|PDB   127 --------YTLSLLNLMLGGfNLIPAFPMDGGRILRAILSKK-------- 160  
+
+                   MLlpAsqqCksekdilslepynpsckyspetkqCylasssllGilsvMLI
+                                              +++ k  + a ++++++   ML+
+  3B4R:A|PDB   161 ---------------------------YGYLKSTKIAANIGKSLALIMLL 183  
+
+                   fsvLElclAv....lssifgckqeccnsk<-*
+                   f +L   + +   +l++ fg +qe    +   
+  3B4R:A|PDB   184 FGLLSMNIILilvsLFVYFGAEQESRVVE    212  
+
+PsbI: domain 1 of 1, from 181 to 215: score 4.9, E = 3.7
+                   *->mltLkifvYavvilFvsLFiFGfLsnDpgRnPgrke<-*
+                      ml   ++  +++++ vsLF++ f ++  +R  + +    
+  3B4R:A|PDB   181    MLLFGLLSMNIILILVSLFVY-FGAEQESRVVEVET    215  
+
+//

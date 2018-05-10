@@ -1,0 +1,13 @@
+syntax: glob
+
+res/Pfam_ls
+updates/*
+tmp/*
+
+lib/smarty/cache/*
+lib/smarty/templates_c/*
+
+*.kpf
+*.DS_Store
+
+examples/*

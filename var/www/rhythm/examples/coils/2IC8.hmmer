@@ -1,0 +1,407 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 Pfam_ls
+Sequence file:            coils/2IC8.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: 2IC8:A|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+Rhomboid        Rhomboid family                         144.4    9.8e-41   1
+DER1            Der1-like family                       -102.1       0.19   1
+BphX            BphX-like                               -94.1       0.43   1
+CTP_transf_1    Cytidylyltransferase family             -96.5       0.85   1
+Caa3_CtaG       Cytochrome c oxidase caa3 assembly fa  -164.8        2.3   1
+DUF6            Integral membrane protein DUF6          -38.0        3.1   1
+PAP2            PAP2 superfamily                        -41.2        3.1   1
+DUF1112         Protein of unknown function (DUF1112)  -161.8        4.1   1
+DUF606          Protein of unknown function, DUF606     -84.1        4.3   1
+Peptidase_A24   Type IV leader peptidase family         -30.1        5.2   1
+5TM-5TMR_LYT    5TMR of 5TMR-LYT                        -41.6        6.4   1
+SPW             SPW repeat                              -19.1        7.6   1
+UPF0093         Uncharacterised protein family (UPF00  -102.7          8   1
+TrbC            TrbC/VIRB2 family                       -32.0        8.4   1
+Ctr             Ctr copper transporter family           -69.2        8.5   1
+DUF1328         Protein of unknown function (DUF1328)   -34.5        8.5   1
+VMA21           VMA21-like domain                       -28.1        8.6   1
+NADHdh          NADH dehydrogenase                     -262.2          9   1
+Ferric_reduct   Ferric reductase like transmembrane c   -63.8        9.5   1
+Abi             CAAX amino terminal protease family     -42.4        9.7   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+Caa3_CtaG         1/1      76   216 ..     1   281 []  -164.8      2.3
+NADHdh            1/1      93   260 ..     1   319 []  -262.2        9
+DER1              1/1      95   271 ..     1   271 []  -102.1     0.19
+CTP_transf_1      1/1      96   260 ..     1   343 []   -96.5     0.85
+DUF1112           1/1      97   271 ..     1   238 []  -161.8      4.1
+PAP2              1/1     100   218 ..     1   177 []   -41.2      3.1
+Peptidase_A24     1/1     102   207 ..     1   123 []   -30.1      5.2
+DUF606            1/1     106   213 ..     1   144 []   -84.1      4.3
+Ferric_reduct     1/1     114   209 ..     1   150 []   -63.8      9.5
+VMA21             1/1     116   192 ..     1    66 []   -28.1      8.6
+Rhomboid          1/1     129   272 .]     1   171 []   144.4  9.8e-41
+5TM-5TMR_LYT      1/1     130   235 ..     1   105 []   -41.6      6.4
+UPF0093           1/1     139   242 ..     1   153 []  -102.7        8
+Ctr               1/1     144   272 .]     1   214 []   -69.2      8.5
+DUF6              1/1     159   270 ..     1   128 []   -38.0      3.1
+BphX              1/1     173   254 ..     1   154 []   -94.1     0.43
+Abi               1/1     173   265 ..     1   115 []   -42.4      9.7
+TrbC              1/1     178   245 ..     1    82 []   -32.0      8.4
+SPW               1/1     220   272 .]     1    53 []   -19.1      7.6
+DUF1328           1/1     230   268 ..     1    48 []   -34.5      8.5
+
+Alignments of top-scoring domains:
+Caa3_CtaG: domain 1 of 1, from 76 to 216: score -164.8, E = 2.3
+                   *->llliaalYaliyvggvrRrfprgrrvpakravlFllGlllLylalgS
+                       ++ +++   ++ gg+ R++p + +        +  +++++++a+  
+  2IC8:A|PDB    76    GGGGGGGGGGGG-GGGERAGPVTWV--------MMIACVVVFIAM-- 111  
+
+                   PldllghalFsaHMvQHmlLymvaPPLLvLGAPvtLaaRglPfaWlwrkp
+                      +lg     ++                L             aW +++ 
+  2IC8:A|PDB   112 --QILGDQEVMLW----------------L-------------AWPFDPT 130  
+
+                   raaReaGralrrplvsrvlrfltnPlvAllLFnglfwlwHlPpvFdaalt
+                            l + +++ +                                
+  2IC8:A|PDB   131 ---------LKFEFWRYFT------------------------------- 140  
+
+                   npwvHalmhvsfl.isAlLFWWpllgpdpelprLsglakllylFatgill
+                       Halmh+s+++i+  L WW  lg   e++    l+    ++     +
+  2IC8:A|PDB   141 ----HALMHFSLMhILFNLLWWWYLGGAVEKR----LGSGKLIV-----I 177  
+
+                   tplGALiiFAdspLYatYtdpaawaeAmaLCvPgtlslswgGPemflsld
+                   t++ AL++         Y +  +                ++GP       
+  2IC8:A|PDB   178 TLISALLSG--------YVQ--Q---------------KFSGP------- 195  
+
+                   lleDQQLGGliMWipgeivYlivllaiffrWlrre<-*
+                        ++GGl     +++vY +++    + Wlr+e   
+  2IC8:A|PDB   196 -----WFGGL-----SGVVYALMG----YVWLRGE    216  
+
+NADHdh: domain 1 of 1, from 93 to 260: score -262.2, E = 9
+                   *->lillniLlliipVllsVAFLtLlERKvLGymQqRkGPNvVGplGLLQ
+                        ++  +++i++V++ +A+  L++  v+              l L  
+  2IC8:A|PDB    93    AGPVTWVMMIACVVVFIAMQILGDQEVM--------------LWLAW 125  
+
+                   PfADGlKLfiKEpvvPstsspvlFllaPvlaltlallaWvvlPfpyglvl
+                   Pf   lK    E ++  t     F l   +  +  ll W    +  g v 
+  2IC8:A|PDB   126 PFDPTLKF---EFWRYFTHALMHFSL---MHILFNLLWWW---YLGGAV- 165  
+
+                   adlnlGvLFiLAlSS.LaVYgiLmsGWaSNSKYaLLGaLRAvAQtISYEV
+                       lG       S++L V++++ +                         
+  2IC8:A|PDB   166 -EKRLG-------SGkLIVITLISA------------------------- 182  
+
+                   sLgLiLLsiiilsGSfnlsdivnaQegYGllvWlilpqfplflmFfIstL
+                             +lsG       + +Q+    ++ +++  + +++       
+  2IC8:A|PDB   183 ----------LLSG-------YVQQK----FSGPWFGGLSGVV------- 204  
+
+                   AETNRaPFDLpEgEsELVaGynVEYSggpFALFFLaEYaNiilmslLtsv
+                                           Y+ ++++                   
+  2IC8:A|PDB   205 ------------------------YALMGYV------------------- 211  
+
+                   LFLGGwlpsiplpilpelgiiwfvlKtlllfflfiwvRasyPRfRYDQLM
+                     L G            ++   ++l   l++f +iw+ a           
+  2IC8:A|PDB   212 -WLRGER----------DPQSGIYLQRGLIIFALIWIVA----------- 239  
+
+                   yLgWKvfLPLSLalllftaslli<-*
+                     gW+ +   S a+    a+l++   
+  2IC8:A|PDB   240 --GWFDLFGMSMANGAHIAGLAV    260  
+
+DER1: domain 1 of 1, from 95 to 271: score -102.1, E = 0.19
+                   *->iPpVTRywllatvlltilgrlnlisplkLvL.....fnweLvfkKfQ
+                        pVT    +a+v++ i+  ++++  + + L    +f+++L   Kf+
+  2IC8:A|PDB    95    --PVTWVMMIACVVVFIA--MQILGDQEVMLwlawpFDPTL---KFE 134  
+
+                   iWRLlTsllyfPvsgntgfsflfnlyFlyrYssaLEngsFrgrLnRRGPm
+                   +WR +T+ l+     ++ ++ lfnl        a+E+   +g+       
+  2IC8:A|PDB   135 FWRYFTHALMH---FSL-MHILFNLLWWWYLGGAVEKRLGSGK------- 173  
+
+                   vaaDYlymLifgavlitilglisqlgnEnimnvKLYiHnFKnFFiKDCvs
+                          +++  ++++++ g   q                          
+  2IC8:A|PDB   174 -------LIVITLISALLSGYVQQ-------------------------- 190  
+
+                   KYHYnnsKniDiKKEavniYYPlf..LgqaltlmivYvWsr..kNaNdvq
+                                   ++   P f++L  +  +   YvW+r+++ + ++ 
+  2IC8:A|PDB   191 ---------------KFSG--PWFggLSGVVYALMGYVWLRgeRDP-QSG 222  
+
+                   vnFfglirfkAkYLPwvLlgfsfllgnksvl..vdliGilvGHiYytYEK
+                   + +  ++ + A +  w+ +g   l+g  s  +++  +G +vG +      
+  2IC8:A|PDB   223 IYLQRGLIIFALI--WIVAGWFDLFGM-SMAngAHIAGLAVGLAMA---- 265  
+
+                   FletHtLGPiWGmiRKADdvYprllgGkdLlkTPy<-*
+                   F++                    +l+            
+  2IC8:A|PDB   266 FVD--------------------SLN---------    271  
+
+CTP_transf_1: domain 1 of 1, from 96 to 260: score -96.5, E = 0.85
+                   *->kqRiitaivliliflillflggfaa....liflllvaavvilalyEl
+                          +t++++i++++  +++   + ++  l+++  +     + ++++
+  2IC8:A|PDB    96    ----VTWVMMIACVVVFIAMQILGDqevmLWLAWPFDPTLKFEFWRY 138  
+
+                   irllrlkfrsrrllltLmRerekerglgliflllalllvylehllalfgl
+                   ++++  +f+  + l+           l+++++l + +  +l         
+  2IC8:A|PDB   139 FTHALMHFSLMHILFN----------LLWWWYLGGAVEKRL--------- 169  
+
+                   vlllilvlllLvltvlsklvgsasgwlssgtladvsltllplfyvglfll
+                                                                     
+  2IC8:A|PDB     - -------------------------------------------------- -    
+
+                   sLvKkrykyQFsqfawtHltLllvvtqslllitnplfgllwilllilvvw
+                                                        g l ++ li+ + 
+  2IC8:A|PDB   170 -----------------------------------GSGKLIVITLISALL 184  
+
+                   aaDigAYfvGkaFGkhKlaPkiSPnKTvEGflGGfvaavlvgllfslllg
+                   ++ + + f G +FG+                     ++v+++l+ +  l+
+  2IC8:A|PDB   185 SGYVQQKFSGPWFGGL--------------------SGVVYALMGYVWLR 214  
+
+                   prlafvcpkdltpfCpnlFpqYlPvfkfrik.I.l.lsflhllllgllas
+                   +  +++                         +I l+ ++++++l+ ++a+
+  2IC8:A|PDB   215 GERDPQ------------------------SgIyLqRGLIIFALIWIVAG 240  
+
+                   lvgqfGDLvESmfKRdfGiKDSGklIPGHGGilDRlDsllfaapvfyall
+                    +  fG                                 + +a  +++  
+  2IC8:A|PDB   241 WFDLFG---------------------------------MSMANGAHIAG 257  
+
+                   yif<-*
+                         
+  2IC8:A|PDB   258 LAV    260  
+
+DUF1112: domain 1 of 1, from 97 to 271: score -161.8, E = 4.1
+                   *->gtaMTvddvVtKTgitLailvVtAvlaWilslgvDgvNvgaAmglti
+                      + +M +  vV+ +++   il+   v+ W +  + D   ++       
+  2IC8:A|PDB    97    TWVMMIACVVVFIAM--QILGDQEVMLWLAW-PFD-PTLKFEFWRYF 139  
+
+                   gGAiGGLiLaLvtsFkkkkpspatalsYAAfEGvFLGsISavfeaflvay
+                            aL   F          ++  ++    LG+    +e +l   
+  2IC8:A|PDB   140 TH-------ALMH-FS------LMHILFNLLWWWYLGG---AVEKRL--- 169  
+
+                   dkagGivfqAVLgTmgvffgmLlaYrtGlIkvTerFkrgVmAAiiGillL
+                    + g ++        +++   Ll   +G   v  +F++  ++ + G++  
+  2IC8:A|PDB   170 -GSGKLI-------VITLISALL---SGY--VQQKFSGPWFGGLSGVVYA 206  
+
+                   yLvnLvLslFGigiPeGLGif.dsGiLGIvFSLfviviAAlsLvlDFDai
+                    ++   L   G ++P   Gi+   G+  I+F L  iv +       FD+ 
+  2IC8:A|PDB   207 LMGYVWLR--GERDPQ-SGIYlQRGL--IIFALIWIVAGW------FDLF 245  
+
+                   ekgvryGaPkemeWygAFGLtVTLVWLYiEiLRLLskLqsrD<-*
+                       + Ga  + +     GL+V L           +   s +   
+  2IC8:A|PDB   246 GMSMANGA--HIA-----GLAVGLA---------MAFVDSLN    271  
+
+PAP2: domain 1 of 1, from 100 to 218: score -41.2, E = 3.1
+                   *->aalalllalvaslllnglaylKllfgrpRApPhflavcqpdwgdstc
+                        +a +++++a+++l++     l++ +    P               
+  2IC8:A|PDB   100    MMIACVVVFIAMQILGDQ-EVMLWLAW----P--------------- 126  
+
+                   sdlwyeellgyefycmagspgldridlfgsvlltsafalvseagpSFPSG
+                                                      ++ l  e ++ F   
+  2IC8:A|PDB   127 ----------------------------------FDPTLKFEFWRYF--T 140  
+
+                   Haafaaafalflalylprrlsklgrllrlllglllll........lallv
+                   Ha + ++++ +l  +l++            ++l ++++++ ++++l++ +
+  2IC8:A|PDB   141 HALMHFSLMHILFNLLWW------------WYLGGAVekrlgsgkLIVIT 178  
+
+                   glSRvylgvHypsDVlaG....allGaliaalvllfvrrlld<-*
+                    +S +  g  y  + + G+  + l G++ a++ +++ r+ +d   
+  2IC8:A|PDB   179 LISALLSG--YVQQKFSGpwfgGLSGVVYALMGYVWLRGERD    218  
+
+Peptidase_A24: domain 1 of 1, from 102 to 207: score -30.1, E = 5.2
+                   *->lllllfLlllsvtDlrtreipn.rltlpllllgllfafylfsyaqeL
+                      ++ +++ +++       +++ ++ + l+l++ + +            
+  2IC8:A|PDB   102    IACVVVFIAM-------QILGDqEVMLWLAWPFDPT----------- 130  
+
+                   lll.pplsl.lyllgalavfllllilyrltitlyllgiPglGgGDvKLla
+                   l ++++ +++ +l+ + + ++l+ +l + ++   + +   lG+G   +++
+  2IC8:A|PDB   131 LKFeFWRYFtHALMHFSLMHILFNLLWWWYLGGAVEK--RLGSGKLIVIT 178  
+
+                   alglwlg..lppllfllvlllasvlggvyal<-*
+                    ++++l + +++   +    ++++ g+vyal   
+  2IC8:A|PDB   179 LISALLSgyVQQK--FSGPWFGGLSGVVYAL    207  
+
+DUF606: domain 1 of 1, from 106 to 213: score -84.1, E = 4.3
+                   *->vlylllailaG..alLalQaaiNsrLarqvgsplaAsliSflVGtil
+                      v+++++ il+ ++++L l  ++   L       ++ +l         
+  2IC8:A|PDB   106    VVFIAMQILGDqeVMLWLAWPFDPTLKFEFWRYFTHALMH------- 145  
+
+                   LlillllvrdllfgialeavgsapwWtWwiGGlLGaafvtlsvllaprlG
+                   +++  +l++ l             wW  ++GG+           +  rlG
+  2IC8:A|PDB   146 FSLMHILFNLL-------------WWW-YLGGA-----------VEKRLG 170  
+
+                   AaltialvvaGQLLmalliDhFGwfGvtvrpls...lgkiiGaaLllaG.
+                    + +i++++++ LL++ +          ++ +s++ +g++ G++ +l G 
+  2IC8:A|PDB   171 SGKLIVITLISALLSGYV----------QQKFSgpwFGGLSGVVYALMGy 210  
+
+                   vil<-*
+                   v+l   
+  2IC8:A|PDB   211 VWL    213  
+
+Ferric_reduct: domain 1 of 1, from 114 to 209: score -63.8, E = 9.5
+                   *->tGilaLADPvkIhtallplaliLlalrnnpLtwLtGsttln.ywpQf
+                      +G  +        ++l+           +p+ ++++    +++w  +
+  2IC8:A|PDB   114    LGDQE--------VMLWLA---------WPFDPTLK----FeFWR-Y 138  
+
+                   dtlirfHrwlGrvafllallHtiaylvndlpl.dye.llkefyngsgenp
+                    t   +H         ++l+H    l+n l++ ++++   +         
+  2IC8:A|PDB   139 FTHALMH---------FSLMH---ILFNLLWWwYLGgAVEKR-------- 168  
+
+                   tgylwlvkrpygitGvialvlllllaitSlpwfRRrgYElFlylHillav
+                                 G ++++ l+  ++++   +  ++   ++    l  v
+  2IC8:A|PDB   169 -----------LGSGKLIVITLISALLSGY--VQQKFSGPWFG--GLSGV 203  
+
+                   aflllv<-*
+                   ++ l     
+  2IC8:A|PDB   204 VYALMG    209  
+
+VMA21: domain 1 of 1, from 116 to 192: score -28.1, E = 8.6
+                   *->pasVikkL....................lfFtvlMivlPiltfFilk
+                      +++V+ +L  + +++ + +  +  ++  + F+++ i++ +l    l 
+  2IC8:A|PDB   116    DQEVMLWLawpfdptlkfefwryfthalMHFSLMHILFNLLWWWYLG 162  
+
+                   nyvfeglfglsrndattySGilAVvvvn.vVlagYiyvAf<-*
+                     v          +  + SG l V+ ++++ l gY+   f   
+  2IC8:A|PDB   163 GAV----------EKRLGSGKLIVITLIsALLSGYVQQKF    192  
+
+Rhomboid: domain 1 of 1, from 129 to 272: score 144.4, E = 9.8e-41
+                   *->lvqrgqlWRsliTsmFLHasGflHLlfNmlaLlffGiplErilGsvR
+                      + +++++WR ++T++++H+s ++H+lfN+l+++++G+++E++lGs++
+  2IC8:A|PDB   129    PTLKFEFWR-YFTHALMHFS-LMHILFNLLWWWYLGGAVEKRLGSGK 173  
+
+                   flllYllsGlaGgVlsllsylfspassapsvGASGAifGllGallvllpr
+                   +++++l+s+l++   ++++  fs+++   + G+SG++++l+G+++  + r
+  2IC8:A|PDB   174 LIVITLISALLS---GYVQQKFSGPW---FGGLSGVVYALMGYVWLRGER 217  
+
+                   nrilllpipgalllllliillnlllgfsllpgisnfagglaggaledggv
+                    +++     g++l+  lii++ ++++   +++ + f+          +++
+  2IC8:A|PDB   218 DPQS-----GIYLQRGLIIFALIWIV---AGWFDLFG----------MSM 249  
+
+                   awiAHlgGliaGlllgfillrrpr<-*
+                   a+ AH++Gl++Gl+++f+ ++ +    
+  2IC8:A|PDB   250 ANGAHIAGLAVGLAMAFVDSLNA-    272  
+
+5TM-5TMR_LYT: domain 1 of 1, from 130 to 235: score -41.6, E = 6.4
+                   *->skkhklvlilifglfsiilmyfGieiasneivsenwlttissngs..
+                      ++k  ++++    l+ + lm++ ++           l + +  g+ +
+  2IC8:A|PDB   130    TLKFEFWRYFTHALMHFSLMHILFNL----------LWWWYLGGAve 166  
+
+                   .......iantRavpiivaGL....lGGPivGiivGliaglhRyllfgGG
+                   ++ ++++++  + + + ++G+ ++++ GP+ G ++G++ +l  y    G 
+  2IC8:A|PDB   167 krlgsgkLIVITLISALLSGYvqqkFSGPWFGGLSGVVYALMGYVWLRGE 216  
+
+                   vtaiacaissiliGlisGlig<-*
+                    + +++ +     Gli++ ++   
+  2IC8:A|PDB   217 RDPQSGIYLQR--GLIIFALI    235  
+
+UPF0093: domain 1 of 1, from 139 to 242: score -102.7, E = 8
+                   *->lesYYLWfKafHlIsviaWMAGLFYLPRLFVYHAEaakkgeevdavL
+                      ++ +   f  +H+   + W     YL                 +av 
+  2IC8:A|PDB   139    FTHALMHFSLMHILFNLLWW---WYLG----------------GAV- 165  
+
+                   KKqyQvMEkkLlr..fImnPAMivTlIfGlllvfiepivlkSglWlhiKl
+                          Ek+L +++ I     + TlI +ll  ++      Sg W+    
+  2IC8:A|PDB   166 -------EKRLGSgkLI-----VITLISALLSGYVQQ--KFSGPWFGGLS 201  
+
+                   alVllLllyHfylarvrkdlAkGenrhsgrfYRvlNEaPTILMvvIVilv
+                    +V +L +y  +l r  +d   G     g            L + + i  
+  2IC8:A|PDB   202 GVVYALMGY-VWL-RGERDPQSGIYLQRG------------LIIFALIWI 237  
+
+                   VvKNNLPf<-*
+                   V+    +f   
+  2IC8:A|PDB   238 VAG---WF    242  
+
+Ctr: domain 1 of 1, from 144 to 272: score -69.2, E = 8.5
+                   *->MpMtFhfgkkettvLFkfWritslrn....ggmalSclaifllavly
+                        M+F+  ++ + +L+ +  ++ ++ + ++g+++++ l+ +ll+  +
+  2IC8:A|PDB   144    --MHFSLMHILFNLLWWWYLGGAVEKrlgsGKLIVITLISALLSGYV 188  
+
+                   Eglkffrrkllswqqkrlsyrsseepipepeaesegspskdsdsteplqs
+                   +  kf+++++   + +   y+ + ++  + e+++++ +            
+  2IC8:A|PDB   189 QQ-KFSGPWFGGLSGV--VYALMGYVWLRGERDPQSGIY----------- 224  
+
+                   lseqhiakaeeskhhepikkkpdddpkgkdskDslTclkakrevlrakat
+                                                                     
+  2IC8:A|PDB     - -------------------------------------------------- -    
+
+                   tyisrlfslshllqtlLyvlQvv.lsYlLMLifMTYNgwlflAVvlGagv
+                            ++l+ ++L ++ ++ ++ + M  +   Ng  +   ++G++ 
+  2IC8:A|PDB   225 -------LQRGLIIFALIWIVAGwFDLFGMSMA---NGAHIAGLAVGLAM 264  
+
+                   GyflFfaeplGyflfswklsrs<-*
+                                 ++  + +    
+  2IC8:A|PDB   265 --------------AFVDSLNA    272  
+
+DUF6: domain 1 of 1, from 159 to 270: score -38.0, E = 3.1
+                   *->liWalytvfskkllerispltftayrfliagilllilllfllrkppi
+                        W l++ + k+l +           +++ +   li +l+    +  
+  2IC8:A|PDB   159    --WYLGGAVEKRLGS---------GKLIVIT---LISALLSGYVQ-- 189  
+
+                   fallslkilallylglfgtalgyllyfya....lkyvsasnasvltslsP
+                    +++s   ++  ++g+++ al  + ++ +++++++ +  ++  ++++l+ 
+  2IC8:A|PDB   190 -QKFSGP-WFGGLSGVVY-ALMGYVWLRGerdpQSGIYLQRGLIIFALIW 236  
+
+                   vftlilsvllLgEkltlkqllGivlillGvllisl<-*
+                   +++  +  l+     +  +++G++++l+ +++ sl   
+  2IC8:A|PDB   237 IVAGWFD-LFGMSMANGAHIAGLAVGLAMAFVDSL    270  
+
+BphX: domain 1 of 1, from 173 to 254: score -94.1, E = 0.43
+                   *->MKRsYPiAtqtnqlRvFLiAVGIFYLlNLvGtLPflsa.gllslMYp
+                       K               Li++          tL ++ ++g + +  +
+  2IC8:A|PDB   173    -K---------------LIVI----------TLISALLsGYVQQKFS 193  
+
+                   GveLdvgtpvFkLLlDAWliVGLQLAAIGvVALwGARdPlRYlPALvPVV
+                   G       p F+ L+      G   A  G V L+G RdP+ +        
+  2IC8:A|PDB   194 G-------PWFGGLS------GVVYALMGYVWLRGERDPQSGI------- 223  
+
+                   iaTEvVdglWDlYSvvWsheAlwfgLtTLviHavwIawALvvwRaasera
+                               Y        l  gL+ ++   +wI+ +++ + ++s   
+  2IC8:A|PDB   224 ------------Y--------LQRGLIIFAL--IWIVAGWFDLFGMS--- 248  
+
+                   srdtaaiv<-*
+                       +++    
+  2IC8:A|PDB   249 --MANGAH    254  
+
+Abi: domain 1 of 1, from 173 to 265: score -42.4, E = 9.7
+                   *->llilllvllaplaEElfFRGilltalerrlkkrytlfgpllaiiiss
+                       li+++++ a l+      G++++ ++          gp++  + s+
+  2IC8:A|PDB   173    KLIVITLISALLS------GYVQQKFS----------GPWFGGL-SG 202  
+
+                   liFallHlanalelgll........liqpvlinwlqllytfllGlvlgll
+                   +++al+  ++     +++++++++ ++q        l++  l+ +v g+ 
+  2IC8:A|PDB   203 VVYALMGYVWL----RGerdpqsgiYLQR------GLIIFALIWIVAGWF 242  
+
+                   ylrrtgsLlapilvHalnNligfill<-*
+                    l   g  +++ ++H+++ ++g++++   
+  2IC8:A|PDB   243 DL--FG-MSMANGAHIAGLAVGLAMA    265  
+
+TrbC: domain 1 of 1, from 178 to 245: score -32.0, E = 8.4
+                   *->falPalAqaaggggdpvesvlenivtsLtGpiakaiavlaiiiaGfm
+                      +++ al ++              +++  +Gp+  +++ ++ + +G+ 
+  2IC8:A|PDB   178    TLISALLSG-------------YVQQKFSGPWFGGLSGVVYALMGYV 211  
+
+                   lmfGGrlsgfwralFlgv...viGiviiFgAssIvdti<-*
+                   ++  G+ +   +   ++++++ i  ++i+  + + d++   
+  2IC8:A|PDB   212 WLR-GERD--PQSG-IYLqrgLIIFALIWIVAGWFDLF    245  
+
+SPW: domain 1 of 1, from 220 to 272: score -19.1, E = 7.6
+                   *->lsglvlllGlyvivSPWIvPGfsataPGlvwnn..lIvGaavalLal
+                       sg  l  Gl + +  WIv G      G+   n+  I+G av+ La+
+  2IC8:A|PDB   220    QSGIYLQRGLIIFALIWIVAGWFDLF-GMSMANgaHIAGLAVG-LAM 264  
+
+                   gFasaleR<-*
+                    F   l +   
+  2IC8:A|PDB   265 AFVDSLNA    272  
+
+DUF1328: domain 1 of 1, from 230 to 268: score -34.5, E = 8.5
+                   *->LkWAiIFLiiALIAGvLGFGGIAGA.AAGIAKILFfvFlvlFvVsLv
+                          iIF++i ++AG +   G++ A+ A IA      +l   ++ ++
+  2IC8:A|PDB   230    ----IIFALIWIVAGWFDLFGMSMAnGAHIA------GLAVGLAMAF 266  
+
+                   lG<-*
+                   +    
+  2IC8:A|PDB   267 VD    268  
+
+//

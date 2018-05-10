@@ -1,0 +1,2748 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 Pfam_ls
+Sequence file:            channels/2bl2a.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: 2BL2:J|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ATP-synt_C      ATP synthase subunit C                  161.0    9.6e-46   2
+Gate            Nucleoside recognition                    1.2       0.58   1
+FUSC            Fusaric acid resistance protein conse   -56.3        1.6   1
+DUF1328         Protein of unknown function (DUF1328)   -31.0        3.2   1
+DUF6            Integral membrane protein DUF6          -40.7        4.3   1
+BioY            BioY family                             -78.7        4.6   1
+Thia_YuaJ       Thiamine transporter protein (Thia_Yu  -135.9        5.6   1
+DUF95           Integral membrane protein DUF95         -84.0        6.3   1
+ABC-3           ABC 3 transport family                 -223.5        7.6   1
+ETRAMP          Malarial early transcribed membrane p   -27.5        7.6   1
+DUF998          Protein of unknown function (DUF998)    -95.9          8   1
+SFT2            SFT2-like protein                       -83.1        8.1   1
+PSI_PSAK        Photosystem I psaG / psaK               -33.8        9.3   1
+VanZ            VanZ like family                        -52.1        9.9   1
+BofA            SigmaK-factor processing regulatory p   -54.1        9.9   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ABC-3             1/1       3   153 ..     1   267 []  -223.5      7.6
+FUSC              1/1       5   120 ..     1   120 []   -56.3      1.6
+BioY              1/1       6   129 ..     1   186 []   -78.7      4.6
+VanZ              1/1      13   112 ..     1   171 []   -52.1      9.9
+ATP-synt_C        1/2      14    79 ..     1    70 []    76.8  2.1e-20
+DUF95             1/1      17   153 ..     1   200 []   -84.0      6.3
+DUF6              1/1      17   145 ..     1   128 []   -40.7      4.3
+Thia_YuaJ         1/1      19   155 ..     1   182 []  -135.9      5.6
+DUF998            1/1      25   122 ..     1   167 []   -95.9        8
+PSI_PSAK          1/1      60   147 ..     1    98 []   -33.8      9.3
+SFT2              1/1      61   154 ..     1   124 []   -83.1      8.1
+Gate              1/1      64   154 ..     1   108 []     1.2     0.58
+BofA              1/1      67   121 ..     1    79 []   -54.1      9.9
+ETRAMP            1/1      84   155 ..     1    85 []   -27.5      7.6
+ATP-synt_C        2/2      90   155 ..     1    70 []    84.2  1.3e-22
+DUF1328           1/1      97   153 ..     1    48 []   -31.0      3.2
+
+Alignments of top-scoring domains:
+ABC-3: domain 1 of 1, from 3 to 153: score -223.5, E = 7.6
+                   *->qyefmqrAllasilvglacgiLGsFlVLRRqSLmGDAiSHavLpGVA
+                      +y ++q+                                    +G +
+  2BL2:J|PDB     3    DYLITQN------------------------------------GGMV 13   
+
+                   LAffLginkSleipliGAflfgliaAvaigylkrnsrlkeDtaiGIvfss
+                   +A +   +        +++++g+  A ++g+  + +              
+  2BL2:J|PDB    14 FAVLAMAT--------ATIFSGIGSAKGVGMTGEAA-------------- 41   
+
+                   flAlGlllislikgsnaaskvdLdhyLFGniLgisqqDliqiaiitaiiL
+                         ++++ ++ +            FG++L +++  l  + ++ ++++
+  2BL2:J|PDB    42 ------AALTTSQPEK-----------FGQALILQL--LPGTQGLYGFVI 72   
+
+                   lllllfwkeLllitFDpdlAkviGlpvnflkllL.liLlaltiVvalqaV
+                    +l++++          d++ v+Gl+  fl   L+++ ++l   +a   V
+  2BL2:J|PDB    73 AFLIFIN-------LGSDMSVVQGLN--FLGASLpIAFTGLFSGIAQGKV 113  
+
+                   GvILViAlLitPAatArl.ltkslesmlliAsaiGvvssvaGlllSYyfd
+                               Aa +++ l+k++e+             + G ++ + ++
+  2BL2:J|PDB   114 ------------AAAGIQiLAKKPEH------------ATKGIIFAAMVE 139  
+
+                   tatGpvIVLiatllFlisflfa<-*
+                   t         a+l F+isfl     
+  2BL2:J|PDB   140 T--------YAILGFVISFLLV    153  
+
+FUSC: domain 1 of 1, from 5 to 120: score -56.3, E = 1.6
+                   *->alaahadpaaAmrnGlRtaLaiLlggaFW.iysaWpsGgtavllaav
+                          ++ +   m++++   La+  ++ F++i+sa   G t  + aa 
+  2BL2:J|PDB     5    ---LITQNGG-MVFAV---LAMATATIFSgIGSAKGVGMTGEAAAAL 44   
+
+                   vcsLfaarPnPaqvalnfirGt..llAiplallvkfll...LPqidgFpl
+                   ++s      +  + +l+++ Gt++l++ ++a+l++  l++++  ++g+  
+  2BL2:J|PDB    45 TTS--QPEKFGQALILQLLPGTqgLYGFVIAFLIFINLgsdMSVVQGLNF 92   
+
+                   LclvLaPllalgalLglsrPksagiamgl<-*
+                   L ++L P+ ++g + g++  k a+ ++++   
+  2BL2:J|PDB    93 LGASL-PIAFTGLFSGIAQGKVAAAGIQI    120  
+
+BioY: domain 1 of 1, from 6 to 129: score -78.7, E = 4.6
+                   *->isiledflpikPVPlTlQtfgVlLaGllLGPklgaLsqLiYlllGal
+                      i+               Q++g                  +++ l  +
+  2BL2:J|PDB     6    IT---------------QNGG-----------------MVFAVLAMA 20   
+
+                   GlPvFAgfsGGiavflGPTgGYLlGFilAaflaGwlaerhRL.CtPwRkr
+                    + +F+g        +G++ G       +++   ++a    L+   + k+
+  2BL2:J|PDB    21 TATIFSG--------IGSAKG------VGMTGEAAAA----LtTSQPEKF 52   
+
+                   gRketlmllLaticLvGlgvIYllGivvLalflgldekvlss..davgaf
+                   g+     l L +  L G+   Y+   +v a+ + +    l+s+ + v+++
+  2BL2:J|PDB    53 GQ----ALILQL--LPGTQGLYG---FVIAFLIFIN---LGSdmSVVQGL 90   
+
+                   m.lgvilPtmviFAAtvLiFligdfvvkalvavllarritpal<-*
+                   + lg++lP     A t L   i+ + v a++ ++la +   a+   
+  2BL2:J|PDB    91 NfLGASLP----IAFTGLFSGIAQGKVAAAGIQILAKKPEHAT    129  
+
+VanZ: domain 1 of 1, from 13 to 112: score -52.1, E = 9.9
+                   *->lfivYli.lllwlvlFalilvlsawaalfvmvaevsavrsynLvPfk
+                      +f+v+ + +++ + ++++   ++++      ++++ a    +++ f 
+  2BL2:J|PDB    13    VFAVLAMaTATIFSGIGSAKGVGMT------GEAAAALTTSQPEKFG 53   
+
+                   airaftlltpfqlsekLetldelelidtfiekllNillFfPLGlllpvlf
+                     ++++ll++ q+                       l+ f  ++l++++ 
+  2BL2:J|PDB    54 QALILQLLPGTQG-----------------------LYGFVIAFLIFINL 80   
+
+                   krlrkrrasfltvlalglllsCCLliEvlQlflpgRyffdRvfdIdDvll
+                   ++                  s      v+Q+                  l
+  2BL2:J|PDB    81 GS------D----------MS------VVQG------------------L 90   
+
+                   NTlGallGylivflyrllkrrllrk<-*
+                   N+lGa l +    + +l+  +++ k   
+  2BL2:J|PDB    91 NFLGASLPIA---FTGLFSGIAQGK    112  
+
+ATP-synt_C: domain 1 of 2, from 14 to 79: score 76.8, E = 2.1e-20
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      +av++++ A++++++G++ G+G+ g+a+++ ++ qP    + f++++
+  2BL2:J|PDB    14    FAVLAMATATIFSGIGSAKGVGMTGEAAAALTTSQP----EKFGQAL 56   
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i + l +++++yg+viAfl++++   
+  2BL2:J|PDB    57 ILQLLPGTQGLYGFVIAFLIFIN    79   
+
+DUF95: domain 1 of 1, from 17 to 153: score -84.0, E = 6.3
+                   *->lalllFlvgillGyilvnsdpaliellllptylsefvnpaemYDPrd
+                      la+++  ++  +G   +  +  ++ ++l   +               
+  2BL2:J|PDB    17    LAMATATIFSGIGSAKGVGMTGEAAAALTTSQ--------------- 48   
+
+                   egglasgsehppalmflqIftNNlrVallafalGiillGlPgtlliLflN
+                               +  f+q ++  l         G  l G+ ++++++f+N
+  2BL2:J|PDB    49 ------------PEKFGQALILQLLPGT----QG--LYGF-VIAFLIFIN 79   
+
+                   GlilGavagllaneVggldpflLalalvlPHGilEipAii..lAgaaGlr
+                      lG   ++++       +f   l++ lP   +  +++++++A +   +
+  2BL2:J|PDB    80 ---LGSDMSVVQGL-----NF---LGASLP---IAFTGLFsgIAQG---K 112  
+
+                   lgwaliralfpgknrsRlqalkrggrralkllvgvlvvvvLLliAAfIEg
+                    + a i+ l+++ +     + +  g  ++ ++ + +++ + ++i+ ++  
+  2BL2:J|PDB   113 VAAAGIQILAKK-P-----EHATKGIIFAAMVET-YAI-LGFVISFLL-- 152  
+
+                   fiTPs<-*
+                       +   
+  2BL2:J|PDB   153 ----V    153  
+
+DUF6: domain 1 of 1, from 17 to 145: score -40.7, E = 4.3
+                   *->liWalytvfskkller...ispltftayrfl....iagilllilllf
+                      l++a++t+fs ++++++ ++   +++a+   ++++++    +++l +
+  2BL2:J|PDB    17    LAMATATIFSGIGSAKgvgMTGEAAAALTTSqpekFGQ---ALILQL 60   
+
+                   llrkppifallslk.ilallylglfgtalgyllyfyalkyvsasnasvlt
+                   l++ +        + ++++++  +f       +  ++l++++as    +t
+  2BL2:J|PDB    61 LPGTQ--------GlYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAFT 102  
+
+                   slsPvft....lilsvllLgEkltlkqllGivlillGvllisl<-*
+                    l   +++++ +  ++ +L  k+   +   i+ +++ ++ i+    
+  2BL2:J|PDB   103 GLFSGIAqgkvAAAGIQILAKKPEHATKGIIFAAMVETYAILG    145  
+
+Thia_YuaJ: domain 1 of 1, from 19 to 155: score -135.9, E = 5.6
+                   *->lvEiAifaAL............AmvLslIpllykmPqGGSisLgSMi
+                      ++ ++if+++++ ++ + +++ A +L     + k++q+  + L    
+  2BL2:J|PDB    19    MATATIFSGIgsakgvgmtgeaAAALTTSQ-PEKFGQALILQLL--- 61   
+
+                   PIfliAfRrGlkaGllaGflwGlLqlvlRlgdaygilhPvQvl......L
+                             ++   l Gf+  +L +   +  ++   ++vQ+l+  + +L
+  2BL2:J|PDB    62 ----------PGTQGLYGFVIAFLIF---INLGS-DMSVVQGLnflgasL 97   
+
+                   DYplAFmalGLAGlFakkvqkalaenkkkkalayiilGvliggflRyfcH
+                     p+AF+ l ++G+   kv                  ++ i ++++   H
+  2BL2:J|PDB    98 --PIAFTGL-FSGIAQGKV-----------------AAAGIQILAKKPEH 127  
+
+                   fIAGViFfGsYAPkGmspwlYSliyNGsymlpslllciivliiLlkklpr
+                      G+iF    A                +m+ ++++ + v+ +Ll+    
+  2BL2:J|PDB   128 ATKGIIF----A----------------AMVETYAILGFVISFLLV---- 153  
+
+                   lfl<-*
+                    ++   
+  2BL2:J|PDB   154 -LN    155  
+
+DUF998: domain 1 of 1, from 25 to 122: score -95.9, E = 8
+                   *->nPWFsfTkNALSDLGgigllsNGHPaapypWlyNygLIltGlLvily
+                                +S  G+++                +g+ ++++ ++ +
+  2BL2:J|PDB    25    ----------FSGIGSAK---------------GVGMTGEAAAALTT 46   
+
+                   sllliraaknKieniGsalliisglFLaLIGIFpEGtyPHtfVSiwFFIl
+                   s   +         +G+al+      L L      Gt       ++ F++
+  2BL2:J|PDB    47 SQPEK---------FGQALI------LQLL----PGTQ-----GLYGFVI 72   
+
+                   sfiamliyGigallarrkllGililalflaglivatFlvmifltslkkwp
+                   +f+ ++ +G  ++++    l++l+     a+l++a    + +l+s++   
+  2BL2:J|PDB    73 AFLIFINLGSDMSVVQG--LNFLG-----ASLPIA----FTGLFSGI--- 108  
+
+                   GvAvpEliGIvvIliwviil<-*
+                         + G v+ +  +i++   
+  2BL2:J|PDB   109 ------AQGKVAAAGIQILA    122  
+
+PSI_PSAK: domain 1 of 1, from 60 to 147: score -33.8, E = 9.3
+                   *->alstnlVisvsitcnLfagrFGkyaiqrrnaNFDgtglPiangatyF
+                      +l  ++   ++  ++L+ + +G   ++++++NF g++lPia      
+  2BL2:J|PDB    60    LLPGTQGLYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAF----- 101  
+
+                   eagdeRAKenssilksNDpaGFnLvdvLAtg..........SlGHilGag
+                                  ++++ G+  + v+A g +   ++++++   i+ a+
+  2BL2:J|PDB   102 ---------------TGLFSGIAQGKVAAAGiqilakkpehATKGIIFAA 136  
+
+                   ivlGLsnlGal<-*
+                    v + + lG     
+  2BL2:J|PDB   137 MVETYAILGFV    147  
+
+SFT2: domain 1 of 1, from 61 to 154: score -83.1, E = 8.1
+                   *->LSrtqRlvgFviClgagilcflLstfllpvlllkprkFallyTlGsl
+                      L  tq l+gFvi +++   ++ L++ + +v          l+ lG+ 
+  2BL2:J|PDB    61    LPGTQGLYGFVIAFLI---FINLGSDMSVVQ--------GLNFLGAS 96   
+
+                   lallSfaFLmGPvkqlkhMfektRlpatllYllslllTLyaaLwlkstlL
+                   l ++ ++   G ++q k              +++  + ++a    + t  
+  2BL2:J|PDB    97 LPIAFTGLFSG-IAQGK--------------VAAAGIQILAKKPEHATKG 131  
+
+                   tllfailQilAlvwYsLSYiPgGrdgv<-*
+                    + +a  +  A++ +++S++     ++   
+  2BL2:J|PDB   132 IIFAAMVETYAILGFVISFL----LVL    154  
+
+Gate: domain 1 of 1, from 64 to 154: score 1.2, E = 0.58
+                   *->llrvlpiillfsvlisiLsnipedlGllealskllgPlllrllfgl.
+                         + +++++f+++i++     +d          ++ +   l   l+
+  2BL2:J|PDB    64    TQGLYGFVIAFLIFINLG----SD----------MSVV-QGLN-FLg 94   
+
+                   pepgnaalalllgftagesalasliillgleaseleviftllsasciav.
+                   ++ ++a+++l+ g++ g +a+a++ il ++   e ++    + a+++ + 
+  2BL2:J|PDB    95 ASLPIAFTGLFSGIAQGKVAAAGIQILAKK--PEHATKGIIF-AAMVETy 141  
+
+                   fllpvivsilGik<-*
+                   ++l++++s+l +    
+  2BL2:J|PDB   142 AILGFVISFLLVL    154  
+
+BofA: domain 1 of 1, from 67 to 121: score -54.1, E = 9.9
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                      + G ++++li   l+  +         sV+ ++     N+ Ga++ i
+  2BL2:J|PDB    67    LYGFVIAFLIFINLGSDM---------SVVQGL-----NFLGASLPI 99   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                         +T l sGi    G ++ + i+   +l   
+  2BL2:J|PDB   100 A-----FTGLFSGI--AQGKVAAAGIQ---IL    121  
+
+ETRAMP: domain 1 of 1, from 84 to 155: score -27.5, E = 7.6
+                   *->MKlsKiLyffafLLAinvlvPGysnnyveakpanskkvvkkkltdle
+                      M +   L f+ + L i +   G++ + +++k a+       ++  l+
+  2BL2:J|PDB    84    MSVVQGLNFLGASLPIAFT--GLFSGIAQGKVAA------AGIQILA 122  
+
+                   KKlekkknnKiiiIStlasalALaliGtgvGvGihykk<-*
+                   KK       K ii+++ + + A+  +G  + + +   +   
+  2BL2:J|PDB   123 KK--PEHATKGIIFAAMVETYAI--LGFVISF-LLVLN    155  
+
+ATP-synt_C: domain 2 of 2, from 90 to 155: score 84.2, E = 1.3e-22
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      ++++GA+l i++++l++Gi++G+v++a+i+++A++P    ++ tk+i
+  2BL2:J|PDB    90    LNFLGASLPIAFTGLFSGIAQGKVAAAGIQILAKKP----EHATKGI 132  
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i++a+vE++ai g+vi+fll+ +   
+  2BL2:J|PDB   133 IFAAMVETYAILGFVISFLLVLN    155  
+
+DUF1328: domain 1 of 1, from 97 to 153: score -31.0, E = 3.2
+                   *->LkWAiIFLiiALIAGvLGFGGIA...GAAAGI...AK........IL
+                      L  A++ L          F+GIA+++ AAAGI+  AK++++ +++I+
+  2BL2:J|PDB    97    LPIAFTGL----------FSGIAqgkVAAAGIqilAKkpehatkgII 133  
+
+                   Ffv.....FlvlFvVsLvlG<-*
+                   F +  ++ ++++Fv+s++l+   
+  2BL2:J|PDB   134 FAAmvetyAILGFVISFLLV    153  
+
+//
+
+Query sequence: 2BL2:I|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ATP-synt_C      ATP synthase subunit C                  161.0    9.6e-46   2
+Gate            Nucleoside recognition                    1.2       0.58   1
+FUSC            Fusaric acid resistance protein conse   -56.3        1.6   1
+DUF1328         Protein of unknown function (DUF1328)   -31.0        3.2   1
+DUF6            Integral membrane protein DUF6          -40.7        4.3   1
+BioY            BioY family                             -78.7        4.6   1
+Thia_YuaJ       Thiamine transporter protein (Thia_Yu  -135.9        5.6   1
+DUF95           Integral membrane protein DUF95         -84.0        6.3   1
+ABC-3           ABC 3 transport family                 -223.5        7.6   1
+ETRAMP          Malarial early transcribed membrane p   -27.5        7.6   1
+DUF998          Protein of unknown function (DUF998)    -95.9          8   1
+SFT2            SFT2-like protein                       -83.1        8.1   1
+PSI_PSAK        Photosystem I psaG / psaK               -33.8        9.3   1
+VanZ            VanZ like family                        -52.1        9.9   1
+BofA            SigmaK-factor processing regulatory p   -54.1        9.9   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ABC-3             1/1       3   153 ..     1   267 []  -223.5      7.6
+FUSC              1/1       5   120 ..     1   120 []   -56.3      1.6
+BioY              1/1       6   129 ..     1   186 []   -78.7      4.6
+VanZ              1/1      13   112 ..     1   171 []   -52.1      9.9
+ATP-synt_C        1/2      14    79 ..     1    70 []    76.8  2.1e-20
+DUF6              1/1      17   145 ..     1   128 []   -40.7      4.3
+DUF95             1/1      17   153 ..     1   200 []   -84.0      6.3
+Thia_YuaJ         1/1      19   155 ..     1   182 []  -135.9      5.6
+DUF998            1/1      25   122 ..     1   167 []   -95.9        8
+PSI_PSAK          1/1      60   147 ..     1    98 []   -33.8      9.3
+SFT2              1/1      61   154 ..     1   124 []   -83.1      8.1
+Gate              1/1      64   154 ..     1   108 []     1.2     0.58
+BofA              1/1      67   121 ..     1    79 []   -54.1      9.9
+ETRAMP            1/1      84   155 ..     1    85 []   -27.5      7.6
+ATP-synt_C        2/2      90   155 ..     1    70 []    84.2  1.3e-22
+DUF1328           1/1      97   153 ..     1    48 []   -31.0      3.2
+
+Alignments of top-scoring domains:
+ABC-3: domain 1 of 1, from 3 to 153: score -223.5, E = 7.6
+                   *->qyefmqrAllasilvglacgiLGsFlVLRRqSLmGDAiSHavLpGVA
+                      +y ++q+                                    +G +
+  2BL2:I|PDB     3    DYLITQN------------------------------------GGMV 13   
+
+                   LAffLginkSleipliGAflfgliaAvaigylkrnsrlkeDtaiGIvfss
+                   +A +   +        +++++g+  A ++g+  + +              
+  2BL2:I|PDB    14 FAVLAMAT--------ATIFSGIGSAKGVGMTGEAA-------------- 41   
+
+                   flAlGlllislikgsnaaskvdLdhyLFGniLgisqqDliqiaiitaiiL
+                         ++++ ++ +            FG++L +++  l  + ++ ++++
+  2BL2:I|PDB    42 ------AALTTSQPEK-----------FGQALILQL--LPGTQGLYGFVI 72   
+
+                   lllllfwkeLllitFDpdlAkviGlpvnflkllL.liLlaltiVvalqaV
+                    +l++++          d++ v+Gl+  fl   L+++ ++l   +a   V
+  2BL2:I|PDB    73 AFLIFIN-------LGSDMSVVQGLN--FLGASLpIAFTGLFSGIAQGKV 113  
+
+                   GvILViAlLitPAatArl.ltkslesmlliAsaiGvvssvaGlllSYyfd
+                               Aa +++ l+k++e+             + G ++ + ++
+  2BL2:I|PDB   114 ------------AAAGIQiLAKKPEH------------ATKGIIFAAMVE 139  
+
+                   tatGpvIVLiatllFlisflfa<-*
+                   t         a+l F+isfl     
+  2BL2:I|PDB   140 T--------YAILGFVISFLLV    153  
+
+FUSC: domain 1 of 1, from 5 to 120: score -56.3, E = 1.6
+                   *->alaahadpaaAmrnGlRtaLaiLlggaFW.iysaWpsGgtavllaav
+                          ++ +   m++++   La+  ++ F++i+sa   G t  + aa 
+  2BL2:I|PDB     5    ---LITQNGG-MVFAV---LAMATATIFSgIGSAKGVGMTGEAAAAL 44   
+
+                   vcsLfaarPnPaqvalnfirGt..llAiplallvkfll...LPqidgFpl
+                   ++s      +  + +l+++ Gt++l++ ++a+l++  l++++  ++g+  
+  2BL2:I|PDB    45 TTS--QPEKFGQALILQLLPGTqgLYGFVIAFLIFINLgsdMSVVQGLNF 92   
+
+                   LclvLaPllalgalLglsrPksagiamgl<-*
+                   L ++L P+ ++g + g++  k a+ ++++   
+  2BL2:I|PDB    93 LGASL-PIAFTGLFSGIAQGKVAAAGIQI    120  
+
+BioY: domain 1 of 1, from 6 to 129: score -78.7, E = 4.6
+                   *->isiledflpikPVPlTlQtfgVlLaGllLGPklgaLsqLiYlllGal
+                      i+               Q++g                  +++ l  +
+  2BL2:I|PDB     6    IT---------------QNGG-----------------MVFAVLAMA 20   
+
+                   GlPvFAgfsGGiavflGPTgGYLlGFilAaflaGwlaerhRL.CtPwRkr
+                    + +F+g        +G++ G       +++   ++a    L+   + k+
+  2BL2:I|PDB    21 TATIFSG--------IGSAKG------VGMTGEAAAA----LtTSQPEKF 52   
+
+                   gRketlmllLaticLvGlgvIYllGivvLalflgldekvlss..davgaf
+                   g+     l L +  L G+   Y+   +v a+ + +    l+s+ + v+++
+  2BL2:I|PDB    53 GQ----ALILQL--LPGTQGLYG---FVIAFLIFIN---LGSdmSVVQGL 90   
+
+                   m.lgvilPtmviFAAtvLiFligdfvvkalvavllarritpal<-*
+                   + lg++lP     A t L   i+ + v a++ ++la +   a+   
+  2BL2:I|PDB    91 NfLGASLP----IAFTGLFSGIAQGKVAAAGIQILAKKPEHAT    129  
+
+VanZ: domain 1 of 1, from 13 to 112: score -52.1, E = 9.9
+                   *->lfivYli.lllwlvlFalilvlsawaalfvmvaevsavrsynLvPfk
+                      +f+v+ + +++ + ++++   ++++      ++++ a    +++ f 
+  2BL2:I|PDB    13    VFAVLAMaTATIFSGIGSAKGVGMT------GEAAAALTTSQPEKFG 53   
+
+                   airaftlltpfqlsekLetldelelidtfiekllNillFfPLGlllpvlf
+                     ++++ll++ q+                       l+ f  ++l++++ 
+  2BL2:I|PDB    54 QALILQLLPGTQG-----------------------LYGFVIAFLIFINL 80   
+
+                   krlrkrrasfltvlalglllsCCLliEvlQlflpgRyffdRvfdIdDvll
+                   ++                  s      v+Q+                  l
+  2BL2:I|PDB    81 GS------D----------MS------VVQG------------------L 90   
+
+                   NTlGallGylivflyrllkrrllrk<-*
+                   N+lGa l +    + +l+  +++ k   
+  2BL2:I|PDB    91 NFLGASLPIA---FTGLFSGIAQGK    112  
+
+ATP-synt_C: domain 1 of 2, from 14 to 79: score 76.8, E = 2.1e-20
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      +av++++ A++++++G++ G+G+ g+a+++ ++ qP    + f++++
+  2BL2:I|PDB    14    FAVLAMATATIFSGIGSAKGVGMTGEAAAALTTSQP----EKFGQAL 56   
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i + l +++++yg+viAfl++++   
+  2BL2:I|PDB    57 ILQLLPGTQGLYGFVIAFLIFIN    79   
+
+DUF6: domain 1 of 1, from 17 to 145: score -40.7, E = 4.3
+                   *->liWalytvfskkller...ispltftayrfl....iagilllilllf
+                      l++a++t+fs ++++++ ++   +++a+   ++++++    +++l +
+  2BL2:I|PDB    17    LAMATATIFSGIGSAKgvgMTGEAAAALTTSqpekFGQ---ALILQL 60   
+
+                   llrkppifallslk.ilallylglfgtalgyllyfyalkyvsasnasvlt
+                   l++ +        + ++++++  +f       +  ++l++++as    +t
+  2BL2:I|PDB    61 LPGTQ--------GlYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAFT 102  
+
+                   slsPvft....lilsvllLgEkltlkqllGivlillGvllisl<-*
+                    l   +++++ +  ++ +L  k+   +   i+ +++ ++ i+    
+  2BL2:I|PDB   103 GLFSGIAqgkvAAAGIQILAKKPEHATKGIIFAAMVETYAILG    145  
+
+DUF95: domain 1 of 1, from 17 to 153: score -84.0, E = 6.3
+                   *->lalllFlvgillGyilvnsdpaliellllptylsefvnpaemYDPrd
+                      la+++  ++  +G   +  +  ++ ++l   +               
+  2BL2:I|PDB    17    LAMATATIFSGIGSAKGVGMTGEAAAALTTSQ--------------- 48   
+
+                   egglasgsehppalmflqIftNNlrVallafalGiillGlPgtlliLflN
+                               +  f+q ++  l         G  l G+ ++++++f+N
+  2BL2:I|PDB    49 ------------PEKFGQALILQLLPGT----QG--LYGF-VIAFLIFIN 79   
+
+                   GlilGavagllaneVggldpflLalalvlPHGilEipAii..lAgaaGlr
+                      lG   ++++       +f   l++ lP   +  +++++++A +   +
+  2BL2:I|PDB    80 ---LGSDMSVVQGL-----NF---LGASLP---IAFTGLFsgIAQG---K 112  
+
+                   lgwaliralfpgknrsRlqalkrggrralkllvgvlvvvvLLliAAfIEg
+                    + a i+ l+++ +     + +  g  ++ ++ + +++ + ++i+ ++  
+  2BL2:I|PDB   113 VAAAGIQILAKK-P-----EHATKGIIFAAMVET-YAI-LGFVISFLL-- 152  
+
+                   fiTPs<-*
+                       +   
+  2BL2:I|PDB   153 ----V    153  
+
+Thia_YuaJ: domain 1 of 1, from 19 to 155: score -135.9, E = 5.6
+                   *->lvEiAifaAL............AmvLslIpllykmPqGGSisLgSMi
+                      ++ ++if+++++ ++ + +++ A +L     + k++q+  + L    
+  2BL2:I|PDB    19    MATATIFSGIgsakgvgmtgeaAAALTTSQ-PEKFGQALILQLL--- 61   
+
+                   PIfliAfRrGlkaGllaGflwGlLqlvlRlgdaygilhPvQvl......L
+                             ++   l Gf+  +L +   +  ++   ++vQ+l+  + +L
+  2BL2:I|PDB    62 ----------PGTQGLYGFVIAFLIF---INLGS-DMSVVQGLnflgasL 97   
+
+                   DYplAFmalGLAGlFakkvqkalaenkkkkalayiilGvliggflRyfcH
+                     p+AF+ l ++G+   kv                  ++ i ++++   H
+  2BL2:I|PDB    98 --PIAFTGL-FSGIAQGKV-----------------AAAGIQILAKKPEH 127  
+
+                   fIAGViFfGsYAPkGmspwlYSliyNGsymlpslllciivliiLlkklpr
+                      G+iF    A                +m+ ++++ + v+ +Ll+    
+  2BL2:I|PDB   128 ATKGIIF----A----------------AMVETYAILGFVISFLLV---- 153  
+
+                   lfl<-*
+                    ++   
+  2BL2:I|PDB   154 -LN    155  
+
+DUF998: domain 1 of 1, from 25 to 122: score -95.9, E = 8
+                   *->nPWFsfTkNALSDLGgigllsNGHPaapypWlyNygLIltGlLvily
+                                +S  G+++                +g+ ++++ ++ +
+  2BL2:I|PDB    25    ----------FSGIGSAK---------------GVGMTGEAAAALTT 46   
+
+                   sllliraaknKieniGsalliisglFLaLIGIFpEGtyPHtfVSiwFFIl
+                   s   +         +G+al+      L L      Gt       ++ F++
+  2BL2:I|PDB    47 SQPEK---------FGQALI------LQLL----PGTQ-----GLYGFVI 72   
+
+                   sfiamliyGigallarrkllGililalflaglivatFlvmifltslkkwp
+                   +f+ ++ +G  ++++    l++l+     a+l++a    + +l+s++   
+  2BL2:I|PDB    73 AFLIFINLGSDMSVVQG--LNFLG-----ASLPIA----FTGLFSGI--- 108  
+
+                   GvAvpEliGIvvIliwviil<-*
+                         + G v+ +  +i++   
+  2BL2:I|PDB   109 ------AQGKVAAAGIQILA    122  
+
+PSI_PSAK: domain 1 of 1, from 60 to 147: score -33.8, E = 9.3
+                   *->alstnlVisvsitcnLfagrFGkyaiqrrnaNFDgtglPiangatyF
+                      +l  ++   ++  ++L+ + +G   ++++++NF g++lPia      
+  2BL2:I|PDB    60    LLPGTQGLYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAF----- 101  
+
+                   eagdeRAKenssilksNDpaGFnLvdvLAtg..........SlGHilGag
+                                  ++++ G+  + v+A g +   ++++++   i+ a+
+  2BL2:I|PDB   102 ---------------TGLFSGIAQGKVAAAGiqilakkpehATKGIIFAA 136  
+
+                   ivlGLsnlGal<-*
+                    v + + lG     
+  2BL2:I|PDB   137 MVETYAILGFV    147  
+
+SFT2: domain 1 of 1, from 61 to 154: score -83.1, E = 8.1
+                   *->LSrtqRlvgFviClgagilcflLstfllpvlllkprkFallyTlGsl
+                      L  tq l+gFvi +++   ++ L++ + +v          l+ lG+ 
+  2BL2:I|PDB    61    LPGTQGLYGFVIAFLI---FINLGSDMSVVQ--------GLNFLGAS 96   
+
+                   lallSfaFLmGPvkqlkhMfektRlpatllYllslllTLyaaLwlkstlL
+                   l ++ ++   G ++q k              +++  + ++a    + t  
+  2BL2:I|PDB    97 LPIAFTGLFSG-IAQGK--------------VAAAGIQILAKKPEHATKG 131  
+
+                   tllfailQilAlvwYsLSYiPgGrdgv<-*
+                    + +a  +  A++ +++S++     ++   
+  2BL2:I|PDB   132 IIFAAMVETYAILGFVISFL----LVL    154  
+
+Gate: domain 1 of 1, from 64 to 154: score 1.2, E = 0.58
+                   *->llrvlpiillfsvlisiLsnipedlGllealskllgPlllrllfgl.
+                         + +++++f+++i++     +d          ++ +   l   l+
+  2BL2:I|PDB    64    TQGLYGFVIAFLIFINLG----SD----------MSVV-QGLN-FLg 94   
+
+                   pepgnaalalllgftagesalasliillgleaseleviftllsasciav.
+                   ++ ++a+++l+ g++ g +a+a++ il ++   e ++    + a+++ + 
+  2BL2:I|PDB    95 ASLPIAFTGLFSGIAQGKVAAAGIQILAKK--PEHATKGIIF-AAMVETy 141  
+
+                   fllpvivsilGik<-*
+                   ++l++++s+l +    
+  2BL2:I|PDB   142 AILGFVISFLLVL    154  
+
+BofA: domain 1 of 1, from 67 to 121: score -54.1, E = 9.9
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                      + G ++++li   l+  +         sV+ ++     N+ Ga++ i
+  2BL2:I|PDB    67    LYGFVIAFLIFINLGSDM---------SVVQGL-----NFLGASLPI 99   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                         +T l sGi    G ++ + i+   +l   
+  2BL2:I|PDB   100 A-----FTGLFSGI--AQGKVAAAGIQ---IL    121  
+
+ETRAMP: domain 1 of 1, from 84 to 155: score -27.5, E = 7.6
+                   *->MKlsKiLyffafLLAinvlvPGysnnyveakpanskkvvkkkltdle
+                      M +   L f+ + L i +   G++ + +++k a+       ++  l+
+  2BL2:I|PDB    84    MSVVQGLNFLGASLPIAFT--GLFSGIAQGKVAA------AGIQILA 122  
+
+                   KKlekkknnKiiiIStlasalALaliGtgvGvGihykk<-*
+                   KK       K ii+++ + + A+  +G  + + +   +   
+  2BL2:I|PDB   123 KK--PEHATKGIIFAAMVETYAI--LGFVISF-LLVLN    155  
+
+ATP-synt_C: domain 2 of 2, from 90 to 155: score 84.2, E = 1.3e-22
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      ++++GA+l i++++l++Gi++G+v++a+i+++A++P    ++ tk+i
+  2BL2:I|PDB    90    LNFLGASLPIAFTGLFSGIAQGKVAAAGIQILAKKP----EHATKGI 132  
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i++a+vE++ai g+vi+fll+ +   
+  2BL2:I|PDB   133 IFAAMVETYAILGFVISFLLVLN    155  
+
+DUF1328: domain 1 of 1, from 97 to 153: score -31.0, E = 3.2
+                   *->LkWAiIFLiiALIAGvLGFGGIA...GAAAGI...AK........IL
+                      L  A++ L          F+GIA+++ AAAGI+  AK++++ +++I+
+  2BL2:I|PDB    97    LPIAFTGL----------FSGIAqgkVAAAGIqilAKkpehatkgII 133  
+
+                   Ffv.....FlvlFvVsLvlG<-*
+                   F +  ++ ++++Fv+s++l+   
+  2BL2:I|PDB   134 FAAmvetyAILGFVISFLLV    153  
+
+//
+
+Query sequence: 2BL2:H|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ATP-synt_C      ATP synthase subunit C                  161.0    9.6e-46   2
+Gate            Nucleoside recognition                    1.2       0.58   1
+FUSC            Fusaric acid resistance protein conse   -56.3        1.6   1
+DUF1328         Protein of unknown function (DUF1328)   -31.0        3.2   1
+DUF6            Integral membrane protein DUF6          -40.7        4.3   1
+BioY            BioY family                             -78.7        4.6   1
+Thia_YuaJ       Thiamine transporter protein (Thia_Yu  -135.9        5.6   1
+DUF95           Integral membrane protein DUF95         -84.0        6.3   1
+ABC-3           ABC 3 transport family                 -223.5        7.6   1
+ETRAMP          Malarial early transcribed membrane p   -27.5        7.6   1
+DUF998          Protein of unknown function (DUF998)    -95.9          8   1
+SFT2            SFT2-like protein                       -83.1        8.1   1
+PSI_PSAK        Photosystem I psaG / psaK               -33.8        9.3   1
+VanZ            VanZ like family                        -52.1        9.9   1
+BofA            SigmaK-factor processing regulatory p   -54.1        9.9   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ABC-3             1/1       3   153 ..     1   267 []  -223.5      7.6
+FUSC              1/1       5   120 ..     1   120 []   -56.3      1.6
+BioY              1/1       6   129 ..     1   186 []   -78.7      4.6
+VanZ              1/1      13   112 ..     1   171 []   -52.1      9.9
+ATP-synt_C        1/2      14    79 ..     1    70 []    76.8  2.1e-20
+DUF6              1/1      17   145 ..     1   128 []   -40.7      4.3
+DUF95             1/1      17   153 ..     1   200 []   -84.0      6.3
+Thia_YuaJ         1/1      19   155 ..     1   182 []  -135.9      5.6
+DUF998            1/1      25   122 ..     1   167 []   -95.9        8
+PSI_PSAK          1/1      60   147 ..     1    98 []   -33.8      9.3
+SFT2              1/1      61   154 ..     1   124 []   -83.1      8.1
+Gate              1/1      64   154 ..     1   108 []     1.2     0.58
+BofA              1/1      67   121 ..     1    79 []   -54.1      9.9
+ETRAMP            1/1      84   155 ..     1    85 []   -27.5      7.6
+ATP-synt_C        2/2      90   155 ..     1    70 []    84.2  1.3e-22
+DUF1328           1/1      97   153 ..     1    48 []   -31.0      3.2
+
+Alignments of top-scoring domains:
+ABC-3: domain 1 of 1, from 3 to 153: score -223.5, E = 7.6
+                   *->qyefmqrAllasilvglacgiLGsFlVLRRqSLmGDAiSHavLpGVA
+                      +y ++q+                                    +G +
+  2BL2:H|PDB     3    DYLITQN------------------------------------GGMV 13   
+
+                   LAffLginkSleipliGAflfgliaAvaigylkrnsrlkeDtaiGIvfss
+                   +A +   +        +++++g+  A ++g+  + +              
+  2BL2:H|PDB    14 FAVLAMAT--------ATIFSGIGSAKGVGMTGEAA-------------- 41   
+
+                   flAlGlllislikgsnaaskvdLdhyLFGniLgisqqDliqiaiitaiiL
+                         ++++ ++ +            FG++L +++  l  + ++ ++++
+  2BL2:H|PDB    42 ------AALTTSQPEK-----------FGQALILQL--LPGTQGLYGFVI 72   
+
+                   lllllfwkeLllitFDpdlAkviGlpvnflkllL.liLlaltiVvalqaV
+                    +l++++          d++ v+Gl+  fl   L+++ ++l   +a   V
+  2BL2:H|PDB    73 AFLIFIN-------LGSDMSVVQGLN--FLGASLpIAFTGLFSGIAQGKV 113  
+
+                   GvILViAlLitPAatArl.ltkslesmlliAsaiGvvssvaGlllSYyfd
+                               Aa +++ l+k++e+             + G ++ + ++
+  2BL2:H|PDB   114 ------------AAAGIQiLAKKPEH------------ATKGIIFAAMVE 139  
+
+                   tatGpvIVLiatllFlisflfa<-*
+                   t         a+l F+isfl     
+  2BL2:H|PDB   140 T--------YAILGFVISFLLV    153  
+
+FUSC: domain 1 of 1, from 5 to 120: score -56.3, E = 1.6
+                   *->alaahadpaaAmrnGlRtaLaiLlggaFW.iysaWpsGgtavllaav
+                          ++ +   m++++   La+  ++ F++i+sa   G t  + aa 
+  2BL2:H|PDB     5    ---LITQNGG-MVFAV---LAMATATIFSgIGSAKGVGMTGEAAAAL 44   
+
+                   vcsLfaarPnPaqvalnfirGt..llAiplallvkfll...LPqidgFpl
+                   ++s      +  + +l+++ Gt++l++ ++a+l++  l++++  ++g+  
+  2BL2:H|PDB    45 TTS--QPEKFGQALILQLLPGTqgLYGFVIAFLIFINLgsdMSVVQGLNF 92   
+
+                   LclvLaPllalgalLglsrPksagiamgl<-*
+                   L ++L P+ ++g + g++  k a+ ++++   
+  2BL2:H|PDB    93 LGASL-PIAFTGLFSGIAQGKVAAAGIQI    120  
+
+BioY: domain 1 of 1, from 6 to 129: score -78.7, E = 4.6
+                   *->isiledflpikPVPlTlQtfgVlLaGllLGPklgaLsqLiYlllGal
+                      i+               Q++g                  +++ l  +
+  2BL2:H|PDB     6    IT---------------QNGG-----------------MVFAVLAMA 20   
+
+                   GlPvFAgfsGGiavflGPTgGYLlGFilAaflaGwlaerhRL.CtPwRkr
+                    + +F+g        +G++ G       +++   ++a    L+   + k+
+  2BL2:H|PDB    21 TATIFSG--------IGSAKG------VGMTGEAAAA----LtTSQPEKF 52   
+
+                   gRketlmllLaticLvGlgvIYllGivvLalflgldekvlss..davgaf
+                   g+     l L +  L G+   Y+   +v a+ + +    l+s+ + v+++
+  2BL2:H|PDB    53 GQ----ALILQL--LPGTQGLYG---FVIAFLIFIN---LGSdmSVVQGL 90   
+
+                   m.lgvilPtmviFAAtvLiFligdfvvkalvavllarritpal<-*
+                   + lg++lP     A t L   i+ + v a++ ++la +   a+   
+  2BL2:H|PDB    91 NfLGASLP----IAFTGLFSGIAQGKVAAAGIQILAKKPEHAT    129  
+
+VanZ: domain 1 of 1, from 13 to 112: score -52.1, E = 9.9
+                   *->lfivYli.lllwlvlFalilvlsawaalfvmvaevsavrsynLvPfk
+                      +f+v+ + +++ + ++++   ++++      ++++ a    +++ f 
+  2BL2:H|PDB    13    VFAVLAMaTATIFSGIGSAKGVGMT------GEAAAALTTSQPEKFG 53   
+
+                   airaftlltpfqlsekLetldelelidtfiekllNillFfPLGlllpvlf
+                     ++++ll++ q+                       l+ f  ++l++++ 
+  2BL2:H|PDB    54 QALILQLLPGTQG-----------------------LYGFVIAFLIFINL 80   
+
+                   krlrkrrasfltvlalglllsCCLliEvlQlflpgRyffdRvfdIdDvll
+                   ++                  s      v+Q+                  l
+  2BL2:H|PDB    81 GS------D----------MS------VVQG------------------L 90   
+
+                   NTlGallGylivflyrllkrrllrk<-*
+                   N+lGa l +    + +l+  +++ k   
+  2BL2:H|PDB    91 NFLGASLPIA---FTGLFSGIAQGK    112  
+
+ATP-synt_C: domain 1 of 2, from 14 to 79: score 76.8, E = 2.1e-20
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      +av++++ A++++++G++ G+G+ g+a+++ ++ qP    + f++++
+  2BL2:H|PDB    14    FAVLAMATATIFSGIGSAKGVGMTGEAAAALTTSQP----EKFGQAL 56   
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i + l +++++yg+viAfl++++   
+  2BL2:H|PDB    57 ILQLLPGTQGLYGFVIAFLIFIN    79   
+
+DUF6: domain 1 of 1, from 17 to 145: score -40.7, E = 4.3
+                   *->liWalytvfskkller...ispltftayrfl....iagilllilllf
+                      l++a++t+fs ++++++ ++   +++a+   ++++++    +++l +
+  2BL2:H|PDB    17    LAMATATIFSGIGSAKgvgMTGEAAAALTTSqpekFGQ---ALILQL 60   
+
+                   llrkppifallslk.ilallylglfgtalgyllyfyalkyvsasnasvlt
+                   l++ +        + ++++++  +f       +  ++l++++as    +t
+  2BL2:H|PDB    61 LPGTQ--------GlYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAFT 102  
+
+                   slsPvft....lilsvllLgEkltlkqllGivlillGvllisl<-*
+                    l   +++++ +  ++ +L  k+   +   i+ +++ ++ i+    
+  2BL2:H|PDB   103 GLFSGIAqgkvAAAGIQILAKKPEHATKGIIFAAMVETYAILG    145  
+
+DUF95: domain 1 of 1, from 17 to 153: score -84.0, E = 6.3
+                   *->lalllFlvgillGyilvnsdpaliellllptylsefvnpaemYDPrd
+                      la+++  ++  +G   +  +  ++ ++l   +               
+  2BL2:H|PDB    17    LAMATATIFSGIGSAKGVGMTGEAAAALTTSQ--------------- 48   
+
+                   egglasgsehppalmflqIftNNlrVallafalGiillGlPgtlliLflN
+                               +  f+q ++  l         G  l G+ ++++++f+N
+  2BL2:H|PDB    49 ------------PEKFGQALILQLLPGT----QG--LYGF-VIAFLIFIN 79   
+
+                   GlilGavagllaneVggldpflLalalvlPHGilEipAii..lAgaaGlr
+                      lG   ++++       +f   l++ lP   +  +++++++A +   +
+  2BL2:H|PDB    80 ---LGSDMSVVQGL-----NF---LGASLP---IAFTGLFsgIAQG---K 112  
+
+                   lgwaliralfpgknrsRlqalkrggrralkllvgvlvvvvLLliAAfIEg
+                    + a i+ l+++ +     + +  g  ++ ++ + +++ + ++i+ ++  
+  2BL2:H|PDB   113 VAAAGIQILAKK-P-----EHATKGIIFAAMVET-YAI-LGFVISFLL-- 152  
+
+                   fiTPs<-*
+                       +   
+  2BL2:H|PDB   153 ----V    153  
+
+Thia_YuaJ: domain 1 of 1, from 19 to 155: score -135.9, E = 5.6
+                   *->lvEiAifaAL............AmvLslIpllykmPqGGSisLgSMi
+                      ++ ++if+++++ ++ + +++ A +L     + k++q+  + L    
+  2BL2:H|PDB    19    MATATIFSGIgsakgvgmtgeaAAALTTSQ-PEKFGQALILQLL--- 61   
+
+                   PIfliAfRrGlkaGllaGflwGlLqlvlRlgdaygilhPvQvl......L
+                             ++   l Gf+  +L +   +  ++   ++vQ+l+  + +L
+  2BL2:H|PDB    62 ----------PGTQGLYGFVIAFLIF---INLGS-DMSVVQGLnflgasL 97   
+
+                   DYplAFmalGLAGlFakkvqkalaenkkkkalayiilGvliggflRyfcH
+                     p+AF+ l ++G+   kv                  ++ i ++++   H
+  2BL2:H|PDB    98 --PIAFTGL-FSGIAQGKV-----------------AAAGIQILAKKPEH 127  
+
+                   fIAGViFfGsYAPkGmspwlYSliyNGsymlpslllciivliiLlkklpr
+                      G+iF    A                +m+ ++++ + v+ +Ll+    
+  2BL2:H|PDB   128 ATKGIIF----A----------------AMVETYAILGFVISFLLV---- 153  
+
+                   lfl<-*
+                    ++   
+  2BL2:H|PDB   154 -LN    155  
+
+DUF998: domain 1 of 1, from 25 to 122: score -95.9, E = 8
+                   *->nPWFsfTkNALSDLGgigllsNGHPaapypWlyNygLIltGlLvily
+                                +S  G+++                +g+ ++++ ++ +
+  2BL2:H|PDB    25    ----------FSGIGSAK---------------GVGMTGEAAAALTT 46   
+
+                   sllliraaknKieniGsalliisglFLaLIGIFpEGtyPHtfVSiwFFIl
+                   s   +         +G+al+      L L      Gt       ++ F++
+  2BL2:H|PDB    47 SQPEK---------FGQALI------LQLL----PGTQ-----GLYGFVI 72   
+
+                   sfiamliyGigallarrkllGililalflaglivatFlvmifltslkkwp
+                   +f+ ++ +G  ++++    l++l+     a+l++a    + +l+s++   
+  2BL2:H|PDB    73 AFLIFINLGSDMSVVQG--LNFLG-----ASLPIA----FTGLFSGI--- 108  
+
+                   GvAvpEliGIvvIliwviil<-*
+                         + G v+ +  +i++   
+  2BL2:H|PDB   109 ------AQGKVAAAGIQILA    122  
+
+PSI_PSAK: domain 1 of 1, from 60 to 147: score -33.8, E = 9.3
+                   *->alstnlVisvsitcnLfagrFGkyaiqrrnaNFDgtglPiangatyF
+                      +l  ++   ++  ++L+ + +G   ++++++NF g++lPia      
+  2BL2:H|PDB    60    LLPGTQGLYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAF----- 101  
+
+                   eagdeRAKenssilksNDpaGFnLvdvLAtg..........SlGHilGag
+                                  ++++ G+  + v+A g +   ++++++   i+ a+
+  2BL2:H|PDB   102 ---------------TGLFSGIAQGKVAAAGiqilakkpehATKGIIFAA 136  
+
+                   ivlGLsnlGal<-*
+                    v + + lG     
+  2BL2:H|PDB   137 MVETYAILGFV    147  
+
+SFT2: domain 1 of 1, from 61 to 154: score -83.1, E = 8.1
+                   *->LSrtqRlvgFviClgagilcflLstfllpvlllkprkFallyTlGsl
+                      L  tq l+gFvi +++   ++ L++ + +v          l+ lG+ 
+  2BL2:H|PDB    61    LPGTQGLYGFVIAFLI---FINLGSDMSVVQ--------GLNFLGAS 96   
+
+                   lallSfaFLmGPvkqlkhMfektRlpatllYllslllTLyaaLwlkstlL
+                   l ++ ++   G ++q k              +++  + ++a    + t  
+  2BL2:H|PDB    97 LPIAFTGLFSG-IAQGK--------------VAAAGIQILAKKPEHATKG 131  
+
+                   tllfailQilAlvwYsLSYiPgGrdgv<-*
+                    + +a  +  A++ +++S++     ++   
+  2BL2:H|PDB   132 IIFAAMVETYAILGFVISFL----LVL    154  
+
+Gate: domain 1 of 1, from 64 to 154: score 1.2, E = 0.58
+                   *->llrvlpiillfsvlisiLsnipedlGllealskllgPlllrllfgl.
+                         + +++++f+++i++     +d          ++ +   l   l+
+  2BL2:H|PDB    64    TQGLYGFVIAFLIFINLG----SD----------MSVV-QGLN-FLg 94   
+
+                   pepgnaalalllgftagesalasliillgleaseleviftllsasciav.
+                   ++ ++a+++l+ g++ g +a+a++ il ++   e ++    + a+++ + 
+  2BL2:H|PDB    95 ASLPIAFTGLFSGIAQGKVAAAGIQILAKK--PEHATKGIIF-AAMVETy 141  
+
+                   fllpvivsilGik<-*
+                   ++l++++s+l +    
+  2BL2:H|PDB   142 AILGFVISFLLVL    154  
+
+BofA: domain 1 of 1, from 67 to 121: score -54.1, E = 9.9
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                      + G ++++li   l+  +         sV+ ++     N+ Ga++ i
+  2BL2:H|PDB    67    LYGFVIAFLIFINLGSDM---------SVVQGL-----NFLGASLPI 99   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                         +T l sGi    G ++ + i+   +l   
+  2BL2:H|PDB   100 A-----FTGLFSGI--AQGKVAAAGIQ---IL    121  
+
+ETRAMP: domain 1 of 1, from 84 to 155: score -27.5, E = 7.6
+                   *->MKlsKiLyffafLLAinvlvPGysnnyveakpanskkvvkkkltdle
+                      M +   L f+ + L i +   G++ + +++k a+       ++  l+
+  2BL2:H|PDB    84    MSVVQGLNFLGASLPIAFT--GLFSGIAQGKVAA------AGIQILA 122  
+
+                   KKlekkknnKiiiIStlasalALaliGtgvGvGihykk<-*
+                   KK       K ii+++ + + A+  +G  + + +   +   
+  2BL2:H|PDB   123 KK--PEHATKGIIFAAMVETYAI--LGFVISF-LLVLN    155  
+
+ATP-synt_C: domain 2 of 2, from 90 to 155: score 84.2, E = 1.3e-22
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      ++++GA+l i++++l++Gi++G+v++a+i+++A++P    ++ tk+i
+  2BL2:H|PDB    90    LNFLGASLPIAFTGLFSGIAQGKVAAAGIQILAKKP----EHATKGI 132  
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i++a+vE++ai g+vi+fll+ +   
+  2BL2:H|PDB   133 IFAAMVETYAILGFVISFLLVLN    155  
+
+DUF1328: domain 1 of 1, from 97 to 153: score -31.0, E = 3.2
+                   *->LkWAiIFLiiALIAGvLGFGGIA...GAAAGI...AK........IL
+                      L  A++ L          F+GIA+++ AAAGI+  AK++++ +++I+
+  2BL2:H|PDB    97    LPIAFTGL----------FSGIAqgkVAAAGIqilAKkpehatkgII 133  
+
+                   Ffv.....FlvlFvVsLvlG<-*
+                   F +  ++ ++++Fv+s++l+   
+  2BL2:H|PDB   134 FAAmvetyAILGFVISFLLV    153  
+
+//
+
+Query sequence: 2BL2:G|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ATP-synt_C      ATP synthase subunit C                  161.0    9.6e-46   2
+Gate            Nucleoside recognition                    1.2       0.58   1
+FUSC            Fusaric acid resistance protein conse   -56.3        1.6   1
+DUF1328         Protein of unknown function (DUF1328)   -31.0        3.2   1
+DUF6            Integral membrane protein DUF6          -40.7        4.3   1
+BioY            BioY family                             -78.7        4.6   1
+Thia_YuaJ       Thiamine transporter protein (Thia_Yu  -135.9        5.6   1
+DUF95           Integral membrane protein DUF95         -84.0        6.3   1
+ABC-3           ABC 3 transport family                 -223.5        7.6   1
+ETRAMP          Malarial early transcribed membrane p   -27.5        7.6   1
+DUF998          Protein of unknown function (DUF998)    -95.9          8   1
+SFT2            SFT2-like protein                       -83.1        8.1   1
+PSI_PSAK        Photosystem I psaG / psaK               -33.8        9.3   1
+VanZ            VanZ like family                        -52.1        9.9   1
+BofA            SigmaK-factor processing regulatory p   -54.1        9.9   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ABC-3             1/1       3   153 ..     1   267 []  -223.5      7.6
+FUSC              1/1       5   120 ..     1   120 []   -56.3      1.6
+BioY              1/1       6   129 ..     1   186 []   -78.7      4.6
+VanZ              1/1      13   112 ..     1   171 []   -52.1      9.9
+ATP-synt_C        1/2      14    79 ..     1    70 []    76.8  2.1e-20
+DUF6              1/1      17   145 ..     1   128 []   -40.7      4.3
+DUF95             1/1      17   153 ..     1   200 []   -84.0      6.3
+Thia_YuaJ         1/1      19   155 ..     1   182 []  -135.9      5.6
+DUF998            1/1      25   122 ..     1   167 []   -95.9        8
+PSI_PSAK          1/1      60   147 ..     1    98 []   -33.8      9.3
+SFT2              1/1      61   154 ..     1   124 []   -83.1      8.1
+Gate              1/1      64   154 ..     1   108 []     1.2     0.58
+BofA              1/1      67   121 ..     1    79 []   -54.1      9.9
+ETRAMP            1/1      84   155 ..     1    85 []   -27.5      7.6
+ATP-synt_C        2/2      90   155 ..     1    70 []    84.2  1.3e-22
+DUF1328           1/1      97   153 ..     1    48 []   -31.0      3.2
+
+Alignments of top-scoring domains:
+ABC-3: domain 1 of 1, from 3 to 153: score -223.5, E = 7.6
+                   *->qyefmqrAllasilvglacgiLGsFlVLRRqSLmGDAiSHavLpGVA
+                      +y ++q+                                    +G +
+  2BL2:G|PDB     3    DYLITQN------------------------------------GGMV 13   
+
+                   LAffLginkSleipliGAflfgliaAvaigylkrnsrlkeDtaiGIvfss
+                   +A +   +        +++++g+  A ++g+  + +              
+  2BL2:G|PDB    14 FAVLAMAT--------ATIFSGIGSAKGVGMTGEAA-------------- 41   
+
+                   flAlGlllislikgsnaaskvdLdhyLFGniLgisqqDliqiaiitaiiL
+                         ++++ ++ +            FG++L +++  l  + ++ ++++
+  2BL2:G|PDB    42 ------AALTTSQPEK-----------FGQALILQL--LPGTQGLYGFVI 72   
+
+                   lllllfwkeLllitFDpdlAkviGlpvnflkllL.liLlaltiVvalqaV
+                    +l++++          d++ v+Gl+  fl   L+++ ++l   +a   V
+  2BL2:G|PDB    73 AFLIFIN-------LGSDMSVVQGLN--FLGASLpIAFTGLFSGIAQGKV 113  
+
+                   GvILViAlLitPAatArl.ltkslesmlliAsaiGvvssvaGlllSYyfd
+                               Aa +++ l+k++e+             + G ++ + ++
+  2BL2:G|PDB   114 ------------AAAGIQiLAKKPEH------------ATKGIIFAAMVE 139  
+
+                   tatGpvIVLiatllFlisflfa<-*
+                   t         a+l F+isfl     
+  2BL2:G|PDB   140 T--------YAILGFVISFLLV    153  
+
+FUSC: domain 1 of 1, from 5 to 120: score -56.3, E = 1.6
+                   *->alaahadpaaAmrnGlRtaLaiLlggaFW.iysaWpsGgtavllaav
+                          ++ +   m++++   La+  ++ F++i+sa   G t  + aa 
+  2BL2:G|PDB     5    ---LITQNGG-MVFAV---LAMATATIFSgIGSAKGVGMTGEAAAAL 44   
+
+                   vcsLfaarPnPaqvalnfirGt..llAiplallvkfll...LPqidgFpl
+                   ++s      +  + +l+++ Gt++l++ ++a+l++  l++++  ++g+  
+  2BL2:G|PDB    45 TTS--QPEKFGQALILQLLPGTqgLYGFVIAFLIFINLgsdMSVVQGLNF 92   
+
+                   LclvLaPllalgalLglsrPksagiamgl<-*
+                   L ++L P+ ++g + g++  k a+ ++++   
+  2BL2:G|PDB    93 LGASL-PIAFTGLFSGIAQGKVAAAGIQI    120  
+
+BioY: domain 1 of 1, from 6 to 129: score -78.7, E = 4.6
+                   *->isiledflpikPVPlTlQtfgVlLaGllLGPklgaLsqLiYlllGal
+                      i+               Q++g                  +++ l  +
+  2BL2:G|PDB     6    IT---------------QNGG-----------------MVFAVLAMA 20   
+
+                   GlPvFAgfsGGiavflGPTgGYLlGFilAaflaGwlaerhRL.CtPwRkr
+                    + +F+g        +G++ G       +++   ++a    L+   + k+
+  2BL2:G|PDB    21 TATIFSG--------IGSAKG------VGMTGEAAAA----LtTSQPEKF 52   
+
+                   gRketlmllLaticLvGlgvIYllGivvLalflgldekvlss..davgaf
+                   g+     l L +  L G+   Y+   +v a+ + +    l+s+ + v+++
+  2BL2:G|PDB    53 GQ----ALILQL--LPGTQGLYG---FVIAFLIFIN---LGSdmSVVQGL 90   
+
+                   m.lgvilPtmviFAAtvLiFligdfvvkalvavllarritpal<-*
+                   + lg++lP     A t L   i+ + v a++ ++la +   a+   
+  2BL2:G|PDB    91 NfLGASLP----IAFTGLFSGIAQGKVAAAGIQILAKKPEHAT    129  
+
+VanZ: domain 1 of 1, from 13 to 112: score -52.1, E = 9.9
+                   *->lfivYli.lllwlvlFalilvlsawaalfvmvaevsavrsynLvPfk
+                      +f+v+ + +++ + ++++   ++++      ++++ a    +++ f 
+  2BL2:G|PDB    13    VFAVLAMaTATIFSGIGSAKGVGMT------GEAAAALTTSQPEKFG 53   
+
+                   airaftlltpfqlsekLetldelelidtfiekllNillFfPLGlllpvlf
+                     ++++ll++ q+                       l+ f  ++l++++ 
+  2BL2:G|PDB    54 QALILQLLPGTQG-----------------------LYGFVIAFLIFINL 80   
+
+                   krlrkrrasfltvlalglllsCCLliEvlQlflpgRyffdRvfdIdDvll
+                   ++                  s      v+Q+                  l
+  2BL2:G|PDB    81 GS------D----------MS------VVQG------------------L 90   
+
+                   NTlGallGylivflyrllkrrllrk<-*
+                   N+lGa l +    + +l+  +++ k   
+  2BL2:G|PDB    91 NFLGASLPIA---FTGLFSGIAQGK    112  
+
+ATP-synt_C: domain 1 of 2, from 14 to 79: score 76.8, E = 2.1e-20
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      +av++++ A++++++G++ G+G+ g+a+++ ++ qP    + f++++
+  2BL2:G|PDB    14    FAVLAMATATIFSGIGSAKGVGMTGEAAAALTTSQP----EKFGQAL 56   
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i + l +++++yg+viAfl++++   
+  2BL2:G|PDB    57 ILQLLPGTQGLYGFVIAFLIFIN    79   
+
+DUF6: domain 1 of 1, from 17 to 145: score -40.7, E = 4.3
+                   *->liWalytvfskkller...ispltftayrfl....iagilllilllf
+                      l++a++t+fs ++++++ ++   +++a+   ++++++    +++l +
+  2BL2:G|PDB    17    LAMATATIFSGIGSAKgvgMTGEAAAALTTSqpekFGQ---ALILQL 60   
+
+                   llrkppifallslk.ilallylglfgtalgyllyfyalkyvsasnasvlt
+                   l++ +        + ++++++  +f       +  ++l++++as    +t
+  2BL2:G|PDB    61 LPGTQ--------GlYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAFT 102  
+
+                   slsPvft....lilsvllLgEkltlkqllGivlillGvllisl<-*
+                    l   +++++ +  ++ +L  k+   +   i+ +++ ++ i+    
+  2BL2:G|PDB   103 GLFSGIAqgkvAAAGIQILAKKPEHATKGIIFAAMVETYAILG    145  
+
+DUF95: domain 1 of 1, from 17 to 153: score -84.0, E = 6.3
+                   *->lalllFlvgillGyilvnsdpaliellllptylsefvnpaemYDPrd
+                      la+++  ++  +G   +  +  ++ ++l   +               
+  2BL2:G|PDB    17    LAMATATIFSGIGSAKGVGMTGEAAAALTTSQ--------------- 48   
+
+                   egglasgsehppalmflqIftNNlrVallafalGiillGlPgtlliLflN
+                               +  f+q ++  l         G  l G+ ++++++f+N
+  2BL2:G|PDB    49 ------------PEKFGQALILQLLPGT----QG--LYGF-VIAFLIFIN 79   
+
+                   GlilGavagllaneVggldpflLalalvlPHGilEipAii..lAgaaGlr
+                      lG   ++++       +f   l++ lP   +  +++++++A +   +
+  2BL2:G|PDB    80 ---LGSDMSVVQGL-----NF---LGASLP---IAFTGLFsgIAQG---K 112  
+
+                   lgwaliralfpgknrsRlqalkrggrralkllvgvlvvvvLLliAAfIEg
+                    + a i+ l+++ +     + +  g  ++ ++ + +++ + ++i+ ++  
+  2BL2:G|PDB   113 VAAAGIQILAKK-P-----EHATKGIIFAAMVET-YAI-LGFVISFLL-- 152  
+
+                   fiTPs<-*
+                       +   
+  2BL2:G|PDB   153 ----V    153  
+
+Thia_YuaJ: domain 1 of 1, from 19 to 155: score -135.9, E = 5.6
+                   *->lvEiAifaAL............AmvLslIpllykmPqGGSisLgSMi
+                      ++ ++if+++++ ++ + +++ A +L     + k++q+  + L    
+  2BL2:G|PDB    19    MATATIFSGIgsakgvgmtgeaAAALTTSQ-PEKFGQALILQLL--- 61   
+
+                   PIfliAfRrGlkaGllaGflwGlLqlvlRlgdaygilhPvQvl......L
+                             ++   l Gf+  +L +   +  ++   ++vQ+l+  + +L
+  2BL2:G|PDB    62 ----------PGTQGLYGFVIAFLIF---INLGS-DMSVVQGLnflgasL 97   
+
+                   DYplAFmalGLAGlFakkvqkalaenkkkkalayiilGvliggflRyfcH
+                     p+AF+ l ++G+   kv                  ++ i ++++   H
+  2BL2:G|PDB    98 --PIAFTGL-FSGIAQGKV-----------------AAAGIQILAKKPEH 127  
+
+                   fIAGViFfGsYAPkGmspwlYSliyNGsymlpslllciivliiLlkklpr
+                      G+iF    A                +m+ ++++ + v+ +Ll+    
+  2BL2:G|PDB   128 ATKGIIF----A----------------AMVETYAILGFVISFLLV---- 153  
+
+                   lfl<-*
+                    ++   
+  2BL2:G|PDB   154 -LN    155  
+
+DUF998: domain 1 of 1, from 25 to 122: score -95.9, E = 8
+                   *->nPWFsfTkNALSDLGgigllsNGHPaapypWlyNygLIltGlLvily
+                                +S  G+++                +g+ ++++ ++ +
+  2BL2:G|PDB    25    ----------FSGIGSAK---------------GVGMTGEAAAALTT 46   
+
+                   sllliraaknKieniGsalliisglFLaLIGIFpEGtyPHtfVSiwFFIl
+                   s   +         +G+al+      L L      Gt       ++ F++
+  2BL2:G|PDB    47 SQPEK---------FGQALI------LQLL----PGTQ-----GLYGFVI 72   
+
+                   sfiamliyGigallarrkllGililalflaglivatFlvmifltslkkwp
+                   +f+ ++ +G  ++++    l++l+     a+l++a    + +l+s++   
+  2BL2:G|PDB    73 AFLIFINLGSDMSVVQG--LNFLG-----ASLPIA----FTGLFSGI--- 108  
+
+                   GvAvpEliGIvvIliwviil<-*
+                         + G v+ +  +i++   
+  2BL2:G|PDB   109 ------AQGKVAAAGIQILA    122  
+
+PSI_PSAK: domain 1 of 1, from 60 to 147: score -33.8, E = 9.3
+                   *->alstnlVisvsitcnLfagrFGkyaiqrrnaNFDgtglPiangatyF
+                      +l  ++   ++  ++L+ + +G   ++++++NF g++lPia      
+  2BL2:G|PDB    60    LLPGTQGLYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAF----- 101  
+
+                   eagdeRAKenssilksNDpaGFnLvdvLAtg..........SlGHilGag
+                                  ++++ G+  + v+A g +   ++++++   i+ a+
+  2BL2:G|PDB   102 ---------------TGLFSGIAQGKVAAAGiqilakkpehATKGIIFAA 136  
+
+                   ivlGLsnlGal<-*
+                    v + + lG     
+  2BL2:G|PDB   137 MVETYAILGFV    147  
+
+SFT2: domain 1 of 1, from 61 to 154: score -83.1, E = 8.1
+                   *->LSrtqRlvgFviClgagilcflLstfllpvlllkprkFallyTlGsl
+                      L  tq l+gFvi +++   ++ L++ + +v          l+ lG+ 
+  2BL2:G|PDB    61    LPGTQGLYGFVIAFLI---FINLGSDMSVVQ--------GLNFLGAS 96   
+
+                   lallSfaFLmGPvkqlkhMfektRlpatllYllslllTLyaaLwlkstlL
+                   l ++ ++   G ++q k              +++  + ++a    + t  
+  2BL2:G|PDB    97 LPIAFTGLFSG-IAQGK--------------VAAAGIQILAKKPEHATKG 131  
+
+                   tllfailQilAlvwYsLSYiPgGrdgv<-*
+                    + +a  +  A++ +++S++     ++   
+  2BL2:G|PDB   132 IIFAAMVETYAILGFVISFL----LVL    154  
+
+Gate: domain 1 of 1, from 64 to 154: score 1.2, E = 0.58
+                   *->llrvlpiillfsvlisiLsnipedlGllealskllgPlllrllfgl.
+                         + +++++f+++i++     +d          ++ +   l   l+
+  2BL2:G|PDB    64    TQGLYGFVIAFLIFINLG----SD----------MSVV-QGLN-FLg 94   
+
+                   pepgnaalalllgftagesalasliillgleaseleviftllsasciav.
+                   ++ ++a+++l+ g++ g +a+a++ il ++   e ++    + a+++ + 
+  2BL2:G|PDB    95 ASLPIAFTGLFSGIAQGKVAAAGIQILAKK--PEHATKGIIF-AAMVETy 141  
+
+                   fllpvivsilGik<-*
+                   ++l++++s+l +    
+  2BL2:G|PDB   142 AILGFVISFLLVL    154  
+
+BofA: domain 1 of 1, from 67 to 121: score -54.1, E = 9.9
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                      + G ++++li   l+  +         sV+ ++     N+ Ga++ i
+  2BL2:G|PDB    67    LYGFVIAFLIFINLGSDM---------SVVQGL-----NFLGASLPI 99   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                         +T l sGi    G ++ + i+   +l   
+  2BL2:G|PDB   100 A-----FTGLFSGI--AQGKVAAAGIQ---IL    121  
+
+ETRAMP: domain 1 of 1, from 84 to 155: score -27.5, E = 7.6
+                   *->MKlsKiLyffafLLAinvlvPGysnnyveakpanskkvvkkkltdle
+                      M +   L f+ + L i +   G++ + +++k a+       ++  l+
+  2BL2:G|PDB    84    MSVVQGLNFLGASLPIAFT--GLFSGIAQGKVAA------AGIQILA 122  
+
+                   KKlekkknnKiiiIStlasalALaliGtgvGvGihykk<-*
+                   KK       K ii+++ + + A+  +G  + + +   +   
+  2BL2:G|PDB   123 KK--PEHATKGIIFAAMVETYAI--LGFVISF-LLVLN    155  
+
+ATP-synt_C: domain 2 of 2, from 90 to 155: score 84.2, E = 1.3e-22
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      ++++GA+l i++++l++Gi++G+v++a+i+++A++P    ++ tk+i
+  2BL2:G|PDB    90    LNFLGASLPIAFTGLFSGIAQGKVAAAGIQILAKKP----EHATKGI 132  
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i++a+vE++ai g+vi+fll+ +   
+  2BL2:G|PDB   133 IFAAMVETYAILGFVISFLLVLN    155  
+
+DUF1328: domain 1 of 1, from 97 to 153: score -31.0, E = 3.2
+                   *->LkWAiIFLiiALIAGvLGFGGIA...GAAAGI...AK........IL
+                      L  A++ L          F+GIA+++ AAAGI+  AK++++ +++I+
+  2BL2:G|PDB    97    LPIAFTGL----------FSGIAqgkVAAAGIqilAKkpehatkgII 133  
+
+                   Ffv.....FlvlFvVsLvlG<-*
+                   F +  ++ ++++Fv+s++l+   
+  2BL2:G|PDB   134 FAAmvetyAILGFVISFLLV    153  
+
+//
+
+Query sequence: 2BL2:F|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ATP-synt_C      ATP synthase subunit C                  161.0    9.6e-46   2
+Gate            Nucleoside recognition                    1.2       0.58   1
+FUSC            Fusaric acid resistance protein conse   -56.3        1.6   1
+DUF1328         Protein of unknown function (DUF1328)   -31.0        3.2   1
+DUF6            Integral membrane protein DUF6          -40.7        4.3   1
+BioY            BioY family                             -78.7        4.6   1
+Thia_YuaJ       Thiamine transporter protein (Thia_Yu  -135.9        5.6   1
+DUF95           Integral membrane protein DUF95         -84.0        6.3   1
+ABC-3           ABC 3 transport family                 -223.5        7.6   1
+ETRAMP          Malarial early transcribed membrane p   -27.5        7.6   1
+DUF998          Protein of unknown function (DUF998)    -95.9          8   1
+SFT2            SFT2-like protein                       -83.1        8.1   1
+PSI_PSAK        Photosystem I psaG / psaK               -33.8        9.3   1
+VanZ            VanZ like family                        -52.1        9.9   1
+BofA            SigmaK-factor processing regulatory p   -54.1        9.9   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ABC-3             1/1       3   153 ..     1   267 []  -223.5      7.6
+FUSC              1/1       5   120 ..     1   120 []   -56.3      1.6
+BioY              1/1       6   129 ..     1   186 []   -78.7      4.6
+VanZ              1/1      13   112 ..     1   171 []   -52.1      9.9
+ATP-synt_C        1/2      14    79 ..     1    70 []    76.8  2.1e-20
+DUF6              1/1      17   145 ..     1   128 []   -40.7      4.3
+DUF95             1/1      17   153 ..     1   200 []   -84.0      6.3
+Thia_YuaJ         1/1      19   155 ..     1   182 []  -135.9      5.6
+DUF998            1/1      25   122 ..     1   167 []   -95.9        8
+PSI_PSAK          1/1      60   147 ..     1    98 []   -33.8      9.3
+SFT2              1/1      61   154 ..     1   124 []   -83.1      8.1
+Gate              1/1      64   154 ..     1   108 []     1.2     0.58
+BofA              1/1      67   121 ..     1    79 []   -54.1      9.9
+ETRAMP            1/1      84   155 ..     1    85 []   -27.5      7.6
+ATP-synt_C        2/2      90   155 ..     1    70 []    84.2  1.3e-22
+DUF1328           1/1      97   153 ..     1    48 []   -31.0      3.2
+
+Alignments of top-scoring domains:
+ABC-3: domain 1 of 1, from 3 to 153: score -223.5, E = 7.6
+                   *->qyefmqrAllasilvglacgiLGsFlVLRRqSLmGDAiSHavLpGVA
+                      +y ++q+                                    +G +
+  2BL2:F|PDB     3    DYLITQN------------------------------------GGMV 13   
+
+                   LAffLginkSleipliGAflfgliaAvaigylkrnsrlkeDtaiGIvfss
+                   +A +   +        +++++g+  A ++g+  + +              
+  2BL2:F|PDB    14 FAVLAMAT--------ATIFSGIGSAKGVGMTGEAA-------------- 41   
+
+                   flAlGlllislikgsnaaskvdLdhyLFGniLgisqqDliqiaiitaiiL
+                         ++++ ++ +            FG++L +++  l  + ++ ++++
+  2BL2:F|PDB    42 ------AALTTSQPEK-----------FGQALILQL--LPGTQGLYGFVI 72   
+
+                   lllllfwkeLllitFDpdlAkviGlpvnflkllL.liLlaltiVvalqaV
+                    +l++++          d++ v+Gl+  fl   L+++ ++l   +a   V
+  2BL2:F|PDB    73 AFLIFIN-------LGSDMSVVQGLN--FLGASLpIAFTGLFSGIAQGKV 113  
+
+                   GvILViAlLitPAatArl.ltkslesmlliAsaiGvvssvaGlllSYyfd
+                               Aa +++ l+k++e+             + G ++ + ++
+  2BL2:F|PDB   114 ------------AAAGIQiLAKKPEH------------ATKGIIFAAMVE 139  
+
+                   tatGpvIVLiatllFlisflfa<-*
+                   t         a+l F+isfl     
+  2BL2:F|PDB   140 T--------YAILGFVISFLLV    153  
+
+FUSC: domain 1 of 1, from 5 to 120: score -56.3, E = 1.6
+                   *->alaahadpaaAmrnGlRtaLaiLlggaFW.iysaWpsGgtavllaav
+                          ++ +   m++++   La+  ++ F++i+sa   G t  + aa 
+  2BL2:F|PDB     5    ---LITQNGG-MVFAV---LAMATATIFSgIGSAKGVGMTGEAAAAL 44   
+
+                   vcsLfaarPnPaqvalnfirGt..llAiplallvkfll...LPqidgFpl
+                   ++s      +  + +l+++ Gt++l++ ++a+l++  l++++  ++g+  
+  2BL2:F|PDB    45 TTS--QPEKFGQALILQLLPGTqgLYGFVIAFLIFINLgsdMSVVQGLNF 92   
+
+                   LclvLaPllalgalLglsrPksagiamgl<-*
+                   L ++L P+ ++g + g++  k a+ ++++   
+  2BL2:F|PDB    93 LGASL-PIAFTGLFSGIAQGKVAAAGIQI    120  
+
+BioY: domain 1 of 1, from 6 to 129: score -78.7, E = 4.6
+                   *->isiledflpikPVPlTlQtfgVlLaGllLGPklgaLsqLiYlllGal
+                      i+               Q++g                  +++ l  +
+  2BL2:F|PDB     6    IT---------------QNGG-----------------MVFAVLAMA 20   
+
+                   GlPvFAgfsGGiavflGPTgGYLlGFilAaflaGwlaerhRL.CtPwRkr
+                    + +F+g        +G++ G       +++   ++a    L+   + k+
+  2BL2:F|PDB    21 TATIFSG--------IGSAKG------VGMTGEAAAA----LtTSQPEKF 52   
+
+                   gRketlmllLaticLvGlgvIYllGivvLalflgldekvlss..davgaf
+                   g+     l L +  L G+   Y+   +v a+ + +    l+s+ + v+++
+  2BL2:F|PDB    53 GQ----ALILQL--LPGTQGLYG---FVIAFLIFIN---LGSdmSVVQGL 90   
+
+                   m.lgvilPtmviFAAtvLiFligdfvvkalvavllarritpal<-*
+                   + lg++lP     A t L   i+ + v a++ ++la +   a+   
+  2BL2:F|PDB    91 NfLGASLP----IAFTGLFSGIAQGKVAAAGIQILAKKPEHAT    129  
+
+VanZ: domain 1 of 1, from 13 to 112: score -52.1, E = 9.9
+                   *->lfivYli.lllwlvlFalilvlsawaalfvmvaevsavrsynLvPfk
+                      +f+v+ + +++ + ++++   ++++      ++++ a    +++ f 
+  2BL2:F|PDB    13    VFAVLAMaTATIFSGIGSAKGVGMT------GEAAAALTTSQPEKFG 53   
+
+                   airaftlltpfqlsekLetldelelidtfiekllNillFfPLGlllpvlf
+                     ++++ll++ q+                       l+ f  ++l++++ 
+  2BL2:F|PDB    54 QALILQLLPGTQG-----------------------LYGFVIAFLIFINL 80   
+
+                   krlrkrrasfltvlalglllsCCLliEvlQlflpgRyffdRvfdIdDvll
+                   ++                  s      v+Q+                  l
+  2BL2:F|PDB    81 GS------D----------MS------VVQG------------------L 90   
+
+                   NTlGallGylivflyrllkrrllrk<-*
+                   N+lGa l +    + +l+  +++ k   
+  2BL2:F|PDB    91 NFLGASLPIA---FTGLFSGIAQGK    112  
+
+ATP-synt_C: domain 1 of 2, from 14 to 79: score 76.8, E = 2.1e-20
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      +av++++ A++++++G++ G+G+ g+a+++ ++ qP    + f++++
+  2BL2:F|PDB    14    FAVLAMATATIFSGIGSAKGVGMTGEAAAALTTSQP----EKFGQAL 56   
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i + l +++++yg+viAfl++++   
+  2BL2:F|PDB    57 ILQLLPGTQGLYGFVIAFLIFIN    79   
+
+DUF6: domain 1 of 1, from 17 to 145: score -40.7, E = 4.3
+                   *->liWalytvfskkller...ispltftayrfl....iagilllilllf
+                      l++a++t+fs ++++++ ++   +++a+   ++++++    +++l +
+  2BL2:F|PDB    17    LAMATATIFSGIGSAKgvgMTGEAAAALTTSqpekFGQ---ALILQL 60   
+
+                   llrkppifallslk.ilallylglfgtalgyllyfyalkyvsasnasvlt
+                   l++ +        + ++++++  +f       +  ++l++++as    +t
+  2BL2:F|PDB    61 LPGTQ--------GlYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAFT 102  
+
+                   slsPvft....lilsvllLgEkltlkqllGivlillGvllisl<-*
+                    l   +++++ +  ++ +L  k+   +   i+ +++ ++ i+    
+  2BL2:F|PDB   103 GLFSGIAqgkvAAAGIQILAKKPEHATKGIIFAAMVETYAILG    145  
+
+DUF95: domain 1 of 1, from 17 to 153: score -84.0, E = 6.3
+                   *->lalllFlvgillGyilvnsdpaliellllptylsefvnpaemYDPrd
+                      la+++  ++  +G   +  +  ++ ++l   +               
+  2BL2:F|PDB    17    LAMATATIFSGIGSAKGVGMTGEAAAALTTSQ--------------- 48   
+
+                   egglasgsehppalmflqIftNNlrVallafalGiillGlPgtlliLflN
+                               +  f+q ++  l         G  l G+ ++++++f+N
+  2BL2:F|PDB    49 ------------PEKFGQALILQLLPGT----QG--LYGF-VIAFLIFIN 79   
+
+                   GlilGavagllaneVggldpflLalalvlPHGilEipAii..lAgaaGlr
+                      lG   ++++       +f   l++ lP   +  +++++++A +   +
+  2BL2:F|PDB    80 ---LGSDMSVVQGL-----NF---LGASLP---IAFTGLFsgIAQG---K 112  
+
+                   lgwaliralfpgknrsRlqalkrggrralkllvgvlvvvvLLliAAfIEg
+                    + a i+ l+++ +     + +  g  ++ ++ + +++ + ++i+ ++  
+  2BL2:F|PDB   113 VAAAGIQILAKK-P-----EHATKGIIFAAMVET-YAI-LGFVISFLL-- 152  
+
+                   fiTPs<-*
+                       +   
+  2BL2:F|PDB   153 ----V    153  
+
+Thia_YuaJ: domain 1 of 1, from 19 to 155: score -135.9, E = 5.6
+                   *->lvEiAifaAL............AmvLslIpllykmPqGGSisLgSMi
+                      ++ ++if+++++ ++ + +++ A +L     + k++q+  + L    
+  2BL2:F|PDB    19    MATATIFSGIgsakgvgmtgeaAAALTTSQ-PEKFGQALILQLL--- 61   
+
+                   PIfliAfRrGlkaGllaGflwGlLqlvlRlgdaygilhPvQvl......L
+                             ++   l Gf+  +L +   +  ++   ++vQ+l+  + +L
+  2BL2:F|PDB    62 ----------PGTQGLYGFVIAFLIF---INLGS-DMSVVQGLnflgasL 97   
+
+                   DYplAFmalGLAGlFakkvqkalaenkkkkalayiilGvliggflRyfcH
+                     p+AF+ l ++G+   kv                  ++ i ++++   H
+  2BL2:F|PDB    98 --PIAFTGL-FSGIAQGKV-----------------AAAGIQILAKKPEH 127  
+
+                   fIAGViFfGsYAPkGmspwlYSliyNGsymlpslllciivliiLlkklpr
+                      G+iF    A                +m+ ++++ + v+ +Ll+    
+  2BL2:F|PDB   128 ATKGIIF----A----------------AMVETYAILGFVISFLLV---- 153  
+
+                   lfl<-*
+                    ++   
+  2BL2:F|PDB   154 -LN    155  
+
+DUF998: domain 1 of 1, from 25 to 122: score -95.9, E = 8
+                   *->nPWFsfTkNALSDLGgigllsNGHPaapypWlyNygLIltGlLvily
+                                +S  G+++                +g+ ++++ ++ +
+  2BL2:F|PDB    25    ----------FSGIGSAK---------------GVGMTGEAAAALTT 46   
+
+                   sllliraaknKieniGsalliisglFLaLIGIFpEGtyPHtfVSiwFFIl
+                   s   +         +G+al+      L L      Gt       ++ F++
+  2BL2:F|PDB    47 SQPEK---------FGQALI------LQLL----PGTQ-----GLYGFVI 72   
+
+                   sfiamliyGigallarrkllGililalflaglivatFlvmifltslkkwp
+                   +f+ ++ +G  ++++    l++l+     a+l++a    + +l+s++   
+  2BL2:F|PDB    73 AFLIFINLGSDMSVVQG--LNFLG-----ASLPIA----FTGLFSGI--- 108  
+
+                   GvAvpEliGIvvIliwviil<-*
+                         + G v+ +  +i++   
+  2BL2:F|PDB   109 ------AQGKVAAAGIQILA    122  
+
+PSI_PSAK: domain 1 of 1, from 60 to 147: score -33.8, E = 9.3
+                   *->alstnlVisvsitcnLfagrFGkyaiqrrnaNFDgtglPiangatyF
+                      +l  ++   ++  ++L+ + +G   ++++++NF g++lPia      
+  2BL2:F|PDB    60    LLPGTQGLYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAF----- 101  
+
+                   eagdeRAKenssilksNDpaGFnLvdvLAtg..........SlGHilGag
+                                  ++++ G+  + v+A g +   ++++++   i+ a+
+  2BL2:F|PDB   102 ---------------TGLFSGIAQGKVAAAGiqilakkpehATKGIIFAA 136  
+
+                   ivlGLsnlGal<-*
+                    v + + lG     
+  2BL2:F|PDB   137 MVETYAILGFV    147  
+
+SFT2: domain 1 of 1, from 61 to 154: score -83.1, E = 8.1
+                   *->LSrtqRlvgFviClgagilcflLstfllpvlllkprkFallyTlGsl
+                      L  tq l+gFvi +++   ++ L++ + +v          l+ lG+ 
+  2BL2:F|PDB    61    LPGTQGLYGFVIAFLI---FINLGSDMSVVQ--------GLNFLGAS 96   
+
+                   lallSfaFLmGPvkqlkhMfektRlpatllYllslllTLyaaLwlkstlL
+                   l ++ ++   G ++q k              +++  + ++a    + t  
+  2BL2:F|PDB    97 LPIAFTGLFSG-IAQGK--------------VAAAGIQILAKKPEHATKG 131  
+
+                   tllfailQilAlvwYsLSYiPgGrdgv<-*
+                    + +a  +  A++ +++S++     ++   
+  2BL2:F|PDB   132 IIFAAMVETYAILGFVISFL----LVL    154  
+
+Gate: domain 1 of 1, from 64 to 154: score 1.2, E = 0.58
+                   *->llrvlpiillfsvlisiLsnipedlGllealskllgPlllrllfgl.
+                         + +++++f+++i++     +d          ++ +   l   l+
+  2BL2:F|PDB    64    TQGLYGFVIAFLIFINLG----SD----------MSVV-QGLN-FLg 94   
+
+                   pepgnaalalllgftagesalasliillgleaseleviftllsasciav.
+                   ++ ++a+++l+ g++ g +a+a++ il ++   e ++    + a+++ + 
+  2BL2:F|PDB    95 ASLPIAFTGLFSGIAQGKVAAAGIQILAKK--PEHATKGIIF-AAMVETy 141  
+
+                   fllpvivsilGik<-*
+                   ++l++++s+l +    
+  2BL2:F|PDB   142 AILGFVISFLLVL    154  
+
+BofA: domain 1 of 1, from 67 to 121: score -54.1, E = 9.9
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                      + G ++++li   l+  +         sV+ ++     N+ Ga++ i
+  2BL2:F|PDB    67    LYGFVIAFLIFINLGSDM---------SVVQGL-----NFLGASLPI 99   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                         +T l sGi    G ++ + i+   +l   
+  2BL2:F|PDB   100 A-----FTGLFSGI--AQGKVAAAGIQ---IL    121  
+
+ETRAMP: domain 1 of 1, from 84 to 155: score -27.5, E = 7.6
+                   *->MKlsKiLyffafLLAinvlvPGysnnyveakpanskkvvkkkltdle
+                      M +   L f+ + L i +   G++ + +++k a+       ++  l+
+  2BL2:F|PDB    84    MSVVQGLNFLGASLPIAFT--GLFSGIAQGKVAA------AGIQILA 122  
+
+                   KKlekkknnKiiiIStlasalALaliGtgvGvGihykk<-*
+                   KK       K ii+++ + + A+  +G  + + +   +   
+  2BL2:F|PDB   123 KK--PEHATKGIIFAAMVETYAI--LGFVISF-LLVLN    155  
+
+ATP-synt_C: domain 2 of 2, from 90 to 155: score 84.2, E = 1.3e-22
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      ++++GA+l i++++l++Gi++G+v++a+i+++A++P    ++ tk+i
+  2BL2:F|PDB    90    LNFLGASLPIAFTGLFSGIAQGKVAAAGIQILAKKP----EHATKGI 132  
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i++a+vE++ai g+vi+fll+ +   
+  2BL2:F|PDB   133 IFAAMVETYAILGFVISFLLVLN    155  
+
+DUF1328: domain 1 of 1, from 97 to 153: score -31.0, E = 3.2
+                   *->LkWAiIFLiiALIAGvLGFGGIA...GAAAGI...AK........IL
+                      L  A++ L          F+GIA+++ AAAGI+  AK++++ +++I+
+  2BL2:F|PDB    97    LPIAFTGL----------FSGIAqgkVAAAGIqilAKkpehatkgII 133  
+
+                   Ffv.....FlvlFvVsLvlG<-*
+                   F +  ++ ++++Fv+s++l+   
+  2BL2:F|PDB   134 FAAmvetyAILGFVISFLLV    153  
+
+//
+
+Query sequence: 2BL2:E|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ATP-synt_C      ATP synthase subunit C                  161.0    9.6e-46   2
+Gate            Nucleoside recognition                    1.2       0.58   1
+FUSC            Fusaric acid resistance protein conse   -56.3        1.6   1
+DUF1328         Protein of unknown function (DUF1328)   -31.0        3.2   1
+DUF6            Integral membrane protein DUF6          -40.7        4.3   1
+BioY            BioY family                             -78.7        4.6   1
+Thia_YuaJ       Thiamine transporter protein (Thia_Yu  -135.9        5.6   1
+DUF95           Integral membrane protein DUF95         -84.0        6.3   1
+ABC-3           ABC 3 transport family                 -223.5        7.6   1
+ETRAMP          Malarial early transcribed membrane p   -27.5        7.6   1
+DUF998          Protein of unknown function (DUF998)    -95.9          8   1
+SFT2            SFT2-like protein                       -83.1        8.1   1
+PSI_PSAK        Photosystem I psaG / psaK               -33.8        9.3   1
+VanZ            VanZ like family                        -52.1        9.9   1
+BofA            SigmaK-factor processing regulatory p   -54.1        9.9   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ABC-3             1/1       3   153 ..     1   267 []  -223.5      7.6
+FUSC              1/1       5   120 ..     1   120 []   -56.3      1.6
+BioY              1/1       6   129 ..     1   186 []   -78.7      4.6
+VanZ              1/1      13   112 ..     1   171 []   -52.1      9.9
+ATP-synt_C        1/2      14    79 ..     1    70 []    76.8  2.1e-20
+DUF6              1/1      17   145 ..     1   128 []   -40.7      4.3
+DUF95             1/1      17   153 ..     1   200 []   -84.0      6.3
+Thia_YuaJ         1/1      19   155 ..     1   182 []  -135.9      5.6
+DUF998            1/1      25   122 ..     1   167 []   -95.9        8
+PSI_PSAK          1/1      60   147 ..     1    98 []   -33.8      9.3
+SFT2              1/1      61   154 ..     1   124 []   -83.1      8.1
+Gate              1/1      64   154 ..     1   108 []     1.2     0.58
+BofA              1/1      67   121 ..     1    79 []   -54.1      9.9
+ETRAMP            1/1      84   155 ..     1    85 []   -27.5      7.6
+ATP-synt_C        2/2      90   155 ..     1    70 []    84.2  1.3e-22
+DUF1328           1/1      97   153 ..     1    48 []   -31.0      3.2
+
+Alignments of top-scoring domains:
+ABC-3: domain 1 of 1, from 3 to 153: score -223.5, E = 7.6
+                   *->qyefmqrAllasilvglacgiLGsFlVLRRqSLmGDAiSHavLpGVA
+                      +y ++q+                                    +G +
+  2BL2:E|PDB     3    DYLITQN------------------------------------GGMV 13   
+
+                   LAffLginkSleipliGAflfgliaAvaigylkrnsrlkeDtaiGIvfss
+                   +A +   +        +++++g+  A ++g+  + +              
+  2BL2:E|PDB    14 FAVLAMAT--------ATIFSGIGSAKGVGMTGEAA-------------- 41   
+
+                   flAlGlllislikgsnaaskvdLdhyLFGniLgisqqDliqiaiitaiiL
+                         ++++ ++ +            FG++L +++  l  + ++ ++++
+  2BL2:E|PDB    42 ------AALTTSQPEK-----------FGQALILQL--LPGTQGLYGFVI 72   
+
+                   lllllfwkeLllitFDpdlAkviGlpvnflkllL.liLlaltiVvalqaV
+                    +l++++          d++ v+Gl+  fl   L+++ ++l   +a   V
+  2BL2:E|PDB    73 AFLIFIN-------LGSDMSVVQGLN--FLGASLpIAFTGLFSGIAQGKV 113  
+
+                   GvILViAlLitPAatArl.ltkslesmlliAsaiGvvssvaGlllSYyfd
+                               Aa +++ l+k++e+             + G ++ + ++
+  2BL2:E|PDB   114 ------------AAAGIQiLAKKPEH------------ATKGIIFAAMVE 139  
+
+                   tatGpvIVLiatllFlisflfa<-*
+                   t         a+l F+isfl     
+  2BL2:E|PDB   140 T--------YAILGFVISFLLV    153  
+
+FUSC: domain 1 of 1, from 5 to 120: score -56.3, E = 1.6
+                   *->alaahadpaaAmrnGlRtaLaiLlggaFW.iysaWpsGgtavllaav
+                          ++ +   m++++   La+  ++ F++i+sa   G t  + aa 
+  2BL2:E|PDB     5    ---LITQNGG-MVFAV---LAMATATIFSgIGSAKGVGMTGEAAAAL 44   
+
+                   vcsLfaarPnPaqvalnfirGt..llAiplallvkfll...LPqidgFpl
+                   ++s      +  + +l+++ Gt++l++ ++a+l++  l++++  ++g+  
+  2BL2:E|PDB    45 TTS--QPEKFGQALILQLLPGTqgLYGFVIAFLIFINLgsdMSVVQGLNF 92   
+
+                   LclvLaPllalgalLglsrPksagiamgl<-*
+                   L ++L P+ ++g + g++  k a+ ++++   
+  2BL2:E|PDB    93 LGASL-PIAFTGLFSGIAQGKVAAAGIQI    120  
+
+BioY: domain 1 of 1, from 6 to 129: score -78.7, E = 4.6
+                   *->isiledflpikPVPlTlQtfgVlLaGllLGPklgaLsqLiYlllGal
+                      i+               Q++g                  +++ l  +
+  2BL2:E|PDB     6    IT---------------QNGG-----------------MVFAVLAMA 20   
+
+                   GlPvFAgfsGGiavflGPTgGYLlGFilAaflaGwlaerhRL.CtPwRkr
+                    + +F+g        +G++ G       +++   ++a    L+   + k+
+  2BL2:E|PDB    21 TATIFSG--------IGSAKG------VGMTGEAAAA----LtTSQPEKF 52   
+
+                   gRketlmllLaticLvGlgvIYllGivvLalflgldekvlss..davgaf
+                   g+     l L +  L G+   Y+   +v a+ + +    l+s+ + v+++
+  2BL2:E|PDB    53 GQ----ALILQL--LPGTQGLYG---FVIAFLIFIN---LGSdmSVVQGL 90   
+
+                   m.lgvilPtmviFAAtvLiFligdfvvkalvavllarritpal<-*
+                   + lg++lP     A t L   i+ + v a++ ++la +   a+   
+  2BL2:E|PDB    91 NfLGASLP----IAFTGLFSGIAQGKVAAAGIQILAKKPEHAT    129  
+
+VanZ: domain 1 of 1, from 13 to 112: score -52.1, E = 9.9
+                   *->lfivYli.lllwlvlFalilvlsawaalfvmvaevsavrsynLvPfk
+                      +f+v+ + +++ + ++++   ++++      ++++ a    +++ f 
+  2BL2:E|PDB    13    VFAVLAMaTATIFSGIGSAKGVGMT------GEAAAALTTSQPEKFG 53   
+
+                   airaftlltpfqlsekLetldelelidtfiekllNillFfPLGlllpvlf
+                     ++++ll++ q+                       l+ f  ++l++++ 
+  2BL2:E|PDB    54 QALILQLLPGTQG-----------------------LYGFVIAFLIFINL 80   
+
+                   krlrkrrasfltvlalglllsCCLliEvlQlflpgRyffdRvfdIdDvll
+                   ++                  s      v+Q+                  l
+  2BL2:E|PDB    81 GS------D----------MS------VVQG------------------L 90   
+
+                   NTlGallGylivflyrllkrrllrk<-*
+                   N+lGa l +    + +l+  +++ k   
+  2BL2:E|PDB    91 NFLGASLPIA---FTGLFSGIAQGK    112  
+
+ATP-synt_C: domain 1 of 2, from 14 to 79: score 76.8, E = 2.1e-20
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      +av++++ A++++++G++ G+G+ g+a+++ ++ qP    + f++++
+  2BL2:E|PDB    14    FAVLAMATATIFSGIGSAKGVGMTGEAAAALTTSQP----EKFGQAL 56   
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i + l +++++yg+viAfl++++   
+  2BL2:E|PDB    57 ILQLLPGTQGLYGFVIAFLIFIN    79   
+
+DUF6: domain 1 of 1, from 17 to 145: score -40.7, E = 4.3
+                   *->liWalytvfskkller...ispltftayrfl....iagilllilllf
+                      l++a++t+fs ++++++ ++   +++a+   ++++++    +++l +
+  2BL2:E|PDB    17    LAMATATIFSGIGSAKgvgMTGEAAAALTTSqpekFGQ---ALILQL 60   
+
+                   llrkppifallslk.ilallylglfgtalgyllyfyalkyvsasnasvlt
+                   l++ +        + ++++++  +f       +  ++l++++as    +t
+  2BL2:E|PDB    61 LPGTQ--------GlYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAFT 102  
+
+                   slsPvft....lilsvllLgEkltlkqllGivlillGvllisl<-*
+                    l   +++++ +  ++ +L  k+   +   i+ +++ ++ i+    
+  2BL2:E|PDB   103 GLFSGIAqgkvAAAGIQILAKKPEHATKGIIFAAMVETYAILG    145  
+
+DUF95: domain 1 of 1, from 17 to 153: score -84.0, E = 6.3
+                   *->lalllFlvgillGyilvnsdpaliellllptylsefvnpaemYDPrd
+                      la+++  ++  +G   +  +  ++ ++l   +               
+  2BL2:E|PDB    17    LAMATATIFSGIGSAKGVGMTGEAAAALTTSQ--------------- 48   
+
+                   egglasgsehppalmflqIftNNlrVallafalGiillGlPgtlliLflN
+                               +  f+q ++  l         G  l G+ ++++++f+N
+  2BL2:E|PDB    49 ------------PEKFGQALILQLLPGT----QG--LYGF-VIAFLIFIN 79   
+
+                   GlilGavagllaneVggldpflLalalvlPHGilEipAii..lAgaaGlr
+                      lG   ++++       +f   l++ lP   +  +++++++A +   +
+  2BL2:E|PDB    80 ---LGSDMSVVQGL-----NF---LGASLP---IAFTGLFsgIAQG---K 112  
+
+                   lgwaliralfpgknrsRlqalkrggrralkllvgvlvvvvLLliAAfIEg
+                    + a i+ l+++ +     + +  g  ++ ++ + +++ + ++i+ ++  
+  2BL2:E|PDB   113 VAAAGIQILAKK-P-----EHATKGIIFAAMVET-YAI-LGFVISFLL-- 152  
+
+                   fiTPs<-*
+                       +   
+  2BL2:E|PDB   153 ----V    153  
+
+Thia_YuaJ: domain 1 of 1, from 19 to 155: score -135.9, E = 5.6
+                   *->lvEiAifaAL............AmvLslIpllykmPqGGSisLgSMi
+                      ++ ++if+++++ ++ + +++ A +L     + k++q+  + L    
+  2BL2:E|PDB    19    MATATIFSGIgsakgvgmtgeaAAALTTSQ-PEKFGQALILQLL--- 61   
+
+                   PIfliAfRrGlkaGllaGflwGlLqlvlRlgdaygilhPvQvl......L
+                             ++   l Gf+  +L +   +  ++   ++vQ+l+  + +L
+  2BL2:E|PDB    62 ----------PGTQGLYGFVIAFLIF---INLGS-DMSVVQGLnflgasL 97   
+
+                   DYplAFmalGLAGlFakkvqkalaenkkkkalayiilGvliggflRyfcH
+                     p+AF+ l ++G+   kv                  ++ i ++++   H
+  2BL2:E|PDB    98 --PIAFTGL-FSGIAQGKV-----------------AAAGIQILAKKPEH 127  
+
+                   fIAGViFfGsYAPkGmspwlYSliyNGsymlpslllciivliiLlkklpr
+                      G+iF    A                +m+ ++++ + v+ +Ll+    
+  2BL2:E|PDB   128 ATKGIIF----A----------------AMVETYAILGFVISFLLV---- 153  
+
+                   lfl<-*
+                    ++   
+  2BL2:E|PDB   154 -LN    155  
+
+DUF998: domain 1 of 1, from 25 to 122: score -95.9, E = 8
+                   *->nPWFsfTkNALSDLGgigllsNGHPaapypWlyNygLIltGlLvily
+                                +S  G+++                +g+ ++++ ++ +
+  2BL2:E|PDB    25    ----------FSGIGSAK---------------GVGMTGEAAAALTT 46   
+
+                   sllliraaknKieniGsalliisglFLaLIGIFpEGtyPHtfVSiwFFIl
+                   s   +         +G+al+      L L      Gt       ++ F++
+  2BL2:E|PDB    47 SQPEK---------FGQALI------LQLL----PGTQ-----GLYGFVI 72   
+
+                   sfiamliyGigallarrkllGililalflaglivatFlvmifltslkkwp
+                   +f+ ++ +G  ++++    l++l+     a+l++a    + +l+s++   
+  2BL2:E|PDB    73 AFLIFINLGSDMSVVQG--LNFLG-----ASLPIA----FTGLFSGI--- 108  
+
+                   GvAvpEliGIvvIliwviil<-*
+                         + G v+ +  +i++   
+  2BL2:E|PDB   109 ------AQGKVAAAGIQILA    122  
+
+PSI_PSAK: domain 1 of 1, from 60 to 147: score -33.8, E = 9.3
+                   *->alstnlVisvsitcnLfagrFGkyaiqrrnaNFDgtglPiangatyF
+                      +l  ++   ++  ++L+ + +G   ++++++NF g++lPia      
+  2BL2:E|PDB    60    LLPGTQGLYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAF----- 101  
+
+                   eagdeRAKenssilksNDpaGFnLvdvLAtg..........SlGHilGag
+                                  ++++ G+  + v+A g +   ++++++   i+ a+
+  2BL2:E|PDB   102 ---------------TGLFSGIAQGKVAAAGiqilakkpehATKGIIFAA 136  
+
+                   ivlGLsnlGal<-*
+                    v + + lG     
+  2BL2:E|PDB   137 MVETYAILGFV    147  
+
+SFT2: domain 1 of 1, from 61 to 154: score -83.1, E = 8.1
+                   *->LSrtqRlvgFviClgagilcflLstfllpvlllkprkFallyTlGsl
+                      L  tq l+gFvi +++   ++ L++ + +v          l+ lG+ 
+  2BL2:E|PDB    61    LPGTQGLYGFVIAFLI---FINLGSDMSVVQ--------GLNFLGAS 96   
+
+                   lallSfaFLmGPvkqlkhMfektRlpatllYllslllTLyaaLwlkstlL
+                   l ++ ++   G ++q k              +++  + ++a    + t  
+  2BL2:E|PDB    97 LPIAFTGLFSG-IAQGK--------------VAAAGIQILAKKPEHATKG 131  
+
+                   tllfailQilAlvwYsLSYiPgGrdgv<-*
+                    + +a  +  A++ +++S++     ++   
+  2BL2:E|PDB   132 IIFAAMVETYAILGFVISFL----LVL    154  
+
+Gate: domain 1 of 1, from 64 to 154: score 1.2, E = 0.58
+                   *->llrvlpiillfsvlisiLsnipedlGllealskllgPlllrllfgl.
+                         + +++++f+++i++     +d          ++ +   l   l+
+  2BL2:E|PDB    64    TQGLYGFVIAFLIFINLG----SD----------MSVV-QGLN-FLg 94   
+
+                   pepgnaalalllgftagesalasliillgleaseleviftllsasciav.
+                   ++ ++a+++l+ g++ g +a+a++ il ++   e ++    + a+++ + 
+  2BL2:E|PDB    95 ASLPIAFTGLFSGIAQGKVAAAGIQILAKK--PEHATKGIIF-AAMVETy 141  
+
+                   fllpvivsilGik<-*
+                   ++l++++s+l +    
+  2BL2:E|PDB   142 AILGFVISFLLVL    154  
+
+BofA: domain 1 of 1, from 67 to 121: score -54.1, E = 9.9
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                      + G ++++li   l+  +         sV+ ++     N+ Ga++ i
+  2BL2:E|PDB    67    LYGFVIAFLIFINLGSDM---------SVVQGL-----NFLGASLPI 99   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                         +T l sGi    G ++ + i+   +l   
+  2BL2:E|PDB   100 A-----FTGLFSGI--AQGKVAAAGIQ---IL    121  
+
+ETRAMP: domain 1 of 1, from 84 to 155: score -27.5, E = 7.6
+                   *->MKlsKiLyffafLLAinvlvPGysnnyveakpanskkvvkkkltdle
+                      M +   L f+ + L i +   G++ + +++k a+       ++  l+
+  2BL2:E|PDB    84    MSVVQGLNFLGASLPIAFT--GLFSGIAQGKVAA------AGIQILA 122  
+
+                   KKlekkknnKiiiIStlasalALaliGtgvGvGihykk<-*
+                   KK       K ii+++ + + A+  +G  + + +   +   
+  2BL2:E|PDB   123 KK--PEHATKGIIFAAMVETYAI--LGFVISF-LLVLN    155  
+
+ATP-synt_C: domain 2 of 2, from 90 to 155: score 84.2, E = 1.3e-22
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      ++++GA+l i++++l++Gi++G+v++a+i+++A++P    ++ tk+i
+  2BL2:E|PDB    90    LNFLGASLPIAFTGLFSGIAQGKVAAAGIQILAKKP----EHATKGI 132  
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i++a+vE++ai g+vi+fll+ +   
+  2BL2:E|PDB   133 IFAAMVETYAILGFVISFLLVLN    155  
+
+DUF1328: domain 1 of 1, from 97 to 153: score -31.0, E = 3.2
+                   *->LkWAiIFLiiALIAGvLGFGGIA...GAAAGI...AK........IL
+                      L  A++ L          F+GIA+++ AAAGI+  AK++++ +++I+
+  2BL2:E|PDB    97    LPIAFTGL----------FSGIAqgkVAAAGIqilAKkpehatkgII 133  
+
+                   Ffv.....FlvlFvVsLvlG<-*
+                   F +  ++ ++++Fv+s++l+   
+  2BL2:E|PDB   134 FAAmvetyAILGFVISFLLV    153  
+
+//
+
+Query sequence: 2BL2:D|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ATP-synt_C      ATP synthase subunit C                  161.0    9.6e-46   2
+Gate            Nucleoside recognition                    1.2       0.58   1
+FUSC            Fusaric acid resistance protein conse   -56.3        1.6   1
+DUF1328         Protein of unknown function (DUF1328)   -31.0        3.2   1
+DUF6            Integral membrane protein DUF6          -40.7        4.3   1
+BioY            BioY family                             -78.7        4.6   1
+Thia_YuaJ       Thiamine transporter protein (Thia_Yu  -135.9        5.6   1
+DUF95           Integral membrane protein DUF95         -84.0        6.3   1
+ABC-3           ABC 3 transport family                 -223.5        7.6   1
+ETRAMP          Malarial early transcribed membrane p   -27.5        7.6   1
+DUF998          Protein of unknown function (DUF998)    -95.9          8   1
+SFT2            SFT2-like protein                       -83.1        8.1   1
+PSI_PSAK        Photosystem I psaG / psaK               -33.8        9.3   1
+VanZ            VanZ like family                        -52.1        9.9   1
+BofA            SigmaK-factor processing regulatory p   -54.1        9.9   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ABC-3             1/1       3   153 ..     1   267 []  -223.5      7.6
+FUSC              1/1       5   120 ..     1   120 []   -56.3      1.6
+BioY              1/1       6   129 ..     1   186 []   -78.7      4.6
+VanZ              1/1      13   112 ..     1   171 []   -52.1      9.9
+ATP-synt_C        1/2      14    79 ..     1    70 []    76.8  2.1e-20
+DUF6              1/1      17   145 ..     1   128 []   -40.7      4.3
+DUF95             1/1      17   153 ..     1   200 []   -84.0      6.3
+Thia_YuaJ         1/1      19   155 ..     1   182 []  -135.9      5.6
+DUF998            1/1      25   122 ..     1   167 []   -95.9        8
+PSI_PSAK          1/1      60   147 ..     1    98 []   -33.8      9.3
+SFT2              1/1      61   154 ..     1   124 []   -83.1      8.1
+Gate              1/1      64   154 ..     1   108 []     1.2     0.58
+BofA              1/1      67   121 ..     1    79 []   -54.1      9.9
+ETRAMP            1/1      84   155 ..     1    85 []   -27.5      7.6
+ATP-synt_C        2/2      90   155 ..     1    70 []    84.2  1.3e-22
+DUF1328           1/1      97   153 ..     1    48 []   -31.0      3.2
+
+Alignments of top-scoring domains:
+ABC-3: domain 1 of 1, from 3 to 153: score -223.5, E = 7.6
+                   *->qyefmqrAllasilvglacgiLGsFlVLRRqSLmGDAiSHavLpGVA
+                      +y ++q+                                    +G +
+  2BL2:D|PDB     3    DYLITQN------------------------------------GGMV 13   
+
+                   LAffLginkSleipliGAflfgliaAvaigylkrnsrlkeDtaiGIvfss
+                   +A +   +        +++++g+  A ++g+  + +              
+  2BL2:D|PDB    14 FAVLAMAT--------ATIFSGIGSAKGVGMTGEAA-------------- 41   
+
+                   flAlGlllislikgsnaaskvdLdhyLFGniLgisqqDliqiaiitaiiL
+                         ++++ ++ +            FG++L +++  l  + ++ ++++
+  2BL2:D|PDB    42 ------AALTTSQPEK-----------FGQALILQL--LPGTQGLYGFVI 72   
+
+                   lllllfwkeLllitFDpdlAkviGlpvnflkllL.liLlaltiVvalqaV
+                    +l++++          d++ v+Gl+  fl   L+++ ++l   +a   V
+  2BL2:D|PDB    73 AFLIFIN-------LGSDMSVVQGLN--FLGASLpIAFTGLFSGIAQGKV 113  
+
+                   GvILViAlLitPAatArl.ltkslesmlliAsaiGvvssvaGlllSYyfd
+                               Aa +++ l+k++e+             + G ++ + ++
+  2BL2:D|PDB   114 ------------AAAGIQiLAKKPEH------------ATKGIIFAAMVE 139  
+
+                   tatGpvIVLiatllFlisflfa<-*
+                   t         a+l F+isfl     
+  2BL2:D|PDB   140 T--------YAILGFVISFLLV    153  
+
+FUSC: domain 1 of 1, from 5 to 120: score -56.3, E = 1.6
+                   *->alaahadpaaAmrnGlRtaLaiLlggaFW.iysaWpsGgtavllaav
+                          ++ +   m++++   La+  ++ F++i+sa   G t  + aa 
+  2BL2:D|PDB     5    ---LITQNGG-MVFAV---LAMATATIFSgIGSAKGVGMTGEAAAAL 44   
+
+                   vcsLfaarPnPaqvalnfirGt..llAiplallvkfll...LPqidgFpl
+                   ++s      +  + +l+++ Gt++l++ ++a+l++  l++++  ++g+  
+  2BL2:D|PDB    45 TTS--QPEKFGQALILQLLPGTqgLYGFVIAFLIFINLgsdMSVVQGLNF 92   
+
+                   LclvLaPllalgalLglsrPksagiamgl<-*
+                   L ++L P+ ++g + g++  k a+ ++++   
+  2BL2:D|PDB    93 LGASL-PIAFTGLFSGIAQGKVAAAGIQI    120  
+
+BioY: domain 1 of 1, from 6 to 129: score -78.7, E = 4.6
+                   *->isiledflpikPVPlTlQtfgVlLaGllLGPklgaLsqLiYlllGal
+                      i+               Q++g                  +++ l  +
+  2BL2:D|PDB     6    IT---------------QNGG-----------------MVFAVLAMA 20   
+
+                   GlPvFAgfsGGiavflGPTgGYLlGFilAaflaGwlaerhRL.CtPwRkr
+                    + +F+g        +G++ G       +++   ++a    L+   + k+
+  2BL2:D|PDB    21 TATIFSG--------IGSAKG------VGMTGEAAAA----LtTSQPEKF 52   
+
+                   gRketlmllLaticLvGlgvIYllGivvLalflgldekvlss..davgaf
+                   g+     l L +  L G+   Y+   +v a+ + +    l+s+ + v+++
+  2BL2:D|PDB    53 GQ----ALILQL--LPGTQGLYG---FVIAFLIFIN---LGSdmSVVQGL 90   
+
+                   m.lgvilPtmviFAAtvLiFligdfvvkalvavllarritpal<-*
+                   + lg++lP     A t L   i+ + v a++ ++la +   a+   
+  2BL2:D|PDB    91 NfLGASLP----IAFTGLFSGIAQGKVAAAGIQILAKKPEHAT    129  
+
+VanZ: domain 1 of 1, from 13 to 112: score -52.1, E = 9.9
+                   *->lfivYli.lllwlvlFalilvlsawaalfvmvaevsavrsynLvPfk
+                      +f+v+ + +++ + ++++   ++++      ++++ a    +++ f 
+  2BL2:D|PDB    13    VFAVLAMaTATIFSGIGSAKGVGMT------GEAAAALTTSQPEKFG 53   
+
+                   airaftlltpfqlsekLetldelelidtfiekllNillFfPLGlllpvlf
+                     ++++ll++ q+                       l+ f  ++l++++ 
+  2BL2:D|PDB    54 QALILQLLPGTQG-----------------------LYGFVIAFLIFINL 80   
+
+                   krlrkrrasfltvlalglllsCCLliEvlQlflpgRyffdRvfdIdDvll
+                   ++                  s      v+Q+                  l
+  2BL2:D|PDB    81 GS------D----------MS------VVQG------------------L 90   
+
+                   NTlGallGylivflyrllkrrllrk<-*
+                   N+lGa l +    + +l+  +++ k   
+  2BL2:D|PDB    91 NFLGASLPIA---FTGLFSGIAQGK    112  
+
+ATP-synt_C: domain 1 of 2, from 14 to 79: score 76.8, E = 2.1e-20
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      +av++++ A++++++G++ G+G+ g+a+++ ++ qP    + f++++
+  2BL2:D|PDB    14    FAVLAMATATIFSGIGSAKGVGMTGEAAAALTTSQP----EKFGQAL 56   
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i + l +++++yg+viAfl++++   
+  2BL2:D|PDB    57 ILQLLPGTQGLYGFVIAFLIFIN    79   
+
+DUF6: domain 1 of 1, from 17 to 145: score -40.7, E = 4.3
+                   *->liWalytvfskkller...ispltftayrfl....iagilllilllf
+                      l++a++t+fs ++++++ ++   +++a+   ++++++    +++l +
+  2BL2:D|PDB    17    LAMATATIFSGIGSAKgvgMTGEAAAALTTSqpekFGQ---ALILQL 60   
+
+                   llrkppifallslk.ilallylglfgtalgyllyfyalkyvsasnasvlt
+                   l++ +        + ++++++  +f       +  ++l++++as    +t
+  2BL2:D|PDB    61 LPGTQ--------GlYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAFT 102  
+
+                   slsPvft....lilsvllLgEkltlkqllGivlillGvllisl<-*
+                    l   +++++ +  ++ +L  k+   +   i+ +++ ++ i+    
+  2BL2:D|PDB   103 GLFSGIAqgkvAAAGIQILAKKPEHATKGIIFAAMVETYAILG    145  
+
+DUF95: domain 1 of 1, from 17 to 153: score -84.0, E = 6.3
+                   *->lalllFlvgillGyilvnsdpaliellllptylsefvnpaemYDPrd
+                      la+++  ++  +G   +  +  ++ ++l   +               
+  2BL2:D|PDB    17    LAMATATIFSGIGSAKGVGMTGEAAAALTTSQ--------------- 48   
+
+                   egglasgsehppalmflqIftNNlrVallafalGiillGlPgtlliLflN
+                               +  f+q ++  l         G  l G+ ++++++f+N
+  2BL2:D|PDB    49 ------------PEKFGQALILQLLPGT----QG--LYGF-VIAFLIFIN 79   
+
+                   GlilGavagllaneVggldpflLalalvlPHGilEipAii..lAgaaGlr
+                      lG   ++++       +f   l++ lP   +  +++++++A +   +
+  2BL2:D|PDB    80 ---LGSDMSVVQGL-----NF---LGASLP---IAFTGLFsgIAQG---K 112  
+
+                   lgwaliralfpgknrsRlqalkrggrralkllvgvlvvvvLLliAAfIEg
+                    + a i+ l+++ +     + +  g  ++ ++ + +++ + ++i+ ++  
+  2BL2:D|PDB   113 VAAAGIQILAKK-P-----EHATKGIIFAAMVET-YAI-LGFVISFLL-- 152  
+
+                   fiTPs<-*
+                       +   
+  2BL2:D|PDB   153 ----V    153  
+
+Thia_YuaJ: domain 1 of 1, from 19 to 155: score -135.9, E = 5.6
+                   *->lvEiAifaAL............AmvLslIpllykmPqGGSisLgSMi
+                      ++ ++if+++++ ++ + +++ A +L     + k++q+  + L    
+  2BL2:D|PDB    19    MATATIFSGIgsakgvgmtgeaAAALTTSQ-PEKFGQALILQLL--- 61   
+
+                   PIfliAfRrGlkaGllaGflwGlLqlvlRlgdaygilhPvQvl......L
+                             ++   l Gf+  +L +   +  ++   ++vQ+l+  + +L
+  2BL2:D|PDB    62 ----------PGTQGLYGFVIAFLIF---INLGS-DMSVVQGLnflgasL 97   
+
+                   DYplAFmalGLAGlFakkvqkalaenkkkkalayiilGvliggflRyfcH
+                     p+AF+ l ++G+   kv                  ++ i ++++   H
+  2BL2:D|PDB    98 --PIAFTGL-FSGIAQGKV-----------------AAAGIQILAKKPEH 127  
+
+                   fIAGViFfGsYAPkGmspwlYSliyNGsymlpslllciivliiLlkklpr
+                      G+iF    A                +m+ ++++ + v+ +Ll+    
+  2BL2:D|PDB   128 ATKGIIF----A----------------AMVETYAILGFVISFLLV---- 153  
+
+                   lfl<-*
+                    ++   
+  2BL2:D|PDB   154 -LN    155  
+
+DUF998: domain 1 of 1, from 25 to 122: score -95.9, E = 8
+                   *->nPWFsfTkNALSDLGgigllsNGHPaapypWlyNygLIltGlLvily
+                                +S  G+++                +g+ ++++ ++ +
+  2BL2:D|PDB    25    ----------FSGIGSAK---------------GVGMTGEAAAALTT 46   
+
+                   sllliraaknKieniGsalliisglFLaLIGIFpEGtyPHtfVSiwFFIl
+                   s   +         +G+al+      L L      Gt       ++ F++
+  2BL2:D|PDB    47 SQPEK---------FGQALI------LQLL----PGTQ-----GLYGFVI 72   
+
+                   sfiamliyGigallarrkllGililalflaglivatFlvmifltslkkwp
+                   +f+ ++ +G  ++++    l++l+     a+l++a    + +l+s++   
+  2BL2:D|PDB    73 AFLIFINLGSDMSVVQG--LNFLG-----ASLPIA----FTGLFSGI--- 108  
+
+                   GvAvpEliGIvvIliwviil<-*
+                         + G v+ +  +i++   
+  2BL2:D|PDB   109 ------AQGKVAAAGIQILA    122  
+
+PSI_PSAK: domain 1 of 1, from 60 to 147: score -33.8, E = 9.3
+                   *->alstnlVisvsitcnLfagrFGkyaiqrrnaNFDgtglPiangatyF
+                      +l  ++   ++  ++L+ + +G   ++++++NF g++lPia      
+  2BL2:D|PDB    60    LLPGTQGLYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAF----- 101  
+
+                   eagdeRAKenssilksNDpaGFnLvdvLAtg..........SlGHilGag
+                                  ++++ G+  + v+A g +   ++++++   i+ a+
+  2BL2:D|PDB   102 ---------------TGLFSGIAQGKVAAAGiqilakkpehATKGIIFAA 136  
+
+                   ivlGLsnlGal<-*
+                    v + + lG     
+  2BL2:D|PDB   137 MVETYAILGFV    147  
+
+SFT2: domain 1 of 1, from 61 to 154: score -83.1, E = 8.1
+                   *->LSrtqRlvgFviClgagilcflLstfllpvlllkprkFallyTlGsl
+                      L  tq l+gFvi +++   ++ L++ + +v          l+ lG+ 
+  2BL2:D|PDB    61    LPGTQGLYGFVIAFLI---FINLGSDMSVVQ--------GLNFLGAS 96   
+
+                   lallSfaFLmGPvkqlkhMfektRlpatllYllslllTLyaaLwlkstlL
+                   l ++ ++   G ++q k              +++  + ++a    + t  
+  2BL2:D|PDB    97 LPIAFTGLFSG-IAQGK--------------VAAAGIQILAKKPEHATKG 131  
+
+                   tllfailQilAlvwYsLSYiPgGrdgv<-*
+                    + +a  +  A++ +++S++     ++   
+  2BL2:D|PDB   132 IIFAAMVETYAILGFVISFL----LVL    154  
+
+Gate: domain 1 of 1, from 64 to 154: score 1.2, E = 0.58
+                   *->llrvlpiillfsvlisiLsnipedlGllealskllgPlllrllfgl.
+                         + +++++f+++i++     +d          ++ +   l   l+
+  2BL2:D|PDB    64    TQGLYGFVIAFLIFINLG----SD----------MSVV-QGLN-FLg 94   
+
+                   pepgnaalalllgftagesalasliillgleaseleviftllsasciav.
+                   ++ ++a+++l+ g++ g +a+a++ il ++   e ++    + a+++ + 
+  2BL2:D|PDB    95 ASLPIAFTGLFSGIAQGKVAAAGIQILAKK--PEHATKGIIF-AAMVETy 141  
+
+                   fllpvivsilGik<-*
+                   ++l++++s+l +    
+  2BL2:D|PDB   142 AILGFVISFLLVL    154  
+
+BofA: domain 1 of 1, from 67 to 121: score -54.1, E = 9.9
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                      + G ++++li   l+  +         sV+ ++     N+ Ga++ i
+  2BL2:D|PDB    67    LYGFVIAFLIFINLGSDM---------SVVQGL-----NFLGASLPI 99   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                         +T l sGi    G ++ + i+   +l   
+  2BL2:D|PDB   100 A-----FTGLFSGI--AQGKVAAAGIQ---IL    121  
+
+ETRAMP: domain 1 of 1, from 84 to 155: score -27.5, E = 7.6
+                   *->MKlsKiLyffafLLAinvlvPGysnnyveakpanskkvvkkkltdle
+                      M +   L f+ + L i +   G++ + +++k a+       ++  l+
+  2BL2:D|PDB    84    MSVVQGLNFLGASLPIAFT--GLFSGIAQGKVAA------AGIQILA 122  
+
+                   KKlekkknnKiiiIStlasalALaliGtgvGvGihykk<-*
+                   KK       K ii+++ + + A+  +G  + + +   +   
+  2BL2:D|PDB   123 KK--PEHATKGIIFAAMVETYAI--LGFVISF-LLVLN    155  
+
+ATP-synt_C: domain 2 of 2, from 90 to 155: score 84.2, E = 1.3e-22
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      ++++GA+l i++++l++Gi++G+v++a+i+++A++P    ++ tk+i
+  2BL2:D|PDB    90    LNFLGASLPIAFTGLFSGIAQGKVAAAGIQILAKKP----EHATKGI 132  
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i++a+vE++ai g+vi+fll+ +   
+  2BL2:D|PDB   133 IFAAMVETYAILGFVISFLLVLN    155  
+
+DUF1328: domain 1 of 1, from 97 to 153: score -31.0, E = 3.2
+                   *->LkWAiIFLiiALIAGvLGFGGIA...GAAAGI...AK........IL
+                      L  A++ L          F+GIA+++ AAAGI+  AK++++ +++I+
+  2BL2:D|PDB    97    LPIAFTGL----------FSGIAqgkVAAAGIqilAKkpehatkgII 133  
+
+                   Ffv.....FlvlFvVsLvlG<-*
+                   F +  ++ ++++Fv+s++l+   
+  2BL2:D|PDB   134 FAAmvetyAILGFVISFLLV    153  
+
+//
+
+Query sequence: 2BL2:C|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ATP-synt_C      ATP synthase subunit C                  161.0    9.6e-46   2
+Gate            Nucleoside recognition                    1.2       0.58   1
+FUSC            Fusaric acid resistance protein conse   -56.3        1.6   1
+DUF1328         Protein of unknown function (DUF1328)   -31.0        3.2   1
+DUF6            Integral membrane protein DUF6          -40.7        4.3   1
+BioY            BioY family                             -78.7        4.6   1
+Thia_YuaJ       Thiamine transporter protein (Thia_Yu  -135.9        5.6   1
+DUF95           Integral membrane protein DUF95         -84.0        6.3   1
+ABC-3           ABC 3 transport family                 -223.5        7.6   1
+ETRAMP          Malarial early transcribed membrane p   -27.5        7.6   1
+DUF998          Protein of unknown function (DUF998)    -95.9          8   1
+SFT2            SFT2-like protein                       -83.1        8.1   1
+PSI_PSAK        Photosystem I psaG / psaK               -33.8        9.3   1
+VanZ            VanZ like family                        -52.1        9.9   1
+BofA            SigmaK-factor processing regulatory p   -54.1        9.9   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ABC-3             1/1       3   153 ..     1   267 []  -223.5      7.6
+FUSC              1/1       5   120 ..     1   120 []   -56.3      1.6
+BioY              1/1       6   129 ..     1   186 []   -78.7      4.6
+VanZ              1/1      13   112 ..     1   171 []   -52.1      9.9
+ATP-synt_C        1/2      14    79 ..     1    70 []    76.8  2.1e-20
+DUF6              1/1      17   145 ..     1   128 []   -40.7      4.3
+DUF95             1/1      17   153 ..     1   200 []   -84.0      6.3
+Thia_YuaJ         1/1      19   155 ..     1   182 []  -135.9      5.6
+DUF998            1/1      25   122 ..     1   167 []   -95.9        8
+PSI_PSAK          1/1      60   147 ..     1    98 []   -33.8      9.3
+SFT2              1/1      61   154 ..     1   124 []   -83.1      8.1
+Gate              1/1      64   154 ..     1   108 []     1.2     0.58
+BofA              1/1      67   121 ..     1    79 []   -54.1      9.9
+ETRAMP            1/1      84   155 ..     1    85 []   -27.5      7.6
+ATP-synt_C        2/2      90   155 ..     1    70 []    84.2  1.3e-22
+DUF1328           1/1      97   153 ..     1    48 []   -31.0      3.2
+
+Alignments of top-scoring domains:
+ABC-3: domain 1 of 1, from 3 to 153: score -223.5, E = 7.6
+                   *->qyefmqrAllasilvglacgiLGsFlVLRRqSLmGDAiSHavLpGVA
+                      +y ++q+                                    +G +
+  2BL2:C|PDB     3    DYLITQN------------------------------------GGMV 13   
+
+                   LAffLginkSleipliGAflfgliaAvaigylkrnsrlkeDtaiGIvfss
+                   +A +   +        +++++g+  A ++g+  + +              
+  2BL2:C|PDB    14 FAVLAMAT--------ATIFSGIGSAKGVGMTGEAA-------------- 41   
+
+                   flAlGlllislikgsnaaskvdLdhyLFGniLgisqqDliqiaiitaiiL
+                         ++++ ++ +            FG++L +++  l  + ++ ++++
+  2BL2:C|PDB    42 ------AALTTSQPEK-----------FGQALILQL--LPGTQGLYGFVI 72   
+
+                   lllllfwkeLllitFDpdlAkviGlpvnflkllL.liLlaltiVvalqaV
+                    +l++++          d++ v+Gl+  fl   L+++ ++l   +a   V
+  2BL2:C|PDB    73 AFLIFIN-------LGSDMSVVQGLN--FLGASLpIAFTGLFSGIAQGKV 113  
+
+                   GvILViAlLitPAatArl.ltkslesmlliAsaiGvvssvaGlllSYyfd
+                               Aa +++ l+k++e+             + G ++ + ++
+  2BL2:C|PDB   114 ------------AAAGIQiLAKKPEH------------ATKGIIFAAMVE 139  
+
+                   tatGpvIVLiatllFlisflfa<-*
+                   t         a+l F+isfl     
+  2BL2:C|PDB   140 T--------YAILGFVISFLLV    153  
+
+FUSC: domain 1 of 1, from 5 to 120: score -56.3, E = 1.6
+                   *->alaahadpaaAmrnGlRtaLaiLlggaFW.iysaWpsGgtavllaav
+                          ++ +   m++++   La+  ++ F++i+sa   G t  + aa 
+  2BL2:C|PDB     5    ---LITQNGG-MVFAV---LAMATATIFSgIGSAKGVGMTGEAAAAL 44   
+
+                   vcsLfaarPnPaqvalnfirGt..llAiplallvkfll...LPqidgFpl
+                   ++s      +  + +l+++ Gt++l++ ++a+l++  l++++  ++g+  
+  2BL2:C|PDB    45 TTS--QPEKFGQALILQLLPGTqgLYGFVIAFLIFINLgsdMSVVQGLNF 92   
+
+                   LclvLaPllalgalLglsrPksagiamgl<-*
+                   L ++L P+ ++g + g++  k a+ ++++   
+  2BL2:C|PDB    93 LGASL-PIAFTGLFSGIAQGKVAAAGIQI    120  
+
+BioY: domain 1 of 1, from 6 to 129: score -78.7, E = 4.6
+                   *->isiledflpikPVPlTlQtfgVlLaGllLGPklgaLsqLiYlllGal
+                      i+               Q++g                  +++ l  +
+  2BL2:C|PDB     6    IT---------------QNGG-----------------MVFAVLAMA 20   
+
+                   GlPvFAgfsGGiavflGPTgGYLlGFilAaflaGwlaerhRL.CtPwRkr
+                    + +F+g        +G++ G       +++   ++a    L+   + k+
+  2BL2:C|PDB    21 TATIFSG--------IGSAKG------VGMTGEAAAA----LtTSQPEKF 52   
+
+                   gRketlmllLaticLvGlgvIYllGivvLalflgldekvlss..davgaf
+                   g+     l L +  L G+   Y+   +v a+ + +    l+s+ + v+++
+  2BL2:C|PDB    53 GQ----ALILQL--LPGTQGLYG---FVIAFLIFIN---LGSdmSVVQGL 90   
+
+                   m.lgvilPtmviFAAtvLiFligdfvvkalvavllarritpal<-*
+                   + lg++lP     A t L   i+ + v a++ ++la +   a+   
+  2BL2:C|PDB    91 NfLGASLP----IAFTGLFSGIAQGKVAAAGIQILAKKPEHAT    129  
+
+VanZ: domain 1 of 1, from 13 to 112: score -52.1, E = 9.9
+                   *->lfivYli.lllwlvlFalilvlsawaalfvmvaevsavrsynLvPfk
+                      +f+v+ + +++ + ++++   ++++      ++++ a    +++ f 
+  2BL2:C|PDB    13    VFAVLAMaTATIFSGIGSAKGVGMT------GEAAAALTTSQPEKFG 53   
+
+                   airaftlltpfqlsekLetldelelidtfiekllNillFfPLGlllpvlf
+                     ++++ll++ q+                       l+ f  ++l++++ 
+  2BL2:C|PDB    54 QALILQLLPGTQG-----------------------LYGFVIAFLIFINL 80   
+
+                   krlrkrrasfltvlalglllsCCLliEvlQlflpgRyffdRvfdIdDvll
+                   ++                  s      v+Q+                  l
+  2BL2:C|PDB    81 GS------D----------MS------VVQG------------------L 90   
+
+                   NTlGallGylivflyrllkrrllrk<-*
+                   N+lGa l +    + +l+  +++ k   
+  2BL2:C|PDB    91 NFLGASLPIA---FTGLFSGIAQGK    112  
+
+ATP-synt_C: domain 1 of 2, from 14 to 79: score 76.8, E = 2.1e-20
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      +av++++ A++++++G++ G+G+ g+a+++ ++ qP    + f++++
+  2BL2:C|PDB    14    FAVLAMATATIFSGIGSAKGVGMTGEAAAALTTSQP----EKFGQAL 56   
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i + l +++++yg+viAfl++++   
+  2BL2:C|PDB    57 ILQLLPGTQGLYGFVIAFLIFIN    79   
+
+DUF6: domain 1 of 1, from 17 to 145: score -40.7, E = 4.3
+                   *->liWalytvfskkller...ispltftayrfl....iagilllilllf
+                      l++a++t+fs ++++++ ++   +++a+   ++++++    +++l +
+  2BL2:C|PDB    17    LAMATATIFSGIGSAKgvgMTGEAAAALTTSqpekFGQ---ALILQL 60   
+
+                   llrkppifallslk.ilallylglfgtalgyllyfyalkyvsasnasvlt
+                   l++ +        + ++++++  +f       +  ++l++++as    +t
+  2BL2:C|PDB    61 LPGTQ--------GlYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAFT 102  
+
+                   slsPvft....lilsvllLgEkltlkqllGivlillGvllisl<-*
+                    l   +++++ +  ++ +L  k+   +   i+ +++ ++ i+    
+  2BL2:C|PDB   103 GLFSGIAqgkvAAAGIQILAKKPEHATKGIIFAAMVETYAILG    145  
+
+DUF95: domain 1 of 1, from 17 to 153: score -84.0, E = 6.3
+                   *->lalllFlvgillGyilvnsdpaliellllptylsefvnpaemYDPrd
+                      la+++  ++  +G   +  +  ++ ++l   +               
+  2BL2:C|PDB    17    LAMATATIFSGIGSAKGVGMTGEAAAALTTSQ--------------- 48   
+
+                   egglasgsehppalmflqIftNNlrVallafalGiillGlPgtlliLflN
+                               +  f+q ++  l         G  l G+ ++++++f+N
+  2BL2:C|PDB    49 ------------PEKFGQALILQLLPGT----QG--LYGF-VIAFLIFIN 79   
+
+                   GlilGavagllaneVggldpflLalalvlPHGilEipAii..lAgaaGlr
+                      lG   ++++       +f   l++ lP   +  +++++++A +   +
+  2BL2:C|PDB    80 ---LGSDMSVVQGL-----NF---LGASLP---IAFTGLFsgIAQG---K 112  
+
+                   lgwaliralfpgknrsRlqalkrggrralkllvgvlvvvvLLliAAfIEg
+                    + a i+ l+++ +     + +  g  ++ ++ + +++ + ++i+ ++  
+  2BL2:C|PDB   113 VAAAGIQILAKK-P-----EHATKGIIFAAMVET-YAI-LGFVISFLL-- 152  
+
+                   fiTPs<-*
+                       +   
+  2BL2:C|PDB   153 ----V    153  
+
+Thia_YuaJ: domain 1 of 1, from 19 to 155: score -135.9, E = 5.6
+                   *->lvEiAifaAL............AmvLslIpllykmPqGGSisLgSMi
+                      ++ ++if+++++ ++ + +++ A +L     + k++q+  + L    
+  2BL2:C|PDB    19    MATATIFSGIgsakgvgmtgeaAAALTTSQ-PEKFGQALILQLL--- 61   
+
+                   PIfliAfRrGlkaGllaGflwGlLqlvlRlgdaygilhPvQvl......L
+                             ++   l Gf+  +L +   +  ++   ++vQ+l+  + +L
+  2BL2:C|PDB    62 ----------PGTQGLYGFVIAFLIF---INLGS-DMSVVQGLnflgasL 97   
+
+                   DYplAFmalGLAGlFakkvqkalaenkkkkalayiilGvliggflRyfcH
+                     p+AF+ l ++G+   kv                  ++ i ++++   H
+  2BL2:C|PDB    98 --PIAFTGL-FSGIAQGKV-----------------AAAGIQILAKKPEH 127  
+
+                   fIAGViFfGsYAPkGmspwlYSliyNGsymlpslllciivliiLlkklpr
+                      G+iF    A                +m+ ++++ + v+ +Ll+    
+  2BL2:C|PDB   128 ATKGIIF----A----------------AMVETYAILGFVISFLLV---- 153  
+
+                   lfl<-*
+                    ++   
+  2BL2:C|PDB   154 -LN    155  
+
+DUF998: domain 1 of 1, from 25 to 122: score -95.9, E = 8
+                   *->nPWFsfTkNALSDLGgigllsNGHPaapypWlyNygLIltGlLvily
+                                +S  G+++                +g+ ++++ ++ +
+  2BL2:C|PDB    25    ----------FSGIGSAK---------------GVGMTGEAAAALTT 46   
+
+                   sllliraaknKieniGsalliisglFLaLIGIFpEGtyPHtfVSiwFFIl
+                   s   +         +G+al+      L L      Gt       ++ F++
+  2BL2:C|PDB    47 SQPEK---------FGQALI------LQLL----PGTQ-----GLYGFVI 72   
+
+                   sfiamliyGigallarrkllGililalflaglivatFlvmifltslkkwp
+                   +f+ ++ +G  ++++    l++l+     a+l++a    + +l+s++   
+  2BL2:C|PDB    73 AFLIFINLGSDMSVVQG--LNFLG-----ASLPIA----FTGLFSGI--- 108  
+
+                   GvAvpEliGIvvIliwviil<-*
+                         + G v+ +  +i++   
+  2BL2:C|PDB   109 ------AQGKVAAAGIQILA    122  
+
+PSI_PSAK: domain 1 of 1, from 60 to 147: score -33.8, E = 9.3
+                   *->alstnlVisvsitcnLfagrFGkyaiqrrnaNFDgtglPiangatyF
+                      +l  ++   ++  ++L+ + +G   ++++++NF g++lPia      
+  2BL2:C|PDB    60    LLPGTQGLYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAF----- 101  
+
+                   eagdeRAKenssilksNDpaGFnLvdvLAtg..........SlGHilGag
+                                  ++++ G+  + v+A g +   ++++++   i+ a+
+  2BL2:C|PDB   102 ---------------TGLFSGIAQGKVAAAGiqilakkpehATKGIIFAA 136  
+
+                   ivlGLsnlGal<-*
+                    v + + lG     
+  2BL2:C|PDB   137 MVETYAILGFV    147  
+
+SFT2: domain 1 of 1, from 61 to 154: score -83.1, E = 8.1
+                   *->LSrtqRlvgFviClgagilcflLstfllpvlllkprkFallyTlGsl
+                      L  tq l+gFvi +++   ++ L++ + +v          l+ lG+ 
+  2BL2:C|PDB    61    LPGTQGLYGFVIAFLI---FINLGSDMSVVQ--------GLNFLGAS 96   
+
+                   lallSfaFLmGPvkqlkhMfektRlpatllYllslllTLyaaLwlkstlL
+                   l ++ ++   G ++q k              +++  + ++a    + t  
+  2BL2:C|PDB    97 LPIAFTGLFSG-IAQGK--------------VAAAGIQILAKKPEHATKG 131  
+
+                   tllfailQilAlvwYsLSYiPgGrdgv<-*
+                    + +a  +  A++ +++S++     ++   
+  2BL2:C|PDB   132 IIFAAMVETYAILGFVISFL----LVL    154  
+
+Gate: domain 1 of 1, from 64 to 154: score 1.2, E = 0.58
+                   *->llrvlpiillfsvlisiLsnipedlGllealskllgPlllrllfgl.
+                         + +++++f+++i++     +d          ++ +   l   l+
+  2BL2:C|PDB    64    TQGLYGFVIAFLIFINLG----SD----------MSVV-QGLN-FLg 94   
+
+                   pepgnaalalllgftagesalasliillgleaseleviftllsasciav.
+                   ++ ++a+++l+ g++ g +a+a++ il ++   e ++    + a+++ + 
+  2BL2:C|PDB    95 ASLPIAFTGLFSGIAQGKVAAAGIQILAKK--PEHATKGIIF-AAMVETy 141  
+
+                   fllpvivsilGik<-*
+                   ++l++++s+l +    
+  2BL2:C|PDB   142 AILGFVISFLLVL    154  
+
+BofA: domain 1 of 1, from 67 to 121: score -54.1, E = 9.9
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                      + G ++++li   l+  +         sV+ ++     N+ Ga++ i
+  2BL2:C|PDB    67    LYGFVIAFLIFINLGSDM---------SVVQGL-----NFLGASLPI 99   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                         +T l sGi    G ++ + i+   +l   
+  2BL2:C|PDB   100 A-----FTGLFSGI--AQGKVAAAGIQ---IL    121  
+
+ETRAMP: domain 1 of 1, from 84 to 155: score -27.5, E = 7.6
+                   *->MKlsKiLyffafLLAinvlvPGysnnyveakpanskkvvkkkltdle
+                      M +   L f+ + L i +   G++ + +++k a+       ++  l+
+  2BL2:C|PDB    84    MSVVQGLNFLGASLPIAFT--GLFSGIAQGKVAA------AGIQILA 122  
+
+                   KKlekkknnKiiiIStlasalALaliGtgvGvGihykk<-*
+                   KK       K ii+++ + + A+  +G  + + +   +   
+  2BL2:C|PDB   123 KK--PEHATKGIIFAAMVETYAI--LGFVISF-LLVLN    155  
+
+ATP-synt_C: domain 2 of 2, from 90 to 155: score 84.2, E = 1.3e-22
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      ++++GA+l i++++l++Gi++G+v++a+i+++A++P    ++ tk+i
+  2BL2:C|PDB    90    LNFLGASLPIAFTGLFSGIAQGKVAAAGIQILAKKP----EHATKGI 132  
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i++a+vE++ai g+vi+fll+ +   
+  2BL2:C|PDB   133 IFAAMVETYAILGFVISFLLVLN    155  
+
+DUF1328: domain 1 of 1, from 97 to 153: score -31.0, E = 3.2
+                   *->LkWAiIFLiiALIAGvLGFGGIA...GAAAGI...AK........IL
+                      L  A++ L          F+GIA+++ AAAGI+  AK++++ +++I+
+  2BL2:C|PDB    97    LPIAFTGL----------FSGIAqgkVAAAGIqilAKkpehatkgII 133  
+
+                   Ffv.....FlvlFvVsLvlG<-*
+                   F +  ++ ++++Fv+s++l+   
+  2BL2:C|PDB   134 FAAmvetyAILGFVISFLLV    153  
+
+//
+
+Query sequence: 2BL2:B|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ATP-synt_C      ATP synthase subunit C                  161.0    9.6e-46   2
+Gate            Nucleoside recognition                    1.2       0.58   1
+FUSC            Fusaric acid resistance protein conse   -56.3        1.6   1
+DUF1328         Protein of unknown function (DUF1328)   -31.0        3.2   1
+DUF6            Integral membrane protein DUF6          -40.7        4.3   1
+BioY            BioY family                             -78.7        4.6   1
+Thia_YuaJ       Thiamine transporter protein (Thia_Yu  -135.9        5.6   1
+DUF95           Integral membrane protein DUF95         -84.0        6.3   1
+ABC-3           ABC 3 transport family                 -223.5        7.6   1
+ETRAMP          Malarial early transcribed membrane p   -27.5        7.6   1
+DUF998          Protein of unknown function (DUF998)    -95.9          8   1
+SFT2            SFT2-like protein                       -83.1        8.1   1
+PSI_PSAK        Photosystem I psaG / psaK               -33.8        9.3   1
+VanZ            VanZ like family                        -52.1        9.9   1
+BofA            SigmaK-factor processing regulatory p   -54.1        9.9   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ABC-3             1/1       3   153 ..     1   267 []  -223.5      7.6
+FUSC              1/1       5   120 ..     1   120 []   -56.3      1.6
+BioY              1/1       6   129 ..     1   186 []   -78.7      4.6
+VanZ              1/1      13   112 ..     1   171 []   -52.1      9.9
+ATP-synt_C        1/2      14    79 ..     1    70 []    76.8  2.1e-20
+DUF6              1/1      17   145 ..     1   128 []   -40.7      4.3
+DUF95             1/1      17   153 ..     1   200 []   -84.0      6.3
+Thia_YuaJ         1/1      19   155 ..     1   182 []  -135.9      5.6
+DUF998            1/1      25   122 ..     1   167 []   -95.9        8
+PSI_PSAK          1/1      60   147 ..     1    98 []   -33.8      9.3
+SFT2              1/1      61   154 ..     1   124 []   -83.1      8.1
+Gate              1/1      64   154 ..     1   108 []     1.2     0.58
+BofA              1/1      67   121 ..     1    79 []   -54.1      9.9
+ETRAMP            1/1      84   155 ..     1    85 []   -27.5      7.6
+ATP-synt_C        2/2      90   155 ..     1    70 []    84.2  1.3e-22
+DUF1328           1/1      97   153 ..     1    48 []   -31.0      3.2
+
+Alignments of top-scoring domains:
+ABC-3: domain 1 of 1, from 3 to 153: score -223.5, E = 7.6
+                   *->qyefmqrAllasilvglacgiLGsFlVLRRqSLmGDAiSHavLpGVA
+                      +y ++q+                                    +G +
+  2BL2:B|PDB     3    DYLITQN------------------------------------GGMV 13   
+
+                   LAffLginkSleipliGAflfgliaAvaigylkrnsrlkeDtaiGIvfss
+                   +A +   +        +++++g+  A ++g+  + +              
+  2BL2:B|PDB    14 FAVLAMAT--------ATIFSGIGSAKGVGMTGEAA-------------- 41   
+
+                   flAlGlllislikgsnaaskvdLdhyLFGniLgisqqDliqiaiitaiiL
+                         ++++ ++ +            FG++L +++  l  + ++ ++++
+  2BL2:B|PDB    42 ------AALTTSQPEK-----------FGQALILQL--LPGTQGLYGFVI 72   
+
+                   lllllfwkeLllitFDpdlAkviGlpvnflkllL.liLlaltiVvalqaV
+                    +l++++          d++ v+Gl+  fl   L+++ ++l   +a   V
+  2BL2:B|PDB    73 AFLIFIN-------LGSDMSVVQGLN--FLGASLpIAFTGLFSGIAQGKV 113  
+
+                   GvILViAlLitPAatArl.ltkslesmlliAsaiGvvssvaGlllSYyfd
+                               Aa +++ l+k++e+             + G ++ + ++
+  2BL2:B|PDB   114 ------------AAAGIQiLAKKPEH------------ATKGIIFAAMVE 139  
+
+                   tatGpvIVLiatllFlisflfa<-*
+                   t         a+l F+isfl     
+  2BL2:B|PDB   140 T--------YAILGFVISFLLV    153  
+
+FUSC: domain 1 of 1, from 5 to 120: score -56.3, E = 1.6
+                   *->alaahadpaaAmrnGlRtaLaiLlggaFW.iysaWpsGgtavllaav
+                          ++ +   m++++   La+  ++ F++i+sa   G t  + aa 
+  2BL2:B|PDB     5    ---LITQNGG-MVFAV---LAMATATIFSgIGSAKGVGMTGEAAAAL 44   
+
+                   vcsLfaarPnPaqvalnfirGt..llAiplallvkfll...LPqidgFpl
+                   ++s      +  + +l+++ Gt++l++ ++a+l++  l++++  ++g+  
+  2BL2:B|PDB    45 TTS--QPEKFGQALILQLLPGTqgLYGFVIAFLIFINLgsdMSVVQGLNF 92   
+
+                   LclvLaPllalgalLglsrPksagiamgl<-*
+                   L ++L P+ ++g + g++  k a+ ++++   
+  2BL2:B|PDB    93 LGASL-PIAFTGLFSGIAQGKVAAAGIQI    120  
+
+BioY: domain 1 of 1, from 6 to 129: score -78.7, E = 4.6
+                   *->isiledflpikPVPlTlQtfgVlLaGllLGPklgaLsqLiYlllGal
+                      i+               Q++g                  +++ l  +
+  2BL2:B|PDB     6    IT---------------QNGG-----------------MVFAVLAMA 20   
+
+                   GlPvFAgfsGGiavflGPTgGYLlGFilAaflaGwlaerhRL.CtPwRkr
+                    + +F+g        +G++ G       +++   ++a    L+   + k+
+  2BL2:B|PDB    21 TATIFSG--------IGSAKG------VGMTGEAAAA----LtTSQPEKF 52   
+
+                   gRketlmllLaticLvGlgvIYllGivvLalflgldekvlss..davgaf
+                   g+     l L +  L G+   Y+   +v a+ + +    l+s+ + v+++
+  2BL2:B|PDB    53 GQ----ALILQL--LPGTQGLYG---FVIAFLIFIN---LGSdmSVVQGL 90   
+
+                   m.lgvilPtmviFAAtvLiFligdfvvkalvavllarritpal<-*
+                   + lg++lP     A t L   i+ + v a++ ++la +   a+   
+  2BL2:B|PDB    91 NfLGASLP----IAFTGLFSGIAQGKVAAAGIQILAKKPEHAT    129  
+
+VanZ: domain 1 of 1, from 13 to 112: score -52.1, E = 9.9
+                   *->lfivYli.lllwlvlFalilvlsawaalfvmvaevsavrsynLvPfk
+                      +f+v+ + +++ + ++++   ++++      ++++ a    +++ f 
+  2BL2:B|PDB    13    VFAVLAMaTATIFSGIGSAKGVGMT------GEAAAALTTSQPEKFG 53   
+
+                   airaftlltpfqlsekLetldelelidtfiekllNillFfPLGlllpvlf
+                     ++++ll++ q+                       l+ f  ++l++++ 
+  2BL2:B|PDB    54 QALILQLLPGTQG-----------------------LYGFVIAFLIFINL 80   
+
+                   krlrkrrasfltvlalglllsCCLliEvlQlflpgRyffdRvfdIdDvll
+                   ++                  s      v+Q+                  l
+  2BL2:B|PDB    81 GS------D----------MS------VVQG------------------L 90   
+
+                   NTlGallGylivflyrllkrrllrk<-*
+                   N+lGa l +    + +l+  +++ k   
+  2BL2:B|PDB    91 NFLGASLPIA---FTGLFSGIAQGK    112  
+
+ATP-synt_C: domain 1 of 2, from 14 to 79: score 76.8, E = 2.1e-20
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      +av++++ A++++++G++ G+G+ g+a+++ ++ qP    + f++++
+  2BL2:B|PDB    14    FAVLAMATATIFSGIGSAKGVGMTGEAAAALTTSQP----EKFGQAL 56   
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i + l +++++yg+viAfl++++   
+  2BL2:B|PDB    57 ILQLLPGTQGLYGFVIAFLIFIN    79   
+
+DUF6: domain 1 of 1, from 17 to 145: score -40.7, E = 4.3
+                   *->liWalytvfskkller...ispltftayrfl....iagilllilllf
+                      l++a++t+fs ++++++ ++   +++a+   ++++++    +++l +
+  2BL2:B|PDB    17    LAMATATIFSGIGSAKgvgMTGEAAAALTTSqpekFGQ---ALILQL 60   
+
+                   llrkppifallslk.ilallylglfgtalgyllyfyalkyvsasnasvlt
+                   l++ +        + ++++++  +f       +  ++l++++as    +t
+  2BL2:B|PDB    61 LPGTQ--------GlYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAFT 102  
+
+                   slsPvft....lilsvllLgEkltlkqllGivlillGvllisl<-*
+                    l   +++++ +  ++ +L  k+   +   i+ +++ ++ i+    
+  2BL2:B|PDB   103 GLFSGIAqgkvAAAGIQILAKKPEHATKGIIFAAMVETYAILG    145  
+
+DUF95: domain 1 of 1, from 17 to 153: score -84.0, E = 6.3
+                   *->lalllFlvgillGyilvnsdpaliellllptylsefvnpaemYDPrd
+                      la+++  ++  +G   +  +  ++ ++l   +               
+  2BL2:B|PDB    17    LAMATATIFSGIGSAKGVGMTGEAAAALTTSQ--------------- 48   
+
+                   egglasgsehppalmflqIftNNlrVallafalGiillGlPgtlliLflN
+                               +  f+q ++  l         G  l G+ ++++++f+N
+  2BL2:B|PDB    49 ------------PEKFGQALILQLLPGT----QG--LYGF-VIAFLIFIN 79   
+
+                   GlilGavagllaneVggldpflLalalvlPHGilEipAii..lAgaaGlr
+                      lG   ++++       +f   l++ lP   +  +++++++A +   +
+  2BL2:B|PDB    80 ---LGSDMSVVQGL-----NF---LGASLP---IAFTGLFsgIAQG---K 112  
+
+                   lgwaliralfpgknrsRlqalkrggrralkllvgvlvvvvLLliAAfIEg
+                    + a i+ l+++ +     + +  g  ++ ++ + +++ + ++i+ ++  
+  2BL2:B|PDB   113 VAAAGIQILAKK-P-----EHATKGIIFAAMVET-YAI-LGFVISFLL-- 152  
+
+                   fiTPs<-*
+                       +   
+  2BL2:B|PDB   153 ----V    153  
+
+Thia_YuaJ: domain 1 of 1, from 19 to 155: score -135.9, E = 5.6
+                   *->lvEiAifaAL............AmvLslIpllykmPqGGSisLgSMi
+                      ++ ++if+++++ ++ + +++ A +L     + k++q+  + L    
+  2BL2:B|PDB    19    MATATIFSGIgsakgvgmtgeaAAALTTSQ-PEKFGQALILQLL--- 61   
+
+                   PIfliAfRrGlkaGllaGflwGlLqlvlRlgdaygilhPvQvl......L
+                             ++   l Gf+  +L +   +  ++   ++vQ+l+  + +L
+  2BL2:B|PDB    62 ----------PGTQGLYGFVIAFLIF---INLGS-DMSVVQGLnflgasL 97   
+
+                   DYplAFmalGLAGlFakkvqkalaenkkkkalayiilGvliggflRyfcH
+                     p+AF+ l ++G+   kv                  ++ i ++++   H
+  2BL2:B|PDB    98 --PIAFTGL-FSGIAQGKV-----------------AAAGIQILAKKPEH 127  
+
+                   fIAGViFfGsYAPkGmspwlYSliyNGsymlpslllciivliiLlkklpr
+                      G+iF    A                +m+ ++++ + v+ +Ll+    
+  2BL2:B|PDB   128 ATKGIIF----A----------------AMVETYAILGFVISFLLV---- 153  
+
+                   lfl<-*
+                    ++   
+  2BL2:B|PDB   154 -LN    155  
+
+DUF998: domain 1 of 1, from 25 to 122: score -95.9, E = 8
+                   *->nPWFsfTkNALSDLGgigllsNGHPaapypWlyNygLIltGlLvily
+                                +S  G+++                +g+ ++++ ++ +
+  2BL2:B|PDB    25    ----------FSGIGSAK---------------GVGMTGEAAAALTT 46   
+
+                   sllliraaknKieniGsalliisglFLaLIGIFpEGtyPHtfVSiwFFIl
+                   s   +         +G+al+      L L      Gt       ++ F++
+  2BL2:B|PDB    47 SQPEK---------FGQALI------LQLL----PGTQ-----GLYGFVI 72   
+
+                   sfiamliyGigallarrkllGililalflaglivatFlvmifltslkkwp
+                   +f+ ++ +G  ++++    l++l+     a+l++a    + +l+s++   
+  2BL2:B|PDB    73 AFLIFINLGSDMSVVQG--LNFLG-----ASLPIA----FTGLFSGI--- 108  
+
+                   GvAvpEliGIvvIliwviil<-*
+                         + G v+ +  +i++   
+  2BL2:B|PDB   109 ------AQGKVAAAGIQILA    122  
+
+PSI_PSAK: domain 1 of 1, from 60 to 147: score -33.8, E = 9.3
+                   *->alstnlVisvsitcnLfagrFGkyaiqrrnaNFDgtglPiangatyF
+                      +l  ++   ++  ++L+ + +G   ++++++NF g++lPia      
+  2BL2:B|PDB    60    LLPGTQGLYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAF----- 101  
+
+                   eagdeRAKenssilksNDpaGFnLvdvLAtg..........SlGHilGag
+                                  ++++ G+  + v+A g +   ++++++   i+ a+
+  2BL2:B|PDB   102 ---------------TGLFSGIAQGKVAAAGiqilakkpehATKGIIFAA 136  
+
+                   ivlGLsnlGal<-*
+                    v + + lG     
+  2BL2:B|PDB   137 MVETYAILGFV    147  
+
+SFT2: domain 1 of 1, from 61 to 154: score -83.1, E = 8.1
+                   *->LSrtqRlvgFviClgagilcflLstfllpvlllkprkFallyTlGsl
+                      L  tq l+gFvi +++   ++ L++ + +v          l+ lG+ 
+  2BL2:B|PDB    61    LPGTQGLYGFVIAFLI---FINLGSDMSVVQ--------GLNFLGAS 96   
+
+                   lallSfaFLmGPvkqlkhMfektRlpatllYllslllTLyaaLwlkstlL
+                   l ++ ++   G ++q k              +++  + ++a    + t  
+  2BL2:B|PDB    97 LPIAFTGLFSG-IAQGK--------------VAAAGIQILAKKPEHATKG 131  
+
+                   tllfailQilAlvwYsLSYiPgGrdgv<-*
+                    + +a  +  A++ +++S++     ++   
+  2BL2:B|PDB   132 IIFAAMVETYAILGFVISFL----LVL    154  
+
+Gate: domain 1 of 1, from 64 to 154: score 1.2, E = 0.58
+                   *->llrvlpiillfsvlisiLsnipedlGllealskllgPlllrllfgl.
+                         + +++++f+++i++     +d          ++ +   l   l+
+  2BL2:B|PDB    64    TQGLYGFVIAFLIFINLG----SD----------MSVV-QGLN-FLg 94   
+
+                   pepgnaalalllgftagesalasliillgleaseleviftllsasciav.
+                   ++ ++a+++l+ g++ g +a+a++ il ++   e ++    + a+++ + 
+  2BL2:B|PDB    95 ASLPIAFTGLFSGIAQGKVAAAGIQILAKK--PEHATKGIIF-AAMVETy 141  
+
+                   fllpvivsilGik<-*
+                   ++l++++s+l +    
+  2BL2:B|PDB   142 AILGFVISFLLVL    154  
+
+BofA: domain 1 of 1, from 67 to 121: score -54.1, E = 9.9
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                      + G ++++li   l+  +         sV+ ++     N+ Ga++ i
+  2BL2:B|PDB    67    LYGFVIAFLIFINLGSDM---------SVVQGL-----NFLGASLPI 99   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                         +T l sGi    G ++ + i+   +l   
+  2BL2:B|PDB   100 A-----FTGLFSGI--AQGKVAAAGIQ---IL    121  
+
+ETRAMP: domain 1 of 1, from 84 to 155: score -27.5, E = 7.6
+                   *->MKlsKiLyffafLLAinvlvPGysnnyveakpanskkvvkkkltdle
+                      M +   L f+ + L i +   G++ + +++k a+       ++  l+
+  2BL2:B|PDB    84    MSVVQGLNFLGASLPIAFT--GLFSGIAQGKVAA------AGIQILA 122  
+
+                   KKlekkknnKiiiIStlasalALaliGtgvGvGihykk<-*
+                   KK       K ii+++ + + A+  +G  + + +   +   
+  2BL2:B|PDB   123 KK--PEHATKGIIFAAMVETYAI--LGFVISF-LLVLN    155  
+
+ATP-synt_C: domain 2 of 2, from 90 to 155: score 84.2, E = 1.3e-22
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      ++++GA+l i++++l++Gi++G+v++a+i+++A++P    ++ tk+i
+  2BL2:B|PDB    90    LNFLGASLPIAFTGLFSGIAQGKVAAAGIQILAKKP----EHATKGI 132  
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i++a+vE++ai g+vi+fll+ +   
+  2BL2:B|PDB   133 IFAAMVETYAILGFVISFLLVLN    155  
+
+DUF1328: domain 1 of 1, from 97 to 153: score -31.0, E = 3.2
+                   *->LkWAiIFLiiALIAGvLGFGGIA...GAAAGI...AK........IL
+                      L  A++ L          F+GIA+++ AAAGI+  AK++++ +++I+
+  2BL2:B|PDB    97    LPIAFTGL----------FSGIAqgkVAAAGIqilAKkpehatkgII 133  
+
+                   Ffv.....FlvlFvVsLvlG<-*
+                   F +  ++ ++++Fv+s++l+   
+  2BL2:B|PDB   134 FAAmvetyAILGFVISFLLV    153  
+
+//
+
+Query sequence: 2BL2:A|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+ATP-synt_C      ATP synthase subunit C                  161.0    9.6e-46   2
+Gate            Nucleoside recognition                    1.2       0.58   1
+FUSC            Fusaric acid resistance protein conse   -56.3        1.6   1
+DUF1328         Protein of unknown function (DUF1328)   -31.0        3.2   1
+DUF6            Integral membrane protein DUF6          -40.7        4.3   1
+BioY            BioY family                             -78.7        4.6   1
+Thia_YuaJ       Thiamine transporter protein (Thia_Yu  -135.9        5.6   1
+DUF95           Integral membrane protein DUF95         -84.0        6.3   1
+ABC-3           ABC 3 transport family                 -223.5        7.6   1
+ETRAMP          Malarial early transcribed membrane p   -27.5        7.6   1
+DUF998          Protein of unknown function (DUF998)    -95.9          8   1
+SFT2            SFT2-like protein                       -83.1        8.1   1
+PSI_PSAK        Photosystem I psaG / psaK               -33.8        9.3   1
+VanZ            VanZ like family                        -52.1        9.9   1
+BofA            SigmaK-factor processing regulatory p   -54.1        9.9   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+ABC-3             1/1       3   153 ..     1   267 []  -223.5      7.6
+FUSC              1/1       5   120 ..     1   120 []   -56.3      1.6
+BioY              1/1       6   129 ..     1   186 []   -78.7      4.6
+VanZ              1/1      13   112 ..     1   171 []   -52.1      9.9
+ATP-synt_C        1/2      14    79 ..     1    70 []    76.8  2.1e-20
+DUF6              1/1      17   145 ..     1   128 []   -40.7      4.3
+DUF95             1/1      17   153 ..     1   200 []   -84.0      6.3
+Thia_YuaJ         1/1      19   155 ..     1   182 []  -135.9      5.6
+DUF998            1/1      25   122 ..     1   167 []   -95.9        8
+PSI_PSAK          1/1      60   147 ..     1    98 []   -33.8      9.3
+SFT2              1/1      61   154 ..     1   124 []   -83.1      8.1
+Gate              1/1      64   154 ..     1   108 []     1.2     0.58
+BofA              1/1      67   121 ..     1    79 []   -54.1      9.9
+ETRAMP            1/1      84   155 ..     1    85 []   -27.5      7.6
+ATP-synt_C        2/2      90   155 ..     1    70 []    84.2  1.3e-22
+DUF1328           1/1      97   153 ..     1    48 []   -31.0      3.2
+
+Alignments of top-scoring domains:
+ABC-3: domain 1 of 1, from 3 to 153: score -223.5, E = 7.6
+                   *->qyefmqrAllasilvglacgiLGsFlVLRRqSLmGDAiSHavLpGVA
+                      +y ++q+                                    +G +
+  2BL2:A|PDB     3    DYLITQN------------------------------------GGMV 13   
+
+                   LAffLginkSleipliGAflfgliaAvaigylkrnsrlkeDtaiGIvfss
+                   +A +   +        +++++g+  A ++g+  + +              
+  2BL2:A|PDB    14 FAVLAMAT--------ATIFSGIGSAKGVGMTGEAA-------------- 41   
+
+                   flAlGlllislikgsnaaskvdLdhyLFGniLgisqqDliqiaiitaiiL
+                         ++++ ++ +            FG++L +++  l  + ++ ++++
+  2BL2:A|PDB    42 ------AALTTSQPEK-----------FGQALILQL--LPGTQGLYGFVI 72   
+
+                   lllllfwkeLllitFDpdlAkviGlpvnflkllL.liLlaltiVvalqaV
+                    +l++++          d++ v+Gl+  fl   L+++ ++l   +a   V
+  2BL2:A|PDB    73 AFLIFIN-------LGSDMSVVQGLN--FLGASLpIAFTGLFSGIAQGKV 113  
+
+                   GvILViAlLitPAatArl.ltkslesmlliAsaiGvvssvaGlllSYyfd
+                               Aa +++ l+k++e+             + G ++ + ++
+  2BL2:A|PDB   114 ------------AAAGIQiLAKKPEH------------ATKGIIFAAMVE 139  
+
+                   tatGpvIVLiatllFlisflfa<-*
+                   t         a+l F+isfl     
+  2BL2:A|PDB   140 T--------YAILGFVISFLLV    153  
+
+FUSC: domain 1 of 1, from 5 to 120: score -56.3, E = 1.6
+                   *->alaahadpaaAmrnGlRtaLaiLlggaFW.iysaWpsGgtavllaav
+                          ++ +   m++++   La+  ++ F++i+sa   G t  + aa 
+  2BL2:A|PDB     5    ---LITQNGG-MVFAV---LAMATATIFSgIGSAKGVGMTGEAAAAL 44   
+
+                   vcsLfaarPnPaqvalnfirGt..llAiplallvkfll...LPqidgFpl
+                   ++s      +  + +l+++ Gt++l++ ++a+l++  l++++  ++g+  
+  2BL2:A|PDB    45 TTS--QPEKFGQALILQLLPGTqgLYGFVIAFLIFINLgsdMSVVQGLNF 92   
+
+                   LclvLaPllalgalLglsrPksagiamgl<-*
+                   L ++L P+ ++g + g++  k a+ ++++   
+  2BL2:A|PDB    93 LGASL-PIAFTGLFSGIAQGKVAAAGIQI    120  
+
+BioY: domain 1 of 1, from 6 to 129: score -78.7, E = 4.6
+                   *->isiledflpikPVPlTlQtfgVlLaGllLGPklgaLsqLiYlllGal
+                      i+               Q++g                  +++ l  +
+  2BL2:A|PDB     6    IT---------------QNGG-----------------MVFAVLAMA 20   
+
+                   GlPvFAgfsGGiavflGPTgGYLlGFilAaflaGwlaerhRL.CtPwRkr
+                    + +F+g        +G++ G       +++   ++a    L+   + k+
+  2BL2:A|PDB    21 TATIFSG--------IGSAKG------VGMTGEAAAA----LtTSQPEKF 52   
+
+                   gRketlmllLaticLvGlgvIYllGivvLalflgldekvlss..davgaf
+                   g+     l L +  L G+   Y+   +v a+ + +    l+s+ + v+++
+  2BL2:A|PDB    53 GQ----ALILQL--LPGTQGLYG---FVIAFLIFIN---LGSdmSVVQGL 90   
+
+                   m.lgvilPtmviFAAtvLiFligdfvvkalvavllarritpal<-*
+                   + lg++lP     A t L   i+ + v a++ ++la +   a+   
+  2BL2:A|PDB    91 NfLGASLP----IAFTGLFSGIAQGKVAAAGIQILAKKPEHAT    129  
+
+VanZ: domain 1 of 1, from 13 to 112: score -52.1, E = 9.9
+                   *->lfivYli.lllwlvlFalilvlsawaalfvmvaevsavrsynLvPfk
+                      +f+v+ + +++ + ++++   ++++      ++++ a    +++ f 
+  2BL2:A|PDB    13    VFAVLAMaTATIFSGIGSAKGVGMT------GEAAAALTTSQPEKFG 53   
+
+                   airaftlltpfqlsekLetldelelidtfiekllNillFfPLGlllpvlf
+                     ++++ll++ q+                       l+ f  ++l++++ 
+  2BL2:A|PDB    54 QALILQLLPGTQG-----------------------LYGFVIAFLIFINL 80   
+
+                   krlrkrrasfltvlalglllsCCLliEvlQlflpgRyffdRvfdIdDvll
+                   ++                  s      v+Q+                  l
+  2BL2:A|PDB    81 GS------D----------MS------VVQG------------------L 90   
+
+                   NTlGallGylivflyrllkrrllrk<-*
+                   N+lGa l +    + +l+  +++ k   
+  2BL2:A|PDB    91 NFLGASLPIA---FTGLFSGIAQGK    112  
+
+ATP-synt_C: domain 1 of 2, from 14 to 79: score 76.8, E = 2.1e-20
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      +av++++ A++++++G++ G+G+ g+a+++ ++ qP    + f++++
+  2BL2:A|PDB    14    FAVLAMATATIFSGIGSAKGVGMTGEAAAALTTSQP----EKFGQAL 56   
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i + l +++++yg+viAfl++++   
+  2BL2:A|PDB    57 ILQLLPGTQGLYGFVIAFLIFIN    79   
+
+DUF6: domain 1 of 1, from 17 to 145: score -40.7, E = 4.3
+                   *->liWalytvfskkller...ispltftayrfl....iagilllilllf
+                      l++a++t+fs ++++++ ++   +++a+   ++++++    +++l +
+  2BL2:A|PDB    17    LAMATATIFSGIGSAKgvgMTGEAAAALTTSqpekFGQ---ALILQL 60   
+
+                   llrkppifallslk.ilallylglfgtalgyllyfyalkyvsasnasvlt
+                   l++ +        + ++++++  +f       +  ++l++++as    +t
+  2BL2:A|PDB    61 LPGTQ--------GlYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAFT 102  
+
+                   slsPvft....lilsvllLgEkltlkqllGivlillGvllisl<-*
+                    l   +++++ +  ++ +L  k+   +   i+ +++ ++ i+    
+  2BL2:A|PDB   103 GLFSGIAqgkvAAAGIQILAKKPEHATKGIIFAAMVETYAILG    145  
+
+DUF95: domain 1 of 1, from 17 to 153: score -84.0, E = 6.3
+                   *->lalllFlvgillGyilvnsdpaliellllptylsefvnpaemYDPrd
+                      la+++  ++  +G   +  +  ++ ++l   +               
+  2BL2:A|PDB    17    LAMATATIFSGIGSAKGVGMTGEAAAALTTSQ--------------- 48   
+
+                   egglasgsehppalmflqIftNNlrVallafalGiillGlPgtlliLflN
+                               +  f+q ++  l         G  l G+ ++++++f+N
+  2BL2:A|PDB    49 ------------PEKFGQALILQLLPGT----QG--LYGF-VIAFLIFIN 79   
+
+                   GlilGavagllaneVggldpflLalalvlPHGilEipAii..lAgaaGlr
+                      lG   ++++       +f   l++ lP   +  +++++++A +   +
+  2BL2:A|PDB    80 ---LGSDMSVVQGL-----NF---LGASLP---IAFTGLFsgIAQG---K 112  
+
+                   lgwaliralfpgknrsRlqalkrggrralkllvgvlvvvvLLliAAfIEg
+                    + a i+ l+++ +     + +  g  ++ ++ + +++ + ++i+ ++  
+  2BL2:A|PDB   113 VAAAGIQILAKK-P-----EHATKGIIFAAMVET-YAI-LGFVISFLL-- 152  
+
+                   fiTPs<-*
+                       +   
+  2BL2:A|PDB   153 ----V    153  
+
+Thia_YuaJ: domain 1 of 1, from 19 to 155: score -135.9, E = 5.6
+                   *->lvEiAifaAL............AmvLslIpllykmPqGGSisLgSMi
+                      ++ ++if+++++ ++ + +++ A +L     + k++q+  + L    
+  2BL2:A|PDB    19    MATATIFSGIgsakgvgmtgeaAAALTTSQ-PEKFGQALILQLL--- 61   
+
+                   PIfliAfRrGlkaGllaGflwGlLqlvlRlgdaygilhPvQvl......L
+                             ++   l Gf+  +L +   +  ++   ++vQ+l+  + +L
+  2BL2:A|PDB    62 ----------PGTQGLYGFVIAFLIF---INLGS-DMSVVQGLnflgasL 97   
+
+                   DYplAFmalGLAGlFakkvqkalaenkkkkalayiilGvliggflRyfcH
+                     p+AF+ l ++G+   kv                  ++ i ++++   H
+  2BL2:A|PDB    98 --PIAFTGL-FSGIAQGKV-----------------AAAGIQILAKKPEH 127  
+
+                   fIAGViFfGsYAPkGmspwlYSliyNGsymlpslllciivliiLlkklpr
+                      G+iF    A                +m+ ++++ + v+ +Ll+    
+  2BL2:A|PDB   128 ATKGIIF----A----------------AMVETYAILGFVISFLLV---- 153  
+
+                   lfl<-*
+                    ++   
+  2BL2:A|PDB   154 -LN    155  
+
+DUF998: domain 1 of 1, from 25 to 122: score -95.9, E = 8
+                   *->nPWFsfTkNALSDLGgigllsNGHPaapypWlyNygLIltGlLvily
+                                +S  G+++                +g+ ++++ ++ +
+  2BL2:A|PDB    25    ----------FSGIGSAK---------------GVGMTGEAAAALTT 46   
+
+                   sllliraaknKieniGsalliisglFLaLIGIFpEGtyPHtfVSiwFFIl
+                   s   +         +G+al+      L L      Gt       ++ F++
+  2BL2:A|PDB    47 SQPEK---------FGQALI------LQLL----PGTQ-----GLYGFVI 72   
+
+                   sfiamliyGigallarrkllGililalflaglivatFlvmifltslkkwp
+                   +f+ ++ +G  ++++    l++l+     a+l++a    + +l+s++   
+  2BL2:A|PDB    73 AFLIFINLGSDMSVVQG--LNFLG-----ASLPIA----FTGLFSGI--- 108  
+
+                   GvAvpEliGIvvIliwviil<-*
+                         + G v+ +  +i++   
+  2BL2:A|PDB   109 ------AQGKVAAAGIQILA    122  
+
+PSI_PSAK: domain 1 of 1, from 60 to 147: score -33.8, E = 9.3
+                   *->alstnlVisvsitcnLfagrFGkyaiqrrnaNFDgtglPiangatyF
+                      +l  ++   ++  ++L+ + +G   ++++++NF g++lPia      
+  2BL2:A|PDB    60    LLPGTQGLYGFVIAFLIFINLGSDMSVVQGLNFLGASLPIAF----- 101  
+
+                   eagdeRAKenssilksNDpaGFnLvdvLAtg..........SlGHilGag
+                                  ++++ G+  + v+A g +   ++++++   i+ a+
+  2BL2:A|PDB   102 ---------------TGLFSGIAQGKVAAAGiqilakkpehATKGIIFAA 136  
+
+                   ivlGLsnlGal<-*
+                    v + + lG     
+  2BL2:A|PDB   137 MVETYAILGFV    147  
+
+SFT2: domain 1 of 1, from 61 to 154: score -83.1, E = 8.1
+                   *->LSrtqRlvgFviClgagilcflLstfllpvlllkprkFallyTlGsl
+                      L  tq l+gFvi +++   ++ L++ + +v          l+ lG+ 
+  2BL2:A|PDB    61    LPGTQGLYGFVIAFLI---FINLGSDMSVVQ--------GLNFLGAS 96   
+
+                   lallSfaFLmGPvkqlkhMfektRlpatllYllslllTLyaaLwlkstlL
+                   l ++ ++   G ++q k              +++  + ++a    + t  
+  2BL2:A|PDB    97 LPIAFTGLFSG-IAQGK--------------VAAAGIQILAKKPEHATKG 131  
+
+                   tllfailQilAlvwYsLSYiPgGrdgv<-*
+                    + +a  +  A++ +++S++     ++   
+  2BL2:A|PDB   132 IIFAAMVETYAILGFVISFL----LVL    154  
+
+Gate: domain 1 of 1, from 64 to 154: score 1.2, E = 0.58
+                   *->llrvlpiillfsvlisiLsnipedlGllealskllgPlllrllfgl.
+                         + +++++f+++i++     +d          ++ +   l   l+
+  2BL2:A|PDB    64    TQGLYGFVIAFLIFINLG----SD----------MSVV-QGLN-FLg 94   
+
+                   pepgnaalalllgftagesalasliillgleaseleviftllsasciav.
+                   ++ ++a+++l+ g++ g +a+a++ il ++   e ++    + a+++ + 
+  2BL2:A|PDB    95 ASLPIAFTGLFSGIAQGKVAAAGIQILAKK--PEHATKGIIF-AAMVETy 141  
+
+                   fllpvivsilGik<-*
+                   ++l++++s+l +    
+  2BL2:A|PDB   142 AILGFVISFLLVL    154  
+
+BofA: domain 1 of 1, from 67 to 121: score -54.1, E = 9.9
+                   *->IiGvivillivgllvKPlkmlgklaInsViGailLffvNvFGaligi
+                      + G ++++li   l+  +         sV+ ++     N+ Ga++ i
+  2BL2:A|PDB    67    LYGFVIAFLIFINLGSDM---------SVVQGL-----NFLGASLPI 99   
+
+                   hiPINivTalIsGiLGIPGialLviikYqFvl<-*
+                         +T l sGi    G ++ + i+   +l   
+  2BL2:A|PDB   100 A-----FTGLFSGI--AQGKVAAAGIQ---IL    121  
+
+ETRAMP: domain 1 of 1, from 84 to 155: score -27.5, E = 7.6
+                   *->MKlsKiLyffafLLAinvlvPGysnnyveakpanskkvvkkkltdle
+                      M +   L f+ + L i +   G++ + +++k a+       ++  l+
+  2BL2:A|PDB    84    MSVVQGLNFLGASLPIAFT--GLFSGIAQGKVAA------AGIQILA 122  
+
+                   KKlekkknnKiiiIStlasalALaliGtgvGvGihykk<-*
+                   KK       K ii+++ + + A+  +G  + + +   +   
+  2BL2:A|PDB   123 KK--PEHATKGIIFAAMVETYAI--LGFVISF-LLVLN    155  
+
+ATP-synt_C: domain 2 of 2, from 90 to 155: score 84.2, E = 1.3e-22
+                   *->aavIGAGlAiglaalGaGiGiGivggaliegiARqPElrgqLftkmi
+                      ++++GA+l i++++l++Gi++G+v++a+i+++A++P    ++ tk+i
+  2BL2:A|PDB    90    LNFLGASLPIAFTGLFSGIAQGKVAAAGIQILAKKP----EHATKGI 132  
+
+                   igvalvEaiaiygLviAflllfa<-*
+                   i++a+vE++ai g+vi+fll+ +   
+  2BL2:A|PDB   133 IFAAMVETYAILGFVISFLLVLN    155  
+
+DUF1328: domain 1 of 1, from 97 to 153: score -31.0, E = 3.2
+                   *->LkWAiIFLiiALIAGvLGFGGIA...GAAAGI...AK........IL
+                      L  A++ L          F+GIA+++ AAAGI+  AK++++ +++I+
+  2BL2:A|PDB    97    LPIAFTGL----------FSGIAqgkVAAAGIqilAKkpehatkgII 133  
+
+                   Ffv.....FlvlFvVsLvlG<-*
+                   F +  ++ ++++Fv+s++l+   
+  2BL2:A|PDB   134 FAAmvetyAILGFVISFLLV    153  
+
+//

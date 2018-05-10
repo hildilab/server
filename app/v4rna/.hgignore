@@ -1,0 +1,24 @@
+syntax: glob
+
+*.DS_Store
+*.kpf
+*.komodoproject
+.komodotools
+*.sync.db
+*.sync.db-journal
+Icon*
+.~lock*
+
+doc/jsdoc/*
+doc/sphinx/_build
+
+*.pyc
+
+biobench_wsgi.ini
+biobench_start.sh
+
+
+paster.log
+paster.pid
+
+app/tmp/*

@@ -1,0 +1,60 @@
+# ---- HTTP Server ----------------------------------------------------------
+
+[server:main]
+
+use = egg:Paste#http
+port = 6060
+#host = 127.0.0.1
+host = 0.0.0.0
+use_threadpool = true
+threadpool_workers = 10
+
+[filter:gzip]
+use = egg:Paste#gzip
+
+
+# ---- Biobench -------------------------------------------------
+
+[app:main]
+
+# Specifies the factory for the universe WSGI application
+paste.app_factory = biobench.app:app_factory
+
+# Session support (beaker)
+#session.type = file
+session.type = memory
+session.lock_dir = %(here)s/database/beaker_sessions/lock
+session.data_dir = %(here)s/database/beaker_sessions/data
+session.key = biobenchsession
+session.secret = changethisinproduction
+session.auto = True
+
+# Serving static files (needed if running standalone)
+static_enabled = True
+static_cache_time = 360
+static_dir =  %(here)s/app/static/
+static_favicon_dir =  %(here)s/app/static/favicon.ico
+
+template_path =  %(here)s/app/templates/
+template_cache =  %(here)s/app/tmp/
+
+provi_url = http://127.0.0.1:7070
+host_url = http://127.0.0.1:6060
+
+base_tag_href = http://proteinformatics.charite.de/voronoia4rna/
+pdb_dataset_link  = /mnt/bigdisk/voronoia4rna/pdb/
+
+# start_job_runners = pbs
+# enable_job_recovery = True
+# output_size_limit = 
+local_job_queue_workers = 3
+job_working_directory = %(here)s/app/tmp/jobs/
+
+# ---- Logging and Debugging ------------------------------------------------
+
+# Verbosity of log messages
+log_level = DEBUG
+#log_level = WARNING
+
+# Interactive debugging - NEVER enable this on a public site
+use_interactive = True

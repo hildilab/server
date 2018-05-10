@@ -1,0 +1,1812 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 Pfam_ls
+Sequence file:            coils/1e12.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: 1E12:A|PDBID|CHAIN|SEQUENCE
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+Bac_rhodopsin   Bacteriorhodopsin                       444.2   5.5e-131   1
+DUF1656         Protein of unknown function (DUF1656)   -11.3       0.07   1
+DUF125          Integral membrane protein DUF125        -67.6       0.38   1
+DUF474          Protein of unknown function (DUF474)    -16.6       0.42   1
+DUF161          Uncharacterized BCR, YitT family COG1   -18.0       0.67   1
+DsbD            Cytochrome C biogenesis protein trans  -102.9       0.71   1
+CTP_transf_1    Cytidylyltransferase family             -95.3       0.73   1
+Caa3_CtaG       Cytochrome c oxidase caa3 assembly fa  -157.3       0.82   1
+Oxidored_q3     NADH-ubiquinone/plastoquinone oxidore   -60.4        1.1   1
+AzlC            AzlC protein                            -94.5        1.3   1
+Trep_Strep      Hypothetical bacterial integral membr  -122.2        1.5   1
+Asp-Al_Ex       Predicted Permease Membrane Region     -101.5        1.6   1
+AzlD            Branched-chain amino acid transport p   -42.2        1.6   1
+ABC2_membrane   ABC-2 type transporter                  -77.2        1.9   1
+DUF368          Domain of unknown function (DUF368)    -165.6          2   1
+PAP2            PAP2 superfamily                        -39.2        2.1   1
+PMT             Dolichyl-phosphate-mannose-protein ma  -103.9        2.2   1
+TrbL            TrbL/VirB6 plasmid conjugal transfer    -92.4        2.3   1
+FA_desaturase   Fatty acid desaturase                   -92.6        2.4   1
+DUF1109         Protein of unknown function (DUF1109)  -162.9        2.5   1
+COPI_assoc      COPI associated protein                 -81.8        2.6   1
+DUF805          Protein of unknown function (DUF805)    -50.5        2.7   1
+Cyto_ox_2       Cytochrome oxidase subunit II          -264.3        2.9   1
+NapE            Periplasmic nitrate reductase protein   -30.2          3   1
+DUF21           Domain of unknown function DUF21       -101.7        3.1   1
+DUF1614         Protein of unknown function (DUF1614)  -129.1        3.2   1
+Voltage_CLC     Voltage gated chloride channel         -224.5        3.4   1
+DUF2029         Protein of unknown function (DUF2029)  -173.0        3.5   1
+TatC            Sec-independent protein translocase p  -113.7        3.5   1
+TM_helix        Conserved TM helix                      -14.7        3.6   1
+BPD_transp_1    Binding-protein-dependent transport s   -65.3        3.7   1
+Competence      Competence protein                     -127.5        3.8   1
+Intg_mem_TP0381 Integral membrane protein (intg_mem_T  -126.7          4   1
+DUF6            Integral membrane protein DUF6          -40.4        4.2   1
+Fumarate_red_D  Fumarate reductase subunit D            -64.7        4.4   1
+NADHdh          NADH dehydrogenase                     -255.7        4.5   1
+FecCD           FecCD transport family                 -255.8        4.6   1
+DUF1538         Protein of unknown function (DUF1538)  -180.8        4.6   1
+NfeD            NfeD-like                               -66.4        4.6   1
+TspO_MBR        TspO/MBR family                         -89.8        4.9   1
+Phage_holin_3   Phage holin family (Lysis protein S)    -48.2        5.1   1
+YIF1            YIF1                                   -169.0        5.3   1
+PTS_EIIC        Phosphotransferase system, EIIC        -141.4        5.5   1
+FTR1            Iron permease FTR1 family              -150.9        5.6   1
+MtrC            Tetrahydromethanopterin S-methyltrans  -202.8        5.8   1
+DUF1328         Protein of unknown function (DUF1328)   -33.2        5.8   1
+AmiS_UreI       AmiS/UreI family transporter           -127.4        5.9   1
+Pox_I5          Poxvirus protein I5                     -41.5        5.9   1
+Cytochrom_C_asm Cytochrome C assembly protein          -105.4          6   1
+YhhN            YhhN-like protein                      -100.5        6.2   1
+Transgly_assoc  Transglycosylase associated protein     -20.1        6.2   1
+DUF131          Protein of unknown function DUF131      -49.7        6.3   1
+DUF81           Domain of unknown function DUF81       -120.1        6.6   1
+Ferric_reduct   Ferric reductase like transmembrane c   -61.8        6.7   1
+DUF405          Protein of unknown function (DUF405)   -102.0        6.8   1
+Rhomboid        Rhomboid family                         -73.0        6.8   1
+DUF475          Protein of unknown function (DUF475)   -258.6        6.9   1
+PIG-U           GPI transamidase subunit PIG-U         -127.7        7.3   1
+7tm_1           7 transmembrane receptor (rhodopsin f  -155.8        7.4   1
+Bac_export_1    Bacterial export proteins, family 1    -162.5        7.5   1
+DUF63           Membrane protein of unknown function   -175.9        7.6   1
+Glycos_transf_4 Glycosyl transferase family 4          -110.0        7.9   1
+TerC            Integral membrane protein TerC family   -58.8        7.9   1
+MreD            rod shape-determining protein MreD      -81.7          8   1
+NnrS            NnrS protein                           -308.3        8.2   1
+DUF1282         Protein of unknown function (DUF1282)  -142.6        8.3   1
+C4dic_mal_tran  C4-dicarboxylate transporter/malic ac  -127.2        8.4   1
+DUF418          Protein of unknown function (DUF418)    -92.1        8.7   1
+Peptidase_A8    Signal peptidase (SPase) II             -89.0        8.7   1
+Thia_YuaJ       Thiamine transporter protein (Thia_Yu  -138.7        8.8   1
+DctM            DctM-like transporters                 -314.9        8.9   1
+DUF962          Protein of unknown function (DUF962)   -107.4          9   1
+PTPLA           Protein tyrosine phosphatase-like pro  -101.3        9.1   1
+Sdh_cyt         Succinate dehydrogenase cytochrome b    -62.7        9.2   1
+DUF204          Domain of unknown function DUF          -37.1        9.2   1
+Potass_KdpF     F subunit of K+-transporting ATPase (    -8.7        9.3   1
+DUF360          Membrane protein of unknown function    -69.8        9.3   1
+RDD             RDD family                              -62.2        9.5   1
+YibE_F          YibE/F-like protein                    -195.3        9.6   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+Oxidored_q3       1/1      14   132 ..     1   142 []   -60.4      1.1
+MtrC              1/1      16   257 ..     1   283 []  -202.8      5.8
+YIF1              1/1      17   222 ..     1   278 []  -169.0      5.3
+Transgly_assoc    1/1      18    56 ..     1    52 []   -20.1      6.2
+DUF368            1/1      20   218 ..     1   321 []  -165.6        2
+Competence        1/1      21   251 ..     1   293 []  -127.5      3.8
+Phage_holin_3     1/1      22   109 ..     1   104 []   -48.2      5.1
+Rhomboid          1/1      22   164 ..     1   171 []   -73.0      6.8
+FTR1              1/1      22   262 ..     1   411 []  -150.9      5.6
+Intg_mem_TP0381   1/1      23   238 ..     1   268 []  -126.7        4
+DUF1282           1/1      24   190 ..     1   190 []  -142.6      8.3
+RDD               1/1      26   137 ..     1   161 []   -62.2      9.5
+NnrS              1/1      27   254 ..     1   395 []  -308.3      8.2
+DctM              1/1      27   271 ..     1   473 []  -314.9      8.9
+Bac_export_1      1/1      29   244 ..     1   255 []  -162.5      7.5
+TrbL              1/1      29   230 ..     1   285 []   -92.4      2.3
+Bac_rhodopsin     1/1      29   271 ..     1   250 []   444.2 5.5e-131
+Peptidase_A8      1/1      30   166 ..     1   161 []   -89.0      8.7
+PTS_EIIC          1/1      30   272 ..     1   377 []  -141.4      5.5
+PAP2              1/1      31   152 ..     1   177 []   -39.2      2.1
+DUF63             1/1      31   269 ..     1   275 []  -175.9      7.6
+FecCD             1/1      33   251 ..     1   325 []  -255.8      4.6
+Thia_YuaJ         1/1      34   181 ..     1   182 []  -138.7      8.8
+TspO_MBR          1/1      34   175 ..     1   157 []   -89.8      4.9
+Potass_KdpF       1/1      36    59 ..     1    25 []    -8.7      9.3
+Voltage_CLC       1/1      37   274 .]     1   369 []  -224.5      3.4
+PMT               1/1      37   268 ..     1   268 []  -103.9      2.2
+DUF1538           1/1      38   232 ..     1   244 []  -180.8      4.6
+DUF81             1/1      39   257 ..     1   292 []  -120.1      6.6
+Caa3_CtaG         1/1      39   219 ..     1   281 []  -157.3     0.82
+7tm_1             1/1      44   243 ..     1   272 []  -155.8      7.4
+ABC2_membrane     1/1      44   245 ..     1   245 []   -77.2      1.9
+YhhN              1/1      50   199 ..     1   202 []  -100.5      6.2
+Sdh_cyt           1/1      51   154 ..     1   123 []   -62.7      9.2
+YibE_F            1/1      58   237 ..     1   245 []  -195.3      9.6
+CTP_transf_1      1/1      58   216 ..     1   343 []   -95.3     0.73
+MreD              1/1      59   211 ..     1   173 []   -81.7        8
+Cyto_ox_2         1/1      60   273 ..     1   363 []  -264.3      2.9
+DUF475            1/1      61   259 ..     1   336 []  -258.6      6.9
+Trep_Strep        1/1      61   226 ..     1   196 []  -122.2      1.5
+Ferric_reduct     1/1      61   179 ..     1   150 []   -61.8      6.7
+C4dic_mal_tran    1/1      61   263 ..     1   318 []  -127.2      8.4
+DsbD              1/1      62   216 ..     1   233 []  -102.9     0.71
+DUF21             1/1      63   274 .]     1   208 []  -101.7      3.1
+DUF2029           1/1      64   251 ..     1   245 []  -173.0      3.5
+AmiS_UreI         1/1      64   206 ..     1   200 []  -127.4      5.9
+FA_desaturase     1/1      65   228 ..     1   295 []   -92.6      2.4
+DUF204            1/1      66   125 ..     1    77 []   -37.1      9.2
+DUF360            1/1      68   184 ..     1   128 []   -69.8      9.3
+NADHdh            1/1      68   264 ..     1   319 []  -255.7      4.5
+DUF161            1/1      71   144 ..     1    84 []   -18.0     0.67
+BPD_transp_1      1/1      72   262 ..     1   268 []   -65.3      3.7
+Asp-Al_Ex         1/1      75   230 ..     1   183 []  -101.5      1.6
+DUF125            1/1      76   183 ..     1   220 []   -67.6     0.38
+DUF1614           1/1      80   208 ..     1   190 []  -129.1      3.2
+DUF1109           1/1      95   252 ..     1   213 []  -162.9      2.5
+Fumarate_red_D    1/1      97   181 ..     1   121 []   -64.7      4.4
+DUF962            1/1     100   227 ..     1   171 []  -107.4        9
+DUF805            1/1     103   194 ..     1   182 []   -50.5      2.7
+TatC              1/1     108   263 ..     1   212 []  -113.7      3.5
+DUF1328           1/1     110   175 ..     1    48 []   -33.2      5.8
+Glycos_transf_4   1/1     110   270 ..     1   209 []  -110.0      7.9
+DUF6              1/1     110   232 ..     1   128 []   -40.4      4.2
+Cytochrom_C_asm   1/1     111   252 ..     1   260 []  -105.4        6
+AzlC              1/1     119   228 ..     1   143 []   -94.5      1.3
+DUF418            1/1     120   257 ..     1   167 []   -92.1      8.7
+PIG-U             1/1     123   263 ..     1   177 []  -127.7      7.3
+PTPLA             1/1     124   229 ..     1   168 []  -101.3      9.1
+NfeD              1/1     124   243 ..     1   158 []   -66.4      4.6
+DUF1656           1/1     125   182 ..     1    63 []   -11.3     0.07
+DUF474            1/1     127   208 ..     1   110 []   -16.6     0.42
+COPI_assoc        1/1     130   239 ..     1   150 []   -81.8      2.6
+TerC              1/1     133   213 ..     1   121 []   -58.8      7.9
+AzlD              1/1     146   226 ..     1   101 []   -42.2      1.6
+Pox_I5            1/1     157   223 ..     1    78 []   -41.5      5.9
+DUF131            1/1     159   215 ..     1   102 []   -49.7      6.3
+NapE              1/1     181   229 ..     1    59 []   -30.2        3
+DUF405            1/1     193   272 ..     1   159 []  -102.0      6.8
+TM_helix          1/1     230   271 ..     1    53 []   -14.7      3.6
+
+Alignments of top-scoring domains:
+Oxidored_q3: domain 1 of 1, from 14 to 132: score -60.4, E = 1.1
+                   *->llilssllvilsknPvysgLfLillfllisgllgllgassflsliLf
+                      +   ++ + +  +  ++s L++ ++  +i++l++  ++         
+  1E12:A|PDB    14    GGGGGGGGAVRENALLSSSLWVNVALAGIAILVFVYMGR-------- 52   
+
+                   LvYvGGmlVLFlYvvmLapnekfeiskkkllsllvllllllllllllilg
+                                      ++         +  ++++ + l+++l++i +
+  1E12:A|PDB    53 ------------------TIRP--------GRPRLIWGATLMIPLVSISS 76   
+
+                   llffgel.............nikaigslLystsnnyglllllasyiLLla
+                    l++ +  + +    + +      ++ + +       ++l   +++L l 
+  1E12:A|PDB    77 YLGLLSGltvgmiempaghaLAGEMVRSQW-GR-YLTWALSTPMILLALG 124  
+
+                   Ligvvklt<-*
+                   L++ v l    
+  1E12:A|PDB   125 LLADVDLG    132  
+
+MtrC: domain 1 of 1, from 16 to 257: score -202.8, E = 5.8
+                   *->mSavaaGGeAeeVEVAVaiPeekl.MAlGIigGLvGiYlanfappYG
+                         +++GG A   E A + + +  + Al  i  Lv +Y++    p G
+  1E12:A|PDB    16    ---GGGGGGAVR-ENALLSSSLWVnVALAGIAILVFVYMGRTIRP-G 57   
+
+                   vgpli.ggLgAicAvVWGADAVRRVAsY.GLGTGVPSIGmmsLGmGilAA
+                      li g+ + i+ v         + sY GL  G   +Gm+ +  G   A
+  1E12:A|PDB    58 RPRLIwGATLMIPLV--------SISSYlGLLSGL-TVGMIEMPAGH--A 96   
+
+                   vaGlavs...gvFtlPaLAAPIvglvvaAviGavvGvLakkv...vkMKI
+                   +aG  v ++ g +   aL  P + l ++    + +G L   +  +++M  
+  1E12:A|PDB    97 LAGEMVRsqwGRYLTWALSTPMILLALGLLADVDLGSLFTVIaadIGM-- 144  
+
+                   PIMErcmtEISaAGaLalLGls.vAiAGSftfqaVvsyViAtGlIALlFI
+                        c t + aA + + L +  + +A S  f  Vv +++ t   A +  
+  1E12:A|PDB   145 -----CVTGLAAAMTTSALLFRwAFYAISCAFFVVVLSALVTDWAASASS 189  
+
+                   iagmaILHPFNACLGPnEkQeRTLkLAvecGf.IalvvAGFAssLHEGLl
+                   +++  I               R L+     G +I ++v        EGL+
+  1E12:A|PDB   190 AGTAEIF-----------DTLRVLTVVLWLGYpIVWAVG------VEGLA 222  
+
+                   kaglvPGWWLvlLvGiilWlv....aFvKFvelskrDAaaVvwsGllPKe
+                    +  v         G+  W+ +  ++F K+v        a +    +   
+  1E12:A|PDB   223 LVQSV---------GATSWAYsvldVFAKYV-------FAFILLRWVANN 256  
+
+                   E<-*
+                   E   
+  1E12:A|PDB   257 E    257  
+
+YIF1: domain 1 of 1, from 17 to 222: score -169.0, E = 5.3
+                   *->flrqpmqnamamayGqsianqGkEyVeknisrwvsvskLkYYFaVdt
+                        +++++     a  ++++ +++  V+ ++   ++ +          
+  1E12:A|PDB    17    --GGGGG-----AVRENALLSSSLWVNVAL---AGIA---------- 43   
+
+                   aYVgnKLkLllFPylhrdkNCTIVGSASNPQGHWeriydrvEiNGsresp
+                            l+F y+ r+                 r  ++  i G  +  
+  1E12:A|PDB    44 --------ILVFVYMGRT----------------IRPGRPRLIWGATLM- 68   
+
+                   lPPryDvNAPDLYIPtMaFiTYi.LlaGlllGlqgrFsPElLglqaSsAL
+                                IP+     Y +Ll Gl  G+            a  AL
+  1E12:A|PDB    69 -------------IPLVSISSYLgLLSGLTVGM--------IEMPAGHAL 97   
+
+                   Aw............vllevlalkLgLYLlnvsKIssl.sllDLLAysGYK
+                   A++  +++ ++  ++ l    ++L+L Ll +    +l+sl+   A    +
+  1E12:A|PDB    98 AGemvrsqwgryltWALSTPMILLALGLLAD---VDLgSLFTVIA----A 140  
+
+                   FVGLILavLtkllfgpFngyylvlaytclatgvFLlRsLktalLsrsapa
+                     G+++++L+  ++ +  + + ++   + a++v  l  L t      ++ 
+  1E12:A|PDB   141 DIGMCVTGLAAAMTTSALLFRWAFYAISCAFFVVVLSALVTDWAA--SAS 188  
+
+                   aadgavvisPYGnPqqFDYksqrkkrlYlLffiAavQplllywLs<-*
+                   +a+ a + +            ++ +   l +++  v+++    L    
+  1E12:A|PDB   189 SAGTAEIFD----------TLRV-LTVVLWLGYPIVWAVGVEGLA    222  
+
+Transgly_assoc: domain 1 of 1, from 18 to 56: score -20.1, E = 6.2
+                   *->IilGiVGAfvGgwLlg..awGpsvalgGIfailSlivAviGAiIlLa
+                         G  GA+  ++Ll+++ w ++val+G +ail          +++ 
+  1E12:A|PDB    18    ---GGGGAVRENALLSssLW-VNVALAG-IAIL----------VFVY 49   
+
+                   ivrlvrg<-*
+                    +r +r    
+  1E12:A|PDB    50 MGRTIRP    56   
+
+DUF368: domain 1 of 1, from 20 to 218: score -165.6, E = 2
+                   *->wlinffkGilmGlAdvVPGVSGGTiAliLGIYerlIesinglffkgf
+                                           GG           ++   ++l ++++
+  1E12:A|PDB    20    ---------------------GG-----------AVRENALL-SSSL 33   
+
+                   kkslkdrsglksafakidffFLiplgiGiltgIfllskiieyllenypip
+                   ++++                     ++Gi  +I+++ +  +++    p++
+  1E12:A|PDB    34 WVNVA--------------------LAGI--AILVFVYMGRTIRPGRPRL 61   
+
+                   tlffFlGLI.lgsipyllkeingkkkknlvdtlwlhylflilGfiivali
+                   +++  + +I+l+si + l+  +g ++  +            +G +++  +
+  1E12:A|PDB    62 IWGA-TLMIpLVSISSYLGLLSGLTVGMI---------EMPAGHALAGEM 101  
+
+                   tllgpltasatgttpalsestkvllillfiAGaiAacAMiLPGISGSflL
+                    +    +   t                     +  ++ Mi         L
+  1E12:A|PDB   102 VRS-QWGRYLT---------------------WALSTPMI---------L 120  
+
+                   LllGvYapv.lsalSelltfnfdnlglklrSatvfiillvfgiGaviGli
+                   L+lG+ a v+l+ l ++      +             +++   G ++++ 
+  1E12:A|PDB   121 LALGLLADVdLGSLFTV------IAA----------DIGMCVTGLAAAMT 154  
+
+                   vfSkiisYlLrnhrtityafiiGLvlGSllavwpWnesdaelksgmgdql
+                   +++ + ++++  +  +  +f++  vl++l++ w     ++ + +g+ + +
+  1E12:A|PDB   155 TSALLFRWAF--YAISCAFFVV--VLSALVTDWA----ASASSAGTAEIF 196  
+
+                   plilisvisfEFEnllsqilGfalal<-*
+                    ++ ++ +++     l+ ++ +a+++   
+  1E12:A|PDB   197 DTLRVLTVVL----WLGYPIVWAVGV    218  
+
+Competence: domain 1 of 1, from 21 to 251: score -127.5, E = 3.8
+                   *->LvlGdrsglpkelweafqrlGlaHLlAISGlHvglvagllyfllrrr
+                       ++ + + l+  lw     +G+a           +++ ++++  +r 
+  1E12:A|PDB    21    GAVRENALLSSSLWVNVALAGIA-----------ILVFVYMGRTIR- 55   
+
+                   lalqpflpllgippklakllgllfllfY.aiLaGfspSvlRAflmlalkl
+                       p  p+l++     + + l+ +++Y ++L G ++  +    m a  +
+  1E12:A|PDB    56 ----PGRPRLIWG--ATLMIPLVSISSYlGLLSGLTVGMI---EMPAGHA 96   
+
+                   lllllffrrlsplqvLalsllllllvdPlal.lslGFwLSFlAtfaLlll
+                   l++ +++ +++   ++als   +ll+  l+++++lG ++++ A  + + +
+  1E12:A|PDB    97 LAGEMVRSQWGRYLTWALSTPMILLALGLLAdVDLGSLFTVIAADIGMCV 146  
+
+                   ykgllqalrdlstpllsrwlpirwlasllaaslaaqlgtaPvllylFgrl
+                                         + la+++ +s +++ + +  +   F+ +
+  1E12:A|PDB   147 ----------------------TGLAAAMTTSALLFRWAFYAISCAFFVV 174  
+
+                   sllsllaNLlasPlisfvfllvpLlllavllsllipsllgalllsllgll
+                    l++l+   +as   +          l vl++ l++   g+++ + +g  
+  1E12:A|PDB   175 VLSALVTDWAASASSAGT--AEIFDTLRVLTVVLWL---GYPIVWAVG-- 217  
+
+                   lewlfqllkllaevplalwvvaksaalpllllllsllaallllllrll<-
+                          l l ++v +  w ++          +l + a++++  ++l+  
+  1E12:A|PDB   218 ----VEGLALVQSVGATSWAYS----------VLDVFAKYVFAFILLR   251  
+
+                   *
+                    
+  1E12:A|PDB     -   -    
+
+Phage_holin_3: domain 1 of 1, from 22 to 109: score -48.2, E = 5.1
+                   *->mkeepdlwAdvwsplktllrSeQaigAvLAfv.malLRgrYdGkePA
+                         e+ l+       + l+          A++++a L ++Y+G+   
+  1E12:A|PDB    22    AVRENALL------SSSLWV-------NVALAgIAILVFVYMGRT-- 53   
+
+                   frktliDAamCAliAWvardlLellGlkaeySylasvliGYi....Gvdk
+                   +r           + W+a     l+ +++ +  l++  +G i+ + G   
+  1E12:A|PDB    54 IRPGR------PRLIWGATLMIPLVSISSYLGLLSGLTVGMIempaGHAL 97   
+
+                   IgeflkrfinKr<-*
+                    ge  +   ++    
+  1E12:A|PDB    98 AGEMVRSQWGRY    109  
+
+Rhomboid: domain 1 of 1, from 22 to 164: score -73.0, E = 6.8
+                   *->lvqrgqlWRsliTsmFLHasGflHLlfNmlaLlffGiplErilGsvR
+                      +v  + l   l +s+++ +     L++  +  ++ +++  r  G+ R
+  1E12:A|PDB    22    AVRENAL---LSSSLWVNVA----LAGIAILVFVYMGRTIRP-GRPR 60   
+
+                   flllYllsGlaGgVlsllsylfspassapsvGASGAifGll...Gallvl
+                   +++       ++    l+  l+s +s  ++  +SG   G+++ ++ ++  
+  1E12:A|PDB    61 LIW-------GA---TLMIPLVSISS--YLGLLSGLTVGMIempAGHALA 98   
+
+                   lprnrilllp.....ipgalllllliillnlllgfs.llpgisnfaggla
+                   +   r ++++  +   +   +ll+l +l+ ++lg    ++  ++      
+  1E12:A|PDB    99 GEMVRSQWGRyltwaLSTPMILLALGLLADVDLGSLfTVIAADIGM---- 144  
+
+                   ggaledggvawiAHlgGliaGlllgfillrrpr<-*
+                                 + Gl+a +  +++l+r++    
+  1E12:A|PDB   145 -------------CVTGLAAAMTTSALLFRWAF    164  
+
+FTR1: domain 1 of 1, from 22 to 262: score -150.9, E = 5.6
+                   *->mfaiflivlREgLEAslivSvllaylkqmikSekdgdvdgarsaadl
+                             ++RE        + l ++l++                   
+  1E12:A|PDB    22    -------AVRE-------NALLSSSLWV------------------- 35   
+
+                   akanskkealsikaenlsshsEvdarvTgllhtiedilPglpttretqri
+                                                                     
+  1E12:A|PDB    36 -----------------------------------------------NVA 38   
+
+                   tdseinqderksktlyrklrlqvwaGialavvlclaiGaafigifggler
+                    +                  + + + +  + ++  +  +++ g++ +++ 
+  1E12:A|PDB    39 LAG-----------------IAILVFVYMGRTIRPGRPRLIWGATLMIP- 70   
+
+                   didtkwfiekelfegvlSyiAvvviswmifwMrrvvrgkklkgeieqkla
+                         + + + + g+lS++ v++i++ +++ +    g  +++++ + l 
+  1E12:A|PDB    71 ------LVSISSYLGLLSGLTVGMIEMPAGHALA---GEMVRSQWGRYLT 111  
+
+                   kalaeiknnkrakqggekggagwalfilvFvvaaitVlREGlEaVLfvaa
+                    al+                   ++++l+           Gl a + +++
+  1E12:A|PDB   112 WALS------------------TPMILLAL----------GLLADVDLGS 133  
+
+                   iviytvkarerdasayilgvvlGlatAvvLgvliyrggiklnLqrffilt
+                   ++++          a i   v Gla+A++ ++l++r++        f+++
+  1E12:A|PDB   134 LFTVIA--------ADIGMCVTGLAAAMTTSALLFRWA--------FYAI 167  
+
+                   svlLlfvaAGLfayglwyvthellewaeacnGldyiefdksaslldisll
+                   s+  +f +++L+a +    t +  ++++a   +++  fd    +l++ l 
+  1E12:A|PDB   168 SC--AFFVVVLSALV----TDWAASASSA---GTAEIFDT-LRVLTVVL- 206  
+
+                   gvlhhnflnvqreGaeGleillal..lGyfntgplgsLivyaavwlrvai
+                   ++  +++ +v  eG   l ++  ++ ++++ +       v+  +   v+ 
+  1E12:A|PDB   207 WLGYPIVWAVGVEG---LALVQSVgaTSWAYS-------VLDVFAKYVFA 246  
+
+                   qlglllikrFlgsrlp<-*
+                   ++ l++++++++ + +   
+  1E12:A|PDB   247 FILLRWVANNERTVAV    262  
+
+Intg_mem_TP0381: domain 1 of 1, from 23 to 238: score -126.7, E = 4
+                   *->lgsFslfspsHiiilavvvllaillvlfgrrlkteeqkrll...rra
+                       +++ l s s ++  a + +++ ++v+ gr++ ++ + rl+ +    
+  1E12:A|PDB    23    VRENALLSSSLWVNVALAGIAILVFVYMGRTI-RPGRPRLIwgaTLM 68   
+
+                   fafllliqliallvWmirlIlyylagyfplsesLPLhLCrlalilaailL
+                   + ++ ++++++ll       l++++  +p ++ L       a  ++    
+  1E12:A|PDB    69 IPLVSISSYLGLLSG-----LTVGMIEMPAGHAL-------AGEMV---- 102  
+
+                   itksrrlfeyfyfwGigGalqAL.ltPDlsneydaygFPHfiffqFfigH
+                     +s++   ++  +++   l AL+l  D+    d   ++ +i+ +     
+  1E12:A|PDB   103 --RSQWGRYLTWALSTPMILLALgLLADV----DLGSLFTVIAAD----- 141  
+
+                   gllvwaalflifargyrptlrslkrtvlvtfilaaiiflvNylldsavsw
+                      + ++++  +a  +  + + ++ ++   +  +++++l  +++      
+  1E12:A|PDB   142 ---IGMCVTG-LAAAMTTSALLFRWAFYAISCAFFVVVLSALVT------ 181  
+
+                   Gw.gNYgyLnkkPigtaSLLdvlg.....pwPfsvlTY.ivlglvaell.
+                   +w +     +    gta+++d+l+  +  +w      Y+i   ++a++++
+  1E12:A|PDB   182 DWaA-----SASSAGTAEIFDTLRvltvvLWLG----YpI---VWAVGVe 219  
+
+                   vlalwftlldklivvkkvLiKiisfylpFrrsk<-*
+                   +lal  ++               + ++ + + +   
+  1E12:A|PDB   220 GLALVQSVG--------------ATSWAYSVLD    238  
+
+DUF1282: domain 1 of 1, from 24 to 190: score -142.6, E = 8.3
+                   *->LftHPdqEWqeIrqeeEtishaYLtHvLLLAlIPAiCaFIGTTQvGW
+                                   +e+  +s++ L     LA I Ai  F+   + G 
+  1E12:A|PDB    24    -------------RENALLSSS-LWVNVALAGI-AILVFV---YMGR 52   
+
+                   nlPGdgdvvkLtsqSALll...avlcYlgmlAGVavMGafihWmArtyda
+                    +   g +  L ++  L+ +  ++ +Ylg+l G  v G +        +a
+  1E12:A|PDB    53 TI-RPGRP-RLIWGATLMIplvSISSYLGLLSGLTV-GMI------EMPA 93   
+
+                   rPSlaqclv.......FAtYtATPLFl..aGLaALYPllWLlmlvGt.aA
+                      la+ +v+++ ++ ++ +  TP  l   GL A + l  L  +++++++
+  1E12:A|PDB    94 GHALAGEMVrsqwgryLTWALSTPMILlaLGLLADVDLGSLFTVIAAdIG 143  
+
+                   laYsVYLLYvGlPlFMNIpeeeGllfaSSvLavGlvvLvalmAlsVILWG
+                   ++ +      Gl   M       llf     a+     v+ + + V  W 
+  1E12:A|PDB   144 MCVT------GLAAAM---TTSALLFRWAFYAISCAFFVVVLSALVTDWA 184  
+
+                   iGlgps<-*
+                    +       
+  1E12:A|PDB   185 ASASSA    190  
+
+RDD: domain 1 of 1, from 26 to 137: score -62.2, E = 9.5
+                   *->yAgfwrrRlgAlliDlliisallllivlilgvvsqealvtglsyigf
+                       A +++    +l+++++++++++l++v  + ++              
+  1E12:A|PDB    26    NALLSS----SLWVNVALAGIAILVFVYMGRTIR------------- 55   
+
+                   sgaagllsaalifafylilifllllgyfillewtrtGqTlGK..rlfGlr
+                           + +  ++++ l++ l+ +  +l +++  G T+G+ ++ +G  
+  1E12:A|PDB    56 -------PGRPRLIWGATLMIPLVSISSYLGLLS--GLTVGMieMPAG-- 94   
+
+                   VVnvddGrpvslgqallReliarldlllffgiggiigflwilfalfwfdp
+                     +++ G+ v+ +   +R+l+++l++++ +       + + l        
+  1E12:A|PDB    95 --HALAGEMVRSQ--WGRYLTWALSTPMIL-------LALGL-------- 125  
+
+                   kkqglhDklAgTvVVr<-*
+                       l+D+  g +  +   
+  1E12:A|PDB   126 ----LADVDLGSLFTV    137  
+
+NnrS: domain 1 of 1, from 27 to 254: score -308.3, E = 8.2
+                   *->gppifrlGFRPFFLlAALfAvlaillWlaalaGglplaqqgsvgpla
+                                         A+l+  lW+        +a  +++ ++ 
+  1E12:A|PDB    27    -------------------ALLSSSLWVN-------VA--LAGIAI- 44   
+
+                   WHaHEMLFGfasAVvAGFLLTAVpNWTGGrlppsGtpLAgLaaLWLAgRL
+                        ++F +++               G r+ + G+p           RL
+  1E12:A|PDB    45 -----LVF-VYM---------------G-RTIRPGRP-----------RL 61   
+
+                   afllpddvplalaaaiDllFLpalavla..areviagrnWRNLpvvggll
+                   ++ + +    +++++i +++L +l+ l  +++e+ ag++ +  +v    +
+  1E12:A|PDB    62 IWGATL---MIPLVSI-SSYLGLLSGLTvgMIEMPAGHALAGEMVRSQWG 107  
+
+                   lllaANvlfhlaliqGddpfaarclraalwlva.....vLvaLiGGRiIP
+                    +           ++ +++++   + +al+l a+ + + L+++i++ i  
+  1E12:A|PDB   108 RY-----------LTWALSTPM--ILLALGLLAdvdlgSLFTVIAADIGM 144  
+
+                   sFTrnwLnrtgatrlPvPfnrfDhaallglgvaallawfgvtlaPesvLt
+                    +T+ +++ t    l   f+++      +++ a++ +    +   ++++t
+  1E12:A|PDB   145 CVTGLAAAMTTSALL---FRWA----FYAISCAFFVVV---L---SALVT 181  
+
+                   allalaAGvahlvRLaRWrgwrtwrepLLwiLHVAYlFiPlGflalAlsa
+                    ++a a+ +          +  t+r+  ++      l+++       ++a
+  1E12:A|PDB   182 DWAASASSAGTA------EIFDTLRVLTVV------LWLGYPI----VWA 215  
+
+                   TIlGlalppsaaLHaLtVGAiGgmiLAvmtRasLGHTGRpLkag.pamag
+                     +G+                                G +L ++ +a+++
+  1E12:A|PDB   216 --VGV-------------------------------EGLALVQSvGATSW 232  
+
+                   AfaaimvlAALlRvvaelllPpalaiellalaAilWvlAFalFvirYgPm
+                   A++ +                +++a                 +v ++  +
+  1E12:A|PDB   233 AYSVL----------------DVFA----------------KYVFAF--I 248  
+
+                   LlrpRv<-*
+                   Llr +    
+  1E12:A|PDB   249 LLRWVA    254  
+
+DctM: domain 1 of 1, from 27 to 271: score -314.9, E = 8.9
+                   *->lgllavLlalgvPvgialllaalivlflalfgaslppGvldhpsyPl
+                           +Ll   + v++al+  a+  l ++++g ++ pG       P 
+  1E12:A|PDB    27    -----ALLSSSLWVNVALAGIAI--LVFVYMGRTIRPGR------PR 60   
+
+                   vqilaqrmvttEsIfGigiqsfaLlAiPFFvLaGslmsagGlakrlidfa
+                   + i   +++        ++ s + ++             +Gl+  +i+  
+  1E12:A|PDB    61 L-IWGATLMI-------PLVSISSYLGL----------LSGLTVGMIE-- 90   
+
+                   aalvGrmrGGlayvtvvgSalfggiSGSavAnaaavGsvtiPaMkrsGYp
+                         m++G a ++                           +M+rs + 
+  1E12:A|PDB    91 ------MPAGHALAG---------------------------EMVRSQWG 107  
+
+                   psfAaAviAasStlGqiiPPsigliifgmaevagvSigkLfiAGiiPG..
+                   +    A+             s+++i++++   a+v+ g+Lf   +i+++ 
+  1E12:A|PDB   108 RYLTWAL-------------STPMILLALGLLADVDLGSLFT--VIAAdi 142  
+
+                   llyavglmlavylyakkrrnlpglkpraslkrvgqalkeawvvAvpaLll
+                   +++  gl++a   +a                 + + + +a+     + ++
+  1E12:A|PDB   143 GMCVTGLAAAMTTSAL----------------LFRWAFYAI-----SCAF 171  
+
+                   pfiilgGillGigpLefTpTEAgavAvvyaLligvlvPilitaiaeayrr
+                   ++++l + +  +    +++              + +              
+  1E12:A|PDB   172 FVVVLSALVTDW---AASAS-------------SAG-------------- 191  
+
+                   ltleevaaafrvqIlkdLlqtakttaaVllilAaagifawlltvtgvpqa
+                         a++         ++t+++  +Vl +      ++w++ v+g++  
+  1E12:A|PDB   192 -----TAEI---------FDTLRVLTVVLWL---GYPIVWAVGVEGLA-- 222  
+
+                   vsdfllslggsksvllfLllvnlllLYvlGmfLdptAailIlvPillPaa
+                      +++s+g++   +      +  +L       d +A +           
+  1E12:A|PDB   223 ---LVQSVGATS--W------AYSVL-------DVFAKY----------- 243  
+
+                   aalGiDPihfGvvivlnlsiGliTPPVGlalfvasgIagadPmkTgvkvs
+                              v+ ++ l           +++  + +a            
+  1E12:A|PDB   244 -----------VFAFILLR---------WVANNERTVA------------ 261  
+
+                   veevvkavvPflvvllvaLvLityvPel<-*
+                                      + +t+       
+  1E12:A|PDB   262 ------------------VAGQTLGTMS    271  
+
+Bac_export_1: domain 1 of 1, from 29 to 244: score -162.5, E = 7.5
+                   *->eslivllaalaLalfvRvlalfstlPvfssrslggvvRRCngvalll
+                       s   ++  ++ +      a+++++   ++ + +g++R  +      
+  1E12:A|PDB    29    LSSSLWVNVALAG-----IAILVFV-YMGRTIRPGRPR--L------ 61   
+
+                   alivapsipnqaapevseatqylilLvlkEillGlllGfflsi..pFwaf
+                      ++ +    +++ +s               lGll G+ +++ ++ +  
+  1E12:A|PDB    62 ---IWGATLMIPLVSISSY-------------LGLLSGLTVGMieMPAGH 95   
+
+                   eaAGelIDnQrG.............atmasslDPasgsqsspvGqfLnq.
+                     AGe +  Q G+  +   +++   ++++   D+ +gs  ++++  + + 
+  1E12:A|PDB    96 ALAGEMVRSQWGryltwalstpmilLALGLLADVDLGSLFTVIAADIGMc 145  
+
+                   .laillflasgGhllllsialydSyqiwPvgqflpnsneqaakfllkals
+                    +++   ++++++l+         ++++ +  f+        ++l++ ++
+  1E12:A|PDB   146 vTGLAAAMTTSALLFRWA------FYAISCAFFVVVL-----SALVTDWA 184  
+
+                   qlflialllAaPviilLLLidlalGlLsRfAPQLnvfvlslPiKsavgll
+                   + ++ a            +++++  l  +++    v+ l+ Pi  avg+ 
+  1E12:A|PDB   185 ASASSA-----------GTAEIFDTLRVLTV----VLWLGYPIVWAVGVE 219  
+
+                   lLvlylpyilplfkeelsllfdlls<-*
+                    L+l  ++ ++++    + +f       
+  1E12:A|PDB   220 GLALVQSVGATSWAYSVLDVFAKYV    244  
+
+TrbL: domain 1 of 1, from 29 to 230: score -92.4, E = 2.3
+                   *->ltaaltLYiilyGylillGa.veepirelvirilkiglilalaigdl
+                      l++ l + ++l G++il    ++  ir +  r++  +  ++ +    
+  1E12:A|PDB    29    LSSSLWVNVALAGIAILVFVyMGRTIRPGRPRLIWGATLMIPL---V 72   
+
+                   nwgfyqtyvvdlftggpdginvlagalsfgasnsggggssiyatLDnlld
+                   +++ y +++  l +g+++                              + 
+  1E12:A|PDB    73 SISSYLGLLSGLTVGMIEM----------------------------PAG 94   
+
+                   kplglaiasklfakaadakdlgfsllegiglfiaalivlvggllfa...l
+                   +    a+a ++ +           ++  + +++ + ++l++ +l+a+ +l
+  1E12:A|PDB    95 H----ALAGEMVRSQ---------WGRYLTWALSTPMILLALGLLAdvdL 131  
+
+                   laaaiiYliAkialalllalGPlFIafllFeaTRgfFdgWlgqlisyall
+                   +  +++ + A+i+++++   + +  ++llF        +W  ++is+a+ 
+  1E12:A|PDB   132 GSLFTV-IAADIGMCVTGLAAAMTTSALLF--------RWAFYAISCAFF 172  
+
+                   pvllsavislliqiidtllyalnsssdtieeplvadvksstiesfnlfvl
+                   +v+lsa+++      d++++a+ + ++             ++ +   + +
+  1E12:A|PDB   173 VVVLSALVT------DWAASASSAGTAE------------IFDT---LRV 201  
+
+                   laivllslvlilllkqipgiAqglvgavvtlggavaaalaGG<-*
+                   l++vl  +  i+ ++ + g+A  lv            ++++    
+  1E12:A|PDB   202 LTVVLWLGYPIVWAVGVEGLA--LV-----------QSVGAT    230  
+
+Bac_rhodopsin: domain 1 of 1, from 29 to 271: score 444.2, E = 5.5e-131
+                   *->lttwlwiGaagmllGtllfiymGrgledpearkiyvalilIPgiAiv
+                      l+++lw+++a++++++l+f+ymGr++++++ r+i+ a+++IP+++i+
+  1E12:A|PDB    29    LSSSLWVNVALAGIAILVFVYMGRTIRPGRPRLIWGATLMIPLVSIS 75   
+
+                   aYlgMalGiGvttvempaehlaLAGeeVdtiywaRYlDWllTTPLlllfL
+                   +Ylg+++G++v+++empa+h aLAGe+V+ ++w+RYl+W+l+TP++ll+L
+  1E12:A|PDB    76 SYLGLLSGLTVGMIEMPAGH-ALAGEMVR-SQWGRYLTWALSTPMILLAL 123  
+
+                   GLLAgadrrtiftlvvaDalMIvtGlaAALttGsGvLsagllRwvlfgiS
+                   GLLA++d +++ft+++aD++M+vtGlaAA+tt     sa l+Rw++++iS
+  1E12:A|PDB   124 GLLADVDLGSLFTVIAADIGMCVTGLAAAMTT-----SALLFRWAFYAIS 168  
+
+                   tafflvlLYyLlvnlpraAkdaspgtaslFntLrnltvVLWlaYPvvWLl
+                   +aff+v+L+ L+++++++A++a  gta++F+tLr+ltvVLWl+YP+vW++
+  1E12:A|PDB   169 CAFFVVVLSALVTDWAASASSA--GTAEIFDTLRVLTVVLWLGYPIVWAV 216  
+
+                   GpeGiGllt.vgietllyvvLDvvAKVgFgfilLrsravlertva.vgsa
+                   G+eG++l+++vg ++++y+vLDv+AK++F+filLr++a++ertva +g++
+  1E12:A|PDB   217 GVEGLALVQsVGATSWAYSVLDVFAKYVFAFILLRWVANNERTVAvAGQT 266  
+
+                   laage<-*
+                   l++++   
+  1E12:A|PDB   267 LGTMS    271  
+
+Peptidase_A8: domain 1 of 1, from 30 to 166: score -89.0, E = 8.7
+                   *->llflivavlvlilDQvtKyliaqnmelgdsvpvipslvfnitlvrNk
+                      ++ l+v v+  ++ ++  +    + ++g +  +++  ++ i lv   
+  1E12:A|PDB    30    SSSLWVNVALAGIAILVFVYMGRTIRPGRPRLIWGA-TLMIPLVS-- 73   
+
+                   GAAFSlLagsgGWqmgffyllaiavsvg.....LvvFlvrltklqkl.la
+                          +     + g++  l+++ + ++ ++ L+  +vr+  +++l++a
+  1E12:A|PDB    74 ------ISS----YLGLLSGLTVGMIEMpaghaLAGEMVRSQWGRYLtWA 113  
+
+                   ialgLilGGALGNfiDRflhGeVVLRGDfiDfhifnyhYfPiFNlADssI
+                   + + +il  ALG      l + V   G+ + ++  + +          ++
+  1E12:A|PDB   114 LSTPMILL-ALG------LLADV-DLGSLFTVIAADIG---------MCV 146  
+
+                   tvGvilLllasffdsskkkk<-*
+                   t+ +++   +++++  +      
+  1E12:A|PDB   147 TGLAAAMTTSALLFRWAFYA    166  
+
+PTS_EIIC: domain 1 of 1, from 30 to 272: score -141.4, E = 5.5
+                   *->gdgfmppiPlliagGlllglgn............allpngdlkglas
+                      ++++ + ++l   +G+ ++++   +++ ++++++++++         
+  1E12:A|PDB    30    SSSLWVNVAL---AGIAILVFVymgrtirpgrprLIWGA-------- 65   
+
+                   flktaggqtglspiaeilkqagsatFgiLpllfaigiAygLskakggkgv
+                                    l+++   + ++L+ll + +++  +     + + 
+  1E12:A|PDB    66 ----------------TLMIPLVSISSYLGLLSGLTVG-MI----EMPAG 94   
+
+                   aglaglig......llafnllapisvlllaagalettvtaadgvnlagev
+                    +lag + +++ +++l++ l +p+ +l+l   a                 
+  1E12:A|PDB    95 HALAGEMVrsqwgrYLTWALSTPMILLALGLLA----------------- 127  
+
+                   vaangggnilgigtggtGvfGai...IvgllaaelynrfekrnitiklPe
+                                +  +++f+ i  +I+  +++   ++            
+  1E12:A|PDB   128 ------------DVDLGSLFTVIaadIGMCVTGLAAAMTTS--------- 156  
+
+                   slpffvgkrFvpiItgfvtllvvgpil.liwpaiqgglnalgigkllqPL
+                       +    F +i ++f+++++ +++ +++ +a + g             
+  1E12:A|PDB   157 --ALLFRWAFYAISCAFFVVVLSALVTdWAASASSAGTAE---------- 194  
+
+                   lilagsllGvliigflerlLwpfGlHgafiapfwflpilggggsniiaNq
+                   + ++   + + + ++ +++ w++G+ g + +  +       +++ +    
+  1E12:A|PDB   195 IFDTL-RVLTVVLWLGYPIVWAVGVEGLALVQSVGATS---WAYSVL--- 237  
+
+                   taygdqniFfaqlagqplltfggaahiltggFpdiFivmfGgpGatLAly
+                                                          f+   +++ l+
+  1E12:A|PDB   238 -------------------------------------DVFAKYVFAFILL 250  
+
+                   aaaflfkkskvlkllgsaaltpalfGItEPleFgfpfvlnpllyfipail
+                       + +++++  ++++ +l+                           ++
+  1E12:A|PDB   251 R---WVANNERTVAVAGQTLG---------------------------TM 270  
+
+                   aG<-*
+                        
+  1E12:A|PDB   271 SS    272  
+
+PAP2: domain 1 of 1, from 31 to 152: score -39.2, E = 2.1
+                   *->aalalllalvaslllnglaylKllfgrpRApPhflavcqpdwgdstc
+                        l++ +al+  ++l+ + y+ + ++  R  P               
+  1E12:A|PDB    31    SSLWVNVALAGIAILVFV-YMGRTIRPGR--P--------------- 59   
+
+                   sdlwyeellgyefycmagspg.ldrid.lfgsvlltsafalvseagpSFP
+                                    + ++++++  +l   + + +   + +++   +P
+  1E12:A|PDB    60 -----------------RLIWgATLMIpLVSISSYLGLLSGLTVGMIEMP 92   
+
+                   SGHaafaaafalflalylprrlsklg.rllrlllgllllllallvglSRv
+                    GHa         la    r   ++++r l++ l   ++llal       
+  1E12:A|PDB    93 AGHA---------LAGEMVR---SQWgRYLTWALSTPMILLALGLLA--- 127  
+
+                   ylgvHypsDVlaGallGaliaalvllfvrrlld<-*
+                           DV  G+l  ++ a + +++ +  ++   
+  1E12:A|PDB   128 --------DVDLGSLFTVIAADIGMCVTGLAAA    152  
+
+DUF63: domain 1 of 1, from 31 to 269: score -175.9, E = 7.6
+                   *->mLkeFieeYyinpiyykeGYNpVNTvtYAiILgiAvillYkkllKkL
+                              + +n +                  giA++ +  ++++  
+  1E12:A|PDB    31    ------SSLWVNVALA----------------GIAILVFV-YMGRTI 54   
+
+                   kIKiDekfflAliPyiiLGSlvRALvDaGvlprPi...syltvTPGIYfL
+                             ++ P  i G++         +p+ ++ +syl +  G   +
+  1E12:A|PDB    55 R---------PGRPRLIWGATL-------MIPL-VsisSYLGLLSG--LT 85   
+
+                   vflttIAtLi.llvklkffkeKyYrklavagGlvLavvalillqhilkvv
+                   v+   I ++++ ++ ++ ++    r l+ a  + + + +++ l + + + 
+  1E12:A|PDB    86 VGM--IEMPAgHALAGEMVRSQWGRYLTWAL-STPMILLALGLLADVDLG 132  
+
+                   fileVlllfvvfsaiAlvafv..........lltlkLkilrkklnlyvv.
+                     + V+ + +++    l+a+ +++    +  +++++  ++   l+ +v++
+  1E12:A|PDB   133 SLFTVIAADIGMCVTGLAAAMttsallfrwaFYAISCAFFVVVLSALVTd 182  
+
+                   .........yaHlfDassTfvGIdfyGY...wEqHvvPryLiglfG.Tay
+                      + ++ + a  fD       + ++GY+  w + v   +L+   G T  
+  1E12:A|PDB   183 waasassagTAEIFDTLRVLTVVLWLGYpivWAVGVEGLALVQSVGaTSW 232  
+
+                   amyplKflVlltaLYiLdklvEdeeereylDFiKLvifiLGLAPGlRDll
+                   a+ +l     ++  +iL + v   e   ++                   +
+  1E12:A|PDB   233 AYSVLDVFAKYVFAFILLRWVANNERTVAV-------------------A 263  
+
+                   rmvmgv<-*
+                      +g+   
+  1E12:A|PDB   264 GQTLGT    269  
+
+FecCD: domain 1 of 1, from 33 to 251: score -255.8, E = 4.6
+                   *->llllllilSLslGalsispadVlqaLfgfydgiEidegdelivlnlR
+                      l + ++++++    + + + ++ +++     +   +    li+    
+  1E12:A|PDB    33    LWVNVALAGI----AILVFVYMGRTI----RP---GR-PRLIW---- 63   
+
+                   LPRvLlAlLVGAaLAVsGAImQgltRNPLAsPdilGvnsGAslgavlaiv
+                             GA L +           PL+s     ++s  +lg +  + 
+  1E12:A|PDB    64 ----------GATLMI-----------PLVS-----ISS--YLGLLSGLT 85   
+
+                   llpgsspslaffg.........pymlpfsfAFaGAliaallVyllawlgk
+                    ++  +p++   +++  +++ + y l ++   +    + l++ lla    
+  1E12:A|PDB    86 VGMIEMPAGHALAgemvrsqwgRY-LTWA---LSTPMILLALGLLADVDL 131  
+
+                   nGltpvrLiLaGialsalfsAlttlmlylsddetldqalfWltGSlsgrn
+                   ++l +v  + +G+ ++ l  A+tt  l++                     
+  1E12:A|PDB   132 GSLFTVIAADIGMCVTGLAAAMTTSALLFR-------------------- 161  
+
+                   WeevklalpilliglplalllarqlnvLsLGDdtAkgLGvnvervRllll
+                   W+++ +  +++++  + al+  +           A + G       l +l
+  1E12:A|PDB   162 WAFYAISCAFFVV-VLSALVTDWA--------ASASSAGTAEIFDTLRVL 202  
+
+                   llvvlLtGsaVAvAGpIgFVGLivPHiaRrlvGadhrwLLPvsALlGAiL
+                    +v +L G  + +A                 vG    +L+  s  + + +
+  1E12:A|PDB   203 TVVLWL-GYPIVWA-----------------VGVEGLALVQ-SVGATSWA 233  
+
+                   LllADllARtvfaPiElPVGvvTAliGAPyFlYLLrr<-*
+                     + D++A +vfa+i                   L+r   
+  1E12:A|PDB   234 YSVLDVFAKYVFAFI-------------------LLR    251  
+
+Thia_YuaJ: domain 1 of 1, from 34 to 181: score -138.7, E = 8.8
+                   *->lvEiAifaALAmvLslIpllykmPqG.....GSisLgSMiPIfliAf
+                      +v +A+ a++A +L ++ ++ ++ +G+++   + +L+  iP++ i+ 
+  1E12:A|PDB    34    WVNVAL-AGIA-ILVFVYMGRTIRPGrprliWGATLM--IPLVSISS 76   
+
+                   RrGlkaGllaGflwGlLqlvlRlgdaygilhPvQvlLDYplAFmalGLAG
+                   +     Gll+G+ +G++ +    g+a                     LAG
+  1E12:A|PDB    77 Y----LGLLSGLTVGMIEMP--AGHA---------------------LAG 99   
+
+                   lFakkvqkalaenkkkkalayiilGvliggflRyfcHfIAGViFfGsYAP
+                    + +        ++++++l ++++   i  +l  ++ +  G +F    A 
+  1E12:A|PDB   100 EMVR--------SQWGRYLTWALSTPMILLALGLLADVDLGSLFTVIAAD 141  
+
+                   kGmspwlYSliyNGsymlpslllciivliiLlkklprlfl<-*
+                    Gm +      +  s++l+  + ++i  +++++ l  l     
+  1E12:A|PDB   142 IGMCVTGLAAAMTTSALLFRWAFYAISCAFFVVVLSALVT    181  
+
+TspO_MBR: domain 1 of 1, from 34 to 175: score -89.8, E = 4.9
+                   *->wqvtrlalvafliacalagaaGalftrdeg.qrWYasLkKPsWhPPn
+                      w    +  + + ia ++++ +G+ ++++  +++W a L         
+  1E12:A|PDB    34    W----VNVALAGIAILVFVYMGRTIRPGRPrLIWGATL--------- 67   
+
+                   waFgpvWtlLYalmGyasyLVWkalggfgenavKlalglYaaqlalNvAW
+                     ++ v ++ Y+++  +++    + +   + a+  + + ++  l+ +  +
+  1E12:A|PDB    68 -MIPLVSISSYLGLLSGLTVGMIEMPAGHALAGEMVRSQWGRYLTWALST 116  
+
+                   tPiFFglrrlglAlvdilllwlaalA...tvvafyqvsktAalLLvPYLa
+                   + i+  l   +lA vd++ l+ +++A+ + +v+    + t + LL   + 
+  1E12:A|PDB   117 PMILLALG--LLADVDLGSLFTVIAAdigMCVTGLAAAMTTSALL---FR 161  
+
+                   WvafAtyLNyaIwr<-*
+                   W  +A   ++ ++    
+  1E12:A|PDB   162 WAFYAISCAFFVVV    175  
+
+Potass_KdpF: domain 1 of 1, from 36 to 59: score -8.7, E = 9.3
+                   *->lillllvalaLfvYLvyALlrPErF<-*
+                      +++l+ +a+++fvY +   +rP r    
+  1E12:A|PDB    36    NVALAGIAILVFVYMGRT-IRPGRP    59   
+
+Voltage_CLC: domain 1 of 1, from 37 to 274: score -224.5, E = 3.4
+                   *->iggllagllvkrfapeaaGsGipeviaallhgvkgrrlplrvllvKf
+                      ++ + +++lv  +        + + i      + +      ++++++
+  1E12:A|PDB    37    VALAGIAILVFVY--------MGRTIRPG-RPRLIW-GATLMIPLVS 73   
+
+                   lgslltigsGgSlG.REGPsVqiGAaigsglglfktrrc..llklsrndr
+                   ++s l+++sG+ +G  E P+ +  A +g ++       ++++l +  ++ 
+  1E12:A|PDB    74 ISSYLGLLSGLTVGmIEMPAGH--ALAGEMVR----SQWgrYLTWALSTP 117  
+
+                   RreLiaaGaAAGiAAaFnAPLAGvlFAlEvlllrdfslfrallpvlvasv
+                    + L+a G                       ll d  l  +l +v++ + 
+  1E12:A|PDB   118 MI-LLALG-----------------------LLADVDL-GSLFTVIA-AD 141  
+
+                   vAalvsrllfGnelplgftnffgeisaavpslfvflpyvplSlsl.elpl
+                   ++ +v+ l      ++             ++           l +++  +
+  1E12:A|PDB   142 IGMCVTGLA-----AA-----MT-----TSA-----------LLFrWAFY 165  
+
+                   fillGilcGllGalFirlllkver.....lfrrlkrklpippkwllrpal
+                   +i ++++  +l+al + +   +++ ++ ++f+ l    ++ + +l++   
+  1E12:A|PDB   166 AISCAFFVVVLSALVTDWAASASSagtaeIFDTL----RVLTVVLWLGYP 211  
+
+                   gGllvGllglllPeggvlGgGy.........lvlKflaTalslGsGapGG
+                      +vG+ gl      v  +G ++   + +++++K+++  + l       
+  1E12:A|PDB   212 IVWAVGVEGLA--L--VQSVGAtswaysvldVFAKYVFAFILL------- 250  
+
+                   iFaPsLfiGAalGrllGlllallfppdcsggiapsipPgayAlvGMAAfl
+                                r ++             + +                 
+  1E12:A|PDB   251 -------------RWVA-------------NNERT--------------- 259  
+
+                   aavtrAPltaivivfElTGsyslllPlmiavliAylvsrl<-*
+                    av++                           ++++ s+    
+  1E12:A|PDB   260 VAVAG-------------Q------------TLGTMSSDD    274  
+
+PMT: domain 1 of 1, from 37 to 268: score -103.9, E = 2.2
+                   *->kiltllaflirfyll.alpnlvvfdevhfgkfasyYaealffmdvhg
+                      ++l  +a+l+++y ++ + + + ++++    +      +    + + 
+  1E12:A|PDB    37    VALAGIAILVFVYMGrTIRPGRPRLIWGATLM------IPLVSISSY 77   
+
+                   lpplgkmlialggyWmlagkpglflfisigsfyyfgnvpyfsmRlfsAll
+                   l+ l+ + ++       ag        ++  ++               l+
+  1E12:A|PDB    78 LGLLSGLTVGMIEM--PAGHALAGEMVRS--QWGRY------------LT 111  
+
+                   gsLtvpLvYltllklgfsrlaAllaallvalenslvtlSRyiLlDspLlF
+                   ++L++p++ l++l l  +   + l +++ a    +vt   ++++ s LlF
+  1E12:A|PDB   112 WALSTPMI-LLALGLLADVDLGSLFTVIAADIGMCVTGLAAAMTTSALLF 160  
+
+                   ...FttlamycllkfetlrlAlkaPfsrkwwlwllltGiaLGlAvstKgv
+                   +  F++ + ++++              +++++  +++  +++ +  + + 
+  1E12:A|PDB   161 rwaFYAISCAFFVVV------------LSALVTDWAASASSAGTAEI-FD 197  
+
+                   glFtvlpvgllfiwllWqllgq.lAwdkslllkripQlwmwyvtivkhlf
+                   +l ++++v+ l++ + W     +lA+++s+   +      w  +++ +++
+  1E12:A|PDB   198 TLRVLTVVLWLGYPIVWAVGVEgLALVQSVGATS------WAYSVLDVFA 241  
+
+                   arllaLiliPwalylaq.fyvhfwllf<-*
+                   ++++a+il+ w+  ++ + +v  ++l    
+  1E12:A|PDB   242 KYVFAFILLRWVANNERtVAVAGQTLG    268  
+
+DUF1538: domain 1 of 1, from 38 to 232: score -180.8, E = 4.6
+                   *->nlLPItlfiivFQllvLkkPlkN.lasllfGiilvilGltl.FLmGv
+                      +l  I + ++v +   ++  +   +++ ++ i lv +  +l+ L G+
+  1E12:A|PDB    38    ALAGIAILVFVYMGRTIRPGRPRlIWGATLMIPLVSISSYLgLLSGL 84   
+
+                   klGl..FPlGEsigsnLtepaflqavrislgqqvqldslflilLfaFiLG
+                     G+ + P G +++ +         vr   g+ + +      +L+a  LG
+  1E12:A|PDB    85 TVGMieMPAGHALAGEM--------VRSQWGRYLTWALSTPMILLA--LG 124  
+
+                   FgTTiAEPAlialasqaeeiaaeggmiahSsGsIdkklngLrltvAiGVG
+                    ++ +   +l  l   +                I+  +        +G +
+  1E12:A|PDB   125 LLADV---DLGSLFTVIAAD-------------IGMCV--------TGLA 150  
+
+                   agvsiGiykIlyGiPisyiiilgYlLViiLtyFaPeeIIaiAFDsGGVTT
+                   a  + +++  l  + +  i  ++ + V+           a+  D + ++ 
+  1E12:A|PDB   151 AAMTTSAL--LFRWAFYAISCAFFVVVLS----------ALVTDWAASAS 188  
+
+                   gpvTVPlimAlGiGlASalqGRspLlDGFGLIAlASigPmISVmllGils
+                   +  T  +  +l + l+ +l  + p + + G  +lA       V+  G  s
+  1E12:A|PDB   189 SAGTAEIFDTLRV-LTVVLWLGYPIVWAVGVEGLA------LVQSVGATS 231  
+
+                   l<-*
+                       
+  1E12:A|PDB   232 W    232  
+
+DUF81: domain 1 of 1, from 39 to 257: score -120.1, E = 6.6
+                   *->lllflagllaGfvaglfGfGGGvlavPlLlllgpvvgvpsdlppkqA
+                      l+ +++ +++++ +++   G + l+ ++ l +           ++++
+  1E12:A|PDB    39    LAGIAILVFVYMGRTIRP-GRPRLIWGATLMIP---------LVSIS 75   
+
+                   igtsllvalftslssvlshrkrgrlnlklgiilasvslllgsliGallGi
+                     ++ll +l++ ++  ++++                   ++s  G +l  
+  1E12:A|PDB    76 SYLGLLSGLTVGMIEMPAGHALAG--E-----------MVRSQWGRYLTW 112  
+
+                   vvgalllkaldaeklllilggilliyaalyllkdarsKakvlskkverie
+                   ++++ +  +          +g+l+ + +  l+                  
+  1E12:A|PDB   113 ALSTPMILLA---------LGLLADVDLGSLF------------------ 135  
+
+                   kskdlesmlLkgswyevdlsspivrsrfnpplallaGfliGflsglfGvG
+                                   +  +  i+ ++++  +a+++ +l  f  + + + 
+  1E12:A|PDB   136 ----------------TVIAADIGMCVTGLAAAMTTSALL-FRWAFYAIS 168  
+
+                   GGflvvpllvlllglpvkvavgtslffifltstsgvisyllGlllGavll
+                     f+vv l  l+ +    +a ++s+  + + +t+ v+  +  l+lG+ + 
+  1E12:A|PDB   169 CAFFVVVLSALVTD---WAASASSAGTAEIFDTLRVLTVV--LWLGYPIV 213  
+
+                   llavllllgailGsfiGarlarkvspkvirrlfailllvlglkll<-*
+                   +++ + +l  + ++ + ++    +++ + + +fa +ll   + +    
+  1E12:A|PDB   214 WAVGVEGLALVQSVGATSWAYSVLDV-FAKYVFAFILLRWVANNE    257  
+
+Caa3_CtaG: domain 1 of 1, from 39 to 219: score -157.3, E = 0.82
+                   *->llliaalYaliyvggvrRrfprgrrvpakravlFllG.lllLylalg
+                      l++ia+l ++ +          gr ++++r+ l + ++l +  ++++
+  1E12:A|PDB    39    LAGIAILVFVYM----------GRTIRPGRPRLIWGAtLMIPLVSIS 75   
+
+                   SPldllghalFsaHMvQHmlLymvaPPLLvLGAPvtLaaRglPfaWlwrk
+                   S l+ll+ +  ++ M+++                      +   ++l++ 
+  1E12:A|PDB    76 SYLGLLSGL--TVGMIEM----------------------PAG-HALAGE 100  
+
+                   praaReaGralrrplvsrvlrfltnPlvAllLFnglfwlwHlPpvFdaal
+                             +r+ + +     l  P++ l+L  gl+    l  +F +++
+  1E12:A|PDB   101 M---------VRSQWGRYLTWALSTPMILLAL--GLLADVDLGSLFTVIA 139  
+
+                   tnp.wvHalmhvsflisAlLFWWpllgpdpelprLsglakllylFatgil
+                    + ++  ++  + +  sAlLF W   ++           + + ++++++ 
+  1E12:A|PDB   140 ADIgMCVTGLAAAMTTSALLFRWAFYAISC---------AFFVVVLSALV 180  
+
+                   ltplGALiiFAdspLYatYtdpaawaeAmaLCvPgtlslswgGPemflsl
+                   +  +      A+s+  a+  d ++               +++        
+  1E12:A|PDB   181 TDWA----ASASSAGTAEIFDTLR---------------VLT-------- 203  
+
+                   dlleDQQLGGliMWipgeivYlivllaiffrWlrre<-*
+                             ++ W      Y iv++      +  e   
+  1E12:A|PDB   204 ----------VVLWLG----YPIVWA------VGVE    219  
+
+7tm_1: domain 1 of 1, from 44 to 243: score -155.8, E = 7.4
+                   *->GNlLVilvilrtkklrtptnifilNLAvADLLflltlppwalyylvg
+                        +LV +  +rt +  +p  i+           ++tl+ + ++++ +
+  1E12:A|PDB    44    --ILVFVYMGRTIRPGRPRLIW-----------GATLMIPLVSISSY 77   
+
+                   gedWpfGsalCklvtaldvvnmyaSillLtaISiDRYlAIvhPlryrrrr
+                   +    ++              +++++  + a          h+l    +r
+  1E12:A|PDB    78 L--GLLS-------------GLTVGMIEMPA---------GHALAGEMVR 103  
+
+                   tsprrAkvvillvWvlalllslPpllfswvktveegngv...vnvttCli
+                   +  ++++    l+W+l++   l+  l+       ++  +   ++  +C  
+  1E12:A|PDB   104 S--QWGRY---LTWALSTPMILLA-LGLLADVDLGSLFTviaADIGMCVT 147  
+
+                   dfpevstasvktwlvsyallstlvgFvlPllvilvcYtrIlrtlrkrark
+                        +t  +++ l  +a++++ ++F++ +l  lv+ +  +  ++++   
+  1E12:A|PDB   148 GLAAAMT--TSALLFRWAFYAISCAFFVVVLSALVTDW--AASASSAGT- 192  
+
+                   gaskkrsskerkaaktllvvvvvFvlCWlPyfivllldtlc.lsiimsss
+                           +   ++++l vv+      Wl y iv+ + +           
+  1E12:A|PDB   193 -------AEIFDTLRVLTVVL------WLGYPIVWAVGVEGlALV----- 224  
+
+                   CelervlptallvtlwLayvNsclNPiIY<-*
+                    ++   + +a++v  ++a+         Y   
+  1E12:A|PDB   225 -QSVGATSWAYSVLDVFAK---------Y    243  
+
+ABC2_membrane: domain 1 of 1, from 44 to 245: score -77.2, E = 1.9
+                   *->tqlkallkRefl.....rrwRdp.lgllwrliqpllmalvfGtvFgn
+                       ++++ + R++++++++++w+   ++ l+++ +   ++l+ G+  g 
+  1E12:A|PDB    44    ILVFVYMGRTIRpgrprLIWGATlMIPLVSISSY--LGLLSGLTVGM 88   
+
+                   lfkarlgVm.rndqtapqsgglgnrfgpsyidflvpGllffsllfnafss
+                        ++ m+    +a+    +++ +         +  l  +l + +  +
+  1E12:A|PDB    89 -----IE-MpAG--HALAGEMVRSQW---------GRYLTWALSTPM--I 119  
+
+                   lsgispvfirergvlEyrelasplYspsayvlakilvelpisllqaiifl
+                   l +++++ ++++g l     a+ +        ++ ++ l  ++  +++++
+  1E12:A|PDB   120 LLALGLLADVDLGSL-FTVIAADI--------GMCVTGLAAAMTTSALLF 160  
+
+                   livyfmvGlrpsagrFggslgslflfllvllltalaasslglfiaalaps
+                     +++ ++               f ++l +l+t +aas      a+ a +
+  1E12:A|PDB   161 RWAFYAISCAF------------FVVVLSALVTDWAAS------ASSAGT 192  
+
+                   fedasqigpllllplllfsGffiPvdsmPp.fewlqwiyylnPltYaiea
+                   +e++ ++  l ++++l + ++++ v          q +   ++ +  ++ 
+  1E12:A|PDB   193 AEIFDTLRVLTVVLWLGY-PIVWAVGVE-GlA-LVQSVGATSWAYSVLDV 239  
+
+                   lranef<-*
+                   +    f   
+  1E12:A|PDB   240 FAKYVF    245  
+
+YhhN: domain 1 of 1, from 50 to 199: score -100.5, E = 6.2
+                   *->kvrtlfKplpvlLLalfalllqgpegslerwlilaGLalSavGDalL
+                      ++rt+ +p   +L+++  l  ++p++s++ +l+l            L
+  1E12:A|PDB    50    MGRTI-RPGRPRLIWGATL--MIPLVSISSYLGL------------L 81   
+
+                   llPgehdafllGlasFllaHllY...ivlFlrqgngsffqlmapwlpall
+                          ++++G++    +H l+++ +++ + +   +     a ++p +l
+  1E12:A|PDB    82 ------SGLTVGMIEMPAGHALAgemVRSQWGRYLTW-----ALSTPMIL 120  
+
+                   laaalLvigivalalllp.rlggglripVavYsllLsvMawaAlelylsg
+                   la+           ll   +l g l +++a+ +++ +v+++aA ++    
+  1E12:A|PDB   121 LAL----------GLLADvDL-GSLFTVIAADIGM-CVTGLAAAMT---- 154  
+
+                   sdstalawvallGalLFviSDsliaigrfgglpTvafklarllvmgtYya
+                    +s+ l   a+            +ai+  +++  v  +l + +++++  a
+  1E12:A|PDB   155 -TSALLFRWAF------------YAISCAFFVV-VLSALVTDWAASASSA 190  
+
+                   AQlLIvlgv<-*
+                   + + I + +   
+  1E12:A|PDB   191 GTAEIFDTL    199  
+
+Sdh_cyt: domain 1 of 1, from 51 to 154: score -62.7, E = 9.2
+                   *->arirRPlsPHLtiYk...pqltsilSilHRisGvaLalgllflallL
+                       r  RP  P L  +++   +l si S l     + L ++++  + + 
+  1E12:A|PDB    51    GRTIRPGRPRLIWGAtlmIPLVSISSYL-----GLLSGLTVGMIEM- 91   
+
+                   ialalsgasyafvsavllfnyllgspivavilfgllwallyHllnGiRHl
+                     + +  a+ +  s+      +   + +a+   ++l al+         l
+  1E12:A|PDB    92 -PAGHALAGEMVRSQ------WGRYLTWALSTPMILLALG---------L 125  
+
+                   iwDlgkgleiktvyktgkavlalsvvlsl<-*
+                   + D   g     +   + + + +++++++   
+  1E12:A|PDB   126 LADVDLGSLFTVIAADIGMCVTGLAAAMT    154  
+
+YibE_F: domain 1 of 1, from 58 to 237: score -195.3, E = 9.6
+                   *->nalviLavlFillviivgrkkGlksllgLvlNlfviviilipl..is
+                         +i++  + + ++++       s+lgL+   + + +i  p+++ +
+  1E12:A|PDB    58    RPRLIWGATLMIPLVSIS------SYLGLLSG-LTVGMIEMPAghAL 97   
+
+                   nGfnp.....ilvaivlaviiliitLylvhGlnkkTlaAllgTligvlla
+                   +G  ++++ +  ++  l+  +++++L+l+ ++   +l +++++ ig+  +
+  1E12:A|PDB    98 AGEMVrsqwgRYLTWALSTPMILLALGLLADVDLGSLFTVIAADIGMCVT 147  
+
+                   alislivikltnlqGlsdEeleeLinlslnvtisfsglflagiiIGsLGA
+                   +l +  +  ++ ++               ++ is    +++++++++L  
+  1E12:A|PDB   148 GLAAAMTTSALLFR------WA-------FYAISC---AFFVVVLSAL-- 179  
+
+                   vmDvtvsIaSslfELarqnPnittkqLfkSGinIGrDiiGTmvNTLllAY
+                   v D + s +S+            t ++f                      
+  1E12:A|PDB   180 VTDWAASASSA-----------GTAEIF---------------------- 196  
+
+                   agssLPLfLlllrnnyslgeilNskilalEllrsllGgIGivLaVPlTtl
+                     ++L ++   l ++y+ +    ++            g+++v +V  T++
+  1E12:A|PDB   197 --DTLRVLTVVLWLGYPIVWAVGVE------------GLALVQSVGATSW 232  
+
+                   faall<-*
+                     ++l   
+  1E12:A|PDB   233 AYSVL    237  
+
+CTP_transf_1: domain 1 of 1, from 58 to 216: score -95.3, E = 0.73
+                   *->kqRiit.aivliliflillflggfaaliflllvaavvilalyElirl
+                        R i++a ++i+++ i  +lg         l ++ v+++  E+   
+  1E12:A|PDB    58    RPRLIWgATLMIPLVSISSYLGL--------LSGLTVGMI--EMPAG 94   
+
+                   lrlkfrsrrllltLmRerekerglgliflllalllvylehllalfglvll
+                     l++ ++r+ +         r+l + + ++ +ll+ +            
+  1E12:A|PDB    95 HALAGEMVRSQWG--------RYLTWALSTPMILLALG------------ 124  
+
+                   lilvlllLvltvlsklvgsasgwlssgtladvsltllplfyvglfllsLv
+                                                                     
+  1E12:A|PDB     - -------------------------------------------------- -    
+
+                   KkrykyQFsqfawtHltLllvvtqslllitnplfgllwilllilvvwaaD
+                                                      +++ l +++ v+aaD
+  1E12:A|PDB   125 ---------------------------------LLADVDLGSLFTVIAAD 141  
+
+                   igAYfvGkaFGkhKlaPkiSPnKTvEGflGGfvaavlvgllfslllgprl
+                   ig  + G a                   +++  +a+l+ + f+ +   ++
+  1E12:A|PDB   142 IGMCVTGLA-------------------AAMTTSALLFRWAFYAISCAFF 172  
+
+                   afvcpkdltpfCpnlFpqYlPvfkfrikIllsflhllllgllaslvgqfG
+                                                    l +l+    as +++  
+  1E12:A|PDB   173 ------------------------------VVVLSALVTDWAASASSAGT 192  
+
+                   DLvESmfKRdfGiKDSGklIPGHGGilDRlDsllfaapvfyallyif<-*
+                                            i D l  l+++  + y +++     
+  1E12:A|PDB   193 A-----------------------EIFDTLRVLTVVLWLGYPIVWAV    216  
+
+MreD: domain 1 of 1, from 59 to 211: score -81.7, E = 8
+                   *->mRfilqwlilisffllalvlgllipmpvgkskGtlvlrPhfLl..Lv
+                       R i    ++i ++ ++  lgll    vg    +++++ h L++++v
+  1E12:A|PDB    59    PRLIWGATLMIPLVSISSYLGLLSGLTVGM---IEMPAGHALAgeMV 102  
+
+                   Llywvialpervg..iitafvlGllyDvyygsllGvya..lgfsligylv
+                      w+ +l    ++++i+ ++lGll Dv +gsl+ v a + g+ + g ++
+  1E12:A|PDB   103 RSQWGRYLTWALStpMIL-LALGLLADVDLGSLFTVIAadIGMCVTGLAA 151  
+
+                   aklfkvLrnnrftrflpawlqvllsrGlelKVGfvfviavligltefdli
+                   a++ + L + r     +  +++++     +   fv v+  l+  +  + +
+  1E12:A|PDB   152 AMTTSALLF-R----WAFYAISCA-----F---FVVVLSALVTDWAASAS 188  
+
+                   gfvvyrLlPtllLnfllailLwpwvfkLlrkv<-*
+                      +           ++ +l ++ v + l +    
+  1E12:A|PDB   189 SAGTAE---------IFDTLRVLTVVLWLGYP    211  
+
+Cyto_ox_2: domain 1 of 1, from 60 to 273: score -264.3, E = 2.9
+                   *->elLplvWfvligvllfgYvvlDGFDlGVGmllpflakdeeERRillN
+                         +l+W                   G + ++p++  +         
+  1E12:A|PDB    60    ---RLIW-------------------GATLMIPLVSISS-------- 76   
+
+                   sIGPVWDGNEVWLvlaGGALFAAFPlaYAtllSglYlPlilvLvgLiFRG
+                                              Y  llSgl + +i + +g    +
+  1E12:A|PDB    77 ---------------------------YLGLLSGLTVGMIEMPAGH---A 96   
+
+                   VaFEyRgKiedakWkkvWDwaffiGSlvpalllGvafGnllqGlPFlvda
+                   +a    g + +  W ++  wa+     + al l          l+   d 
+  1E12:A|PDB    97 LA----GEMVRSQWGRYLTWALSTPMILLALGL----------LA---DV 129  
+
+                   dlrtsYaGsswdlLnRPfaLLcGlvlvslyalhGatflalKTeGeLqera
+                   d      Gs++ ++          + ++++++ G   +a+ T++ L  r 
+  1E12:A|PDB   130 D-----LGSLFTVIA---------ADIGMCVT-GL--AAAMTTSALLFRW 162  
+
+                   rklArylafvtLvavllvglwllyGiDGyvlvsiDtpatsaplakrVave
+                   + +A   af ++v+  lv+ w              +  +s  ++++    
+  1E12:A|PDB   163 AFYAISCAFFVVVLSALVTDW--------------AASASSAGTAE---- 194  
+
+                   igaWwfnfprmpillalpvLgvvafllllvalrrgrygwaFi........
+                               i+  l vL+vv+ l+   ++  g +g+a++++ + ++ 
+  1E12:A|PDB   195 ------------IFDTLRVLTVVLWLGYPIVWAVGVEGLALVqsvgatsw 232  
+
+                   .ltlllialailgagislfPnvmPSsldpaysLTiwnAassplTLkiMLv
+                    ++ l +++ ++ a+i+l + v         + T+   a++ +TL++M  
+  1E12:A|PDB   233 aYSVLDVFAKYVFAFILL-RWVAN------NERTV---AVAGQTLGTMS- 271  
+
+                   ialiflPivLgYtiwsYwVFRGKis<-*
+                                           +   
+  1E12:A|PDB   272 -----------------------SD    273  
+
+DUF475: domain 1 of 1, from 61 to 259: score -258.6, E = 6.9
+                   *->FDNAVVNAsILkrMSefWQKmFLTiGILIAVFGMRLvFPlvIVavsA
+                                            L +G         L  Pl  V++s+
+  1E12:A|PDB    61    ----------------------LIWGAT-------LMIPL--VSISS 76   
+
+                   glDPieamkLAL.enPangALefpdgsdrYeelltaAHPsIAAFGGmFLL
+                    l++ + +     e Pa +AL       + +  lt A        ++   
+  1E12:A|PDB    77 YLGLLSGLTVGMiEMPAGHALAGEMVRSQWGRYLTWAL-------STPMI 119  
+
+                   MvFLdFffddrdeikWLkwiErpLakiGkldaisavivfvlLlilaelft
+                   +++L+ +  d d    L+ +    a+      i  ++++++ ++++ +++
+  1E12:A|PDB   120 LLALG-LLADVD----LGSLFTVIAA-----DIGMCVTGLAAAMTTSALL 159  
+
+                   apaeqfqdahaDkaetVLiAGLlGlltYLlVdglgrlFekdgeeeeeReh
+                                 ++++ A       +++V +l++l  +          
+  1E12:A|PDB   160 FRWA---------FYAISCA-------FFVV-VLSALVTD---------- 182  
+
+                   eeeelgeasptgktkSavraAGkAGlAlFLYLEvLDASFSFDGVIGAFAI
+                             ++    ++  AG A        E+ D              
+  1E12:A|PDB   183 ---------WAA----SASSAGTA--------EIFD-------------- 197  
+
+                   TnDiViIALGLGvIGAMFVRSlTvYLVrkGTLddYVYLEHGAHYAIGa..
+                              +       R lTv L           L +   +A G+++
+  1E12:A|PDB   198 -----------T------LRVLTVVL----------WLGYPIVWAVGVeg 220  
+
+                   LAvImLls.ikrryeipEvvTGLvGvvfIgaSlwsSvirNRre<-*
+                   LA    ++ +   y ++ v    v  +fI   l   v  N r+   
+  1E12:A|PDB   221 LALVQSVGaTSWAYSVLDVFAKYV-FAFI---LLRWVANNERT    259  
+
+Trep_Strep: domain 1 of 1, from 61 to 226: score -122.2, E = 1.5
+                   *->tvKDLItIGiFaAlYFviivfiggmlgainPvfmnMllapaitallg
+                               i +A   + +v i+  lg ++ ++ +M+ +pa+ al+g
+  1E12:A|PDB    61    --------LIWGATLMIPLVSISSYLGLLSGLTVGMIEMPAGHALAG 99   
+
+                   GiifMLlvaKVpK......fGaitImgiiigLlffltGhgywpmlilsII
+                             V+ + ++   +a++  +i+++L   l+        ++++I
+  1E12:A|PDB   100 --------EMVRSqwgrylTWALSTPMILLALG--LLADV-DLGSLFTVI 138  
+
+                   gglIADliaWkigkNkYkskkrnmlsYvvFslwitaGpllPmwffpesYf
+                    + I++ ++ ++         +++  ++++++ ++  +++ +      + 
+  1E12:A|PDB   139 AADIGMCVT-GLA--AAMTTSALLFRWAFYAISCA-FFVVVLSALVTDWA 184  
+
+                   kasliargmgaeYidamealfsppgmiiiiviatvvcgllGglIGkklLK
+                    as+ ++g+ ae  d+++ l+   ++++ iv a+ v gl+ +        
+  1E12:A|PDB   185 -ASASSAGT-AEIFDTLRVLTVVLWLGYPIVWAVGVEGLALV-------- 224  
+
+                   KHFeK<-*
+                      +    
+  1E12:A|PDB   225 ---QS    226  
+
+Ferric_reduct: domain 1 of 1, from 61 to 179: score -61.8, E = 6.7
+                   *->tGilaLADPvkIhtallplaliLlalrnnpLtwLtGsttlnywp...
+                      + + a        t+++pl     +   + L +L G      ++ + 
+  1E12:A|PDB    61    LIWGA--------TLMIPL-----VSISSYLGLLSG------LTvgm 88   
+
+                   ......QfdtlirfHrwlGrvafllallHtiaylvndlpl.dye.llkef
+                    + + +   +  + +   Gr+  +     +i+     l+  d+++l+  +
+  1E12:A|PDB    89 iempagHALAGEMVRSQWGRYLTWALSTPMILLALGLLADvDLGsLFTVI 138  
+
+                   yngsgenptgylwlvkrpygitGvialvlllllaitSlpwfRRrgYElFl
+                                     +  +G+  + l +++ +++l    R+    F+
+  1E12:A|PDB   139 ------------------AADIGMCVTGLAAAMTTSAL--LFRWA---FY 165  
+
+                   ylHillavaflllv<-*
+                    +   ++v++l ++   
+  1E12:A|PDB   166 AISCAFFVVVLSAL    179  
+
+C4dic_mal_tran: domain 1 of 1, from 61 to 263: score -127.2, E = 8.4
+                   *->pswfglvLGtgglgnlWenlaapAlalrlassvlnglplvglvLfal
+                      + w +  + +  ++                         ++  L+ l
+  1E12:A|PDB    61    LIWGATLM-IPLVS-------------------------ISSYLGLL 81   
+
+                   lallfllllilyllkfllypkevraelnhPvvasFfp.tfpmslmllgna
+                   + l   + +i + + + l  + vr+++   ++  + ++++ ++l ll++ 
+  1E12:A|PDB    82 SGL--TVGMIEMPAGHALAGEMVRSQWGRYLTWALSTpMILLALGLLADV 129  
+
+                   llplgsnapstgwlpllalv..LWwlgvalhlafavyfyyllfstnkkfe
+                    l   s++      +++a+++ + +  +a +++ a++f + +      ++
+  1E12:A|PDB   130 DLG--SLFT-----VIAADIgmCVTGLAAAMTTSALLFRWAFY----AIS 168  
+
+                   lehmtPsWfLPvVGliVa..altaplfivfshlltaswqlglleagyfff
+                   +     + f+ v   +V++ a++a+++             g++e+  ++ 
+  1E12:A|PDB   169 C-----AFFVVVLSALVTdwAASASSA-------------GTAEIFDTLR 200  
+
+                   gvGfflyl...vllpillyRLifhgllPkalrPtlfIflAPpslglaAyl
+                    + ++l+l+ +++ ++    L  ++                 ++++ Ay 
+  1E12:A|PDB   201 VLTVVLWLgypIVWAVGVEGLALVQSV---------------GATSWAYS 235  
+
+                   kiaggaddiaagllivgissigygvlvlafilllllwgfglwflllallv
+                   ++     d++a+ +             +afill +               
+  1E12:A|PDB   236 VL-----DVFAKYV-------------FAFILLRW--------------- 252  
+
+                   llryfrrqklpFspgWWAfTFPlgilAtA<-*
+                   + +  +r                 + A+A   
+  1E12:A|PDB   253 VANN-ER-----------------TVAVA    263  
+
+DsbD: domain 1 of 1, from 62 to 216: score -102.9, E = 0.71
+                   *->aFlAGlLSfLSPCiLPliPaylSyisgvslgDvkqgKAkkvqkkvll
+                      + +A l           iP+ +S++s ++l                 
+  1E12:A|PDB    62    IWGATLM----------IPL-VSISSYLGL----------------- 80   
+
+                   kallFvlGlsivFlsLGlgaaflgalfr.dylgylrviagiivIllGLhf
+                        ++Gl++ ++   +g a++g  +r++++ yl+ ++++  Ill L +
+  1E12:A|PDB    81 -----LSGLTVGMIEMPAGHALAGEMVRsQWGRYLTWALSTPMILLALGL 125  
+
+                   lgvfrgHFLvYiPiGiligfLrklrlvWelktkkkveipvlgafllGllF
+                   l  ++               L +l +v    + ++++             
+  1E12:A|PDB   126 LADVD---------------LGSLFTV----IAADIGM------------ 144  
+
+                   AlgWtPCigPiLasvlalaassgslllaallLvvYvLGLgiPfllaslfa
+                         C+++ +a+  + a+    + +a    +++v+ L +   l++  a
+  1E12:A|PDB   145 ------CVTGLAAAMTTSALLFRWAFYAI-SCAFFVVVLSA---LVTDWA 184  
+
+                   gsllDSKkflrslrknsraikiasGvLliliGillll<-*
+                    s+      +++    ++ +++++ vL +++ i  +    
+  1E12:A|PDB   185 ASAS-----SAGTAEIFDTLRVLTVVLWLGYPIVWAV    216  
+
+DUF21: domain 1 of 1, from 63 to 274: score -101.7, E = 3.1
+                   *->lllllillLills...aFFSaaEfALvslrrsr.le.qlaesGdpEK
+                          l++ L+ +s+  ++ S+++ +++ +     l +++++s     
+  1E12:A|PDB    63    WGATLMIPLVSISsylGLLSGLTVGMIEMPAGHaLAgEMVRSQW--- 106  
+
+                   hKkrAkralkllenpdrll...............LstiqlGiTlvnilaG
+                        +++ + l+ p  ll  +   + + ++  +  ++ +G  +++++  
+  1E12:A|PDB   107 ----GRYLTWALSTPMILLalglladvdlgslftVIAADIGMCVTGLA-- 150  
+
+                   avGEpaiatllapllggvglpenktslahaisvvlAfaliTfLilvfGEl
+                     +  + ++ll+++ +             ais ++ +++++ L+      
+  1E12:A|PDB   151 --AAMTTSALLFRWAFY------------AISCAFFVVVLSALV------ 180  
+
+                   vPKslA.irypErvAlr..vApplrlfyrlfyPlvwllnk..........
+                       +A ++ +   A   ++ ++l ++++l yP+vw +  ++    ++ +
+  1E12:A|PDB   181 --TDWAaSASSAGTAEIfdTLRVLTVVLWLGYPIVWAVGVeglalvqsvg 228  
+
+                   ...............asanlllrllGvepaeesesavteeELkslveesa
+                    ++   +  +   +   a +llr++  ++             + ++ +++
+  1E12:A|PDB   229 atswaysvldvfakyVFAFILLRWVANNE-------------RTVAVAGQ 265  
+
+                   eeGvlekeE<-*
+                     G+  +++   
+  1E12:A|PDB   266 TLGTMSSDD    274  
+
+DUF2029: domain 1 of 1, from 64 to 251: score -173.0, E = 3.5
+                   *->FTYPPFAAlvFaPFAwLallpfgvaavlwtllslaalyalvrtllsq
+                            +A ++ P   L  +++    +++  ++++ ++ + +    +
+  1E12:A|PDB    64    ------GATLMIP---LVSISSY---LGLLSGLTVGMIEMPA--GHA 96   
+
+                   rlllrpgparrrgsllaaalataaalwlEPvRsTldFGQiNvlLmlLVLa
+                    +     ++  +g+ l++al t++ l+   +   +d+G     L + ++a
+  1E12:A|PDB    97 LAG--EMVRSQWGRYLTWALSTPMILLALGLLADVDLG----SLFTVIAA 140  
+
+                   DcltrrpgrrwprGvLvGLAAAiKLTPAvFgLYFLlrRRwRAAataaaaF
+                   D     +          GLAAA        +L F    Rw+  a + a F
+  1E12:A|PDB   141 DIGMCVT----------GLAAAM----TTSALLF----RWAFYAISCAFF 172  
+
+                   aat..valgfallPsdSreYWtetlfdtdRiGplafasNQSLrGvLaRLg
+                   ++  + ++  +++ ++S+   t + fdt R+ ++              L+
+  1E12:A|PDB   173 VVVlsALVTDWAASASSAG--TAEIFDTLRVLTVV-------------LW 207  
+
+                   gedspgtgpLLwlvla...avvaalalwa.arRalragdpllallvvaLf
+                   ++  p     +w+v +++ a+v  ++++  a  +l+  +       v  f
+  1E12:A|PDB   208 LGY-P--I--VWAVGVeglALVQSVGATSwAYSVLDVFAKY-----VFAF 247  
+
+                   gLLV<-*
+                    LL    
+  1E12:A|PDB   248 ILLR    251  
+
+AmiS_UreI: domain 1 of 1, from 64 to 206: score -127.4, E = 5.9
+                   *->MLGvvLLYVGaVLisNGlmlLgkIspRsaaVlNfFVGgLsvvvpivl
+                               Ga L++     L  Is    + l ++ G     + + +
+  1E12:A|PDB    64    ---------GATLMI----PLVSIS----SYLGLLSG-----LTVGM 88   
+
+                   IlSqaagdgtAPveGAEDiAqvsHHLtsf.....ygaAsGLYLFgFTYLY
+                   I    ag++     G     q    Lt++ +++ ++ A+GL         
+  1E12:A|PDB    89 IE-MPAGHA---LAGEMVRSQWGRYLTWAlstpmILLALGL--------- 125  
+
+                   vAINnvfdfDgrglGWFSLFVAiaA.lpaailSFtsemLDDHkvLGitsd
+                        ++d+D   lG  SLF  iaA+++     ++++         +t  
+  1E12:A|PDB   126 -----LADVD---LG--SLFTVIAAdIGMCVTGLAAA---------MTTS 156  
+
+                   pFGLwfgVIWllWAvLWltfFLllgLGkenLgkfVgylAiaegilTAwvP
+                   +  L f   W   A+   ++F +  L   +L   + ++A a++  TA + 
+  1E12:A|PDB   157 A--LLF--RWAFYAI--SCAFFVVVL--SAL--VTDWAASASSAGTAEIF 196  
+
+                   AlL.lLignw<-*
+                     L+ L+ ++   
+  1E12:A|PDB   197 DTLrVLTVVL    206  
+
+FA_desaturase: domain 1 of 1, from 65 to 228: score -92.6, E = 2.4
+                   *->awlaggtaltglfvtsGLGiTaggHdLcgHrsfsknsylndlvGhil
+                      a l+  ++ ++ ++        g   L++            +vG i 
+  1E12:A|PDB    65    ATLMIPLVSISSYL--------G---LLSGL----------TVGMIE 90   
+
+                   lalplgvpfqgsiieWrrsHrtHHrytntdekDPdiaprgffavswpksh
+                   +         g            H+  + +      +++g          
+  1E12:A|PDB    91 M-------PAG------------HALAGEMV----RSQWGRY-------- 109  
+
+                   svhyekkvllfshvgwllvrklplyflliyplrlakgvpGKYdrkkldsh
+                           l ++  + ++ ++l l                        + 
+  1E12:A|PDB   110 --------LTWALSTPMILLALGL------------------------LA 127  
+
+                   dlprsplfrfqaaeryyvllsllglfalptllplllwglgglwgvlkfyl
+                   d+    lf            +++g+++ + ++++++++l++ w  +++  
+  1E12:A|PDB   128 DVDLGSLFTVI--A------ADIGMCVTGLAAAMTTSALLFRW-AFYAIS 168  
+
+                   vpylvvghwlglvnsylaHtggerklPppfappeYdgensiewdwdrgql
+                   +  ++v+   +lv+     + ++             g             
+  1E12:A|PDB   169 CA-FFVVVLSALVTD----WAASA-------S--SAG------------- 191  
+
+                   sttvdrdygkllnllfhgegNyHveHHlFPtiPhynlpkatpaikptl<-
+                     t  + +   + +++++ g        +P i +  + ++ ++++ +   
+  1E12:A|PDB   192 --TAEIFDTLRVLTVVLWLG--------YP-IVWAVGVEGLALVQSVG   228  
+
+                   *
+                    
+  1E12:A|PDB     -   -    
+
+DUF204: domain 1 of 1, from 66 to 125: score -37.1, E = 9.2
+                   *->LvllAiglSmDAFaiSVGlGlallkskkkeilltaliiGlftvimpl
+                      ++ +   +S+ +           l++      l++l  G ++  mp 
+  1E12:A|PDB    66    TLMIPL-VSISSY----------LGL------LSGLTVGMIE--MPA 93   
+
+                   lGmlvGkevsrllgelaeal..GGilLIviGl<-*
+                      l+G++v +  g ++ ++ +   +L+ +Gl   
+  1E12:A|PDB    94 GHALAGEMVRSQWGRYLTWAlsTPMILLALGL    125  
+
+DUF360: domain 1 of 1, from 68 to 184: score -69.8, E = 9.3
+                   *->MvkflvrllvtaLaLlvitqlvdGvsissggTTLqrVkialvaAvil
+                      M+  lv++   +  L ++ +l  G+   + g        al    + 
+  1E12:A|PDB    68    MI-PLVSI---SSYLGLLSGLTVGMIEMPAG-------HALAGEMVR 103  
+
+                   GlvNALIkPvLlilslPlilLTLGL........FlvVvNAivLw....Lt
+                   +      + +   ls P ilL LGL  + + ++  +V+ A + +  ++L+
+  1E12:A|PDB   104 SQWG---RYLTWALSTPMILLALGLladvdlgsLFTVIAADIGMcvtgLA 150  
+
+                   AaitgnTTHwglqidgFgWtAIwaAIvLsviswLLskLirelg<-*
+                   Aa t       l  ++ +  AI  A    ++  +Ls+L+ +     
+  1E12:A|PDB   151 AAMTT----SALLFRWAF-YAISCA----FFVVVLSALVTDWA    184  
+
+NADHdh: domain 1 of 1, from 68 to 264: score -255.7, E = 4.5
+                   *->lillniLlliipVllsVAFLtLlERKvLGymQqRkGPNvVGplGLLQ
+                      +i+l +++  ++ l ++ +         G + +  G   +G      
+  1E12:A|PDB    68    MIPLVSISSYLGLLSGLTV---------GMIEMPAGHALAG------ 99   
+
+                   PfADGlKLfiKEpvvPstsspvlFlla.PvlaltlallaWvvlPfpyglv
+                              E v+   + ++   l++P++ l+l lla v l   + ++
+  1E12:A|PDB   100 -----------EMVRSQWGRYLTWALStPMILLALGLLADVDLGSLFTVI 138  
+
+                   ladlnlGvLFiLAlSSLaVYgiLmsGWaSNSKYaLLGaLRAvAQtISYEV
+                        +G    +++++L                       A+A t S   
+  1E12:A|PDB   139 --AADIG----MCVTGL-----------------------AAAMTTS--- 156  
+
+                   sLgLiLLsiiilsGSfnlsdivnaQegYGllvWlilpqfplflmFfIstL
+                          ++++ +  + +s+ +++             +  l+  +  s+ 
+  1E12:A|PDB   157 -------ALLFRWAFYAISCAFFVVV-----------LSALVTDWAASA- 187  
+
+                   AETNRaPFDLpEgEsELVaGynVEYSggpFALFFLaEYaNiilmslLtsv
+                                            S+ + A +F        +  +Lt+v
+  1E12:A|PDB   188 -------------------------SSAGTAEIF-------DTLRVLTVV 205  
+
+                   LFLGGwlpsip.........lpil.pelgiiwfvlKtlllfflfiwvRas
+                   L LG   p++   + ++   ++  +++    +++   +  +f fi+ R+ 
+  1E12:A|PDB   206 LWLG--YPIVWavgveglalVQSVgATSWAYSVLDVFAKYVFAFILLRW- 252  
+
+                   yPRfRYDQLMyLgWKvfLPLSLalllftaslli<-*
+                                         a+   t++++    
+  1E12:A|PDB   253 ---------------------VANNERTVAVAG    264  
+
+DUF161: domain 1 of 1, from 71 to 144: score -18.0, E = 0.67
+                   *->kllaaliGglllglGlglflipnglstGGtdglalilsklfgisvGl
+                      +  ++ + gll+gl +g++ +p+g + +G  + +++  +l++     
+  1E12:A|PDB    71    LVSISSYLGLLSGLTVGMIEMPAGHALAGEMVRSQWGRYLTW----- 112  
+
+                   ilfliNipllilayfflgklrfalyTliavfvlsifi<-*
+                      ++  p ++la + l  ++  l++l++v+++ i +   
+  1E12:A|PDB   113 ---ALSTPMILLA-LGLL-ADVDLGSLFTVIAADIGM    144  
+
+BPD_transp_1: domain 1 of 1, from 72 to 262: score -65.3, E = 3.7
+                   *->lpnsllltliatllalllGillGiiaAlalvrrgrrldrllrpiidl
+                         s +l+l++ l    + +++G  +A   +     ++    ++ + 
+  1E12:A|PDB    72    VSISSYLGLLSGLTVGMIEMPAGHALAG-EM-----VRSQWGRYLTW 112  
+
+                   llaiPslvlalllyvlfplilvFavklnifPtgGagpnlptsililykvl
+                    l++P ++lal       l++                             
+  1E12:A|PDB   113 ALSTPMILLALG------LLA----------------------------- 127  
+
+                   vallsifgfglilpilalallslapvaynrlirraaldslpsdyveaAra
+                       ++   +l  +i a + + + ++a       aa+ +    ++ a++a
+  1E12:A|PDB   128 ----DVDLGSLFTVIAADIGMCVTGLA-------AAMTTSALLFRWAFYA 166  
+
+                   lGasrwqifrkiiLPnalppiltglalalglllfgavvgeFlallsflga
+                     +  + ++ +    ++++ +++++  a     ++a + +         +
+  1E12:A|PDB   167 ISCAFFVVVLS----ALVTDWAASASSA-----GTAEIFD---------T 198  
+
+                   lglifgtpglGyliieailnldypliqgvlaqiqdywWavvlpvlalall
+                   l   +    lGy i++a+     +l+q v       + + ++++++ +++
+  1E12:A|PDB   199 LRVLTVVLWLGYPIVWAVGVEGLALVQSV-------GATSWAYSVLDVFA 241  
+
+                   vlllnlladilqrlldprvrr<-*
+                     ++ +++ ++++  ++ v++   
+  1E12:A|PDB   242 KYVFAFILLRWVANNERTVAV    262  
+
+Asp-Al_Ex: domain 1 of 1, from 75 to 230: score -101.5, E = 1.6
+                   *->alflglalGlllGrikiklggggfsLGvagGvLivGLllGhlgstgp
+                         lgl  Gl +G+i +           ag +L    + ++ g  + 
+  1E12:A|PDB    75    SSYLGLLSGLTVGMIEM----------PAGHALAGEMVRSQWG--RY 109  
+
+                   ttgrmpfsalsflrslGLaLFvaaiGlsaGpgFfsslkkd.Glklvglal
+                   +t+++  s+++ l +lGL   +a + l    + f  +++d G+ ++gla+
+  1E12:A|PDB   110 LTWAL--STPMILLALGL---LADVDL---GSLFTVIAADiGMCVTGLAA 151  
+
+                   litvvplilalvlgky..vlkldpglaaGllaGAlTstPaLgaAndalag
+                   ++t+++l++ +++   + ++ +   +a+     A  s+++ + + d+l+ 
+  1E12:A|PDB   152 AMTTSALLFRWAFYAIscAFFVVVLSALVTDWAASASSAGTAEIFDTLRV 201  
+
+                   sdlpatqlalilsqialGYAvtYpfGviglilfgqilak<-*
+                   +               lGY  + ++Gv gl l++ + a    
+  1E12:A|PDB   202 LTVVL----------WLGYPIVWAVGVEGLALVQSVGAT    230  
+
+DUF125: domain 1 of 1, from 76 to 183: score -67.6, E = 0.38
+                   *->ilRafVlGanDGlvsvlglvaGvagagasplvvllaGlaglvaggAl
+                                    s lgl++G           l+ G+++  ag Al
+  1E12:A|PDB    76    --------------SYLGLLSG-----------LTVGMIEMPAGHAL 97   
+
+                   SMHaiGEYlSvkserdteeaelkkeerelkkspedekaeLaeiYverGis
+                             ++++++                                  
+  1E12:A|PDB    98 AG--------EMVRSQW--------------------------------- 106  
+
+                   eelArevAeqLmaneedaLelhareelgidkevlesplkaAlasgiafil
+                                                     +++l  Al++      
+  1E12:A|PDB   107 ----------------------------------GRYLTWALST------ 116  
+
+                   GaliPllPylfisykmlpgllaliasiilallaLfilGfviaklsgasvl
+                    + i l   l+      ++ l+  +++i+a + + ++G + a  + a  +
+  1E12:A|PDB   117 -PMILLALGLL-----ADVDLGSLFTVIAADIGMCVTGLAAAMTTSALLF 160  
+
+                   ksalrmvilGllAaaltyllGkl<-*
+                   + a+  +++++ + +l++l++++   
+  1E12:A|PDB   161 RWAFYAISCAFFVVVLSALVTDW    183  
+
+DUF1614: domain 1 of 1, from 80 to 208: score -129.1, E = 3.2
+                   *->LSLvGSpiNIPIyeiksevivvkedevyfFGipyvvPrrsiqeqktv
+                         ++S+  +   e     ++  e ++  +G+     ++        
+  1E12:A|PDB    80    ---LLSGLTVGMIEMPAGHALAGEMVRSQWGR-----YLT------- 111  
+
+                   vAVNvGGAvIPlivSlyLlttllhyisdlllllliailivsiVsyavArV
+                               ++S+  ++ +l        +ll+++ + s+ +   A  
+  1E12:A|PDB   112 -----------WALSTPMILLAL--------GLLADVDLGSLFTVIAA-- 140  
+
+                   VpGVGIvvPaLiPPLvAalsAllltakidihgilappCRviiAYisGVLG
+                      +G  v  L+++ +  +sAll+       +  a +     A+   VL+
+  1E12:A|PDB   141 --DIGMCVTGLAAAMT--TSALLFRW-----AFYAIS----CAFFVVVLS 177  
+
+                   TLIGADLLNLrkiknigraqvvSIGGAGTFDGIFLsGlfAvlL<-*
+                   +L          + +++ a + S G A +FD   +  ++ ++L   
+  1E12:A|PDB   178 AL----------VTDWA-ASASSAGTAEIFDTLRVLTVV-LWL    208  
+
+DUF1109: domain 1 of 1, from 95 to 252: score -162.9, E = 2.5
+                   *->kTDDLIkaLAADlkpvtrhavgrrlalAAlvglvlAllvflllLGvR
+                             aLA++  ++     gr l+ A+   +   +l+ l+lL + 
+  1E12:A|PDB    95    ------HALAGEMVRSQ---WGRYLTWALSTPM---ILLALGLL-AD 128  
+
+                   pDltsAmttpfFwvKiayaalLAlaallalrrLSRPggerrrlpallalp
+                    Dl+s  t ++ +   ++++l A+   +al+        r +  a+  + 
+  1E12:A|PDB   129 VDLGSLFTVIAADIGMCVTGLAAAMTTSALL-------FRWAFYAISCAF 171  
+
+                   fvlvavaaivqlimAPastwaLtllmGsnwlvClllIplislPpLAlvLw
+                   fv v+ a ++ ++++ +s+   + ++ ++ +v   l +++ l+   +   
+  1E12:A|PDB   172 FVVVLSALVTDWAASASSAGT-AEIF-DTLRV---LTVVLWLGYPIVWAV 216  
+
+                   ALRggAPtrPtLAGAaAGLv.AGGlaAtlYAlHCtedslpFVAlWYtlgi
+                   ++ g+A            Lv++ G+  ++Y       s++ V   Y+ + 
+  1E12:A|PDB   217 GVEGLA------------LVqSVGATSWAY-------SVLDVFAKYVFAF 247  
+
+                   lllgvlGALaGrRlLRW<-*
+                                lLRW   
+  1E12:A|PDB   248 I------------LLRW    252  
+
+Fumarate_red_D: domain 1 of 1, from 97 to 181: score -64.7, E = 4.4
+                   *->dnqnpKRSdEPvlWlLFGAGGmvSAivaPVliLLlGlllPlGlldGe
+                       +    RS     W+ +    ++ A+  P ++L lGll     +d  
+  1E12:A|PDB    97    LAGEMVRSQ----WGRYL---TW-ALSTPMILLALGLL-----AD-- 128  
+
+                   AldyerllAfaqsfIGklvlLvLivLplwCalHRFRFvihHglhdlKvhv
+                     d + l +     IG  v  +   +     l R                
+  1E12:A|PDB   129 -VDLGSLFTVIAADIGMCVTGLAAAMTTSALLFR---------------- 161  
+
+                   pagkWvFYGlAailsvvaligvlt<-*
+                       W FY +     vv+l +++t   
+  1E12:A|PDB   162 ----WAFYAISCAFFVVVLSALVT    181  
+
+DUF962: domain 1 of 1, from 100 to 227: score -107.4, E = 9
+                   *->mksLerhLafYaaYHqNPrNilIHfigVPpIlfsvlvLLwsarPvlg
+                       + ++++ + Y          l+ ++  P+Il+ +l+LL +  + lg
+  1E12:A|PDB   100    -EMVRSQWGRY----------LTWALSTPMILL-ALGLL-A-DVDLG 132  
+
+                   llpfgfpks..ltfdsvlslnlafvlavayalFYlrLdlklGllmagllc
+                    + f    ++   +  +l+   ++ +++  ++FY+  +  ++++ +   +
+  1E12:A|PDB   133 -SLFTVIAAdiGMCVTGLAAAMTTSALLFRWAFYAI-SCAFFVVVLSA-L 179  
+
+                   lsiwvlssellAltilGlstsslalkvalglFvvgW....IfQFvGHgVf
+                   ++ w++s+++     +G   ++ ++ +  +l vv+W + +I+  vG    
+  1E12:A|PDB   180 VTDWAASASS-----AG---TAEIFDTLRVLTVVLWlgypIVWAVG---- 217  
+
+                   EKRKPAflDDLvqaLlIGPlFVlaEvlfkL<-*
+                          +++L               ++++   
+  1E12:A|PDB   218 -------VEGL-------------ALVQSV    227  
+
+DUF805: domain 1 of 1, from 103 to 194: score -50.5, E = 2.7
+                   *->nyfdFsGRarRkdYWwviLinlIigvvlvglafllgl.iaysitwlg
+                             R+    Y  ++L   +i+++l+    l+++++  ++t ++
+  1E12:A|PDB   103    -------RSQWGRYLTWALSTPMILLALG---LLADVdLGSLFTVIA 139  
+
+                   gifnavgggalitfilfysliiflylLAsllPtlaltvRRLHDaGkSGwi
+                   +                  ++  + +LA    t al +R        ++ 
+  1E12:A|PDB   140 A-----------------DIGMCVTGLAAAMTTSALLFR--------WA- 163  
+
+                   lfwVwglllvigvvivgvpaiiavtkeelslgilviLaLlifiPflfilL
+                       +                               +a+ + ++++    
+  1E12:A|PDB   164 ----F-------------------------------YAISCAFFVV---- 174  
+
+                   knGsivllvelgclpgtpGalfkyeNSNrYGpdpkk<-*
+                     +  +l  ++ ++ +++G                +   
+  1E12:A|PDB   175 --VLSALVTDWAASASSAGT--------------AE    194  
+
+TatC: domain 1 of 1, from 108 to 263: score -113.7, E = 3.5
+                   *->yRlfyslia.fllaflicfyfskplillllkpllallpagvkliats
+                      + l ++l ++ +l+ l+++  ++   l++++       a++ + +t+
+  1E12:A|PDB   108    RYLTWALSTpMILLALGLLADVDLGSLFTVIA------ADIGMCVTG 148  
+
+                   ptEafftylKl......sfflglllslPvilYQiwaFiaPRGLYkhErrf
+                   ++ a+ t+  l +    ++ +++++++   l   wa  a  +    E   
+  1E12:A|PDB   149 LAAAMTTSALLfrwafyAISCAFFVVVLSALVTDWAASAS-SAGTAEIFD 197  
+
+                   flpllissflLFllGalFaYfvvlPlvlkFflsfsqyqndlllgvepeps
+                   +l +l   + L +           P+v+      +      +l + +  +
+  1E12:A|PDB   198 TLRVLTVVLWLGY-----------PIVWA--VGVE------GLALVQSVG 228  
+
+                   iseYlsfvltllfsfGlaFelPvvlilLtklgivtpetLrkyRryayvga
+                     ++   vl ++      +   v+ ++L +  +v ++   +         
+  1E12:A|PDB   229 ATSWAYSVLDVFA----KY---VFAFILLR--WVANN--ER--------- 258  
+
+                   fiiaAiiTPPtDvlsQlllaiP<-*
+                             t       +a++   
+  1E12:A|PDB   259 ----------T-------VAVA    263  
+
+DUF1328: domain 1 of 1, from 110 to 175: score -33.2, E = 5.8
+                   *->LkWAi....IFLiiALIAGv.LG..FGGIA..........GAAAGIA
+                      L WA++++ I+L+++L A v+LG+ F+ IA + +   ++ +AA+   
+  1E12:A|PDB   110    LTWALstpmILLALGLLADVdLGslFTVIAadigmcvtglAAAMTTS 156  
+
+                   KILF.fvFlvlFvVsLvlG<-*
+                     LF+++F  +  +++v++   
+  1E12:A|PDB   157 ALLFrWAFYAISCAFFVVV    175  
+
+Glycos_transf_4: domain 1 of 1, from 110 to 270: score -110.0, E = 7.9
+                   *->vlavLlvilgigllGflDDyiKivrkrnfgLsarhKlllqiiaAlpl
+                      +  +L    +   lG+l D         ++L +   l+  i+a +  
+  1E12:A|PDB   110    LTWALSTPMILLALGLLAD---------VDLGS---LFTVIAADIGM 144  
+
+                   lmvyyvar........dfghtgvvipflvlpflgl...............
+                   +++ ++a  +++    ++ ++ ++  f+v+    l ++   + ++ ++ +
+  1E12:A|PDB   145 CVTGLAAAmttsallfRWAFYAISCAFFVVVLSALvtdwaasassagtae 194  
+
+                   .....evtlidLGllyillmvlllVfcsNAiNllDGLDGLaaGqgiiaav
+                     ++  v ++ L +l++++  ++            G+ GLa +q++ a +
+  1E12:A|PDB   195 ifdtlRVLTVVL-WLGYPIVWAV------------GVEGLALVQSVGATS 231  
+
+                   .alaliallqgrldrllPlslraafAkylhiyrdrhqlslalislalaGa
+                    a+ +++++                           ++ +++++  +a  
+  1E12:A|PDB   232 wAYSVLDVFAK-------------------------YVFAFILLRWVA-- 254  
+
+                   lLGFLiyNfyPAkvFmGDtGslflGgviAvvaIlghfeitl<-*
+                          N  +                   va+ g    t+   
+  1E12:A|PDB   255 -------NNER------------------TVAVAGQTLGTM    270  
+
+DUF6: domain 1 of 1, from 110 to 232: score -40.4, E = 4.2
+                   *->liWalytvfskkllerispltftayrfliag.illlilllfllrkpp
+                      l+Wal+t+++ ++l  +  + + ++  +ia++i++ +  l       
+  1E12:A|PDB   110    LTWALSTPMILLALGLLADVDLGSLFTVIAAdIGMCVTGLAAAMTT- 155  
+
+                   ifallslk.ilallylglfgtalgyllyfyalkyvsasnasvltslsPvf
+                     + l  + + +++ +++f ++l  l   +a + +sa++a ++  l  + 
+  1E12:A|PDB   156 --SALLFRwAFYAISCAFFVVVLSALVTDWAASASSAGTAEIFDTLRVLT 203  
+
+                   tlilsvllLgEkltlkqllGivlillGvllisl<-*
+                   ++++     g ++ +   +  +  + +v  +s+   
+  1E12:A|PDB   204 VVLWL----GYPIVWAVGVEGLALVQSVGATSW    232  
+
+Cytochrom_C_asm: domain 1 of 1, from 111 to 252: score -105.4, E = 6
+                   *->lsnlyesllllawglsllpllledktrglnlsflgavslpasllilg
+                       + l  ++ lla+gl+    l          s++ ++++ ++++++g
+  1E12:A|PDB   111    TWALSTPMILLALGLLADVDLG---------SLFTVIAADIGMCVTG 148  
+
+                   falfsfriplwfLllLlySnpflrlLpaemqqgadlvpalqspwLmlHVp
+                   +a +                                + al  +w +    
+  1E12:A|PDB   149 LAAA------------------------------MTTSALLFRWAF---- 164  
+
+                   lallSYatliigallsialLiilkneylnkssdqllksksvrlqdraLkk
+                        Ya+    +++ + +L                              
+  1E12:A|PDB   165 -----YAISCAFFVVVLSAL------------------------------ 179  
+
+                   kkkknsnnlpllktldrlsyriiliGfpfLTigiitGsvWAYyneaWGty
+                           ++ + +    s ++++ + +f T+ ++t  +W        +y
+  1E12:A|PDB   180 --------VTDWAA----SASSAGTAEIFDTLRVLTVVLWL-------GY 210  
+
+                   WsWDPKetwsLilWlvyaayLhsriatekrgwrgkkaailailGFvllli
+                    +          +W v+   L++ +++  ++w+ +   ++a   F ++l+
+  1E12:A|PDB   211 PI----------VWAVGVEGLALVQSVGATSWAYSVLDVFAKYVFAFILL 250  
+
+                   ayFgVnllgeglh<-*
+                         +         
+  1E12:A|PDB   251 R-----W------    252  
+
+AzlC: domain 1 of 1, from 119 to 228: score -94.5, E = 1.3
+                   *->lPilLGyiPiGlafGvlAvqaGLslleallMSllVfAGasQFvavgL
+                      + ++LG          l +   L+ l +++            + +g+
+  1E12:A|PDB   119    ILLALG----------LLADVDLGSLFTVIA-----------ADIGM 144  
+
+                   laagapllaIvlttFlVNlRHlLYgaslapylkglplrkrlllgaflLTD
+                    ++    la+++tt ++ +R ++Y +s a ++          l   l+TD
+  1E12:A|PDB   145 CVT---GLAAAMTTSALLFRWAFYAISCAFFVVV--------LS-ALVTD 182  
+
+                   EtFAvalara.pegrlsgwwmlGlglt.aY.lsWvlgtllGallGslip<
+                     +A++++ a+++  +++ ++l + l   Y+++W +g + G +l + ++ 
+  1E12:A|PDB   183 --WAASASSAgTAEIFDTLRVLTVVLWlGYpIVWAVG-VEGLALVQSVG  228  
+
+                   -*
+                     
+  1E12:A|PDB     -    -    
+
+DUF418: domain 1 of 1, from 120 to 257: score -92.1, E = 8.7
+                   *->fakkgwltnperhrkilrrlwwvglllaliGlllnllivlysltlsl
+                      +   g l + + +  +  + + +g+   +++ l+ +           
+  1E12:A|PDB   120    LLALGLLADVDLGSLFTVIAADIGM---CVTGLAAAM---------- 153  
+
+                   nvsatlllqilrllGgpflalfYisllalLfqkvnrlakllrplaavGRm
+                       t+  +++r ++  + ++f + +l  L++  + +        + G  
+  1E12:A|PDB   154 ----TTSALLFRWAFYAISCAFFVVVLSALVTD-WAASA-----SSAG-- 191  
+
+                   ALTNYLlQSl.vcTtiFY.gY.........GLGLfGrvgrleglllaiai
+                     T  ++ +l+v+T++++ gY+     + +GL L+ +vg + ++  ++ +
+  1E12:A|PDB   192 --TAEIFDTLrVLTVVLWlGYpivwavgveGLALVQSVGATSWAYSVLDV 239  
+
+                   falQlilStlWlrrFrfGPlEWlWRslTYgk<-*
+                   fa   +++++            l+R+ + +    
+  1E12:A|PDB   240 FA-KYVFAFI------------LLRWVANNE    257  
+
+PIG-U: domain 1 of 1, from 123 to 263: score -127.7, E = 7.3
+                   *->wsFLkav.YGfILsfeDLtPNiGLFWYFFaEMFehFrtFFliVFnin
+                      +  L  v++G+ +++      iG+                 +V  + 
+  1E12:A|PDB   123    LGLLADVdLGSLFTV--IAADIGM-----------------CVTGLA 150  
+
+                   itllfvvPSLsiRLkkePlflaialiAlisifK....aYPSvGDvalYLS
+                   + ++++   L +R     +  a+  + l ++  +   +  S G + ++  
+  1E12:A|PDB   151 A-AMTTSA-LLFRWAFYAISCAFFVVVLSALVTdwaaSASSAGTAEIFDT 198  
+
+                   LLPlFnklfkfmrYsfvvfclfvvalvLapvlyHlWIylGsGNANFYYAi
+                   L  l + l+  + Y++v + +  +  +  +v        G        A 
+  1E12:A|PDB   199 LRVLTVVLW--LGYPIVWAVGVEGLALVQSV--------G--------AT 230  
+
+                   tLvyAlgqillieDllyAmLrreyylkhpqaelik<-*
+                   + +y++   +   ++++A+ +  + +++          
+  1E12:A|PDB   231 SWAYSVLDVF--AKYVFAFILLRWVANNERTVAVA    263  
+
+PTPLA: domain 1 of 1, from 124 to 229: score -101.3, E = 9.1
+                   *->QtlAvlEilHsifGlVkSpvvttffQVsSRlfivwgiihsvpevqak
+                       +lA +++         ++++t++             i ++ ++ a 
+  1E12:A|PDB   124    GLLADVDL---------GSLFTVIA----------ADIGMCVTGLAA 151  
+
+                   psvvvfslllaWsitEIiRYsfYafnllgqtaPyfLtWLRYtlFivLYPl
+                   +     s+ll       +R +fYa+++ +              F v    
+  1E12:A|PDB   152 A--MTTSALL-------FRWAFYAISCAF--------------FVV---- 174  
+
+                   GvtsElltvyaslpyveesgrfSvelPnklNisFdYvlfLiiaLmliYIP
+                    v+s l+t +a+   + ++g+  +         Fd  ++L+++ +    +
+  1E12:A|PDB   175 -VLSALVTDWAA--SASSAGTAEI---------FDTLRVLTVV-LW---L 208  
+
+                   GfyqlYsHMiaQRrKvLkkgs<-*
+                   G +++    +    +v  +g+   
+  1E12:A|PDB   209 GYPIVWAVGVEGLALVQSVGA    229  
+
+NfeD: domain 1 of 1, from 124 to 243: score -66.4, E = 4.6
+                   *->lLii...lGlvLlvaEaltGtptfGfLglgGlaalviGallLfptga
+                      +L+++ +lG ++ v+ a    ++   + + Glaa+   + lLf    
+  1E12:A|PDB   124    GLLAdvdLGSLFTVIAA---DIG---MCVTGLAAAMTTSALLFR--- 161  
+
+                   pgavglsisfwgviltlailsaalllfvafavyrrlltrkkrksdtglLN
+                             w++     ++ +++l+ +++   ++      ++s+     
+  1E12:A|PDB   162 ----------WAFYAISCAFFVVVLSALVT--DWA----ASASSAG---- 191  
+
+                   rRgeaLiGrtgtviDddiangrGrVkvdG..erWravsedpedipkGdrV
+                            t++    d ++    V+  G +++W av+ ++  ++  ++V
+  1E12:A|PDB   192 ---------TAEI--FDTLRVLTVVLWLGypIVW-AVGVEG--LALVQSV 227  
+
+                   rVvgieGltLkVekia<-*
+                     ++    +L V+ +    
+  1E12:A|PDB   228 GATSWAYSVLDVFAKY    243  
+
+DUF1656: domain 1 of 1, from 125 to 182: score -11.3, E = 0.07
+                   *->MphElnlgGvYfPPlllvlllAliltlllrrLLtrtglyRlvWHPaL
+                      ++ +++lg+++    ++++ +++  t l  +  t   l R+ ++ a+
+  1E12:A|PDB   125    LLADVDLGSLF---TVIAADIGMCVTGLAAAMTTSALLFRW-AFYAI 167  
+
+                   fnlaLfvivlgvvvll<-*
+                     ++ fv+vl+++v +   
+  1E12:A|PDB   168 SCAF-FVVVLSALVTD    182  
+
+DUF474: domain 1 of 1, from 127 to 208: score -16.6, E = 0.42
+                   *->neAdlevvkRfikygtllsLGlvlvGAsGLvlayLrYmGlikGgfrt
+                        Ad  ++  f+ +   +  G+ ++   GL+ a    m      fr 
+  1E12:A|PDB   127    --ADVDLGSLFTVIA--ADIGMCVT---GLAAA----MTTSALLFRW 162  
+
+                   syqkllgvkvvlvlllfLldLyAlkkkLakekkevLDtvdkyLlilalvL
+                    +  +  +++v+vl+ ++ d +A     a+    +          +a ++
+  1E12:A|PDB   163 AFYAISCAFFVVVLSALVTD-WA-----ASASSAG----------TAEIF 196  
+
+                   sllLvvlGkrlRf<-*
+                      L vl + l++   
+  1E12:A|PDB   197 DT-LRVLTVVLWL    208  
+
+COPI_assoc: domain 1 of 1, from 130 to 239: score -81.8, E = 2.6
+                   *->dltqklFrfaNlgVGaitvlgGlsQLfyvflslqsfllglYiIlfGi
+                      dl+  lF ++   +G  + + Gl+ +    +s  +f  ++Y+I    
+  1E12:A|PDB   130    DLG-SLFTVIAADIG--MCVTGLAAAMT--TSALLFRWAFYAISCAF 171  
+
+                   viggLEFfPrvPtEEHKpilyKYASFlFSFLGRGvfYiLLgalllyGsvf
+                    +++L     v      + +   AS   S +G + ++  L +l+    v 
+  1E12:A|PDB   172 FVVVLSA--LVT-----DWA---ASA--SSAGTAEIFDTLRVLT----VV 205  
+
+                   niiaGvlvflvGlayvvLhfvpsieDYpPenMRapdadlgaGDdDddDdd
+                     +   +v+ vG+   +L +v+s++        a+ +++++         
+  1E12:A|PDB   206 LWLGYPIVWAVGVE--GLALVQSVG--------ATSWAYSV--------- 236  
+
+                   deV<-*
+                    +V   
+  1E12:A|PDB   237 LDV    239  
+
+TerC: domain 1 of 1, from 133 to 213: score -58.8, E = 7.9
+                   *->allTlylLEkvLaiDNifViaiivgyFkLPeaqRkrvLlyGlaGAlv
+                      +l+T+++ +          i++ v   +L +a    +Ll+  a+  +
+  1E12:A|PDB   133    SLFTVIAAD----------IGMCVT--GLAAAMTTSALLFRWAFYAI 167  
+
+                   lRiilifsgawLvslfqwllyvFGvFllfsGrdLlllggglfdildlkns
+                     ++++ ++++Lv  ++w +                ++ g    +++   
+  1E12:A|PDB   168 SCAFFVVVLSALV--TDWAASA--------------SSAGTA--EIFD-- 197  
+
+                   rilrsvkeileatdkldgdaffvv<-*
+                     lr +  +l   ++       +v   
+  1E12:A|PDB   198 -TLRVLTVVLWLGYP-------IV    213  
+
+AzlD: domain 1 of 1, from 146 to 226: score -42.2, E = 1.6
+                   *->illlIllmalvTyltRilPfvlfrrlkLPprvqrfLkyvPaAvLtAL
+                      + +l ++m+   +l R+ ++++                   ++++ +
+  1E12:A|PDB   146    VTGLAAAMTTSALLFRWAFYAIS------------------CAFFVV 174  
+
+                   vapsllsdpvgalspslgnpellAalvavalail.trnllltvlaGiavy
+                   v+++l++ ++ a ++s+g +e++  l ++ ++++     +++v  G+  +
+  1E12:A|PDB   175 VLSALVT-DWAASASSAGTAEIFDTLRVLTVVLWlGYPIVWAV--GVEGL 221  
+
+                   alLrl<-*
+                   al +    
+  1E12:A|PDB   222 ALVQS    226  
+
+Pox_I5: domain 1 of 1, from 157 to 223: score -41.5, E = 5.9
+                   *->alsarevlsaIGiTvLvlLMviSGgALvlKlipPVhrvvtmrSatfn
+                      al+ r  + aI     v+++    +ALv+   +       ++Sa  +
+  1E12:A|PDB   157    ALLFRWAFYAISCAFFVVVL----SALVTDWAAS------ASSAGTA 193  
+
+                   RvvtflEvvailiFIPGtiiLYsAYIksLkv<-*
+                    +   l v  +++   G  i  +  +  L     
+  1E12:A|PDB   194 EIFDTLRVLTVVLWL-GYPIVWAVGVEGLAL    223  
+
+DUF131: domain 1 of 1, from 159 to 215: score -49.7, E = 6.3
+                   *->LiliGlllIFlGfiLvflGvflsalkeekeeaeeeeesneEeskkek
+                      L++  +  I   f++v l+ + + +                      
+  1E12:A|PDB   159    LFRWAFYAISCAFFVVVLSALVTDW---------------------- 183  
+
+                   rkdeeeseveyGGVImIGPIPIVFGssnpslLpklaklsiiLAIilmily
+                       ++ ++               G+       +++ +  +L+++l + y
+  1E12:A|PDB   184 ---AASASSA--------------GTA------EIFDTLRVLTVVLWLGY 210  
+
+                   lllfl<-*
+                    + +    
+  1E12:A|PDB   211 PIVWA    215  
+
+NapE: domain 1 of 1, from 181 to 229: score -30.2, E = 3
+                   *->MsdpnaqtsttkksrRrmEli.aFlfLafviw...PvLaVAtVGgYG
+                       +d +a +s+ +    + E+++++ +L++v+w + P+  V  VG  G
+  1E12:A|PDB   181    -TDWAASASSAG----TAEIFdTLRVLTVVLWlgyPI--VWAVGVEG 220  
+
+                   FiVWmyQififGPPGP<-*
+                   ++    Q+     +G+   
+  1E12:A|PDB   221 LA--LVQS-----VGA    229  
+
+DUF405: domain 1 of 1, from 193 to 272: score -102.0, E = 6.8
+                   *->nERihlLDiLRGfALLGILlvNilaFayPDLylgvygleefssgalt
+                         +++ D LR       L+v +l ++yP     ++g e ++  + +
+  1E12:A|PDB   193    ---AEIFDTLR------VLTV-VLWLGYP--IVWAVGVEGLALVQSV 227  
+
+                   glDavaralvdlFiqgKFitLFSfLFGvGfalfmrRaerkgepfvaLylR
+                   g+ ++a+ ++d+F+++ F                                
+  1E12:A|PDB   228 GATSWAYSVLDVFAKYVF-------------------------------- 245  
+
+                   RlliLLlfGliHatliWdGDILllYAltGfiLllfykrPktktlRLiwgG
+                                               +fiLl+ +    ++t+    + 
+  1E12:A|PDB   246 ----------------------------AFILLRWVAN-NERTV----A- 261  
+
+                   aliLLLvssill<-*
+                    ++   +++      
+  1E12:A|PDB   262 -VAGQTLGTMSS    272  
+
+TM_helix: domain 1 of 1, from 230 to 271: score -14.7, E = 3.6
+                   *->lgplsslldqiiaylPnvigAiliLliGlliakilsdlvaklLkklg
+                      +++++s+ld ++ y   v+++il+        +++++  +++ ++ +
+  1E12:A|PDB   230    TSWAYSVLDVFAKY---VFAFILL--------RWVANNERTVAVAGQ 265  
+
+                   ldslva<-*
+                   + +++    
+  1E12:A|PDB   266 TLGTMS    271  
+
+//
