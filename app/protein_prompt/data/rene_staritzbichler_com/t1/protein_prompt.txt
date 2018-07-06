@@ -1,0 +1,1 @@
+fake.fa 5 ABCDE 0.5 

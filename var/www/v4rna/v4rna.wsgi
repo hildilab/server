@@ -2,13 +2,13 @@
 # configuration for the mppd wsgi app
 
 # path to the directory where MPPD_local.py is located
-APP_PATH = '/home/webit/app/srv-new/servers/v4rna'
+#APP_PATH = '/home/webit/app/srv-new/servers/v4rna'
 APP_PATH = '/home/webit/app/v4rna'
 
 # leave empty if no virtualenv is needed
 # APP_ENV = '/home/arose/dev/envs/bin/'
 APP_ENV = ''
-
+ 
 
 
 

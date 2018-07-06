@@ -1,0 +1,70 @@
+import time
+
+from flask import Flask, render_template, request, flash
+
+from form import SequenceForm
+from execute import Execute
+import sequence_functions as sf
+
+app = Flask( __name__ )
+
+app.secret_key = 'development key'
+
+
+
+def page_url( filename):
+    return ( request.base_url + "/" + filename)
+
+
+
+@app.route( '/form.html' , methods=['GET', 'POST'])
+def index():
+    form = SequenceForm()
+    sequence = None
+    email = None
+    tag = None
+    if request.method == 'POST':
+        if form.validate() == False:
+            flash( 'some are required')
+            return render_template( 'form.html',  page=page_url, form=form,sequence=sequence,tag=tag,email=email)
+        else:
+            #add tests
+            sequence = form.sequence.data
+            sequence = sf.CleanSequence( sequence )
+            tag = form.tag.data
+            email = form.email.data
+            fixed_email = sf.FixEmailString( email)
+            # while wait: submitted,  update
+            pid = RunJob( sequence, fixed_email, tag)
+            return submitted( 
+            
+            for i in range(0,2):
+                render_template( 'submitted.html', tag=tag, email=fixed_email)
+                time.sleep(10)
+            # after: redirect to result page
+            return render_template( 'results.html', tag=tag, email=fixed_email)
+    elif request.method == 'GET':
+        return render_template( 'form.html',  page=page_url, form=form,sequence=sequence,tag=tag,email=email)
+    
+
+@app.route( '/results/<job_id>')
+@app.route( '/results/<user>/<job_id>')
+def results( job_id, user="unknown"):
+    return render_template( 'results.html', user=user, job_id=job_id )
+    
+
+    
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template('500.html'), 500
+
+
+
+
+if __name__ == '__main__':
+    app.run( debug=True)

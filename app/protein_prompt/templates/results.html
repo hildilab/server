@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %} Results {% endblock %}
+
+<style type="text/css">
+        td { width: 30px; overflow: hidden; }
+        table { width : 90px; table-layout: fixed; }
+    </style>
+
+{% block body %}
+
+<h1> Good day! Good results! Good job!</h1>
+
+<br><br>
+Good day {{user}}, results for job {{job_id}}
+<br><br>
+
+<table class="searchable sortable" style="width:100%">
+ <thead>
+   <tr>
+     <th style="width:20%"> SeqID </th>
+     <th style="width:20%"> Length</th>
+     <th style="width:40%;overflow:hidden"> Sequence </th>
+     <th style="width:20%"> Score </th>
+  </tr>
+ </thead>
+ <tbody>
+  {{lines|safe}}
+ </tbody>
+ </table>
+
+<br><br>
+<a href="{{result_path}}/protein_prompt.txt"> Click le download...</a>
+<br><br>
+
+{% endblock %}

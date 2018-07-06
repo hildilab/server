@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}- Page Not Found{% endblock %}
+
+{% block body %}
+<div class="page-header">
+  <h1>Requested page not found on server</h1>
+  <a href="{{ request.host + '/' }}" target ="_new"> home, sweet home</a>
+</div>
+{% endblock %}

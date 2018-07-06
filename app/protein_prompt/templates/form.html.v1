@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %} Submit Query {% endblock %}
+
+{% block body %}
+
+  <h2> Good day!</h2>
+
+  excellent day, indeed :-) <br><br><br>
+
+
+ 
+  
+  <form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.sequence.label }} <br> {{ form.sequence() }}
+    <br><br>
+    {% for message in form.sequence.errors %}
+    <div>{{ message }}</div>
+    {% endfor %}
+      
+    
+    {{ form.tag.label }}  <br> {{ form.tag(size=20) }}
+    <br><br>
+    {% for message in form.tag.errors %}
+    <div>{{ message }}</div>
+    {% endfor %}
+ 
+   
+    {{ form.email.label }}  <br> {{ form.email(size=20) }}
+    {% for message in form.email.errors %}
+    <div>{{ message }}</div>
+    {% endfor %}
+    <br><br>
+    
+    {{ form.submit() }}
+    <br>
+  </form>
+  
+  
+  
+{% endblock %}

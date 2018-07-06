@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="static/prompt.css" media="all" />
+  <title> ProteinPrompt {% block title %} {% endblock %} </title>
+  
+  {% block head %}{% endblock %}
+  
+</head>
+
+
+<body>
+
+  <div id="header">
+    <div id="logo" style="text-align:left;position:relative;height:105px;">
+      <a href="{{ request.host + '/' }}" target ="_new">
+	<img src="{{ url_for( 'static', filename ='img/logo_small.jpg' )}}" style="padding-right:5px; margin-right:5px;width:205px; float:left; border-right:solid #EEEEEE 2px;" alt="ProteinPrompt Logo">
+      </a>
+    </div>
+  </div>
+
+  <h2 style = "text-align:center;"> ProteinPrompt - Predicting protein-protein contacts from sequence </h2>
+
+  <br>
+
+  {% block body %}{% endblock %}
+  
+</body>
+
+</html>

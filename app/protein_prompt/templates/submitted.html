@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Submitted to queue {% endblock %}
+
+{% block body %}
+
+<h1> Good day!</h1>
+
+{% if email %}
+Hey {{email}},
+{% else %}
+Hey,
+{% endif %}
+<br>
+your job {{tag}} has been submitted to the queue.<br><br>
+You will find results under {{request.base_url}}{{url_for( 'results', user=email, job_id=tag )}}
+<br><br>
+This page updates automatically every 10 seconds and redirects to the reult page.
+
+<br>
+...believe it or not!
+
+{% endblock %}
