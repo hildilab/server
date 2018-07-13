@@ -1,21 +1,26 @@
 {% extends "base.html" %}
 
-{% block title %} Results {% endblock %}
+{% block title %} {{super()}} Results {% endblock %}
 
-<style type="text/css">
-        td { width: 30px; overflow: hidden; }
-        table { width : 90px; table-layout: fixed; }
-    </style>
+{% block content %}
+{{super()}}
 
-{% block body %}
 
-<h1> Good day! Good results! Good job!</h1>
+<h1> Good day! Good job!</h1>
 
 <br><br>
 Good day {{user}}, results for job {{job_id}}
 <br><br>
 
-<table class="searchable sortable" style="width:100%">
+<!-- <table class="searchable sortable" style="width:100%"> -->
+
+    <div id="toolbar">
+        <button id="remove" class="btn btn-danger" disabled>
+            <i class="glyphicon glyphicon-remove"></i> Delete
+        </button>
+    </div>
+
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
  <thead>
    <tr>
      <th style="width:20%"> SeqID </th>
@@ -27,10 +32,22 @@ Good day {{user}}, results for job {{job_id}}
  <tbody>
   {{lines|safe}}
  </tbody>
- </table>
+</table>
 
 <br><br>
-<a href="{{result_path}}/protein_prompt.txt"> Click le download...</a>
+<div id="download">
+  <a href="../../{{result_path}}/protein_prompt.txt" download="result.txt"> Click le download...</a>
+</div>
 <br><br>
 
+{% endblock %}
+
+
+{% block scripts %}
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+{{super()}}
 {% endblock %}

@@ -4,9 +4,13 @@ from form import SequenceForm
 from execute import Execute
 import sequence_functions as sf
 from celery import Celery
+from flask_bootstrap import Bootstrap
+from flask_wtf import FlaskForm as form
+from wtforms import SelectField
 
 app = Flask( __name__ )
-app.config['SECRET_KEY'] = 'topf-secret'
+app.config['SECRET_KEY'] = 'topf-sekret'
+
 # Celery configuration
 app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
 app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0'
@@ -14,69 +18,81 @@ app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0'
 celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
 celery.conf.update(app.config)
 
+bootstrap = Bootstrap(app)
+
 app.config['USER_DATA_DIR'] = os.environ.get('USER_DATA_DIR') # feed from environment variable
+
+
+class RequestForm( form):
+    db = SelectField('database', choices = [(1,'Human'),(2,'Mammalian'),(3,'Vertebrata')])
+
 
 def func_name():
     import traceback
     return traceback.extract_stack(None, 2)[0][2]
 
+
+
 @celery.task(bind=True)
 def submit_and_check_status(self, email, tag, sequence, db):
-#    with app.app_context():
-    print ( "now entered submit:" + current_app.name )
+    with app.app_context():
+        print ( "now entered submit:" + current_app.name )
+        pwd = os.getcwd();
+        if email == '':
+            email = "anonymous"
+        else:
+            email = sf.FixPath( email )
 
-    if email == '':
-        email = "anonymous"
-    else:
-        email = sf.FixEmailString( email )
+        sequence = sf.CleanSequence( sequence )
+        tag = sf.FixPath(tag)
 
-    sequence = sf.CleanSequence( sequence )
+        user_dir = app.config['USER_DATA_DIR']
 
-    user_dir = app.config['USER_DATA_DIR']
+        os.chdir( user_dir )
+        job_dir = email + "/" + tag
 
-    os.chdir( user_dir )
-    job_dir = email + "/" + tag
+        if os.path.isdir( job_dir):
+#            status_message = tag + " exists for user: " + email + ", you will be redirected to the form"
+#            self.update_state(state='PROGRESS',
+#                              meta={ 'status': status_message})
+#            time.sleep( 10 )
+#            return {'status':'..failed'}
+            time.sleep(1)
+        else:
+            os.makedirs( job_dir )
+        os.chdir( job_dir )
+        with open( 'protein_prompt.txt','w') as f:
+            f.write( "fake.fa 15 AABCDEABCDEBCDE 0.4 \n")
+            f.write( "cake.fa 105 ABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDE 0.5 \n")
+            f.write( "bake.fa 5 ABCDE 1.5 \n")
+        #cmd = "tsp rf -seq " + sequence + " -db " + db + " -out protein_prompt.txt"
+        #        jiddle_id = subprocess.check_output( cmd ).strip()
 
-    #        if os.path.isdir( job_dir):
-    #            status_message = tag + " exists for user: " + email + ", you will be redirected to the form"
-    #            self.update_state(state='PROGRESS',
-    #                              meta={ 'status': status_message})
-    #            time.sleep( 10 )
-    #            return {'status':'..failed'}
-    #        else:
-    #            os.makedirs( job_dir )
-    os.chdir( job_dir )
-    with open( 'protein_prompt.txt','w') as f:
-        f.write( "fake.fa 15 AABCDEABCDEBCDE 0.4 \n")
-        f.write( "cake.fa 35 ABCDEABCDEABCDEABCDEABCDEABCDEABCDE 0.5 \n")
-        f.write( "bake.fa 5 ABCDE 1.5 \n")
-    #cmd = "tsp rf -seq " + sequence + " -db " + db + " -out protein_prompt.txt"
-    #        jiddle_id = subprocess.check_output( cmd ).strip()
+        #       cmd = "echo fake.fa 5 ABCDE 0.5 > protein_prompt.txt".split()
+        #        subprocess.call( cmd )
 
-    #       cmd = "echo fake.fa 5 ABCDE 0.5 > protein_prompt.txt".split()
-    #        subprocess.call( cmd )
+        go = True
+        while go:
+            status = "running" # subprocess.check_output( ["ts", "-s", jiddle_id] ).strip()
 
-    go = True
-    while go:
-        status = "running" # subprocess.check_output( ["ts", "-s", jiddle_id] ).strip()
+            # better: != running and != pending..
+            if status == "finished":
+                go = False
+                status += ", you will be redirected to the result section soonish..."
 
-        # better: != running and != pending..
-        if status == "finished":
+            self.update_state(state='PROGRESS',
+                              meta={ 'status': status})
+
+            time.sleep(5)
             go = False
-            status += ", you will be redirected to the result section soonish..."
-
-        self.update_state(state='PROGRESS',
-                          meta={ 'status': status})
-
-        time.sleep(10)
-        go = False
+        os.chdir( pwd)
     return {'status':'completed'}
-
 
 
 
 def page_url( filename):
     return ( request.base_url + "/" + filename)
+
 
 
 def WriteLines( path):
@@ -93,13 +109,17 @@ def WriteLines( path):
     return mstr
 
 
+
 @app.route( '/' , methods=['GET', 'POST'])
 def index():
     print( func_name() + " go")
+
+    form = RequestForm(db=1)
 #    flash( 'index')
     if request.method == 'GET':
-        return render_template( 'form.html', email=session.get('email', ''), tag=session.get('tag',''), sequence=session.get('sequence','') , db=session.get('db','') )
+        return render_template( 'form.html', email=session.get('email', ''), tag=session.get('tag',''), sequence=session.get('sequence','') , db=session.get('db','') , form=form)
 
+                     
     email = request.form['email']
     session['email'] = email
 
@@ -143,6 +163,7 @@ def submittask():
     return jsonify({}), 202, {'Location': url_for('taskstatus', task_id=task.id)}
 
 
+
 @app.route('/status/<task_id>')
 def taskstatus(task_id):
     print( func_name() + " id: " + task_id)
@@ -171,19 +192,17 @@ def taskstatus(task_id):
 
 
 
-
-
 @app.route( '/results/<job_id>')
 @app.route( '/results/<user>/<job_id>')
 def results( job_id, user="unknown"):
 #    email = request.form.get['email']
 #    tag = request.form.get['tag']
-    user = sf.FixEmailString( user )
-    path = app.config['USER_DATA_DIR'] + "/" + user + "/" + job_id 
+    user = sf.FixPath( user )
+#    path = app.config['USER_DATA_DIR'] + "/" + user + "/" + job_id 
+    path = "data/" + user + "/" + job_id 
     all_lines = WriteLines( path)
     return render_template( 'results.html', user=user, job_id=job_id, lines=all_lines,result_path=path )
     
-
     
 @app.errorhandler(404)
 def page_not_found(e):
@@ -193,8 +212,6 @@ def page_not_found(e):
 @app.errorhandler(500)
 def internal_server_error(e):
     return render_template('500.html'), 500
-
-
 
 
 if __name__ == '__main__':

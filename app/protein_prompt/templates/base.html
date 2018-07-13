@@ -1,43 +1,69 @@
-<!DOCTYPE HTML PUBLIC>
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 
-<html>
 
-<head>
-  <link rel="stylesheet" type="text/css" href="static/prompt.css" media="all" />
-  <title> ProteinPrompt {% block title %} {% endblock %} </title>
+
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{url_for('.static', filename="prompt.css")}}" media="all">
+{% endblock %}
+
+
+{% block title %} ProteinPrompt {% endblock %} 
   
-  {% block head %}{% endblock %}
-  
-</head>
+{% block body %}
 
-
-<body>
-
-  <div id="header">
-    <div id="logo" style="text-align:left;position:relative;height:105px;">
+<div id="header">
+  <div id="title"> 
+    <div id="logo" style="float:left;">
       <a href="{{ request.host + '/' }}" target ="_new">
-	<img src="{{ url_for( 'static', filename ='img/logo_small.jpg' )}}" style="padding-right:5px; margin-right:5px;width:205px; float:left; border-right:solid #EEEEEE 2px;" alt="ProteinPrompt Logo">
+	<img src="{{ url_for( 'static', filename ='img/logo_small.jpg' )}}" id="logopic" alt="ProteinPrompt Logo">
       </a>
     </div>
-  </div>
-
-  <h2 style = "text-align:center;"> ProteinPrompt <br><br> Predicting protein-protein contacts from sequence </h2>
-
-  <br>
-
-  {% block body %}{% endblock %}
-
-  {% block content %}
-  <div class="container">
-    {% for message in get_flashed_messages() %}
-    <div class="alert alert-warning">
-      {{message}}
-      <button type="button" class="close" data-dismiss="alert"> &times; </button>
+    <div id="uber" style="margin:20px;padding:20px;">
+      <h2> ProteinPrompt <br> Predicting protein-protein contacts from sequence </h2>	
     </div>
-    {% endfor %}
   </div>
-  {% endblock %}
- 
-</body>
+  
+</div>
+<br><br>
+<div id="navigation" style="float:left">
+  <div> <!-- class="ui-widget ui-nav-box"> -->
+    <div> <!-- class="ui-widget-header"> -->
+      <span>ProteinPrompt</span>
+    </div>
+    <div>  <!-- class="ui-widget-content"> -->
+      <a href="/">Submit Job</a><br>
+      <a href="/results">Results</a><br>
+      <a href="/methods">Methods</a><br>
+      <a href="/links">Links</a><br>
+    </div>
+  </div>
+  
+</div>
 
-</html>
+{{ super() }}
+
+<footer style="padding:5pt">
+  <p> Report issues or comments: <a href="mailto:web@proteinformatics.org"> webmaster </a> </p>
+  <p> &copy; Ren&eacute; Staritzbichler, 2018</p>
+</footer>
+{% endblock %}
+  
+
+{% block content %}
+<div class="container">
+  {% block page_content %}{% endblock %}
+
+  
+  {% for message in get_flashed_messages() %}
+  <div class="alert alert-warning">
+    {{message}}
+    <button type="button" class="close" data-dismiss="alert"> &times; </button>
+  </div>
+  {% endfor %}
+
+</div>
+{% endblock %}
+

@@ -7,5 +7,5 @@ def CleanSequence( seq):
     return seq
 
 
-def FixEmailString( email):
-    return email.replace( '@', '_').replace( '.','_')
+def FixPath( pathy):
+    return pathy.strip().replace( '@', '_').replace('/','_').replace( '.','_').replace( ' ','_' )
