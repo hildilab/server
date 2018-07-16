@@ -1,6 +1,6 @@
 import subprocess, os
 
-exec = "path/rf.sh"
+#exec = "path/rf.sh"
 
 def Execute( cmd):
     #cmd = "tsp sleep 45"

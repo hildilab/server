@@ -1,12 +1,14 @@
 import time, os, subprocess 
 from flask import Flask, render_template, request, flash, session, redirect, url_for, jsonify, current_app
-from form import SequenceForm
-from execute import Execute
-import sequence_functions as sf
 from celery import Celery
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm as form
 from wtforms import SelectField
+
+from form import SequenceForm
+from execute import Execute
+import sequence_functions as sf
+
 
 app = Flask( __name__ )
 app.config['SECRET_KEY'] = 'topf-sekret'
