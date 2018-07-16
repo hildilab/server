@@ -15,6 +15,7 @@
 
 
   <br><br>
+     <!--
   <form method="POST">
 
      <p>Drop your sequence here:<br> <input type="text" name="sequence" size="80" value="{{ sequence }}"></p>
@@ -35,21 +36,29 @@
      
   </form>
   <br><br>
+     -->
 
-  <!--
-  <form action="" method="post" novalidate>
+  
+      <!--
+ <form action="" method="post" novalidate>
     {{ form.hidden_tag() }}
     <p>
       {{ form.db.label }}<br>
-            {{ form.db() }}
+            {{ form.db( id='btn btn-primary') }}
     </p>
   </form>
   <br><br>
-  -->
-  
-  <!--<button onclick="submit_job();">Start Long Calculation</button><br><br>-->
-  <button id="start-bg-job">Submit your query to the server</button><br><br>
+      -->
+
+      <div style="width:75%">
+      {{ wtf.quick_form(form) }}
+      </div>
+  <br>
   <div id="progress"></div>
+      
+  <!--<button onclick="submit_job();">Start Long Calculation</button><br><br>-->
+  <button class="btn btn-primary btn-lg" type="submit" id="start-bg-job" >Submit your query to the server</button><br><br>
+
 
   <br>
 

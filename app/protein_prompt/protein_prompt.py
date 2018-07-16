@@ -2,8 +2,8 @@ import time, os, subprocess
 from flask import Flask, render_template, request, flash, session, redirect, url_for, jsonify, current_app
 from celery import Celery
 from flask_bootstrap import Bootstrap
-from flask_wtf import FlaskForm as form
-from wtforms import SelectField
+from flask_wtf import FlaskForm 
+from wtforms import SelectField, StringField, SubmitField, validators
 
 from form import SequenceForm
 from execute import Execute
@@ -25,8 +25,14 @@ bootstrap = Bootstrap(app)
 app.config['USER_DATA_DIR'] = os.environ.get('USER_DATA_DIR') # feed from environment variable
 
 
-class RequestForm( form):
-    db = SelectField('database', choices = [(1,'Human'),(2,'Mammalian'),(3,'Vertebrata')])
+choice =  [(1,'Human'),(2,'Mammalian'),(3,'Vertebrata'),(4,'Metazoa')]
+
+class RequestForm( FlaskForm):
+    sequence = StringField('Drop your sequence here', validators=[validators.DataRequired("fasta or plain")])
+    tag = StringField('Tag your job, so you can find results', validators=[validators.DataRequired("Required!")])
+    email = StringField( u'Email (optional)' , validators=[validators.Email("Not recognized as email")])
+    db = SelectField('Select database to scan your query against', choices =choice,validators=[validators.AnyOf(choice)])
+#    submit = SubmitField('Submit your query to the server')
 
 
 def func_name():
@@ -118,26 +124,29 @@ def index():
 
     form = RequestForm(db=1)
 #    flash( 'index')
-    if request.method == 'GET':
-        return render_template( 'form.html', email=session.get('email', ''), tag=session.get('tag',''), sequence=session.get('sequence','') , db=session.get('db','') , form=form)
 
+
+    if form.validate_on_submit():
                      
-    email = request.form['email']
-    session['email'] = email
+        #    email = request.form['email']
+        session['email'] = form.email.data
 
-    tag = request.form['tag']
-    session['tag'] = tag
-    
-    sequence = request.form['sequence']
-    session['sequence'] = sequence
-    
-    db = request.form['db']
-    session['db'] = db
+        #    tag = request.form['tag']
+        session['tag'] = form.tag.data
+        
+        #    sequence = request.form['sequence']
+        session['sequence'] = form.sequence.data
+        
+        #    db = request.form['db']
+        session['db'] = form.db.data
 
-#    flash( "redirect POST" )
-    print( func_name() + "redirect")
-    return redirect( url_for( 'index' ) )
+        flash( "redirect POST" )
+        print( func_name() + "redirect")
+        return redirect( url_for( 'index' ) )
     
+    return render_template( 'form.html', email=session.get('email', ''), tag=session.get('tag',''), sequence=session.get('sequence','') , db=session.get('db','') , form=form)
+
+
  
 
 @app.route('/submit', methods=['POST'])
