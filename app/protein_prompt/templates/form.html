@@ -13,31 +13,6 @@
 
   <br><br>
 
-
-  <br><br>
-     <!--
-  <form method="POST">
-
-     <p>Drop your sequence here:<br> <input type="text" name="sequence" size="80" value="{{ sequence }}"></p>
-     <p>Tag your job for identification:<br> <input type="text" name="tag" size="40" value="{{ tag }}"></p>
-     <p>Your email (optional):<br> <input type="text" name="email" size="40" value="{{ email }}"></p>
-
-     <div class="dropdown">
-       Select Database to scan your query sequence against:<br>
-       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Human
-	 <span class="caret"></span></button>
-       <ul class="dropdown-menu">
-	 <li><a href="#">Human</a></li>
-	 <li><a href="#">Vertebrata</a></li>
-	 <li><a href="#">Mammalia</a></li>
-	 <li><a href="#">Metazoa</a></li>
-       </ul>
-     </div>
-     
-  </form>
-  <br><br>
-     -->
-
   
       <!--
  <form action="" method="post" novalidate>
@@ -48,21 +23,67 @@
     </p>
   </form>
   <br><br>
-      -->
 
       <div style="width:75%">
       {{ wtf.quick_form(form) }}
       </div>
+      -->
+
+  
+  <form method="POST" style="width:75%"novalidate>
+    {{ form.hidden_tag() }}
+    <p >
+      {{ form.sequence.label }}<br>
+      {{ form.sequence( style='width:100', class='form-control') }}
+    </p>
+    {% for message in form.sequence.errors %}
+    <div class="warning">{{ message }}</div>
+    {% endfor %}
+    <br>
+    <p>
+      {{ form.tag.label }}<br>
+            {{ form.tag( class='form-control') }}
+    </p>
+    {% for message in form.tag.errors %}
+    <div class="warning">{{ message }}</div>
+    {% endfor %}
+    <br>
+    <p>
+      {{ form.email.label }}<br>
+            {{ form.email( class='form-control') }}
+    </p>
+    {% for message in form.email.errors %}
+    <div class="warning">{{ message }}</div>
+    {% endfor %}
+    <br>
+    <p>
+      {{ form.db.label }}<br>
+            {{ form.db( class='btn btn-primary btn-lg') }}
+    </p>
+    {% for message in form.db.errors %}
+    <div class="warning">{{ message }}</div>
+    {% endfor %}
+    <br>
+    <p>
+      <!--<input onclick="submit_job();">Start Calculation</button><br><br>-->
+      {{ form.submit.label }}<br>
+            {{ form.submit( class='btn btn-primary btn-lg', id="start-bg-job" ) }}
+    </p>
+  </form>
+  
   <br>
   <div id="progress"></div>
-      
-  <!--<button onclick="submit_job();">Start Long Calculation</button><br><br>-->
-  <button class="btn btn-primary btn-lg" type="submit" id="start-bg-job" >Submit your query to the server</button><br><br>
 
+  <!--
+  <form action="" method="post" novalidate>
+  <!-- <button onclick="submit_job();">Start Calculation</button><br><br>
+  <button class="btn btn-primary" type="submit" id="start-bg-job" >Submit your query to the server</button><br><br>
+  </form>
+  -->
 
   <br>
 
-</center>  
+</center>   
 {% endblock %}
 
 {% block scripts %}
@@ -70,7 +91,10 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/nanobar/0.2.1/nanobar.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script>
-      function submit_job() {
+    function submit_job() {
+    // check input ...
+    
+    
             // add task status elements
             div = $('<div class="progress"><div></div><div></div><div></div><div></div></div><hr>');
             $('#progress').append(div);

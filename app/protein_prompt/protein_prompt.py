@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, flash, session, redirect, url
 from celery import Celery
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm 
-from wtforms import SelectField, StringField, SubmitField, validators
+from wtforms import SelectField, StringField, SubmitField, validators, ValidationError
 
 from form import SequenceForm
 from execute import Execute
@@ -25,14 +25,14 @@ bootstrap = Bootstrap(app)
 app.config['USER_DATA_DIR'] = os.environ.get('USER_DATA_DIR') # feed from environment variable
 
 
-choice =  [(1,'Human'),(2,'Mammalian'),(3,'Vertebrata'),(4,'Metazoa')]
+choice =  [('1','Human'),('2','Mammalian'),('3','Vertebrata'),('4','Metazoa')]
 
 class RequestForm( FlaskForm):
     sequence = StringField('Drop your sequence here', validators=[validators.DataRequired("fasta or plain")])
     tag = StringField('Tag your job, so you can find results', validators=[validators.DataRequired("Required!")])
-    email = StringField( u'Email (optional)' , validators=[validators.Email("Not recognized as email")])
-    db = SelectField('Select database to scan your query against', choices =choice,validators=[validators.AnyOf(choice)])
-#    submit = SubmitField('Submit your query to the server')
+    email = StringField( 'Email (optional)' , validators=[validators.Email("Not recognized as email")])
+    db = SelectField('Select database to scan your query against', choices = choice )
+    submit = SubmitField('Submit your query to the server')
 
 
 def func_name():
@@ -122,29 +122,27 @@ def WriteLines( path):
 def index():
     print( func_name() + " go")
 
-    form = RequestForm(db=1)
-#    flash( 'index')
+    form = RequestForm()
+#    form = RequestForm(db='1')
 
+    if request.method=='GET':
+        return render_template( 'form.html', form=form, email=session.get('email'), tag=session.get('tag'), sequence=session.get('sequence') , db=session.get('db') )
 
-    if form.validate_on_submit():
-                     
-        #    email = request.form['email']
-        session['email'] = form.email.data
+    print( func_name() + " post ")
+    if form.validate() == False:
+        print( func_name() + " errors " )
+        flash( 'errors in input (see detailed information above)')
+        return render_template( 'form.html', form=form,  email=session.get('email'), tag=session.get('tag'), sequence=session.get('sequence') , db=session.get('db') )
 
-        #    tag = request.form['tag']
-        session['tag'] = form.tag.data
-        
-        #    sequence = request.form['sequence']
-        session['sequence'] = form.sequence.data
-        
-        #    db = request.form['db']
-        session['db'] = form.db.data
-
-        flash( "redirect POST" )
-        print( func_name() + "redirect")
-        return redirect( url_for( 'index' ) )
+    #    email = request.form['email']
+    session['email'] = form.email.data
+    session['tag'] = form.tag.data
+    session['sequence'] = form.sequence.data
+    session['db'] = form.db.data
     
-    return render_template( 'form.html', email=session.get('email', ''), tag=session.get('tag',''), sequence=session.get('sequence','') , db=session.get('db','') , form=form)
+    print( func_name() + " redirect")
+    return redirect( url_for( 'index' ) )
+    
 
 
  
@@ -166,6 +164,7 @@ def submittask():
     print( func_name() + " " + email )
     print( func_name() + " " + tag )
     print( func_name() + " " + sequence )
+    print( func_name() + " " + db )
     
     task = submit_and_check_status.apply_async( args=(email,tag,sequence,db))
 #    task = submit_and_check_status.apply_async( kwargs={'email':email , 'tag':tag, 'sequence':sequence, 'db':db})
