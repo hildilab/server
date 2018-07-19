@@ -1,4 +1,4 @@
-#!/home/rene/Server/Server-2018-04-11/app/protein_prompt/env/bin/python3
+#!/home/rene/server/app/protein_prompt/env/bin/python2
 
 # -*- coding: utf-8 -*-
 import re
@@ -7,5 +7,5 @@ import sys
 from celery.__main__ import _compat_beat
 
 if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
     sys.exit(_compat_beat())

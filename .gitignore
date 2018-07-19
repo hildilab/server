@@ -1,0 +1,9 @@
+*.log
+*~
+tmp/*
+5oby.zip
+Pfam_ls
+*/env/*
+*/venv/*
+data
+app/protein_prompt/env

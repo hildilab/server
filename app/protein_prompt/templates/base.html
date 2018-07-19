@@ -5,8 +5,11 @@
 
 
 {% block styles %}
+
 {{ super() }}
-<link rel="stylesheet" type="text/css" href="{{url_for('.static', filename="prompt.css")}}" media="all">
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='prompt.css')}}" media="all"> 
+
 <style type="text/css">
   <!--
 .warning{
@@ -29,31 +32,30 @@ color:red;
 	<img src="{{ url_for( 'static', filename ='img/logo_small.jpg' )}}" id="logopic" alt="ProteinPrompt Logo">
       </a>
     </div>
-    <div id="uber" style="margin:20px;padding:20px;">
-      <h2> ProteinPrompt <br> Predicting protein-protein contacts from sequence </h2>	
+    <div id="uber">
+      <h2 > ProteinPrompt <br> Predicting protein-protein interactions from sequence </h2>	
     </div>
   </div>
   
 </div>
 <br><br>
 <div id="navigation" style="float:left">
-  <div> <!-- class="ui-widget ui-nav-box"> -->
-    <div> <!-- class="ui-widget-header"> -->
+  <div>
+    <div>
       <span>ProteinPrompt</span>
     </div>
-    <div>  <!-- class="ui-widget-content"> -->
+    <div>
       <a href="/">Submit Job</a><br>
       <a href="/results">Results</a><br>
       <a href="/methods">Methods</a><br>
       <a href="/links">Links</a><br>
     </div>
   </div>
-  
 </div>
 
 {{ super() }}
 
-<footer style="padding:5pt">
+<footer >
   <p> Report issues or comments: <a href="mailto:web@proteinformatics.org"> webmaster </a> </p>
   <p> &copy; Ren&eacute; Staritzbichler, 2018</p>
 </footer>

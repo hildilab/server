@@ -28,10 +28,10 @@ app.config['USER_DATA_DIR'] = os.environ.get('USER_DATA_DIR') # feed from enviro
 choice =  [('1','Human'),('2','Mammalian'),('3','Vertebrata'),('4','Metazoa')]
 
 class RequestForm( FlaskForm):
-    sequence = StringField('Drop your sequence here', validators=[validators.DataRequired("fasta or plain")])
-    tag = StringField('Tag your job, so you can find results', validators=[validators.DataRequired("Required!")])
-    email = StringField( 'Email (optional)' , validators=[validators.Email("Not recognized as email")])
-    db = SelectField('Select database to scan your query against', choices = choice )
+    sequence = StringField('Drop your sequence here:', validators=[validators.DataRequired("fasta or plain")])
+    tag = StringField('Tag your job, so you can find results:', validators=[validators.DataRequired("Required!")])
+    email = StringField( 'Email (optional):' , validators=[validators.Email("Not recognized as email")])
+    db = SelectField('Select database to scan your query against:', choices = choice )
     submit = SubmitField('Submit your query to the server')
 
 
@@ -126,13 +126,27 @@ def index():
 #    form = RequestForm(db='1')
 
     if request.method=='GET':
-        return render_template( 'form.html', form=form, email=session.get('email'), tag=session.get('tag'), sequence=session.get('sequence') , db=session.get('db') )
+
+        form.email.data = session.get('email','')
+        form.sequence.data = session.get('sequence','')
+        form.tag.data = session.get('tag','')
+        form.db.data = session.get('db','1')
+        
+        print( func_name() + " get")
+        print( func_name() + " " + form.email.data)
+        print( func_name() + " " + form.tag.data)
+        print( func_name() + " " + form.sequence.data)
+        print( func_name() + " " + form.db.data)
+        
+        return render_template( 'form.html', form=form)
+    
 
     print( func_name() + " post ")
     if form.validate() == False:
         print( func_name() + " errors " )
         flash( 'errors in input (see detailed information above)')
-        return render_template( 'form.html', form=form,  email=session.get('email'), tag=session.get('tag'), sequence=session.get('sequence') , db=session.get('db') )
+        return render_template( 'form.html', form=form)
+    
 
     #    email = request.form['email']
     session['email'] = form.email.data
@@ -141,6 +155,10 @@ def index():
     session['db'] = form.db.data
     
     print( func_name() + " redirect")
+    print( func_name() + " " + session.get('email'))
+    print( func_name() + " " + session.get('tag'))
+    print( func_name() + " " + session.get('sequence'))
+    print( func_name() + " " + session.get('db'))
     return redirect( url_for( 'index' ) )
     
 
@@ -169,7 +187,8 @@ def submittask():
     task = submit_and_check_status.apply_async( args=(email,tag,sequence,db))
 #    task = submit_and_check_status.apply_async( kwargs={'email':email , 'tag':tag, 'sequence':sequence, 'db':db})
 #    task = submit_and_check_status.apply_async()
-    print( func_name() + " submit send to background")
+    print( func_name() + " submit send to background, id: " + str( task.id))
+    print( func_name() + " forward status location: " +  url_for('taskstatus', task_id=task.id))
     return jsonify({}), 202, {'Location': url_for('taskstatus', task_id=task.id)}
 
 
@@ -178,6 +197,7 @@ def submittask():
 def taskstatus(task_id):
     print( func_name() + " id: " + task_id)
     task = submit_and_check_status.AsyncResult(task_id)
+    print( func_name() + " async result: " + task.state + " " + task.status )
     if task.state == 'PENDING':
         print( func_name() + " pending")
         response = {
