@@ -233,6 +233,22 @@ def results( job_id, user="unknown"):
     all_lines = WriteLines( path)
     return render_template( 'results.html', user=user, job_id=job_id, lines=all_lines,result_path=path )
     
+@app.route( '/prompt_results')
+def list_results():
+    path = "data/"
+    mstr = ""
+    for root, dirs, files in os.walk( path ):
+        if path == root: continue
+        
+        for name in dirs:
+            root = root[ len(path):]
+            root = root.replace('_','@',1)
+            root = root.replace('_','.')
+            # clean strings: emails, paths
+            mstr += "<tr><td>" + root + "</td><td><a href=\"/results/" + root + "/" + name + "\">"  + name + "</a></td></tr>\n"
+      
+    return render_template( 'list_results.html', lines=mstr )
+    
     
 @app.errorhandler(404)
 def page_not_found(e):
