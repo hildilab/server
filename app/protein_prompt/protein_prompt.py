@@ -1,14 +1,12 @@
-import time, os, subprocess 
+import time, os, subprocess
+import sqlite3 as sql
+
 from flask import Flask, render_template, request, flash, session, redirect, url_for, jsonify, current_app
 from celery import Celery
 from flask_bootstrap import Bootstrap
-from flask_wtf import FlaskForm 
-from wtforms import SelectField, StringField, SubmitField, validators, ValidationError
 
-from form import SequenceForm
-from execute import Execute
 import sequence_functions as sf
-
+from request_form import RequestForm
 
 app = Flask( __name__ )
 app.config['SECRET_KEY'] = 'topf-sekret'
@@ -16,6 +14,7 @@ app.config['SECRET_KEY'] = 'topf-sekret'
 # Celery configuration
 app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
 app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0'
+
 # Initialize Celery
 celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
 celery.conf.update(app.config)
@@ -24,20 +23,6 @@ bootstrap = Bootstrap(app)
 
 app.config['USER_DATA_DIR'] = os.environ.get('USER_DATA_DIR') # feed from environment variable
 
-
-choice =  [('1','Human'),('2','Mammalian'),('3','Vertebrata'),('4','Metazoa')]
-
-class RequestForm( FlaskForm):
-    sequence = StringField('Drop your sequence here:', validators=[validators.DataRequired("fasta or plain")])
-    tag = StringField('Tag your job, so you can find results:', validators=[validators.DataRequired("Required!")])
-    email = StringField( 'Email (optional):' , validators=[validators.Email("Not recognized as email")])
-    db = SelectField('Select database to scan your query against:', choices = choice )
-    submit = SubmitField('Submit your query to the server')
-
-
-def func_name():
-    import traceback
-    return traceback.extract_stack(None, 2)[0][2]
 
 
 
@@ -49,23 +34,25 @@ def submit_and_check_status(self, email, tag, sequence, db):
         if email == '':
             email = "anonymous"
         else:
-            email = sf.FixPath( email )
-
+            email = sf.QuickFix( email )
+        print( email)
         sequence = sf.CleanSequence( sequence )
-        tag = sf.FixPath(tag)
-
+        print (sequence)
+        tag = sf.QuickFix(tag)
+        print( tag)
         user_dir = app.config['USER_DATA_DIR']
 
         os.chdir( user_dir )
         job_dir = email + "/" + tag
 
+        print( job_dir )
         if os.path.isdir( job_dir):
-#            status_message = tag + " exists for user: " + email + ", you will be redirected to the form"
-#            self.update_state(state='PROGRESS',
-#                              meta={ 'status': status_message})
-#            time.sleep( 10 )
-#            return {'status':'..failed'}
-            time.sleep(1)
+            print ( "dir exists")
+            status = 'exists'
+            self.update_state(state='PROGRESS',
+                              meta={ 'status': status})
+            time.sleep( 3 )
+            return {'status':status}
         else:
             os.makedirs( job_dir )
         os.chdir( job_dir )
@@ -74,15 +61,21 @@ def submit_and_check_status(self, email, tag, sequence, db):
             f.write( "cake.fa 105 ABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDE 0.5 \n")
             f.write( "bake.fa 5 ABCDE 1.5 \n")
         #cmd = "tsp rf -seq " + sequence + " -db " + db + " -out protein_prompt.txt"
-        #        jiddle_id = subprocess.check_output( cmd ).strip()
+        cmd = "tsp sleep 20"
+        jiddle_id = subprocess.check_output( cmd ).strip()
+        print( "job id: " + str(jiddle_id))
+        status = subprocess.check_output( ["tsp", "-s ", str(jiddle_id)] ).strip()
+        print ("status " + status )
 
-        #       cmd = "echo fake.fa 5 ABCDE 0.5 > protein_prompt.txt".split()
-        #        subprocess.call( cmd )
-
-        go = True
-        while go:
-            status = "running" # subprocess.check_output( ["ts", "-s", jiddle_id] ).strip()
-
+        connector = sql.connect("jobs.db")
+        cursor = con.cursor()
+        cursor.execute("INSERT INTO jobs (user,tag,id,date,status) VALUES (?,?,?,?,?)" , (user,tag,jiddle_id,date,status) )
+        connector.commit()
+                
+  
+        while status != "finished":
+            status = subprocess.check_output( ["ts", "-s", jiddle_id] ).strip()
+            cursor.execute( "UPDATE jobs SET status = '" + status + "' WHERE user = '" + email + " AND tag = '" + tag + "'" )
             # better: != running and != pending..
             if status == "finished":
                 go = False
@@ -92,7 +85,6 @@ def submit_and_check_status(self, email, tag, sequence, db):
                               meta={ 'status': status})
 
             time.sleep(5)
-            go = False
         os.chdir( pwd)
     return {'status':'completed'}
 
@@ -103,24 +95,12 @@ def page_url( filename):
 
 
 
-def WriteLines( path):
-    mstr = ""
-    styles=["width:20%","width:20%","width:40%;overflow:hidden","width:20%"]
-    with open( path + "/protein_prompt.txt" ) as f:
-        for l in f:
-            c = l.split()
-            if len(c) < 4: continue
-            mstr += "<tr>\n";
-            for t,col in zip( styles,c):
-                mstr+= "<td style=\"" + t + "\"> " + col + "</td>\n"
-            mstr += "</tr>\n"
-    return mstr
 
 
 
 @app.route( '/' , methods=['GET', 'POST'])
 def index():
-    print( func_name() + " go")
+    print( sf.func_name() + " go")
 
     form = RequestForm()
 #    form = RequestForm(db='1')
@@ -132,18 +112,18 @@ def index():
         form.tag.data = session.get('tag','')
         form.db.data = session.get('db','1')
         
-        print( func_name() + " get")
-        print( func_name() + " " + form.email.data)
-        print( func_name() + " " + form.tag.data)
-        print( func_name() + " " + form.sequence.data)
-        print( func_name() + " " + form.db.data)
+        print( sf.func_name() + " get")
+        print( sf.func_name() + " " + form.email.data)
+        print( sf.func_name() + " " + form.tag.data)
+        print( sf.func_name() + " " + form.sequence.data)
+        print( sf.func_name() + " " + form.db.data)
         
         return render_template( 'form.html', form=form)
     
 
-    print( func_name() + " post ")
+    print( sf.func_name() + " post ")
     if form.validate() == False:
-        print( func_name() + " errors " )
+        print( sf.func_name() + " errors " )
         flash( 'errors in input (see detailed information above)')
         return render_template( 'form.html', form=form)
     
@@ -154,70 +134,82 @@ def index():
     session['sequence'] = form.sequence.data
     session['db'] = form.db.data
     
-    print( func_name() + " redirect")
-    print( func_name() + " " + session.get('email'))
-    print( func_name() + " " + session.get('tag'))
-    print( func_name() + " " + session.get('sequence'))
-    print( func_name() + " " + session.get('db'))
-    return redirect( url_for( 'index' ) )
+    print( sf.func_name() + " redirect")
+    print( sf.func_name() + " " + session.get('email'))
+    print( sf.func_name() + " " + session.get('tag'))
+    print( sf.func_name() + " " + session.get('sequence'))
+    print( sf.func_name() + " " + session.get('db'))
+#    return render_template( 'wait.html', form = form, serialize=Serialize)
+
+    task = submit_and_check_status.apply_async( args=( form.email.data , form.tag.data , form.sequence.data , form.db.data ))
+    print( sf.func_name() + " submit send to background, id: " + str( task.id))
+    print( sf.func_name() + " forward status location: " +  url_for('taskstatus', task_id=task.id))
+    joburl =  url_for('taskstatus', task_id=task.id)
     
+    return render_template( 'wait.html', form=form, joburl=joburl)
 
 
+
+@app.route('/queue', methods=['GET'])
+def queue():
+
+    con = sql.connect("jobs.db")
+    con.row_factory = sql.Row
+   
+    cur = con.cursor()
+    cur.execute("select * from jobs")
+    
+    rows = cur.fetchall();
+    return render_template( "queue.html", rows = rows)
  
 
-@app.route('/submit', methods=['POST'])
-def submittask():
-    print( func_name() )
-    email = request.form['email']
-    session['email'] = email
-
-    tag = request.form['tag']
-    session['tag'] = tag
-    
-    sequence = request.form['sequence']
-    session['sequence'] = sequence
-    
-    db = request.form['db']
-    session['db'] = db
-    print( func_name() + " " + email )
-    print( func_name() + " " + tag )
-    print( func_name() + " " + sequence )
-    print( func_name() + " " + db )
-    
-    task = submit_and_check_status.apply_async( args=(email,tag,sequence,db))
-#    task = submit_and_check_status.apply_async( kwargs={'email':email , 'tag':tag, 'sequence':sequence, 'db':db})
-#    task = submit_and_check_status.apply_async()
-    print( func_name() + " submit send to background, id: " + str( task.id))
-    print( func_name() + " forward status location: " +  url_for('taskstatus', task_id=task.id))
-    return jsonify({}), 202, {'Location': url_for('taskstatus', task_id=task.id)}
+#@app.route('/submit', methods=['POST'])
+#def submittask():
+#    print( sf.func_name() )
+#    #email = request.form['email']
+#    email = session['email']
+#    tag = session['tag']
+#    sequence = session['sequence'] 
+#    db = session['db']
+#    print( sf.func_name() + " " + email )
+#    print( sf.func_name() + " " + tag )
+#    print( sf.func_name() + " " + sequence )
+#    print( sf.func_name() + " " + db )
+#    
+#    task = submit_and_check_status.apply_async( args=(email,tag,sequence,db))
+##    task = submit_and_check_status.apply_async( kwargs={'email':email , 'tag':tag, 'sequence':sequence, 'db':db})
+##    task = submit_and_check_status.apply_async()
+#    print( sf.func_name() + " submit send to background, id: " + str( task.id))
+#    print( sf.func_name() + " forward status location: " +  url_for('taskstatus', task_id=task.id))
+#    return jsonify({}), 202, {'Location': url_for('taskstatus', task_id=task.id)}
 
 
 
 @app.route('/status/<task_id>')
 def taskstatus(task_id):
-    print( func_name() + " id: " + task_id)
+    print( sf.func_name() + " id: " + task_id)
     task = submit_and_check_status.AsyncResult(task_id)
-    print( func_name() + " async result: " + task.state + " " + task.status )
+    print( sf.func_name() + " async result: " + task.state + " " + task.status )
     if task.state == 'PENDING':
-        print( func_name() + " pending")
+        print( sf.func_name() + " pending")
         response = {
             'state': task.state,
-            'status': 'Pending...'
+            'status': 'not queued'
         }
     elif task.state != 'FAILURE':
-        print( func_name() + " running")        
+        print( sf.func_name() + " running")        
         response = {
             'state': task.state,
             'status': task.info.get('status', '')
         }
     else:
-        print( func_name() + " trouble")
+        print( sf.func_name() + " trouble")
         # something went wrong in the background job
         response = {
             'state': task.state,
             'status': str(task.info)  # this is the exception raised
         }
-    print( func_name() + " jsonify response")
+    print( sf.func_name() + " jsonify response")
     return jsonify(response)
 
 
@@ -227,13 +219,14 @@ def taskstatus(task_id):
 def results( job_id, user="unknown"):
 #    email = request.form.get['email']
 #    tag = request.form.get['tag']
-    user = sf.FixPath( user )
+    user = sf.QuickFix( user )
 #    path = app.config['USER_DATA_DIR'] + "/" + user + "/" + job_id 
-    path = "data/" + user + "/" + job_id 
-    all_lines = WriteLines( path)
+    feil = "data/" + user + "/" + job_id + "/protein_prompt.txt"
+    all_lines = sf.WriteLines( feil)
     return render_template( 'results.html', user=user, job_id=job_id, lines=all_lines,result_path=path )
-    
-@app.route( '/prompt_results')
+
+
+@app.route( '/list_results')
 def list_results():
     path = "data/"
     mstr = ""
@@ -242,8 +235,8 @@ def list_results():
         
         for name in dirs:
             root = root[ len(path):]
-            root = root.replace('_','@',1)
-            root = root.replace('_','.')
+#            root = root.replace('_','@',1)
+#            root = root.replace('_','.')
             # clean strings: emails, paths
             mstr += "<tr><td>" + root + "</td><td><a href=\"/results/" + root + "/" + name + "\">"  + name + "</a></td></tr>\n"
       

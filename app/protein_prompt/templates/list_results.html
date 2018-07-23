@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %} {{super()}} Results {% endblock %}
+
+{% block content %}
+{{super()}}
+
+
+<h1> Completed jobs</h1>
+
+
+<br><br>
+
+
+<center>
+  <div style="width:60%">
+    <table id="jobtable" class="table table-striped table-bordered" style="width:100%">
+ <thead>
+   <tr>
+     <th style="width:50%"> User </th>
+     <th style="width:50%"> Tag  </th>
+  </tr>
+ </thead>
+ <tbody>
+  {{lines|safe}}
+ </tbody>
+    </table>
+    </div>
+</center>
+
+{% endblock %}
+
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  
+
+{{ super()}}
+
+{% endblock %}
+
+
+{% block scripts %}
+{{super()}}
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<script>
+  $(document).ready( function() {
+    $('#jobtable').DataTable();
+} );
+</script>
+
+{% endblock %}

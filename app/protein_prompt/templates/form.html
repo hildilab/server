@@ -10,11 +10,7 @@
   <h3> Submit your protein sequence to search for potential protein binders.</h3>
 
   <br><br>
-
   <br>
-
-  
- 
   
   <form method="POST" style="width:75%" id="formID">
     {{ form.hidden_tag() }}
@@ -50,13 +46,16 @@
     <div class="warning">{{ message }}</div>
     {% endfor %}
     <br>
+
+    <p>  {{ form.submit(class='btn btn-primary') }} </p>
+
   </form>
 
-      <!--<button onclick="submit_job();">Start Calculation</button><br><br>-->
+      <!--<button onclick="submit_job();">Start Calculation</button><br><br>
       <button id="start-bg-job" class="btn btn-primary"> Submit job to server </button>
       <br><br>
   
-      <div id="progress"></div>
+      <div id="progress"></div>-->
       <br>
   <br>
 

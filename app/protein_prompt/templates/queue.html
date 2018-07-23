@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %} {{super()}} Queue status {% endblock %}
+
+{% block content %}
+{{super()}}
+
+
+<h1> Queue status</h1>
+
+
+<br><br>
+
+
+<center>
+    <table id="jobs" class="table table-striped table-bordered" style="width:90%">
+ <thead>
+   <tr>
+     <th style="width:25%"> User </th>
+     <th style="width:25%"> Tag  </th>
+     <th style="width:10%"> JobID </th>
+     <th style="width:20%"> Submission Date </th>
+     <th style="width:20%"> Status </th>
+  </tr>
+ </thead>
+ <tbody>
+   {% for row in rows %}
+   <tr>
+     <td> {{ row['user'] }}   </td>
+     <td> {{ row['tag'] }}    </td>
+     <td> {{ row['jobid'] }}  </td>
+     <td> {{ row['date'] }}   </td>
+     <td> {{ row['status'] }} </td>
+   </tr>
+   {% endfor %}
+ </tbody>
+</table>
+</center>
+
+{% endblock %}
+
+
