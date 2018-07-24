@@ -1,4 +1,12 @@
-h2 {
+.warning{
+    font-weight:bold;
+    color:red;
+}
+.outerframe {
+    margin: 0.5em;
+    padding:0.5em;
+}
+.header {
     text-align:   left;
     line-height:  1.2em;
     padding-left: 20%;

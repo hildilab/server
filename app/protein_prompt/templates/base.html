@@ -8,16 +8,9 @@
 
 {{ super() }}
 
-<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='prompt.css')}}" media="all"> 
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}" media="all"> 
 
-<style type="text/css">
-  <!--
-      .warning{
-      font-weight:bold;
-      color:red;
-      }
-    -->
-</style>
+
 {% endblock %}
 
 
@@ -33,7 +26,7 @@
       </a>
     </div>
     <div id="uber">
-      <h2 > ProteinPrompt <br> Predicting protein-protein interactions from sequence </h2>	
+      <h2 class="header"> ProteinPrompt <br> Predicting protein-protein interactions from sequence </h2>	
     </div>
   </div>
   

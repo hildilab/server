@@ -1,7 +1,7 @@
 import time, os, subprocess
 import sqlite3 as sql
 
-from flask import Flask, render_template, request, flash, session, redirect, url_for, jsonify, current_app
+from flask import Flask, render_template, request, flash, session, redirect, url_for, jsonify, current_app, send_file
 from celery import Celery
 from flask_bootstrap import Bootstrap
 
@@ -65,29 +65,31 @@ def submit_and_check_status(self, email, tag, sequence, db):
             f.write( "cake.fa 105 ABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDE 0.5 \n")
             f.write( "bake.fa 5 ABCDE 1.5 \n")
         #cmd = "tsp rf -seq " + sequence + " -db " + db + " -out protein_prompt.txt"
-        cmd = "tsp sleep 20".split()
-        jiddle_id = subprocess.check_output( cmd ).strip()
-        print( "job id: " + str(jiddle_id))
-        status = subprocess.check_output( ["tsp", "-s ", str(jiddle_id)] ).strip()
+        cmd = ["tsp", "sleep", "120"]
+        jiddle = subprocess.check_output( cmd ).strip()
+        print( "job id: " + jiddle)
+        status = subprocess.check_output( ["tsp", "-s" , str(jiddle)] ).strip()
         print ("status " + status )
         date = time.strftime( "%Y/%m/%d %H:%M:%S",time.gmtime())
         print(date)
 
-        cursor.execute("INSERT INTO jobs (user,tag,id,date,status) VALUES (?,?,?,?,?)" , (email,tag,jiddle_id,date,status) )
+        cursor.execute("INSERT INTO jobs (user,tag,id,date,status) VALUES (?,?,?,?,?)" , (email,tag,jiddle,date,status) )
         connector.commit()
                 
   
         while status != "finished":
-            status = subprocess.check_output( ["ts", "-s", jiddle_id] ).strip()
+            time.sleep(5)
+            status = subprocess.check_output( ["tsp", "-s", jiddle] ).strip()
             print ("status: " + status)
-            cursor.execute( "UPDATE jobs SET status = '" + status + "' WHERE user = '" + email + " AND tag = '" + tag + "'" )
+            cmd = "UPDATE jobs SET status = '" + status + "' WHERE user = '" + email + "' AND tag = '" + tag + "'"
+            print( cmd )
+            cursor.execute( cmd )
             connector.commit()
             # better: != running and != pending..
 
             self.update_state(state='PROGRESS',
                               meta={ 'status': status})
 
-            time.sleep(5)
         os.chdir( pwd)
         print( os.getcwd())
         connector.close()
@@ -222,11 +224,27 @@ def taskstatus(task_id):
 
 @app.route( '/results/<job_id>')
 @app.route( '/results/<user>/<job_id>')
-def results( job_id, user="unknown"):
+def results( job_id, user="anonymous"):
     user = sf.QuickFix( user )
-    feil = "data/" + user + "/" + job_id + "/protein_prompt.txt"
+    data = app.config['USER_DATA_DIR']
+    print( sf.func_name() + " datadir: " + str(data))
+    feil = data + "/" + user + "/" + job_id + "/protein_prompt.txt"
     all_lines = sf.WriteLines( feil)
-    return render_template( 'results.html', lines=all_lines)
+    feil = "../../downloads/" + user + "/" + job_id + "/result.txt"
+    return render_template( 'results.html', lines=all_lines, user=user, job_id=job_id,result=feil)
+
+
+@app.route( '/downloads/<user>/<job_id>/<file_name>')
+def download( job_id, user, file_name):
+
+    data = app.config['USER_DATA_DIR']
+    feil = data + "/" + user + "/" + job_id + "/protein_prompt.txt"
+    print( sf.func_name() + " " + feil)
+    try:
+        return send_file( feil, attachment_filename='results.txt')
+    except Exception as e:
+        return str(e)
+
 
 
 @app.route( '/list_results')
