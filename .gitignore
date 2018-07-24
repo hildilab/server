@@ -3,7 +3,11 @@
 tmp/*
 5oby.zip
 Pfam_ls
+env/
+venv/
 */env/*
 */venv/*
 data
 app/protein_prompt/env
+*.db
+*.tmp

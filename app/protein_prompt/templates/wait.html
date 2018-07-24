@@ -74,7 +74,7 @@
                $(status_div.childNodes[3]).text('try again and if problems still persists drop us an email.' );
            }
            else if( data['status'] == 'exists'){
-              $(status_div.childNodes[2]).addClass("warning").text('TAG WAS GIVEN BY USER BEFORE' );
+              $(status_div.childNodes[2]).addClass("warning").text('YOU USED THIS TAG BEFORE' );
               $(status_div.childNodes[3]).text('you need to provide a new tag for each new run! ').append($("<a>").attr("href","/").text('Please resubmit.'));
            }
            else if( data['status'] == 'completed'){

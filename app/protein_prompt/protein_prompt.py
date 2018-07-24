@@ -31,6 +31,7 @@ def submit_and_check_status(self, email, tag, sequence, db):
     with app.app_context():
         print ( "now entered submit:" + current_app.name )
         pwd = os.getcwd();
+        print( pwd )
         if email == '':
             email = "anonymous"
         else:
@@ -41,6 +42,9 @@ def submit_and_check_status(self, email, tag, sequence, db):
         tag = sf.QuickFix(tag)
         print( tag)
         user_dir = app.config['USER_DATA_DIR']
+
+        connector = sql.connect("jobs.db")
+        cursor = connector.cursor()
 
         os.chdir( user_dir )
         job_dir = email + "/" + tag
@@ -61,31 +65,33 @@ def submit_and_check_status(self, email, tag, sequence, db):
             f.write( "cake.fa 105 ABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDE 0.5 \n")
             f.write( "bake.fa 5 ABCDE 1.5 \n")
         #cmd = "tsp rf -seq " + sequence + " -db " + db + " -out protein_prompt.txt"
-        cmd = "tsp sleep 20"
+        cmd = "tsp sleep 20".split()
         jiddle_id = subprocess.check_output( cmd ).strip()
         print( "job id: " + str(jiddle_id))
         status = subprocess.check_output( ["tsp", "-s ", str(jiddle_id)] ).strip()
         print ("status " + status )
+        date = time.strftime( "%Y/%m/%d %H:%M:%S",time.gmtime())
+        print(date)
 
-        connector = sql.connect("jobs.db")
-        cursor = con.cursor()
-        cursor.execute("INSERT INTO jobs (user,tag,id,date,status) VALUES (?,?,?,?,?)" , (user,tag,jiddle_id,date,status) )
+        cursor.execute("INSERT INTO jobs (user,tag,id,date,status) VALUES (?,?,?,?,?)" , (email,tag,jiddle_id,date,status) )
         connector.commit()
                 
   
         while status != "finished":
             status = subprocess.check_output( ["ts", "-s", jiddle_id] ).strip()
+            print ("status: " + status)
             cursor.execute( "UPDATE jobs SET status = '" + status + "' WHERE user = '" + email + " AND tag = '" + tag + "'" )
+            connector.commit()
             # better: != running and != pending..
-            if status == "finished":
-                go = False
-                status += ", you will be redirected to the result section soonish..."
 
             self.update_state(state='PROGRESS',
                               meta={ 'status': status})
 
             time.sleep(5)
         os.chdir( pwd)
+        print( os.getcwd())
+        connector.close()
+        
     return {'status':'completed'}
 
 
@@ -217,13 +223,10 @@ def taskstatus(task_id):
 @app.route( '/results/<job_id>')
 @app.route( '/results/<user>/<job_id>')
 def results( job_id, user="unknown"):
-#    email = request.form.get['email']
-#    tag = request.form.get['tag']
     user = sf.QuickFix( user )
-#    path = app.config['USER_DATA_DIR'] + "/" + user + "/" + job_id 
     feil = "data/" + user + "/" + job_id + "/protein_prompt.txt"
     all_lines = sf.WriteLines( feil)
-    return render_template( 'results.html', user=user, job_id=job_id, lines=all_lines,result_path=path )
+    return render_template( 'results.html', lines=all_lines)
 
 
 @app.route( '/list_results')
@@ -232,17 +235,19 @@ def list_results():
     mstr = ""
     for root, dirs, files in os.walk( path ):
         if path == root: continue
+        root = root[ len(path):]
+        root = root.replace('_','@',1) # overliquid
+        root = root.replace('_','.')   # overliquid
         
         for name in dirs:
-            root = root[ len(path):]
-#            root = root.replace('_','@',1)
-#            root = root.replace('_','.')
-            # clean strings: emails, paths
-            mstr += "<tr><td>" + root + "</td><td><a href=\"/results/" + root + "/" + name + "\">"  + name + "</a></td></tr>\n"
-      
+            mstr += "<tr><td>" + root + "</td><td><a href=\"/results/" + root + "/" + name + "\">"  + name + "</a></td></tr>\n"      
     return render_template( 'list_results.html', lines=mstr )
     
-    
+
+@app.route( '/methods' )
+def methods():
+    return render_template( 'methods.html' )
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404

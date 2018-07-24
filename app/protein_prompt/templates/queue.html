@@ -13,30 +13,55 @@
 
 
 <center>
-    <table id="jobs" class="table table-striped table-bordered" style="width:90%">
- <thead>
-   <tr>
-     <th style="width:25%"> User </th>
-     <th style="width:25%"> Tag  </th>
-     <th style="width:10%"> JobID </th>
-     <th style="width:20%"> Submission Date </th>
-     <th style="width:20%"> Status </th>
-  </tr>
- </thead>
- <tbody>
-   {% for row in rows %}
-   <tr>
-     <td> {{ row['user'] }}   </td>
-     <td> {{ row['tag'] }}    </td>
-     <td> {{ row['jobid'] }}  </td>
-     <td> {{ row['date'] }}   </td>
-     <td> {{ row['status'] }} </td>
-   </tr>
-   {% endfor %}
- </tbody>
-</table>
+  <div style="width:90%">
+    <table id="jobs" class="table table-striped table-bordered" style="width:100%">
+      <thead>
+	<tr>
+	  <th style="width:25%"> User </th>
+	  <th style="width:25%"> Tag  </th>
+	  <th style="width:10%"> JobID </th>
+	  <th style="width:20%"> Submission </th>
+	  <th style="width:20%"> Status </th>
+	</tr>
+      </thead>
+      <tbody>
+	{% for row in rows %}
+	<tr>
+	  <td> {{ row['user'] }}   </td>
+	  <td> {{ row['tag'] }}    </td>
+	  <td> {{ row['id'] }}  </td>
+	  <td> {{ row['date'] }}   </td>
+	  <td> {{ row['status'] }} </td>
+	</tr>
+	{% endfor %}
+      </tbody>
+    </table>
+  </div>
 </center>
 
 {% endblock %}
 
 
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  
+{{ super()}}
+
+{% endblock %}
+
+
+{% block scripts %}
+{{super()}}
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<script>
+  $(document).ready( function() {
+    $('#jobs').DataTable();
+} );
+</script>
+
+{% endblock %}
