@@ -27,7 +27,7 @@
 
   <p> For both queue and result section you will need email and tag to locate them.</p>
   
-<br><br>
+<br><br><br>
 
 <center>
   <p>
@@ -67,24 +67,28 @@
         $.getJSON(status_url, function(data) {
            // update UI
            //console.log("getJSON");
-           $(status_div.childNodes[0]).text('Form submission:' + data['state']);
-           $(status_div.childNodes[1]).text('Calculation status:' + data['status']);
-           if( "FAILED" == data['state'] || "FAILURE" == data['state'] ){
-               $(status_div.childNodes[2]).addClass("warning").text('JOB SUBMISSION FAILED' );
+           $(status_div.childNodes[0]).text('Job status:' + data['status']);
+           if( "Error" ==  data['status'].substring(0,5) ){
+               $(status_div.childNodes[2]).addClass("warning").text('JOB SUBMISSION FAILED!' );
                $(status_div.childNodes[3]).text('try again and if problems still persists drop us an email.' );
            }
            else if( data['status'] == 'exists'){
-              $(status_div.childNodes[2]).addClass("warning").text('YOU USED THIS TAG BEFORE' );
+              $(status_div.childNodes[2]).addClass("warning").text('YOU USED THIS TAG BEFORE!' );
               $(status_div.childNodes[3]).text('you need to provide a new tag for each new run! ').append($("<a>").attr("href","/").text('Please resubmit.'));
            }
-           else if( data['status'] == 'completed'){
-               //console.log("completed");
-               <!--
-                   window.setTimeout( "window.location.href='results/{{form.email.data}}/{{form.tag.data}}'",3000);
-               //-->
-               $(status_div.childNodes[2]).text('JOB IS COMPLETED' );
-               $(status_div.childNodes[3]).text('you should be forwarded, otherwise browse result section for your flag: {{form.tag.data}}' );
-       
+           else if( data['status'] == 'finished'){
+              if( data['error'] != '0'){
+                  $(status_div.childNodes[2]).addClass("warning").text('CALCULATION FAILED!!!' );
+                  $(status_div.childNodes[3]).text('try again and if problems still persists drop us an email.' );
+               }
+               else{ 
+                  //console.log("completed");
+                  <!--
+                      window.setTimeout( "window.location.href='results/{{form.email.data}}/{{form.tag.data}}'",3000);
+                  //-->
+                  $(status_div.childNodes[2]).text('JOB IS COMPLETED' );
+                  $(status_div.childNodes[3]).text('you should be forwarded, otherwise browse result section for your flag: {{form.tag.data}}' );
+               }
            } 
            else {
                // rerun in 2 seconds

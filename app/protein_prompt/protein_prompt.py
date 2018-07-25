@@ -11,14 +11,6 @@ from request_form import RequestForm
 app = Flask( __name__ )
 app.config['SECRET_KEY'] = 'topf-sekret'
 
-# Celery configuration
-app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
-app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0'
-
-# Initialize Celery
-celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
-celery.conf.update(app.config)
-
 bootstrap = Bootstrap(app)
 
 app.config['USER_DATA_DIR'] = os.environ.get('USER_DATA_DIR') # feed from environment variable
@@ -26,75 +18,81 @@ app.config['USER_DATA_DIR'] = os.environ.get('USER_DATA_DIR') # feed from enviro
 
 
 
-@celery.task(bind=True)
-def submit_and_check_status(self, email, tag, sequence, db):
-    with app.app_context():
-        print ( "now entered submit:" + current_app.name )
-        pwd = os.getcwd();
-        print( pwd )
-        if email == '':
-            email = "anonymous"
-        else:
-            email = sf.QuickFix( email )
-        print( email)
-        sequence = sf.CleanSequence( sequence )
-        print (sequence)
-        tag = sf.QuickFix(tag)
-        print( tag)
-        user_dir = app.config['USER_DATA_DIR']
+def submit( email, tag, sequence, db):
+    print ( "now entered submit:" + current_app.name )
+    pwd = os.getcwd();
+    print( pwd )
+    if email == '':
+        email = "anonymous"
+    else:
+        email = sf.QuickFix( email )
+    print( email)
+    sequence = sf.CleanSequence( sequence )
+    print (sequence)
+    tag = sf.QuickFix(tag)
+    print( tag)
+    user_dir = app.config['USER_DATA_DIR']
 
-        connector = sql.connect("jobs.db")
-        cursor = connector.cursor()
+    connector = sql.connect("jobs.db")
+    cursor = connector.cursor()
 
-        os.chdir( user_dir )
-        job_dir = email + "/" + tag
+    os.chdir( user_dir )
+    job_dir = email + "/" + tag
 
-        print( job_dir )
-        if os.path.isdir( job_dir):
-            print ( "dir exists")
-            status = 'exists'
-            self.update_state(state='PROGRESS',
-                              meta={ 'status': status})
-            time.sleep( 3 )
-            return {'status':status}
-        else:
-            os.makedirs( job_dir )
-        os.chdir( job_dir )
-        with open( 'protein_prompt.txt','w') as f:
-            f.write( "fake.fa 15 AABCDEABCDEBCDE 0.4 \n")
-            f.write( "cake.fa 105 ABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDE 0.5 \n")
-            f.write( "bake.fa 5 ABCDE 1.5 \n")
-        #cmd = "tsp rf -seq " + sequence + " -db " + db + " -out protein_prompt.txt"
-        cmd = ["tsp", "sleep", "120"]
-        jiddle = subprocess.check_output( cmd ).strip()
-        print( "job id: " + jiddle)
-        status = subprocess.check_output( ["tsp", "-s" , str(jiddle)] ).strip()
-        print ("status " + status )
-        date = time.strftime( "%Y/%m/%d %H:%M:%S",time.gmtime())
-        print(date)
+    print( job_dir )
+    if os.path.isdir( job_dir):
+        print ( "dir exists")
+        status = 'exists'
+        return {'status':status , 'id':'-99999', 'error':'-99999'}
+    else:
+        os.makedirs( job_dir )
+    os.chdir( job_dir )
+    with open( 'protein_prompt.txt','w') as f:
+        f.write( "fake.fa 15 AABCDEABCDEBCDE 0.4 \n")
+        f.write( "cake.fa 105 ABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDE 0.5 \n")
+        f.write( "bake.fa 5 ABCDE 1.5 \n")
+    #cmd = "tsp rf -seq " + sequence + " -db " + db + " -out protein_prompt.txt"
+    cmd = ["tsp", "sleep", "120"]
+    jiddle = subprocess.check_output( cmd ).strip()
+    print( "job id: " + jiddle)
+    status = subprocess.check_output( ["tsp", "-s" , str(jiddle)] ).strip()
+    print ("status " + status )
+    date = time.strftime( "%Y-%m-%d %H:%M:%S",time.gmtime())
+    print(date)
 
-        cursor.execute("INSERT INTO jobs (user,tag,id,date,status) VALUES (?,?,?,?,?)" , (email,tag,jiddle,date,status) )
-        connector.commit()
-                
-  
-        while status != "finished":
-            time.sleep(5)
-            status = subprocess.check_output( ["tsp", "-s", jiddle] ).strip()
-            print ("status: " + status)
-            cmd = "UPDATE jobs SET status = '" + status + "' WHERE user = '" + email + "' AND tag = '" + tag + "'"
-            print( cmd )
-            cursor.execute( cmd )
-            connector.commit()
-            # better: != running and != pending..
+    cursor.execute("INSERT INTO jobs (user,tag,id,date,status) VALUES (?,?,?,?,?)" , (email,tag,jiddle,date,status) )
+    connector.commit()
 
-            self.update_state(state='PROGRESS',
-                              meta={ 'status': status})
-
-        os.chdir( pwd)
-        print( os.getcwd())
-        connector.close()
+    os.chdir( pwd)
+    print( "now: " + os.getcwd() + " should have retured to base dir")
+    connector.close()
         
-    return {'status':'completed'}
+    return { 'status':status , 'id':jiddle }
+
+
+def update_status( jiddle ):
+    print( sf.func_name())
+    connector = sql.connect("jobs.db")
+    cursor = connector.cursor()
+    status = subprocess.check_output( ["tsp", "-s" , str(jiddle)] ).strip()
+    error = ""
+    if status == "finished":
+        error = subprocess.check_output( ["tsp", "-i" , str(jiddle)] )
+        print(sf.func_name() + " " + error)
+        id1 = error.find( "exit code") + 10
+        id2 = error.find( '\n' )
+        error = error[id1:id2].strip()
+        print(sf.func_name() + " error-code: <" + error + ">")
+        
+    cmd = "UPDATE jobs SET status = '" + status + "' WHERE id = '" + str(jiddle) + "'"
+    print( cmd )
+    cursor.execute( cmd )
+    connector.commit()
+    connector.close()
+    return { 'status':status , 'error':error}
+            
+
+
 
 
 
@@ -149,10 +147,13 @@ def index():
     print( sf.func_name() + " " + session.get('db'))
 #    return render_template( 'wait.html', form = form, serialize=Serialize)
 
-    task = submit_and_check_status.apply_async( args=( form.email.data , form.tag.data , form.sequence.data , form.db.data ))
-    print( sf.func_name() + " submit send to background, id: " + str( task.id))
-    print( sf.func_name() + " forward status location: " +  url_for('taskstatus', task_id=task.id))
-    joburl =  url_for('taskstatus', task_id=task.id)
+    status = submit( form.email.data , form.tag.data , form.sequence.data , form.db.data )
+    print( sf.func_name() + " submit send to background, id: " + str( status['id'] ))
+    print( sf.func_name() + " forward status location: " +  url_for('taskstatus', task_id=status['id']))
+    joburl =  url_for('taskstatus', task_id = status['id'] )
+    if int( status['id'] ) < 0 :
+        flash( "submission failed" )
+        return render_template( 'form.html', form=form)
     
     return render_template( 'wait.html', form=form, joburl=joburl)
 
@@ -196,29 +197,8 @@ def queue():
 @app.route('/status/<task_id>')
 def taskstatus(task_id):
     print( sf.func_name() + " id: " + task_id)
-    task = submit_and_check_status.AsyncResult(task_id)
-    print( sf.func_name() + " async result: " + task.state + " " + task.status )
-    if task.state == 'PENDING':
-        print( sf.func_name() + " pending")
-        response = {
-            'state': task.state,
-            'status': 'not queued'
-        }
-    elif task.state != 'FAILURE':
-        print( sf.func_name() + " running")        
-        response = {
-            'state': task.state,
-            'status': task.info.get('status', '')
-        }
-    else:
-        print( sf.func_name() + " trouble")
-        # something went wrong in the background job
-        response = {
-            'state': task.state,
-            'status': str(task.info)  # this is the exception raised
-        }
-    print( sf.func_name() + " jsonify response")
-    return jsonify(response)
+    status = update_status(task_id)
+    return jsonify( status )
 
 
 
@@ -277,4 +257,5 @@ def internal_server_error(e):
 
 
 if __name__ == '__main__':
+#    app.run()
     app.run( debug=True)
