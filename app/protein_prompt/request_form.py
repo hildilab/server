@@ -30,7 +30,7 @@ lyst = list("GPAVLIMCFYWHKRQNEDST")
 def IsAA( word):
     for a in word:
         if a not in lyst:
-            print "no aa seq"
+            #print( "no aa seq")
             return False
     return True
 
@@ -62,7 +62,9 @@ class RequestForm( FlaskForm):
             return False
 
         self.sequence.data = self.sequence.data.strip().upper()
-
+        self.tag.data = self.tag.data.strip()
+        self.email.data = self.email.data.strip()
+        
         if not IsAA( self.sequence.data ):
             self.sequence.errors.append( 'This does not look like a proper sequence. Only natural AA are accepted.')
             return False

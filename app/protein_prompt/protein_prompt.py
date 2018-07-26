@@ -2,21 +2,75 @@ import time, os, subprocess
 import sqlite3 as sql
 
 from flask import Flask, render_template, request, flash, session, redirect, url_for, jsonify, current_app, send_file
-#from celery import Celery
+from flask_mail import Mail, Message
 from flask_bootstrap import Bootstrap
+from threading import Thread
 
 import sequence_functions as sf
 from request_form import RequestForm
 
 app = Flask( __name__ )
+
 app.config['SECRET_KEY'] = 'topf-sekret'
+app.config['MAIL_SERVER'] = 'smtp.1und1.de'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USERNAME'] =  os.environ.get('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] =  os.environ.get('MAIL_PASSWORD')
+app.config['FLASKY_MAIL_SUBJECT_PREFIX'] = '[ProteinPrompt]'
+app.config['FLASKY_MAIL_SENDER'] = 'Flasky Admin <flasky@example.com>'
+app.config['FLASKY_ADMIN'] = os.environ.get('FLASKY_ADMIN')
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+app.config['USER_DATA_DIR'] = basedir + "/data/" 
+app.config['APP_PATH'] = basedir
+
 
 bootstrap = Bootstrap(app)
+mail = Mail( app )
 
-app.config['USER_DATA_DIR'] = "data/" #os.environ.get('USER_DATA_DIR') # feed from environment variable
 
-app.config['APP_PATH'] = "/home/webit/host/server/app/protein_prompt"
-#app.config['APP_PATH'] = "/home/rene/server/app/protein_prompt"
+
+
+def send_email(email, tag, mess, url):
+    with app.app_context():
+
+        print( sf.func_name())
+        subject =  tag + " " + mess
+        template = 'mail/link'
+        msg = Message(app.config['FLASKY_MAIL_SUBJECT_PREFIX'] + ' ' + subject,
+                      sender=app.config['FLASKY_MAIL_SENDER'], recipients=[email])
+        msg.body = render_template(template + '.txt', email=email, tag=tag, mess=mess, url=url )
+        msg.html = render_template(template + '.html', email=email, tag=tag, mess=mess, url=url )
+        mail.send(msg)
+
+
+    
+def wait_and_notify( app, email, tag, sid, url):
+    with app.app_context():
+        print( sf.func_name())
+        status = {'status':'xxx'}
+        while status['status'] != "finished":
+            time.sleep(30)
+            print( sf.func_name() + " update")
+            status = update_status( sid )
+        if status['error'] == '0':
+            mess = "completed successfully"
+        else:
+            mess = "failed"
+        send_email( email, tag, mess, url)
+
+
+        
+def send_email_upon_termination( email, tag, sid ):
+    print( sf.func_name())
+    # create new thread to send to background
+    url = url_for('results',user=email,job_id=tag, _external=True)
+    thr = Thread( target=wait_and_notify, args=[app, email, tag, sid, url] )
+    thr.start()
+    return thr
+
 
 
 def submit( email, tag, sequence, db):
@@ -56,7 +110,7 @@ def submit( email, tag, sequence, db):
 
     print( sf.func_name() + " send to queue" )
     #cmd = "tsp rf -seq " + sequence + " -db " + db + " -out " + job_dir + "/protein_prompt.txt"
-    cmd = ["tsp", "sleep", "120"]
+    cmd = ["tsp", "sleep", "10"]
     jiddle = subprocess.check_output( cmd ).strip()
     print( "job id: " + jiddle)
     status = subprocess.check_output( ["tsp", "-s" , str(jiddle)] ).strip()
@@ -97,7 +151,29 @@ def update_status( jiddle ):
     return { 'status':status , 'error':error}
             
 
-
+def update_all():
+    print( sf.func_name())
+    connector = sql.connect("jobs.db")
+    cursor = connector.cursor()
+    status = {}
+    lines = subprocess.check_output( ["tsp"] ).split('\n')
+    print( str(len(lines)) + " entries" )
+    for l in lines:
+        print(l)
+        l = l.strip()
+        if len(l) < 5 or "ID" in l: continue
+        c = l.split()
+        status[ c[0] ] = c[1]
+        
+    for k,v in status.iteritems():
+        cmd = "UPDATE jobs SET status = '" + v + "' WHERE id = '" + k + "'"
+        print( cmd )
+        cursor.execute( cmd )
+    connector.commit()
+        
+    connector.close()
+    return status
+   
 
 
 
@@ -159,6 +235,10 @@ def index():
     if int( status['id'] ) < 0 :
         flash( "submission failed" )
         return render_template( 'form.html', form=form)
+
+    # start background process waiting for termination of calculation to send email
+    if form.email.data != "anonymous":
+        send_email_upon_termination( form.email.data, form.tag.data, status['id'] )
     
     return render_template( 'wait.html', form=form, joburl=joburl)
 
@@ -167,12 +247,14 @@ def index():
 @app.route('/queue', methods=['GET'])
 def queue():
 
+    update_all()
+    
     con = sql.connect("jobs.db")
     con.row_factory = sql.Row
    
     cur = con.cursor()
     cur.execute("select * from jobs")
-    cur.commit()
+    con.commit()
     rows = cur.fetchall();
     con.close()
     return render_template( "queue.html", rows = rows)
@@ -263,5 +345,5 @@ def internal_server_error(e):
 
 
 if __name__ == '__main__':
-#    app.run()
-    app.run( debug=True)
+    app.run()
+#    app.run( debug=True)
