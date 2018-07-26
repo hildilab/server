@@ -7,7 +7,8 @@ env/
 venv/
 */env/*
 */venv/*
-data
+data/
 app/protein_prompt/env
+app/protein_prompt/data
 *.db
 *.tmp

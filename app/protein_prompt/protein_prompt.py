@@ -2,7 +2,7 @@ import time, os, subprocess
 import sqlite3 as sql
 
 from flask import Flask, render_template, request, flash, session, redirect, url_for, jsonify, current_app, send_file
-from celery import Celery
+#from celery import Celery
 from flask_bootstrap import Bootstrap
 
 import sequence_functions as sf
@@ -13,13 +13,15 @@ app.config['SECRET_KEY'] = 'topf-sekret'
 
 bootstrap = Bootstrap(app)
 
-app.config['USER_DATA_DIR'] = os.environ.get('USER_DATA_DIR') # feed from environment variable
+app.config['USER_DATA_DIR'] = "data/" #os.environ.get('USER_DATA_DIR') # feed from environment variable
 
-
+app.config['APP_PATH'] = "/home/webit/host/server/app/protein_prompt"
+#app.config['APP_PATH'] = "/home/rene/server/app/protein_prompt"
 
 
 def submit( email, tag, sequence, db):
     print ( "now entered submit:" + current_app.name )
+#    os.chdir( app.config['APP_PATH'] )
     pwd = os.getcwd();
     print( pwd )
     if email == '':
@@ -36,22 +38,24 @@ def submit( email, tag, sequence, db):
     connector = sql.connect("jobs.db")
     cursor = connector.cursor()
 
-    os.chdir( user_dir )
-    job_dir = email + "/" + tag
+#    os.chdir( user_dir )
+    job_dir = user_dir + "/" + email + "/" + tag
 
     print( job_dir )
     if os.path.isdir( job_dir):
         print ( "dir exists")
-        status = 'exists'
-        return {'status':status , 'id':'-99999', 'error':'-99999'}
+        return {'status':'exists' , 'id':'-99999', 'error':'-99999'}
     else:
         os.makedirs( job_dir )
-    os.chdir( job_dir )
-    with open( 'protein_prompt.txt','w') as f:
+        print( job_dir + " created")
+#    os.chdir( job_dir )
+    with open( job_dir + '/protein_prompt.txt','w') as f:
         f.write( "fake.fa 15 AABCDEABCDEBCDE 0.4 \n")
         f.write( "cake.fa 105 ABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDE 0.5 \n")
         f.write( "bake.fa 5 ABCDE 1.5 \n")
-    #cmd = "tsp rf -seq " + sequence + " -db " + db + " -out protein_prompt.txt"
+
+    print( sf.func_name() + " send to queue" )
+    #cmd = "tsp rf -seq " + sequence + " -db " + db + " -out " + job_dir + "/protein_prompt.txt"
     cmd = ["tsp", "sleep", "120"]
     jiddle = subprocess.check_output( cmd ).strip()
     print( "job id: " + jiddle)
@@ -60,10 +64,11 @@ def submit( email, tag, sequence, db):
     date = time.strftime( "%Y-%m-%d %H:%M:%S",time.gmtime())
     print(date)
 
+    print ( "INSERT INTO jobs (user,tag,id,date,status) VALUES (?,?,?,?,?)" , (email,tag,jiddle,date,status) )
     cursor.execute("INSERT INTO jobs (user,tag,id,date,status) VALUES (?,?,?,?,?)" , (email,tag,jiddle,date,status) )
     connector.commit()
 
-    os.chdir( pwd)
+#    os.chdir( pwd)
     print( "now: " + os.getcwd() + " should have retured to base dir")
     connector.close()
         
@@ -167,8 +172,9 @@ def queue():
    
     cur = con.cursor()
     cur.execute("select * from jobs")
-    
+    cur.commit()
     rows = cur.fetchall();
+    con.close()
     return render_template( "queue.html", rows = rows)
  
 
@@ -238,7 +244,7 @@ def list_results():
         root = root.replace('_','.')   # overliquid
         
         for name in dirs:
-            mstr += "<tr><td>" + root + "</td><td><a href=\"/results/" + root + "/" + name + "\">"  + name + "</a></td></tr>\n"      
+            mstr += "<tr><td>" + root + "</td><td><a href=\"" + url_for( 'results' , user=root, job_id=name ) + "\">"  + name + "</a></td></tr>\n"      
     return render_template( 'list_results.html', lines=mstr )
     
 

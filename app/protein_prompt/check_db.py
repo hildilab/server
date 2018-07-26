@@ -18,6 +18,7 @@ cmd = "SELECT * FROM jobs"
 
 #cmd = "UPDATE jobs SET status = 'finished' WHERE status = 'queued'"
 
+#cmd = "INSERT INTO jobs (user,tag,id,date,status) VALUES ('walter','ppk','1','now','creeping')"
 print cmd
 
 c.execute( cmd )
